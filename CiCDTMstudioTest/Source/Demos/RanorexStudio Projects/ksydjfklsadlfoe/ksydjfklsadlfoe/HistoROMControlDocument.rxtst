@@ -1,0 +1,103 @@
+﻿<testsuite
+name="HistoROMControlDocument"
+rxversion="4.1.6.17768"
+id="5748ed48-7ff4-4e5a-a87d-b7ea6801f14e"
+reportfilename="%S_%Y%M%D_%T.rxlog"
+reporttemplatefolder=""
+reportxslfilename=""
+placescreenshotsinfolder="True"
+reportwriteinterval="30000ms"
+reportcompress="False"
+enabletracingscreenshots="True"
+description=""
+reportlevel="Info;20">
+	<content>
+		<folder
+		name="Predefined"
+		id="ebb2ebd9-7ff3-43e1-a2ce-ec13ebdb6c5e">
+			<folder
+			name="HistoROM"
+			id="3917833b-f6bb-435c-b98a-7b23795e2c14">
+				<testcase
+				name="HistoROMSuite1"
+				id="c100d215-f326-44dd-8e9c-edcc16c68397">
+					<parameters>
+						<param
+						name="NewParameter"
+						value="1234123"/>
+					</parameters>
+					<testmodule
+					name="UserCodeModule1"
+					id="7a131971-7ff7-40e3-903c-62c3c1413ce5"
+					ref="cd4d5232-f518-4a30-b756-4ea3fe7c1395"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="HistoROMSuite2"
+				id="c09bc01b-f47e-4910-a176-64a2b0c062af">
+					<testmodule
+					name="UserCodeModule1"
+					id="a08f784f-16f7-49be-952d-4f4e3abc7f02"
+					ref="cd4d5232-f518-4a30-b756-4ea3fe7c1395"
+					type="UserCode"/>
+				</testcase>
+				<testcase
+				name="HistoROMSuite3"
+				id="ea75f0c2-2708-4921-84b6-8cadfe207ba7">
+					<parameters>
+						<param
+						name="NewParameter"
+						value="Tewstaefasfa"/>
+					</parameters>
+					<testmodule
+					name="UserCodeModule1"
+					id="87ee4b96-f24f-490a-ba5e-960886e5e99b"
+					ref="cd4d5232-f518-4a30-b756-4ea3fe7c1395"
+					type="UserCode"/>
+				</testcase>
+			</folder>
+			<folder
+			name="EventList"
+			id="a97c74bf-6c96-4be4-bbad-abffa0dd7224">
+				<testcase
+				name="EventListSuite1"
+				id="97398b93-8480-4889-896a-030f50d01d15"/>
+			</folder>
+			<folder
+			name="Linearization"
+			id="6482f14c-38a6-4627-befb-4c0f0ef0a0a2">
+				<testcase
+				name="LinearizationSuite1"
+				id="291ce223-85b1-492d-a60f-b508da1a3ffd"/>
+			</folder>
+		</folder>
+		<folder
+		name="Userdefined"
+		id="dceb75b4-f902-41b1-9e80-09bd9774cb8b"/>
+	</content>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="291ce223-85b1-492d-a60f-b508da1a3ffd"/>
+			<testcase
+			id="3917833b-f6bb-435c-b98a-7b23795e2c14"/>
+			<testcase
+			id="5748ed48-7ff4-4e5a-a87d-b7ea6801f14e"/>
+			<testcase
+			id="6482f14c-38a6-4627-befb-4c0f0ef0a0a2"/>
+			<testcase
+			id="97398b93-8480-4889-896a-030f50d01d15"/>
+			<testcase
+			id="a97c74bf-6c96-4be4-bbad-abffa0dd7224"/>
+			<testcase
+			id="c100d215-f326-44dd-8e9c-edcc16c68397"/>
+			<testcase
+			id="ea75f0c2-2708-4921-84b6-8cadfe207ba7"/>
+			<testcase
+			id="ebb2ebd9-7ff3-43e1-a2ce-ec13ebdb6c5e"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references/>
+</testsuite>

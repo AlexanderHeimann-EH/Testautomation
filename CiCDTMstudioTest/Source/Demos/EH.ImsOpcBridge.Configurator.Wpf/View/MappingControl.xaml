@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.MappingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.Configurator.View"       
+             xmlns:converter="clr-namespace:EH.ImsOpcBridge.Configurator.Converter"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance {x:Type viewModel:MappingControlVm}, IsDesignTimeCreatable=True}"
+             d:DesignHeight="700" d:DesignWidth="1024">
+
+    <UserControl.Resources>
+        <converter:BoolToVisibilityConverter x:Uid="baseView:BoolToVisibilityConverter_1" x:Key="ConvBoolToVisibility" />
+    </UserControl.Resources>
+
+
+
+    <Grid x:Uid="Grid_1" Background="{DynamicResource PaneBackgroundBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_2" Width="*" />
+            <ColumnDefinition x:Uid="ColumnDefinition_3" Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <RowDefinition x:Uid="RowDefinition_8" Height="{StaticResource ClientAreaGap}" />
+        </Grid.RowDefinitions>
+        <Grid x:Uid="Grid_3" Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_4" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_6" Height="*" />
+            </Grid.RowDefinitions>
+
+
+            <view:SettingsHotkeyControl x:Uid="view1:SettingsHotkeyControl_1" Template="{StaticResource SettingsHotkeyControlTemplate}" 
+                                        SaveConfigurationCommand="{Binding Path=SaveConfigurationCommand}" LoadConfigurationCommand="{Binding Path=LoadConfigurationCommand}" 
+                                        ImportConfigurationCommand="{Binding Path=ImportConfigurationCommand}"   ExportConfigurationCommand="{Binding Path=ExportConfigurationCommand}" >
+            </view:SettingsHotkeyControl>
+
+            
+            <view:MappingHotkeyControl x:Uid="view1:MappingHotkeyControl_1" Template="{StaticResource MappingHotkeyControlTemplate}" 
+                                        DetailsCommand="{Binding Path=DetailsCommand}" InsertRowCommand="{Binding Path=InsertRowCommand}" DeleteRowCommand="{Binding Path=DeleteRowCommand}"  ToolTipEditMeasurement="{Binding Path=ToolTipEditMeasurement}">
+            </view:MappingHotkeyControl>
+
+
+            <view:PagingHotkeyControl x:Uid="view1:PagingHotkeyControl_1" Template="{StaticResource PagingHotkeyControlTemplate}" 
+                                         PreviousPageCommand="{Binding Path=PreviousPageCommand}" NextPageCommand="{Binding Path=NextPageCommand}"
+                                         BeginPageCommand="{Binding Path=BeginPageCommand}" EndPageCommand="{Binding Path=EndPageCommand}">
+                                       
+                    <Grid x:Uid="Grid_4">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Uid="ColumnDefinition_1" Width="300" />
+                        <ColumnDefinition x:Uid="ColumnDefinition_2" Width="{DynamicResource ClientAreaGap}"></ColumnDefinition>
+                        <ColumnDefinition x:Uid="ColumnDefinition_3" Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Uid="RowDefinition_7" Height="*" />
+                        <RowDefinition x:Uid="RowDefinition_9" Height="{StaticResource ClientAreaGap}" />
+                        <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <view:OpcAddressSpaceControl x:Uid="View:OpcAddressSpaceControl_1" DataContext="{Binding Path=OpcItemMappingTreeParentVm}"  AllowDrag="{Binding Path=AllowDrag}" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ></view:OpcAddressSpaceControl>
+
+                    <view:MappingDetailsDataGridCtrl x:Uid="View:MappingDetailsDataGridCtrl_1"  Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Right"  Visibility="{Binding Path=IsMappingDetailsDataGridVisible, Converter={StaticResource ConvBoolToVisibility}}"></view:MappingDetailsDataGridCtrl>
+                    <view:MappingDataGridCtrl x:Uid="View:MappingDataGridCtrl_1" Grid.Column="2" VerticalAlignment="Stretch" CurrentItemSet="{Binding Path=CurrentItem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"  ValidationError="{Binding Path=ValidationError, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                              ConfiguredMeasurements="{Binding Path=ConfiguredMeasurements, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" HorizontalAlignment="Right" Visibility="{Binding Path=IsMappingDataGridVisible, Converter={StaticResource ConvBoolToVisibility}}"></view:MappingDataGridCtrl>
+ 
+                    <StackPanel x:Uid="StackPanel_1" Grid.Row="2"  Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <TextBlock x:Uid="TextBlock_1" Text="{Binding Path=Pages}" Margin="4,0,0,0"/>
+                    </StackPanel>
+
+                </Grid>
+            </view:PagingHotkeyControl>
+
+        </Grid>
+    </Grid>
+</UserControl>

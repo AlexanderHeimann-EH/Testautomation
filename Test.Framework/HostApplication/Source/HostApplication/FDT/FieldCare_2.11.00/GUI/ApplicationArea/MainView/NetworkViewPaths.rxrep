@@ -1,0 +1,27 @@
+﻿<repository
+name="NetworkViewPaths"
+id="dcc643ff-9c61-49a2-a2ce-4cf14d74cf2c"
+rxversion="6.1">
+	<codegen
+	classname="NetworkViewPaths"
+	namespace="EH.PCPS.TestAutomation.FieldCare.V21100.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="b87112a2-0a48-486f-9bec-5e6d3574bcc4"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="NetworkView"
+		id="efbf41d8-e5f3-45a9-9f08-c4896e67f925"
+		searchtimeout="30000ms"
+		capname="unknown"
+		ensurevisible="False"
+		refimgid="3f8fa1ee-2a13-4818-9ec5-8ffdb457cdd9">
+			/form[@controlname='MDIParent2']/container[@controlname='dockPanelExplorer']/?/?/element[@controltypename='ViewAxHost']/element[@class='SftTreeControl45OCX']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

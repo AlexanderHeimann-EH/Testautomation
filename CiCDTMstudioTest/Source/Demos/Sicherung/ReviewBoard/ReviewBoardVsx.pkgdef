@@ -1,0 +1,29 @@
+[$RootKey$\Packages\{5d0c92bb-ae64-33a5-ba8c-3dd23b0578f9}]
+@="ReviewBoardVsx.Package.MyPackage, ReviewBoardVsx.Package, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0b7bfc509da568a"
+"InprocServer32"="mscoree.dll"
+"Class"="ReviewBoardVsx.Package.MyPackage"
+"Assembly"="ReviewBoardVsx.Package, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0b7bfc509da568a"
+
+[$RootKey$\Packages\{5d0c92bb-ae64-33a5-ba8c-3dd23b0578f9}\SatelliteDll]
+"Path"=""
+"DllName"="ReviewBoardVsx.PackageUI.dll"
+
+[$RootKey$\AutoLoadPackages\{f1536ef8-92ec-443c-9ed7-fdadf150da82}]
+"{bbffe0ea-3383-4ea2-a281-528706f79d57}"=dword:00000000
+
+[$RootKey$\Packages\{bbffe0ea-3383-4ea2-a281-528706f79d57}]
+"ID"=dword:00000001
+"MinEdition"="Standard"
+"ProductVersion"="1.0"
+"ProductName"="ReviewBoardVsx"
+"CompanyName"="reviewboard.org"
+
+[$RootKey$\Packages\{bbffe0ea-3383-4ea2-a281-528706f79d57}]
+@="ReviewBoardVsx - ReviewBoard Extension for Visual Studio"
+"InprocServer32"="mscoree.dll"
+"Class"="ReviewBoardVsx.Package.ReviewBoardVsPackage"
+"Assembly"="ReviewBoardVsx.Package, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0b7bfc509da568a"
+
+[$RootKey$\Menus]
+"{bbffe0ea-3383-4ea2-a281-528706f79d57}"=", 1000, 1"
+

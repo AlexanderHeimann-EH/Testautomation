@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <When Condition=" '$(VisualStudioVersion)'=='14.0'  Or '$(TargetVisualStudioVersion)'=='VS140' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>4.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='12.0'  Or '$(TargetVisualStudioVersion)'=='VS120' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>4.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='11.0'  Or '$(TargetVisualStudioVersion)'=='VS110' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>4.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+  </Choose>
+  <Import Project="..\ProjectBefore.settings" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{DECC7971-FA58-4DB0-9561-BFFADD393BBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PythonTools</RootNamespace>
+    <AssemblyName>Microsoft.PythonTools.Debugger</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost, Version=$(VSTarget).0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Debugger.Engine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" Condition="'$(VSTarget)' != '10.0'">
+      <HintPath>$(VSSDKDir)\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.VisualStudio.Debugger.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" Condition="'$(VSTarget)' != '10.0'">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.Debugger.Interop.10.0" />
+    <Reference Include="Microsoft.VisualStudio.Debugger.InteropA, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.$(VsTarget)">
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VSTarget)' == '11.0' Or '$(VSTarget)' == '12.0'">
+      <ItemGroup>
+        <Reference Include="Microsoft.Dia.Interop, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+          <SpecificVersion>False</SpecificVersion>
+          <EmbedInteropTypes>True</EmbedInteropTypes>
+          <HintPath>DkmDebugger\Microsoft.Dia.Interop.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <When Condition="'$(VSTarget)' == '14.0'">
+      <ItemGroup>
+        <Reference Include="Microsoft.Dia.Interop.14.0, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" >
+          <SpecificVersion>False</SpecificVersion>
+          <EmbedInteropTypes>True</EmbedInteropTypes>
+          <HintPath>DkmDebugger\Microsoft.Dia.Interop.14.0.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="..\..\..\Common\Product\SharedProject\CommonUtils.cs">
+      <Link>CommonUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\WebSocketStream.cs">
+      <Link>Debugger\Transports\WebSocketStream.cs</Link>
+    </Compile>
+    <Compile Include="..\PythonTools\PythonToolsInstallPath.cs">
+      <Link>PythonToolsInstallPath.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Debugger\BreakpointHitEventArgs.cs" />
+    <Compile Include="Debugger\DebugConnectionListener.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7BoundBreakpoint.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7BreakpointResolution.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7DocumentContext.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7Engine.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7EngineEventArgs.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7Enums.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7Events.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7MemoryAddress.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7Module.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7PendingBreakpoint.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteDebugPortSupplier.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7ProgramNode.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7ProgramProvider.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7Property.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7StackFrame.cs" />
+    <Compile Include="Debugger\DebugEngine\AD7Thread.cs" />
+    <Compile Include="Debugger\DebugEngine\UncalculatedAD7Expression.cs" />
+    <Compile Include="Debugger\DebugEngine\DebuggerConstants.cs" />
+    <Compile Include="Debugger\DebugEngine\BreakpointManager.cs" />
+    <Compile Include="Debugger\DebugEngine\EngineUtils.cs" />
+    <Compile Include="Debugger\Extensions.cs" />
+    <Compile Include="Debugger\IdDispenser.cs" />
+    <Compile Include="Debugger\IThreadIdMapper.cs" />
+    <Compile Include="Debugger\NativeMethods.cs" />
+    <Compile Include="Debugger\OnPortOpenedHandler.cs" />
+    <Compile Include="Debugger\OutputEventArgs.cs" />
+    <Compile Include="Debugger\PythonDebugOptions.cs" />
+    <Compile Include="Debugger\PythonEvaluationResult.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteProcess.cs" />
+    <Compile Include="Debugger\PythonStackFrame.cs" />
+    <Compile Include="Debugger\BreakpointEventArgs.cs" />
+    <Compile Include="Debugger\ExceptionRaisedEventArgs.cs" />
+    <Compile Include="Debugger\ModuleLoadedEventArgs.cs" />
+    <Compile Include="Debugger\ProcessExitedEventArgs.cs" />
+    <Compile Include="Debugger\PythonDebugger.cs" />
+    <Compile Include="Debugger\PythonException.cs" />
+    <Compile Include="Debugger\PythonModule.cs" />
+    <Compile Include="Debugger\PythonProcess.cs" />
+    <Compile Include="Debugger\PythonThread.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteDebugPort.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteDebugProcess.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteDebugProgram.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteEnumDebug.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteEnumDebugProcesses.cs" />
+    <Compile Include="Debugger\DebugEngine\Remote\PythonRemoteEnumDebugPrograms.cs" />
+    <Compile Include="Debugger\ThreadEventArgs.cs" />
+    <Compile Include="Debugger\PythonBreakpoint.cs" />
+    <Compile Include="Debugger\Transports\DebuggerTransport.cs" />
+    <Compile Include="Debugger\Transports\TcpsTransport.cs" />
+    <Compile Include="Debugger\Transports\WebSocketTransport.cs" />
+    <Compile Include="Debugger\Transports\TcpTransport.cs" />
+    <Compile Include="Debugger\TryHandlerWalker.cs" />
+    <Compile Include="Debugger\FrameKind.cs" />
+    <Compile Include="DkmDebugger\ComPtr.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(VSTarget)' != '10.0'">
+    <Compile Include="DkmDebugger\ComponentBase.cs" />
+    <Compile Include="DkmDebugger\CppExpressionEvaluator.cs" />
+    <Compile Include="DkmDebugger\DebuggerOptions.cs" />
+    <Compile Include="DkmDebugger\NativeMethods.cs" />
+    <Compile Include="DkmDebugger\Proxies\ArrayProxy.cs" />
+    <Compile Include="DkmDebugger\Proxies\CliStructProxy.cs" />
+    <Compile Include="DkmDebugger\Proxies\CStringProxy.cs" />
+    <Compile Include="DkmDebugger\Proxies\PrimitiveProxies.cs" />
+    <Compile Include="DkmDebugger\Proxies\PointerProxy.cs" />
+    <Compile Include="DkmDebugger\Proxies\DataProxy.cs" />
+    <Compile Include="DkmDebugger\ExpressionEvaluator.cs" />
+    <Compile Include="DkmDebugger\LocalStackWalkingComponent.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyEllipsisObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyComplexObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyBaseExceptionObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyIntObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\IPyBaseString.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyByteArrayObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyBytesObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyFloatObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyBoolObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PySetObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyCellObject.cs" />
+    <Compile Include="DkmDebugger\PythonRuntimeInfo.cs" />
+    <Compile Include="DkmDebugger\ValueStore.cs" />
+    <Compile Include="DkmDebugger\ModuleManager.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyMethodDef.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyCFunctionObject.cs" />
+    <Compile Include="DkmDebugger\CallStackFilter.cs" />
+    <Compile Include="DkmDebugger\PyObjectAllocator.cs" />
+    <Compile Include="DkmDebugger\PyObjectNativeVisualizer.cs" />
+    <Compile Include="DkmDebugger\TraceManagerLocalHelper.cs" />
+    <Compile Include="DkmDebugger\TraceManager.cs" />
+    <Compile Include="DkmDebugger\LocalComponent.cs" />
+    <Compile Include="DkmDebugger\DiaExtensions.cs" />
+    <Compile Include="DkmDebugger\DkmExtensions.cs" />
+    <Compile Include="DkmDebugger\Guids.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyMemberDef.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyThreadState.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyModuleObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyInterpreterState.cs" />
+    <Compile Include="DkmDebugger\Proxies\StructProxy.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyCodeObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyDictObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyFrameObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyListObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyLongObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyTupleObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyTypeObject.cs" />
+    <Compile Include="DkmDebugger\Proxies\Structs\PyUnicodeObject.cs" />
+    <Compile Include="DkmDebugger\RemoteComponent.cs" />
+    <Compile Include="DkmDebugger\SourceLocation.cs" />
+    <Compile Include="DkmDebugger\ReprBuilder.cs" />
+    <Compile Include="DkmDebugger\VsPackageMessage.cs" />
+    <None Include="DkmDebugger\LocalStackWalkingComponent.vsdconfigxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DkmDebugger\LocalComponent.vsdconfigxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DkmDebugger\RemoteComponent.vsdconfigxml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Analysis\Analysis.csproj">
+      <Project>{A85D479D-67A9-4BDB-904A-7D86DAF68A6F}</Project>
+      <Name>Analysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Attacher\Attacher.csproj">
+      <Project>{666A22BB-0CB5-4C08-A20F-E17450DA6573}</Project>
+      <Name>Attacher</Name>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </ProjectReference>
+    <ProjectReference2 Include="..\DebuggerHelper\DebuggerHelper.vcxproj" />
+    <ProjectReference2 Include="..\DebuggerHelper\DebuggerHelperX86.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DkmDebugger\Microsoft.Dia.Interop.dll" />
+  </ItemGroup>
+  <!-- .vsdconfigxml -> .vsdconfig -->
+  <ItemGroup>
+    <VsdConfigXml Include="DkmDebugger\*.vsdconfigxml" />
+    <Content Include="DkmDebugger\PythonDkm.natvis">
+      <Link>Visualizers\PythonDkm.natvis</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <VSIXSubPath>.</VSIXSubPath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="..\ProjectAfter.settings" />
+
+  <PropertyGroup>
+    <VsdConfigOutput>$(IntermediateOutputPath)\DkmDebugger.vsdconfig</VsdConfigOutput>
+  </PropertyGroup>
+  <Target Name="GenerateVsdConfig" Inputs="@(VsdConfigXml)" Outputs="$(VsdConfigOutput)" AfterTargets="CoreCompile" Condition="$(VSTarget) != '10.0'">
+    <PropertyGroup>
+      <_Arguments>@(VsdConfigXml, ' ') @(IntermediateAssembly->'"%(FullPath)"', ' ') "$(VsdConfigOutput)"</_Arguments>
+    </PropertyGroup>
+    <Exec Command='"$(VSSDKDir)VisualStudioIntegration\Tools\Bin\vsdconfigtool.exe" $(_Arguments)' />
+  </Target>
+  <Target Name="IncludeVsdConfig" BeforeTargets="AssignTargetPaths;GetVSIXSourceItems" Condition="$(VSTarget) != '10.0'">
+    <ItemGroup>
+      <Content Include="$(VsdConfigOutput)">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <VSIXSubPath>.</VSIXSubPath>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Link>$([System.IO.Path]::GetFileName($(VsdConfigOutput)))</Link>
+      </Content>
+    </ItemGroup>
+    <Message Text="VsdConfigOutput: $(VsdConfigOutput)" Importance="high" />
+  </Target>
+</Project>

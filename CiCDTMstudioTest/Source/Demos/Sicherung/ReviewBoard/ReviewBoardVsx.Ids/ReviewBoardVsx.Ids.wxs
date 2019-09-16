@@ -1,0 +1,15 @@
+﻿<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="ReviewBoardVsx.Ids">
+			<ComponentRef Id="C_ReviewBoardVsx.Ids.dll"/>
+		</ComponentGroup>
+		<DirectoryRef Id="APP_bin" FileSource="$(var.ReviewBoardVsx.Ids.TargetDir)">
+			<Component Id="C_ReviewBoardVsx.Ids.dll" Guid="*">
+				<File Id="CF_ReviewBoardVsx.Ids.dll" Name="ReviewBoardVsx.Ids.dll" Checksum="yes" Vital="yes" KeyPath="yes" />
+				<?ifdef ReviewBoardVsx_Pdb?>
+				<File Id="CF_ReviewBoardVsx.Ids.pdb" Name="ReviewBoardVsx.Ids.pdb" Checksum="yes" Vital="yes" />
+				<?endif?>
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+</Wix>

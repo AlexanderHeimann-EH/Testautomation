@@ -1,0 +1,147 @@
+### Jazz Ignore 0
+# Ignored files and folders will not be committed, but may be modified during 
+# accept or update.  
+# - Ignore properties should contain a space separated list of filename patterns.  
+# - Each pattern is case sensitive and surrounded by braces ('{' and '}').  
+# - "*" matches zero or more characters.  
+# - "?" matches a single character.  
+# - The pattern list may be split across lines by ending the line with a 
+#     backslash and starting the next line with a tab.  
+# - Patterns in core.ignore prevent matching resources in the same 
+#     directory from being committed.  
+# - Patterns in core.ignore.recursive matching resources in the current 
+#     directory and all subdirectories from being committed.  
+# - The default value of core.ignore.recursive is *.class 
+# - The default value for core.ignore is bin 
+# 
+# To ignore shell scripts and hidden files in this subtree: 
+#     e.g: core.ignore.recursive = {*.sh} {\.*} 
+# 
+# To ignore resources named 'bin' in the current directory (but allow 
+#  them in any sub directorybelow): 
+#     e.g: core.ignore = {bin} 
+# 
+# NOTE: modifying ignore files will not change the ignore status of 
+#     Eclipse derived resources.
+
+core.ignore.recursive= 
+
+core.ignore= \
+	{DisplayContentLib.dll} \
+	{EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.dll} \
+	{EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.xml} \
+	{EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.dll} \
+	{EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.xml} \
+	{EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.dll} \
+	{EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.xml} \
+	{EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.dll} \
+	{EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.xml} \
+	{EH.PCPS.TestAutomation.Common.dll} \
+	{EH.PCPS.TestAutomation.Common.xml} \
+	{EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.dll} \
+	{EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.xml} \
+	{EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.dll} \
+	{EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.xml} \
+	{EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.dll} \
+	{EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.xml} \
+	{EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.dll} \
+	{EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.xml} \
+	{EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.dll} \
+	{EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.xml} \
+	{EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.dll} \
+	{EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.xml} \
+	{EH.PCPS.TestAutomation.CommunicationInterfaces.dll} \
+	{EH.PCPS.TestAutomation.CommunicationInterfaces.xml} \
+	{EH.PCPS.TestAutomation.CommunicationLoader.dll} \
+	{EH.PCPS.TestAutomation.CommunicationLoader.xml} \
+	{EH.PCPS.TestAutomation.DeviceCare.CI.dll} \
+	{EH.PCPS.TestAutomation.DeviceCare.CI.xml} \
+	{EH.PCPS.TestAutomation.DeviceCare.V10107.dll} \
+	{EH.PCPS.TestAutomation.DeviceCare.V10107.xml} \
+	{EH.PCPS.TestAutomation.DeviceCare.V10300.dll} \
+	{EH.PCPS.TestAutomation.DeviceCare.V10300.xml} \
+	{EH.PCPS.TestAutomation.DeviceFunctionInterfaces.dll} \
+	{EH.PCPS.TestAutomation.DeviceFunctionInterfaces.xml} \
+	{EH.PCPS.TestAutomation.DeviceFunctionLoader.dll} \
+	{EH.PCPS.TestAutomation.DeviceFunctionLoader.xml} \
+	{EH.PCPS.TestAutomation.FFH1CommDTM.V1542.dll} \
+	{EH.PCPS.TestAutomation.FFH1CommDTM.V1542.xml} \
+	{EH.PCPS.TestAutomation.FdiReferenceHost.dll} \
+	{EH.PCPS.TestAutomation.FdiReferenceHost.xml} \
+	{EH.PCPS.TestAutomation.FieldCare.CI.dll} \
+	{EH.PCPS.TestAutomation.FieldCare.CI.xml} \
+	{EH.PCPS.TestAutomation.FieldCare.V20901.dll} \
+	{EH.PCPS.TestAutomation.FieldCare.V20901.xml} \
+	{EH.PCPS.TestAutomation.FieldCare.V21000.dll} \
+	{EH.PCPS.TestAutomation.FieldCare.V21000.xml} \
+	{EH.PCPS.TestAutomation.FieldCare.V21100.dll} \
+	{EH.PCPS.TestAutomation.FieldCare.V21100.xml} \
+	{EH.PCPS.TestAutomation.HARTCommunication.V1037.dll} \
+	{EH.PCPS.TestAutomation.HARTCommunication.V1037.xml} \
+	{EH.PCPS.TestAutomation.HARTCommunication.V1052.dll} \
+	{EH.PCPS.TestAutomation.HARTCommunication.V1052.xml} \
+	{EH.PCPS.TestAutomation.HostApplicationInterfaces.dll} \
+	{EH.PCPS.TestAutomation.HostApplicationInterfaces.xml} \
+	{EH.PCPS.TestAutomation.HostApplicationLoader.dll} \
+	{EH.PCPS.TestAutomation.HostApplicationLoader.xml} \
+	{EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.dll} \
+	{EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.xml} \
+	{EH.PCPS.TestAutomation.OperatingSystemInterfaces.dll} \
+	{EH.PCPS.TestAutomation.OperatingSystemInterfaces.xml} \
+	{EH.PCPS.TestAutomation.OperatingSystemLoader.dll} \
+	{EH.PCPS.TestAutomation.OperatingSystemLoader.xml} \
+	{EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.dll} \
+	{EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.xml} \
+	{EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.dll} \
+	{EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.xml} \
+	{EH.PCPS.TestAutomation.PrototypeHMI20.dll} \
+	{EH.PCPS.TestAutomation.PrototypeHMI20.xml} \
+	{EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.dll} \
+	{EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.xml} \
+	{EH.PCPS.TestAutomation.TestPackageCI.dll} \
+	{EH.PCPS.TestAutomation.TestPackageCI.xml} \
+	{EH.PCPS.TestAutomation.TestPackageUpdateA2016.dll} \
+	{EH.PCPS.TestAutomation.TestPackageUpdateA2016.xml} \
+	{EH.PCPS.TestAutomation.TestPackageUpdateA2017.dll} \
+	{EH.PCPS.TestAutomation.TestPackageUpdateA2017.xml} \
+	{EH.PCPS.TestAutomation.TestPackageUpdateB2014.dll} \
+	{EH.PCPS.TestAutomation.TestPackageUpdateB2014.xml} \
+	{EH.PCPS.TestAutomation.Testlibrary.dll} \
+	{EH.PCPS.TestAutomation.Testlibrary.xml} \
+	{EH.PCPS.TestAutomation.Windows10.dll} \
+	{EH.PCPS.TestAutomation.Windows10.xml} \
+	{EH.PCPS.TestAutomation.Windows7.dll} \
+	{EH.PCPS.TestAutomation.Windows7.xml} \
+	{EH.PCPS.TestAutomation.Windows8.dll} \
+	{EH.PCPS.TestAutomation.Windows8.xml} \
+	{EH.PCPS.TestAutomation.Windows81.dll} \
+	{EH.PCPS.TestAutomation.Windows81.xml} \
+	{EH.PCPS.TestAutomation.WindowsXP.dll} \
+	{EH.PCPS.TestAutomation.WindowsXP.xml} \
+	{Log4net.dll} \
+	{ProtocolStack.dll} \
+	{Ranorex.Core.Injector.dll} \
+	{Ranorex.Libs.WinApi.dll} \
+	{Ranorex.Libs.WinForms.dll} \
+	{Ranorex.Plugin.Msaa.dll} \
+	{Ranorex.Plugin.Msaa.xml} \
+	{Ranorex.Plugin.Uia.dll} \
+	{Ranorex.Plugin.Uia.xml} \
+	{Ranorex.Plugin.Web.dll} \
+	{Ranorex.Plugin.Web.xml} \
+	{Ranorex.Plugin.Win32.dll} \
+	{Ranorex.Plugin.Win32.xml} \
+	{Ranorex.Plugin.WinForms.dll} \
+	{Ranorex.Plugin.WinForms.xml} \
+	{Ranorex.Plugin.WinFormsProxy.dll} \
+	{Ranorex.Plugin.Wpf.dll} \
+	{Ranorex.Plugin.Wpf.xml} \
+	{Ranorex.Plugin.WpfProxy.dll} \
+	{Run.XML} \
+	{Run.exe} \
+	{Run.exe.config} \
+	{Run.vshost.exe} \
+	{Run.vshost.exe.config} \
+	{Run.vshost.exe.manifest} \
+	{TDD_APPCOM.exe} \
+	{TDD_Common.dll} 

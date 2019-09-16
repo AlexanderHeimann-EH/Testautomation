@@ -1,0 +1,2 @@
+﻿calculationBase,liquidType,densityCalibration,fieldDensityAdjustment,sensorValue,temperaturUnit,temperaturMinValue,temperatureMaxValue,concentrationUnit,concentrationMinValue,concentrationMaxValue
+Defined liquid,Aqueous sugar,Standard calibration,,,°C,10,50,%,33,88

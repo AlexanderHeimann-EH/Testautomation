@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ModuleContainerRepository"
+id="70a504f4-fd9d-426a-8b75-27b9ec0d08b2"
+rxversion="6.1">
+	<codegen
+	classname="ModuleContainerRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.SaveRestore.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="8624c5e2-05b7-400b-acb3-cb70f8864a45"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="SaveRestoreModuleContainer"
+		id="12ed71e1-5c43-48bf-b8f4-6e93b374c78d"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="text,accessible"
+		refimgid="1c747aee-7b99-4eb7-b7c7-9e639e74b863">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Extern href="msobtnid.h"/>
+  <Commands package="guidReviewBoardVsPkg">
+    <Groups>
+      <!--
+      Code Reviews occur after most SVN tasks (with the exception of Commit).
+      Thus, for a nice workflow we want these to always show *BELOW* the Ankh/SCC menu group.
+      
+      Remember: "Menus that have lower priority values are displayed before menus that have higher priority values."
+      
+      Currently I haven't found a way to programmatically determine the Ankh/SCC menu priorities.
+      To make things worse, the priorities seem to vary according to context.
+      
+      The below priorities were found by experimenting with different values.
+      
+      References:
+        http://msdn.microsoft.com/en-us/library/bb164676.aspx
+        "%ProgramFiles(x86)%\Microsoft Visual Studio 2008 SDK\VisualStudioIntegration\Common\inc\vsshlids.h"
+      
+      TODO:(pv) Programmatically determine and/or set these values to be below Ankh/SCC.
+      TODO:(pv) Figure out priorities for the 0x0000 groups.
+      TODO:(pv) Figure out if/where the 0x0000 groups are needed.
+      TODO:(pv) Fine tune these priorities as needed.
+      TODO:(pv) Revisit these priorities from time to time.
+      TODO:(pv) Find and include below any combinations of selection(s) that doesn't show the ReviewBoardVsMenuGroup.
+      TODO:(pv) Figure out how to display when Properties is selected.
+      -->
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0700">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0300">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNFOLDER"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0200">
+        <!-- Applies when the current selection contains the solution node and root project nodes. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_SLNPROJ"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0100">
+        <!-- Applies when the current selection contains the solution node and project items. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_SLNITEM"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0650">
+        <!-- Applies when the project node is selected. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0400">
+        <!-- Applies when the current selection consists of multiple root project nodes only. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0300">
+        <!-- Applies when a folder is selected. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE"/>
+      </Group>
+      <!--
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0000">
+        Selection of combination of projects and solution folders
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJFLDR"/>
+      </Group>
+      -->
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0100">
+        <!-- Applies when the current selection contains the solution node and item in solution folder node. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIFOLDER"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0400">
+        <!-- Applies when a file is selected. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0100">
+        <!-- Applies when the current selection contains a mix of root project nodes and project items. Additionally, the selection may contain the solution node. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_PROJITEM"/>
+      </Group>
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0400">
+        <!-- Applies when the current selection contains project items from multiple projects in the solution, or when items of different types are selected in the same project. -->
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIITEM"/>
+      </Group>
+      <!--
+      <Group guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_MISCFILESPROJ"/>
+      </Group>
+      -->
+    </Groups>
+    <Buttons>
+      <Button guid="guidReviewBoardVsCmdSet" id="cmdidReviewBoard" priority="0x100" type="Button">
+        <Parent guid="guidReviewBoardVsCmdSet" id="ReviewBoardVsMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <!--
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>PostExec</CommandFlag>
+        -->
+        <Strings>
+          <CommandName>cmdidReviewBoard</CommandName>
+          <ButtonText>ReviewBoard</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\favicon.png" usedList="bmpPic1"/>
+    </Bitmaps>
+  </Commands>
+  <VisibilityConstraints>
+    <VisibilityItem guid="guidReviewBoardVsCmdSet" id="cmdidReviewBoard" context="UICONTEXT_SolutionExists"/>
+  </VisibilityConstraints>
+  <Symbols>
+    <GuidSymbol name="guidReviewBoardVsPkg" value="{bbffe0ea-3383-4ea2-a281-528706f79d57}" />
+    <GuidSymbol name="guidReviewBoardVsCmdSet" value="{d98ce002-7ba4-42ec-83d6-08492024ec22}">
+      <IDSymbol name="ReviewBoardVsMenuGroup" value="0x1020"/>
+      <IDSymbol name="cmdidReviewBoard" value="0x0100"/>
+    </GuidSymbol>
+    <GuidSymbol name="guidImages" value="{73c06c76-baff-40f1-a80c-fed139af4a7c}" >
+      <IDSymbol name="bmpPic1" value="1" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>

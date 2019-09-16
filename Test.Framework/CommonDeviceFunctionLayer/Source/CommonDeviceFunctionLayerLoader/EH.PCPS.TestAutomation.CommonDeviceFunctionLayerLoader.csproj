@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43ABD28E-4EF1-4D62-9C0E-227A1B6DDC18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox\CommonFlows.cs">
+      <id>999dac4b-a156-48e2-adce-1557fa01f999</id>
+    </Compile>
+    <Compile Include="Compare\CommonFlows.cs">
+      <id>f70f74fa-ff22-4891-a1c8-6466114525c2</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows.cs">
+      <id>bb7f7cca-7289-4fb7-aba0-c30937fd34bd</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\CommonFlows.cs">
+      <id>a212b50b-b852-4d76-9603-8348e858291e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows.cs">
+      <id>f68ef24b-f462-40ef-a0f1-2e2d9127daeb</id>
+    </Compile>
+    <Compile Include="EventList\CommonFlows.cs">
+      <id>3c15890f-19e0-4b1a-84d6-5a112e9bd70a</id>
+    </Compile>
+    <Compile Include="Historom\CommonFlows.cs">
+      <id>128fc87c-cc79-4b02-81ce-d04a19c30904</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows.cs">
+      <id>bc1f5625-f49b-4fe8-afaf-dbd957c49d11</id>
+    </Compile>
+    <Compile Include="Parameterization\CommonFlows.cs">
+      <id>343c6f5b-eeb7-463b-aac7-a1da0dc42146</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>0fc00371-1909-4914-9411-591316079aa1</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows.cs">
+      <id>64125147-0127-484a-b901-ece03d4f3d4b</id>
+    </Compile>
+    <Compile Include="Viscosity\CommonFlows.cs">
+      <id>85f59d14-85bc-445b-be05-df3cdd9e04d8</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonDeviceFunctionLayerInterfaces\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.csproj">
+      <Project>{0EF05611-60FB-4819-ABCD-9BD8CBAD021B}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

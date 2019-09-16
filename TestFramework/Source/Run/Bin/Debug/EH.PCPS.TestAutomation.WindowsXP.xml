@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.WindowsXP</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.OpenFileBrowser">
+            <summary>
+                Description of OpenFileBrowser.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.OpenFileBrowser.Close">
+            <summary>
+                Closes open dialog
+            </summary>
+            <returns>
+                true: if call worked fine
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.OpenFileBrowser.Cancel">
+            <summary>
+            The cancel.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.OpenFileBrowser.Load(System.String)">
+            <summary>
+            Load specified file, close dialog if file is not available
+            </summary>
+            <param name="fileName">
+            Filename for loading.
+            </param>
+            <returns>
+            <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.SaveAsFileBrowser">
+            <summary>
+                Provides methods to save Historom files
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.SaveAsFileBrowser.ProposedFileName">
+            <summary>
+                Gets or sets a proposed filename
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.SaveAsFileBrowser.Close">
+            <summary>
+                Closes save as dialog
+            </summary>
+            <returns>
+                true: if call worked fine
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.SaveAsFileBrowser.Save">
+            <summary>
+                save a file with proposed filename
+            </summary>
+            <returns>
+                true: if saving was successful
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Execution.SaveAsFileBrowser.SaveAs(System.String)">
+            <summary>
+            save a file with given filename
+            </summary>
+            <param name="fileName">
+            filename under which file will be saved
+            </param>
+            <returns>
+            true: if saving was successful
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Validation.IsOpenDialogOpen">
+            <summary>
+                Checks if OpenDialog is open
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Validation.IsOpenDialogOpen.Run">
+            <summary>
+                Checks whether the Open File dialog is visible or not
+            </summary>
+            <returns>
+                true: if dialog is visible
+                false: if not
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Validation.IsSaveAsDialogOpen">
+            <summary>
+                Checks is Save As Dialog is open
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.Functions.Dialogs.Validation.IsSaveAsDialogOpen.Run">
+            <summary>
+                Checks whether the Save as dialog is visible or not
+            </summary>
+            <returns>
+                true: if dialog is visible
+                false: if not
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepository">
+            <summary>
+            The class representing the FileBrowserRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the FileBrowserRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepository.OpenFileBrowser">
+            <summary>
+            The OpenFileBrowser folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepository.SaveAsFileBrowser">
+            <summary>
+            The SaveAsFileBrowser folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenFileBrowserFolder">
+            <summary>
+            The OpenFileBrowserFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenFileBrowserFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new OpenFileBrowser  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenFileBrowserFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenFileBrowserFolder.Open">
+            <summary>
+            The Open folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder">
+            <summary>
+            The OpenAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Open  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.textFileName">
+            <summary>
+            The textFileName item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.textFileNameInfo">
+            <summary>
+            The textFileName item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.buttonOpen">
+            <summary>
+            The buttonOpen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.buttonOpenInfo">
+            <summary>
+            The buttonOpen item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.buttonCancel">
+            <summary>
+            The buttonCancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.buttonCancelInfo">
+            <summary>
+            The buttonCancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.buttonClose">
+            <summary>
+            The buttonClose item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.OpenAppFolder.buttonCloseInfo">
+            <summary>
+            The buttonClose item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsFileBrowserFolder">
+            <summary>
+            The SaveAsFileBrowserFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsFileBrowserFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SaveAsFileBrowser  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsFileBrowserFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsFileBrowserFolder.SaveAs">
+            <summary>
+            The SaveAs folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder">
+            <summary>
+            The SaveAsAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SaveAs  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.buttonSave">
+            <summary>
+            The buttonSave item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.buttonSaveInfo">
+            <summary>
+            The buttonSave item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.buttonCancel">
+            <summary>
+            The buttonCancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.buttonCancelInfo">
+            <summary>
+            The buttonCancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.buttonClose">
+            <summary>
+            The buttonClose item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.buttonCloseInfo">
+            <summary>
+            The buttonClose item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.textFileName">
+            <summary>
+            The textFileName item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.FileBrowserRepositoryFolders.SaveAsAppFolder.textFileNameInfo">
+            <summary>
+            The textFileName item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessageElements">
+            <summary>
+                Provides access to the message elements
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessageElements.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessageElements.buttonOk">
+            <summary>
+                Get button OK
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessageElements.buttonYes">
+            <summary>
+                Get button confirm save as "Yes"
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessageElements.buttonNo">
+            <summary>
+                Get button confirm save as "No"
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.Messages">
+            <summary>
+            The class representing the Messages element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.Messages.Instance">
+            <summary>
+            Gets the singleton class instance representing the Messages element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.Messages.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.Messages.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.Messages.OpenMessages">
+            <summary>
+            The OpenMessages folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.Messages.SaveAsMessages">
+            <summary>
+            The SaveAsMessages folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenMessagesFolder">
+            <summary>
+            The OpenMessagesFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenMessagesFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new OpenMessages  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenMessagesFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenMessagesFolder.Open">
+            <summary>
+            The Open folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenAppFolder">
+            <summary>
+            The OpenAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Open  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenAppFolder.buttonOK">
+            <summary>
+            The buttonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.OpenAppFolder.buttonOKInfo">
+            <summary>
+            The buttonOK item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.SaveAsMessagesFolder">
+            <summary>
+            The SaveAsMessagesFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.SaveAsMessagesFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SaveAsMessages  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.SaveAsMessagesFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.SaveAsMessagesFolder.ConfirmSaveAs">
+            <summary>
+            The ConfirmSaveAs folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder">
+            <summary>
+            The ConfirmSaveAsAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ConfirmSaveAs  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.buttonYes">
+            <summary>
+            The buttonYes item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.buttonYesInfo">
+            <summary>
+            The buttonYes item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.buttonNo">
+            <summary>
+            The buttonNo item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.MessagesFolders.ConfirmSaveAsAppFolder.buttonNoInfo">
+            <summary>
+            The buttonNo item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.OpenFileBrowserElements">
+            <summary>
+                Provides access ot the elements of "Open" filebrowser dialog
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.OpenFileBrowserElements.#ctor">
+            <summary>
+                Creates an instance of FileBrowserRepository which will be used
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.OpenFileBrowserElements.buttonClose">
+            <summary>
+                Get button Close
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.OpenFileBrowserElements.buttonOpen">
+            <summary>
+                Get button Open
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.OpenFileBrowserElements.buttonCancel">
+            <summary>
+                Get button Cancel
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.OpenFileBrowserElements.textFileName">
+            <summary>
+                Get text Filename
+            </summary>
+            <returns>
+                <br>Text: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements">
+            <summary>
+                Provides access to the Save As File browser dialog
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements.repository">
+            <summary>
+            The _repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements.ButtonClose">
+            <summary>
+                Gets button Close
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements.ButtonCancel">
+            <summary>
+                Gets button Cancel
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements.ButtonSave">
+            <summary>
+                Gets button Save
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.WindowsXP.GUI.Dialogs.SaveAsFileBrowserElements.TextFileName">
+            <summary>
+                Gets Text filename
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+    </members>
+</doc>

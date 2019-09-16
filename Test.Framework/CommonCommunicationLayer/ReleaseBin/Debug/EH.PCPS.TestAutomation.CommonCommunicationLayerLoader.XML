@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommonCommunicationLayerLoader</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows.NamespaceCommunication">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows"/> class. 
+            Connect interfaces to assembly version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows.CloseConfiguration">
+            <summary>
+            Gets the close configuration.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows.OpenConfiguration">
+            <summary>
+            Gets the open configuration.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.CommonFlows.ConfigureCommunication">
+            <summary>
+            Gets the configure communication.
+            </summary>
+        </member>
+    </members>
+</doc>

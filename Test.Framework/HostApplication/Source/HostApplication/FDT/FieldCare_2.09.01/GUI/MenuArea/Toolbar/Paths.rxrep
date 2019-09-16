@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Paths"
+id="018299d1-bf61-4154-8ac5-6e1644cc1ad0"
+rxversion="6.1">
+	<codegen
+	classname="Paths"
+	namespace="EH.PCPS.TestAutomation.FieldCare.V20901.GUI.MenuArea.Toolbar"/>
+	<rootfolder
+	name="Root"
+	id="b402cc35-a44c-4d79-9e27-14f9fb0a42a1"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="Connected"
+		id="953af0a4-549d-49e7-8d83-ac017e58c3b4"
+		searchtimeout="30000ms"
+		capname="button">
+			/form[@controlname='MDIParent2']/element[@controlname='barDockControlTop']/element[@controltypename='DockedBarControl' and @instance='2']/toolbar/button[@childindex='5' and @pressed='true']
+		</item>
+		<item
+		name="Disconnected"
+		id="e116162b-3ca9-4ee5-8246-eccda6ea8230"
+		searchtimeout="30000ms"
+		capname="button">
+			/form[@controlname='MDIParent2']/element[@controlname='barDockControlTop']/element[@controltypename='DockedBarControl' and @instance='2']/toolbar/button[@childindex='5' and @pressed='false']
+		</item>
+		<item
+		name="DeviceFunctions"
+		id="4f11f8e9-7a9d-4c63-a7f2-ebde5deb2678"
+		searchtimeout="30000ms"
+		capname="menuitem">
+			/form[@controlname='MDIParent2']/element[@controlname='barDockControlTop']/element[@controltypename='DockedBarControl' and @instance='2']/toolbar/menuitem[@childindex='8']
+		</item>
+		<item
+		name="CreateNetwork"
+		id="ee067f12-7596-4507-ada2-d5b020e4b458"
+		searchtimeout="30000ms"
+		capname="button">
+			/form[@controlname='MDIParent2']/element[@controlname='barDockControlTop']/element[@controltypename='DockedBarControl' and @instance='2']/toolbar/button[@childindex='2' and @pressed='false']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

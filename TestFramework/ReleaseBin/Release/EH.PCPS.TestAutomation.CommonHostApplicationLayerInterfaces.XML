@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetCommDtmContainerPath">
+            <summary>
+            The GetCommDtmContainerPath interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetCommDtmContainerPath.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetCriticalError">
+            <summary>
+            Class IGetCriticalError.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetCriticalError.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see>
+                    <cref>List</cref>
+                </see>
+                .
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetDtmContainerPath">
+            <summary>
+            Interface for "GetDtmContainerPath"
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetDtmContainerPath.Run">
+            <summary>
+            Provides the host application specific DTM container Ranorex path. 
+            To work with the actual device functions in this framework, the path needs to include the container "ControlAXSourcingSite" for Device Care and the container "GuiTransparentProxy" for FieldCare.
+            </summary>
+            <returns>
+            string: The DTM container path
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetHostApplicationLanguage">
+            <summary>
+            The GetHostApplicationLanguage interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetHostApplicationLanguage.Run">
+            <summary>
+            Gets language from registry
+            </summary>
+            <returns>
+            The language.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRemoveDevice">
+            <summary>
+            Provides methods for adding a device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRemoveDevice.Run(System.String,System.String)">
+            <summary>
+            Removes a device from the network
+            </summary>
+            <param name="parent">node, to add device to</param>
+            <param name="device">unique device name of device to add to parent node</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IAddDevice">
+            <summary>
+            Provides methods for adding a device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IAddDevice.Run(System.String,System.String)">
+            <summary>
+            Add a device type to network
+            </summary>
+            <param name="parent">
+            node, to add device to
+            </param>
+            <param name="device">
+            unique device name of device to add to parent node
+            </param>
+            <returns>
+            true in case of success, false in case of an error
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IAddDevice.Run(System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Add a device type to network
+            </summary>
+            <param name="parent">
+            node, to add device to
+            </param>
+            <param name="device">
+            unique device name of device to add to parent node
+            </param>
+            <param name="configurationSettings">
+            communication settings for comm devices
+            </param>
+            <returns>
+            true in case of success, false in case of an error
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateTopologyOffline">
+            <summary>
+                Provides methods for creating a network
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateTopologyOffline.Run">
+            <summary>
+             Creates a network within the host application 
+            </summary>
+            <returns>True in case of success, false in case of an error</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateTopologyOffline.Run(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+             Creates a network within the host application
+            </summary>
+            <param name="communication">List of comm devices and configurations</param>
+            <param name="devices">List of devices</param>
+            <returns>True in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseFunction">
+            <summary>
+                Provides methods for closing a device function
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseFunction.Run(System.String)">
+            <summary>
+                Closes a function
+            </summary>
+            <param name="functionName">Function which will be closed</param>
+            <returns>true: if function is closed; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseHostApplication">
+            <summary>
+                Provides methods for closing a HostApplication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseHostApplication.Run">
+            <summary>
+                Closes the HostApplication 
+            </summary>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseHostApplication.Run(System.Int32)">
+            <summary>
+            Closes the HostApplication
+            </summary>
+            <param name="timeOutInMilliseconds">Time for action to finish</param>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseProject">
+            <summary>
+                Provides methods for closing the project
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICloseProject.Run">
+            <summary>
+                Closes the project without saving it
+            </summary>
+            <returns>true: if project is closed; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IConnectDevice">
+            <summary>
+            Provides methods for connecting a device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IConnectDevice.Run">
+            <summary>
+            Toggle online with the device
+            </summary>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateTopologyOnline">
+            <summary>
+                Provides methods for creating a network
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateTopologyOnline.Run">
+            <summary>
+            Creates a network within the host application 
+            </summary>
+            <returns>True in case of success, false in case of an error</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateTopologyOnline.Run(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+             Creates a network within the host application
+            </summary>
+            <param name="communication">List of comm devices and configurations</param>
+            <param name="devices">List of devices</param>
+            <returns>True in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateProject">
+            <summary>
+            Provides methods for creating a project
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ICreateProject.Run(System.String)">
+            <summary>
+            Creates a project and save it by default
+            </summary>
+            <param name="projectName">Name of the project to create.</param>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IDeleteProject">
+            <summary>
+            Provides methods for deleting a project
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IDeleteProject.Run(System.String)">
+            <summary>
+            Deletes a saved project
+             </summary>
+            <param name="projectName">Name of the project to delete</param>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IDisconnectDevice">
+            <summary>
+            Provides methods for disconnecting a device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IDisconnectDevice.Run">
+            <summary>
+            Toggle offline with the device
+            </summary>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetDeviceList">
+            <summary>
+            Interface for GetDeviceList
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetDeviceList.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see>
+                    <cref>List</cref>
+                </see>
+                .
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetMessageLog">
+            <summary>
+            Interface for GetMessageLog
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetMessageLog.Run">
+            <summary>
+            Get latest messages
+            </summary>
+            <returns>List with messages</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetSelectedDevice">
+            <summary>
+            Provides methods to determine the currently selected device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetSelectedDevice.Run">
+            <summary>
+            Get currently selected device
+            </summary>
+            <returns>String with devicname or tag</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenAdditionalFunction">
+            <summary>
+                Provides methods for opening a proprietary DTM/DD function
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenAdditionalFunction.Run(System.String)">
+            <summary>
+            Opens a proprietary DTM/DD function
+            </summary>
+            <param name="functionName">Function to open</param>
+            <returns>true: if Function is opened; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenFunction">
+            <summary>
+                Provides methods for opening device function
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenFunction.Run(System.String)">
+            <summary>
+                Opens specified function
+            </summary>
+            <param name="functionName">Function to open</param>
+            <returns>true: function is opened; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRegisterDeviceType">
+            <summary>
+            Provides methods for registering a device type
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRegisterDeviceType.Run(System.Collections.Generic.List{System.String})">
+            <summary>
+            Adds a device type to the host application device type collection
+            </summary>
+            <param name="devices">list of device types to check after they have been added to the device type collection</param>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRestoreDeviceData">
+            <summary>
+            Interface for RestoreDeviceData
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRestoreDeviceData.Run(System.String)">
+            <summary>
+            Read device data from hard disk
+            </summary>
+            <param name="fileName">Name of file</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IRestoreDeviceData.Run(System.String,System.String)">
+            <summary>
+            Read device data from hard disk 
+            </summary>
+            <param name="filePath">Path of file</param>
+            <param name="fileName">Name of file</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveDeviceData">
+            <summary>
+            Interface for SaveDeviceData
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveDeviceData.Run(System.String)">
+            <summary>
+            Save device data to hard disk
+            </summary>
+            <param name="fileName">Name of file</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveDeviceData.Run(System.String,System.String)">
+            <summary>
+            Save device data to hard disk 
+            </summary>
+            <param name="filePath">Path of file</param>
+            <param name="fileName">Name of file</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveDeviceData.Run(System.String,System.String,System.String)">
+            <summary>
+            Save device data to hard disk 
+            </summary>
+            <param name="filePath">Path of file</param>
+            <param name="fileName">Name of file</param>
+            <param name="fileFormat">Type of file to be created</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISelectDevice">
+            <summary>
+            Provides methods for selecting a device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISelectDevice.Run(System.String)">
+            <summary>
+            Select a specific device
+            </summary>
+            <param name="device">Device to select</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetDeviceFunctionInFocus">
+            <summary>
+            The GetDeviceFunctionInFocus interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IGetDeviceFunctionInFocus.Run(System.String)">
+            <summary>
+            Deletes a saved project
+             </summary> <param name="projectName">Name of the project to delete</param>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISwitchToFunction">
+            <summary>
+            Provides methods for switch between functions
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISwitchToFunction.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="functionToSelect">
+            The function to select.
+            </param>
+            <returns>
+            true in case of success, false in case of an error
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IUnregisterDeviceType">
+            <summary>
+            Provides methods to unregister a device type
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IUnregisterDeviceType.Run(System.Collections.Generic.List{System.String})">
+            <summary>
+            Removes a device type from the host application device type collection
+            </summary>
+            <param name="devices">list of device types to check after they have been removed from the device type collection</param>
+            <returns>true in case of success;false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IWriteDataToDevice">
+            <summary>
+                Provides methods for performing a download
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IWriteDataToDevice.Run">
+            <summary>
+            Writes information to the device (download)
+            </summary>
+            <returns>True in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IPrintDeviceInformation">
+            <summary>
+                Provides methods for printing device information
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IPrintDeviceInformation.Run(System.String,System.Int32)">
+            <summary>
+            Prints a device report; This function only supports printing to a file
+            </summary>
+            <param name="filePathAndName">Path and file name</param>
+            <param name="timeoutInMilliseconds">The timeout in milliseconds. Be aware that printing can take several minutes.</param>
+            <returns>true in case of success, false in case of an error</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IReadDataFromDevice">
+            <summary>
+                Provides methods for performing an upload
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IReadDataFromDevice.Run">
+            <summary>
+            Reads the information from the device (upload);    
+            </summary>
+            <returns>true: if upload was successfull; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenHostApplication">
+            <summary>
+            The OpenHostApplication interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenHostApplication.Run">
+            <summary>
+            Opens HostApplication
+            </summary>
+            <returns>
+            true in case of success;false in case of an error
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenHostApplication.Run(System.String)">
+            <summary>
+            Opens HostApplication
+            </summary>
+            <param name="path">
+            installation path of the HostApplication
+            </param>
+            <returns>
+            true in case of success;false in case of an error
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.IOpenHostApplication.Run(System.String,System.Int32)">
+            <summary>
+            Opens HostApplication
+            </summary>
+            <param name="path">
+            installation path of the HostApplication
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time for action to finish.
+            </param>
+            <returns>
+            true in case of success;false in case of an error
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveProject">
+            <summary>
+                Provides methods for saving a project
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveProject.Run">
+            <summary>
+                Saves the actually opened project; Per default available projects will be overwritten
+            </summary>
+            <returns>
+                <br>true: if project is saved</br>
+                <br>false: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ISaveProject.Run(System.String)">
+            <summary>
+                Saves the actually opened project; Per default available projects will be overwritten
+            </summary>
+            <param name="projectName">Filename for the project</param>
+            <returns>
+                <br>true: if project is saved</br>
+                <br>false: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ILoadProject">
+            <summary>
+                Provides methods for loading a project
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.CommonFlows.ILoadProject.Run(System.String)">
+            <summary>
+                Load a specified project
+            </summary>
+            <param name="projectName">Project to load</param>
+            <returns>true: if project is loaded; false: if an error occurred</returns>
+        </member>
+    </members>
+</doc>

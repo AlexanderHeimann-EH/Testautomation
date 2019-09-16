@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Toolbar"
+id="78ca136b-e4c6-429d-bf4a-67a4c84916f4"
+rxversion="6.1">
+	<codegen
+	classname="Toolbar"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.SaveRestore.GUI.MenuArea.Toolbar"/>
+	<rootfolder
+	name="Root"
+	id="12146e85-b7b8-4d41-bc0a-46e0516a9bbe"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="toolbarRepository"
+		id="84dbe6d3-ee34-4fa4-8429-7581e46b9946"
+		searchtimeout="30000ms"
+		capname="toolbar"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="buttonParameterSelection"
+			id="c313843f-dbe1-4162-973d-3e30a4637350"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible">
+				/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']/element/element/toolbar/button[@childindex=0]
+			</item>
+			<basepath>
+				/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']/element/element/toolbar
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFBSURBVDhPY2AAgv9fc//jwiB5fGogklcY/v//
+hB0LH/n8H5883IC/O4X/P10hhIHZT/wHGwCSx6YGxQCRpcv+g7DwfCCeCcQ9y/4jGwCyAOYlFBpm
+A0gz16///zlf///P8QCIr/xHMUAgq/s/S8sWTENgBoBsBhmArJl93z+4F8AG9B3639DUgmoIzAD0
+mAA5H5sBLFXLcBiAFhNCdUv/s239huoCoBdABqC4AuYC9FgQqlzwn239W4QBSY3gMGDOnwE0oBXh
+CpgBIBvBGKgRjEtn/2dddBdhQGQp2HaIAUjhADcAaiPIVrYVT8GaWecAowKaDgRQDMDiguioWIgm
+qEaGmWfAoY5sAMh25tRO7F4AJQ6QBnSMHEYwA7AmJJggKIBAgQXyLwiD8wKODIeSlJFNBRkCtg2I
+CWYmrOmbSEEA10QVcA9P+6EAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

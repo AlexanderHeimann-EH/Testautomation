@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<DisplayContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListPage sessionID="1337" height="1952" width="1536" orientation="Landscape">
+    <List>
+      <DeviceHeader id="Parameters.STD_ENPDeviceTag_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.STD_ENPDeviceName_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.PRES_SensorTemperature_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.PRES_ScaledVariable_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.HO_PercentOfRange_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.CO_OutValue_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_ENPDeviceSerialNumber_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_ENPDeviceFirmwareRevision_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_ENPDeviceOrderIdent_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_LockingState_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.SPV_CurrentSysConditionUnion_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.SPV_CurrentEventCategory_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.PRES_CorrectedPressure_1" isOnScreen="true" />
+      <ListNavigationItem id="Offline_MeasuredValuesPage20_1531633173_2078385683_1" isOnScreen="true">
+        <Text fullText="Measured values" displayedText="Measured values" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_ModeAndUnits20_1687128910_501874017_1" isOnScreen="true">
+        <Text fullText="Measuring Mode and Units" displayedText="Measuring Mode and Units" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_Sensor20_2055852380_729390074_1" isOnScreen="true">
+        <Text fullText="Sensor" displayedText="Sensor" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_PositionAdjustment20_1180386203_1677177738_1" isOnScreen="true">
+        <Text fullText="Zero adjustment" displayedText="Zero adjustment" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_ScaleVariableApp2_20_1206886354_800659321_1" isOnScreen="true">
+        <Text fullText="Scaled variable" displayedText="Scaled variable" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_CurrentOutputSetupPage20_1339946763_533517162_1" isOnScreen="true">
+        <Text fullText="Current output" displayedText="Current output" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_HART20_1891729357_729390074_1" isOnScreen="true">
+        <Text fullText="HART" displayedText="HART" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_Bluetooth_1774760889_388587342_1" isOnScreen="true">
+        <Text fullText="Bluetooth" displayedText="Bluetooth" scaling="0" />
+      </ListNavigationItem>
+      <ListItem id="Parameters.SU_Pressure_1">
+        <ListColumn isOnScreen="true" id="Pressure unit" isReadOnly="false" isHelpAvailable="true">
+          <SelectionValue displayedText="mbar" scaling="0" isMultiSelectAllowed="false">
+            <SelectionItem name="kPa" value="0" isSelected="false" />
+            <SelectionItem name="MPa" value="1" isSelected="false" />
+            <SelectionItem name="Pa" value="2" isSelected="false" />
+            <SelectionItem name="bar" value="3" isSelected="false" />
+            <SelectionItem name="mbar" value="4" isSelected="false" />
+            <SelectionItem name="torr" value="5" isSelected="false" />
+            <SelectionItem name="atm" value="6" isSelected="false" />
+            <SelectionItem name="mmH2O" value="7" isSelected="false" />
+            <SelectionItem name="ftH2O" value="8" isSelected="false" />
+            <SelectionItem name="psi" value="9" isSelected="false" />
+            <SelectionItem name="gf/cm²" value="10" isSelected="false" />
+            <SelectionItem name="inH2O" value="11" isSelected="false" />
+            <SelectionItem name="mmHg" value="12" isSelected="false" />
+            <SelectionItem name="inH2O (4°C)" value="13" isSelected="false" />
+            <SelectionItem name="inHg" value="14" isSelected="false" />
+            <SelectionItem name="kgf/cm²" value="15" isSelected="false" />
+            <SelectionItem name="mmH2O (4°C)" value="16" isSelected="false" />
+          </SelectionValue>
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.SU_Temperature_1">
+        <ListColumn isOnScreen="true" id="Temperature unit" isReadOnly="false" isHelpAvailable="true">
+          <SelectionValue displayedText="°C" scaling="0" isMultiSelectAllowed="false">
+            <SelectionItem name="°C" value="0" isSelected="false" />
+            <SelectionItem name="°F" value="1" isSelected="false" />
+            <SelectionItem name="K" value="2" isSelected="false" />
+          </SelectionValue>
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.PRES_ScaledVariableUnit_1">
+        <ListColumn isOnScreen="true" id="Scaled Variable Unit" isReadOnly="true" isHelpAvailable="false">
+          <SelectionValue displayedText="Free text" scaling="0" isMultiSelectAllowed="false">
+            <SelectionItem name="Free text" value="0" isSelected="false" />
+            <SelectionItem name="%" value="1" isSelected="false" />
+            <SelectionItem name="mm" value="2" isSelected="false" />
+            <SelectionItem name="cm" value="3" isSelected="false" />
+            <SelectionItem name="dm" value="4" isSelected="false" />
+            <SelectionItem name="m" value="5" isSelected="false" />
+            <SelectionItem name="in" value="6" isSelected="false" />
+            <SelectionItem name="ft" value="7" isSelected="false" />
+            <SelectionItem name="m³" value="8" isSelected="false" />
+            <SelectionItem name="in³" value="9" isSelected="false" />
+            <SelectionItem name="ft³" value="10" isSelected="false" />
+            <SelectionItem name="l" value="11" isSelected="false" />
+            <SelectionItem name="hl" value="12" isSelected="false" />
+            <SelectionItem name="kg" value="13" isSelected="false" />
+            <SelectionItem name="t" value="14" isSelected="false" />
+            <SelectionItem name="lb" value="15" isSelected="false" />
+            <SelectionItem name="gal (us)" value="16" isSelected="false" />
+            <SelectionItem name="gal (imp)" value="17" isSelected="false" />
+            <SelectionItem name="dm³/s" value="18" isSelected="false" />
+            <SelectionItem name="dm³/min" value="19" isSelected="false" />
+            <SelectionItem name="dm³/h" value="20" isSelected="false" />
+            <SelectionItem name="m³/s" value="21" isSelected="false" />
+            <SelectionItem name="m³/min" value="22" isSelected="false" />
+            <SelectionItem name="m³/h" value="23" isSelected="false" />
+            <SelectionItem name="m³/d" value="24" isSelected="false" />
+            <SelectionItem name="l/s" value="25" isSelected="false" />
+            <SelectionItem name="l/h" value="26" isSelected="false" />
+            <SelectionItem name="l/min" value="27" isSelected="false" />
+            <SelectionItem name="hl/s" value="28" isSelected="false" />
+            <SelectionItem name="hl/min" value="29" isSelected="false" />
+            <SelectionItem name="hl/h" value="30" isSelected="false" />
+            <SelectionItem name="hl/d" value="31" isSelected="false" />
+            <SelectionItem name="ft³/s" value="32" isSelected="false" />
+            <SelectionItem name="ft³/min" value="33" isSelected="false" />
+            <SelectionItem name="ft³/h" value="34" isSelected="false" />
+            <SelectionItem name="ft³/d" value="35" isSelected="false" />
+            <SelectionItem name="lb/s" value="36" isSelected="false" />
+            <SelectionItem name="lb/min" value="37" isSelected="false" />
+            <SelectionItem name="lb/h" value="38" isSelected="false" />
+            <SelectionItem name="gal/s (us)" value="39" isSelected="false" />
+            <SelectionItem name="gal/min (us)" value="40" isSelected="false" />
+            <SelectionItem name="gal/h (us)" value="41" isSelected="false" />
+            <SelectionItem name="gal/d (us)" value="42" isSelected="false" />
+            <SelectionItem name="gal/s (imp)" value="43" isSelected="false" />
+            <SelectionItem name="gal/min (imp)" value="44" isSelected="false" />
+            <SelectionItem name="gal/h (imp)" value="45" isSelected="false" />
+            <SelectionItem name="bbl/s (us;oil)" value="46" isSelected="false" />
+            <SelectionItem name="bbl/min (us;oil)" value="47" isSelected="false" />
+            <SelectionItem name="bbl/h (us;oil)" value="48" isSelected="false" />
+            <SelectionItem name="bbl/d (us;oil)" value="49" isSelected="false" />
+            <SelectionItem name="Nm³/s" value="50" isSelected="false" />
+            <SelectionItem name="Nm³/min" value="51" isSelected="false" />
+            <SelectionItem name="Nm³/h" value="52" isSelected="false" />
+            <SelectionItem name="Nm³/d" value="53" isSelected="false" />
+            <SelectionItem name="Sm³/s" value="54" isSelected="false" />
+            <SelectionItem name="Sm³/min" value="55" isSelected="false" />
+            <SelectionItem name="Sm³/h" value="56" isSelected="false" />
+            <SelectionItem name="Sm³/d" value="57" isSelected="false" />
+            <SelectionItem name="Sft³/s" value="58" isSelected="false" />
+            <SelectionItem name="Sft³/min" value="59" isSelected="false" />
+            <SelectionItem name="Sft³/h" value="60" isSelected="false" />
+            <SelectionItem name="Sft³/d" value="61" isSelected="false" />
+            <SelectionItem name="g/s" value="62" isSelected="false" />
+            <SelectionItem name="kg/min" value="63" isSelected="false" />
+            <SelectionItem name="kg/h" value="64" isSelected="false" />
+            <SelectionItem name="kg/s" value="65" isSelected="false" />
+            <SelectionItem name="t/d" value="66" isSelected="false" />
+            <SelectionItem name="t/h" value="67" isSelected="false" />
+            <SelectionItem name="t/min" value="68" isSelected="false" />
+            <SelectionItem name="t/s" value="69" isSelected="false" />
+            <SelectionItem name="oz/s" value="70" isSelected="false" />
+            <SelectionItem name="oz/min" value="71" isSelected="false" />
+            <SelectionItem name="LTon/s" value="72" isSelected="false" />
+            <SelectionItem name="LTon/min" value="73" isSelected="false" />
+            <SelectionItem name="LTon/h" value="74" isSelected="false" />
+            <SelectionItem name="LTon/d" value="75" isSelected="false" />
+            <SelectionItem name="g/cm³" value="76" isSelected="false" />
+          </SelectionValue>
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.PRES_ScaledVariableCustomUnitText_1">
+        <ListColumn isOnScreen="true" id="Free text" isReadOnly="false" isHelpAvailable="false" />
+      </ListItem>
+      <ListItem id="Parameters.PRES_DensityUnit_1">
+        <ListColumn isOnScreen="false" id="Density Unit" isReadOnly="false" isHelpAvailable="false">
+          <SelectionValue displayedText="g/cm³" scaling="0" isMultiSelectAllowed="false">
+            <SelectionItem name="µg/l" value="0" isSelected="false" />
+            <SelectionItem name="mg/l" value="1" isSelected="false" />
+            <SelectionItem name="g/cm³" value="2" isSelected="false" />
+            <SelectionItem name="g/m³" value="3" isSelected="false" />
+            <SelectionItem name="g/ml" value="4" isSelected="false" />
+            <SelectionItem name="g/l" value="5" isSelected="false" />
+            <SelectionItem name="kg/l" value="6" isSelected="false" />
+            <SelectionItem name="kg/dm³" value="7" isSelected="false" />
+            <SelectionItem name="mg/m³" value="8" isSelected="false" />
+            <SelectionItem name="µg/m³" value="9" isSelected="false" />
+            <SelectionItem name="kg/m³" value="10" isSelected="false" />
+            <SelectionItem name="Mg/m³" value="11" isSelected="false" />
+            <SelectionItem name="t/m³" value="12" isSelected="false" />
+            <SelectionItem name="SD4°C" value="13" isSelected="false" />
+            <SelectionItem name="SD15°C" value="14" isSelected="false" />
+            <SelectionItem name="SD20°C" value="15" isSelected="false" />
+            <SelectionItem name="SG4°C" value="16" isSelected="false" />
+            <SelectionItem name="SG15°C" value="17" isSelected="false" />
+            <SelectionItem name="SG20°C" value="18" isSelected="false" />
+            <SelectionItem name="lb/ft³" value="19" isSelected="false" />
+            <SelectionItem name="lb/gal (us)" value="20" isSelected="false" />
+            <SelectionItem name="lb/bbl (us;liq.)" value="21" isSelected="false" />
+            <SelectionItem name="lb/bbl (us;beer)" value="22" isSelected="false" />
+            <SelectionItem name="lb/bbl (us;oil)" value="23" isSelected="false" />
+            <SelectionItem name="lb/bbl (us;tank)" value="24" isSelected="false" />
+            <SelectionItem name="lb/gal (imp)" value="25" isSelected="false" />
+            <SelectionItem name="lb/bbl (imp;beer)" value="26" isSelected="false" />
+            <SelectionItem name="lb/bbl (imp;oil)" value="27" isSelected="false" />
+            <SelectionItem name="lb/in³" value="28" isSelected="false" />
+            <SelectionItem name="STon/yd³" value="29" isSelected="false" />
+            <SelectionItem name="°Twad" value="30" isSelected="false" />
+            <SelectionItem name="°Baum (hv)" value="31" isSelected="false" />
+            <SelectionItem name="°Baum (lt)" value="32" isSelected="false" />
+            <SelectionItem name="°API" value="33" isSelected="false" />
+            <SelectionItem name="°Plato" value="34" isSelected="false" />
+            <SelectionItem name="°Brix" value="35" isSelected="false" />
+            <SelectionItem name="°Balling" value="36" isSelected="false" />
+            <SelectionItem name="SGU" value="37" isSelected="false" />
+            <SelectionItem name="mg/m" value="38" isSelected="false" />
+            <SelectionItem name="kg/m" value="39" isSelected="false" />
+            <SelectionItem name="proof/vol" value="40" isSelected="false" />
+            <SelectionItem name="proof/mass" value="41" isSelected="false" />
+            <SelectionItem name="g/m" value="42" isSelected="false" />
+            <SelectionItem name="tex" value="43" isSelected="false" />
+            <SelectionItem name="oz/ft" value="44" isSelected="false" />
+            <SelectionItem name="lb/ft" value="45" isSelected="false" />
+            <SelectionItem name="lb/in" value="46" isSelected="false" />
+          </SelectionValue>
+        </ListColumn>
+      </ListItem>
+    </List>
+  </ListPage>
+  <HelpPage sessionID="1337" height="1952" width="1536" orientation="Landscape">
+    <List>
+      <ListItem id="Offline_ModeAndUnits20_1687128910_501874017_1">
+        <ListColumn isOnScreen="false" id="Measuring Mode and Units" isReadOnly="false" isHelpAvailable="false">
+          <SelectionValue scaling="0" isMultiSelectAllowed="false" />
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.SU_Pressure_1">
+        <ListColumn isOnScreen="false" id="Pressure unit" isReadOnly="false" isHelpAvailable="false">
+          <SelectionValue scaling="0" isMultiSelectAllowed="false">
+            <SelectionItem name="Pressure unit" value="Select the Pressure Unit. &#xA;&#xA;For Devices with Display, this unit is displayed. Futher Display settings can be adjusted later.&#xA;" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="kPa" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="MPa" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="Pa" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="bar" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="mbar" isSelected="true" />
+            <SelectionItem name="Pressure unit" value="torr" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="atm" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="mmH2O" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="ftH2O" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="psi" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="gf/cm²" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="inH2O" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="mmHg" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="inH2O (4°C)" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="inHg" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="kgf/cm²" isSelected="false" />
+            <SelectionItem name="Pressure unit" value="mmH2O (4°C)" isSelected="false" />
+          </SelectionValue>
+        </ListColumn>
+      </ListItem>
+    </List>
+  </HelpPage>
+</DisplayContent>

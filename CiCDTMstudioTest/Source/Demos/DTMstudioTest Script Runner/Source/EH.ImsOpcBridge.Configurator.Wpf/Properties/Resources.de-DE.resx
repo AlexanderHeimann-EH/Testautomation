@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivationKey" xml:space="preserve">
+    <value>Aktivierungs-schlüssel</value>
+    <comment>Content of the OPC Bridge settings page.</comment>
+  </data>
+  <data name="Activation" xml:space="preserve">
+    <value>Aktivierung</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="ActiveHeader" xml:space="preserve">
+    <value>Aktivierung</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Authentifizierung</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="AValidOPCItemIdEntryCannotBeEmptyOrContain" xml:space="preserve">
+    <value>Eine gültiges OPC Element kann nicht leer sein oder folgende Zeichen enthalten:</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="CannotBrowseOpcServers" xml:space="preserve">
+    <value>OPC Server können nicht durchsucht werden.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="CannotConnectOpcServer" xml:space="preserve">
+    <value>OPC Server können nicht verbunden werden.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="ClassIdHeader" xml:space="preserve">
+    <value>Class Identifikator</value>
+    <comment>Server View</comment>
+  </data>
+  <data name="ConnectServer" xml:space="preserve">
+    <value>Verbinde Server</value>
+    <comment>ToolTip ConnectServer</comment>
+  </data>
+  <data name="CreateAppDataFolderError" xml:space="preserve">
+    <value>Fehler während des Erzeugens des Anwendungsdatenordners.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="DataBytesCannotBeMoreThan" xml:space="preserve">
+    <value>Anzahl Datenbytes darf nicht höher sein als</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Datentyp</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="DataTypeHeader" xml:space="preserve">
+    <value>Datentyp</value>
+    <comment>Monitor Measurements View</comment>
+  </data>
+  <data name="DeleteEventLog" xml:space="preserve">
+    <value>Ereignisprotokoll löschen</value>
+    <comment>Event log</comment>
+  </data>
+  <data name="DeleteMeasurement" xml:space="preserve">
+    <value>Messwert löschen</value>
+    <comment>ToolTipDeleteMeasurement</comment>
+  </data>
+  <data name="DeserializeError" xml:space="preserve">
+    <value>Fehler während der Deserialisierung.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="DeviceId" xml:space="preserve">
+    <value>Geräte Identifkation</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="DeviceUidHeader" xml:space="preserve">
+    <value>Geräte Identifikation</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Deaktiviert</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="DoYouWantToDeleteTheEventLog" xml:space="preserve">
+    <value>Möchten Sie das Ereignisprotokoll löschen?</value>
+    <comment>EventLog</comment>
+  </data>
+  <data name="DoYouWantToSaveChangesYouMadeToTheDocument" xml:space="preserve">
+    <value>Möchten Sie die geänderte Konfiguration speichern?</value>
+    <comment>MainWindowVm</comment>
+  </data>
+  <data name="EditMeasurement" xml:space="preserve">
+    <value>Messwert editieren</value>
+    <comment>ToolTipEditMeasurement</comment>
+  </data>
+  <data name="EditMeasurementDetails" xml:space="preserve">
+    <value>Messwertdetails editieren</value>
+    <comment>ToolTipEditDetailsMeasurement</comment>
+  </data>
+  <data name="EnableAuthentication" xml:space="preserve">
+    <value>Authentifizierung aktivieren</value>
+    <comment>SupplyCare Settings</comment>
+  </data>
+  <data name="EnableConnection" xml:space="preserve">
+    <value>Verbindung aktivieren</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Aktiviert</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="EnableProxy" xml:space="preserve">
+    <value>Proxy aktivieren</value>
+    <comment>FIS Setting</comment>
+  </data>
+  <data name="EndressHauser" xml:space="preserve">
+    <value>Endress+Hauser</value>
+    <comment>Documentation Sub Title</comment>
+  </data>
+  <data name="EnterFilterTerm" xml:space="preserve">
+    <value>Eingabe Filter</value>
+    <comment>ServerView ToolTip</comment>
+  </data>
+  <data name="ErrorMessageNotImplemented" xml:space="preserve">
+    <value>Fehlermeldung noch nicht implementiert.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="ErrorWhileBrowsingAddressSpace" xml:space="preserve">
+    <value>Fehler während des Durchsuchens des Adressraums.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="EventLog" xml:space="preserve">
+    <value>Ereignisprotokoll</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="EventLogCommandName" xml:space="preserve">
+    <value>Ereignisprotokoll</value>
+    <comment>Name of the event log command.</comment>
+  </data>
+  <data name="EventLogCommandTooltip" xml:space="preserve">
+    <value>Anzeige Ereignisprotokoll</value>
+    <comment>Tooltip of the event log command.</comment>
+  </data>
+  <data name="EventLogCtrlPage" xml:space="preserve">
+    <value>Seite</value>
+    <comment>Content of the event log control.</comment>
+  </data>
+  <data name="EventLogStatusOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ExceptionThrown_" xml:space="preserve">
+    <value>Ausnahme ausgelöst: {0}</value>
+    <comment>Warning logging message.</comment>
+  </data>
+  <data name="ExitApplication" xml:space="preserve">
+    <value>Anwendung beenden</value>
+    <comment>ToolTip Close Application</comment>
+  </data>
+  <data name="ExportConfiguration" xml:space="preserve">
+    <value>Konfiguration exportieren</value>
+    <comment>ToolTip ExportConfiguration</comment>
+  </data>
+  <data name="ExportDenied" xml:space="preserve">
+    <value>Der Datenexport wurde verweigert.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="False" xml:space="preserve">
+    <value>Nicht aktiv</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="FieldHeader" xml:space="preserve">
+    <value>Feld</value>
+    <comment>MappingDetails View</comment>
+  </data>
+  <data name="FieldInformationServer" xml:space="preserve">
+    <value>Field Information Server</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+    <comment>ServerView</comment>
+  </data>
+  <data name="FilterNotEmpty" xml:space="preserve">
+    <value>Feld kann nicht geschlossen werden. Bitte löschen sie den Filter.</value>
+    <comment>Warning logging message.</comment>
+  </data>
+  <data name="FirstPage" xml:space="preserve">
+    <value>Erste Seite</value>
+    <comment>ToolTip FirstPage</comment>
+  </data>
+  <data name="FISTimeSchedule" xml:space="preserve">
+    <value>FIS Zeitplan</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="Gateway" xml:space="preserve">
+    <value>Gateway</value>
+    <comment>BridgeSettings</comment>
+  </data>
+  <data name="GenerateActivationKey" xml:space="preserve">
+    <value>Aktivierungsschlüssel generieren</value>
+    <comment>Content of the OPC Bridge settings page.</comment>
+  </data>
+  <data name="HelpAbout" xml:space="preserve">
+    <value>Hilfe Über</value>
+    <comment>ToolTip HelpAbout</comment>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Startseite</value>
+    <comment>ToolTip Home</comment>
+  </data>
+  <data name="HowToUseCommandAbout" xml:space="preserve">
+    <value>Über</value>
+    <comment>Content of How To Use page.</comment>
+  </data>
+  <data name="IllegalCharactersOr" xml:space="preserve">
+    <value>Unzulässige Zeichen oder</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="ImportConfiguration" xml:space="preserve">
+    <value>Konfiguration importieren</value>
+    <comment>ToolTip ImportConfiguration</comment>
+  </data>
+  <data name="Imprint" xml:space="preserve">
+    <value>Impressum</value>
+    <comment>Documentation Title
+</comment>
+  </data>
+  <data name="ImsOpcBridge" xml:space="preserve">
+    <value>OPC Bridge</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="InsertMeasurement" xml:space="preserve">
+    <value>Messwert einfügen</value>
+    <comment>ToolTipInsertMeasurement</comment>
+  </data>
+  <data name="Interval" xml:space="preserve">
+    <value>Intervall</value>
+    <comment>SupplyCare Settings</comment>
+  </data>
+  <data name="IsNotAValidEntry" xml:space="preserve">
+    <value>ist kein gültiger Wert. Bitte geben sie eine Adresse mit Werten zwischen 0 und 255 im korrekten Format ein.</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="LabelUnitStartTime" xml:space="preserve">
+    <value>Min.</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="LanguageCommandName" xml:space="preserve">
+    <value>Sprachen</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="LanguageSetTo_PleaseRestartImsOpcBridgeToSwitchTo_" xml:space="preserve">
+    <value>Sprache wurde umgestellt auf  {0}. Bitte starten Sie die Anwendung neu.</value>
+    <comment>Status bar text when switching language in the application.</comment>
+  </data>
+  <data name="Language_Selection" xml:space="preserve">
+    <value>Sprachauswahl</value>
+    <comment>Title of messages related to language selection.</comment>
+  </data>
+  <data name="LastPage" xml:space="preserve">
+    <value>Letzte Seite</value>
+    <comment>ToolTip LastPage</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Benutzernamen</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="MainCaption" xml:space="preserve">
+    <value>Titel Navigations Seite</value>
+    <comment>Title of the navigation page.</comment>
+  </data>
+  <data name="MainWindowVm_ApplicationName" xml:space="preserve">
+    <value>ImsOpcBridge</value>
+    <comment>Name of the application.</comment>
+  </data>
+  <data name="Mapping" xml:space="preserve">
+    <value>Zuordnung</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="MappingModeHeader" xml:space="preserve">
+    <value>Zuordnungsmode</value>
+    <comment>MappingDetails View</comment>
+  </data>
+  <data name="MeasurementItemAlreadyExists" xml:space="preserve">
+    <value>Messwertelement existiert bereits.</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="MeasurementItemNotAvailable" xml:space="preserve">
+    <value>Messwertelement nicht vorhanden.</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="MESSAGE" xml:space="preserve">
+    <value />
+    <comment>Leading text in status bar for all messages.</comment>
+  </data>
+  <data name="MissingArgument" xml:space="preserve">
+    <value>Fehlendes Argument.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Modell</value>
+    <comment>Content of the OPC Bridge settings page.</comment>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>Überwachung</value>
+    <comment>Content of the home page.</comment>
+  </data>
+  <data name="MonitorAlreadyRunning" xml:space="preserve">
+    <value>Die Messwertüberwachung läuft bereits.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="MonitorNotRunning" xml:space="preserve">
+    <value>Die Messwertüberwachung läuft nicht.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="NetworkConnections" xml:space="preserve">
+    <value>Netzwerk Verbindungen</value>
+    <comment>SupplyCare Settings</comment>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Nächste Seite</value>
+    <comment>ToolTip NextPage</comment>
+  </data>
+  <data name="NoValidUniqueIdentifier" xml:space="preserve">
+    <value>Keine gültige Seriennummer.</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="NumberOfItems" xml:space="preserve">
+    <value>Anzahl Elemente: {0}</value>
+  </data>
+  <data name="OpcServer" xml:space="preserve">
+    <value>OPC Server</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="OPCTimeSchedule" xml:space="preserve">
+    <value>OPC Zeitplan</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="OpenSource" xml:space="preserve">
+    <value>Open Source</value>
+    <comment>Documentation Title</comment>
+  </data>
+  <data name="OpenSourceSoftware" xml:space="preserve">
+    <value>Open Source Software</value>
+    <comment>Documentation Sub Title
+</comment>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Seite</value>
+    <comment>EventLog</comment>
+  </data>
+  <data name="PassWord" xml:space="preserve">
+    <value>Passwort</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="PleaseEnterANumberInTheRange" xml:space="preserve">
+    <value>Bitte geben sie eine Zahl im foldenden Bereich ein:</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="PleaseSelectMeasurementItem" xml:space="preserve">
+    <value>Bitte selektieren sie zuerst einen Messwert.</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="PleaseSelectServer" xml:space="preserve">
+    <value>Bitte selektieren sie zuerst einen Server.</value>
+    <comment>Server View</comment>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Port</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>Vorherige Seite</value>
+    <comment>ToolTip PreviousPage</comment>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Netzwerk Eigenschaften</value>
+    <comment>SupplyCare Settings</comment>
+  </data>
+  <data name="ProxyConfiguration" xml:space="preserve">
+    <value>Proxykonfiguration</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Qualität</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="QualityHeader" xml:space="preserve">
+    <value>Qualität</value>
+    <comment>Monitor Measurements View</comment>
+  </data>
+  <data name="SaveConfiguration" xml:space="preserve">
+    <value>Konfiguration speichern</value>
+    <comment>MainWindowVm</comment>
+  </data>
+  <data name="SaveConfigurationToolTip" xml:space="preserve">
+    <value>Konfiguration speichern</value>
+    <comment>ToolTip SaveConfiguration</comment>
+  </data>
+  <data name="SavingConfigurationTo_" xml:space="preserve">
+    <value>Speichere Konfiguration unter '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Auswahl Sprache</value>
+    <comment>Title on the language selection control</comment>
+  </data>
+  <data name="SenorUidHeader" xml:space="preserve">
+    <value>Sensor Identifikation</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="SensorId" xml:space="preserve">
+    <value>Sensor Identifikation</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="SerializeError" xml:space="preserve">
+    <value>Fehler während der Serialisierung.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="ServerConfiguration" xml:space="preserve">
+    <value>Serverkonfiguration</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="ServerNameHeader" xml:space="preserve">
+    <value>Server Name</value>
+    <comment>Server View</comment>
+  </data>
+  <data name="ServiceCommunicationError" xml:space="preserve">
+    <value>Service Kommunikationsfehler</value>
+    <comment>Caption ServiceCommunicationError</comment>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Set</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+    <comment>ToolTip Settings</comment>
+  </data>
+  <data name="SettingsVm_CommandAlignmentSelectedItemChangedHandler_Executing_" xml:space="preserve">
+    <value>Ausführung {0}</value>
+    <comment>Format for information logging messages.</comment>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Erfolgreich</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="SupplyCareEnterprise" xml:space="preserve">
+    <value>SupplyCare Enterprise</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>System Fehler</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="TheTargetMustBeOfTypeVisibility" xml:space="preserve">
+    <value>Das  Zielobject muss vom Typ 'Visibility' sein.</value>
+    <comment>Message in InvalidOperationException.</comment>
+  </data>
+  <data name="ThisEntryCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Das Eingabefeld darf nicht leer sein.</value>
+    <comment>ValidationCheck</comment>
+  </data>
+  <data name="TimeStamp" xml:space="preserve">
+    <value>Zeitstempel</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="TimeStampHeader" xml:space="preserve">
+    <value>Zeitstempel</value>
+    <comment>Monitor Measurements View</comment>
+  </data>
+  <data name="True" xml:space="preserve">
+    <value>Aktiv</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="UnDoConfiguration" xml:space="preserve">
+    <value>Rückgängig</value>
+    <comment>ToolTip UnDo</comment>
+  </data>
+  <data name="UniqueIdentifier" xml:space="preserve">
+    <value>Seriennummer</value>
+    <comment>Content of the OPC Bridge settings page.</comment>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Einheit</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="UnitHeader" xml:space="preserve">
+    <value>Einheit</value>
+    <comment>Monitor Measurements View</comment>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="UserLoginPassword" xml:space="preserve">
+    <value>Benutzernamen Passwort</value>
+    <comment>Content of the settings page.</comment>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Wert</value>
+    <comment>Mapping Details View</comment>
+  </data>
+  <data name="ValueHeader" xml:space="preserve">
+    <value>Wert</value>
+    <comment>MappingDetails View</comment>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+    <comment>Documentation Title</comment>
+  </data>
+  <data name="WebServer" xml:space="preserve">
+    <value>Webserver</value>
+    <comment>SupplyCare Settings</comment>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktiv</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="NotActive" xml:space="preserve">
+    <value>Nicht aktiv</value>
+    <comment>Mapping View</comment>
+  </data>
+  <data name="EventHeader" xml:space="preserve">
+    <value>Ereignis</value>
+    <comment>EventLogCtrl</comment>
+  </data>
+  <data name="TimeHeader" xml:space="preserve">
+    <value>Zeit</value>
+    <comment>EventLogCtrl</comment>
+  </data>
+  <data name="ActiveServer" xml:space="preserve">
+    <value>Aktiver Server:</value>
+    <comment>ServerView</comment>
+  </data>
+  <data name="NoServerForAddressSpaceBrowsingActivated" xml:space="preserve">
+    <value>Kein Server aktiviert</value>
+    <comment>ServerView</comment>
+  </data>
+  <data name="BrowseServerAddressSpace" xml:space="preserve">
+    <value>Server Adressraum durchsuchen</value>
+    <comment>ToolTip BrowseServerAddressSpace</comment>
+  </data>
+  <data name="FISRegistration" xml:space="preserve">
+    <value>Gateway beim Field Information Server registrieren</value>
+    <comment>FIS Settings</comment>
+  </data>
+  <data name="CannotRegisterFis" xml:space="preserve">
+    <value>Der Gateway konnte nicht beim Field Information Server registriert werden. Es muss eine gültige Gateway Seriennummer gespeichert sein.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="FISRegistrationSuccessfull" xml:space="preserve">
+    <value>Der Gateway wurde erfolgreich beim Field Information Server registriert.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="HowToUseCommandManual" xml:space="preserve">
+    <value>Bedienungsanleitung</value>
+    <comment>Help</comment>
+  </data>
+  <data name="ViewManual" xml:space="preserve">
+    <value>Ansicht Bedienungsanleitung</value>
+    <comment>Help</comment>
+  </data>
+  <data name="CannotStartMonitor" xml:space="preserve">
+    <value>Messwertüberwachung kann nicht gestartet werden.  Es muss ein gültiges Gateway Modell und Seriennummer gespeichert sein.</value>
+    <comment>Error Message Service.</comment>
+  </data>
+  <data name="SerialNumberInvalidIndividualSerialNumber" xml:space="preserve">
+    <value>The individual serial number is not valid. It must be 4 hex characters.</value>
+    <comment>Serial Number Validation.</comment>
+  </data>
+  <data name="SerialNumberInvalidProductCenter" xml:space="preserve">
+    <value>The product center is not valid. It must be '01'.</value>
+    <comment>Serial Number Validation.</comment>
+  </data>
+  <data name="SerialNumberInvalidProductIdentifier" xml:space="preserve">
+    <value>The product identifier is not valid. It must be 3 hex characters.</value>
+    <comment>Serial Number Validation.</comment>
+  </data>
+  <data name="SerialNumberInvalidProductionDate" xml:space="preserve">
+    <value>The production date is not valid. Either invalid year or month or date in the future.</value>
+    <comment>Serial Number Validation.</comment>
+  </data>
+  <data name="SerialNumberInvalidString" xml:space="preserve">
+    <value>The serial number must be 11 characters.</value>
+    <comment>Serial Number Validation.</comment>
+  </data>
+  <data name="EntryTooLong" xml:space="preserve">
+    <value>Der Wert darf nicht laenger als {0} Buchstaben sein.</value>
+    <comment>Wert zu lang.</comment>
+  </data>
+</root>

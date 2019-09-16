@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryParameterization</DisplayName>
+      <Guid>1f25cc51-4639-4444-ab15-64b77a785eb7</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryParameterization</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Check Close</DisplayName>
+          <Guid>0debfdfb-739a-4fe7-bddc-26b46f1cc8be</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Check Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>9d3edecb-1bc3-463f-a989-11a6523d271f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>35303B08-10E1-41FF-A8F1-6EB3E680FC18</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Examines the status of one or more parameter. Reports every parameter with the status 'Invalid';</Description>
+              <DisplayName>Parameterization.TC_CheckThatParameterAreNotInvalid.Run</DisplayName>
+              <Guid>d484a967-767c-4ea0-9c45-470c5355542d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Examines the status of one or more parameter. Reports every parameter with the status 'Invalid';</ToolTip>
+              <AssemblyMethodRefId>b66c439f-3f8b-41d5-a197-22dafdd7498c</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_CloseModuleOnline.Run</DisplayName>
+              <Guid>29692180-294e-4c88-8ed9-61d8d8f475e7</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>80017EBA-4323-4CE1-BCA4-47FB211A118C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Change And Check Parameter Close</DisplayName>
+          <Guid>98968dc3-b8bd-47c8-b852-b20186b5162d</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Change And Check Parameter Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>499921cd-bd63-40e3-b11d-1d388ec56485</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>35303B08-10E1-41FF-A8F1-6EB3E680FC18</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Changes the value of a parameter. Verifies that the value has changed afterwards.
+
+Param:
+The path to the parameter. Use this form: Micropilot 5x//Setup//Full calibration (4):
+
+Param:
+The value for the parameter.</Description>
+              <DisplayName>Parameterization.TC_ChangeParameterAndCheckValue.Run</DisplayName>
+              <Guid>ec408813-979b-4bb2-8be7-7f58691b1a23</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter, value)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Changes the value of a parameter. Verifies that the value has changed afterwards.
+
+Param:
+The path to the parameter. Use this form: Micropilot 5x//Setup//Full calibration (4):
+
+Param:
+The value for the parameter.</ToolTip>
+              <AssemblyMethodRefId>E0E3D2BB-4AF1-4AB4-A559-2471A5F7CE91</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the parameter. Use this form: Micropilot 5x//Setup//Full calibration (4):</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The value for the parameter.</Description>
+                  <Name>value</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks that a parameter cannot be set to an invalid or out of range value.
+
+Param:
+The path to the parameter. Use this form: Micropilot 5x//Setup//Full calibration (4):
+
+Param:
+An invalid value for this parameter. This could be an out of range value or invalid characters.</Description>
+              <DisplayName>Parameterization.TC_CheckThatParameterCannotBeSetToAnInvalidValue.Run</DisplayName>
+              <Guid>14fd4125-9ae3-41ea-a088-eca0d5fbcf06</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter, invalidValue)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks that a parameter cannot be set to an invalid or out of range value.
+
+Param:
+The path to the parameter. Use this form: Micropilot 5x//Setup//Full calibration (4):
+
+Param:
+An invalid value for this parameter. This could be an out of range value or invalid characters.</ToolTip>
+              <AssemblyMethodRefId>837e3fd1-0c90-4dc9-8820-43b510893e72</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the parameter. Use this form: Micropilot 5x//Setup//Full calibration (4):</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>An invalid value for this parameter. This could be an out of range value or invalid characters.</Description>
+                  <Name>invalidValue</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_CloseModuleOnline.Run</DisplayName>
+              <Guid>4e758fe8-e70c-42fa-8cb0-e539e2bd04cf</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>80017EBA-4323-4CE1-BCA4-47FB211A118C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Check Parameter Close Check</DisplayName>
+          <Guid>2ad237fd-4cbd-498e-a7f1-be04776163f6</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Check Parameter Close Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>700f4bd6-9425-448c-9f36-a3543d316e5c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>35303B08-10E1-41FF-A8F1-6EB3E680FC18</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks the value of a parameter
+
+Param:
+Name and path of parameter to check. Use this form: Micropilot 5x//Setup//Full calibration (4):
+
+Param:
+Expected value</Description>
+              <DisplayName>Parameterization.TC_CheckParameterValue.Run</DisplayName>
+              <Guid>d61da518-79af-4ba6-85d8-c021a207231c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter, checkValue)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks the value of a parameter
+
+Param:
+Name and path of parameter to check. Use this form: Micropilot 5x//Setup//Full calibration (4):
+
+Param:
+Expected value</ToolTip>
+              <AssemblyMethodRefId>9F631AAC-E2BE-4B21-8779-0CABAE795C1C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>Name and path of parameter to check. Use this form: Micropilot 5x//Setup//Full calibration (4):</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Expected value</Description>
+                  <Name>checkValue</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_CloseModuleOnline.Run</DisplayName>
+              <Guid>c89be7c1-ebdb-4026-9b52-6e67000966ac</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>80017EBA-4323-4CE1-BCA4-47FB211A118C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>493af9a6-de82-480c-810b-41e6f67c0747</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>ParameterizationOnline</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

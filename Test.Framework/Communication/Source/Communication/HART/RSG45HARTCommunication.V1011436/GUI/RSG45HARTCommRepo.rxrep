@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="RSG45HARTCommRepo"
+id="2d4bd0ca-e102-49e1-9d40-916324b52ad7"
+rxversion="6.1">
+	<codegen
+	classname="RSG45HARTCommRepo"
+	namespace="EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI"/>
+	<rootfolder
+	name="Root"
+	id="f20d1de9-44e5-4bb7-b7c0-50b5be9ae541"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<folder
+		name="ParamContainer"
+		id="fc69d7b5-7a3b-4a3f-9cb5-c8954d0ace21"
+		searchtimeout="30000ms"
+		capname="container"
+		addcaps="container,control,nativewindow"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="IPAddress"
+			id="1818ee1d-309e-4832-aa8e-054faa6e1ecf"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,control,nativewindow"
+			refimgid="83c203a8-d00c-4a81-be2a-997e9d2d56a0">
+				/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/container[@controlname='addressEdit' and @controltypename='ImageEditControl']/element[@controlname='textBox' and @controltypename='EditControl' and @instance='0']/text[@controlname='MaskBox' and @controltypename='MaskBoxControlBase' and @instance='0']
+			</item>
+			<item
+			name="Port"
+			id="e9ca0586-dc19-4a2b-85d7-eb1d672c88be"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,control,nativewindow"
+			refimgid="a59ea88b-1606-4609-8607-a404aba15809">
+				/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/container[@controlname='portEdit' and @controltypename='ImageEditControl']/element[@controlname='textBox' and @controltypename='EditControl' and @instance='0']/text[@controlname='MaskBox' and @controltypename='MaskBoxControlBase' and @instance='0']
+			</item>
+			<folder
+			name="StartAddressCombobox"
+			id="fe0719d3-42e5-4e0f-8d5e-0e10385d7e92"
+			searchtimeout="30000ms"
+			capname="unknown"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="StartAddressComboButton"
+				id="8a82ae45-2048-44f6-a618-abe12cede436"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,accessible">
+					/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='startScanAddressComboBox' and @controltypename='ComboBoxControl' and @instance='7']/button[@accessiblerole='PushButton']
+				</item>
+				<basepath>
+					/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='startScanAddressComboBox' and @controltypename='ComboBoxControl' and @instance='7']
+				</basepath>
+			</folder>
+			<folder
+			name="EndAddressCombobox"
+			id="adea33d8-5a69-468d-9b33-bcaa113ffddf"
+			searchtimeout="30000ms"
+			capname="unknown"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="EndAddressComboButton"
+				id="95df4318-dc44-4b0c-b1a6-46f899b241a8"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,accessible">
+					/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='endScanAddressComboBox' and @controltypename='ComboBoxControl' and @instance='8']/button[@accessiblerole='PushButton']
+				</item>
+				<basepath>
+					/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='endScanAddressComboBox' and @controltypename='ComboBoxControl' and @instance='8']
+				</basepath>
+			</folder>
+			<folder
+			name="TimeoutCombobox"
+			id="b05b0987-22ef-4385-863e-cfb4629875e1"
+			searchtimeout="30000ms"
+			capname="unknown"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="TimeoutComboButton"
+				id="059a700a-d43e-4206-932c-4614c9669ac1"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,accessible">
+					/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='commTimeoutComboBox' and @controltypename='ComboBoxControl' and @instance='9']/button[@accessiblerole='PushButton']
+				</item>
+				<basepath>
+					/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='commTimeoutComboBox' and @controltypename='ComboBoxControl' and @instance='9']
+				</basepath>
+			</folder>
+			<item
+			name="Apply"
+			id="c12d514c-2146-4b15-af52-8d963f7f117c"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible"
+			refimgid="e2428028-a8ab-431d-8ce9-e15e12346416">
+				/container[@controlname='ContainerForm' and @controltypename='ContainerForm']/element[@controlname='applyButton' and @controltypename='ButtonControl' and @instance='10']/button[@accessiblename='Apply' and @accessiblerole='PushButton' and @text='Apply']
+			</item>
+			<basepath>
+				/container[@controlname='ContainerForm' and @controltypename='ContainerForm']
+			</basepath>
+		</folder>
+		<appfolder
+		name="ListContainer"
+		id="f114dbfc-a311-40ef-a72d-714ac039f2b7"
+		searchtimeout="30000ms"
+		capname="unknown"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="List"
+			id="353e0610-89e8-41f2-a823-2a3e9ecbd876"
+			searchtimeout="30000ms"
+			capname="list"
+			addcaps="listitem,accessible"
+			refimgid="0899b2bd-39df-4121-82d3-188426b8d00b">
+				/form[@processname='FMPFrame' and @controltypename='PopupImageComboBoxEditListBoxForm']/element[@controltypename='PopupImageComboBoxEditListBox']/list[@accessiblerole='List']
+			</item>
+			<basepath>
+				/form[@processname='FMPFrame' and @controltypename='PopupImageComboBoxEditListBoxForm']/element[@controltypename='PopupImageComboBoxEditListBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

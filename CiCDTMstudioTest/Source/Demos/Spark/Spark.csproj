@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84622C75-04E1-4797-9F59-EC4D57A3EC65}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Spark</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Spark\Bindings\Binding.cs" />
+    <Compile Include="Spark\Parser\Grammar.cs" />
+    <Compile Include="Spark\Parser\CharGrammar.cs" />
+    <Compile Include="Spark\Bindings\BindingGrammar.cs" />
+    <Compile Include="Spark\Bindings\BindingNode.cs" />
+    <Compile Include="Spark\Bindings\BindingLiteral.cs" />
+    <Compile Include="Spark\Bindings\BindingNameReference.cs" />
+    <Compile Include="Spark\Bindings\BindingPrefixReference.cs" />
+    <Compile Include="Spark\Bindings\BindingChildReference.cs" />
+    <Compile Include="Spark\Bindings\BindingPhrase.cs" />
+    <Compile Include="Spark\Bindings\IBindingProvider.cs" />
+    <Compile Include="Spark\Bindings\BindingProvider.cs" />
+    <Compile Include="Spark\Bindings\BindingRequest.cs" />
+    <Compile Include="Spark\Bindings\DefaultBindingProvider.cs" />
+    <Compile Include="Spark\CacheExpires.cs" />
+    <Compile Include="Spark\ICacheSignal.cs" />
+    <Compile Include="Spark\CacheSignal.cs" />
+    <Compile Include="Spark\Caching\CacheMemento.cs" />
+    <Compile Include="Spark\Caching\CacheOriginator.cs" />
+    <Compile Include="Spark\ICacheService.cs" />
+    <Compile Include="Spark\Caching\DefaultCacheService.cs" />
+    <Compile Include="Spark\Caching\TextWriterOriginator.cs" />
+    <Compile Include="Spark\Caching\SpoolWriterOriginator.cs" />
+    <Compile Include="Spark\Caching\StringWriterOriginator.cs" />
+    <Compile Include="Spark\Caching\TextWriterMemento.cs" />
+    <Compile Include="Spark\Compiler\CompilerException.cs" />
+    <Compile Include="Spark\Compiler\BatchCompilerException.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\INodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\AbstractNodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\NodeVisitor!1.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\SpecialAttributeVisitorBase.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\CacheAttributeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\IndentationVisitor.cs" />
+    <Compile Include="Spark\ISparkViewEntry.cs" />
+    <Compile Include="Spark\CompositeViewEntry.cs" />
+    <Compile Include="Spark\ISparkView.cs" />
+    <Compile Include="Spark\SparkViewBase.cs" />
+    <Compile Include="Spark\SparkViewDecorator.cs" />
+    <Compile Include="Spark\AbstractSparkView.cs" />
+    <Compile Include="Spark\NullCacheService.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\BindingExpansionVisitor.cs" />
+    <Compile Include="Spark\Parser\Offset\ParserAssistance.cs" />
+    <Compile Include="Spark\Parser\Code\CodeGrammar.cs" />
+    <Compile Include="Spark\Parser\Markup\MarkupGrammar.cs" />
+    <Compile Include="Spark\Parser\Offset\OffsetGrammar.cs" />
+    <Compile Include="Spark\SparkViewContext.cs" />
+    <Compile Include="Spark\CompiledViewEntry.cs" />
+    <Compile Include="Spark\ICompiledViewHolder.cs" />
+    <Compile Include="Spark\CompiledViewHolder.cs" />
+    <Compile Include="Spark\Compiler\BatchCompiler.cs" />
+    <Compile Include="Spark\Compiler\AssemblyExtentions.cs" />
+    <Compile Include="Spark\Compiler\Chunk.cs" />
+    <Compile Include="Spark\Compiler\SendLiteralChunk.cs" />
+    <Compile Include="Spark\Compiler\SendExpressionChunk.cs" />
+    <Compile Include="Spark\Compiler\CodeStatementChunk.cs" />
+    <Compile Include="Spark\Compiler\GlobalVariableChunk.cs" />
+    <Compile Include="Spark\Compiler\LocalVariableChunk.cs" />
+    <Compile Include="Spark\Compiler\DefaultVariableChunk.cs" />
+    <Compile Include="Spark\Compiler\ViewDataChunk.cs" />
+    <Compile Include="Spark\Compiler\ViewDataModelChunk.cs" />
+    <Compile Include="Spark\Compiler\AssignVariableChunk.cs" />
+    <Compile Include="Spark\Compiler\UseContentChunk.cs" />
+    <Compile Include="Spark\Compiler\RenderPartialChunk.cs" />
+    <Compile Include="Spark\Compiler\UseImportChunk.cs" />
+    <Compile Include="Spark\Compiler\UseMasterChunk.cs" />
+    <Compile Include="Spark\Compiler\RenderSectionChunk.cs" />
+    <Compile Include="Spark\Compiler\UseNamespaceChunk.cs" />
+    <Compile Include="Spark\Compiler\UseAssemblyChunk.cs" />
+    <Compile Include="Spark\Compiler\ContentChunk.cs" />
+    <Compile Include="Spark\Compiler\ContentAddType.cs" />
+    <Compile Include="Spark\Compiler\ContentSetChunk.cs" />
+    <Compile Include="Spark\Compiler\ForEachChunk.cs" />
+    <Compile Include="Spark\Compiler\MacroChunk.cs" />
+    <Compile Include="Spark\Compiler\MacroParameter.cs" />
+    <Compile Include="Spark\Compiler\ScopeChunk.cs" />
+    <Compile Include="Spark\Compiler\ConditionalChunk.cs" />
+    <Compile Include="Spark\Compiler\ConditionalType.cs" />
+    <Compile Include="Spark\Compiler\ExtensionChunk.cs" />
+    <Compile Include="Spark\Compiler\PageBaseTypeChunk.cs" />
+    <Compile Include="Spark\Compiler\CacheChunk.cs" />
+    <Compile Include="Spark\Compiler\MarkdownChunk.cs" />
+    <Compile Include="Spark\Compiler\ChunkVisitors\IChunkVisitor.cs" />
+    <Compile Include="Spark\Compiler\ChunkVisitors\AbstractChunkVisitor.cs" />
+    <Compile Include="Spark\Compiler\ChunkVisitors\ChunkVisitor.cs" />
+    <Compile Include="Spark\Compiler\ChunkVisitors\GeneratedCodeVisitorBase.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\CodeProcessingChunkVisitor.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\JavascriptAnonymousTypeVisitor.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\JavascriptAnonymousTypeGrammar.cs" />
+    <Compile Include="Spark\Compiler\SourceMapping.cs" />
+    <Compile Include="Spark\Compiler\SourceWriter.cs" />
+    <Compile Include="Spark\Compiler\VisualBasic\ChunkVisitors\BaseClassVisitor.cs" />
+    <Compile Include="Spark\Compiler\VisualBasic\ChunkVisitors\GeneratedCodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\VisualBasic\ChunkVisitors\GlobalMembersVisitor.cs" />
+    <Compile Include="Spark\Compiler\VisualBasic\ChunkVisitors\UsingNamespaceVisitor.cs" />
+    <Compile Include="Spark\Compiler\ViewCompiler.cs" />
+    <Compile Include="Spark\Compiler\VisualBasic\VisualBasicViewCompiler.cs" />
+    <Compile Include="Spark\ISparkLanguageFactory.cs" />
+    <Compile Include="Spark\DefaultLanguageFactory.cs" />
+    <Compile Include="Spark\Compiler\ExpressionBuilder.cs" />
+    <Compile Include="Spark\Compiler\CSharp\ChunkVisitors\BaseClassVisitor.cs" />
+    <Compile Include="Spark\Compiler\ChunkVisitors\DetectCodeExpressionVisitor.cs" />
+    <Compile Include="Spark\Compiler\CSharp\ChunkVisitors\FileReferenceVisitor.cs" />
+    <Compile Include="Spark\Compiler\CSharp\ChunkVisitors\GeneratedCodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\ForEachInspector.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\JavascriptGlobalMembersVisitor.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\JavascriptGeneratedCodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\JavascriptPostRenderVisitor.cs" />
+    <Compile Include="Spark\Compiler\Javascript\ChunkVisitors\JavascriptPreRenderVisitor.cs" />
+    <Compile Include="Spark\Compiler\CSharp\ChunkVisitors\GlobalMembersVisitor.cs" />
+    <Compile Include="Spark\Compiler\CSharp\ChunkVisitors\UsingNamespaceVisitor.cs" />
+    <Compile Include="Spark\Compiler\CollectionUtility.cs" />
+    <Compile Include="Spark\Compiler\CSharp\CSharpViewCompiler.cs" />
+    <Compile Include="Spark\Compiler\FileContext.cs" />
+    <Compile Include="Spark\Compiler\Javascript\JavascriptViewCompiler.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\ChunkBuilderVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\ConditionalAttributeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\OnceAttributeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\IncludeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\NamespaceVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\NameUtility.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\Frame!1.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\NodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\WhitespaceCleanerVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\PrefixExpandingVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\TestElseElementVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\ForEachAttributeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\SpecialNodeInspector.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\SpecialNodeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\TypeInspector.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\UrlAttributeVisitor.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\NamespacesType.cs" />
+    <Compile Include="Spark\Compiler\NodeVisitors\VisitorContext.cs" />
+    <Compile Include="Spark\Configuration\AssemblyElement.cs" />
+    <Compile Include="Spark\Configuration\AssemblyElementCollection.cs" />
+    <Compile Include="Spark\Configuration\CompilationElement.cs" />
+    <Compile Include="Spark\Configuration\ResourcePathElement.cs" />
+    <Compile Include="Spark\Configuration\PagesElement.cs" />
+    <Compile Include="Spark\Configuration\ResourcePathElementCollection.cs" />
+    <Compile Include="Spark\IViewFolderSettings.cs" />
+    <Compile Include="Spark\Configuration\ViewFolderElement.cs" />
+    <Compile Include="Spark\Configuration\ViewFolderElementCollection.cs" />
+    <Compile Include="Spark\ISparkServiceInitialize.cs" />
+    <Compile Include="Spark\FileSystem\ITemplateLocator.cs" />
+    <Compile Include="Spark\FileSystem\LocateResult.cs" />
+    <Compile Include="Spark\Parser\Code\Snippet.cs" />
+    <Compile Include="Spark\Parser\Code\Snippets.cs" />
+    <Compile Include="Spark\Parser\IParserSettings.cs" />
+    <Compile Include="Spark\Parser\ParserSettings.cs" />
+    <Compile Include="Spark\Parser\Markup\SparkTokenType.cs" />
+    <Compile Include="Spark\ISparkServiceContainer.cs" />
+    <Compile Include="Spark\SparkServiceContainer.cs" />
+    <Compile Include="Spark\FileSystem\ViewFolderType.cs" />
+    <Compile Include="Spark\Constants.cs" />
+    <Compile Include="Spark\IResourcePathManager.cs" />
+    <Compile Include="Spark\DefaultResourcePathManager.cs" />
+    <Compile Include="Spark\IViewActivatorFactory.cs" />
+    <Compile Include="Spark\IViewActivator.cs" />
+    <Compile Include="Spark\DefaultViewActivator.cs" />
+    <Compile Include="Spark\FileSystem\IViewFolder.cs" />
+    <Compile Include="Spark\FileSystem\CombinedViewFolder.cs" />
+    <Compile Include="Spark\FileSystem\InMemoryViewFolder.cs" />
+    <Compile Include="Spark\FileSystem\IViewFile.cs" />
+    <Compile Include="Spark\FileSystem\EmbeddedViewFolder.cs" />
+    <Compile Include="Spark\FileSystem\IViewFolderExtensions.cs" />
+    <Compile Include="Spark\FileSystem\SubViewFolder.cs" />
+    <Compile Include="Spark\FileSystem\VirtualPathProviderViewFolder.cs" />
+    <Compile Include="Spark\NullBehaviour.cs" />
+    <Compile Include="Spark\AttributeBehaviour.cs" />
+    <Compile Include="Spark\ISparkSettings.cs" />
+    <Compile Include="Spark\IResourceMapping.cs" />
+    <Compile Include="Spark\SimpleResourceMapping.cs" />
+    <Compile Include="Spark\ViewFolderSettings.cs" />
+    <Compile Include="Spark\Configuration\NamespaceElement.cs" />
+    <Compile Include="Spark\Configuration\NamespaceElementCollection.cs" />
+    <Compile Include="Spark\Configuration\SparkSectionHandler.cs" />
+    <Compile Include="Spark\FileSystem\FileSystemViewFolder.cs" />
+    <Compile Include="Spark\FileSystem\FileSystemViewFile.cs" />
+    <Compile Include="Spark\ISparkExtensionFactory.cs" />
+    <Compile Include="Spark\ISparkExtension.cs" />
+    <Compile Include="Spark\OutputLocation.cs" />
+    <Compile Include="Spark\ISparkSyntaxProvider.cs" />
+    <Compile Include="Spark\ISparkViewEngine.cs" />
+    <Compile Include="Spark\Parser\Chain!2.cs" />
+    <Compile Include="Spark\Parser\Code\AttributeNodeExtensions.cs" />
+    <Compile Include="Spark\Parser\Markup\Node.cs" />
+    <Compile Include="Spark\Parser\Markup\TextNode.cs" />
+    <Compile Include="Spark\Parser\Markup\EntityNode.cs" />
+    <Compile Include="Spark\Parser\Markup\CommentNode.cs" />
+    <Compile Include="Spark\Parser\Markup\AttributeNode.cs" />
+    <Compile Include="Spark\Parser\Markup\ConditionNode.cs" />
+    <Compile Include="Spark\Parser\Markup\ExpressionNode.cs" />
+    <Compile Include="Spark\Parser\Markup\StatementNode.cs" />
+    <Compile Include="Spark\Parser\Markup\ExternalIdInfo.cs" />
+    <Compile Include="Spark\Parser\Markup\DoctypeNode.cs" />
+    <Compile Include="Spark\Parser\Markup\XMLDeclNode.cs" />
+    <Compile Include="Spark\Parser\Markup\ProcessingInstructionNode.cs" />
+    <Compile Include="Spark\Parser\Markup\ElementNode.cs" />
+    <Compile Include="Spark\Parser\Markup\EndElementNode.cs" />
+    <Compile Include="Spark\Parser\Markup\SpecialNode.cs" />
+    <Compile Include="Spark\Parser\Markup\ExtensionNode.cs" />
+    <Compile Include="Spark\Parser\Markup\IndentationNode.cs" />
+    <Compile Include="Spark\Parser\ParseAction!1.cs" />
+    <Compile Include="Spark\Parser\ParseActionExtensions.cs" />
+    <Compile Include="Spark\Parser\ParseResult!1.cs" />
+    <Compile Include="Spark\Parser\Paint.cs" />
+    <Compile Include="Spark\Parser\Paint!1.cs" />
+    <Compile Include="Spark\Parser\PaintLink.cs" />
+    <Compile Include="Spark\Parser\Position.cs" />
+    <Compile Include="Spark\Parser\SourceContext.cs" />
+    <Compile Include="Spark\Parser\Syntax\AbstractSyntaxProvider.cs" />
+    <Compile Include="Spark\Parser\Syntax\CSharpGrammar.cs" />
+    <Compile Include="Spark\Parser\Syntax\CSharpSyntaxProvider.cs" />
+    <Compile Include="Spark\Parser\Syntax\DefaultSyntaxProvider.cs" />
+    <Compile Include="Spark\Parser\ViewLoader.cs" />
+    <Compile Include="Spark\PrecompileAttribute.cs" />
+    <Compile Include="Spark\SparkBatchDescriptor.cs" />
+    <Compile Include="Spark\SparkBatchEntry.cs" />
+    <Compile Include="Spark\SparkBatchConfigurator.cs" />
+    <Compile Include="Spark\SparkSettings.cs" />
+    <Compile Include="Spark\DefaultTemplateLocator.cs" />
+    <Compile Include="Spark\SparkViewAttribute.cs" />
+    <Compile Include="Spark\LanguageType.cs" />
+    <Compile Include="Spark\SparkViewDescriptor.cs" />
+    <Compile Include="Spark\SparkViewEngine.cs" />
+    <Compile Include="Spark\Spool\SpoolPage.cs" />
+    <Compile Include="Spark\Spool\SpoolReader.cs" />
+    <Compile Include="Spark\Spool\SpoolWriter.cs" />
+    <Compile Include="Spark\Spool\TextWriterExtensions.cs" />
+    <Compile Include="Spark\Utilities\CacheUtilities.cs" />
+    <Compile Include="Spark\Utilities\Markdown.cs" />
+    <Compile Include="Spark\ValueHolder.cs" />
+    <Compile Include="Spark\ValueHolder!1.cs" />
+    <Compile Include="Spark\ValueHolder!2.cs" />
+  </ItemGroup>
+</Project>

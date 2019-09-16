@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.OpcAddressSpaceControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+
+
+
+    <Grid x:Uid="Grid_1" Background="{DynamicResource PaneBackgroundBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <!--<RowDefinition x:Uid="RowDefinition_1" Height="10" />
+            <RowDefinition x:Uid="RowDefinition_1" Height="30" />
+            <RowDefinition x:Uid="RowDefinition_1" Height="10" />-->
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+
+            <!--
+    <TextBlock DockPanel.Dock="Bottom" Width ="300" TextWrapping="Wrap" FontSize="12">
+     TestText ...
+    </TextBlock>
+        -->
+
+
+            <TreeView  Grid.Row="0" Grid.Column="0" ItemsSource="{Binding Path=OpcItems, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                  PreviewMouseLeftButtonDown="TreePreviewMouseLeftButtonDown" PreviewMouseMove="TreeMouseMove">
+                <TreeView.ItemContainerStyle>
+                    
+                    <!-- This Style binds a TreeViewItem to a TreeViewItemViewModel. -->
+                    <Style TargetType="{x:Type TreeViewItem}">
+                        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                        <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <!--<Setter Property="FontSize" Value="40" />-->
+                        <Style.Triggers>
+
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+
+                        </Style.Triggers>
+                    </Style>
+                </TreeView.ItemContainerStyle>
+
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate DataType="{x:Type viewModel:OpcItemMappingTreeRootVm}"  ItemsSource="{Binding Children}">
+
+                        <Grid x:Uid="Grid_1">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="16" />
+                                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+                                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Image Width="16" Height="16" Grid.Row="0" Grid.Column="0" Source="../Resources/DesignA2/ArrowTree.png" />
+                            <TextBlock Text="{Binding RootOpcItemName}" Grid.Row="0"  Grid.Column="1" VerticalAlignment="Center"  />
+                            <TextBlock Background="Transparent" Height ="20"  Width="16" Grid.Row="0" Grid.Column="2"/>
+
+                        </Grid>
+
+                    </HierarchicalDataTemplate>
+
+
+                    <HierarchicalDataTemplate DataType="{x:Type viewModel:OpcItemMappingTreeChildrenVm}" ItemsSource="{Binding Children}">
+
+                        <Grid x:Uid="Grid_1">
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="16" />
+                                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+                                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Image Width="16" Height="16" Grid.Row="0" Grid.Column="0" Source="../Resources/DesignA2/BulletTree.png" />
+                            <TextBlock Text="{Binding OpcItemName}" Grid.Row="0"  Grid.Column="1" VerticalAlignment="Center"  />
+                            <TextBlock Background="Transparent" Height ="20"  Width="16" Grid.Row="0" Grid.Column="2"/>
+                     
+                        </Grid>
+
+                    </HierarchicalDataTemplate>
+
+                </TreeView.Resources>
+            </TreeView>
+
+
+        </DockPanel>
+
+        <!--<TextBox Name="TextBox" Grid.Row="2" VerticalContentAlignment="Center"  Text="TestText"/>-->
+
+
+    </Grid>
+
+   
+       
+</UserControl>

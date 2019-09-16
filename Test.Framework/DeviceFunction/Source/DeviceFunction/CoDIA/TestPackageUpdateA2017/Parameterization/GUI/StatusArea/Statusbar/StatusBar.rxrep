@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="StatusBar"
+id="ed25510f-7899-41f3-a125-005a154725a6"
+rxversion="6.1">
+	<codegen
+	classname="StatusBar"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.Parameterization.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="3a13262f-f09a-4aed-aab1-0ca7e454ffcc"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="txtConnectionState"
+		id="9305361f-f968-4995-b661-2a19fd074d08"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="2a955aca-178d-4cd8-8820-18232e3f51ec">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmStatusBar']/element/element/statusbar/text[@childindex='0']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

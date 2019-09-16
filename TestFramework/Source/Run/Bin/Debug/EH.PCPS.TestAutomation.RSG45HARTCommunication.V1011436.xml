@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.CloseConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            RSG45 HART Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.CloseConfiguration.Run">
+            <summary>
+            Opens the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.ConfigureCommunication">
+            <summary>
+            Implementation of IConfigureCommunication for
+            RSG45 HART Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.ConfigureCommunication.Run(EH.PCPS.TestAutomation.Common.DataTypes.Communication)">
+            <summary>
+            Performs the configuration of the RSG45 HART Communication DTM
+            </summary>
+            <returns>
+            <br>True: if configuration was successful</br>
+            <br>False: if configuration was unsuccessful or errors occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.ConfigureCommunication.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication configuration.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.OpenConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            RSG45 HART Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.CommonFlows.OpenConfiguration.Run">
+            <summary>
+            Closes the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.PressButton">
+            <summary>
+            Provides functionalities for buttons
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.PressButton.Run(Ranorex.Button)">
+            <summary>
+            Clicks a button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SetParameter">
+            <summary>
+            Provides functionality to set parameter for different control types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="elementOpen">The button to open the control</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SetParameter.SetTextValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a text control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="elementOpen">parameter button to open cbox</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Execution.SettingParser.Compare(System.String,System.String)">
+            <summary>
+            Checks, after parsing, if two strings are equal
+            </summary>
+            <param name="input1">The first string argument</param>
+            <param name="input2">The second string argument</param>
+            <returns>
+            True, if both strings are equal
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Validation.IsModuleConfigurable">
+            <summary>
+            Checks if the module is offline
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Validation.IsModuleConfigurable.Run(System.Boolean)">
+            <summary>
+            Checks if the module configurable (offline)
+            by determining if the IP address text is enabled
+            </summary>
+            <returns>
+                <br>True: if module is configurable (offline)</br>
+                <br>False: if module is not configurable (online) or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Validation.IsModuleReady">
+            <summary>
+            Checks if a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Validation.IsModuleReady.Run">
+            <summary>
+            Checks if button [Apply] is available
+            </summary>
+            <returns>
+            <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady">
+            <summary>
+            Waits until a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo">
+            <summary>
+            The class representing the RSG45HARTCommRepo element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo.Instance">
+            <summary>
+            Gets the singleton class instance representing the RSG45HARTCommRepo element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo.ParamContainer">
+            <summary>
+            The ParamContainer folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo.ListContainer">
+            <summary>
+            The ListContainer folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder">
+            <summary>
+            The ParamContainerFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ParamContainer  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.IPAddress">
+            <summary>
+            The IPAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.IPAddressInfo">
+            <summary>
+            The IPAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.Port">
+            <summary>
+            The Port item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.PortInfo">
+            <summary>
+            The Port item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.Apply">
+            <summary>
+            The Apply item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.ApplyInfo">
+            <summary>
+            The Apply item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.StartAddressCombobox">
+            <summary>
+            The StartAddressCombobox folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.EndAddressCombobox">
+            <summary>
+            The EndAddressCombobox folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ParamContainerFolder.TimeoutCombobox">
+            <summary>
+            The TimeoutCombobox folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.StartAddressComboboxFolder">
+            <summary>
+            The StartAddressComboboxFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.StartAddressComboboxFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new StartAddressCombobox  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.StartAddressComboboxFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.StartAddressComboboxFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.StartAddressComboboxFolder.StartAddressComboButton">
+            <summary>
+            The StartAddressComboButton item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.StartAddressComboboxFolder.StartAddressComboButtonInfo">
+            <summary>
+            The StartAddressComboButton item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.EndAddressComboboxFolder">
+            <summary>
+            The EndAddressComboboxFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.EndAddressComboboxFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new EndAddressCombobox  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.EndAddressComboboxFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.EndAddressComboboxFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.EndAddressComboboxFolder.EndAddressComboButton">
+            <summary>
+            The EndAddressComboButton item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.EndAddressComboboxFolder.EndAddressComboButtonInfo">
+            <summary>
+            The EndAddressComboButton item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.TimeoutComboboxFolder">
+            <summary>
+            The TimeoutComboboxFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.TimeoutComboboxFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new TimeoutCombobox  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.TimeoutComboboxFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.TimeoutComboboxFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.TimeoutComboboxFolder.TimeoutComboButton">
+            <summary>
+            The TimeoutComboButton item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.TimeoutComboboxFolder.TimeoutComboButtonInfo">
+            <summary>
+            The TimeoutComboButton item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ListContainerAppFolder">
+            <summary>
+            The ListContainerAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ListContainerAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ListContainer  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ListContainerAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ListContainerAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ListContainerAppFolder.List">
+            <summary>
+            The List item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoFolders.ListContainerAppFolder.ListInfo">
+            <summary>
+            The List item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements">
+            <summary>
+            Provides access to the GUI elements of the repository 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.rsgHartRepository">
+            <summary>
+            Holds the instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.commDTMContainerPath">
+            <summary>
+            Holds the path to the commDTMContainer
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepo"/> class
+            and gets the commDTMContainerPath
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.ButtonApply">
+            <summary>
+                Gets the 'ButtonApply' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.StartAddressComboButton">
+            <summary>
+                Gets the 'StartAddressComboButton' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.EndAddressComboButton">
+            <summary>
+                Gets the 'EndAddressComboButton' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.TimeoutComboButton">
+            <summary>
+                Gets the 'TimeoutComboButton' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.IPAddress">
+            <summary>
+             Gets the 'IPAddress' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.Port">
+            <summary>
+             Gets the 'Port' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.StartAddressCombobox">
+            <summary>
+            Gets the 'StartAddressCombobox' object
+            </summary>
+            <returns>
+                <br>Element: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.EndAddressCombobox">
+            <summary>
+            Gets the 'EndAddressCombobox' object
+            </summary>
+            <returns>
+                <br>Element: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.TimeoutCombobox">
+            <summary>
+            Gets the 'TimeoutCombobox' object
+            </summary>
+            <returns>
+                <br>Element: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.GUI.RSG45HARTCommRepoElements.ComboboxList">
+            <summary>
+                Gets an Ilist of all items in a combobox
+            </summary>
+            <returns>
+                <br>Ilist: if the list can be created</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.ClickButtonApply">
+            <summary>
+            Provides function to click the apply button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.ClickButtonApply.Run">
+            <summary>
+            Clicks the button apply
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.IsApplyButtonEnabled">
+            <summary>
+            Provides function to check if the button apply is enabled
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.IsApplyButtonEnabled.Run">
+            <summary>
+            Checks if the 'Apply' button is enabled
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action was unsuccessful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetEndAddress">
+            <summary>
+            Provides a method to set the end address
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetEndAddress.Run(System.String)">
+            <summary>
+            Sets the "End Address" combobox to a specific value
+            </summary>
+            <param name="value">The value of the listitem to set</param>
+            <returns>
+                <br>True: if the correct listitem was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetIPAddress">
+            <summary>
+            Provides a method to set the end address
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetIPAddress.Run(System.String)">
+            <summary>
+            Sets the "Port" textbox to a specific value
+            </summary>
+            <param name="value">The value of the listitem to set</param>
+            <returns>
+                <br>True: if the text was set</br>
+                <br>False: if the text could not be set, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetPort">
+            <summary>
+            Provides a method to set the end address
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetPort.Run(System.String)">
+            <summary>
+            Sets the "Port" textbox to a specific value
+            </summary>
+            <param name="value">The value of the listitem to set</param>
+            <returns>
+                <br>True: if the text was set</br>
+                <br>False: if the text could not be set, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetStartAddress">
+            <summary>
+            Provides a method to set the start address
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetStartAddress.Run(System.String)">
+            <summary>
+            Sets the "Start Address" combobox to a specific value
+            </summary>
+            <param name="value">The value of the listitem to set</param>
+            <returns>
+                <br>True: if the correct listitem was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetTimeout">
+            <summary>
+            Provides a method to set the timeout
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.SpecificFlows.SetTimeout.Run(System.String)">
+            <summary>
+            Sets the "Timeout" combobox to a specific value
+            </summary>
+            <param name="value">The value of the listitem to set</param>
+            <returns>
+                <br>True: if the correct listitem was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+    </members>
+</doc>

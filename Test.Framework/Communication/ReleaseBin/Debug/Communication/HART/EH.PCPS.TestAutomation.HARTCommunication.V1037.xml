@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.HARTCommunication.V1037</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.Configuration">
+            <summary>
+                ConfigurationUse provides methods to use the dialog via GUI elements.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.Configuration.Confirm">
+            <summary>
+                Press [Ok]-button to confirm settings and close dialog.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.Configuration.Apply">
+            <summary>
+                Press [Apply]-button to confirm settings only. Dialog remains open.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.Configuration.Cancel">
+            <summary>
+                Press [Cancel]-button to close dialog without changed settings.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.Configuration.SetProperties(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sets HART Communication configuration by checking string parameters for content.
+            If parameter is not empty, configuration is done with parameters.
+            If parameter is empty, no configuration is done. Default is used.
+            </summary>
+            <param name="communicationInterface">
+                Communication Interface:
+                <br>HART modem</br>
+                <br>HART multiplexer</br>
+            </param>
+            <param name="baudrate">
+                Serial Interface
+                <br>1200</br>
+                <br>2400</br>
+                <br>9600</br>
+                <br>19200</br>
+                <br>38400</br>
+                <br>57600</br>
+            </param>
+            <param name="rtsControl">
+                <br>Disable</br>
+                <br>Enable</br>
+                <br>Handshake</br>
+                <br>Toggle</br>
+            </param>
+            <param name="serialInterface">
+                <br>COM1</br>
+                <br>COM2</br>
+                <br>...</br>
+            </param>
+            <param name="master">
+                <br>Primary Master</br>
+                <br>Secondary Master</br>
+            </param>
+            <param name="preamble">
+                <br>5 ... 20</br>
+            </param>
+            <param name="retries">
+                <br>1 ... 10</br>
+            </param>
+            <param name="startAddress">
+                <br>Start address range: 0 ... 63</br>
+            </param>
+            <param name="endAddress">
+                <br>End address range: 0 ... 63</br>
+            </param>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.ConfirmAddress">
+            <summary>
+                ConfirmAddressUse provides methods to use the dialog via GUI elements.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.ConfirmAddress.Confirm">
+            <summary>
+                Press [OK]-button to confirm set address.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.ConfirmAddress.Cancel">
+            <summary>
+                Press [Cancel]-button to set no address.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.ConfirmAddress.SetDTMPollingAddress(System.String)">
+            <summary>
+                Select a DTM Polling Address via combobox
+            </summary>
+            <param name="strAddress">Address to select</param>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.ConfirmAddress.SetDTMTag(System.String)">
+            <summary>
+                Write DTM Tag into textfield
+            </summary>
+            <param name="strDTMTag">DTM Tag to write</param>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.OpenConfiguration">
+            <summary>
+                Start [DTM Configuration]-functionality
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.OpenConfiguration.ViaMenu">
+            <summary>
+                Start via related menu-entry
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.Functions.ApplicationArea.MainView.Execution.OpenConfiguration.ViaContext">
+            <summary>
+                Start via related context-menu
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements">
+            <summary>
+                This class represents parts of [HART Communication] CommDTM.
+                It contains GUI-element-objects of page [Settings].
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.btnOk">
+            <summary>
+                Get [HART Comm Settings]-Module.Button.Ok-object
+                It is needed to confirm settings and close page
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.btnCancel">
+            <summary>
+                Get [HART Comm Settings]-Module.Button.Cancel-object
+                It is needed to cancel settings and close page
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.btnApply">
+            <summary>
+                Get [HART Comm Settings]-Module.Button.Apply-object
+                It is needed to apply settings
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobCommunicationInterface">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.CommunicationInterface-object
+                It is needed to configure [Communication Interface]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobBaudrate">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.Baudrate-object
+                It is needed to configure [Baudrate]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobRTSControl">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.RTSControl-object
+                It is needed to configure [RTS Control]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobSerial">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.SerialInterface-object
+                It is needed to configure [Serial Interface]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobMaster">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.Master-object
+                It is needed to select a [Master]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobPreamble">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.Preamble-object
+                It is needed to configure [Preamble]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobRetries">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.Retries-object
+                It is needed to configure [Retries]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobStartAddress">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.StartAddress-object
+                It is needed to configure [Start Address]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.cobEndAddress">
+            <summary>
+                Get [HART Comm Settings]-Module.Combobox.EndAddress-object
+                It is needed to configure [End Address]
+            </summary>
+            <returns>
+                <br>ComboBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.chbMultimaster">
+            <summary>
+                Get [HART Comm Settings]-Module.Checkbox.Multimaster and Burst-object
+                It is needed to select [Multimaster and Burst-mode support]
+            </summary>
+            <returns>
+                <br>CheckBox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationElements.liComboboxList(System.String)">
+            <summary>
+                Get [HART Comm Settings]-Module.ListItem.Combobox-object
+                It is needed to get a list-entry of a combobox
+            </summary>
+            <returns>
+                <br>ListItem: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths">
+            <summary>
+                Paths to GUI-elements-objects of [Hart Communication] CommDTM.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrButtonHelpString">
+            <summary>
+                Help string for controls at HART address dialog
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTAddressOk">
+            <summary>
+                Path to button OK
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTAddressCancel">
+            <summary>
+                Path to button Cancel
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsHelpString">
+            <summary>
+                Help string for controls at HART settings dialog
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsOk">
+            <summary>
+                Path to button Ok
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsCancel">
+            <summary>
+                Path to button Cancel
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsApply">
+            <summary>
+                Path to button Apply
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsComm">
+            <summary>
+                Path to combobox Communication
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsBaudrate">
+            <summary>
+                Path to combobox Baudrate
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsRtsControl">
+            <summary>
+                Path to combobox RTS Control
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsSerial">
+            <summary>
+                Path to combobox Serial
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsMaster">
+            <summary>
+                Path to combobox Master
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsPreamble">
+            <summary>
+                Path to combobox Preamble
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsRetries">
+            <summary>
+                Path to combobox Retries
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsStartAddress">
+            <summary>
+                Path to combobox Start Address
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsEndAddress">
+            <summary>
+                Path to combobox End Address
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsMultimaster">
+            <summary>
+                Path to checkbox Multimaster
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfigurationPaths.StrHARTSettingsList">
+            <summary>
+                Path to list
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressElements">
+            <summary>
+                This class represents parts of [HART Communication] CommDTM.
+                It contains GUI-controls of DTM-page [Communication].
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressElements.BtnOk">
+            <summary>
+                Get [Confirm Address]-Dialog.Button.Ok-object
+                It is needed to confirm a proposed configuration
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressElements.BtnCancel">
+            <summary>
+                Get [Confirm Address]-Dialog.Button.Cancel-object
+                It is needed to cancel a proposed configuration
+            </summary>
+            <returns>
+                <br>Button: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressElements.cobDTMPollingAddress">
+            <summary>
+                Get [Confirm Address]-Dialog.Combobox.DTM Polling Address-combobox
+                It is needed to set an HART Address for added device
+            </summary>
+            <returns>
+                <br>Combobox: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressElements.liComboboxList(System.String)">
+            <summary>
+                Get [Confirm Address]-Dialog.Combobox.ListItem-object
+                It is needed to get a list-entry of a combobox
+            </summary>
+            <returns>
+                <br>ListItem: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressElements.txtDTMTag">
+            <summary>
+                Get [Confirm Address]-Dialog.Textfield-object
+                It is needed to set a DTM Tag
+            </summary>
+            <returns>
+                <br>Text: If call worked fine</br>
+                <br>NULL: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths">
+            <summary>
+                Paths to GUI-elements-objects of [Confirm Address]-dialog of CommDTM.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths.StrButtonHelpString">
+            <summary>
+                Button help string
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths.StrHARTAddressDTMTag">
+            <summary>
+                Path to text DTM Tag
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths.StrHARTAddressDTMPolling">
+            <summary>
+                Path to comboBox Polling
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths.StrHARTAddressList">
+            <summary>
+                Path to list
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths.StrHARTAddressOk">
+            <summary>
+                Path to button OK
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HARTCommunication.V1037.GUI.ApplicationArea.MainView.ConfirmAddressPaths.StrHARTAddressCancel">
+            <summary>
+                Path to button Cancel
+            </summary>
+        </member>
+    </members>
+</doc>

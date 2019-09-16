@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A56AB4F-0A22-47C8-BDAF-5DB3078DEAF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.DTMstudioTest.TestScriptEngine</RootNamespace>
+    <AssemblyName>EH.DTMstudioTest.TestScriptEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>EH.DTMstudioTest.TestScriptEngine.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EH.PCPS.TestAutomation.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a5a3fa33d0153a72, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>P:\EH.PCSW.Testautomation.TestFramework\ReleaseBin\Release\EH.PCPS.TestAutomation.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core, Version=6.1.0.0, Culture=neutral, PublicKeyToken=b798506b574ebc9a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTypes\ExecutionData.cs" />
+    <Compile Include="DataTypes\ExecutionObject.cs" />
+    <Compile Include="DataTypes\TestCaseInfo.cs" />
+    <Compile Include="DataTypes\TestReportInfo.cs" />
+    <Compile Include="Execution\AttributeDataHandler.cs" />
+    <Compile Include="Execution\ControlDocumentHandler.cs" />
+    <Compile Include="Execution\MethodHandler.cs" />
+    <Compile Include="Execution\MethodInfoHandler.cs" />
+    <Compile Include="Execution\TestObjectHandler.cs" />
+    <Compile Include="Execution\TypeHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\ConstLenghts.cs" />
+    <Compile Include="Reporting\FileNameHandler.cs" />
+    <Compile Include="Reporting\InfrastructureHandler.cs" />
+    <Compile Include="Reporting\TestCaseReportHandler.cs" />
+    <Compile Include="Reporting\TestReportHandler.cs" />
+    <Compile Include="Runner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="EH.DTMstudioTest.TestScriptEngine.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EH.DTMstudioTest.Common\EH.DTMstudioTest.Common.csproj">
+      <Project>{caa7eb4d-c7f9-41a7-a273-8ada0755d8b9}</Project>
+      <Name>EH.DTMstudioTest.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo ----------------------------------------------------------------------------------------------------
+
+echo cscript "$(SolutionDir)Scripts\CopyFile.vbs" "$(TargetPath)" "$(SolutionDir)ProjectTemplates\DeviceTypeTestProject\"
+
+echo ----------------------------------------------------------------------------------------------------</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

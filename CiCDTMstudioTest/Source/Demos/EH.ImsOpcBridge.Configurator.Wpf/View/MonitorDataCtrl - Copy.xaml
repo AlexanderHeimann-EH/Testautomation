@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.MonitorDataCtrl"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             xmlns:view1="clr-namespace:EH.ImsOpcBridge.Configurator.View"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance {x:Type viewModel:LanguageControlVm}, IsDesignTimeCreatable=True}"
+             d:DesignHeight="700" d:DesignWidth="1024">
+
+    <view1:PagingControl x:Uid="view1:PagingControl_1" Template="{StaticResource PagingTemplate}" PreviousPageCommand="{Binding Path=PreviousPageCommand}" NextPageCommand="{Binding Path=NextPageCommand}">
+
+
+
+        <Grid x:Uid="Grid_1" Margin="-15,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid x:Uid="Grid_5">
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Uid="RowDefinition_10" Height="*" />
+                    <RowDefinition x:Uid="RowDefinition_11" Height="{StaticResource ClientAreaGap}" />
+                    <RowDefinition x:Uid="RowDefinition_12" Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <view1:MonitorDataGrid x:Uid="DeviceTypeInfoGrid_1" Grid.Row="0" DataContext="{Binding Path=CurrentCatalogEntries}"></view1:MonitorDataGrid>
+
+                <!--
+                <StackPanel x:Uid="StackPanel_2" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <TextBlock x:Uid="TextBlock_2" Text="{Binding Path=NumberOfItems}" Margin="4,0,0,0"/>
+                </StackPanel>
+                -->
+                
+            </Grid>
+
+
+
+
+
+        </Grid>
+
+
+
+
+<!--
+
+        <Grid x:Uid="Grid_5">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_10" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_11" Height="{StaticResource ClientAreaGap}" />
+                <RowDefinition x:Uid="RowDefinition_12" Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <view1:MonitorDataGrid x:Uid="DeviceTypeInfoGrid_1" DataContext="{Binding Path=CurrentCatalogEntries}"></view1:MonitorDataGrid>
+
+            <StackPanel x:Uid="StackPanel_2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock x:Uid="TextBlock_2" Text="{Binding Path=NumberOfItems}" Margin="4,0,0,0"/>
+            </StackPanel>
+          
+        </Grid>
+
+        -->
+        
+    </view1:PagingControl>
+</UserControl>

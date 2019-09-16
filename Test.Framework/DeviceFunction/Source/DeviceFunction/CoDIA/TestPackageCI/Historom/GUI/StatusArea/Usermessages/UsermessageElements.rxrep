@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="UsermessageElements"
+id="058ef220-9b07-401e-98c2-302b7a11aef8"
+rxversion="6.1">
+	<codegen
+	classname="UsermessageElements"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.Historom.GUI.StatusArea.Usermessages"/>
+	<rootfolder
+	name="Root"
+	id="9b2ee072-8893-439f-bb2f-89fadf082e9b"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="InfoText"
+		id="6755386c-6f93-4766-b72e-50624a866b93"
+		searchtimeout="30000ms"
+		capname="text">
+			/container[@automationid='HistoROMModule.HistoROMForm.Form']/element[@automationid='HistoROMModule.MessageControl.Messages']/text/text[@accessiblename='HistoROMModule.MessageControl.Messages']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<DisplayContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListPage sessionID="1337" height="1952" width="1536" orientation="Landscape">
+    <List>
+      <DeviceHeader id="Parameters.STD_ENPDeviceTag_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.STD_ENPDeviceName_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.PRES_SensorTemperature_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.PRES_ScaledVariable_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.HO_PercentOfRange_1" isOnScreen="true" />
+      <DeviceHeader id="Parameters.CO_OutValue_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_ENPDeviceSerialNumber_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_ENPDeviceFirmwareRevision_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_ENPDeviceOrderIdent_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.STD_LockingState_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.SPV_CurrentSysConditionUnion_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.SPV_CurrentEventCategory_1" isOnScreen="true" />
+      <ExtendedDeviceHeader id="Parameters.PRES_CorrectedPressure_1" isOnScreen="true" />
+      <ListNavigationItem id="Offline_MeasuredValuesPage20_1531633173_2078385683_1" isOnScreen="true">
+        <Text fullText="Measured values" displayedText="Measured values" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_ModeAndUnits20_1687128910_501874017_1" isOnScreen="true">
+        <Text fullText="Measuring Mode and Units" displayedText="Measuring Mode and Units" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_Sensor20_2055852380_729390074_1" isOnScreen="true">
+        <Text fullText="Sensor" displayedText="Sensor" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_PositionAdjustment20_1180386203_1677177738_1" isOnScreen="true">
+        <Text fullText="Zero adjustment" displayedText="Zero adjustment" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_ScaleVariableApp2_20_1206886354_800659321_1" isOnScreen="true">
+        <Text fullText="Scaled variable" displayedText="Scaled variable" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_CurrentOutputSetupPage20_1339946763_533517162_1" isOnScreen="true">
+        <Text fullText="Current output" displayedText="Current output" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_HART20_1891729357_729390074_1" isOnScreen="true">
+        <Text fullText="HART" displayedText="HART" scaling="0" />
+      </ListNavigationItem>
+      <ListNavigationItem id="Offline_Bluetooth_1774760889_388587342_1" isOnScreen="true">
+        <Text fullText="Bluetooth" displayedText="Bluetooth" scaling="0" />
+      </ListNavigationItem>
+      <ListItem id="Parameters.PRES_CorrectedPressure_1">
+        <ListColumn isOnScreen="true" id="Pressure" isReadOnly="true" isHelpAvailable="false">
+          <StringValue fullText="0" displayedText="0" scaling="0" />
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.PRES_ScaledVariable_1">
+        <ListColumn isOnScreen="true" id="Scaled variable" isReadOnly="true" isHelpAvailable="false">
+          <StringValue fullText="0" displayedText="0" scaling="0" />
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.PRES_SensorTemperature_1">
+        <ListColumn isOnScreen="true" id="Sensor temperature" isReadOnly="true" isHelpAvailable="false">
+          <StringValue fullText="0" displayedText="0" scaling="0" />
+        </ListColumn>
+      </ListItem>
+      <ListItem id="Parameters.PRES_SensorTemperature_2">
+        <ListColumn isOnScreen="false" id="Sensor temperature" isReadOnly="true" isHelpAvailable="false">
+          <StringValue fullText="0" displayedText="0" scaling="0" />
+        </ListColumn>
+      </ListItem>
+    </List>
+  </ListPage>
+</DisplayContent>

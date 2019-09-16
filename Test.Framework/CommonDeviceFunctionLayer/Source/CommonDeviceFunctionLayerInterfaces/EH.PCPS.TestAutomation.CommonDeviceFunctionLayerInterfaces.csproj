@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EF05611-60FB-4819-ABCD-9BD8CBAD021B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox\CommonFlows\ICloseAboutBox.cs">
+      <id>3220d14a-aa44-47aa-9114-188d105d0fcc</id>
+    </Compile>
+    <Compile Include="AboutBox\CommonFlows\ICopyData.cs">
+      <id>8d9b3943-efbe-43d9-be7d-e867fb9d9868</id>
+    </Compile>
+    <Compile Include="AboutBox\CommonFlows\IOpenAboutBox.cs">
+      <id>211d3f0b-9fe7-4516-9b8b-9f60d9a434de</id>
+    </Compile>
+    <Compile Include="Compare\CommonFlows\ICloseCompare.cs">
+      <id>067105c5-a3a9-42e4-8164-ff3bcbb69cb2</id>
+    </Compile>
+    <Compile Include="Compare\CommonFlows\ICompareData.cs">
+      <id>2a2b74f1-72fa-4b09-a1fa-9895f5ba6d8a</id>
+    </Compile>
+    <Compile Include="Compare\CommonFlows\IOpenCompare.cs">
+      <id>fc2363d5-93bd-4ec3-ac50-b00d69b725a6</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\ISaveConcentrationData.cs">
+      <id>e1269448-f083-40cd-bd11-3a48e5e70c73</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\ILoadConcentrationData.cs">
+      <id>bd575b1a-f324-4c77-ada6-09a5d4c74b07</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\IExportConcentrationData.cs">
+      <id>19611727-4a96-4151-bcd0-2cbec8fb39cf</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\IImportConcentrationData.cs">
+      <id>aa4841e9-4d14-4a05-8564-c5b198e17cb6</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\ICloseConcentration.cs">
+      <id>7ee36bb2-3d6f-4294-a7a4-4aecb966d8ba</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\ICalculateConcentration.cs">
+      <id>bf0850b1-e545-4e36-ad4b-dc59a247cdb8</id>
+    </Compile>
+    <Compile Include="Concentration\CommonFlows\IOpenConcentration.cs">
+      <id>93673efc-f8bf-47ea-b9a3-16e41165bf35</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\CommonFlows\IPrintDocumentation.cs">
+      <id>234de6f4-a683-47bd-9c99-893613e8edb5</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\CommonFlows\IConfigureDocument.cs">
+      <id>a60c02f8-1609-405f-847b-f5aca042b80e</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\CommonFlows\IConfigurePrinter.cs">
+      <id>f35a4be0-d595-4c7b-9f97-7e5050d2af6c</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\CommonFlows\ICloseCreateDocumentation.cs">
+      <id>ecab26b2-b02a-43d1-97ca-0a6a08e5dca8</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\CommonFlows\IOpenCreateDocumentation.cs">
+      <id>52421b65-f388-41b9-a15e-6f753f970a8f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows\ILoadCurves.cs">
+      <id>0498e547-0ee8-4fc0-afd4-92655ca433b1</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows\ISaveCurves.cs">
+      <id>3639d426-1eac-41db-94e8-cb0821453555</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows\ICyclicReading.cs">
+      <id>c01ccf42-e7c9-458b-b021-c10d21f9dfb4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows\ICloseEnvelopeCurve.cs">
+      <id>214a2b4b-691f-4214-9cfb-147ca1f8f31d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows\IReadCurves.cs">
+      <id>22e8e025-2e48-4a34-805f-d98e9e30a417</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\CommonFlows\IOpenEnvelopeCurve.cs">
+      <id>1584fbcb-6d0c-4be4-a885-d42477de6b2f</id>
+    </Compile>
+    <Compile Include="EventList\CommonFlows\ICloseEventList.cs">
+      <id>d22138c1-a04d-4b37-af4a-f2acfc373bd0</id>
+    </Compile>
+    <Compile Include="EventList\CommonFlows\IOpenEventList.cs">
+      <id>185df8e9-d41c-4462-9477-fe916feddb89</id>
+    </Compile>
+    <Compile Include="EventList\CommonFlows\IReadEvents.cs">
+      <id>c744f3a6-988a-4efa-ab50-ba533ec8bb71</id>
+    </Compile>
+    <Compile Include="Historom\CommonFlows\IExportHistoromData.cs">
+      <id>ea8b4c82-603b-4971-8561-7102db2d243c</id>
+    </Compile>
+    <Compile Include="Historom\CommonFlows\ICloseHistorom.cs">
+      <id>5c477165-35e9-406e-9845-b7c6f2a958e7</id>
+    </Compile>
+    <Compile Include="Historom\CommonFlows\IOpenHistorom.cs">
+      <id>30a6dfb0-9fe1-449b-aae6-d7aefef95133</id>
+    </Compile>
+    <Compile Include="Historom\CommonFlows\IReadEvents.cs">
+      <id>33cddd70-0967-4bef-b5a8-a2cfdcdfe7db</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\IReadTable.cs">
+      <id>f930ba49-6e89-4604-8f7f-ab27429eb0e1</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\IWriteTable.cs">
+      <id>28abc66b-3732-4983-876e-4b1663bba963</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\ILoadTable.cs">
+      <id>de928264-d616-4162-b555-8d6606b042ac</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\ISaveTable.cs">
+      <id>b615fdfe-0e92-4a13-9960-88863e37f71d</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\IExportLinearizationData.cs">
+      <id>00a9e0fa-1654-4244-a3c7-dfe9dc8a19d4</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\IOpenLinearization.cs">
+      <id>1592a399-98bc-4e60-b354-a62f22bcbc2e</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\ICloseLinearization.cs">
+      <id>68747e8b-2149-4102-aa80-a64b90d6cad2</id>
+    </Compile>
+    <Compile Include="Linearization\CommonFlows\IImportLinearizationData.cs">
+      <id>642281df-4b2b-47b0-a5c8-ad2c343a2514</id>
+    </Compile>
+    <Compile Include="Parameterization\CommonFlows\IGetParameter.cs">
+      <id>f5affc71-d60f-45a2-8230-1a9271a34df0</id>
+    </Compile>
+    <Compile Include="Parameterization\CommonFlows\ICloseParameterization.cs">
+      <id>01d899a8-0cdf-411c-8a7b-5904a3f6f726</id>
+    </Compile>
+    <Compile Include="Parameterization\CommonFlows\ISetParameter.cs">
+      <id>1618177a-b981-4b30-8cf6-c83c8c028b61</id>
+    </Compile>
+    <Compile Include="Parameterization\CommonFlows\IOpenParameterization.cs">
+      <id>aa3931ab-96b1-44bd-be3c-ef4939842ca3</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>a5ab0017-063e-4bef-a7f6-a93f377b6c54</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows\ISaveWithUpload.cs">
+      <id>80ccd1fa-b280-47b0-8cb3-eafe5089e12e</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows\IRestoreWithDownload.cs">
+      <id>c056b828-2bee-41cb-b2f8-4f87c873ec82</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows\IRestoreWithoutDownload.cs">
+      <id>51b6f943-db67-4c11-a2f3-c7fb51b13def</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows\ICloseSaveRestore.cs">
+      <id>e57feba5-e4b5-41f8-8835-3b0d770ba740</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows\IOpenSaveRestore.cs">
+      <id>644ac812-0b7e-48c7-a4b8-21d126d06008</id>
+    </Compile>
+    <Compile Include="SaveRestore\CommonFlows\ISaveWithoutUpload.cs">
+      <id>f7a3359d-0107-4f38-9cf6-7bcdb80e8740</id>
+    </Compile>
+    <Compile Include="Viscosity\CommonFlows\ICalculateViscosityData.cs">
+      <id>de4165a6-4bd4-4b9d-9a52-0548cd40d91a</id>
+    </Compile>
+    <Compile Include="Viscosity\CommonFlows\IExportViscosityData.cs">
+      <id>c31f3537-1da4-4acc-8b25-37bdbf0794e5</id>
+    </Compile>
+    <Compile Include="Viscosity\CommonFlows\ICloseViscosity.cs">
+      <id>1567543f-ce40-4a75-bc34-5d60757d62db</id>
+    </Compile>
+    <Compile Include="Viscosity\CommonFlows\IImportViscosityData.cs">
+      <id>ec8265c8-96ec-4713-9842-e9b7cda94812</id>
+    </Compile>
+    <Compile Include="Viscosity\CommonFlows\IOpenViscosity.cs">
+      <id>12095ec7-b8ae-4e59-93f0-213522118fc9</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

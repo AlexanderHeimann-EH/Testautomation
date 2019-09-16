@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="756d732c-7d82-4ed9-8d76-b85eb89cdbe4"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		SelectHARTModem_Simulation
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectHARTModem_Simulation"
+	namespace="EH.PCPS.TestAutomation.DeviceCare.V10107.Functions.ApplicationArea.Page_Assistant_ModemSelection.Execution"/>
+	<variables/>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="1a2c8f8e-a70d-4eee-a32f-47954411cc89"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="0"
+		sy="0"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RepositoryEditor"
+			id="63f1908d-0189-4fc0-86f2-80b4b0bbdce3">
+				<path>
+					/form[@automationid='me']/element[@automationid='connectionWizard']/element/list/listitem/radiobutton[@automationid='automIdSimulationHART']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="DeviceCareApplication"
+	id="57e11cea-d0df-4ac0-9488-32b6f6120ba9"
+	rxversion="6.1"
+	relativepath="..\..\..\..\GUI\DeviceCareApplication.rxrep">
+		<codegen
+		classname="DeviceCareApplication"
+		namespace="EH.PCPS.TestAutomation.DeviceCare.V10107.GUI"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="99701df9-ab1e-473f-b3e6-7540c2ead80c"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectHARTModem_Simulation.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\..\..\ExternalReferences\CommonCodeModules.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\ExternalReferences\CommonMethods.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TM_DTMs\bin\Debug\TM_DTMs.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TC_DeviceCare\bin\Debug\TC_DeviceCare.exe
+		</reference>
+	</references>
+</recordtable>

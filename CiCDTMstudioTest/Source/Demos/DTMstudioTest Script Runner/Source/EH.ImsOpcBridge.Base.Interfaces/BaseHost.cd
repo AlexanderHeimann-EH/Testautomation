@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Interface Name="EH.ImsOpcBridge.IBaseHost">
+    <Position X="1" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBaseHost.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProgressHandler" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="EH.ImsOpcBridge.IProgressHandler">
+    <Position X="5.75" Y="1" Width="4.25" />
+    <Members>
+      <Method Name="Add" Hidden="true" />
+      <Method Name="OnItemChanged" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAABAAQAAAAAAABAgAAAgAgAAAAAAAAAAAABA=</HashCode>
+      <FileName>IProgressHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EH.ImsOpcBridge.IProgressItem">
+    <Position X="5.75" Y="3.75" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AQgAIAQAQCAAAEIAgAAAAAEABCgAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>IProgressItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProgressHandler" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

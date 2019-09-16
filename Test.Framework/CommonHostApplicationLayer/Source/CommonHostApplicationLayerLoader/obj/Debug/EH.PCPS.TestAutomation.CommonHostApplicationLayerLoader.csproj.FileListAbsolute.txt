@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.XML
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.pdb
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\obj\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\obj\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\obj\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.pdb

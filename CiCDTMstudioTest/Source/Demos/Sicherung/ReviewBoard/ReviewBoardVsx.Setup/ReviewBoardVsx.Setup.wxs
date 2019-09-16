@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?ifndef packageVersion ?>
+  <?define packageVersion=0.5.1.0 ?>
+  <?endif?>
+  <Product Id="*" Name="ReviewBoard Extension for Visual Studio" Language="1033"
+           Version="$(var.packageVersion)" Manufacturer="reviewboard.org" UpgradeCode="533D18FC-E377-45A2-B2F3-18D25DEB3983">
+
+    <Package InstallerVersion="300" Compressed="yes" InstallPrivileges="elevated"
+         Platform="x86" Languages="1033" />
+
+    <Upgrade Id="533D18FC-E377-45A2-B2F3-18D25DEB3983">
+      <UpgradeVersion Property="PREVIOUSVERSIONINSTALLED" Minimum="0.1.0.1" Maximum="$(var.packageVersion)"
+              IncludeMinimum="yes" IncludeMaximum="no" MigrateFeatures="yes" />
+      <UpgradeVersion Property="EXACTVERSIONINSTALLED" Minimum="$(var.packageVersion)" Maximum="$(var.packageVersion)"
+              IncludeMinimum="yes" IncludeMaximum="yes" />
+      <UpgradeVersion Property="NEWERVERSIONINSTALLED" Minimum="$(var.packageVersion)" Maximum="99.0.0.0"
+              IncludeMinimum="no" IncludeMaximum="yes" />
+    </Upgrade>
+
+    <Property Id="ShortProductName" Value="ReviewBoardVsx" />
+    <Property Id="ARPCONTACT">ReviewBoardVsx - vsx@reviewboard.org</Property>
+    <Property Id="ARPURLINFOABOUT">http://www.reviewboard.org/vsx/</Property>
+    <Property Id="ARPHELPLINK">http://www.reviewboard.org/vsx/help/</Property>
+    <Property Id="ARPURLUPDATEINFO">http://www.reviewboard.org/vsx/changes/?v=$(var.packageVersion)</Property>
+    <Property Id="ARPPRODUCTICON">ICON_ReviewBoardVsx</Property>
+    <!-- Error messages -->
+    <Property Id="VSDVERSIONMSG">Unable to install because a newer version of this product is already installed.</Property>
+
+    <!-- Errormessages -->
+    <CustomAction Id="ERRCA_CANCELNEWERVERSION" Error="[VSDVERSIONMSG]" />
+    <CustomAction Id="ERRCA_CANCELEXACTVERSION" Error="[VSDVERSIONMSG]" />
+    <CustomAction Id="ERRCA_UIANDADVERTISED" Error="[VSDUIANDADVERTISED]" />
+    <Icon Id="ICON_ReviewBoardVsx" SourceFile="$(sys.SOURCEFILEDIR)..\ReviewBoardVsx.Package\Resources\Package.ico"/>
+
+    <Media Id="1" Cabinet="ReviewBoardVsx.cab" EmbedCab="yes" CompressionLevel="high"/>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="APPLICATIONFOLDER" Name="ReviewBoardVsx">
+          <Directory Id="APP_bin" Name="." FileSource="$(sys.SOURCEFILEDIR)..\">
+            <Component Id="C_LICENSE" Guid="*">
+              <File Id="CF_LICENSE.rtf" Name="LICENSE.rtf" />
+            </Component>
+            <Component Id="C_PKGDEF" Guid="*">
+              <File Id="ReviewBoardVsx.pkgdef" Name="ReviewBoardVsx.Pkgdef" Vital="yes" />
+            </Component>
+            <Component Id="C_VSIXMANIFEST" Guid="*">
+              <File Id="CF_VSIXMANIFEST" Name="extension.VsixManifest" Vital="yes" />
+            </Component>
+            <Component Id="C_VSIXICO" Guid="*">
+              <File Id="CF_VSIXICO" Name="ReviewBoardVsx-Icon.png" Vital="yes" Source="ReviewBoardVsx.Setup\ReviewBoardVsx-Icon.png"/>
+            </Component>
+            <Component Id="C_VSIXPREVIEW" Guid="*">
+              <File Id="CF_VSIXPREVIEW" Name="ReviewBoardVsx-Preview.png" Vital="yes" Source="ReviewBoardVsx.Setup\ReviewBoardVsx-Preview.png"/>
+            </Component>
+            <!-- All assemblies are placed here -->
+          </Directory>
+        </Directory>
+      </Directory>
+      <Directory Id="VS100_ROOT_FOLDER">
+        <Directory Name="Common7" Id="Common7_2010">
+          <Directory Name="IDE" Id="VSIDE_2010">
+            <Directory Name="Extensions" Id="EXTENSIONS_2010">
+              <Directory Name="ReviewBoardVsx" Id="EXTENSIONS_REVIEWBOARDVSX_2010">
+                <Directory Name="ReviewBoardVsx" Id="EXTENSIONS_REVIEWBOARDVSX_REVIEWBOARDVSX_2010">
+                  <Directory Name="1.0" Id="REVIEWBOARDVSX_EXTENSION_2010">
+                    <Component Id="C_Reg2010" Guid="2AF423CF-2FA7-4232-9A4E-F701022DCAF8">
+                      <Condition>VS100DEVENV</Condition>
+                      <CopyFile Id="Vsix_Mnf2010" FileId="CF_VSIXMANIFEST" DestinationDirectory="REVIEWBOARDVSX_EXTENSION_2010"/>
+                      <CopyFile Id="Vsix_Lic2010" FileId="CF_LICENSE.rtf" DestinationDirectory="REVIEWBOARDVSX_EXTENSION_2010"/>
+                      <CopyFile Id="Vsix_Ico2010" FileId="CF_VSIXICO" DestinationDirectory="REVIEWBOARDVSX_EXTENSION_2010"/>
+                      <CopyFile Id="Vsix_Pvw2010" FileId="CF_VSIXPREVIEW" DestinationDirectory="REVIEWBOARDVSX_EXTENSION_2010"/>
+                    </Component>
+                  </Directory>
+                </Directory>
+              </Directory>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <!-- Make sure the packages are set up in The VS Environment -->
+    <CustomActionRef Id="VS2005Setup"/>
+    <CustomActionRef Id="VS90SetupNoVSTemplates"/>
+    <CustomActionRef Id="VS100SetupNoVSTemplates"/>
+
+    <UI>
+      <InstallUISequence>
+        <Custom Action="ERRCA_CANCELNEWERVERSION" After="FindRelatedProducts">NEWERVERSIONINSTALLED&lt;&gt;"" AND NOT Installed</Custom>
+        <Custom Action="ERRCA_CANCELEXACTVERSION" After="ERRCA_CANCELNEWERVERSION">EXACTVERSIONINSTALLED&lt;&gt;"" AND REVIEWBOARDVSXREINSTALL="" AND NOT Installed</Custom>
+      </InstallUISequence>
+      <ProgressText Action="VS2005Setup" Template="[1]">Updating Visual Studio 2005 registration</ProgressText>
+      <ProgressText Action="VS90SetupNoVSTemplates" Template="[1]">Updating Visual Studio 2008 registration</ProgressText>
+      <ProgressText Action="VS100SetupNoVSTemplates" Template="[1]">Updating Visual Studio 2010 registration</ProgressText>
+    </UI>
+
+    <InstallExecuteSequence>
+      <Custom Action="ERRCA_CANCELNEWERVERSION" After="FindRelatedProducts">NEWERVERSIONINSTALLED&lt;&gt;"" AND NOT Installed</Custom>
+      <Custom Action="ERRCA_CANCELEXACTVERSION" After="ERRCA_CANCELNEWERVERSION">EXACTVERSIONINSTALLED&lt;&gt;"" AND REVIEWBOARDVSXREINSTALL="" AND NOT Installed</Custom>
+      <RemoveExistingProducts After="InstallInitialize">PREVIOUSVERSIONINSTALLED&lt;&gt;"" OR EXACTVERSIONINSTALLED&lt;&gt;""</RemoveExistingProducts>
+    </InstallExecuteSequence>
+
+    <SetProperty Id="ARPINSTALLLOCATION" Value="[APPLICATIONFOLDER]" After="CostFinalize" />
+
+    <Property Id="ApplicationFolderName" Value="ReviewBoardVsx" />
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />
+
+    <WixVariable Id="WixUIDialogBmp" Value="ReviewBoardVsx.Setup/SetupPage.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="ReviewBoardVsx.Setup/SetupHeader.bmp"/>
+    <WixVariable Id="WixUILicenseRtf" Value="LICENSE.rtf" />
+
+    <WixVariable Id="WixUISupportPerUser" Value="0" />
+    <UIRef Id="WixUI_Advanced"/>
+
+    <Feature Id="ProductFeature" Title="ReviewBoard Extension for Visual Studio v$(var.packageVersion)" Level="1" ConfigurableDirectory="APPLICATIONFOLDER" AllowAdvertise="no" Display="expand">
+      <ComponentGroupRef Id="ReviewBoardVsx.Package"/>
+      <ComponentRef Id="C_LICENSE" />
+      <ComponentRef Id="C_PKGDEF" />
+      <ComponentRef Id="C_VSIXMANIFEST" />
+      <ComponentRef Id="C_VSIXICO" />
+      <ComponentRef Id="C_VSIXPREVIEW" />
+<!--
+      <Feature Id="RegVS8" Title="Register in Microsoft Visual Studio 2005"
+               Description="Register ReviewBoard Extension in Microsoft Visual Studio 2005" Level="1" AllowAdvertise="no">
+        <ComponentGroupRef Id="PkgReg2005"/>
+      </Feature>
+-->
+      <Feature Id="RegVS9" Title="Register in Microsoft Visual Studio 2008"
+               Description="Register ReviewBoard Extension in Microsoft Visual Studio 2008" Level="1" AllowAdvertise="no">
+        <ComponentGroupRef Id="PkgReg2008"/>
+      </Feature>
+      <Feature Id="RegVS10" Title="Register in Microsoft Visual Studio 2010"
+               Description="Register ReviewBoard Extension in Microsoft Visual Studio 2010" Level="1" AllowAdvertise="no">
+        <ComponentGroupRef Id="PkgReg2010"/>
+        <ComponentRef Id="C_Reg2010"/>
+      </Feature>
+    </Feature>
+
+  </Product>
+</Wix>

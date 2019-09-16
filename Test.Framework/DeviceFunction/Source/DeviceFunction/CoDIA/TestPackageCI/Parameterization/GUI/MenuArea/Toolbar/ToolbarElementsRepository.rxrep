@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ToolbarElementsRepository"
+id="528a4320-1986-4a21-9fd7-b3d61df8ee8c"
+rxversion="6.1">
+	<codegen
+	classname="ToolbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.Parameterization.GUI.MenuArea.Toolbar"/>
+	<rootfolder
+	name="Root"
+	id="3dd203e9-79b8-4426-a6ea-3c825669a0a6"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ButtonHome"
+		id="04f4d013-53b0-4539-9647-86292fc9c2d7"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="0ca1996d-df09-4a44-a826-84eeca203d24">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessiblename='Go to home location.']
+		</item>
+		<item
+		name="ButtonOpenSaveRestore"
+		id="1bc788d2-1c82-4baa-b29f-f2fe80117e46"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="7a8b23a9-d7f1-4641-8384-899c8b9eb09d">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='Save / Restore']
+		</item>
+		<item
+		name="ButtonOpenLinearizationTable"
+		id="5500abc6-afb3-408d-b7cf-69b37e9777ae"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="0d8b1059-78f7-42fb-bd8c-9245b9251814">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='Linearization Table']
+		</item>
+		<item
+		name="ButtonOpenEnvelopeCurve"
+		id="ac9dccd8-b085-4c70-bde1-06b1cd634b66"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="fd7d6dbe-b5c8-4321-9176-a02a349c92a7">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='Envelope Curve']
+		</item>
+		<item
+		name="ButtonOpenHistorom"
+		id="26c37c74-7a01-4287-abf0-014a979119a2"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="64f18c38-acab-430f-8b86-65a817f05d14">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='Eventlist / Extended HistoROM']
+		</item>
+		<item
+		name="ButtonOpenCreateDocumentation"
+		id="99073dfe-2199-42cc-a57f-e2de735129cf"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="abbf00f2-30ae-4179-8b14-3e2e14b5cb62">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='Create Documentation']
+		</item>
+		<item
+		name="ButtonOpenCompare"
+		id="5df93d62-8cc1-4467-9172-036de6e9fa22"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="fe6fbe16-2030-4baa-bbeb-0e24c917aa7c">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='Compare Datasets']
+		</item>
+		<item
+		name="ButtonOpenAbout"
+		id="85fe9de9-ecbb-42d5-ad21-9461c9a99cd5"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="d3d1504c-0e90-4b7b-ad4f-4b5c65d7f43e">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessibledescription='About']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

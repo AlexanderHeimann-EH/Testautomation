@@ -1,0 +1,679 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommunicationLoader</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+                contains interfaces to access frame Flows
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution.ConfirmAddress">
+            <summary>
+            Gets the confirm address.
+            </summary>
+            <value>The confirm address.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.HartComm.Functions.ApplicationArea.MainView.Execution.OpenConfiguration">
+            <summary>
+            Gets the open configuration.
+            </summary>
+            <value>The open configuration.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows">
+            <summary>
+                Contains interfaces to access frame functions
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows.NamespaceForCommunication">
+            <summary>
+            The namespace for communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows"/> class. 
+                Connect interfaces to DLL version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows.CloseModule">
+            <summary>
+            Gets the close module.
+            </summary>
+            <value>The close module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Flows.OpenModuleOffline">
+            <summary>
+            Gets the open module offline.
+            </summary>
+            <value>The open module offline.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace for HART COMM.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation" /> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+            Gets the is module ready.
+            </summary>
+            <value>The is module ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+            Gets the name of the module.
+            </summary>
+            <value>The name of the module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            Gets the module opening and closing.
+            </summary>
+            <value>The module opening and closing.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleIsReady">
+            <summary>
+            Gets the wait until module is ready.
+            </summary>
+            <value>The wait until module is ready.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution.NamespaceForHartComm">
+            <summary>
+            The namespace for hart comm
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution.CopyToClipboard">
+            <summary>
+            Gets the copy to clipboard.
+            </summary>
+            <value>The copy to clipboard.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows">
+            <summary>
+                Contains interfaces to access frame functions
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.NamespaceForCommunication">
+            <summary>
+            The namespace for communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.ChangeDeviceAddress">
+            <summary>
+            Gets the change device address.
+            </summary>
+            <value>The change device address.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.CloseModule">
+            <summary>
+            Gets the close module.
+            </summary>
+            <value>The close module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.OpenModuleOffline">
+            <summary>
+            Gets the open module offline.
+            </summary>
+            <value>The open module offline.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Flows.OpenModuleOnline">
+            <summary>
+            Gets the open module online.
+            </summary>
+            <value>The open module online.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.NamespaceForHartComm">
+            <summary>
+            The namespace for hart comm.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.Change">
+            <summary>
+            Gets the change.
+            </summary>
+            <value>The change.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.Refresh">
+            <summary>
+            Gets the refresh.
+            </summary>
+            <value>The refresh.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SelectDevice">
+            <summary>
+            Gets the select device.
+            </summary>
+            <value>The select device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+            Gets the set parameter.
+            </summary>
+            <value>The set parameter.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace for HART COMM.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+            Gets the is module ready.
+            </summary>
+            <value>The is module ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+            Gets the name of the module.
+            </summary>
+            <value>The name of the module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            Gets the module opening and closing.
+            </summary>
+            <value>The module opening and closing.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady">
+            <summary>
+            Gets the wait until module offline is ready.
+            </summary>
+            <value>The wait until module offline is ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady">
+            <summary>
+            Gets the wait until module online is ready.
+            </summary>
+            <value>The wait until module online is ready.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace for HART COMM.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IsDtmConnected">
+            <summary>
+            Gets the is DTM connected.
+            </summary>
+            <value>The is DTM connected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected">
+            <summary>
+            Gets the is DTM disconnected.
+            </summary>
+            <value>The is DTM disconnected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected">
+            <summary>
+            Gets the wait until DTM is connected.
+            </summary>
+            <value>The wait until DTM is connected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected">
+            <summary>
+            Gets the wait until DTM is disconnected.
+            </summary>
+            <value>The wait until DTM is disconnected.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows">
+            <summary>
+                Contains interfaces to access frame functions
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.ChangeDtmAddress">
+            <summary>
+            Gets the change DTM address.
+            </summary>
+            <value>The change DTM address.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.CloseModule">
+            <summary>
+            Gets the close module.
+            </summary>
+            <value>The close module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.OpenModuleOffline">
+            <summary>
+            Gets the open module offline.
+            </summary>
+            <value>The open module offline.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Flows.OpenModuleOnline">
+            <summary>
+            Gets the open module online.
+            </summary>
+            <value>The open module online.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.Change">
+            <summary>
+            Gets the change.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.Refresh">
+            <summary>
+            Gets the refresh.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SelectDevice">
+            <summary>
+            Gets the select device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+            Gets the set parameter.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+            Gets the is module ready.
+            </summary>
+            <value>The is module ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+            Gets the name of the module.
+            </summary>
+            <value>The name of the module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            Gets the module opening and closing.
+            </summary>
+            <value>The module opening and closing.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady">
+            <summary>
+            Gets the wait until module offline is ready.
+            </summary>
+            <value>The wait until module offline is ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady">
+            <summary>
+            Gets the wait until module online is ready.
+            </summary>
+            <value>The wait until module online is ready.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IsDtmConnected">
+            <summary>
+            Gets the is DTM connected.
+            </summary>
+            <value>The is DTM connected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected">
+            <summary>
+            Gets the is DTM disconnected.
+            </summary>
+            <value>The is DTM disconnected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected">
+            <summary>
+            Gets the wait until DTM is connected.
+            </summary>
+            <value>The wait until DTM is connected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected">
+            <summary>
+            Gets the wait until DTM is disconnected.
+            </summary>
+            <value>The wait until DTM is disconnected.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows">
+            <summary>
+                Contains interfaces to access frame functions
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.NamespaceForCommunication">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.CloseModule">
+            <summary>
+            Gets the close module.
+            </summary>
+            <value>The close module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.Configure">
+            <summary>
+            Gets the configure.
+            </summary>
+            <value>The configure.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.OpenModuleOffline">
+            <summary>
+            Gets the open module offline.
+            </summary>
+            <value>The open module offline.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Flows.OpenModuleOnline">
+            <summary>
+            Gets the open module online.
+            </summary>
+            <value>The open module online.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+                contains interfaces to access frame Flows
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.Apply">
+            <summary>
+            Gets the apply.
+            </summary>
+            <value>The apply.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+            Gets the set parameter.
+            </summary>
+            <value>The set parameter.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+            Gets the is module ready.
+            </summary>
+            <value>The is module ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+            Gets the name of the module.
+            </summary>
+            <value>The name of the module.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            Gets the module opening and closing.
+            </summary>
+            <value>The module opening and closing.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady">
+            <summary>
+            Gets the wait until module offline is ready.
+            </summary>
+            <value>The wait until module offline is ready.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady">
+            <summary>
+            Gets the wait until module online is ready.
+            </summary>
+            <value>The wait until module online is ready.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation">
+            <summary>
+            The execution.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.NamespaceForHartComm">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IsDtmConnected">
+            <summary>
+            Gets the is DTM connected.
+            </summary>
+            <value>The is DTM connected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected">
+            <summary>
+            Gets the is DTM disconnected.
+            </summary>
+            <value>The is DTM disconnected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected">
+            <summary>
+            Gets the wait until DTM is connected.
+            </summary>
+            <value>The wait until DTM is connected.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationLoader.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected">
+            <summary>
+            Gets the wait until DTM is disconnected.
+            </summary>
+            <value>The wait until DTM is disconnected.</value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_TESTAREA_Viscosity</DisplayName>
+      <Guid>debdc4bf-3e3d-48cc-98ba-af69e78d6f44</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_TESTAREA_Viscosity</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>Viscosity</TestFocus>
+      <TestObjects>
+        <TestObject d3p1:type="TestCase">
+          <Description>Summary:
+The run.
+
+Param:
+The test string.
+
+Param:
+The test integer.
+
+Param:
+The test float.
+
+Param:
+The test array.
+
+Returns:
+The string.</Description>
+          <DisplayName>FDT.TC_TESTAREA.Run</DisplayName>
+          <Guid>afc9c8cc-441d-4ad3-beb7-81240511b503</Guid>
+          <IsActive>false</IsActive>
+          <Name>String Run(testString, testInteger, testFloat, testArray)</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <ToolTip>Summary:
+The run.
+
+Param:
+The test string.
+
+Param:
+The test integer.
+
+Param:
+The test float.
+
+Param:
+The test array.
+
+Returns:
+The string.</ToolTip>
+          <AssemblyMethodRefId>E8EEF1DF-C9D3-48E5-8C3B-B82502B9624B</AssemblyMethodRefId>
+          <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+          <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+          <Parameters>
+            <TestParameter>
+              <Description>The test string.</Description>
+              <Name>testString</Name>
+              <ParameterType>System.String</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The test integer.</Description>
+              <Name>testInteger</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The test float.</Description>
+              <Name>testFloat</Name>
+              <ParameterType>System.Single</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The test array.</Description>
+              <Name>testArray</Name>
+              <ParameterType>System.String[]</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+          </Parameters>
+        </TestObject>
+        <TestObject d3p1:type="TestCase">
+          <Description>Summary:
+The run.
+
+Param:
+The test string.
+
+Param:
+The test integer.
+
+Param:
+The test float.
+
+Returns:
+The .</Description>
+          <DisplayName>FDT.TC_TESTAREA.Run</DisplayName>
+          <Guid>8f89dced-5748-41ca-8cdf-30118cdfbf1f</Guid>
+          <IsActive>false</IsActive>
+          <Name>String Run(testString, testInteger, testFloat)</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <ToolTip>Summary:
+The run.
+
+Param:
+The test string.
+
+Param:
+The test integer.
+
+Param:
+The test float.
+
+Returns:
+The .</ToolTip>
+          <AssemblyMethodRefId>3A776F2A-15C8-4014-85B8-AA5D57E08D3F</AssemblyMethodRefId>
+          <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+          <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+          <Parameters>
+            <TestParameter>
+              <Description>The test string.</Description>
+              <Name>testString</Name>
+              <ParameterType>System.String</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The test integer.</Description>
+              <Name>testInteger</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The test float.</Description>
+              <Name>testFloat</Name>
+              <ParameterType>System.Single</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+          </Parameters>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>TC_Import</DisplayName>
+          <Guid>91aade70-983c-4dd4-9fca-f1ef43dcdc80</Guid>
+          <IsActive>false</IsActive>
+          <Name>TC_Import</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Runs the specified file name.
+
+Param:
+Name of the file.</Description>
+              <DisplayName>Viscosity.TC_Import.Run</DisplayName>
+              <Guid>aafe315f-65d7-44ee-b1ff-f5d31ce473ef</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(fileName)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Runs the specified file name.
+
+Param:
+Name of the file.</ToolTip>
+              <AssemblyMethodRefId>25395a46-ff89-4cdb-85cc-b481b4c28db6</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>Name of the file.</Description>
+                  <Name>fileName</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestFolder">
+              <DisplayName>TC_DeactivateViscositySoftwareOption</DisplayName>
+              <Guid>4596a6aa-24e3-45d7-b2db-06c004845b03</Guid>
+              <IsActive>false</IsActive>
+              <Name>TC_DeactivateViscositySoftwareOption</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <TestObjects>
+                <TestObject d3p1:type="TestCase">
+                  <Description>Summary:
+Deactivates the software option for Viscosity using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:</Description>
+                  <DisplayName>Viscosity.TC_DeactivateViscositySoftwareOption.Run</DisplayName>
+                  <Guid>3844800b-8e94-452a-aef0-974ef0424ad8</Guid>
+                  <IsActive>false</IsActive>
+                  <Name>Void Run(pathToParameter)</Name>
+                  <TestDefinition>Predefined</TestDefinition>
+                  <ToolTip>Summary:
+Deactivates the software option for Viscosity using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:</ToolTip>
+                  <AssemblyMethodRefId>4ffc8d0b-f7c1-4adb-8ba4-94565a642d9a</AssemblyMethodRefId>
+                  <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+                  <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+                  <Parameters>
+                    <TestParameter>
+                      <Description>The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:</Description>
+                      <Name>pathToParameter</Name>
+                      <ParameterType>System.String</ParameterType>
+                      <ParameterValueValid>false</ParameterValueValid>
+                    </TestParameter>
+                  </Parameters>
+                </TestObject>
+              </TestObjects>
+            </TestObject>
+            <TestObject d3p1:type="TestFolder">
+              <DisplayName>TC_WriteValuesToDevice</DisplayName>
+              <Guid>f9ac6087-9035-4a29-9754-cf736d6dba60</Guid>
+              <IsActive>false</IsActive>
+              <Name>TC_WriteValuesToDevice</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <TestObjects>
+                <TestObject d3p1:type="TestCase">
+                  <Description>Summary:
+Runs the specified is software option enabled.
+
+Param:
+if set to true [is software option enabled].</Description>
+                  <DisplayName>Viscosity.TC_WriteValuesToDevice.Run</DisplayName>
+                  <Guid>27886a27-742a-48b5-8dca-6530b0509a97</Guid>
+                  <IsActive>false</IsActive>
+                  <Name>Void Run(isSoftwareOptionEnabled)</Name>
+                  <TestDefinition>Predefined</TestDefinition>
+                  <ToolTip>Summary:
+Runs the specified is software option enabled.
+
+Param:
+if set to true [is software option enabled].</ToolTip>
+                  <AssemblyMethodRefId>2b626aec-c33e-4363-a255-2497753574b2</AssemblyMethodRefId>
+                  <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+                  <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+                  <Parameters>
+                    <TestParameter>
+                      <Description>if set to true [is software option enabled].</Description>
+                      <Name>isSoftwareOptionEnabled</Name>
+                      <ParameterType>System.Boolean</ParameterType>
+                      <ParameterValueValid>false</ParameterValueValid>
+                    </TestParameter>
+                  </Parameters>
+                </TestObject>
+              </TestObjects>
+            </TestObject>
+            <TestObject d3p1:type="TestFolder">
+              <DisplayName>TC_OpenModuleOffline</DisplayName>
+              <Guid>126cca67-1660-4d73-8ac9-f5149788b351</Guid>
+              <IsActive>false</IsActive>
+              <Name>TC_OpenModuleOffline</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <TestObjects>
+                <TestObject d3p1:type="TestCase">
+                  <Description>Summary:
+Opens the module Viscosity when the device is offline</Description>
+                  <DisplayName>Viscosity.TC_OpenModuleOffline.Run</DisplayName>
+                  <Guid>e19f42b4-38c0-4507-9b94-5a9ad556f7d4</Guid>
+                  <IsActive>false</IsActive>
+                  <Name>Void Run()</Name>
+                  <TestDefinition>Predefined</TestDefinition>
+                  <ToolTip>Summary:
+Opens the module Viscosity when the device is offline</ToolTip>
+                  <AssemblyMethodRefId>a5ab5830-ac89-408d-94dc-8bebb2c8e0c9</AssemblyMethodRefId>
+                  <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+                  <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+                  <Parameters />
+                </TestObject>
+              </TestObjects>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile>d:\users\i02401156\documents\visual studio 2010\Projects\DeviceTypeProjectName_Test429\UserDefinedProjectName1\TS_1.xml</ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

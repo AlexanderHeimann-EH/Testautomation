@@ -1,0 +1,34 @@
+﻿<repository
+name="StatusBar"
+id="7ef7b4e4-fb83-4d2c-9ffa-b7168d86519d"
+rxversion="6.1">
+	<codegen
+	classname="StatusBar"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.ConcentrationV2.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="3a13262f-f09a-4aed-aab1-0ca7e454ffcc"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<folder
+		name="Statusbar"
+		id="dfe6eec6-b84d-4d38-8eda-990de2538fce"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="False">
+			<item
+			name="ConnectionState"
+			id="358affff-ac90-4c3a-92bc-1affee281583"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,accessible"
+			refimgid="aa149fc6-c485-41f8-8c34-b7b60bd1a415">
+				/container[@automationid='ConcentrationModule.Form.Concentration']/element[@automationid='ConcentrationModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/text[@accessiblename='Statusbar.Item.ConnectionState']
+			</item>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

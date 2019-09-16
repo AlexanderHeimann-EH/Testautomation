@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B712A24-42E6-40B7-A750-0BC7D758D18E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.HARTCommunication.V1052</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.HARTCommunication.V1052</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+    <projectdefaultrepository>6bfced6d-5637-49af-9148-2acfab1abc3b</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\Communication\HART\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\Communication\HART\EH.PCPS.TestAutomation.HARTCommunication.V1052.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\Communication\HART\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\Communication\HART\EH.PCPS.TestAutomation.HARTCommunication.V1052.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\CloseConfiguration.cs">
+      <id>a9cb03ed-f87c-4d26-9178-caab027b3a70</id>
+    </Compile>
+    <Compile Include="CommonFlows\ConfigureCommunication.cs">
+      <id>e34758b2-8b0f-478c-993a-11069cb1c7e4</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenConfiguration.cs">
+      <id>566b4885-691d-47d7-9b5b-efa3b7e326a3</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\PressButton.cs">
+      <id>6858a2ae-2cd2-45f7-8aa3-86d46dccc912</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SetParameter.cs">
+      <id>e930f74f-ac47-45bf-a6f1-94a6981cf72c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SettingParser.cs">
+      <id>431e8b19-34ee-4555-9a94-9aa5d4861c0c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleConfigurable.cs">
+      <id>1cdd7531-65e7-4739-a8a0-c6b37e241cd6</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleReady.cs">
+      <id>6e9f2808-c0df-467f-8947-847a4fd2a7ef</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\WaitUntilModuleIsReady.cs">
+      <id>26990cbd-eced-4435-bf4d-2fd0a8e684db</id>
+    </Compile>
+    <Compile Include="GUI\HARTCommRepoElements.cs">
+      <id>c7ac9003-4f27-44f6-bf7f-2f04e04a0ef4</id>
+    </Compile>
+    <Compile Include="GUI\HARTCommunicationRepository.cs">
+      <id>d23cf4d9-efa8-4cec-96c2-2a9176b68d40</id>
+      <BoundTo>6bfced6d-5637-49af-9148-2acfab1abc3b</BoundTo>
+      <DependentUpon>HARTCommunicationRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>b48086e8-2b0e-4801-a4d6-66865c1f682f</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonApply.cs">
+      <id>b3f687ec-1c54-485a-8790-7761ffd4cd70</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonCancel.cs">
+      <id>0f01d6cb-10ca-4bc7-a8c1-e6795e84a795</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonOK.cs">
+      <id>10e76513-46b7-4320-a991-5f048d1b982a</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetCommunicationInterface.cs">
+      <id>6c54073a-b2ec-42ba-9bc5-e6e91cf21b83</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetEndAddress.cs">
+      <id>0d1d2ea4-a770-4164-915e-edeb53d54555</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetSerialInterface.cs">
+      <id>f7ea4a9e-22e1-454f-b588-a571a21fc6f3</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetStartAddress.cs">
+      <id>79023c9f-5f09-4f51-84b5-45909b29c3fb</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions\Dialogs\Execution\">
+      <id>2d02566e-5478-4943-98bf-53d92eaf738a</id>
+    </Folder>
+    <Folder Include="Functions\Dialogs\Validation\">
+      <id>59de3c17-ca3d-48a9-a276-6c26c0314e7a</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Execution\">
+      <id>f24c8a2c-129c-4264-a11a-077bcf32b907</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Validation\">
+      <id>62618683-cc1c-4527-b79b-485cc0d64b3f</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Execution\">
+      <id>b80f74c2-e692-47c6-acbe-adccdfdfcee3</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Validation\">
+      <id>d43885b6-d938-4c3f-8dd3-e36b553360fd</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csproj">
+      <Project>{D3C23E1A-7467-490D-B62F-738044A3D87D}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-dc3e-40e8-a120-7cc13b75213a}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\HARTCommunicationRepository.rximg">
+      <BoundTo>6bfced6d-5637-49af-9148-2acfab1abc3b</BoundTo>
+      <DependentUpon>HARTCommunicationRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8355fbbd-ad21-4f06-a9a3-d6580ad870ce</id>
+    </None>
+    <None Include="GUI\HARTCommunicationRepository.rxrep">
+      <id>6bfced6d-5637-49af-9148-2acfab1abc3b</id>
+      <repoid>663bd677-6a8f-443f-a064-8f02917ac90d</repoid>
+      <reporootid>1cc51f52-1ef4-49f1-8c9f-346fe05fdbe0</reporootid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

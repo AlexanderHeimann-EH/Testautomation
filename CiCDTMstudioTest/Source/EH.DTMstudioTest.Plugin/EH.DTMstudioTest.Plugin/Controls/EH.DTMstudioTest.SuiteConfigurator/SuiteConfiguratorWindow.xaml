@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="EH.DTMstudioTest.SuiteConfigurator.SuiteConfiguratorWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:suiteConfiguratorControl="clr-namespace:EH.DTMstudioTest.SuiteConfigurator.Content.SuiteConfiguratorControl"
+             SizeChanged="OnSuiteConfiguratorWindowSizeChanged"
+             DragOver="OnSuiteConfiguratorWindowDragOver"
+             Drop="OnSuiteConfiguratorWindowDrop">
+    <Grid>
+        <suiteConfiguratorControl:SuiteConfiguratorControl x:Name="SuiteConfiguratorControl" />
+    </Grid>
+
+</UserControl>

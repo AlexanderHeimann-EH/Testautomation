@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8140E063-D82E-4CDB-B462-CF0CACBE4298}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.FieldCare.V20901</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.FieldCare.V20901</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <RanorexVersion>6.1</RanorexVersion>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\HostApplication\FDT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.V20901.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\HostApplication\FDT\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.V20901.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\AddDevice.cs">
+      <id>aa33db8d-88b6-475d-a4ce-89bd8eac60ee</id>
+    </Compile>
+    <Compile Include="CommonFlows\CloseFunction.cs">
+      <id>22d5e9b6-41dd-4781-b4a6-f444c38842e6</id>
+    </Compile>
+    <Compile Include="CommonFlows\CloseHostApplication.cs">
+      <id>79ab5446-259d-4113-b930-eb9fb5f5e09f</id>
+    </Compile>
+    <Compile Include="CommonFlows\CloseProject.cs">
+      <id>e402942f-978a-434a-a625-a7eeb99d20d1</id>
+    </Compile>
+    <Compile Include="CommonFlows\ConnectDevice.cs">
+      <id>1f8242ea-4d04-4a04-a5a4-f531a3438c3e</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetCommDtmContainerPath.cs">
+      <id>a1d7a47c-9dd5-478d-b261-374e659fe5f8</id>
+    </Compile>
+    <Compile Include="CommonFlows\CreateNetwork.cs">
+      <id>438c24e2-ac6b-48b3-acc3-c70034dd4c15</id>
+    </Compile>
+    <Compile Include="CommonFlows\CreateTopologyOffline.cs">
+      <id>7502cac2-f146-4b40-8210-2522d32b5f40</id>
+    </Compile>
+    <Compile Include="CommonFlows\CreateTopologyOnline.cs">
+      <id>e96f86df-8eeb-48b6-b24f-7ee3dab9c454</id>
+    </Compile>
+    <Compile Include="CommonFlows\CreateProject.cs">
+      <id>91e79684-61d7-4025-a902-2b513bd90590</id>
+    </Compile>
+    <Compile Include="CommonFlows\DeleteProject.cs">
+      <id>a46355f7-4aef-4d0d-b73b-f13a4ab9eaae</id>
+    </Compile>
+    <Compile Include="CommonFlows\DisconnectDevice.cs">
+      <id>ab6386d5-5828-421f-ba71-2d8d7d567773</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetCriticalError.cs">
+      <id>17cd6afa-9478-4960-b568-b4e2f1facc4e</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetDeviceList.cs">
+      <id>4558e63f-639a-4584-ad2b-3cb1a91047d2</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetDtmContainerPath.cs">
+      <id>9afa283c-a5fd-4adf-ad5f-590f4b701939</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetHostApplicationLanguage.cs">
+      <id>f6a474c9-46cd-48c7-84f2-52cdc1684948</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetMessageLog.cs">
+      <id>d39860b4-a86b-4c51-b998-184c348cb1ff</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetSelectedDevice.cs">
+      <id>376a982a-018b-4310-a79a-48e61d43f6e4</id>
+    </Compile>
+    <Compile Include="CommonFlows\LoadProject.cs">
+      <id>67ddbaca-914c-4fd9-acb2-2c2fd3e8b086</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenAdditionalFunction.cs">
+      <id>20ec43df-ee5f-45ba-9476-129506ea74fa</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenFunction.cs">
+      <id>ba805cca-03ef-4351-b189-372e2cc74bb5</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenHostApplication.cs">
+      <id>eb6959a7-c271-4a77-ae89-f93ebbb251f0</id>
+    </Compile>
+    <Compile Include="CommonFlows\PrintDeviceInformation.cs">
+      <id>ec3a4665-5d62-4f4f-b8fe-3e92320b75d0</id>
+    </Compile>
+    <Compile Include="CommonFlows\ReadDataFromDevice.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <id>d97f146f-280a-45e9-97cc-c4599eafb051</id>
+    </Compile>
+    <Compile Include="CommonFlows\RegisterDeviceType.cs">
+      <id>b64b233c-865b-43bc-8534-64bebce1da4a</id>
+    </Compile>
+    <Compile Include="CommonFlows\RemoveDevice.cs">
+      <id>364bd983-ec0e-40d1-a175-474799072bbc</id>
+    </Compile>
+    <Compile Include="CommonFlows\RestoreDeviceData.cs">
+      <id>5feec0cf-bcb3-46e4-90a8-71384bc3d713</id>
+    </Compile>
+    <Compile Include="CommonFlows\SaveDeviceData.cs">
+      <id>0192802e-6c3b-41a3-b507-bcd726ed1deb</id>
+    </Compile>
+    <Compile Include="CommonFlows\SaveProject.cs">
+      <id>bf575b4b-87fd-4f18-9094-68e74cd7803f</id>
+    </Compile>
+    <Compile Include="CommonFlows\SelectDevice.cs">
+      <id>6cb8c155-e222-47ed-ba9a-70387d91d7fe</id>
+    </Compile>
+    <Compile Include="CommonFlows\UnregisterDeviceType.cs">
+      <id>8409a62c-7241-429a-8369-0f5e90dc1c37</id>
+    </Compile>
+    <Compile Include="CommonFlows\WriteDataToDevice.cs">
+      <id>67f08eb8-57cd-4ab6-a572-1917729047bc</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Execution\GetCommDtmContainerPath.cs">
+      <id>9832db0e-09b4-486d-9757-3667f1761409</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Execution\GetDtmContainerPath.cs">
+      <id>bc34b1f0-b330-4768-ae51-e6af8ec31f3d</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Execution\StartFrame.cs">
+      <id>e6e2b1b2-5e35-4ccf-9b9e-207280e31c51</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Validation\GetModuleAreaControl.cs">
+      <id>d65a8f7f-777e-40da-bff0-1aa925e84149</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Validation\GetNumberOfOpenedModules.cs">
+      <id>c7b2f8ba-d789-422d-9369-122ebbc81a8c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Validation\GetOpenedModules.cs">
+      <id>f972c027-2a35-4dc2-bee0-d70653bb6811</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Validation\IsFrameAvailable.cs">
+      <id>f5f38e60-8e96-44ab-bfca-76e82436e68b</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Validation\IsModuleAlreadyOpened.cs">
+      <id>4c8ea286-5bfb-4105-8e24-ae46c3a533a8</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Validation\WaitUntilFrameClosed.cs">
+      <id>0df35d21-ca44-4b0b-813a-ab1314dbea64</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\AddDevice\Execution\AddDevice.cs">
+      <id>1d042cd7-d8d4-418b-8083-db349908d66b</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\CloseProject\Validation\ClosingInProgressDialog.cs">
+      <id>c60acb66-0809-4ffd-b478-22db08418383</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ConfirmDeleteMessage\Execution\ConfirmDelete.cs">
+      <id>d4054145-6c27-47d2-bb97-82b45d946d23</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\DtmMessages\Execution\DtmMessages.cs">
+      <id>b7fa9576-b135-4f1f-a701-bc4c325f5951</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\DtmMessages\Validation\ScanDtmMessages.cs">
+      <id>c58e41a2-f3ad-4d30-80fe-a9e89b6aa87f</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\EvaluationInfo\Execution\EvaluationInfo.cs">
+      <id>17332e1d-0c5e-4d49-bd90-eeb656b0ae85</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\FileBrowser\Execution\FileBrowser.cs">
+      <id>58c15bad-e4d8-4f14-96c4-3d3e76359216</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\FindDevice\Execution\FindDevice.cs">
+      <id>60289fa1-cf2f-4655-8214-3c6647fccf1b</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ProjectBrowser\Execution\ProjectBrowser.cs">
+      <id>17aa3192-ed18-4d33-be62-e91d4408a600</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ReadFromDeviceMessage\Execution\ReadFromDevice.cs">
+      <id>df0999f4-a357-4666-8f7c-f7fc3a4b04a5</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ReadingFromDevice\Execution\ReadingFromDevice.cs">
+      <id>55c6e598-fcac-4add-a6b3-0e6c87d9dd3f</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ReadingFromDevice\Validation\IsFDTUploadActive.cs">
+      <id>1fb44742-1bb1-44ef-9b8e-a83c972ffd3a</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ReportConfiguration\Execution\ReportConfiguration.cs">
+      <id>087413eb-5746-4a1f-a087-93e846b36aeb</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\ReportConfiguration\Validation\IsFDTPrintActive.cs">
+      <id>ae75d40e-421c-48bf-8d35-2ce5f7cd6258</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\SaveProjectInProgress\Validation\ValidationMethods.cs">
+      <id>1722e077-4923-40db-88eb-d8e58cae199a</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Execution\IgnoreUpdate.cs">
+      <id>d0cfc44b-d0ec-4f14-ad2f-405e5e405d09</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Execution\UpdateCatalog.cs">
+      <id>a4a05c6a-793e-4d59-a797-fcd15ada318f</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Validation\ValidationMethods.cs">
+      <id>98d2611f-f319-4a41-83f2-73b388eacaad</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\UpdateDTMCatalogue\Execution\UpdateDTMCatalogue.cs">
+      <id>25735289-4120-4553-82f6-0849527189e7</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\UpdateDTMCatalogue\Validation\ValidationMethods.cs">
+      <id>aa876a98-1535-4b59-aed6-5aaf424465e5</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\WriteToDeviceInfoMessage\Execution\WriteToDeviceInfo.cs">
+      <id>ec52c614-2e50-4ebd-888b-a066095c8b94</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\WriteToDeviceSuccessMessage\Execution\WriteToDeviceSuccess.cs">
+      <id>b1afcda8-4dc0-49da-8534-e39b6aabfcb0</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\WriteToDeviceWarningMessage\Execution\WriteToDeviceWarning.cs">
+      <id>6ae257b4-e416-4185-a810-a198f2199c84</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\WritingToDevice\Execution\WritingToDevice.cs">
+      <id>54bd534d-8ab9-49e9-9f73-639555cb8446</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\WritingToDevice\Validation\IsFDTDownloadActive.cs">
+      <id>3260bcea-1e15-4ea9-bf43-a985572be025</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\CloseAdditionalModule.cs">
+      <id>1b7af166-e354-4f60-be64-9ca55d273d72</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenAddDevice.cs">
+      <id>b27bbcea-a43e-45b9-a7ce-668c34294ce4</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenAdditionalFunctions.cs">
+      <id>0b9cd12a-30fd-4819-9dd7-a9921b717822</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenAdditionalModule.cs">
+      <id>fa8a0d08-f3ea-45b1-a546-4badd0ef32a4</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenConfiguration.cs">
+      <id>1475cbfc-7211-4d34-bb94-f500b78cc431</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenDisplayDtmCatalogue.cs">
+      <id>0e678e8b-7987-4370-92cd-7408b950e086</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenFdtPrint.cs">
+      <id>51262030-59ae-4484-a24c-06ec986afa2b</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenFindDevice.cs">
+      <id>07a7500f-03c2-4dc0-8432-971ac451c4cf</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenFindNextDevice.cs">
+      <id>4ee83a5a-bc51-48c0-ac90-b88359e79f43</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenFunction.cs">
+      <id>12e5de10-5418-47d9-9e49-66106d6b5cee</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenOfflineParameterization.cs">
+      <id>77a77332-8cdd-49e9-8694-5f83c81039a1</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenOnlineParameterization.cs">
+      <id>82dc3ba1-cbb2-4daf-9960-d6477b8ee3b8</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenOptions.cs">
+      <id>27473669-485d-4fa0-8db8-30a9a7aba70d</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenPrintSetup.cs">
+      <id>1144a78c-c60d-4d6b-9822-ec53f304bbdd</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenProjectLoad.cs">
+      <id>968ed3d7-74c5-462c-8091-fcd3b4bee3dc</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenProjectNew.cs">
+      <id>932de292-64bc-4697-a79b-caeddbd86fc3</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenProjectSaveAs.cs">
+      <id>4ffcbe61-832c-4282-81c8-6103954a7e79</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\OpenUpdateDtmCatalogue.cs">
+      <id>804ce553-f63d-438d-b5f8-40201dea1ce6</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunCloseAllWindows.cs">
+      <id>3fda8dda-d234-41df-ad73-25b6d260b51a</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunConnect.cs">
+      <id>215e3eb9-22fa-49a0-b2fc-c60a90c818ca</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunCreateNetwork.cs">
+      <id>a2b6dda5-d785-49da-898c-01c37d507ae1</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunDeleteDevice.cs">
+      <id>f79f723e-4918-4ce2-ae7c-ae36cc7a9206</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunDeviceFunction.cs">
+      <id>3b4f06bf-1627-4df0-9ccc-cc8f6eb42724</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunDeviceOperation.cs">
+      <id>30f97ce3-6255-4b4a-81bc-04ff63d209e3</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunDisconnect.cs">
+      <id>cda287b1-ff44-4a27-be14-bed8bb1611cc</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunDtmCatalogue.cs">
+      <id>065ce3c3-5759-4f6a-af78-329704ce2e4a</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunEdit.cs">
+      <id>042c692f-f422-4609-86a5-b97ba259aa04</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunExtras.cs">
+      <id>63df81f4-3262-4de4-93b6-10a631a96c81</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunFdtReadFromDevice.cs">
+      <id>69b939a3-34f6-41f0-9032-b374df355a9e</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunFdtWriteToDevice.cs">
+      <id>95f593a8-098d-46df-b93a-df148561dc74</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunFile.cs">
+      <id>b0f19275-b154-481e-a093-8be5b8d6ba12</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunFrameExit.cs">
+      <id>ac437965-9277-4b97-b0cb-79b3cf8bd415</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunHelp.cs">
+      <id>8d61627e-5c1c-4f94-8e20-fd8824ed75ae</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunLogOff.cs">
+      <id>e09d0e98-7e59-4786-9643-25ba12e06bb7</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunProjectClose.cs">
+      <id>c58fa3c7-723b-480b-b5b3-5209e5008f9c</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunProjectSave.cs">
+      <id>cab6d4aa-17d6-4e8f-bdeb-518ad1cd3ac7</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunScanningTools.cs">
+      <id>61d314e0-06cb-4f05-80e9-efba096b300c</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunSelectModule.cs">
+      <id>d68cb3bc-cc84-4c3f-b5d5-dcdbee34ae7f</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunTools.cs">
+      <id>139b7af8-6570-4666-91fe-e9598cffd697</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunView.cs">
+      <id>848689f6-8d32-4520-9571-661b61333251</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Execution\RunWindow.cs">
+      <id>f1685505-21cc-488f-9750-851321430c80</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Validation\GetAdditionalFunctionModules.cs">
+      <id>67885963-c132-42a8-a118-afba4e3ec03d</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Validation\IsModuleAvailableAtMenu.cs">
+      <id>f2c55348-d1ff-43c4-928f-c3edadb21c11</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menubar\Validation\IsModuleEnabledAtMenu.cs">
+      <id>306d27d2-6bc7-4ba5-8789-47ae479f8ab3</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\OpenAddDevice.cs">
+      <id>dec6fd88-1eab-422f-976e-44ec2bbed855</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\OpenFdtPrint.cs">
+      <id>23920de1-38aa-4ddd-be9a-5ecce1306581</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\OpenPrintSetup.cs">
+      <id>b82e2238-e536-4425-a40d-fa9d186294a5</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\OpenProjectLoad.cs">
+      <id>5c318bce-9ab7-4606-9a2b-f7d76755ffc8</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\OpenProjectNew.cs">
+      <id>be0e19a3-5da6-4356-8ea0-4529700d3fd5</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunConnect.cs">
+      <id>5710eb27-c857-469f-bd53-577517185317</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunCreateNetwork.cs">
+      <id>9a23b5bd-f962-4229-a88f-1a61ceb3014c</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunDeleteDevice.cs">
+      <id>a053592f-b3df-4145-ac79-5bcca48ac33e</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunDisconnect.cs">
+      <id>09ee2603-c294-428f-80ec-069dd77a755c</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunFdtReadFromDevice.cs">
+      <id>ba29edd6-e7c4-4bf1-9281-11d776f2db1b</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunFdtWriteToDevice.cs">
+      <id>52de33d2-b699-4606-8bf0-ecc774282a81</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Execution\RunProjectSave.cs">
+      <id>eaa93d1a-48cd-4671-9845-aed0b718f4f0</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Validation\IsConnected.cs">
+      <id>35ba3306-f438-4b17-a943-3f152aeb30a5</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Validation\IsDisconnected.cs">
+      <id>ac0498c7-84f3-4098-bef4-c31432feba37</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Validation\WaitUntilFrameConnected.cs">
+      <id>1a07b1c3-d10c-4e60-997e-2d490e36c21b</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Toolbar\Validation\WaitUntilFrameDisconnected.cs">
+      <id>5400d47c-0218-4dd1-b66d-fe6d14215a90</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\ApplicationAreaElements.cs">
+      <SubType>Code</SubType>
+      <id>e5a44b57-a1da-44ef-ac93-4fe6395e2fd4</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\ApplicationAreaPaths.cs">
+      <id>98de651c-38f4-43cd-8de9-abb2856112a3</id>
+      <BoundTo>da8b2922-e4f3-4656-908a-24f3f0e5a598</BoundTo>
+      <DependentUpon>ApplicationAreaPaths.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\ApplicationElements.cs">
+      <SubType>Code</SubType>
+      <id>20ee06e6-49d4-470c-a777-2dbec868403d</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\ApplicationPaths.cs">
+      <SubType>Code</SubType>
+      <id>ed70cf01-4ba9-4f33-aa52-b769cbaced75</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\DTMContainer.cs">
+      <id>cad0f000-ea1e-4dde-94a4-fad8d05b0dff</id>
+      <BoundTo>7e197e69-ba22-427c-ad5c-3154a39e0d6e</BoundTo>
+      <DependentUpon>DTMContainer.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\DTMViewElements.cs">
+      <SubType>Code</SubType>
+      <id>27aaad66-a7ef-4780-9baa-d2284fdc9941</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\DTMViewPaths.cs">
+      <SubType>Code</SubType>
+      <id>306e2013-73b8-4340-af93-17588835a990</id>
+      <BoundTo>691e9a5f-c995-49f1-b65e-d8c02c117534</BoundTo>
+      <DependentUpon>DtmViewPaths.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\NetworkViewElements.cs">
+      <SubType>Code</SubType>
+      <id>70e7286d-36ca-4b1a-ac1c-02cab5c9f2fd</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\NetworkViewPaths.cs">
+      <SubType>Code</SubType>
+      <id>8143131e-9d8d-4c5c-9524-26d765858fc7</id>
+      <BoundTo>bfcfefa7-9e79-4f24-9f9b-3ee51c295f52</BoundTo>
+      <DependentUpon>NetworkViewPaths.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\Dialogs\AddDeviceElements.cs">
+      <SubType>Code</SubType>
+      <id>add6733a-4864-4194-ae53-9e2215ceb758</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\CloseProjectElements.cs">
+      <id>ee1c67d9-92ba-4319-ab2e-8bbeb33ee96c</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ConfirmDeleteMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>330d1217-0ad0-47da-8e4f-85c5e206e3b1</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\Dialogs.cs">
+      <id>5feafc58-65cc-4170-9239-fb5fbb6899d5</id>
+      <BoundTo>06594b6d-2d52-4962-bdb5-386e573eb2b3</BoundTo>
+      <DependentUpon>Dialogs.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\Dialogs\DtmMessagesElements.cs">
+      <SubType>Code</SubType>
+      <id>3b13800e-5e70-4773-9741-f512627c873e</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\EvaluationInfoElements.cs">
+      <SubType>Code</SubType>
+      <id>cc6f0720-757c-4f6e-a28c-f945e251b92d</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FileBrowserElements.cs">
+      <SubType>Code</SubType>
+      <id>a8eb5de3-22d2-4e48-9b09-33f23a12968b</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FindDeviceElements.cs">
+      <SubType>Code</SubType>
+      <id>036564d6-4e50-41b4-81d8-3135c5e23c3f</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FindDeviceMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>7e944be6-8f14-418c-9d2d-88baea0670ac</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\OpenUnavailableProjectMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>4e4d5cd8-2e28-4b89-bb1d-0dd02bed2c19</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ProjectBrowserElements.cs">
+      <SubType>Code</SubType>
+      <id>1a0c10cf-6084-4bda-b62f-3e4dd68eaefe</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ReadFromDeviceMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>88968786-a2f3-404f-8db5-b295d150e2ec</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ReadingFromDeviceElements.cs">
+      <SubType>Code</SubType>
+      <id>ed9c3e0f-8016-4f12-8b22-1ecd3f3461b7</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ReplaceProjectMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>565f4fd1-3c09-4733-bd81-10745bb10eff</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ReportConfigurationElements.cs">
+      <SubType>Code</SubType>
+      <id>77d5b212-6a7b-4feb-a6f6-9eff796f6783</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\SaveAsMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>56d60d5c-d572-4660-98d9-5502810c561b</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\SaveProjectMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>3be6b08a-4cb9-4dcb-9598-0630cd703969</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\SaveProjectProgressElements.cs">
+      <id>4e143f5c-4b1e-4289-9111-adb304677481</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ScanningElements.cs">
+      <id>76d2a345-a6e4-494c-825f-d2b6f8fee629</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ShutdownDtmMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>6d4b4760-f70c-4b4a-93c0-579cb7aa553b</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\UpdateDtmCatalogMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>a9f2d84e-688d-4a3f-a309-273e14a19590</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\UpdateDtmCatalogueElements.cs">
+      <SubType>Code</SubType>
+      <id>7321d771-b9b9-438e-98d4-a26bdb139b52</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\UpdateProcessMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>aabd1fe8-eca4-4a01-b2df-fafce0268972</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WriteToDeviceInfoMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>f05391fd-5889-44b3-b385-f3bc100360d3</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WriteToDeviceSuccessMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>6118be5b-17de-4293-98f7-c215ca064535</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WriteToDeviceWarningMessageElements.cs">
+      <SubType>Code</SubType>
+      <id>c6568fb9-3af6-46a0-8f18-7caeb435387d</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WritingToDeviceElements.cs">
+      <SubType>Code</SubType>
+      <id>cffafc20-6cf5-497a-b78f-3ed2630cafed</id>
+    </Compile>
+    <Compile Include="GUI\MenuArea\MenuBar\Elements.cs">
+      <SubType>Code</SubType>
+      <id>5b7adf4a-8574-4bc5-9a18-ade7686b4664</id>
+    </Compile>
+    <Compile Include="GUI\MenuArea\MenuBar\Paths.cs">
+      <SubType>Code</SubType>
+      <id>8189b3ba-94d1-41ee-9416-8cb9ed678479</id>
+      <BoundTo>8da36a46-2a56-4d10-b4be-7a42c371d8bc</BoundTo>
+      <DependentUpon>Paths.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\MenuArea\MenuBar\Submenu.cs">
+      <SubType>Code</SubType>
+      <id>68772fa1-88a7-4fd6-93ea-20b1bf493355</id>
+    </Compile>
+    <Compile Include="GUI\MenuArea\Toolbar\IconElements.cs">
+      <SubType>Code</SubType>
+      <id>8b7abc64-db39-4b5e-a13a-524483a118c7</id>
+    </Compile>
+    <Compile Include="GUI\MenuArea\Toolbar\Icons.Designer.cs">
+      <DependentUpon>Icons.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <id>b5d1725f-894a-4789-a879-5813d01f3e2c</id>
+    </Compile>
+    <Compile Include="GUI\MenuArea\Toolbar\Paths.cs">
+      <id>6bba495e-8177-490a-ba61-fdea7aa33451</id>
+      <BoundTo>4ae2c287-0735-48dc-b645-6e75a4d83242</BoundTo>
+      <DependentUpon>Paths.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>3b4bce1a-cde8-4c41-a126-e30e487602f5</id>
+    </Compile>
+    <Compile Include="Resources\FieldCareLanguageIDs.Designer.cs">
+      <DependentUpon>FieldCareLanguageIDs.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <id>62fe48ff-41d7-4296-a972-85809773c65f</id>
+    </Compile>
+    <Compile Include="SpecificFlows\CreateNetwork.cs">
+      <id>92153832-722f-4b5b-950a-66e243f1512a</id>
+    </Compile>
+    <Compile Include="SpecificFlows\FdtDownload.cs">
+      <id>036c97fe-8d22-4b4a-a6ab-ce1bf9d5ce88</id>
+    </Compile>
+    <Compile Include="SpecificFlows\FdtPrintAsPdf.cs">
+      <id>1a428b13-3b2e-469b-827f-88729953915f</id>
+    </Compile>
+    <Compile Include="SpecificFlows\FdtUpload.cs">
+      <id>760a69c9-0f09-40a5-883d-0f6081df9022</id>
+    </Compile>
+    <Compile Include="SpecificFlows\FocusNetworkView.cs">
+      <id>c79467a4-8f12-4cf9-b812-d586976d9266</id>
+    </Compile>
+    <Compile Include="SpecificFlows\FrameExitWithoutSaving.cs">
+      <id>a150cc50-6dbc-4624-97b7-96554a344c69</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ProjectClose.cs">
+      <id>a3275c7e-de61-4832-a9e4-509259f6f329</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ProjectLoad.cs">
+      <id>5fc32580-4b76-45aa-aada-06bd6d5ee12f</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ProjectNewEmpty.cs">
+      <id>d147b660-e14f-42e4-817a-3531919bf087</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ProjectSave.cs">
+      <id>559e2b64-27b5-434a-8f7b-6bda7c98c220</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ProjectSaveAs.cs">
+      <id>7aaff368-96be-448d-ad75-45e685fdb6c4</id>
+    </Compile>
+    <Compile Include="SpecificFlows\UpdateDtmCatalog.cs">
+      <id>2aac8f62-1f6a-46c8-ab17-b6d7c3c68480</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions\StatusArea\">
+      <id>942f0bbd-c58f-444d-a6d7-53b1194ce099</id>
+    </Folder>
+    <Folder Include="GUI\StatusArea\">
+      <id>9b190246-8b08-4995-86ff-c240473f919b</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunctionInterfaces\EH.PCPS.TestAutomation.DeviceFunctionInterfaces.csproj">
+      <Project>{33D95987-17DA-4F6B-8796-B835749DAEB4}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunctionLoader\EH.PCPS.TestAutomation.DeviceFunctionLoader.csproj">
+      <Project>{C48CE9B8-0BD6-4DA2-B9D0-7E3FF138D16D}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\EH.PCPS.TestAutomation.OperatingSystemInterfaces.csproj">
+      <Project>{84570471-ED0C-4D17-8847-2A912DA4AD5D}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\EH.PCPS.TestAutomation.OperatingSystemLoader.csproj">
+      <Project>{9743802E-A832-476A-B1D5-3DD503E52CC9}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{F50A421E-F8FB-49BD-BB83-3CAE985C4FD1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\HostApplicationLoader\EH.PCPS.TestAutomation.HostApplicationLoader.csproj">
+      <Project>{CF6B82E1-2E16-4978-85D2-79E36F69C39B}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\ApplicationArea\MainView\ApplicationAreaPaths.rximg">
+      <BoundTo>da8b2922-e4f3-4656-908a-24f3f0e5a598</BoundTo>
+      <DependentUpon>ApplicationAreaPaths.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6ac161a6-dbfc-4414-b505-4bb463113f09</id>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\ApplicationAreaPaths.rxrep">
+      <id>da8b2922-e4f3-4656-908a-24f3f0e5a598</id>
+      <repoid>1a132188-f8f5-4f87-89e6-bf16f2a970f1</repoid>
+      <reporootid>b87112a2-0a48-486f-9bec-5e6d3574bcc4</reporootid>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\DTMContainer.rximg">
+      <BoundTo>7e197e69-ba22-427c-ad5c-3154a39e0d6e</BoundTo>
+      <DependentUpon>DTMContainer.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6cd63747-1bd8-4fce-a31a-992cf8dc44ca</id>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\DTMContainer.rxrep">
+      <id>7e197e69-ba22-427c-ad5c-3154a39e0d6e</id>
+      <repoid>1e40a554-3682-4586-b7c6-936c392b4272</repoid>
+      <reporootid>8ef118e6-8b88-42b7-8080-2f46179bb0cb</reporootid>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\DtmViewPaths.rximg">
+      <BoundTo>691e9a5f-c995-49f1-b65e-d8c02c117534</BoundTo>
+      <DependentUpon>DtmViewPaths.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f1c5bf89-57f2-4c62-a416-1ca7dfbf9700</id>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\DtmViewPaths.rxrep">
+      <id>691e9a5f-c995-49f1-b65e-d8c02c117534</id>
+      <repoid>6d477a0c-b212-49b7-bd5f-c3425a7f3522</repoid>
+      <reporootid>b87112a2-0a48-486f-9bec-5e6d3574bcc4</reporootid>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\NetworkViewPaths.rximg">
+      <id>1e6d26fa-bb96-42da-be33-bd8b7cae1284</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\NetworkViewPaths.rxrep">
+      <id>bfcfefa7-9e79-4f24-9f9b-3ee51c295f52</id>
+      <repoid>dcc643ff-9c61-49a2-a2ce-4cf14d74cf2c</repoid>
+      <reporootid>b87112a2-0a48-486f-9bec-5e6d3574bcc4</reporootid>
+    </None>
+    <None Include="GUI\Dialogs\Dialogs.rximg">
+      <id>ce05e434-e4b1-497c-9693-f91cdbf34388</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="GUI\Dialogs\Dialogs.rxrep">
+      <id>06594b6d-2d52-4962-bdb5-386e573eb2b3</id>
+      <repoid>2a5a3840-0e51-45b2-b62c-bc19480b1cca</repoid>
+      <reporootid>7b07d4d2-71b3-4a92-943f-027e3e3e4c6b</reporootid>
+    </None>
+    <None Include="GUI\MenuArea\MenuBar\Paths.rximg">
+      <BoundTo>8da36a46-2a56-4d10-b4be-7a42c371d8bc</BoundTo>
+      <DependentUpon>Paths.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6e5b3e8c-0a4b-466a-a1a6-ca3a66c83fbc</id>
+    </None>
+    <None Include="GUI\MenuArea\MenuBar\Paths.rxrep">
+      <id>8da36a46-2a56-4d10-b4be-7a42c371d8bc</id>
+      <repoid>79b3481f-0ea9-4fc8-be33-e01f08fdac2c</repoid>
+      <reporootid>b402cc35-a44c-4d79-9e27-14f9fb0a42a1</reporootid>
+    </None>
+    <None Include="GUI\MenuArea\Toolbar\Paths.rximg">
+      <BoundTo>4ae2c287-0735-48dc-b645-6e75a4d83242</BoundTo>
+      <DependentUpon>Paths.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a4a99de4-5d8a-4b64-9049-585f7c64c179</id>
+    </None>
+    <None Include="GUI\MenuArea\Toolbar\Paths.rxrep">
+      <id>4ae2c287-0735-48dc-b645-6e75a4d83242</id>
+      <repoid>018299d1-bf61-4154-8ac5-6e1644cc1ad0</repoid>
+      <reporootid>b402cc35-a44c-4d79-9e27-14f9fb0a42a1</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\MenuArea\Toolbar\Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+      <id>41303ec9-8f8c-4180-96af-6e2bd9b67f44</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FieldCareLanguageIDs.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FieldCareLanguageIDs.Designer.cs</LastGenOutput>
+      <id>03a7cc15-85b2-4210-9353-ae2be9a9d905</id>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAA7EB4D-C7F9-41A7-A273-8ADA0755D8B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.DTMstudioTest.Common</RootNamespace>
+    <AssemblyName>EH.DTMstudioTest.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>EH.DTMstudioTest.Common.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DtmStudioCoDIACommonTaskInfrastructure">
+      <HintPath>ReferencedAssembly\DtmStudioCoDIA\DtmStudioCoDIACommonTaskInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="DTMstudioInfrastructure">
+      <HintPath>ReferencedAssembly\DtmStudioCoDIA\DTMstudioInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="EH.PCPS.TestAutomation.Common">
+      <HintPath>P:\EH.PCSW.Testautomation.TestFramework.Common\ReleaseBin\Release\EH.PCPS.TestAutomation.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>ReferencedAssembly\Ionic.Zip\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Utilities\Logging\Dlls\Log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.VisualStudio.Shell.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceFunctionMapping\DeviceFunctionMapping.cs" />
+    <Compile Include="DeviceFunctionMapping\DeviceFunctionMappingHelper.cs" />
+    <Compile Include="DeviceFunctionMapping\DeviceFunctionMappingList.cs" />
+    <Compile Include="Interfaces\IExportResultToTestManagement.cs" />
+    <Compile Include="Interfaces\IFirmwareInformation.cs" />
+    <Compile Include="Manager\AssemblyManager.cs" />
+    <Compile Include="Manager\DtmStudioDataManager.cs" />
+    <Compile Include="Manager\EhDataManager.cs" />
+    <Compile Include="Manager\EhExportManager.cs" />
+    <Compile Include="Manager\EhReportManager.cs" />
+    <Compile Include="Manager\TestFrameworkDataManager.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ConstStrings.cs" />
+    <Compile Include="Tools\IonicZip.cs" />
+    <Compile Include="Tools\OSInfo.cs" />
+    <Compile Include="Tools\ToolBox.cs" />
+    <Compile Include="TransportObjects\AssemblyData\AssemblyHelper.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\BaseTag.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\CodeTag.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\MethodTags.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\ParamTag.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\ParamTags.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\ReturnTag .cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\SuiteTag.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\SuiteTags.cs" />
+    <Compile Include="TransportObjects\AssemblyData\DocumentationTags\SummaryTag.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\AppDomainAssemblyLoader.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\AssemblyProxy.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\EhMethodInfo.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\EhMethodInfoCollection.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\EhParameterInfo.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\EhParameterInfoCollection.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\EhResourceCollection.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\EhResourceInfo.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\LoadedAssembly.cs" />
+    <Compile Include="TransportObjects\AssemblyData\Proxy\LoadedAssemblyCollection.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestConfiguration.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestCase.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestCollection.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestFolder.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestMethod.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestModule.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestObject.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestObjectCollection.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestParameter.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestParameterCollection.cs" />
+    <Compile Include="TransportObjects\ControlDocument\TestObjects\TestSuite.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\DeviceFunction.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\DeviceTypeFramework.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\DeviceTypeProject.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\DeviceTypeTestProject.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\DTMstudioTestData.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\FirmwareInformation.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\FrameworkComponent.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\ReportData.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\TestEnvironment.cs" />
+    <Compile Include="TransportObjects\DtmStudioTestData\TestLibrary.cs" />
+    <Compile Include="Utilities\Converter\ObjectToStringConverter.cs" />
+    <Compile Include="Utilities\Converter\StringToBooleanConverter.cs" />
+    <Compile Include="Utilities\Helper\ArgumentHelper.cs" />
+    <Compile Include="Utilities\Helper\AssemblyResolverHelper.cs" />
+    <Compile Include="Utilities\Helper\ControlDocumentHelper.cs" />
+    <Compile Include="Utilities\Helper\FrameworkHelper.cs" />
+    <Compile Include="Utilities\Helper\ProjectTypeGuid.cs" />
+    <Compile Include="Utilities\Logging\Log.cs" />
+    <Compile Include="Utilities\Logging\Log4Net\Log4NetLog.cs" />
+    <Compile Include="Utilities\Logging\WinEventView\WindowsEventLog.cs" />
+    <Compile Include="Utilities\Logging\WinEventView\WinEventLogConfiguration.cs" />
+    <Compile Include="Utilities\Serialization\Attributes\DefaultDataSetterAttribute.cs" />
+    <Compile Include="Utilities\Serialization\XmlSerialization.cs" />
+    <Compile Include="Utilities\Validator\IsNullOrEmptyValidator.cs" />
+    <Compile Include="Utilities\Validator\IsType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EH.DTMstudioTest.Common.snk" />
+    <None Include="TransportObjects\DtmStudioTestData\XML\TempCoDIADTMstudioCoDIAData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TransportObjects\DtmStudioTestData\XML\TempCoDIADTMstudioTestData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TransportObjects\DtmStudioTestData\XML\TempCoDIADTMstudioTestData.xml" />
+    <Content Include="Utilities\Logging\Dlls\Log4net.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+echo cscript "$(SolutionDir)Scripts\CopyFile.vbs" "$(TargetPath)" "$(SolutionDir)ProjectTemplates\DeviceTypeTestProject\"
+
+echo --------------------------------------------------------------------------------------------------------------------------------------------------------------</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

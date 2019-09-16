@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A6B9DE12-A966-496A-BC3C-95170F5F8E87}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.CommunicationInterfaces</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.CommunicationInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommunicationInterfaces.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.CommunicationInterfaces.XML</DocumentationFile>
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HART\HartComm\Functions\ApplicationArea\MainView\Execution\IConfirmAddress.cs">
+      <id>164c2a06-2372-48a6-900b-d00941e65c81</id>
+    </Compile>
+    <Compile Include="HART\HartComm\Functions\ApplicationArea\MainView\Execution\IConfiguration.cs">
+      <id>70e2ae7b-667c-4b24-bf8d-711262213c84</id>
+    </Compile>
+    <Compile Include="HART\HartComm\Functions\ApplicationArea\MainView\Execution\IOpenConfiguration.cs">
+      <id>94bae1e2-b3d1-4470-9895-8c57e08fc97c</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Flows\ICloseModule.cs">
+      <id>1d967dc0-4f1b-4707-a58b-b347581d5eb4</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Flows\IOpenModuleOffline.cs">
+      <id>6251942c-3865-409a-bc53-57de34546d4f</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Flows\IChangeDeviceAddress.cs">
+      <id>455d1d56-db26-4594-a900-242b0ebb4129</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\IChange.cs">
+      <id>d77dad07-2d01-4100-8709-3b2fe2c041f6</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Execution\ICopyToClipboard.cs">
+      <id>f736def7-a93f-4211-a2a8-ede3db136fa7</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\IRefresh.cs">
+      <id>9d2a0f98-c8c0-4128-87a8-98d963e3d4df</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Validation\IIsModuleReady.cs">
+      <id>aeeb9c9b-46bf-49c4-9c5e-42ff36181328</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Validation\IModuleName.cs">
+      <id>a51003bb-eaf0-4fb7-aafc-e1671b1d8261</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Validation\IModuleOpeningAndClosing.cs">
+      <id>c76e3bc4-3576-4e4f-919f-7b94e5654b4e</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleIsReady.cs">
+      <id>3d9ba4ab-e8ca-4f07-a35a-89cb2645cfb3</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Flows\ICloseModule.cs">
+      <id>8162ec54-e5ee-4618-ac10-1d9fa5c69a5b</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Flows\IOpenModuleOffline.cs">
+      <id>7ce41ef1-a571-40da-b858-0ba64e95f80c</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Flows\IOpenModuleOnline.cs">
+      <id>5304a501-44ff-4a6e-9659-8f37ebf22678</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\ISelectDevice.cs">
+      <id>04b97a72-cf09-4337-8879-56e9537b8b14</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\ISetParameter.cs">
+      <id>0803be52-bca6-4382-a7e5-72c74b9522d3</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\IIsModuleReady.cs">
+      <id>4f0f8117-ccd2-4923-adc0-e282756f2a91</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\IModuleName.cs">
+      <id>7063b9ad-37b2-482b-8bd0-bea32d7df7df</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\IModuleOpeningAndClosing.cs">
+      <id>6aba519c-02d7-4697-a9dd-5620439f05cf</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleOfflineIsReady.cs">
+      <id>2f2bbc35-dbba-430b-b521-0a0591d13348</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleOnlineIsReady.cs">
+      <id>e599c746-2eee-42fe-8f26-0a078302c5a4</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\IIsDtmConnected.cs">
+      <id>b578da3c-3cb3-46c5-8026-b1f67a42ddbf</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\IIsDtmDisconnected.cs">
+      <id>09f3e5d6-a20f-4088-8ef5-bd314300afe3</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\IWaitUntilDtmIsConnected.cs">
+      <id>b889df8f-9247-4446-9d42-651e7d40c356</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\IWaitUntilDtmIsDisconnected.cs">
+      <id>e4b07251-4755-4ca7-9679-837b04242f36</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Flows\IChangeDtmAddress.cs">
+      <id>4a7ad65c-14a5-4113-8cf6-14376447f17c</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Flows\ICloseModule.cs">
+      <id>ea556857-80e9-4305-9be3-cf055c0ae801</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Flows\IOpenModuleOffline.cs">
+      <id>3ff86cc4-f059-4d06-8f76-35c2ec0c48c9</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Flows\IOpenModuleOnline.cs">
+      <id>425b79ca-45c4-4e4f-9e35-596b89ba9e2d</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\IChange.cs">
+      <id>28258b8e-75ce-478f-938c-827987fd370d</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\IRefresh.cs">
+      <id>9584ca04-90f6-4c8a-8d0f-018896d73e31</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\ISelectDevice.cs">
+      <id>8e17bb2b-2853-4d87-a433-6567eef6c313</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\ISetParameter.cs">
+      <id>39215266-8d6b-4cb3-b3ea-122cffb7f500</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\IIsModuleReady.cs">
+      <id>d02ec39d-de08-4e38-8908-b97ca5999a74</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\IModuleName.cs">
+      <id>77a0a21d-7093-4483-8e41-55603cee3f43</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\IModuleOpeningAndClosing.cs">
+      <id>2cd6d6f4-966a-4d9d-b9ac-ef601c059062</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleOfflineIsReady.cs">
+      <id>b84163ad-8b25-4d7b-b525-0a5871c2af40</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleOnlineIsReady.cs">
+      <id>568c8488-ce93-4e9d-af9e-e1896bc33f04</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\IIsDtmConnected.cs">
+      <id>ff8d7d57-2903-48d6-8e9f-ac32123d4b32</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\IIsDtmDisconnected.cs">
+      <id>de3e3832-36b1-497a-a7f3-e0474ebc5293</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\IWaitUntilDtmIsConnected.cs">
+      <id>274eebb7-c597-4f05-a827-15238469066b</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\IWaitUntilDtmIsDisconnected.cs">
+      <id>17153c6e-83c1-4a70-bca7-992b17e08f8a</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Flows\ICloseModule.cs">
+      <id>25a99120-0b4c-4ee4-a53f-539156f1f91b</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Flows\IConfigure.cs">
+      <id>44b3b575-ce20-4c7d-8574-cf05a978b6e7</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Flows\IOpenModuleOffline.cs">
+      <id>82c9e897-9247-4a57-b08f-fa832d92f660</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Flows\IOpenModuleOnline.cs">
+      <id>474d99ed-caea-4c71-a779-cda4c3d58530</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Execution\IApply.cs">
+      <id>d335bc6f-414c-4e35-bf8d-73fc7a2ff5d6</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Execution\ISetParameter.cs">
+      <id>1c586f09-5ee2-4a8d-8c98-7de4f85b83e1</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Validation\IIsModuleReady.cs">
+      <id>96b58f5d-614b-4792-846f-3ddd5b0dc176</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Validation\IModuleName.cs">
+      <id>abed54bb-9015-4f36-981e-c2c3eb3b18fd</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Validation\IModuleOpeningAndClosing.cs">
+      <id>2a55f489-baf3-40d8-9aeb-50d77e6183d4</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleOfflineIsReady.cs">
+      <id>f7c8408d-7ea2-4863-9f6a-e25337cd9911</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Validation\IWaitUntilModuleOnlineIsReady.cs">
+      <id>117454af-5cc3-468b-9ea3-c21163b45230</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\StatusArea\Statusbar\Validation\IIsDtmConnected.cs">
+      <id>c1a5b8fc-2de1-4fab-9993-777d8a10696a</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\StatusArea\Statusbar\Validation\IIsDtmDisconnected.cs">
+      <id>d1c8f633-2b98-4295-9bc1-faf8266a3204</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\StatusArea\Statusbar\Validation\IWaitUntilDtmIsConnected.cs">
+      <id>7eb8fc7b-9d4f-4307-9f18-b7c0de833880</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\StatusArea\Statusbar\Validation\IWaitUntilDtmIsDisconnected.cs">
+      <id>9ba28d28-7479-47ac-bac0-21ce371cbe78</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>6f5c1edc-5501-475e-86f8-7a2f868bb9cb</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CDI\">
+      <id>79928fb8-e0d9-4f2c-90ad-871bec8771bc</id>
+    </Folder>
+    <Folder Include="FF\">
+      <id>fca0758d-412c-4c61-b8ce-481052eddd6f</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDeviceAddress\Functions\Dialogs\">
+      <id>ffb440c2-f55e-47ea-80aa-f6eb2dd0429b</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDeviceAddress\Functions\MenuArea\">
+      <id>70f41b7e-499c-409e-a987-7eefd0cb7ed1</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDtmAddress\Functions\Dialogs\">
+      <id>ff7da9de-585b-46cc-b323-1fdbc7dd26d3</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDtmAddress\Functions\MenuArea\">
+      <id>500fd5c7-8baf-4939-9e42-2651005781e2</id>
+    </Folder>
+    <Folder Include="HART\NXA820\Configuration\Functions\Dialogs\">
+      <id>9a4743ee-38fc-4ca0-9927-6ea2d029a403</id>
+    </Folder>
+    <Folder Include="HART\NXA820\Configuration\Functions\MenuArea\">
+      <id>83ed9e32-fb3c-476d-97be-d86f86f7b9a6</id>
+    </Folder>
+    <Folder Include="Profibus\">
+      <id>10895fe1-8fcd-4a6b-a3c5-2e424ef50429</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

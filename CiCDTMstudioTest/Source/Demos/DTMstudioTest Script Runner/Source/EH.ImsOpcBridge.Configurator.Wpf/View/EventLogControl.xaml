@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.EventLogControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.Configurator.View"       
+             xmlns:converter="clr-namespace:EH.ImsOpcBridge.Configurator.Converter"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             mc:Ignorable="d"
+            d:DesignHeight="700" d:DesignWidth="1024">
+
+    <UserControl.Resources>
+        <converter:SettingsSectionToVisibilityConverter x:Uid="SettingsToVisibilityConverter_1" x:Key="ConvSettingsSectionToVisibility" />
+    </UserControl.Resources>
+    <Grid x:Uid="Grid_1" Background="{DynamicResource PaneBackgroundBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_2" Width="*" />
+            <ColumnDefinition x:Uid="ColumnDefinition_3" Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <RowDefinition x:Uid="RowDefinition_8" Height="{StaticResource ClientAreaGap}" />
+        </Grid.RowDefinitions>
+        <Grid x:Uid="Grid_3" Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_4" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_6" Height="*" />
+            </Grid.RowDefinitions>
+
+
+
+            <view:PagingHotkeyControl x:Uid="view1:PagingControl_1" Template="{StaticResource PagingHotkeyControlTemplate}" 
+                                      PreviousPageCommand="{Binding Path=PreviousPageCommand}" NextPageCommand="{Binding Path=NextPageCommand}" BeginPageCommand="{Binding Path=BeginPageCommand}" EndPageCommand="{Binding Path=EndPageCommand}">
+                     
+                    <Grid x:Uid="Grid_4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Uid="RowDefinition_0" Height="*" />
+                        <RowDefinition x:Uid="RowDefinition_1" Height="{StaticResource ClientAreaGap}" />
+
+                        <RowDefinition x:Uid="RowDefinition_3" Height="Auto" />
+
+                    </Grid.RowDefinitions>
+                 
+                    <view:EventLogCtrl x:Uid="View:EventLogCtrl_1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ></view:EventLogCtrl>
+                    
+                    <StackPanel x:Uid="StackPanel_1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <TextBlock x:Uid="TextBlock_1" Text="{Binding Path=NumberOfItems}" Margin="4,0,0,0"/>
+                    </StackPanel>
+                        
+                    <!--<view:ButtonControl  x:Uid="ButtonControlDelete" Grid.Column="0" Grid.Row="2" Margin="-130,0,0,0" ButtonControlBitmapPath="{Binding Path=ButtonControlBitmapPath, Mode=TwoWay}" ButtonControlLabel="{Binding Path=ButtonControlLabel, Mode=TwoWay}" ButtonPressedCommand="{Binding Path=DeleteEventLogCommand}"/>-->
+
+                </Grid>
+            </view:PagingHotkeyControl>
+
+
+            <view:EventLogHotkeyControl x:Uid="view1:EventLogHotkeyControl_1" Template="{StaticResource EventLogHotkeyControlTemplate}" 
+                                       DeleteLogCommand="{Binding Path=DeleteEventLogCommand}">
+            </view:EventLogHotkeyControl>
+
+
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="92708b64-babf-492d-b2a9-69682695a64d"
+embeddedrepository="False"
+mode="Desktop">
+	<name>
+		ConfigureFoundationDTM
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ConfigureFoundationDTM"
+	namespace="EH.PCPS.TestAutomation.DeviceCare.V10300.Functions.ApplicationArea.Page_Assistant_ConfigureCommDTM.Execution"/>
+	<variables/>
+	<recorditems>
+		<validationitem
+		enabled="True"
+		optional="False"
+		duration="100ms"
+		searchpropertyid="44387d81-1787-486a-abb2-2d389552c462"
+		action="AttributeEqual">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="ElementTree"
+			id="3abd9bde-290a-4a28-83a5-cc1e59de76ae">
+				<element
+				role="combobox"
+				prefcap="combobox"
+				capabilities="nativewindow"
+				flavor="win32"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="635,426,141,21"
+				snapElem="">
+					<attribute
+					name="dropdownvisible"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selecteditemindex"
+					type="System.Int32">
+						-1
+					</attribute>
+					<attribute
+					name="selecteditemtext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						interface0-0
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						ComboBox
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						6002
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						984664
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						4276
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						Fdt1Surrogate
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral, PublicKeyToken=b798506b574ebc9a">
+						RightScrollBar, Left, NoParentNotify
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral, PublicKeyToken=b798506b574ebc9a">
+						Overlapped, MaximizeBox, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						interface0-0
+					</attribute>
+					<dynamicattribute
+					name="AccessibleDefaultAction"
+					type="System.String"
+					description="The default action of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleDescription"
+					type="System.String"
+					description="The description of the accessible object."
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleHelp"
+					type="System.String"
+					description="The help string of the accessible object."
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleHelpTopic"
+					type="System.String"
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."/>
+					<dynamicattribute
+					name="AccessibleKeyboardShortcut"
+					type="System.String"
+					description="The keyboard shortcut of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleName"
+					type="System.String"
+					description="The name of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The role of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The state of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleValue"
+					type="System.String"
+					description="The value of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
+					<dynamicaction
+					displayName="AccessibleDoDefaultAction"
+					description="Invokes the default action of the accessible object."/>
+				</element>
+				<path>
+					/form/container[@classname='HwndHost' and @orientation='None' and @iscontentelement='True']/element[@controlid='1' and @class='AtlAxWinLic90' and @instance='0']/container[@class='#32770' and @instance='0']/combobox[@controlid='6002' and @class='ComboBox' and @instance='0']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a4294f7c-a4f9-47d8-87ea-81f239f45d49">
+				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
+/Mf4VF/b3/Tr/wCRP/rUf29/06/+RP8A61F5hamS/wBlR/35PzH+FH9lR/35PzH+FRf29/06/wDk
+T/61WtP1IXszR+TsIXdndn+nvReSGlBkX9lR/wB+T8x/hR/ZUf8Afk/Mf4Vq4FGBU87K9nHsZX9l
+R/35PzH+FH9lR/35PzH+FauBRgUc7D2cexlf2VH/AH5PzH+FH9lR/wB+T8x/hWrgUYFHOw9nHsZX
+9lR/35PzH+FH9lR/35PzH+FauBRgUc7D2cexlf2VH/fk/Mf4Ves7ZLaHamTk5JPWp8CihybGopbE
+N5D58HllmUE8471Q/sqP+/J+Y/wrVowKFJrYHFPcyv7Kj/vyfmP8KK1cCijnYvZx7BXJXv8Ax/XH
+/XRv511tcle/8f1x/wBdG/nThuTV2IaKKK1MAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACtPw//wAfz/8AXM/zFZlafh//AI/n/wCuZ/mKmWxcPiOgooorE6QooooA
+KKKKACiiigAooooAKKKKACiiigArkr3/AI/rj/ro38662uSvf+P64/66N/OrhuZVdiGiiitTAKKK
+KACiiigAoopVXc4XIGTjJOAKALkens9g1zvAIBITHVR1NVY4ZZc+XG7467VJxWyb+1hu44VjDIii
+MSiTjB68dKZGUS2e3t7yOFo5txff95e3Pf6e1TdmnKihe2T2srKNzouMvtwOaiFvOWCiGQsRuA2n
+JHrWvJcW8uozwySoYJkX5t3GR71GkyXF7cyC58orgRgybFYDjkj8/wAaLsHFXMv7PNvZPJk3KMkb
+TkUPDKjhHidWboCpBNbct3EJ5pY548/ZcKQ38WTx9ajgvIsWLzyqzgOCxOSpPQmjmYcq7mQ8EsbK
+rxOrN0BUgmkkhliIEkToT0DKRmtiKYW88H2m/ScbjgL823g87v6VJNeQpNbh2iZRJu3LMZCOD6jj
+r60czDlXcyvsMi2ks8oaMxkfIyYzk4qrWzdyAafdI95HMzuGRVfOBn/PFY1NO5MkkFFFFMkKKKKA
+CiiigArT8P8A/H8//XM/zFZlafh//j+f/rmf5iplsXD4joKKKKxOkKKKKACiiigAooooAKKKKACi
+iigAooooAK5K9/4/rj/ro38662uSvf8Aj+uP+ujfzq4bmVXYhooorUwCiiigAooooAKKKKACiiig
+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
+pLEvB5YKKWkkdmA/vBgPqfmH5U6a3mn2u6Rq6sCAkjAtwRy4AI+96fz4AJ0mEkzIuCoRXDA5Bzn/
+AA/WparWls0EjMdoDIBgEnncxPJ6/e6/yqzQAyb/AFL/AO6abaf8ekP/AFzX+VOm/wBS/wDumm2n
+/HpD/wBc1/lQBLRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFuoJ/vj6VPUE/3x9KbER0UUUhhRRRQA
+UUUUAFV7tJ2EbW3l+YjE/OTjBUjt9asUUAZ+3Vf79t+Z/wAKNuq/37b8z/hWhRQBn7dV/v235n/C
+jbqv9+2/M/4VoUUAZ+3Vf79t+Z/wo26r/ftvzP8AhWhRQBn7dV/v235n/Cjbqv8AftvzP+FaFFAG
+Vc2upXMDRSNb7T6Mf8K1GLKpMYBbGAGOBS0UAV83n92D/vo/4UZvP7sH/fR/wqxRQBXzef3YP++j
+/hRm8/uwf99H/CrFFAFfN5/dg/76P+FGbz+7B/30f8KsUUAV83n92D/vo/4UZvP7sH/fR/wqxRQB
+WYXjKVKwYIx94/4VNAhjgjQ4yqgHH0p9FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFuoJ/vj6VP
+UE/3x9KbER0UUUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBbqCf74+lT1BP98fSmxEdFFFIYUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAW6gn++PpU9QT/AHx9KbER0UUUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBbqCf74+lT
+1BP98fSmxEdFFFIYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAW6gn++PpU9QT/fH0psRHRRRSGFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFAFuoJ/vj6VPUE/3x9KbER0UUUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBbqCf74+lFF
+NiI6KKKQwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
+			</helperscreenshot>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		enabled="True"
+		optional="False"
+		duration="100ms"
+		searchpropertyid="b3617398-2006-4a4d-927e-33ac7f9c215a"
+		action="AttributeEqual">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="ElementTree"
+			id="3abd9bde-290a-4a28-83a5-cc1e59de76ae">
+				<element
+				role="combobox"
+				prefcap="combobox"
+				capabilities="nativewindow"
+				flavor="win32"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="635,426,141,21"
+				snapElem="">
+					<attribute
+					name="dropdownvisible"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selecteditemindex"
+					type="System.Int32">
+						-1
+					</attribute>
+					<attribute
+					name="selecteditemtext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						interface0-0
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						ComboBox
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						6002
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						984664
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						4276
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						Fdt1Surrogate
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral, PublicKeyToken=b798506b574ebc9a">
+						RightScrollBar, Left, NoParentNotify
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral, PublicKeyToken=b798506b574ebc9a">
+						Overlapped, MaximizeBox, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						interface0-0
+					</attribute>
+					<dynamicattribute
+					name="AccessibleDefaultAction"
+					type="System.String"
+					description="The default action of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleDescription"
+					type="System.String"
+					description="The description of the accessible object."
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleHelp"
+					type="System.String"
+					description="The help string of the accessible object."
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleHelpTopic"
+					type="System.String"
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."/>
+					<dynamicattribute
+					name="AccessibleKeyboardShortcut"
+					type="System.String"
+					description="The keyboard shortcut of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleName"
+					type="System.String"
+					description="The name of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The role of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The state of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleValue"
+					type="System.String"
+					description="The value of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
+					<dynamicaction
+					displayName="AccessibleDoDefaultAction"
+					description="Invokes the default action of the accessible object."/>
+				</element>
+				<path>
+					/form/container[@classname='HwndHost' and @orientation='None' and @iscontentelement='True']/element[@controlid='1' and @class='AtlAxWinLic90' and @instance='0']/container[@class='#32770' and @instance='0']/combobox[@controlid='6002' and @class='ComboBox' and @instance='0']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				interface0-0
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		enabled="True"
+		optional="False"
+		duration="100ms"
+		searchpropertyid="20b6af25-0443-48fb-80ab-b3691591b2e0"
+		action="AttributeEqual">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="ElementTree"
+			id="3abd9bde-290a-4a28-83a5-cc1e59de76ae">
+				<element
+				role="combobox"
+				prefcap="combobox"
+				capabilities="nativewindow"
+				flavor="win32"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="635,426,141,21"
+				snapElem="">
+					<attribute
+					name="dropdownvisible"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selecteditemindex"
+					type="System.Int32">
+						-1
+					</attribute>
+					<attribute
+					name="selecteditemtext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						interface0-0
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						ComboBox
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						6002
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						984664
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						4276
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						Fdt1Surrogate
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral, PublicKeyToken=b798506b574ebc9a">
+						RightScrollBar, Left, NoParentNotify
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral, PublicKeyToken=b798506b574ebc9a">
+						Overlapped, MaximizeBox, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						interface0-0
+					</attribute>
+					<dynamicattribute
+					name="AccessibleDefaultAction"
+					type="System.String"
+					description="The default action of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleDescription"
+					type="System.String"
+					description="The description of the accessible object."
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleHelp"
+					type="System.String"
+					description="The help string of the accessible object."
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleHelpTopic"
+					type="System.String"
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."/>
+					<dynamicattribute
+					name="AccessibleKeyboardShortcut"
+					type="System.String"
+					description="The keyboard shortcut of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleName"
+					type="System.String"
+					description="The name of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
+					<dynamicattribute
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The role of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+					description="The state of the accessible object."/>
+					<dynamicattribute
+					name="AccessibleValue"
+					type="System.String"
+					description="The value of the accessible object."
+					readonly="False"
+					truncationlength="-1"/>
+					<dynamicaction
+					displayName="AccessibleDoDefaultAction"
+					description="Invokes the default action of the accessible object."/>
+				</element>
+				<path>
+					/form/container[@classname='HwndHost' and @orientation='None' and @iscontentelement='True']/element[@controlid='1' and @class='AtlAxWinLic90' and @instance='0']/container[@class='#32770' and @instance='0']/combobox[@controlid='6002' and @class='ComboBox' and @instance='0']
+				</path>
+			</info>
+			<matchname>
+				Class
+			</matchname>
+			<matchvalue>
+				ComboBox
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="18f03dc9-348d-4340-82d0-69a54759bee9"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="658"
+		sy="475"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="9ec27097-a7f6-4f6c-93eb-05f1d40acc1b">
+				<path>
+					/form/container[@classname='HwndHost' and @orientation='None' and @iscontentelement='True']/element[@controlid='1' and @class='AtlAxWinLic90' and @instance='0']/container[@class='#32770' and @instance='0']/button[@text='OK' and @controlid='1' and @class='Button']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="DeviceCareApplication"
+	id="5ba506d9-7892-4217-a92d-376694a8250d"
+	rxversion="6.1"
+	relativepath="..\..\..\..\GUI\DeviceCareApplication.rxrep">
+		<codegen
+		classname="DeviceCareApplication"
+		namespace="EH.PCPS.TestAutomation.DeviceCare.V10300.GUI"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="99701df9-ab1e-473f-b3e6-7540c2ead80c"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ConfigureFoundationDTM.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\..\..\ExternalReferences\CommonCodeModules.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\ExternalReferences\CommonMethods.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TM_DTMs\bin\Debug\TM_DTMs.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TC_DeviceCare\bin\Debug\TC_DeviceCare.exe
+		</reference>
+	</references>
+</recordtable>

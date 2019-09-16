@@ -1,0 +1,25 @@
+﻿<repository
+name="ApplicationAreaPaths"
+id="1a132188-f8f5-4f87-89e6-bf16f2a970f1"
+rxversion="6.1">
+	<codegen
+	classname="ApplicationAreaPaths"
+	namespace="EH.PCPS.TestAutomation.FieldCare.CI.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="b87112a2-0a48-486f-9bec-5e6d3574bcc4"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="FrameMainWindow"
+		id="9e88ec4e-89cd-465a-b487-d1bba5b62f49"
+		searchtimeout="30000ms"
+		capname="form">
+			/form[@processname='FMPFrame']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

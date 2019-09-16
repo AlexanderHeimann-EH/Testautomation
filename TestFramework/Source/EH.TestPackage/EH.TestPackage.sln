@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EH.TestPackage", "EH.TestPackage\TestPackage.vdproj", "{F7365B7A-818B-4D9C-8845-2A911F4E405B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Description = EH.TestPackage
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7365B7A-818B-4D9C-8845-2A911F4E405B}.Debug|Any CPU.ActiveCfg = Debug
+		{F7365B7A-818B-4D9C-8845-2A911F4E405B}.Debug|Any CPU.Build.0 = Debug
+		{F7365B7A-818B-4D9C-8845-2A911F4E405B}.Release|Any CPU.ActiveCfg = Release
+		{F7365B7A-818B-4D9C-8845-2A911F4E405B}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

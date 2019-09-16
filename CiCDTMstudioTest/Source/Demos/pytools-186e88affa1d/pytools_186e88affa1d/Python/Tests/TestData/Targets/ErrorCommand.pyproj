@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12535E18-06DA-4F15-B99E-8F492FE721E2}</ProjectGuid>
+    <ProjectHome>Package\Subpackage</ProjectHome>
+    <StartupFile>Program.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.5" />
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.3" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.5" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.py" />
+  </ItemGroup>
+
+  <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.targets" />
+
+  <PropertyGroup>
+    <PythonCommands>ProduceErrorsCommand</PythonCommands>
+    <ProduceErrorsCommand>
+<![CDATA[
+import os.path
+print('Program.py(1,2): error ERR0001: This is an error with a relative path.')
+print(os.path.abspath('Program.py') + '(3,4): warning WRN0002: This is a warning with an absolute path.')
+print('>>>(5): error ERR0003: This is an error with an invalid path.')
+]]>
+    </ProduceErrorsCommand>
+  </PropertyGroup>
+
+  <Target Name="ProduceErrorsCommand"
+          Label="Produce Errors"
+          Returns="@(Commands)">
+    <CreatePythonCommandItem Target="$(ProduceErrorsCommand)"
+                             TargetType="code"
+                             ExecuteIn="output"
+                             ErrorRegex="^(?&lt;filename&gt;.+?)\((?&lt;line&gt;\d+)(,(?&lt;column&gt;\d+))?\): error (?&lt;msg_id&gt;.+?): (?&lt;message&gt;.+?)$"
+                             WarningRegex="^(?&lt;filename&gt;.+?)\((?&lt;line&gt;\d+)(,(?&lt;column&gt;\d+))?\): warning (?&lt;msg_id&gt;.+?): (?&lt;message&gt;.+?)$">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+
+</Project>

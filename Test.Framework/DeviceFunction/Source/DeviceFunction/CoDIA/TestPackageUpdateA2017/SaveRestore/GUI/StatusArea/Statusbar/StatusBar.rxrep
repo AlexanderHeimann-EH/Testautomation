@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="StatusBar"
+id="19b55859-f2c8-44f2-a9c5-f70551f98804"
+rxversion="6.1">
+	<codegen
+	classname="StatusBar"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.SaveRestore.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="3a13262f-f09a-4aed-aab1-0ca7e454ffcc"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="Statusbar"
+		id="75acf141-52de-422f-aa94-e3247436d94e"
+		searchtimeout="30000ms"
+		capname="statusbar"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="buttonInProgress"
+			id="6be4ac45-ee16-4705-83af-f435924af466"
+			searchtimeout="30000ms"
+			capname="button">
+				/container[@controltypename='DtmUserInterface']/container[@controlname='DtmStatusBar']/element/element/statusbar[@accessiblename='Bar']/button
+			</item>
+			<basepath>
+				/container[@controltypename='DtmUserInterface']/container[@controlname='DtmStatusBar']/element/element/statusbar[@accessiblename='Bar']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJPSURBVDhPpZPbS9NhHIf3l3QRUVIRGQRRdPC4
+cuaFhBVhVwWRBBKUGYFUaMFASwpSOwhlJysqSOpCsCLzkCNtzrk25zxM3aZuc4ffab+nd1ugBtqF
+LzyX38/neb8vr8Gw1tPYauHeGye1LYPUNP/iapOFc+YuTlX3UFr1jZILbRSXv6ao7NkyDp99ivFY
+JYb6l3aaOzSa2jXutMmY30apfhGi6skclc0Bzt/3U3Z3itN1E5w0ezhe4+bINReFFRbWZezCUNdi
+of5dkNvvI1x+NM2ZWx5Kb7o4ccPJ0esOiqvsFF0ZwlRp49ClQYwVVvIvWskq72FDphFDbeMrAsE4
+kZjGgiAcVQlFFIKCuXAaX1DBOyvj8ck4vRK2cYlum5fN23eKgIZWVju6DooKUUlnPppgOqQxFlCx
+un1s2roDw8PnH1ec1xIgKToL8QSzCxpT8xoev8LvKYXe4f8EJESzLIZTzZEEM6J5XDS7phVsEzJd
+ttUCktqaGJZ1QrEE/rDG5JyG26dgn1QYGJX5ahUBW1a4wqK6zqwYTqurOIS6dUymb0Sio3+FgJS6
+mlRPpNWDaXVnSl3hp1um2ynRbkkGZC5fYmrjGsTEvYNL1WfS6v0eiV6XRKc9zqe+fwLELOrfrYfj
+OoHU1lVGk+reRfXvjjhfbDE+9PrYmDR4sOQZRTmSePNwHBEAk/Pg9usMezUGxjR+jKh0OhQ+D8mp
+gPUZ28RfaHhM/sFC8owmcgU5gmxBVr6JA3km9ucWsE+wN6eAPdlpdmelySssYa2f2fAH/tfmti7k
+q9gAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<item
+		name="txtConnectionState"
+		id="9305361f-f968-4995-b661-2a19fd074d08"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="2a955aca-178d-4cd8-8820-18232e3f51ec">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmStatusBar']//text[@childindex='0']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

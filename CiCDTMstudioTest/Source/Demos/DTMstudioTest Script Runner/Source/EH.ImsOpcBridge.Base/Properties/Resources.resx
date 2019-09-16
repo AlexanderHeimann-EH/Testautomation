@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommandItem_HasBeenAdded" xml:space="preserve">
+    <value>Command Item: '{0}' has been added.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CommandItem_HasChanged" xml:space="preserve">
+    <value>Command Item: '{0}' has changed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CommandItem_HasBeenRemoved" xml:space="preserve">
+    <value>Command Item: '{0}' has been removed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="AddingProgressItemWithTitle_ToProgressList" xml:space="preserve">
+    <value>Adding progress item with title '{0}' to progress list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ProgressItemWithTitle_HasChanged" xml:space="preserve">
+    <value>Progress item with title '{0}' has changed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RemovingProgressItemWithTitle_FromProgressList" xml:space="preserve">
+    <value>Removing progress item with title '{0}' from progress list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ProgressItemWithTitle_HasBeenAddedToProgressList" xml:space="preserve">
+    <value>Progress item with title '{0}' has been added to progress list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ProgressItemWithTitle_HasBeenRemovedFromProgressList" xml:space="preserve">
+    <value>Progress item with title '{0}' has been removed from progress list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="AddingTaskItemWithTitle_ToTaskList" xml:space="preserve">
+    <value>Adding task item with title '{0}' to task list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="TaskItemWithTitle_HasChanged" xml:space="preserve">
+    <value>Task item with title '{0}' has changed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RemovingTaskItemWithTitle_FromTaskList" xml:space="preserve">
+    <value>Removing task item with title '{0}' from task list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="TaskItemWithTitle_HasBeenAddedToTaskList" xml:space="preserve">
+    <value>Task item with title '{0}' has been added to task list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="TaskItemWithTitle_HasBeenRemovedFromTaskList" xml:space="preserve">
+    <value>Task item with title '{0}' has been removed from task list.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedPath_IsTooLong" xml:space="preserve">
+    <value>Loading file failed. Path '{0}' is too long.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedFile_NotFound" xml:space="preserve">
+    <value>Loading file failed. File '{0}' not found.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedDirectory_NotFound" xml:space="preserve">
+    <value>Loading file failed. Directory '{0}' not found.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedIoErrorAccessing_" xml:space="preserve">
+    <value>Loading file failed. IO error accessing '{0}'.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedMissingPermissionsToAccess_" xml:space="preserve">
+    <value>Loading file failed. Missing Permissions to access '{0}'.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedWrongArgumentsAccessing_" xml:space="preserve">
+    <value>Loading file failed. Wrong arguments accessing '{0}'.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="LoadingFileFailedInvalidPath_" xml:space="preserve">
+    <value>Loading file failed. Invalid Path '{0}'.</value>
+    <comment>Message of an exception and error logging message.</comment>
+  </data>
+  <data name="ChangingStateOfFiniteStateMachineTo_" xml:space="preserve">
+    <value>Changing state of finite state machine to '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ChangingStateOfFiniteStateMachineToState_Failed" xml:space="preserve">
+    <value>Changing state of finite state machine to state '{0}' failed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="State_NotFound" xml:space="preserve">
+    <value>State '{0}' not found.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="StateOfTheFiniteStateMachineHasNotBeenInitialized" xml:space="preserve">
+    <value>State of the finite state machine has not been initialized.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineReceivesEvent_" xml:space="preserve">
+    <value>Finite state machine receives event '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineSendsEvent_To_" xml:space="preserve">
+    <value>Finite state machine sends event '{0}' to {1}.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ShuttingDownTheFiniteMachineQueueThread" xml:space="preserve">
+    <value>Shutting down the finite machine queue thread.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineFailedHandlingAnEventState_Event_" xml:space="preserve">
+    <value>Finite state machine failed handling an event. State: '{0}', Event: '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineChangedStateFrom_to_" xml:space="preserve">
+    <value>Finite state machine changed state from '{0}' to '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineInitializesItsQueue" xml:space="preserve">
+    <value>Finite state machine initializes its queue.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineSetsTheInitialStateTo_" xml:space="preserve">
+    <value>Finite state machine sets the initial state to '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineProcessesAnEventCurrentState_Event_" xml:space="preserve">
+    <value>Finite state machine processes an event. Current state: '{0}', event: '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineRegistersTheState_" xml:space="preserve">
+    <value>Finite state machine registers the state '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineReceivesATimerEventSender_Arguments_" xml:space="preserve">
+    <value>Finite state machine receives a timer event. Sender: '{0}', arguments: '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FiniteStateMachineIsStartingItsQueueThread" xml:space="preserve">
+    <value>Finite state machine is starting its queue thread.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="TimerArguments" xml:space="preserve">
+    <value>timer arguments: </value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ConversionOfUInt32HexadecimalValueFailedLengthGreater4Bytes" xml:space="preserve">
+    <value>Conversion of UInt32 hexadecimal value failed. Length &gt; 4 bytes.</value>
+    <comment>Message of an ArgumentException.</comment>
+  </data>
+  <data name="ConversionOfHexadecimalValueFailedLengthSmaller1Byte" xml:space="preserve">
+    <value>Conversion of hexadecimal value failed. Length &lt; 1 byte.</value>
+    <comment>Message of an ArgumentException.</comment>
+  </data>
+  <data name="ConversionOfHexadecimalValueFailedZeroBasedIndexSmaller0" xml:space="preserve">
+    <value>Conversion of hexadecimal value failed. Zero based index &lt; 0.</value>
+    <comment>Message of an ArgumentException.</comment>
+  </data>
+  <data name="ConversionOfHexadecimalValueFailedHexadecimalStringIsTooShort" xml:space="preserve">
+    <value>Conversion of hexadecimal value failed. Hexadecimal string is too short.</value>
+    <comment>Message of an ArgumentException.</comment>
+  </data>
+  <data name="GetIMSoftwareRevisionFromByteArrayError" xml:space="preserve">
+    <value>Error</value>
+    <comment>String to be shown, when conversion of the byte array of Profibus IM software revision information to its human readable version has failed.</comment>
+  </data>
+  <data name="DisplayTableErrorsTable_" xml:space="preserve">
+    <value>Table: {0}</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="DisplayTableErrorsRowError_" xml:space="preserve">
+    <value>Row Error: {0}</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="DisplayTableErrorsErrorsInDataSet" xml:space="preserve">
+    <value>Errors in DataSet:</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="DisplayTableErrorsColumn_" xml:space="preserve">
+    <value>Column: {0}</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="DisplayTableErrorsColumnError_" xml:space="preserve">
+    <value>Column Error: {0}</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ConversionOfIntegerToHexadecimalStringFailedNumberOfBytes" xml:space="preserve">
+    <value>Conversion of integer to hexadecimal string failed. (numberOfBytes must be smaller than int.MaxValue / 2)</value>
+    <comment>Message of an ArgumentException.</comment>
+  </data>
+  <data name="ReformatOfHexadecimalStringFailedNumberOfBytes" xml:space="preserve">
+    <value>Reformat of hexadecimal string failed. (numberOfBytes must be smaller than int.MaxValue / 2)</value>
+    <comment>Message of ArgumentOutOfRangeException.</comment>
+  </data>
+  <data name="AssemblyInformation_Location_NotSupported" xml:space="preserve">
+    <value>Not supported</value>
+    <comment>Text for missing location in assembly information item.</comment>
+  </data>
+  <data name="Log4NetAppender_Append_LogFormat" xml:space="preserve">
+    <value>{0} {1} [source = {2}, thread id = {3}]</value>
+    <comment>The format of the string how logging information is formatted, when forwarded to FdtRoot events. 
+      {0}: timestamp, {1}: message, {2}: source, {3}: thread id</comment>
+  </data>
+  <data name="LoggingLevel_IsNotSupported" xml:space="preserve">
+    <value>Logging level '{0}' is not supported.</value>
+    <comment>Error logging message.</comment>
+  </data>
+  <data name="EnableLoggingEventsAfterConfiguringLogging" xml:space="preserve">
+    <value>Please enable the logging events [LogManager.EnableLoggingEvents()] after configuring the logging [LogManager.ConfigureLogging].</value>
+    <comment>Exception message.</comment>
+  </data>
+  <data name="LoadingLog4NetConfigurationFrom_WatchIsSetTo_" xml:space="preserve">
+    <value>Loading log4Net configuration from: '{0}', watch is set to '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CreatingProgressItemTitle_Text_CountTotal_CountCurrent0" xml:space="preserve">
+    <value>Creating progress item, title '{0}', text '{1}', countTotal '{2}', countCurrent '0'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CreatingProgressItemTitle_Text_CountTotal_CountCurrent_" xml:space="preserve">
+    <value>Creating progress item, title '{0}', text '{1}', countTotal '{2}', countCurrent '{3}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SettingCancelEnabledPropertyOfProgressItemWithTitle_To_" xml:space="preserve">
+    <value>Setting CancelEnabled property of progress item with title '{0}' to '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SettingCountCurrentPropertyOfProgressItemWithTitle_To_" xml:space="preserve">
+    <value>Setting CountCurrent property of progress item with title '{0}' to '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SettingProgressOfProgressItemWithTitle_To_PercentText_" xml:space="preserve">
+    <value>Setting progress of progress item with title '{0}' to {1}% '{2}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SettingCanceledPropertyOfProgressItemWithTitle_To_" xml:space="preserve">
+    <value>Setting Canceled property of progress item with title '{0}' to '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SettingTextPropertyOfProgressItemWithTitle_To_" xml:space="preserve">
+    <value>Setting Text property of progress item with title '{0}' to '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CancelProgressItemWithTitle_" xml:space="preserve">
+    <value>Cancel progress item with title '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CouldNotCancelProgressProgressHasAlreadyBeenCanceled" xml:space="preserve">
+    <value>Could not cancel progress. Progress has already been canceled.</value>
+    <comment>Message of an exception.</comment>
+  </data>
+  <data name="CouldNotCancelProgressCancelIsDisabled" xml:space="preserve">
+    <value>Could not cancel progress. Cancel is disabled.</value>
+    <comment>Message of an exception.</comment>
+  </data>
+  <data name="CouldNotCancelProgressProgressIsNotActive" xml:space="preserve">
+    <value>Could not cancel progress. Progress is not active.</value>
+    <comment>Message of an exception.</comment>
+  </data>
+  <data name="ProgressItemWithTitle_HasBeenCanceled" xml:space="preserve">
+    <value>Progress item with title '{0}' has been canceled.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CancelingProgressItemWithTitle_Failed" xml:space="preserve">
+    <value>Canceling progress item with title '{0}' failed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CouldNotCancelProgressNoCancelDelegateAssigned" xml:space="preserve">
+    <value>Could not cancel progress. No cancel delegate assigned.</value>
+    <comment>Message of an exception.</comment>
+  </data>
+  <data name="SettingCancelDelegateOfProgressItemWithTitle_" xml:space="preserve">
+    <value>Setting cancel delegate of progress item with title '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ProgressItemWithTitle_HasBeenCanceledAt_Percent" xml:space="preserve">
+    <value>Progress item with title '{0}' has been canceled at {1}%.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="ProgressItemWithTitle_IsComplete" xml:space="preserve">
+    <value>Progress item with title '{0}' is complete.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="SettingProgressItemWithTitle_ToComplete" xml:space="preserve">
+    <value>Setting progress item with title '{0}' to complete.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="DtmWithClassId_DoesNotHaveAnyProgIdDTMHasNotBeenInstalledUninstalledProperly" xml:space="preserve">
+    <value>DTM with Class Id {0} does not have any ProgId. DTM has not been (un-)installed properly.</value>
+    <comment>Error logging message.</comment>
+  </data>
+  <data name="AnExceptionOccurredDuringDeterminationOfDtmProgIds" xml:space="preserve">
+    <value>An exception occurred during determination of DTM ProgIds.</value>
+    <comment>Error logging message.</comment>
+  </data>
+  <data name="ExceptionOccurredDuringDeterminationOfComClassesForComCategory" xml:space="preserve">
+    <value>Exception occurred during determination of COM classes for COM category.</value>
+    <comment>Error logging message.</comment>
+  </data>
+  <data name="ExceptionOccurredDuringDeterminationOfComClassesForComCategoryAt_" xml:space="preserve">
+    <value>Exception occurred during determination of COM classes for COM category at '{0}'.</value>
+    <comment>Error logging message.</comment>
+  </data>
+  <data name="TheRegistryHive_IsNotSupported" xml:space="preserve">
+    <value>The registry hive '{0}' is not supported.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RegistryMonitoringThreadIsAlreadyRunning" xml:space="preserve">
+    <value>Registry monitoring thread is already running.</value>
+    <comment>Message of InvalidOperationException.</comment>
+  </data>
+  <data name="RegistryMonitoringInstanceIsAlreadyDisposed" xml:space="preserve">
+    <value>Registry monitoring instance is already disposed.</value>
+    <comment>Message of ObjectDisposedException.</comment>
+  </data>
+  <data name="TaskItemWithTitle_HasBeenCanceled" xml:space="preserve">
+    <value>Task item with title '{0}' has been canceled.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="TaskItemWithTitle_IsComplete" xml:space="preserve">
+    <value>Task item with title '{0}' is complete.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CannotSetTheParentOfTheTreeNode_To_ThisWouldLeadToACyclicDependency" xml:space="preserve">
+    <value>Cannot set the parent of the tree node '{0}' to '{1}'. This would lead to a cyclic dependency.</value>
+    <comment>Exception message.</comment>
+  </data>
+  <data name="CannotAddChildNodeNodeIsNotPartOfATopology" xml:space="preserve">
+    <value>Cannot add child node. Node is not part of a topology.</value>
+    <comment>Exception message.</comment>
+  </data>
+  <data name="CannotMoveNodeNodeIsNotPartOfATopology" xml:space="preserve">
+    <value>Cannot move node. Node is not part of a topology.</value>
+    <comment>Exception message.</comment>
+  </data>
+  <data name="CommandItem_HasBeenAddedToNode_" xml:space="preserve">
+    <value>Command item '{0}' has been added to node '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CommandItem_OfNode_HasChanged" xml:space="preserve">
+    <value>Command item '{0}' of node '{1}' has changed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CommandItem_OfNode_HasBeen_Removed" xml:space="preserve">
+    <value>Command item '{0}' of node '{1}' has been removed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="Node_IsAlreadyPartOfTheTopology" xml:space="preserve">
+    <value>Node '{0}' is already part of the topology.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="Node_HasBeenAddedToTheTopology" xml:space="preserve">
+    <value>Node '{0}' has been added to the topology.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="Node_HasChanged" xml:space="preserve">
+    <value>Node '{0}' has changed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="Node_HasBeenMoved" xml:space="preserve">
+    <value>Node '{0}' has been moved.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="Node_HasBeenRemoved" xml:space="preserve">
+    <value>Node '{0}' has been removed.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="Node_IsNotPartOfTheTopology" xml:space="preserve">
+    <value>Node '{0}' is not part of the topology.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FailedToReadPortNameOfDevice_ThroughWmi" xml:space="preserve">
+    <value>Failed to read port name of device '{0}' through WMI.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="EvaluatingConnectedCommunicationUnits" xml:space="preserve">
+    <value>Evaluating connected communication units.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="_CommunicationUnitsFound" xml:space="preserve">
+    <value>{0} communication unit(s) found.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="ExceptionOccurredDuringUpdateOfListOfCommunicationUnits" xml:space="preserve">
+    <value>Exception occurred during update of list of communication units.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="CommunicationUnit_Attached" xml:space="preserve">
+    <value>Communication unit '{0}' attached.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="CommunicationUnit_Removed" xml:space="preserve">
+    <value>Communication unit '{0}' removed.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="RegisteringServiceControlHandlerForServiceWithName_" xml:space="preserve">
+    <value>Registering service control handler for service with name '{0}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RegisteringServiceControlHandlerForServiceWithName_Returns_" xml:space="preserve">
+    <value>Registering service control handler for service with name '{0}' returns {1}.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RegisteringServiceControlHandlerForServiceWithName_SizeOfDeviceInterfaceIs_" xml:space="preserve">
+    <value>Registering service control handler for service with name '{0}'. Size of device interface is {1}.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RegisteringServiceControlHandlerForServiceWithName_SizeOfBufferIs_" xml:space="preserve">
+    <value>Registering service control handler for service with name '{0}'. Size of buffer is {1}.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="RegisteringServiceControlHandlerForServiceWithName_ServiceHandleIs_" xml:space="preserve">
+    <value>Registering service control handler for service with name '{0}'. Service handle is {1}.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="FailedToRegisterServiceControlHandlerForServiceWithName_LastErrorIs_" xml:space="preserve">
+    <value>Failed to register service control handler for service with name '{0}'. LastError is '{1}'.</value>
+    <comment>Debug logging message.</comment>
+  </data>
+  <data name="CouldNotFindValue_InDocument_" xml:space="preserve">
+    <value>Could not find value '{0}' in document '{1}'.</value>
+    <comment>Message of an exception.</comment>
+  </data>
+  <data name="CopyDirectoryFailedSource_Destination_" xml:space="preserve">
+    <value>Copy directory failed. Source: '{0}', Destination '{1}'.</value>
+    <comment>Message of exception and error logging messgage.</comment>
+  </data>
+  <data name="CommunicationUnitHasBeenRemoved" xml:space="preserve">
+    <value>Communication unit has been removed.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="CommunicationUnitHasBeenAttached" xml:space="preserve">
+    <value>Communication unit has been attached.</value>
+    <comment>Information logging message.</comment>
+  </data>
+  <data name="ExceptionInfo" xml:space="preserve">
+    <value>Exception Info: </value>
+    <comment>Formatting for exception information.</comment>
+  </data>
+  <data name="Stack" xml:space="preserve">
+    <value>Stack:</value>
+    <comment>Formatting for exception information.</comment>
+  </data>
+  <data name="CantReadWindowsRegistry" xml:space="preserve">
+    <value>Can't read windows registry.</value>
+    <comment>Error logging message.</comment>
+  </data>
+  <data name="LanguageName_ar" xml:space="preserve">
+    <value>Arabic</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_cs" xml:space="preserve">
+    <value>Czech</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_de" xml:space="preserve">
+    <value>German</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_en" xml:space="preserve">
+    <value>English</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_es" xml:space="preserve">
+    <value>Spanish</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_fi" xml:space="preserve">
+    <value>Finnish</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_fr" xml:space="preserve">
+    <value>French</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_id" xml:space="preserve">
+    <value>Indonesian</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_it" xml:space="preserve">
+    <value>Italian</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_ja" xml:space="preserve">
+    <value>Japanese</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_ko" xml:space="preserve">
+    <value>Korean</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_nl" xml:space="preserve">
+    <value>Dutch</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_pl" xml:space="preserve">
+    <value>Polish</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_pt" xml:space="preserve">
+    <value>Portuguese</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_ru" xml:space="preserve">
+    <value>Russian</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_sv" xml:space="preserve">
+    <value>Swedish</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_th" xml:space="preserve">
+    <value>Thai</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_tr" xml:space="preserve">
+    <value>Turkish</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_vi" xml:space="preserve">
+    <value>Vietnamese</value>
+    <comment>Language name</comment>
+  </data>
+  <data name="LanguageName_zh" xml:space="preserve">
+    <value>Chinese</value>
+    <comment>Language name</comment>
+  </data>
+</root>

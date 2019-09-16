@@ -1,0 +1,53 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99999999-9999-9999-9999-999999999999}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <!--<ItemGroup>
+    <Reference Include="Testlibrary.dll" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <RootFolder Include="DeviceFunctions">
+      <Title>Device Functions</Title>
+    </RootFolder>
+    <TestSuite Include="Fieldcare">
+      <Title>Testsuite Fieldcare</Title>
+    </TestSuite>
+    <TestCase Include="Historom">
+      <Title>Historom</Title>
+      <TestSuite>Fieldcare</TestSuite>
+    </TestCase>
+    <TestCase Include="AboutBox">
+      <Title>AboutBox</Title>
+      <TestSuite>Fieldcare</TestSuite>
+    </TestCase>
+    <TestModule Include="OpenFile">
+      <Title>OpenFile</Title>
+      <TestCase>Historom</TestCase>
+    </TestModule>
+    <TestStep Include="ClickOpen">
+      <Title>ClickOpen</Title>
+      <TestModule>OpenFile</TestModule>
+    </TestStep>
+    <TestStep Include="EnterName">
+      <Title>EnterName</Title>
+      <TestModule>OpenFile</TestModule>
+    </TestStep>
+    <TestStep Include="ClickOK">
+      <Title>ClickOK</Title>
+      <TestModule>OpenFile</TestModule>
+    </TestStep>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

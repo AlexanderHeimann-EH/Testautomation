@@ -1,0 +1,55 @@
+﻿<ContentControl x:Class="Microsoft.PythonTools.Intellisense.CompletionControl"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:ptvs="clr-namespace:Microsoft.PythonTools"
+                xmlns:l="clr-namespace:Microsoft.PythonTools.Intellisense"
+                xmlns:wpf="clr-namespace:Microsoft.VisualStudioTools.Wpf"
+                mc:Ignorable="d"
+                SizeChanged="OnSizeChanged"
+                HorizontalContentAlignment="Stretch"
+                VerticalContentAlignment="Stretch">
+    <ContentControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/Microsoft.PythonTools;component/SharedProject/Wpf/Controls.xaml" />
+    </ContentControl.Resources>
+
+    <ContentControl.ContentTemplate>
+        <DataTemplate>
+            <Grid VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <ContentControl Grid.Row="0"
+                                Content="{Binding}"
+                                HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                VerticalAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+
+                <Border Grid.Row="1"
+                        Padding="3"
+                        Visibility="{Binding RelativeSource={RelativeSource AncestorType={x:Type l:CompletionControl}},Path=WarningVisibility}"
+                        Background="{DynamicResource {x:Static wpf:Controls.TooltipBackgroundKey}}"
+                        TextElement.Foreground="{DynamicResource {x:Static wpf:Controls.TooltipTextKey}}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock>
+                            The completion DB needs to be refreshed.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" Margin="0 3 0 0">
+                            <TextBlock Padding="0 0 3 0">
+                                Open
+                            </TextBlock>
+                            <Button Style="{StaticResource NavigationButton}" GotFocus="Button_GotFocus">
+                                Python Environments
+                            </Button>
+                            <TextBlock Padding="3 0 0 0">
+                                for more details.
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </DataTemplate>
+    </ContentControl.ContentTemplate>
+</ContentControl>

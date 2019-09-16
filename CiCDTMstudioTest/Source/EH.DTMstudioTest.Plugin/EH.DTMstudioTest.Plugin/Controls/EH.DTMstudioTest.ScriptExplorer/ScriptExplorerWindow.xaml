@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="EH.DTMstudioTest.ScriptExplorer.ScriptExplorerWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:scriptExplorer="clr-namespace:EH.DTMstudioTest.ScriptExplorer.Content.ScriptExplorerControl"
+             SizeChanged="OnSuiteConfiguratorWindowSizeChanged">
+    <Grid>
+        <scriptExplorer:ScriptExplorerControl x:Name="scriptExplorerControl" />
+    </Grid>
+
+</UserControl>

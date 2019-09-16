@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SelectedConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TestEnvironment>
+    <Communication>
+      <Folder>Communication</Folder>
+      <Category />
+      <Assembly />
+    </Communication>
+    <HostApplication>
+      <Folder>HostApplication</Folder>
+      <Category />
+      <Assembly />
+    </HostApplication>
+    <OperatingSystem>
+      <Folder>OperatingSystem</Folder>
+      <Category />
+      <Assembly />
+    </OperatingSystem>
+    <DeviceFunction>
+      <Folder>DeviceFunction</Folder>
+      <Category />
+      <Assembly />
+    </DeviceFunction>
+  </TestEnvironment>
+  <TestFramework>
+    <PathToAssemblies />
+  </TestFramework>
+  <TestInformation>
+    <DateOfTest>0001-01-01T00:00:00</DateOfTest>
+    <NameOfTester />
+    <Company />
+    <DeviceType />
+    <DeviceId />
+    <DeviceSerialNumber />
+    <DeviceTypeProjectPath />
+  </TestInformation>
+</SelectedConfiguration>

@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryAboutBox</DisplayName>
+      <Guid>dac73cb2-e422-4701-8414-64e0479b456a</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryAboutBox</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open</DisplayName>
+          <Guid>9e738fc0-d3ad-4d99-a021-a4845c0214e3</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary: 
+Opens the module About Box</Description>
+              <DisplayName>AboutBox.TC_OpenModule.Run()</DisplayName>
+              <Guid>9d642b8d-d4ad-4280-bd61-2a12ebde33c3</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module About Box</ToolTip>
+              <AssemblyMethodRefId>0F83B0D3-5670-4CF0-A6C2-D57CC37CD55B</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Check Data</DisplayName>
+          <Guid>8152d4a2-627d-45d2-b8ad-e654a312e909</Guid>
+          <IsActive>false</IsActive>
+          <Name>Check Data</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Gets the device type name from the device type information box and checks if it is valid.</Description>
+              <DisplayName>AboutBox.TC_CheckDeviceTypeName.Run()</DisplayName>
+              <Guid>0dabf206-ef31-4a06-8a01-5fa696164d46</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Gets the device type name from the device type information box and checks if it is valid.</ToolTip>
+              <AssemblyMethodRefId>9C7D4859-9AD5-4CC8-80BB-34E415D85227</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Gets the setup version from the setup information box and checks if it is valid.</Description>
+              <DisplayName>AboutBox.TC_CheckSetupVersion.Run()</DisplayName>
+              <Guid>10065a74-4a05-42a2-b12d-a29999dfa5ff</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Gets the setup version from the setup information box and checks if it is valid.</ToolTip>
+              <AssemblyMethodRefId>A496E5EF-E11E-400E-87E5-76BD1EC646DE</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Save Data</DisplayName>
+          <Guid>3c828d6a-1506-4b34-ba65-6cdee58d04a8</Guid>
+          <IsActive>false</IsActive>
+          <Name>Save Data</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the clipboard data to a file</Description>
+              <DisplayName>AboutBox.TC_SaveClipboardDataToFile.Run</DisplayName>
+              <Guid>97a5227a-b5b9-48b1-8c99-486c336f8e53</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the clipboard data to a file</ToolTip>
+              <AssemblyMethodRefId>492DCC73-C9F8-4F6A-A57E-B4BC6EFAB23A</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Gets the device type name from the device type information box and checks if it is valid.</Description>
+              <DisplayName>AboutBox.TC_SaveClipboardDataToReport.Run</DisplayName>
+              <Guid>32772eb5-253e-4501-b061-13846ffda413</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Gets the device type name from the device type information box and checks if it is valid.</ToolTip>
+              <AssemblyMethodRefId>4A35B995-AA3E-4FC7-B964-0CA2CDEFF024</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close</DisplayName>
+          <Guid>a2bd5065-6c24-4716-9900-07a60d6ec618</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module About Box</Description>
+              <DisplayName>AboutBox.TC_CloseModule.Run()</DisplayName>
+              <Guid>c9ae68c8-49d3-4790-a122-6c2abb5c7537</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module About Box</ToolTip>
+              <AssemblyMethodRefId>50AD0C1A-0821-4E14-AC44-E81891CB0CA1</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>292b9615-133c-4014-acbe-ce4e81e17480</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>AboutBox</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

@@ -1,0 +1,51 @@
+﻿TC_ChangeParameter.Run("DeviceMenu//Setup//ST1_SensorType", "(240) RTD Poly Nickel (OIML R84, GOST 6651-94)");
+TC_ChangeParameter.Run("DeviceMenu//Expert//Sensors//Sensor1//Linearization1//ST1_PolyNickelCopperR0", "100.000");
+TC_ChangeParameter.Run("DeviceMenu//Expert//Sensors//Sensor1//Linearization1//ST1_PolyNickelCopperA", "5.49630e-003");
+
+TC_ChangeParameterAndCheckValue.Run("DeviceMenu//Expert//Communication//HARTBurstConfig//HARTBurstConfig1//HBM_BurstCommand", "Command 2");
+TC_ChangeParameterAndCheckValue.Run("DeviceMenu//Expert//Communication//HARTBurstConfig//HARTBurstConfig2//HBM_BurstDeviceVariableCode2", "[2]");
+
+
+						//TC_ChangeParameterAndCheckValue.Run("DeviceMenu//Expert//_DiagnosticsExpert_//DS_LastDiagnostics1_", "[2]");
+                        //TC_ChangeParameterAndCheckValue.Run("DeviceMenu//Expert//Communication//HARTBurstConfig//HARTBurstConfig2//HBM_BurstCommand", "Command 2");
+
+                        //EH.PCPS.TestAutomation.DeviceFunctionLoader.CoDIA.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValue.Run(@"DeviceMenu//Expert//Sensors//Sensor1//Linearization1//ST1_PolyNickelCopperA");
+                        //EH.PCPS.TestAutomation.DeviceFunctionLoader.CoDIA.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValue.Run("DeviceMenu//_Expert_//_DiagnosticsExpert_//SPV_OperationHours_");
+
+                        //string path = "DeviceMenu//_Expert_//STD_AccessCode_";
+                        //string value = "4685";
+                        //string path = "DeviceMenu//_Expert_//_System_//_AdministrationExpert_//TRDExpertInfoBlockContainer.STD_LicenseCode_";
+                        //string value = "46372341";
+
+                        //string path = "DeviceMenu//_pbb_onlinephysical_block//pb_tag_desc";
+                        //string value = "Liquiline CM44x";
+                        //string invalidValue = "Liquiline CM44xLiquiline CM44xLiquiline CM44x";
+
+                        //string path = "DeviceMenu//_Setup_//.HO_LongTag_";
+                        //string value = "wpftest";
+                        //string state = "Valid";
+                        //string unconfirmedValue = "unconfirmed";
+
+                        //string path = "DeviceMenu//_DisplayOperation_//.DISP_Language_";
+                        //string value = "mumerumpumpel";
+
+                        //TC_CheckThatParameterCannotBeSetToAnInvalidValue.Run(path, value);
+                        //TC_CheckParameterValue.Run(path, value);
+                        //TC_CheckParameterStatus.Run(path, state);
+                        //TC_IsParameterExisting.Run(path, true);
+
+
+                        //TC_OpenModuleOnline.Run();
+                        ////TC_CheckThatParameterAreNotInvalid.Run();
+                        //TC_CloseModuleOnline.Run();
+
+                        //TC_OpenModuleOnline.Run();
+                        //TC_ChangeParameterAndCheckValue.Run(path, value);
+                        ////TC_CheckThatParameterCannotBeSetToAnInvalidValue.Run(path, invalidValue);
+                        //TC_CloseModuleOnline.Run();
+
+                        //TC_OpenModuleOnline.Run();
+                        //TC_CheckParameterValue.Run(path, value);
+                        //TC_CloseModuleOnline.Run();
+
+                        //TC_CheckForCriticalError.Run();

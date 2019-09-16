@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliverySaveRestore</DisplayName>
+      <Guid>bd84fba8-d8ed-421e-add4-faa799f64765</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliverySaveRestore</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Save Without Upload Close</DisplayName>
+          <Guid>31242529-d741-456d-9db8-5ada497db643</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Save Without Upload Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Save/Restore when the device is online.</Description>
+              <DisplayName>SaveRestore.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>442eca54-21a1-4154-aca1-9e59ecfa4a1e</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Save/Restore when the device is online.</ToolTip>
+              <AssemblyMethodRefId>01c008e8-3579-4be4-8d24-bb239aa19ab9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the data without uploading it</Description>
+              <DisplayName>SaveRestore.TC_SaveWithoutUpload.Run</DisplayName>
+              <Guid>0137f34e-2b5f-44e4-8e47-5bf4cc390533</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the data without uploading it</ToolTip>
+              <AssemblyMethodRefId>A96135E0-1B92-47F4-B76B-4D139EA9F167</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Save/Restore</Description>
+              <DisplayName>SaveRestore.TC_CloseModule.Run</DisplayName>
+              <Guid>8a91fc48-a942-4257-9874-9b27bfb79c9c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Save/Restore</ToolTip>
+              <AssemblyMethodRefId>5fed262d-eebc-45eb-b3f6-9425fc6ebe1e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>c64ecc57-9572-49b4-ab13-60ca374eb54a</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Save With Upload Close</DisplayName>
+          <Guid>9b066cea-5bf9-4c3e-a20f-5be942091984</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Save With Upload Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Save/Restore when the device is online.</Description>
+              <DisplayName>SaveRestore.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>09b7f38a-e40f-4dab-a177-5cdf3879ed03</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Save/Restore when the device is online.</ToolTip>
+              <AssemblyMethodRefId>01c008e8-3579-4be4-8d24-bb239aa19ab9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the data and performs an upload afterwards.</Description>
+              <DisplayName>SaveRestore.TC_SaveWithUpload.Run</DisplayName>
+              <Guid>5147b05f-0ab7-4b34-afad-eef1a47f2965</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the data and performs an upload afterwards.</ToolTip>
+              <AssemblyMethodRefId>88F994B0-F629-4626-BF0B-E23F00986A82</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Save/Restore</Description>
+              <DisplayName>SaveRestore.TC_CloseModule.Run</DisplayName>
+              <Guid>efb9defa-bcbf-4d92-9148-b8bfc6a45fbb</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Save/Restore</ToolTip>
+              <AssemblyMethodRefId>5fed262d-eebc-45eb-b3f6-9425fc6ebe1e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>af4c3e9f-d998-4439-9d52-e492d8fc6b6d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Restore Without Download Close </DisplayName>
+          <Guid>4edee0e3-e567-4cd6-85e2-2882be1ceb85</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Restore Without Download Close </Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Save/Restore when the device is online.</Description>
+              <DisplayName>SaveRestore.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>3d7e73aa-ce20-4ef0-b9d1-8ab49e5b6ce4</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Save/Restore when the device is online.</ToolTip>
+              <AssemblyMethodRefId>01c008e8-3579-4be4-8d24-bb239aa19ab9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Restores data without downloading it afterwards</Description>
+              <DisplayName>SaveRestore.TC_RestoreWithoutDownload.Run</DisplayName>
+              <Guid>2db694bd-357d-4020-b83c-721800cee496</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Restores data without downloading it afterwards</ToolTip>
+              <AssemblyMethodRefId>B930B6C5-EBBE-4BC5-99BD-0C932D4E0528</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Save/Restore</Description>
+              <DisplayName>SaveRestore.TC_CloseModule.Run</DisplayName>
+              <Guid>a59140e5-5d2b-4601-8886-0d2dc002538e</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Save/Restore</ToolTip>
+              <AssemblyMethodRefId>5fed262d-eebc-45eb-b3f6-9425fc6ebe1e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>6809273e-52df-435b-9d12-b674c506bfe0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Restore With Download Close</DisplayName>
+          <Guid>5c7da4dd-db38-4b13-88f1-9d5f53956b59</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Restore With Download Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Save/Restore when the device is online.</Description>
+              <DisplayName>SaveRestore.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>44f2194e-5003-438b-851a-8c035f291888</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Save/Restore when the device is online.</ToolTip>
+              <AssemblyMethodRefId>01c008e8-3579-4be4-8d24-bb239aa19ab9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Restores data with downloading it afterwards</Description>
+              <DisplayName>SaveRestore.TC_RestoreWithDownload.Run</DisplayName>
+              <Guid>9d639a3b-d254-4fe1-add0-832f7498ee05</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Restores data with downloading it afterwards</ToolTip>
+              <AssemblyMethodRefId>3C562E9F-24DA-4CB3-8E8D-F4DEA39F34CB</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Save/Restore</Description>
+              <DisplayName>SaveRestore.TC_CloseModule.Run</DisplayName>
+              <Guid>7db89672-f655-43f0-9faa-22d59cc73ec8</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Save/Restore</ToolTip>
+              <AssemblyMethodRefId>5fed262d-eebc-45eb-b3f6-9425fc6ebe1e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>4d2bd2fa-5200-4bdb-9950-c4984750f9ba</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>SaveRestore</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

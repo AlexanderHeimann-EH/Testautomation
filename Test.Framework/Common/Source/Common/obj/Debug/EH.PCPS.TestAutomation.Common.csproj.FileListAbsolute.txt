@@ -1,0 +1,11 @@
+P:\EH.PCSW.Testautomation.TestFramework.Common\ReleaseBin\Debug\EH.PCPS.TestAutomation.Common.XML
+P:\EH.PCSW.Testautomation.TestFramework.Common\ReleaseBin\Debug\EH.PCPS.TestAutomation.Common.dll
+P:\EH.PCSW.Testautomation.TestFramework.Common\ReleaseBin\Debug\EH.PCPS.TestAutomation.Common.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.Configurator.GUI.ConfiguratorDialog.resources
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.Configurator.GUI.ControlTestInformation.resources
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.Configurator.GUI.ControlTestEnvironment.resources
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.Configurator.GUI.ControlTestFramework.resources
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.csproj.GenerateResource.Cache
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.dll
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\obj\Debug\EH.PCPS.TestAutomation.Common.csprojResolveAssemblyReference.cache

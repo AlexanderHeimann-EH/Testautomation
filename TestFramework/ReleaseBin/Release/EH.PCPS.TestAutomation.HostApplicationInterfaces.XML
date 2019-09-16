@@ -1,0 +1,2141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.HostApplicationInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.IGetDtmContainerPath">
+            <summary>
+                Description of IGetDTMContainer.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.IGetDtmContainerPath.GetMDIClientPath">
+            <summary>
+                Gets the path of the DTM Container(mdi client) from the FrameBasePath repository of the actually used frame
+            </summary>
+            <returns>
+                string: with the absolute path of the DTM Container
+                null: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution.IGetDtmContainerPath">
+            <summary>
+                Description of IGetDTMContainer.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution.IGetDtmContainerPath.GetMDIClientPath">
+            <summary>
+                Gets the path of the DTM Container(mdi client) from the FrameBasePath repository of the actually used frame
+            </summary>
+            <returns>
+                string: with the absolute path of the DTM Container
+                null: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IGetCommDtmContainerPath">
+            <summary>
+            The GetCommDtmContainerPath interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IGetCommDtmContainerPath.Run">
+            <summary>
+                Gets the path of the CommDtm Container of the actually used frame
+            </summary>
+            <returns>
+                string: with the absolute path of the CommDtm Container
+                null: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IGetDtmContainerPath">
+            <summary>
+                Description of IGetDTMContainer.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IGetDtmContainerPath.GetMDIClientPath">
+            <summary>
+                Gets the path of the DTM Container(mdi client) from the FrameBasePath repository of the actually used frame
+            </summary>
+            <returns>
+                string: with the absolute path of the DTM Container
+                null: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IStartFrame">
+            <summary>
+                Description of IStartFrame.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IStartFrame.FieldCare">
+            <summary>
+            The field care.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IStartFrame.FieldCare(System.String)">
+            <summary>
+            The field care.
+            </summary>
+            <param name="strApplicationPath">
+            The str application path.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.IStartFrame.FieldCare(System.String,System.Int32)">
+            <summary>
+            The field care.
+            </summary>
+            <param name="strApplicationPath">
+            The str application path.
+            </param>
+            <param name="timeOutInSeconds">
+            The time out in seconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IGetModuleAreaControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IGetModuleAreaControl.Run">
+            <summary>
+            Get module area control
+            </summary>
+            <returns>
+                <br>Element: if call worked fine</br>
+                <br>Null: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IGetNumberOfOpenedModules">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IGetNumberOfOpenedModules.Run">
+            <summary>
+                Get number of opened modules
+            </summary>
+            <returns>
+                <br>Value >= 0: If call worked fine</br>
+                <br>-1: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IGetOpenedModules">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IGetOpenedModules.Run">
+            <summary>
+                Get list of already opened modules
+            </summary>
+            <returns>
+                <br>List of forms for opened modules: If call worked fine</br>
+                <br>Null: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IIsFrameAvailable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IIsFrameAvailable.Run">
+            <summary>
+                Check if Frame Application Main Form is active
+            </summary>
+            <returns>
+                <br>True: if validation is true</br>
+                <br>False: if validation fails</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IIsModuleAlreadyOpened">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IIsModuleAlreadyOpened.Run(System.String)">
+            <summary>
+                Checks if a specified module is already open
+            </summary>
+            <param name="moduleName">Name of module </param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IWaitUntilFrameClosed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IWaitUntilFrameClosed.Run(System.Int32)">
+            <summary>
+                Wait until Frame is closed
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be finished</param>
+            <returns>
+                <br>True: if call worked fine</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.IClosingInProgressDialog">
+            <summary>
+            The ClosingInProgressDialog interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.IClosingInProgressDialog.IsDialogShown">
+            <summary>
+            Determines whether dialog is shown].
+            </summary>
+            <returns><c>true</c> if [dialog is shown]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.IClosingInProgressDialog.WaitUntilClosingFinished(System.Int32)">
+            <summary>
+            The wait until closing finished.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.IScanDtmMessages">
+            <summary>
+            The ScanDtmMessages interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.IScanDtmMessages.Contains(System.String)">
+            <summary>
+            Determines whether the latest DTM message contains the specified text.
+            </summary>
+            <param name="text">
+            The text.
+            </param>
+            <returns>
+            <c>true</c> if the latest DTM message contains the specified text; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.IScanDtmMessages.ContainsCriticalError">
+            <summary>
+            Determines whether the latest DTM message contains a critical error message.
+            </summary>
+            <returns><c>true</c> if the latest DTM message contains a critical error message; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.IDtmMessages">
+            <summary>
+                Provides methods for interface DTMMessages
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.IDtmMessages.GetAllDtmMessages">
+            <summary>
+            Gets all dtm messages.
+            </summary>
+            <value>The get all user messages.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.IDtmMessages.strGetNewestUserMessage">
+            <summary>
+                Property to get newest message at DTMMessages Area
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.IValidationMethods">
+            <summary>
+            The ValidationMethods interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.IValidationMethods.IsSavingInProgressDialogShown">
+            <summary>
+            Determines whether [is saving in progress dialog shown].
+            </summary>
+            <returns><c>true</c> if [is saving in progress dialog shown]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.IValidationMethods.WaitUntilSavingFinished(System.Int32)">
+            <summary>
+            Waits until saving finished.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            <c>true</c> if updating finished, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.IIgnoreUpdate">
+            <summary>
+            The IgnoreUpdate interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.IIgnoreUpdate.Run">
+            <summary>
+            Clicks the ignore button of the Update Dtm Catalog Dialog when FieldCare is starting
+            </summary>
+            <returns>
+            True if button was found and clicked, false otherwise <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.IUpdateCatalog">
+            <summary>
+            The UpdateCatalog interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.IUpdateCatalog.Run">
+            <summary>
+            Clicks the update button of the Update Dtm Catalog Dialog when FieldCare is starting
+            </summary>
+            <returns>
+            True if button was found and clicked, false otherwise <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.IValidationMethods">
+            <summary>
+            The ValidationMethods interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.IValidationMethods.IsCatalogUpdateDialogShown">
+            <summary>
+            Determines whether [is catalog update dialog shown].
+            </summary>
+            <returns><c>true</c> if [is catalog update dialog shown]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.IValidationMethods.WaitForCatalogUpdateDialog(System.Int32)">
+            <summary>
+            Waits for catalog update dialog.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            <c>true</c> if dialog shows up, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods">
+            <summary>
+            The ValidationMethods interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.IsCatalogUpdateDialogShown">
+            <summary>
+            Determines whether [is catalog update dialog shown].
+            </summary>
+            <returns><c>true</c> if [is catalog update dialog shown]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.IsConfirmDeletedDevicesDialogShown">
+            <summary>
+            Determines whether [is confirm deleted devices dialog shown].
+            </summary>
+            <returns><c>true</c> if [is confirm deleted devices dialog shown]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.WaitForCatalogUpdateDialog(System.Int32)">
+            <summary>
+            Waits for catalog update dialog.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            <c>true</c> if dialog shows up, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.WaitForConfirmRemovedDevicesDialog(System.Int32)">
+            <summary>
+            Waits for confirm removed devices dialog.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            <c>true</c> if dialog shows up, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.WaitUntilMovingFinished(System.Int32)">
+            <summary>
+            Waits until moving finished.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            <c>true</c> if updating finished, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.WaitUntilUpdatingFinished(System.Int32)">
+            <summary>
+            Waits until updating finished.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            <c>true</c> if updating finished, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.AreNewDevicesAvailable">
+            <summary>
+            Determines whether new devices are available or not.
+            </summary>
+            <returns><c>true</c> if new devices are available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.IValidationMethods.AreChangedDevicesAvailable">
+            <summary>
+            Determines whether changed devices are available or not.
+            </summary>
+            <returns><c>true</c> if changed devices are available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue">
+            <summary>
+                Description of IUpdateDTMCatalogue.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue.Cancel">
+            <summary>
+                Cancel Update Catalog
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue.Confirm">
+            <summary>
+                Confirm Update dialig
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue.Help">
+            <summary>
+                Confirm Help dialig
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue.Move">
+            <summary>
+                Press Move Button
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue.Update">
+            <summary>
+                Start update
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.IUpdateDTMCatalogue.SelectNewOnLeft(System.Boolean,System.Int32)">
+            <summary>
+                Select new on left side
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.IAddDevice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.IAddDevice.Cancel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.IAddDevice.Confirm">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.IAddDevice.OpenHelp">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.IAddDevice.SelectDevice(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strDeviceName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation.IIsFDTUploadActive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation.IIsFDTUploadActive.Run">
+            <summary>
+                Check if FDT Download dialog is active
+            </summary>
+            <returns>
+                <br>True: if validation is true</br>
+                <br>False: if validation fails</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.IReadingFromDevice">
+            <summary>
+                Interface for dialog Reading From Device
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.IReadingFromDevice.ProgressBarValuePercent">
+            <summary>
+                Progress bar value in percentage
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.IReadingFromDevice.Cancel">
+            <summary>
+                Cancel dialog
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation.IIsFDTPrintActive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation.IIsFDTPrintActive.Run">
+            <summary>
+                Check if FDT Print dialog is active
+            </summary>
+            <returns>
+                <br>True: if validation is true</br>
+                <br>False: if validation fails</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.IReportConfiguration">
+            <summary>
+                Interface for dialog Report Configuration
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.IReportConfiguration.Cancel">
+            <summary>
+                Cancel dialog
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.IReportConfiguration.Print(System.String)">
+            <summary>
+                Start printing
+            </summary>
+            <param name="reportType">Report type to print</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.IReportConfiguration.SaveAsPDF(System.String)">
+            <summary>
+                Start printing as PDF
+            </summary>
+            <param name="reportType">Report type to print</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.IReportConfiguration.SelectReportType(System.String)">
+            <summary>
+                Select report type
+            </summary>
+            <param name="reportType">Report type to select</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation.IIsFDTDownloadActive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation.IIsFDTDownloadActive.Run">
+            <summary>
+                Check if FDT Download dialog is active
+            </summary>
+            <returns>
+                <br>True: if validation is true</br>
+                <br>False: if validation fails</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution.IWritingToDevice">
+            <summary>
+                Description of IWritingToDevice.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution.IWritingToDevice.Cancel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.IConfirmDelete">
+            <summary>
+                Provides methods for messagebox IConfirmDelete
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.IConfirmDelete.Yes">
+            <summary>
+                Methods to confirm messageBox
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.IConfirmDelete.No">
+            <summary>
+                Methods to deny messageBox
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.IWriteToDeviceError">
+            <summary>
+                Description of IWriteToDeviceError.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.IWriteToDeviceError.Ok">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.IWriteToDeviceError.ErrorMessage">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ICreateNetwork">
+            <summary>
+                Provides methods for dialog ICreateNetwork
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ICreateNetwork.SelectChannel(System.String)">
+            <summary>
+                Methods to select channel
+            </summary>
+            <param name="strChannelName">Channel to select</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ICreateNetwork.Confirm">
+            <summary>
+                Methods to confirm dialog
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ICreateNetwork.Cancel">
+            <summary>
+                Methods to cancel dialog
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ICreateNetwork.OpenHelp">
+            <summary>
+                Methods to open help
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ICreateNetwork.GetNumberOfChannels">
+            <summary>
+                Methods to get number of channels
+            </summary>
+            <returns>
+                <br>String: if call worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution.IEvaluationInfo">
+            <summary>
+                Interface for dialog Evaluation Information
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution.IEvaluationInfo.Confirm">
+            <summary>
+                Confirm dialig
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.IFindDevice">
+            <summary>
+                Interface for dialog Find Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.IFindDevice.EnterDevice(System.String)">
+            <summary>
+                Enter specified device
+            </summary>
+            <param name="deviceName">Device name</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.IFindDevice.FindNext(System.String)">
+            <summary>
+                Find Next device
+            </summary>
+            <param name="deviceName">Device name</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.IFindDevice.Find(System.String)">
+            <summary>
+                Find device
+            </summary>
+            <param name="deviceName">Device name</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.IFindDevice.Cancel">
+            <summary>
+                Cancel dialog
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.IFindDevice.OpenHelp">
+            <summary>
+                Open help
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.IProjectBrowser">
+            <summary>
+                Interface for dialog Project Browser
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.IProjectBrowser.CreateNew">
+            <summary>
+                Create new project
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.IProjectBrowser.Cancel">
+            <summary>
+                Cancel dialog
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.IProjectBrowser.LoadProjectViaTextField(System.String)">
+            <summary>
+                Load project via entering project name in text field
+            </summary>
+            <param name="projectName">Name of project to load</param>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.IReadFromDevice">
+            <summary>
+                Interface for message Read From Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.IReadFromDevice.Yes">
+            <summary>
+                Confirm message
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.IReadFromDevice.No">
+            <summary>
+                Cancel message
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.ISaveAs">
+            <summary>
+                Description of ISaveAs.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.ISaveAs.Yes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.ISaveAs.No">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution.IScanningInProgress">
+            <summary>
+                Description of IScanningInProgress.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution.IScanningInProgress.Cancel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.IWriteToDeviceInfo">
+            <summary>
+                Description of IWriteToDeviceInfo.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.IWriteToDeviceInfo.Yes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.IWriteToDeviceInfo.No">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution.IWriteToDeviceSuccess">
+            <summary>
+                Description of IWriteToDeviceSuccess.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution.IWriteToDeviceSuccess.OK">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.IWriteToDeviceWarning">
+            <summary>
+                Description of IWriteToDeviceWarning.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.IWriteToDeviceWarning.Yes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.IWriteToDeviceWarning.No">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFunction">
+            <summary>
+            Opens a device function via menu
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFunction.ViaMenu(System.String)">
+            <summary>
+            Starts execution
+            </summary>
+            <param name="functionToOpen">
+            Function which will be opened
+            </param>
+            <returns>
+            true if the function is opened
+            false if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.ICloseAdditionalModule">
+            <summary>
+                Description of ICloseAdditionalModule
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.ICloseAdditionalModule.ViaWindow(System.String)">
+            <summary>
+                Close module via window (MDI client)
+            </summary>
+            <param name="moduleToClose">Name of module to close</param>
+            <returns>
+                <br>String: if call worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.ICloseAdditionalModule.ViaWindow(System.String,System.Boolean)">
+            <summary>
+                Close module via window (MDI client)
+            </summary>
+            <param name="moduleToClose">Name of module to close</param>
+            <param name="closeExpected">Boolean if close expected or not</param>
+            <returns>
+                <br>String: if call worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAddDevice">
+            <summary>
+                Interface of function Open Add Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAddDevice.ViaMenu">
+            <summary>
+                Open dialog via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAddDevice.ViaContext">
+            <summary>
+                Open dialog via context
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAdditionalFunctions">
+            <summary>
+                Interface for function Open Additional Functions
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAdditionalFunctions.ViaMenu">
+            <summary>
+                Open via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAdditionalFunctions.ViaContext">
+            <summary>
+                Open via context menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAdditionalModule">
+            <summary>
+                Interface for function Open Addition Module
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenAdditionalModule.ViaMenu(System.String)">
+            <summary>
+                Run via menu
+            </summary>
+            <param name="moduleToOpen">Module name</param>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenConfiguration">
+            <summary>
+                Interface for function Open Configuration
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenConfiguration.ViaMenu">
+            <summary>
+                Open via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenConfiguration.ViaContext">
+            <summary>
+                Open via context
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenCreateNetwork">
+            <summary>
+                Interface for function Open Create Network
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenCreateNetwork.ViaMenu">
+            <summary>
+                Open via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeviceFunction">
+            <summary>
+                Interface for function Run Device Function
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeviceFunction.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeviceFunction.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenDisplayDtmCatalogue">
+            <summary>
+                Interface for function Open Display DTM Catalogue
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenDisplayDtmCatalogue.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFdtPrint">
+            <summary>
+                Interface for function Open FDT Print
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFdtPrint.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFindDevice">
+            <summary>
+                Interface for function Open Find Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFindDevice.ViaMenu">
+            <summary>
+                Run via Menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFindNextDevice">
+            <summary>
+                Interface for function Open Find Next Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenFindNextDevice.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOfflineParameterization">
+            <summary>
+                Interface for funcion Open Offline Parameterisation.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOfflineParameterization.ViaMenu">
+            <summary>
+            The via menu.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOfflineParameterization.ViaContext">
+            <summary>
+            The via context.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOnlineParameterization">
+            <summary>
+                Interface for function Open Online Parameterization.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOnlineParameterization.ViaMenu">
+            <summary>
+            The via menu.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOnlineParameterization.ViaContext">
+            <summary>
+            The via context.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOptions">
+            <summary>
+                Interface for function Open Options
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenOptions.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenPrintSetup">
+            <summary>
+                Interface for function Open Print Setup.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenPrintSetup.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenProjectLoad">
+            <summary>
+                Interface for function Open Project Load.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenProjectLoad.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenProjectNew">
+            <summary>
+                Interface for function Open Project New
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenProjectNew.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenProjectSaveAs">
+            <summary>
+                Interface for function Open Project Save As
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenProjectSaveAs.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenUpdateDtmCatalogue">
+            <summary>
+                Interface for function Open Display DTM Catalogue
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IOpenUpdateDtmCatalogue.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunCloseAllWindows">
+            <summary>
+                Interface for function Run Close All Windows
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunCloseAllWindows.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunConnect">
+            <summary>
+                Interface for function Run Connect
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunConnect.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunConnect.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunCreateNetwork">
+            <summary>
+                Interface for function Run Create Network
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunCreateNetwork.ViaMenu">
+            <summary>
+            Run via menu
+            </summary>
+            <returns>
+              <br>String: if call worked fine</br>
+              <br>Empty string: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunCreateNetwork.ViaContext">
+            <summary>
+            Run via context
+            </summary>
+            <returns>
+              <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeleteDevice">
+            <summary>
+                Interface for function Run Delete Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeleteDevice.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeleteDevice.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeviceOperation">
+            <summary>
+                Interface for function Run Device Operation
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDeviceOperation.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>Element: if call worked fine</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDisconnect">
+            <summary>
+                Interface for function Run Disconnect
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDisconnect.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDisconnect.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDtmCatalogue">
+            <summary>
+                Interface for function Run DTM Catalogue
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunDtmCatalogue.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>Element: if call worked fine</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunEdit">
+            <summary>
+                Interface for function Run Edit
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunEdit.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>Element: if element was found and clicked</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunExtras">
+            <summary>
+                Interface for function Run Extras
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunExtras.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFdtReadFromDevice">
+            <summary>
+                Interface for function Run FDT Read From Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFdtReadFromDevice.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFdtReadFromDevice.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFdtWriteToDevice">
+            <summary>
+                Interface for function Run FDT Write To Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFdtWriteToDevice.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFdtWriteToDevice.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFile">
+            <summary>
+                Interface for function Run File
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFile.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>Element: if element was found and clicked</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFindDevice">
+            <summary>
+                Interface for function Run Find Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFindDevice.ViaMenu(System.String)">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFrameExit">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunFrameExit.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunHelp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunHelp.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunLogOff">
+            <summary>
+                Description of IRunLogOff.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunLogOff.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunProjectClose">
+            <summary>
+                Description of IRunProjectClose.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunProjectClose.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunProjectLoad">
+            <summary>
+                Description of IRunProjectLoad.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunProjectLoad.ViaMenu(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="projectName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunProjectSave">
+            <summary>
+                Description of IRunProjectSave.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunProjectSave.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunScanningTools">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunScanningTools.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunSelectModule">
+            <summary>
+                Description of IRunSelectModule.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunSelectModule.ViaMenu(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="moduleName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunTools">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunTools.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunView">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunView.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunWindow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.IRunWindow.ViaMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IGetAdditionalFunctionModules">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IGetAdditionalFunctionModules.Run">
+            <summary>
+                Get additional function modules at runtime
+            </summary>
+            <returns>
+                <br>List of button for available modules: If call worked fine</br>
+                <br>Null: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IIsModuleAvailableAtMenu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IIsModuleAvailableAtMenu.Run(System.String)">
+            <summary>
+                Checks if a specified modules is available via menu
+            </summary>
+            <param name="moduleName">Name of module</param>
+            <returns>
+                <br>True: if module is available</br>
+                <br>False: if module is not available</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IIsModuleEnabledAtMenu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IIsModuleEnabledAtMenu.Run(System.String)">
+            <summary>
+                Checks if a specified modules is enabled at menu
+            </summary>
+            <param name="moduleName">Name of module</param>
+            <returns>
+                <br>True: if module is available</br>
+                <br>False: if module is not available</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IIsConnected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IIsConnected.Run">
+            <summary>
+                Check if frame-device-connection is active
+            </summary>
+            <returns>True if connection is established, False if not</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IIsDisconnected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IIsDisconnected.Run">
+            <summary>
+                Check if frame-device-connection is disabled
+            </summary>
+            <returns>True if connection is disabled, False if not</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IWaitUntilFrameConnected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IWaitUntilFrameConnected.Run(System.Int32)">
+            <SUMMARY>
+                WAIT UNTIL GUI CONNECTION IS ESTABLISHED AND SHOWN BY GUI
+            </SUMMARY>
+            <PARAM NAME="timeOutInMilliseconds">TIME UNTIL ACTION MUST BE FINISHED</PARAM>
+            <RETURNS>TRUE IF CONNECTION IS ESTABLISHED, FALSE IF NOT</RETURNS>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IWaitUntilFrameDisconnected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IWaitUntilFrameDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until GUI connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be finished</param>
+            <returns>True if connection is established, False if not</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenAddDevice">
+            <summary>
+                Interface of function Open Add Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenAddDevice.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenFdtPrint">
+            <summary>
+                Interface for function Open FDT Print
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenFdtPrint.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenPrintSetup">
+            <summary>
+                Interface for function Open Print Setup.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenPrintSetup.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenProjectLoad">
+            <summary>
+                Interface for function Open Project Load.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenProjectLoad.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenProjectNew">
+            <summary>
+                Interface for function Open Project New
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IOpenProjectNew.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunConnect">
+            <summary>
+                Interface for function Run Connect
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunConnect.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunCreateNetwork">
+            <summary>
+                Interface for function Run Create Network
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunCreateNetwork.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunDeleteDevice">
+            <summary>
+                Interface for function Run Delete Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunDeleteDevice.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunDisconnect">
+            <summary>
+                Interface for function Run Disconnect
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunDisconnect.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunFdtReadFromDevice">
+            <summary>
+                Interface for function Run FDT Read From Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunFdtReadFromDevice.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunFdtWriteToDevice">
+            <summary>
+                Interface for function Run FDT Write To Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunFdtWriteToDevice.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunProjectSave">
+            <summary>
+                Description of IRunProjectSave.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.IRunProjectSave.ViaIcon">
+            <summary>
+                Run via icon
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.ICreateNetwork">
+            <summary>
+            The CreateNetwork interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.ICreateNetwork.Run(System.Int32,System.String)">
+            <summary>
+            Creates network (scan for device) via menu. Waits for the action to finish and reports the result. Sets the network tag for the device.
+            </summary>
+            <param name="timeoutInMilliseconds">
+            Timeout for the scanning progress in milliseconds.
+            </param>
+            <param name="networkTag">
+            The network Tag for the device.
+            </param>
+            <returns>
+            <c>true</c> if scanning finished successfully, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtDownload">
+            <summary>
+                Interface for flow FDT Download
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtDownload.Run">
+            <summary>
+                Start flow
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtDownload.ReturnAfterPercent(System.Int32)">
+            <summary>
+                Return after Percent
+            </summary>
+            <param name="percent">Percentage after which should be returned</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtDownload.WaitForProgressBarInvisible">
+            <summary>
+                Wait until Progressbar is invisible
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtDownload.ReportMeasureTime">
+            <summary>
+                Report meassured time
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtPrintAsPdf">
+            <summary>
+                Interface for flow FDTPrintAsPDF.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtPrintAsPdf.Run(System.String,System.String,System.Boolean)">
+            <summary>
+                Start flow
+            </summary>
+            <param name="reportType">Report Type to select</param>
+            <param name="documentationName">Documentation name to enter</param>
+            <param name="replaceProject">Boolean for file replacement</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtUpload">
+            <summary>
+                Interface for flow IFDTUpload.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtUpload.Run">
+            <summary>
+                Start flow
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtUpload.ReturnAfterPercent(System.Int32)">
+            <summary>
+                Return after Percent
+            </summary>
+            <param name="percent">Percentage after which should be returned</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtUpload.WaitForProgresbarInviseble">
+            <summary>
+                Wait until Progressbar is invisible
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFdtUpload.ReportMessureTime">
+            <summary>
+                Report meassured time
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFocusNetworkView">
+            <summary>
+                Interface for flow Focus Network View
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFocusNetworkView.Run">
+            <summary>
+                Start flow
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>Falase: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFrameExitWithoutSaving">
+            <summary>
+                Provides methods for flow IFrameExitWithoutSaving
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFrameExitWithoutSaving.Run">
+            <summary>
+                Methods to start network creation
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IFrameExitWithoutSaving.Run(System.Int32)">
+            <summary>
+                Methods to start network creation
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be finished</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IPrintDeviceInformation">
+            <summary>
+            The PrintDeviceInformation interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IPrintDeviceInformation.Run(System.String,System.String,System.Int32)">
+            <summary>
+            The run.
+            </summary>
+            <param name="reportType">
+            The report type.
+            </param>
+            <param name="filePathAndName">
+            The file path and name.
+            </param>
+            <param name="timeoutInMilliseconds">
+            The timeout in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectClose">
+            <summary>
+                Interface for flow Project Close
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectClose.Run(System.String,System.Boolean)">
+            <summary>
+                Start flow
+            </summary>
+            <param name="projectName">Project Name</param>
+            <param name="replaceProject">Bool</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectLoad">
+            <summary>
+                Interface for flow Project Load
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectLoad.Run(System.String)">
+            <summary>
+                Start flow
+            </summary>
+            <param name="projectName">Project name</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectNewEmpty">
+            <summary>
+                Interface for flow Project New Empty
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectNewEmpty.Run">
+            <summary>
+                Start flow
+            </summary>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectSave">
+            <summary>
+                Interface for flow ProjectSave.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectSave.Run(System.String,System.Boolean)">
+            <summary>
+                Start flow
+            </summary>
+            <param name="projectName">Project name</param>
+            <param name="replaceProject">Bool</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectSaveAs">
+            <summary>
+                Interface for flow Project Save As
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IProjectSaveAs.Run(System.String,System.Boolean)">
+            <summary>
+                Start flow
+            </summary>
+            <param name="projectName">Project name</param>
+            <param name="replaceProject">Bool</param>
+            <returns>
+                <br>True: if call worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.ISetNetworkTag">
+            <summary>
+            The SetNetworkTag interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.ISetNetworkTag.Run(System.String)">
+            <summary>
+            Sets the network tag. This works only after a scan.
+            </summary>
+            <param name="networkTag">
+            The network tag.
+            </param>
+            <returns>
+            True if tag has been set, false otherwise.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IUpdateDtmCatalog">
+            <summary>
+            Interface IUpdateDtmCatalog
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationInterfaces.FDT.FieldCare.SpecificFlows.IUpdateDtmCatalog.Run(System.Int32,System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Opens the FieldCare Catalog via Menu, starts an update and adds new devices if necessary.
+            </summary>
+            <param name="timeToWaitForUpdateMessage">
+            The time to wait for the update window to appear in milliseconds. Recommended: 5000.
+            </param>
+            <param name="timeoutForUpdateProgress">
+            The timeout For the Update Progress. This depends on how many dtms are found. Recommended: 120000.
+            </param>
+            <param name="shouldFindNewDevice">
+            Set to true only if new devices have been installed. They will be added to the catalog.
+            </param>
+            <param name="maxMinutesSinceDtmWasInstalled">
+            The approximate time in minutes since the dtm has been installed
+            </param>
+            <param name="timeToWaitForMoving">
+            The time To Wait For Moving in milliseconds. This is important if the update is huge.
+            </param>
+            <returns>
+            True if the update was successful, false otherwise.<see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+    </members>
+</doc>

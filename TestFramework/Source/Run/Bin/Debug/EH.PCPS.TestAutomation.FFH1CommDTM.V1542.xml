@@ -1,0 +1,495 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.FFH1CommDTM.V1542</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.CloseConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            FF H1 Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.CloseConfiguration.Run">
+            <summary>
+            Closes the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.ConfigureCommunication">
+            <summary>
+            Implementation of IConfigureCommunication for
+            FF H1 Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.ConfigureCommunication.Run(EH.PCPS.TestAutomation.Common.DataTypes.Communication)">
+            <summary>
+            Performs the configuration of the FF H1 Communication DTM
+            </summary>
+            <param name="communication">
+            The communication.
+            </param>
+            <returns>
+            <br>True: if configuration was successful</br>
+            <br>False: if configuration was unsuccessful or errors occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.ConfigureCommunication.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication configuration.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.OpenConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            FF H1 Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.CommonFlows.OpenConfiguration.Run">
+            <summary>
+            Opens the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Execution.PressButton">
+            <summary>
+            Provides functionalities for buttons
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Execution.PressButton.Run(Ranorex.Button)">
+            <summary>
+            Clicks a button
+            </summary>
+            <param name="button">
+            The button.
+            </param>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Execution.SetParameter">
+            <summary>
+            Provides functionality to set parameter for different control types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="elementOpen">The button to open the control</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a combo Box control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="elementOpen">parameter button to open combo box</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Validation.IsModuleReady">
+            <summary>
+            Checks if a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Validation.IsModuleReady.Run">
+            <summary>
+            Checks if button [OK] is available
+            </summary>
+            <returns>
+            <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady">
+            <summary>
+            Waits until a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo">
+            <summary>
+            The class representing the FFH1CommDTMRepo element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.Instance">
+            <summary>
+            Gets the singleton class instance representing the FFH1CommDTMRepo element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.ApplicationArea">
+            <summary>
+            The ApplicationArea folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.CommDTMDialog">
+            <summary>
+            The CommDTMDialog folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.List1000">
+            <summary>
+            The List1000 folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo.MDIParent2">
+            <summary>
+            The MDIParent2 folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder">
+            <summary>
+            The ApplicationAreaFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ApplicationArea  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.ButtonCancel">
+            <summary>
+            The ButtonCancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.ButtonCancelInfo">
+            <summary>
+            The ButtonCancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.LinkNameCombobox">
+            <summary>
+            The LinkNameCombobox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.LinkNameComboboxInfo">
+            <summary>
+            The LinkNameCombobox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.LinkNameComboboxButtonOpen">
+            <summary>
+            The LinkNameComboboxButtonOpen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.ApplicationAreaFolder.LinkNameComboboxButtonOpenInfo">
+            <summary>
+            The LinkNameComboboxButtonOpen item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder">
+            <summary>
+            The CommDTMDialogAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new CommDTMDialog  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.ButtonClose">
+            <summary>
+            The ButtonClose item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.ButtonCloseInfo">
+            <summary>
+            The ButtonClose item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.DialogMessage">
+            <summary>
+            The DialogMessage item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.CommDTMDialogAppFolder.DialogMessageInfo">
+            <summary>
+            The DialogMessage item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.List1000AppFolder">
+            <summary>
+            The List1000AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.List1000AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new List1000  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.List1000AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.List1000AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.MDIParent2AppFolder">
+            <summary>
+            The MDIParent2AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.MDIParent2AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new MDIParent2  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.MDIParent2AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoFolders.MDIParent2AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements">
+            <summary>
+            Provides access to the GUI elements of the repository 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.ffRepository">
+            <summary>
+            Holds the instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.commDTMContainerPath">
+            <summary>
+            Holds the path to the commDTMContainer
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepo"/> class
+            and gets the commDTMContainerPath
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.ButtonOK">
+            <summary>
+                Gets the 'ButtonOK' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.ButtonCancel">
+            <summary>
+                Gets the 'ButtonCancel' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.LinkNameCombobox">
+            <summary>
+                Gets the 'StartAddressCombobox' object
+            </summary>
+            <returns>
+                <br>Combobox: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.LinkNameComboboxButtonOpen">
+            <summary>
+                Gets the 'LinkNameComboboxButtonOpen' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.ComboboxList">
+            <summary>
+                Gets an Ilist of all items in a combobox
+            </summary>
+            <returns>
+                <br>Ilist: if the list can be created</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.DialogButtonClose">
+            <summary>
+                Gets the 'DialogButtonClose' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.DialogButtonOK">
+            <summary>
+                Gets the 'DialogButtonOK' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.GUI.FFH1CommDTMRepoElements.DialogMessageBox">
+            <summary>
+                Gets the 'DialogMessageBox' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.AcknowledgeMissingLinkDeviceDialog">
+            <summary>
+            Provides a method to close dialogs coming from the FF H1 Communication DTM
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.AcknowledgeMissingLinkDeviceDialog.Run">
+            <summary>
+            Closes a dialog
+            </summary>
+            <returns>
+                <br>True: if the dialog was successfully closed</br>
+                <br>False: if the dialog is still open</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.CheckIfDialogIsShown">
+            <summary>
+            Provides method to check if a dialog is shown
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.CheckIfDialogIsShown.IsDialogShown">
+            <summary>
+            Check if the FF H1 Communication DTM dialog box is shown
+            </summary>
+            <returns>
+                <br>True: if the dialog is shown in time</br>
+                <br>False: if dialog is not shown in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.ClickButtonCancel">
+            <summary>
+            Provides function to click the cancel button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.ClickButtonCancel.Run">
+            <summary>
+            Clicks the cancel button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.ClickButtonOk">
+            <summary>
+            Provides function to click the OK button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.ClickButtonOk.Run">
+            <summary>
+            Clicks the OK button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.SelectLinkDevice">
+            <summary>
+            Provides a method to set the link device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FFH1CommDTM.V1542.SpecificFlows.SelectLinkDevice.Run(System.String)">
+            <summary>
+            Sets the "Link name" combo box to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the correct list item was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+    </members>
+</doc>

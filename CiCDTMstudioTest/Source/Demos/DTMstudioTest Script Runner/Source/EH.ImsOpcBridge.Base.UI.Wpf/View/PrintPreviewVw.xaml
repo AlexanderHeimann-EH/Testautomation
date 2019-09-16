@@ -1,0 +1,24 @@
+﻿<Window x:Uid="Window_1" x:Class="EH.ImsOpcBridge.UI.Wpf.View.PrintPreviewVw"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:ViewModel="clr-namespace:EH.ImsOpcBridge.UI.Wpf.ViewModel"
+        d:DataContext="{d:DesignInstance ViewModel:PrintPreviewModel, IsDesignTimeCreatable=True}"
+        mc:Ignorable="d" 
+        Title="{Binding Path=Title}"
+        ShowInTaskbar="False" WindowStartupLocation="CenterOwner" Height="600" Width="800">
+    <Grid x:Uid="Grid_1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+        </Grid.RowDefinitions>
+        <Border x:Uid="Border_1" Grid.Row="0" BorderThickness="1" BorderBrush="Gray" Margin="5">
+            <WebBrowser x:Uid="webBrowser" x:Name="webBrowser" ViewModel:PrintPreviewModel.Html="{Binding HtmlValue}" />
+        </Border>
+        <StackPanel x:Uid="StackPanel_1" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Uid="PrintButton" Content="Print" x:Name="PrintButton" Width="50" Margin="0, 5, 5, 5" AutomationProperties.AutomationId="ButtonPrint" Click="PrintButtonClick" />
+            <Button x:Uid="CloseButton" Content="Close" x:Name="CloseButton" Width="50" Margin="0, 5, 5, 5" AutomationProperties.AutomationId="ButtonClose" Click="CloseButtonClick" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,274 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.ServerDataGridCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:bv="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:model="clr-namespace:EH.ImsOpcBridge.Configurator.Model"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel" mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance {x:Type viewModel:ServerControlVm}, IsDesignTimeCreatable=False}"
+             d:DesignHeight="400" d:DesignWidth="625"
+             Background="#FFF6F8FA" AutomationProperties.AutomationId="automId_DeviceTypeInfoListView">
+    
+    <UserControl.Resources>
+
+        <ContextMenu x:Key="TextBoxContextMenu" Visibility="Hidden"/>
+
+        <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle">
+            <Setter Property="ContextMenu" Value="{StaticResource TextBoxContextMenu}" />
+        </Style>
+
+        <Style x:Uid="Style_1" x:Key="DeviceTypeItemStyle" TargetType="{x:Type DataGridRow}">
+            <Setter x:Uid="Setter_36" Property="BorderThickness" Value="0"></Setter>
+            <EventSetter x:Uid="EventSetter_1" Event="MouseDoubleClick" Handler="ItemDoubleClick" />
+            <Style.Triggers>
+                <Trigger x:Uid="Trigger_1" Property="ListBox.AlternationIndex" Value="0">
+                    <Setter x:Uid="Setter_6" Property="Background" Value="WhiteSmoke" />
+                </Trigger>
+                <Trigger x:Uid="Trigger_2" Property="ListBox.AlternationIndex" Value="1">
+                    <Setter x:Uid="Setter_5" Property="Background" Value="White" />
+                </Trigger>
+
+            
+                
+                <MultiTrigger x:Uid="MultiTrigger_1">
+                    <MultiTrigger.Conditions>
+                        <Condition x:Uid="Condition_1" Property="ItemsControl.AlternationIndex" Value="0" />
+                        <Condition x:Uid="Condition_2" Property="IsSelected" Value="False" />
+                        <Condition x:Uid="Condition_3" Property="IsMouseOver" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <Setter x:Uid="Setter_1" Property="Background" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                </MultiTrigger>
+                <MultiTrigger x:Uid="MultiTrigger_2">
+                    <MultiTrigger.Conditions>
+                        <Condition x:Uid="Condition_4" Property="ItemsControl.AlternationIndex" Value="1" />
+                        <Condition x:Uid="Condition_5" Property="IsSelected" Value="False" />
+                        <Condition x:Uid="Condition_6" Property="IsMouseOver" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <Setter x:Uid="Setter_7" Property="Background" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                </MultiTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Uid="Style_2" x:Key="GridViewColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+            <Setter x:Uid="Setter_13" Property="Height" Value="30" />
+            <Setter x:Uid="Setter_16" Property="Background" Value="Transparent" />
+            <Setter x:Uid="Setter_48" Property="Margin" Value="-1,0,0,0"></Setter>
+            <Setter x:Uid="Setter_57" Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Uid="Style_9" x:Key="GridViewCellStyle" TargetType="{x:Type DataGridCell}">
+
+            <Setter x:Uid="Setter_60" Property="BorderThickness" Value="0" />
+
+            <Style.Triggers>
+           
+                <Trigger Property="DataGridCell.IsSelected" Value="True">
+
+                    <!--
+                    <Setter Property="Background" Value="{StaticResource MenuPopupSelcectedBackgroundBrush}" />
+                    -->
+                    <Setter Property="Background" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                    <Setter x:Uid="Setter_289" Property="Foreground" Value="White"/>
+                </Trigger>
+
+                <Trigger Property="DataGridCell.IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                    <Setter Property="DataGridRow.IsSelected" Value="True" />
+                </Trigger>
+
+            </Style.Triggers>
+
+        </Style>
+
+        <Style TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="TextBox.IsReadOnly" Value="True">
+                    <!-- <Setter Property="Background" Value="{StaticResource MenuPopupDisabledBackgroundBrush}" /> -->
+                    <Setter Property="Background" Value="WhiteSmoke" />
+
+                </Trigger>
+                <Trigger Property="TextBox.IsReadOnly" Value="False">
+                    <Setter Property="Background" Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+    </UserControl.Resources>
+
+    <Grid x:Uid="Grid_1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="*" />
+        </Grid.RowDefinitions>
+        <bv:PageableDataGrid x:Uid="ServerDataGrid" Name="ServerDataGrid" Grid.Row="1" CanUserSortColumns="True"
+                  AutoGenerateColumns="False"
+                  EnableColumnVirtualization="True"
+                  EnableRowVirtualization="True"
+                  
+                  AlternationCount="2"
+                  ItemContainerStyle="{StaticResource DeviceTypeItemStyle}"
+                  ItemsSource="{Binding Path=OpcServerItems, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                  HorizontalContentAlignment="Stretch"
+                  ScrollViewer.CanContentScroll="True"
+                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                  SelectionMode="Single"
+                  SelectedItem="{Binding Path=CurrentDeviceTypeInfo, Mode=TwoWay}"
+                  SelectedIndex="{Binding Path=SelectedIndex, Mode=TwoWay}"
+                  CurrentItem="{Binding Path=CurrentItem, Mode=TwoWay}"
+                  Grid.IsSharedSizeScope="True"
+                  VirtualizingStackPanel.IsVirtualizing="False"
+                  ColumnHeaderStyle="{StaticResource GridViewColumnHeaderStyle}"
+                  CellStyle="{StaticResource GridViewCellStyle}"           
+                  BorderThickness="1,1,1,1"
+                  BorderBrush="LightGray"
+                  RowHeaderWidth="1"
+                                            
+                  FilterStringColumn1="{Binding Path=TextFilter,  UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    
+                             
+                  GridLinesVisibility="Vertical"
+                  VerticalGridLinesBrush="LightGray"
+                  DataContextChanged="ServerDataGridDataContextChanged">
+            <DataGrid.Background>
+                <LinearGradientBrush x:Uid="LinearGradientBrush_1" EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop x:Uid="GradientStop_3" Color="#FFD6DEE2" Offset="1" />
+                    <GradientStop x:Uid="GradientStop_4" Color="#FFEBF0F3" />
+                </LinearGradientBrush>
+            </DataGrid.Background>
+
+            <DataGrid.Columns>
+
+                <!-- Name -->
+                <DataGridTemplateColumn x:Uid="DataGridTemplateColumn_1" Width="5*"  IsReadOnly="True" DisplayIndex="0" ClipboardContentBinding="{Binding Path=Name}">
+
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style x:Uid="Style_4" TargetType="DataGridColumnHeader">
+                            <Setter x:Uid="Setter_17" Property="BorderThickness" Value="0,0,1,1" />
+                            <Setter x:Uid="Setter_18" Property="BorderBrush" Value="Gray" />
+                            <Setter x:Uid="Setter_52" Property="Padding" Value="5,2,2,2" />
+                            <Setter x:Uid="Setter_59" Property="AutomationProperties.AutomationId" Value="automnId_DeviceTypeInfoListVw_DtmDeviceType" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                    
+
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate  DataType="viewModel:ServerControlVm">
+                      
+                            <Grid IsHitTestVisible="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition x:Uid="ColumnDefinition_1" Width="110" />
+                                    <ColumnDefinition x:Uid="ColumnDefinition_1" Width="30" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition x:Uid="RowDefinition_13" Height="25" />
+                                    <RowDefinition x:Uid="RowDefinition_13" Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Grid.Column="0" VerticalAlignment="Center"  Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.NameHeader}"/>
+                                <!--<Image Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="24px" Width="24px"  Source="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2/FilterSmall active.png"></Image>-->
+
+                                <Expander IsExpanded="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.FilterActive, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                            Collapsed="ExpanderColumn1Collapsed" Grid.Column="0" Grid.Row="1" IsHitTestVisible="True" VerticalAlignment="Top" Header="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.FilterHeader}"
+                                            ToolTip="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.EnterFilterTerm}">
+                                        
+                                        <Border BorderThickness="2" >
+                                            <StackPanel Margin="0 0 0 0">
+                                                <!--FILTER TEXTBOX-->
+                                            <TextBox  Style="{DynamicResource TextBoxStyle}" Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.TextFilter, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                            ToolTip="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.EnterFilterTerm}" Width="200" Height="20" FontSize="12" 
+                                                            BorderThickness="1" />
+                                            </StackPanel>                                            
+                                        </Border>
+                                    
+                                </Expander>
+                                
+                            </Grid>
+                        </DataTemplate>
+          
+                    </DataGridTemplateColumn.HeaderTemplate>
+        
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:Uid="DataTemplate_2" DataType="model:ServerData">
+                            <TextBlock x:Uid="TextBlock_3" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextWrapping="Wrap" Margin="5, 10, 5, 10" Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                
+                </DataGridTemplateColumn>
+
+                
+                <!-- IpAddress
+                
+                <DataGridTemplateColumn x:Uid="DataGridTemplateColumn_2" Width="5*"  Header="IP Address" IsReadOnly="True" DisplayIndex="1" ClipboardContentBinding="{Binding Path=IpAddress}">
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style x:Uid="Style_4" TargetType="DataGridColumnHeader">
+                            <Setter x:Uid="Setter_17" Property="BorderThickness" Value="0,0,1,1" />
+                            <Setter x:Uid="Setter_18" Property="BorderBrush" Value="Gray" />
+                            <Setter x:Uid="Setter_52" Property="Padding" Value="5,0,0,0" />
+                            <Setter x:Uid="Setter_59" Property="AutomationProperties.AutomationId" Value="automnId_DeviceTypeInfoListVw_DtmDeviceType" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:Uid="DataTemplate_2" DataType="model:ServerData">
+                            <TextBlock x:Uid="TextBlock_3" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextWrapping="Wrap" Margin="5, 10, 5, 10" Text="{Binding Path=IpAddress}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                -->
+
+                <!-- Class Id -->
+                <DataGridTemplateColumn x:Uid="DataGridTemplateColumn_3" Width="5*"  Header="Class Id" IsReadOnly="True" DisplayIndex="1" ClipboardContentBinding="{Binding Path=ClassId}">
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style x:Uid="Style_5" TargetType="DataGridColumnHeader">
+                            <Setter x:Uid="Setter_42" Property="BorderThickness" Value="0,0,1,1" />
+                            <Setter x:Uid="Setter_43" Property="BorderBrush" Value="Gray" />
+                            <Setter x:Uid="Setter_53" Property="Padding" Value="5,0,0,0" />
+                            <Setter x:Uid="Setter_64" Property="AutomationProperties.AutomationId" Value="automnId_DeviceTypeInfoListVw_Version" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+
+
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate  DataType="viewModel:ServerControlVm">
+
+                            <Grid IsHitTestVisible="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition x:Uid="ColumnDefinition_1" Width="110" />
+                                    <ColumnDefinition x:Uid="ColumnDefinition_1" Width="30" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition x:Uid="RowDefinition_13" Height="25" />
+                                    <RowDefinition x:Uid="RowDefinition_13" Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Grid.Column="0" VerticalAlignment="Center"  Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl }}, Path=DataContext.ClassIdHeader}"/>
+ 
+                            </Grid>
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.HeaderTemplate>
+
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:Uid="DataTemplate_3" DataType="model:ServerData">
+                            <TextBlock x:Uid="TextBlock_4" HorizontalAlignment="Stretch" Margin="5, 10, 5, 10" TextWrapping="Wrap" VerticalAlignment="Center" Text="{Binding Path=ClassId}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </bv:PageableDataGrid>
+    </Grid>
+</UserControl>
+             
+             

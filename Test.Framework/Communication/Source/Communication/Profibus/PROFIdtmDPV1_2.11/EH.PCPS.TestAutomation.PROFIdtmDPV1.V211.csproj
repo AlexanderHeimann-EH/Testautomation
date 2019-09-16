@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85184150-3C2D-4E15-935E-8A39D7FE544C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.PROFIdtmDPV1.V211</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.PROFIdtmDPV1.V211</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+    <projectdefaultrepository>c79907e0-70bb-4207-8362-60623f8fe101</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\Communication\Profibus\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\Communication\Profibus\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\Communication\Profibus\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\Communication\Profibus\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\CloseConfiguration.cs">
+      <id>aaea1822-101c-4230-ade9-4e11e280cc1e</id>
+    </Compile>
+    <Compile Include="CommonFlows\ConfigureCommunication.cs">
+      <id>9605d369-027d-4d76-8598-f729c9cb9923</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenConfiguration.cs">
+      <id>1c1de069-90cd-42d0-ae48-7ae2d96b08d9</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\PressButton.cs">
+      <id>ceeb2dcd-7ea6-4846-96f1-10b16d60fff6</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SetParameter.cs">
+      <id>4ad09a11-537d-489e-af8e-ac4fdf448e25</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SettingParser.cs">
+      <id>b5445288-85c5-471f-a9cf-63b63e29551f</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleConfigurable.cs">
+      <id>ff542d8a-9e85-4c46-9f85-12edf7860cdd</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleReady.cs">
+      <id>0948eb7a-2726-4f69-abc2-e05cf3420e11</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\WaitUntilModuleIsReady.cs">
+      <id>ac94332a-de1c-4655-9b79-c7701371ea5b</id>
+    </Compile>
+    <Compile Include="GUI\PROFIdtmDPV1Repo.cs">
+      <id>f5be0f41-bb45-45e9-8485-7cf51f417956</id>
+      <BoundTo>c79907e0-70bb-4207-8362-60623f8fe101</BoundTo>
+      <DependentUpon>PROFIdtmDPV1Repo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\PROFIdtmDPV1RepoElements.cs">
+      <id>e3fe0e94-6c80-4678-b180-2cb99f536dbb</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>37288fc8-26d1-4bb9-a0ee-b25496f1e226</id>
+    </Compile>
+    <Compile Include="SpecificFlows\CheckIfDialogIsShown.cs">
+      <id>f8d355cb-23ec-4690-859d-89d86aa89b35</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonApply.cs">
+      <id>f062dba4-3672-476b-8d61-39138ad2c7fd</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonDefaults.cs">
+      <id>eef09f10-bddd-4542-b5b6-c79ceafc7a89</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonCancel.cs">
+      <id>6c922e1e-e822-4022-935b-ba21711e0476</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonOK.cs">
+      <id>419c0c45-3798-4dd0-b2f2-8f604e604001</id>
+    </Compile>
+    <Compile Include="SpecificFlows\CloseDialog.cs">
+      <id>a353588f-52ea-4d53-9cb6-faa0359e72b3</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetBaudRate.cs">
+      <id>cfaf3610-89b9-4068-a133-fa93b72a414e</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetEndAddress.cs">
+      <id>1e9e4856-8a0a-490a-b7e2-dd4d4dc1da6b</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetHighestStationAddress.cs">
+      <id>85e12c86-cb1c-4873-8b28-4b5dcb4ebcb5</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetStartAddress.cs">
+      <id>56103aab-fca0-4db8-adc9-6cc57d3f9554</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetBoardName.cs">
+      <id>7cb6a566-2ce2-46a8-9be7-0bec70589c2c</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetStationAddress.cs">
+      <id>9f88e4d1-88fa-4207-b2b8-307995efa20e</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions\Dialogs\Execution\">
+      <id>6caa92c8-261d-431d-af2c-4f57b79c76a6</id>
+    </Folder>
+    <Folder Include="Functions\Dialogs\Validation\">
+      <id>1fee0b91-cb91-45f1-bfe9-595d6c845ffd</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Execution\">
+      <id>4d073c0a-d859-46f5-a5e3-d74b02490966</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Validation\">
+      <id>d5990cc6-1b36-46cd-a392-ca9f7bb93fa9</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Execution\">
+      <id>928c5c82-2c28-4206-b685-31151272682e</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Validation\">
+      <id>514ede60-5203-4034-aa70-89976cde89bd</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csproj">
+      <Project>{D3C23E1A-7467-490D-B62F-738044A3D87D}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-dc3e-40e8-a120-7cc13b75213a}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\PROFIdtmDPV1Repo.rximg">
+      <BoundTo>c79907e0-70bb-4207-8362-60623f8fe101</BoundTo>
+      <DependentUpon>PROFIdtmDPV1Repo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f0db8db3-5ee2-40b9-8660-f9f4f782d4b7</id>
+    </None>
+    <None Include="GUI\PROFIdtmDPV1Repo.rxrep">
+      <id>c79907e0-70bb-4207-8362-60623f8fe101</id>
+      <repoid>6086f9d0-8872-4888-8f2e-36f8029ab470</repoid>
+      <reporootid>cdf4991d-208a-4901-8252-2bd4641c9380</reporootid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

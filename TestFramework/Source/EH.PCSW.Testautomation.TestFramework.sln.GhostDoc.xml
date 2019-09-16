@@ -1,0 +1,52 @@
+<GhostDoc>
+<IgnoreFilePatterns>
+  <IgnoreFilePattern>*.min.js</IgnoreFilePattern>
+  <IgnoreFilePattern>jquery*.js</IgnoreFilePattern>
+</IgnoreFilePatterns>
+  <SpellChecker>
+    <IncludeExtensions>
+    </IncludeExtensions>
+    <IgnoreExtensions>
+    </IgnoreExtensions>
+    <IgnoreFiles>
+      <IgnoreFile>..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.09.01\CommonFlows\CloseHostApplication.cs</IgnoreFile>
+      <IgnoreFile>..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\CommonFlows\CloseHostApplication.cs</IgnoreFile>
+    </IgnoreFiles>
+  </SpellChecker>
+<HelpConfigurations selected="HelpFile">
+  <HelpConfiguration name="HelpFile">
+    <OutputPath>.\Help</OutputPath>
+    <CleanupOutputPath>true</CleanupOutputPath>
+    <HelpFileName>EH.PCSW.Testautomation.TestFramework</HelpFileName>
+    <HelpFileNamingMethod>MemberName</HelpFileNamingMethod>
+    <ImageFolderPath />
+    <HtmlFormats>
+      <HtmlHelp>true</HtmlHelp>
+      <MSHelpViewer>false</MSHelpViewer>
+      <MSHelp2>false</MSHelp2>
+      <Website>false</Website>
+    </HtmlFormats>
+    <IncludeScopes>
+      <Public>true</Public>
+      <Internal>false</Internal>
+      <Protected>false</Protected>
+      <Private>false</Private>
+      <Inherited>true</Inherited>
+      <InheritedFromReferences>true</InheritedFromReferences>
+      <EnableTags>false</EnableTags>
+      <TagList />
+    </IncludeScopes>
+    <SyntaxLanguages>
+      <CSharp>true</CSharp>
+      <VisualBasic>true</VisualBasic>
+      <CPlusPlus>true</CPlusPlus>
+    </SyntaxLanguages>
+    <ResolveCrefLinks>true</ResolveCrefLinks>
+    <HeaderText />
+    <FooterText />
+    <SelectedProjects />
+  </HelpConfiguration>
+</HelpConfigurations>
+<GeneralProperties>
+</GeneralProperties>
+</GhostDoc>

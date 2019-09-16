@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.CloseConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            CDI Communication FXA291
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.CloseConfiguration.Run">
+            <summary>
+            Opens the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.ConfigureCommunication">
+            <summary>
+            Implementation of IConfigureCommunication for
+            CDI Communication FXA291
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.ConfigureCommunication.Run(EH.PCPS.TestAutomation.Common.DataTypes.Communication)">
+            <summary>
+            Performs the configuration of the CDI Communication FXA291 Communication DTM
+            </summary>
+            <param name="communication">
+            The communication.
+            </param>
+            <returns>
+            <br>True: if configuration was successful</br>
+            <br>False: if configuration was unsuccessful or errors occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.ConfigureCommunication.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication configuration.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.ConfigureCommunication.SetSelectedComPort(EH.PCPS.TestAutomation.Common.DataTypes.CommunicationSetting)">
+            <summary>
+            The set selected com port.
+            </summary>
+            <param name="selectedComPort">
+            The selected com port.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.ConfigureCommunication.SetBaudRate(EH.PCPS.TestAutomation.Common.DataTypes.CommunicationSetting)">
+            <summary>
+            The set baud rate.
+            </summary>
+            <param name="baudRate">
+            The baud rate.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.OpenConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            CDI Communication FXA291
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.CommonFlows.OpenConfiguration.Run">
+            <summary>
+            Closes the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.SettingParser.Compare(System.String,System.String)">
+            <summary>
+            Checks, after parsing, if two strings are equal
+            </summary>
+            <param name="input1">The first string argument</param>
+            <param name="input2">The second string argument</param>
+            <returns>
+            True, if both strings are equal
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.PressButton">
+            <summary>
+            Provides functionalities for buttons
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.PressButton.ExecuteButtonPress(Ranorex.Button)">
+            <summary>
+            Clicks the button <see>
+                    <cref>EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.GUI.CDICommDTMRepoElements.ButtonRefresh</cref>
+                </see>
+            </summary>
+            <param name="button">
+            The button.
+            </param>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.SetParameter">
+            <summary>
+            Provides functionality to set parameter for different control types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Validation.IsModuleConfigurable">
+            <summary>
+            Checks if the module is offline
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Validation.IsModuleConfigurable.Run">
+            <summary>
+            Checks if the module configurable (offline)
+            by determining if the communication Unit combo box is enabled
+            </summary>
+            <returns>
+                <br>True: if module is configurable (offline)</br>
+                <br>False: if module is not configurable (online) or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Validation.IsModuleReady">
+            <summary>
+            Checks if a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Validation.IsModuleReady.Run">
+            <summary>
+            Checks if button [Refresh] is available
+            </summary>
+            <returns>
+            <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady">
+            <summary>
+            Waits until a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepo">
+            <summary>
+            The class representing the CDICommDTMRepo element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepo.Instance">
+            <summary>
+            Gets the singleton class instance representing the CDICommDTMRepo element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepo.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepo.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepo.ApplicationArea">
+            <summary>
+            The ApplicationArea folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepo.ComboboxList">
+            <summary>
+            The ComboboxList folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder">
+            <summary>
+            The ApplicationAreaAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ApplicationArea  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.CommUnitCombobox">
+            <summary>
+            The CommUnitCombobox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.CommUnitComboboxInfo">
+            <summary>
+            The CommUnitCombobox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.CommUnitButtonOpen">
+            <summary>
+            The CommUnitButtonOpen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.CommUnitButtonOpenInfo">
+            <summary>
+            The CommUnitButtonOpen item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.BaudRateCombobox">
+            <summary>
+            The BaudRateCombobox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.BaudRateComboboxInfo">
+            <summary>
+            The BaudRateCombobox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.BaudRateButtonOpen">
+            <summary>
+            The BaudRateButtonOpen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.BaudRateButtonOpenInfo">
+            <summary>
+            The BaudRateButtonOpen item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonRefresh">
+            <summary>
+            The ButtonRefresh item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonRefreshInfo">
+            <summary>
+            The ButtonRefresh item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder">
+            <summary>
+            The ComboboxListAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ComboboxList  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements">
+            <summary>
+            Provides access to the GUI elements of the repository 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.cdiRepository">
+            <summary>
+            Holds the instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.commDTMContainerPath">
+            <summary>
+            Holds the path to the commDTMContainer
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements"/> class. 
+            and gets the commDTMContainerPath
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.DTMWindowSelf">
+            <summary>
+            Gets the 'CommDTMWindow' element itself
+            </summary>
+            /// <returns>
+                <br>Element: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.CommUnitCombobox">
+            <summary>
+                Gets the 'CommUnitCombobox' object
+            </summary>
+            <returns>
+                <br>Combobox: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.ComboboxList">
+            <summary>
+                Gets an Ilist of all items in the <see cref="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.CommUnitCombobox"/>
+            </summary>
+            <returns>
+                <br>Ilist: if the list can be created</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.CommUnitButtonOpen">
+            <summary>
+                Gets the 'CommUnitButtonOpen' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.BaudRateCombobox">
+            <summary>
+                Gets the 'BaudRateCombobox' object
+            </summary>
+            <returns>
+                <br>Combobox: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.BaudRateListItems">
+            <summary>
+                Gets an Ilist of all items in the <see cref="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.BaudRateCombobox"/>
+            </summary>
+            <returns>
+                <br>Ilist: if the list can be created</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.BaudRateButtonOpen">
+            <summary>
+                Gets the 'BaudRateButtonOpen' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.GUI.CDICommDTMRepoElements.ButtonRefresh">
+            <summary>
+                Gets the 'ButtonRefresh' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.SpecificFlows.ClickRefreshButton">
+            <summary>
+            Provides a method to click the refresh button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.SpecificFlows.ClickRefreshButton.Run">
+            <summary>
+            Clicks the refresh button of the CDI Communication DTM
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.SpecificFlows.SetBaudRate">
+            <summary>
+            Provides a method to set the Baud rate
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.SpecificFlows.SetBaudRate.Run(System.String)">
+            <summary>
+            Sets the "Baud Rate" combo box to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the correct list item was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.SpecificFlows.SetCommunicationUnit">
+            <summary>
+            Provides a method to select a Communication Unit
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.SpecificFlows.SetCommunicationUnit.Run(System.String)">
+            <summary>
+            Sets the 'Communication Unit' combo box to a specific value
+            </summary>
+            <param name="value">The value of the list item to select</param>
+            <returns>
+                <br>True: if the correct list item was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+    </members>
+</doc>

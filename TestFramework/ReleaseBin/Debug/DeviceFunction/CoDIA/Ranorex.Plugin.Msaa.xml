@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ranorex.Plugin.Msaa</name>
+    </assembly>
+    <members>
+        <member name="T:Ranorex.Accessible">
+            <summary>
+            Capability of an MSAA accessible object.
+            </summary>
+        </member>
+        <member name="M:Ranorex.Accessible.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.Accessible"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.Accessible.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.Accessible"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.Accessible.DefaultAction">
+            <summary>
+            The default action of the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.Description">
+            <summary>
+            The description of the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.Help">
+            <summary>
+            The help string of the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.HelpTopic">
+            <summary>
+            The filename and topic identifier of the associated WinHelp file for the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.KeyboardShortcut">
+            <summary>
+            The keyboard shortcut of the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.Name">
+            <summary>
+            The name of the accessible object.
+            </summary>
+            <exception cref="T:Ranorex.SetAttributeFailedException">Thrown if setting the attribute value failed.</exception>
+        </member>
+        <member name="P:Ranorex.Accessible.Role">
+            <summary>
+            The role of the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.State">
+            <summary>
+            The state of the accessible object.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Accessible.Value">
+            <summary>
+            The value of the accessible object.
+            </summary>
+            <exception cref="T:Ranorex.SetAttributeFailedException">Thrown if setting the attribute value failed.</exception>
+        </member>
+        <member name="M:Ranorex.Accessible.DoDefaultAction">
+            <summary>
+            Invokes the default action of the accessible object.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.Accessible.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.Accessible.op_Implicit(System.String)~Ranorex.Accessible">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The Accessible.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.Accessible.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The Accessible.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.Accessible.op_Implicit(Ranorex.Core.Element)~Ranorex.Accessible">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The Accessible.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.Accessible.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The Accessible.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.AccessibleTreeItem">
+            <summary>
+            Capability of an MSAA tree item.
+            </summary>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.AccessibleTreeItem"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.AccessibleTreeItem"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.UpdateSubTree">
+            <summary>
+            Updates the sub tree below this tree item.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.AccessibleTreeItem.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.op_Implicit(System.String)~Ranorex.AccessibleTreeItem">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The AccessibleTreeItem.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The AccessibleTreeItem.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.op_Implicit(Ranorex.Core.Element)~Ranorex.AccessibleTreeItem">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The AccessibleTreeItem.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.AccessibleTreeItem.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The AccessibleTreeItem.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.Plugin.MsaaCapIcons">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaCapIcons.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaCapIcons.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaCapIcons.Accessible">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Ranorex.Plugin.MsaaFlavor">
+            <summary>
+            The flavor for Microsoft Active Accessibility (MSAA) support.
+            </summary>
+        </member>
+        <member name="T:Ranorex.Plugin.MsaaFlavor.CompatibilityLevel">
+            <summary>
+            Defines compatibility levels with different Ranorex versions.
+            </summary>
+        </member>
+        <member name="F:Ranorex.Plugin.MsaaFlavor.CompatibilityLevel.Current">
+            <summary>
+            Defines compatibility with Ranorex version currently in use.
+            </summary>
+        </member>
+        <member name="F:Ranorex.Plugin.MsaaFlavor.CompatibilityLevel.V2X">
+            <summary>
+            Defines compatibility with versions 2.X.
+            </summary>
+        </member>
+        <member name="F:Ranorex.Plugin.MsaaFlavor.CompatibilityLevel.V3X">
+            <summary>
+            Defines compatibility with versions 3.X.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaFlavor.Instance">
+            <summary>
+            Gets the local instance of this flavor.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaFlavor.FilterEnabled">
+            <summary>
+            Gets or sets a value indicating if MSAA elements are filtered.
+            </summary>
+            <remarks>Setting this value to <c>false</c> will make all MSAA elements available without
+            filtering, including elements being unavailable, invisible, or equivalent to elements of
+            other flavors.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaFlavor.WinFormsFilterEnabled">
+            <summary>
+            Gets or sets a value indicating if MSAA elements that are direct children of Windows Forms
+            elements are filtered if they have the same role and screen rectangle as the parent element.
+            </summary>
+            <remarks>Setting this value to <c>false</c> will make MSAA elements available that are direct
+            children of Windows Forms elements and have the same role and screen rectangle as the
+            parent element.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaFlavor.FilterCompatibiltyLevel">
+            <summary>
+            Gets or sets a value indicating the compatibility of the MSAA element filtering with
+            different Ranorex versions.
+            </summary>
+            <remarks>If you need legacy RanoreXPaths (created with an older Ranorex version) to work
+            with the current Ranorex version, set this property to the appropriate value matching the
+            Ranorex version used to create the legacy RanoreXPaths.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaFlavor.ExpensiveAttributesEnabled">
+            <summary>
+            Gets or sets a value indicating if computationally expensive attributes are enabled,
+            e.g. <see cref="P:Ranorex.Cell.RowIndex"/>, <see cref="P:Ranorex.Column.Index"/>, or <see cref="P:Ranorex.Row.Index"/>.
+            </summary>
+            <remarks>Setting this value to <c>true</c> will instruct the plugin to evaluate attributes
+            that are expensive to compute and may result in longer delays when getting such
+            attributes. Note that spying an element with such expensive attributes may then take
+            considerable time.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.MsaaFlavor.FromPointRefineEnabled">
+            <summary>
+            Gets or sets a value indicating if the output of the MSAA FromPoint method should be refined
+            by doing a hierarchical search for a better fitting element.
+            </summary>
+            <remarks>Setting this value to <c>true</c> results in an additional search operation for a
+            better fitting element for every MSAA FromPoint operation (e.g. used by
+            <see cref="M:Ranorex.Core.Element.FindFromPoint(System.Drawing.Point,Ranorex.Core.RxPath@)"/>). This may produce better results if the MSAA
+            FromPoint implementation of a control is broken.</remarks>
+        </member>
+        <member name="M:Ranorex.Plugin.MsaaFlavorElement.HandleException(System.Exception,System.Boolean,System.Boolean@)">
+            <summary>
+            Set flavor element invalid if exception is <see cref="T:System.Runtime.InteropServices.COMException"/> with
+            <see cref="P:System.Runtime.InteropServices.ExternalException.ErrorCode"/> if E_FAIL.
+            </summary>
+            <remarks>
+            Usually, a MSAA object is invalid if E_FAIL error value is returned from
+            its methods, except for the "IAccessible.accChildCount" property
+            (this can return E_FAIL if the object does not have children).
+            </remarks>
+        </member>
+    </members>
+</doc>

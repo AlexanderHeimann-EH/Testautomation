@@ -1,0 +1,1334 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommunicationInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfirmAddress">
+            <summary>
+                Interface for function Open Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfirmAddress.Confirm">
+            <summary>
+                Press [OK]-button to confirm set address.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfirmAddress.Cancel">
+            <summary>
+                Press [Cancel]-button to set no address.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfirmAddress.SetDTMPollingAddress(System.String)">
+            <summary>
+                Select a DTM Polling Address via combobox
+            </summary>
+            <param name="strAddress">Address to select</param>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfirmAddress.SetDTMTag(System.String)">
+            <summary>
+                Write DTM Tag into textfield
+            </summary>
+            <param name="strDTMTag">DTM Tag to write</param>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfiguration">
+            <summary>
+                Interface for function Open Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfiguration.Confirm">
+            <summary>
+                Press [Ok]-button to confirm settings and close dialog.
+            </summary>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfiguration.Apply">
+            <summary>
+            Use [Apply]-button
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfiguration.Cancel">
+            <summary>
+            Use [Cancel]-button
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IConfiguration.SetProperties(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Set properties of Communication DTM
+            </summary>
+            <param name="strCommInterface">Communication Interface</param>
+            <param name="strBaudrate">Baudrate</param>
+            <param name="strRTSControl">RTSControl</param>
+            <param name="strSerialInterface">Serial Interface</param>
+            <param name="strMaster">Master</param>
+            <param name="strPreamble">Preamble</param>
+            <param name="strRetries">Retries</param>
+            <param name="strStartAddress">Start Address</param>
+            <param name="strEndAddress">End Address</param>
+            <returns></returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IOpenConfiguration">
+            <summary>
+                Interface for function Open Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IOpenConfiguration.ViaMenu">
+            <summary>
+                Run via menu
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.HartComm.Functions.ApplicationArea.MainView.Execution.IOpenConfiguration.ViaContext">
+            <summary>
+                Run via context
+            </summary>
+            <returns>
+                <br>True: if element was found and clicked</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Flows.ICloseModule">
+            <summary>
+            The CloseModule interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Flows.ICloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Flows.IOpenModuleOffline">
+            <summary>
+            The OpenModuleOffline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Flows.IOpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution.ICopyToClipboard">
+            <summary>
+            The CopyToClipboard interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Execution.ICopyToClipboard.Run">
+            <summary>
+            Starts execution
+            </summary>
+            <returns>
+            true if the button is found and clicked
+            false if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IIsModuleReady">
+            <summary>
+            The IsModuleReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleName">
+            <summary>
+            The ModuleName interface.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleName.Name">
+            <summary>
+            Gets name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing">
+            <summary>
+            The ModuleOpeningAndClosing interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleIsReady">
+            <summary>
+            The WaitUntilModuleIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.AboutBox.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.IChangeDeviceAddress">
+            <summary>
+            The ChangeDeviceAddress interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.IChangeDeviceAddress.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="deviceTag">
+            The device tag.
+            </param>
+            <param name="deviceAddress">
+            The device address.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.ICloseModule">
+            <summary>
+            The CloseModule interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.ICloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.IOpenModuleOffline">
+            <summary>
+            The OpenModuleOffline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.IOpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.IOpenModuleOnline">
+            <summary>
+            The OpenModuleOnline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Flows.IOpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.IChange">
+            <summary>
+            The Change interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.IChange.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.IRefresh">
+            <summary>
+            The Refresh interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.IRefresh.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.ISelectDevice">
+            <summary>
+            The SelectDevice interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.ISelectDevice.Run(System.String)">
+            <summary>
+            Selects a device from the list according to its tag
+            </summary>
+            <param name="deviceTag">
+            Tag of the device which will be selected
+            </param>
+            <returns>
+            True: if the device is found and selected
+            False: if an error occurred or the device is not found
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.ISetParameter">
+            <summary>
+            The SetParameter interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.ISetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a specific control to a specific value
+            </summary>
+            <param name="element">control to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.ISetParameter.GetParameterValue(Ranorex.Core.Element)">
+            <summary>
+                Get value of a specific control
+            </summary>
+            <param name="element">control to get the value from</param>
+            <returns>
+                <br>String: if everything worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady">
+            <summary>
+            The IsModuleReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleName">
+            <summary>
+            The ModuleName interface.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleName.Name">
+            <summary>
+            Gets name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing">
+            <summary>
+            The ModuleOpeningAndClosing interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOfflineIsReady">
+            <summary>
+            The WaitUntilModuleOfflineIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOfflineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (offline) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOnlineIsReady">
+            <summary>
+            The WaitUntilModuleOnlineIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOnlineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmConnected">
+            <summary>
+            The IsDtmConnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmConnected.Run">
+            <summary>
+                Determines whether online connection is established
+            </summary>
+            <returns>
+                true: if DTM is online
+                false: if DTM is offline or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmDisconnected">
+            <summary>
+            The IsDtmDisconnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmDisconnected.Run">
+            <summary>
+                Determines whether connection is offline
+            </summary>
+            <returns>
+                true: if DTM is offline
+                false: if DTM is online or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsConnected">
+            <summary>
+            The WaitUntilDtmIsConnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsConnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is connected</br>
+                <br>False: if module is not connected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsDisconnected">
+            <summary>
+            The WaitUntilDtmIsDisconnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            ///
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is disconnected</br>
+                <br>False: if module is not disconnected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.IChangeDtmAddress">
+            <summary>
+            The ChangeDtmAddress interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.IChangeDtmAddress.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="deviceTag">
+            The device tag.
+            </param>
+            <param name="deviceAddress">
+            The device address.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.ICloseModule">
+            <summary>
+            The CloseModule interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.ICloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.IOpenModuleOffline">
+            <summary>
+            The OpenModuleOffline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.IOpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.IOpenModuleOnline">
+            <summary>
+            The OpenModuleOnline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Flows.IOpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.IChange">
+            <summary>
+            The Change interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.IChange.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.IRefresh">
+            <summary>
+            The Refresh interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.IRefresh.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.ISelectDevice">
+            <summary>
+            The SelectDevice interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.ISelectDevice.Run(System.String)">
+            <summary>
+            Selects a device from the list according to its tag
+            </summary>
+            <param name="deviceTag">
+            Tag of the device which will be selected
+            </param>
+            <returns>
+            True: if the device is found and selected
+            False: if an error occurred or the device is not found
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.ISetParameter">
+            <summary>
+            The SetParameter interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.ISetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a specific control to a specific value
+            </summary>
+            <param name="element">control to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.ISetParameter.GetParameterValue(Ranorex.Core.Element)">
+            <summary>
+                Get value of a specific control
+            </summary>
+            <param name="element">control to get the value from</param>
+            <returns>
+                <br>String: if everything worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady">
+            <summary>
+            The IsModuleReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleName">
+            <summary>
+            The ModuleName interface.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleName.Name">
+            <summary>
+            Gets name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing">
+            <summary>
+            The ModuleOpeningAndClosing interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOfflineIsReady">
+            <summary>
+            The WaitUntilModuleOfflineIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOfflineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (offline) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOnlineIsReady">
+            <summary>
+            The WaitUntilModuleOnlineIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOnlineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmConnected">
+            <summary>
+            The IsDtmConnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmConnected.Run">
+            <summary>
+                Determines whether online connection is established
+            </summary>
+            <returns>
+                true: if DTM is online
+                false: if DTM is offline or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmDisconnected">
+            <summary>
+            The IsDtmDisconnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IIsDtmDisconnected.Run">
+            <summary>
+                Determines whether connection is offline
+            </summary>
+            <returns>
+                true: if DTM is offline
+                false: if DTM is online or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsConnected">
+            <summary>
+            The WaitUntilDtmIsConnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsConnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is connected</br>
+                <br>False: if module is not connected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsDisconnected">
+            <summary>
+            The WaitUntilDtmIsDisconnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            ///
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is disconnected</br>
+                <br>False: if module is not disconnected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.ICloseModule">
+            <summary>
+            The CloseModule interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.ICloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.IConfigure">
+            <summary>
+            The Configure interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.IConfigure.Run(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="ip">
+            The IP.
+            </param>
+            <param name="port">
+            The port.
+            </param>
+            <param name="password">
+            The password.
+            </param>
+            <param name="tankId">
+            The tank id.
+            </param>
+            <param name="startAddress">
+            The start address.
+            </param>
+            <param name="endAddress">
+            The end address.
+            </param>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.IOpenModuleOffline">
+            <summary>
+            The OpenModuleOffline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.IOpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.IOpenModuleOnline">
+            <summary>
+            The OpenModuleOnline interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Flows.IOpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.IApply">
+            <summary>
+            The Apply interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.IApply.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.ISetParameter">
+            <summary>
+            The SetParameter interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.ISetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a specific control to a specific value
+            </summary>
+            <param name="element">control to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Execution.ISetParameter.GetParameterValue(Ranorex.Core.Element)">
+            <summary>
+                Get value of a specific control
+            </summary>
+            <param name="element">control to get the value from</param>
+            <returns>
+                <br>String: if everything worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IIsModuleReady">
+            <summary>
+            The IsModuleReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IIsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleName">
+            <summary>
+            The ModuleName interface.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleName.Name">
+            <summary>
+            Gets name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing">
+            <summary>
+            The ModuleOpeningAndClosing interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOfflineIsReady">
+            <summary>
+            The WaitUntilModuleOfflineIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOfflineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (offline) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOnlineIsReady">
+            <summary>
+            The WaitUntilModuleOnlineIsReady interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.ApplicationArea.MainView.Validation.IWaitUntilModuleOnlineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IIsDtmConnected">
+            <summary>
+            The IsDtmConnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IIsDtmConnected.Run">
+            <summary>
+                Determines whether online connection is established
+            </summary>
+            <returns>
+                true: if DTM is online
+                false: if DTM is offline or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IIsDtmDisconnected">
+            <summary>
+            The IsDtmDisconnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IIsDtmDisconnected.Run">
+            <summary>
+                Determines whether connection is offline
+            </summary>
+            <returns>
+                true: if DTM is offline
+                false: if DTM is online or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsConnected">
+            <summary>
+            The WaitUntilDtmIsConnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsConnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is connected</br>
+                <br>False: if module is not connected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsDisconnected">
+            <summary>
+            The WaitUntilDtmIsDisconnected interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommunicationInterfaces.HART.NXA820.Configuration.Functions.StatusArea.Statusbar.Validation.IWaitUntilDtmIsDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            ///
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is disconnected</br>
+                <br>False: if module is not disconnected</br>
+            </returns>
+        </member>
+    </members>
+</doc>

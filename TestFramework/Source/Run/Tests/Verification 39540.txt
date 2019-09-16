@@ -1,0 +1,72 @@
+﻿						/*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+
+                        bool isPassed = false;
+                        int timeOutNextButton = 100000;
+                        string inhalt = "";
+
+                        var navigationArea = new Execution.Navigation();
+                        navigationArea.SearchAndSelectParameter("DeviceMenu//_Commissioning_");
+
+                        Execution.WizardFunctions executionWizardFunction = new Execution.WizardFunctions();
+                        Validation.Wizard validationWizardFunction = new Validation.Wizard();
+
+                        executionWizardFunction.Next(); 
+                        
+                        // => Device information
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton);
+                        executionWizardFunction.Next(); 
+                        
+                        // => Application adjustments
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton);
+                        executionWizardFunction.Next(); 
+                        
+                        // => Sensor adjustment 
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton);
+                        executionWizardFunction.Next(); 
+                        
+                        // => Measurement adjustments 1
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton);
+                        executionWizardFunction.Next(); 
+                        
+                        // => Measurement adjustments 2
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton); 
+                        var applicationArea = new Execution.Application();
+                        var result = applicationArea.SearchAndSelectParameter("_RecordMapping_");
+                        if (result == null)
+                        {
+                            executionWizardFunction.Cancel();
+                        }
+                        else
+                        {
+                            applicationArea.SetParameterValue(result, "[2]", true);
+                        }
+
+                        executionWizardFunction.Next(); 
+                        
+                        // => Measurement adjustments 3
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton);
+
+                        applicationArea = new Execution.Application();
+                        result = applicationArea.SearchAndSelectParameter("_HighBlockDistance_");
+                        if (result == null)
+                        {
+                            executionWizardFunction.Cancel();
+                        }
+                        else
+                        {
+                            applicationArea.SetParameterValue(result, "0.2", true);
+                        }
+
+                        executionWizardFunction.Next(); 
+                        
+                        // => Output settings
+                        validationWizardFunction.WaitUntilNextButtonIsActive(timeOutNextButton);
+                        executionWizardFunction.Next(); 
+                        
+                        // => Commissioning finished
+                        validationWizardFunction.WaitUntilEndOfSequenceButtonIsActive(timeOutNextButton);
+                        executionWizardFunction.EndOfSequence();
+                        
+                        isPassed = true;

@@ -1,0 +1,36 @@
+﻿<repository
+name="StatusbarElementsRepository"
+id="d315c756-b369-4ea9-ad57-5a11c359bed2"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2016.EnvelopeCurveShed.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="0bfcede5-4dc0-4506-8922-81cb86f7a072"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="txtConnectionState"
+		id="1cd7cb97-ed5f-4600-a960-536a6801b894"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="ef21e58a-da49-46d7-bddc-506ecdfc5439">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@automationid='EnvelopeCurveModule.StatusBarStub.StatusBar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/text[@accessiblerole='StaticText' and @childindex='0']
+		</item>
+		<item
+		name="buttonOperationInProgress"
+		id="cd9fc69a-0ca6-4306-812f-d55a4500299d"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="text,accessible"
+		refimgid="fd1c61c4-0f85-4a03-8388-4d16393515af">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@automationid='EnvelopeCurveModule.StatusBarStub.StatusBar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/button[@accessiblename='Operation in progress: ']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

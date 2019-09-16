@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.AboutBox.CommonFlows.ICloseAboutBox">
+            <summary>
+            The CloseAboutBox interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.AboutBox.CommonFlows.ICloseAboutBox.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if function is closed; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.AboutBox.CommonFlows.ICopyData">
+            <summary>
+            The CopyData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.AboutBox.CommonFlows.ICopyData.Run">
+            <summary>
+            Copy data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.AboutBox.CommonFlows.IOpenAboutBox">
+            <summary>
+            The OpenAboutBox interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.AboutBox.CommonFlows.IOpenAboutBox.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Compare.CommonFlows.ICloseCompare">
+            <summary>
+            The CloseCompare interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Compare.CommonFlows.ICloseCompare.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Compare.CommonFlows.ICompareData">
+            <summary>
+            The CompareData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Compare.CommonFlows.ICompareData.Run">
+            <summary>
+            Compare data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Compare.CommonFlows.IOpenCompare">
+            <summary>
+            The OpenCompare interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Compare.CommonFlows.IOpenCompare.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ISaveConcentrationData">
+            <summary>
+            The SaveConcentrationData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ISaveConcentrationData.Run">
+            <summary>
+            Save concentration data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ILoadConcentrationData">
+            <summary>
+            The LoadConcentrationData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ILoadConcentrationData.Run">
+            <summary>
+            Load concentration data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.IExportConcentrationData">
+            <summary>
+            The ExportConcentrationData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.IExportConcentrationData.Run">
+            <summary>
+            Export concentration data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.IImportConcentrationData">
+            <summary>
+            The ImportConcentrationData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.IImportConcentrationData.Run">
+            <summary>
+            Import concentration data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ICloseConcentration">
+            <summary>
+            The CloseConcentration interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ICloseConcentration.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ICalculateConcentration">
+            <summary>
+            The CalculateConcentration interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.ICalculateConcentration.Run">
+            <summary>
+            Calculate concentration data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.IOpenConcentration">
+            <summary>
+            The OpenConcentration interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Concentration.CommonFlows.IOpenConcentration.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IPrintDocumentation">
+            <summary>
+            The PrintDocumentation interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IPrintDocumentation.Run">
+            <summary>
+            Prints document
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IConfigureDocument">
+            <summary>
+            The ConfigureDocument interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IConfigureDocument.Run(System.Collections.Generic.List{System.String})">
+            <summary>
+            Configure document settings
+            </summary>
+            <param name="documentSettings">
+            The document Settings.
+            </param>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IConfigurePrinter">
+            <summary>
+            The ConfigurePrinter interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IConfigurePrinter.Run(System.Collections.Generic.List{System.String})">
+            <summary>
+            Configure Printer function
+            </summary>
+            <param name="printerSettings">
+            The printer Settings.
+            </param>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.ICloseCreateDocumentation">
+            <summary>
+            The CloseCreateDocumentation interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.ICloseCreateDocumentation.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IOpenCreateDocumentation">
+            <summary>
+            The OpenCreateDocumentation interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.CreateDocumentation.CommonFlows.IOpenCreateDocumentation.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ILoadCurves">
+            <summary>
+            The LoadCurves interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ILoadCurves.Run(System.String)">
+            <summary>
+            Load curve file
+            </summary>
+            <param name="fileName">
+            The curve file.
+            </param>
+            <returns>
+            true: if successful; false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ISaveCurves">
+            <summary>
+            The SaveCurves interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ISaveCurves.Run">
+            <summary>
+            Save curves
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ICyclicReading">
+            <summary>
+            The CyclicReading interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ICyclicReading.Run">
+            <summary>
+            The Starts cyclic reading.
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ICloseEnvelopeCurve">
+            <summary>
+            The CloseEnvelopeCurve interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.ICloseEnvelopeCurve.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.IReadCurves">
+            <summary>
+            The ReadCurves interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.IReadCurves.Run">
+            <summary>
+            Read curves
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.IOpenEnvelopeCurve">
+            <summary>
+            The OpenEnvelopeCurve interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EnvelopeCurve.CommonFlows.IOpenEnvelopeCurve.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EventList.CommonFlows.ICloseEventList">
+            <summary>
+            The CloseEnvelopeCurve interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EventList.CommonFlows.ICloseEventList.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EventList.CommonFlows.IOpenEventList">
+            <summary>
+            The OpenEventList interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EventList.CommonFlows.IOpenEventList.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EventList.CommonFlows.IReadEvents">
+            <summary>
+            The ReadEvents interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.EventList.CommonFlows.IReadEvents.Run">
+            <summary>
+            Read events
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.IExportHistoromData">
+            <summary>
+            The OpenEventList interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.IExportHistoromData.Run">
+            <summary>
+            Export histo rom data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.ICloseHistorom">
+            <summary>
+            The CloseHistorom interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.ICloseHistorom.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.IOpenHistorom">
+            <summary>
+            The OpenHistorom interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.IOpenHistorom.Run">
+            <summary>
+            opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.IReadEvents">
+            <summary>
+            The ReadEvents interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Historom.CommonFlows.IReadEvents.Run">
+            <summary>
+            Read events
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IReadTable">
+            <summary>
+            The ReadTable interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IReadTable.Run">
+            <summary>
+            Read table
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IWriteTable">
+            <summary>
+            The WriteTable interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IWriteTable.Run">
+            <summary>
+            Write table
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.ILoadTable">
+            <summary>
+            The LoadTable interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.ILoadTable.Run">
+            <summary>
+            Load table
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.ISaveTable">
+            <summary>
+            The SaveTable interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.ISaveTable.Run">
+            <summary>
+            Save table
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IExportLinearizationData">
+            <summary>
+            The ExportLinearizationData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IExportLinearizationData.Run(System.String)">
+            <summary>
+            Export linearization table
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IOpenLinearization">
+            <summary>
+            The OpenLinearization interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IOpenLinearization.Run">
+            <summary>
+            Opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.ICloseLinearization">
+            <summary>
+            The CloseLinearization interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.ICloseLinearization.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IImportLinearizationData">
+            <summary>
+            The ImportLinearizationData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Linearization.CommonFlows.IImportLinearizationData.Run(System.String)">
+            <summary>
+            Import linearization table
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.IGetParameter">
+            <summary>
+            The GetParameter interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.IGetParameter.Run(EH.PCPS.TestAutomation.Common.Parameter)">
+            <summary>
+            Get parameter
+            </summary>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <returns>
+            true: if successful; false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.IGetParameter.Run(System.String)">
+            <summary>
+            Get parameter
+            </summary>
+            <param name="parameter">The parameter.</param>
+            <returns>Parameter: if successful, null: if an error occured</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.ICloseParameterization">
+            <summary>
+            The CloseParameterization interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.ICloseParameterization.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.ISetParameter">
+            <summary>
+            The SetParameter interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.ISetParameter.Run(EH.PCPS.TestAutomation.Common.Parameter)">
+            <summary>
+            Load table
+            </summary>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <returns>
+            true: if successful; false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.ISetParameter.Run(System.String,System.String)">
+            <summary>
+            Runs the specified parameter name.
+            </summary>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="parameterValue">The parameter value.</param>
+            <returns><c>true</c> if successful, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.IOpenParameterization">
+            <summary>
+            The OpenParameterization interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Parameterization.CommonFlows.IOpenParameterization.Run">
+            <summary>
+            Opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.ISaveWithUpload">
+            <summary>
+            The SaveWithUpload interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.ISaveWithUpload.Run(System.String)">
+            <summary>
+            Perform Save with upload
+            </summary>
+            <param name="fileName">The file name</param>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.IRestoreWithDownload">
+            <summary>
+            The RestoreWithDownload interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.IRestoreWithDownload.Run(System.String)">
+            <summary>
+            Read table
+            </summary>
+            <param name="fileName">The file name</param>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.IRestoreWithoutDownload">
+            <summary>
+            The RestoreWithoutDownload interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.IRestoreWithoutDownload.Run(System.String)">
+            <summary>
+            Perform Restore without download
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.ICloseSaveRestore">
+            <summary>
+            The CloseSaveRestore interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.ICloseSaveRestore.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.IOpenSaveRestore">
+            <summary>
+            The OpenSaveRestore interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.IOpenSaveRestore.Run">
+            <summary>
+            Opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.ISaveWithoutUpload">
+            <summary>
+            The SaveWithoutUpload interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.SaveRestore.CommonFlows.ISaveWithoutUpload.Run(System.String)">
+            <summary>
+            Perform save without upload
+            </summary>
+            <param name="fileName">
+            The file Name.
+            </param>
+            <returns>
+            true: if successful; false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.ICalculateViscosityData">
+            <summary>
+            The CalculateViscosityData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.ICalculateViscosityData.Run">
+            <summary>
+            Calculate viscosity data
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.IExportViscosityData">
+            <summary>
+            The ExportViscosityData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.IExportViscosityData.Run(System.String)">
+            <summary>
+            Export viscosity data
+            </summary>
+            <param name="fileName">The file name</param>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.ICloseViscosity">
+            <summary>
+            The CloseViscosity interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.ICloseViscosity.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.IImportViscosityData">
+            <summary>
+            The ImportViscosityData interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.IImportViscosityData.Run(System.String)">
+            <summary>
+            Import viscosity data
+            </summary>
+            <param name="fileName">The file name</param>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.IOpenViscosity">
+            <summary>
+            The OpenViscosity interface.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.Viscosity.CommonFlows.IOpenViscosity.Run">
+            <summary>
+            Opens a function
+            </summary>
+            <returns>true: if successful; false: if an error occurred</returns>
+        </member>
+    </members>
+</doc>

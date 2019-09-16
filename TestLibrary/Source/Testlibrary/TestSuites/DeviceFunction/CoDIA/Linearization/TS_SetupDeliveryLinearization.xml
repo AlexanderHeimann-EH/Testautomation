@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryLinearization</DisplayName>
+      <Guid>683ff50c-583f-4a60-957a-7c132867b5c3</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryLinearization</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Read</DisplayName>
+          <Guid>4d34233a-e0eb-4aa3-beb4-91750b32e85a</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Read</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Linearization.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>9aa77505-9e60-46f4-99d3-924e8cd41fed</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>07ba1ab6-81f6-494f-98a5-836b618fecc5</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</Description>
+              <DisplayName>Linearization.TC_ReadTable.Run</DisplayName>
+              <Guid>13729f68-981f-4c2a-a06d-a72ee1d671a1</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(timeoutInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>1bf4a737-567c-4fb4-af14-ca1b51fd46ed</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The timeout in milliseconds.</Description>
+                  <Name>timeoutInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>300000</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</Description>
+              <DisplayName>Linearization.TC_ReadTable.Run</DisplayName>
+              <Guid>401a1f10-f984-4623-b4bf-d70d3b2cca70</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(timeoutInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>1bf4a737-567c-4fb4-af14-ca1b51fd46ed</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The timeout in milliseconds.</Description>
+                  <Name>timeoutInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>300000</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Configure Calculate Write</DisplayName>
+          <Guid>e00a8e8d-b8bd-482b-bb9f-d416d194bd9e</Guid>
+          <IsActive>false</IsActive>
+          <Name>Configure Calculate Write</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Selects tank type cylindrical tank standing and configures its parameter if needed. Use empty strings if you do not want to configure a parameter.
+
+Param:
+The height.
+
+Param:
+The diameter.
+
+Param:
+The length.
+
+Param:
+Type of the ceiling.
+
+Param:
+Type of the bottom.
+
+Param:
+The wall thickness.
+
+Param:
+Height of the ceiling.
+
+Param:
+Width of the ceiling.
+
+Param:
+Height of the bottom.
+
+Param:
+Width of the bottom.</Description>
+              <DisplayName>Linearization.TC_ConfigureCylindricalTankStanding.Run</DisplayName>
+              <Guid>9dc90ed6-f1af-461c-a2a3-cf4a11832735</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(height, diameter, length, ceilingType, bottomType, wallThickness, ceilingHeight, ceilingWidth, bottomHeight, bottomWidth)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Selects tank type cylindrical tank standing and configures its parameter if needed. Use empty strings if you do not want to configure a parameter.
+
+Param:
+The height.
+
+Param:
+The diameter.
+
+Param:
+The length.
+
+Param:
+Type of the ceiling.
+
+Param:
+Type of the bottom.
+
+Param:
+The wall thickness.
+
+Param:
+Height of the ceiling.
+
+Param:
+Width of the ceiling.
+
+Param:
+Height of the bottom.
+
+Param:
+Width of the bottom.</ToolTip>
+              <AssemblyMethodRefId>682733b7-8418-46ea-b7ac-9cb86603414e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The height.</Description>
+                  <Name>height</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The diameter.</Description>
+                  <Name>diameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The length.</Description>
+                  <Name>length</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Type of the ceiling.</Description>
+                  <Name>ceilingType</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Type of the bottom.</Description>
+                  <Name>bottomType</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The wall thickness.</Description>
+                  <Name>wallThickness</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Height of the ceiling.</Description>
+                  <Name>ceilingHeight</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Width of the ceiling.</Description>
+                  <Name>ceilingWidth</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Height of the bottom.</Description>
+                  <Name>bottomHeight</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Width of the bottom.</Description>
+                  <Name>bottomWidth</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Calculates table. Makes a screenshot of the table and the diagram.</Description>
+              <DisplayName>Linearization.TC_Calculate.Run</DisplayName>
+              <Guid>08123e71-0c45-405a-8f4b-69ce9665ee88</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Calculates table. Makes a screenshot of the table and the diagram.</ToolTip>
+              <AssemblyMethodRefId>93865264-3463-46c8-ad77-4dc02f429706</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Write the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</Description>
+              <DisplayName>Linearization.TC_WriteTable.Run</DisplayName>
+              <Guid>1dfe3490-72ec-4397-b70f-e348f81f83e5</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(timeoutInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Write the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>5fc66483-14e1-48c9-885d-4263dd238e03</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The timeout in milliseconds.</Description>
+                  <Name>timeoutInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>300000</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Write the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</Description>
+              <DisplayName>Linearization.TC_WriteTable.Run</DisplayName>
+              <Guid>bd7fd850-188c-469e-8e87-6748a6ac2c0e</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(timeoutInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Write the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>5fc66483-14e1-48c9-885d-4263dd238e03</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The timeout in milliseconds.</Description>
+                  <Name>timeoutInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>300000</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Parameterization Open Check Close</DisplayName>
+          <Guid>31c8fe3a-0d9c-447d-9c3e-e642c306cf3d</Guid>
+          <IsActive>false</IsActive>
+          <Name>Parameterization Open Check Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>aa45a5b5-ab5c-424f-ad8b-78fcc8b816ef</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>35303B08-10E1-41FF-A8F1-6EB3E680FC18</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checking whether device is not in failure mode using the Namur Status displayed in the header</Description>
+              <DisplayName>Parameterization.TC_CheckThatDeviceHasNoFailure.Run</DisplayName>
+              <Guid>0b8adc41-2df6-4bff-85a4-4a3e041d23f6</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checking whether device is not in failure mode using the Namur Status displayed in the header</ToolTip>
+              <AssemblyMethodRefId>fa9ab984-ee4d-4a4b-81ad-8aee04c48329</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_CloseModuleOnline.Run</DisplayName>
+              <Guid>85c57db3-2d9e-4828-8a56-cfdd30a7967e</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>80017EBA-4323-4CE1-BCA4-47FB211A118C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Export Import Write Check</DisplayName>
+          <Guid>9d8b0fb4-6764-4565-b0a3-7bec092f42fd</Guid>
+          <IsActive>false</IsActive>
+          <Name>Export Import Write Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Linearization file. Checks that there is no critical error.</Description>
+              <DisplayName>Linearization.TC_Export.Run</DisplayName>
+              <Guid>92be9406-a2a3-40b1-8c13-1ae96a297d39</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Linearization file. Checks that there is no critical error.</ToolTip>
+              <AssemblyMethodRefId>9C231078-52A3-44D7-9AA8-E6DA14CF1437</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Linearization file. Checks that there is no critical error.</Description>
+              <DisplayName>Linearization.TC_Import.Run</DisplayName>
+              <Guid>4b85a8e2-6147-47e5-b0df-98c1444e72e2</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Linearization file. Checks that there is no critical error.</ToolTip>
+              <AssemblyMethodRefId>8FADA79F-3E1C-47F8-AC9B-3AB9798036A9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Write the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</Description>
+              <DisplayName>Linearization.TC_WriteTable.Run</DisplayName>
+              <Guid>777cae7f-d5cf-4b0a-ac4f-f6daad75cd1b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(timeoutInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Write the Linearization Table, makes a screenshot of the diagram and table and checks that there is no critical error.
+
+Param:
+The timeout in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>5fc66483-14e1-48c9-885d-4263dd238e03</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The timeout in milliseconds.</Description>
+                  <Name>timeoutInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>300000</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the settings tab and checks that no parameter is invalid</Description>
+              <DisplayName>Linearization.TC_CheckSettingsParameterNotInvalid.Run</DisplayName>
+              <Guid>497932b3-0799-402d-8d46-acb16a93d8d6</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the settings tab and checks that no parameter is invalid</ToolTip>
+              <AssemblyMethodRefId>d800ea76-dd2f-422f-9ec2-d3cba933eb84</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Parameterization Open Check Close</DisplayName>
+          <Guid>985f72d4-8253-4c75-b366-7fe8faf661dc</Guid>
+          <IsActive>false</IsActive>
+          <Name>Parameterization Open Check Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>100eb9d8-8d35-444e-8827-eb61adf6646f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>35303B08-10E1-41FF-A8F1-6EB3E680FC18</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checking whether device is not in failure mode using the Namur Status displayed in the header</Description>
+              <DisplayName>Parameterization.TC_CheckThatDeviceHasNoFailure.Run</DisplayName>
+              <Guid>986a3632-7087-4e5d-a8ba-bcfcf7a3d7cc</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checking whether device is not in failure mode using the Namur Status displayed in the header</ToolTip>
+              <AssemblyMethodRefId>fa9ab984-ee4d-4a4b-81ad-8aee04c48329</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the Online Parameterization</Description>
+              <DisplayName>Parameterization.TC_CloseModuleOnline.Run</DisplayName>
+              <Guid>00e7bb90-b719-44cc-b3bf-fcb5698dff6e</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the Online Parameterization</ToolTip>
+              <AssemblyMethodRefId>80017EBA-4323-4CE1-BCA4-47FB211A118C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close Check</DisplayName>
+          <Guid>913aa38f-fc06-4954-9a8a-4df3bc7eb591</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module</Description>
+              <DisplayName>Linearization.TC_CloseModule.Run</DisplayName>
+              <Guid>e3889b4b-2b57-4c3b-9985-5fa43a1634d7</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module</ToolTip>
+              <AssemblyMethodRefId>59c636c1-3c4f-4bd4-8538-984e50fa78cc</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>9d8722f0-7ed1-4323-af7e-952d5882a1d0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>LinearizationOnline</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

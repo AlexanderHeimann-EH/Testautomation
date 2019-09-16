@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{32290585-DC3E-40E8-A120-7CC13B75213A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EH.PCPS.TestAutomation.Common</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.Common</AssemblyName>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+  </PropertyGroup>
+  <!-- 
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>-->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.Common.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.Common.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EH.PCSW.Testautomation.CiCDTMstudioTest\Source\EH.DTMstudioTest.Solution\Common\EH.DTMstudioTest.Common\Utilities\Logging\Dlls\Log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Annotations.cs">
+      <id>39cf812a-71b7-4aa0-a3b0-5ebb01a91a88</id>
+    </Compile>
+    <Compile Include="ArgumentHelper.cs">
+      <id>91fb441a-ffcf-4036-8a51-ebafdd7c8732</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4cb75142-06f7-43c3-96c1-325654baff2b</id>
+    </Compile>
+    <Compile Include="Configuration\ReportHelper.cs">
+      <id>c980fa61-37e5-4211-93ca-b147cd7a2fae</id>
+    </Compile>
+    <Compile Include="DataTypes\Communication.cs">
+      <id>a75db53e-0b87-49ec-a8b1-7c5529093c58</id>
+    </Compile>
+    <Compile Include="DataTypes\CommunicationSetting.cs">
+      <id>66846df3-a0ce-4e35-ba3a-5e00e9b18a92</id>
+    </Compile>
+    <Compile Include="CompareParameter.cs">
+      <id>1e07c18a-f45b-452a-9e9a-58dbcd5f41b4</id>
+    </Compile>
+    <Compile Include="DataTypes\Device.cs">
+      <id>0b6f6a67-95c8-427d-9a0f-a25a2c540944</id>
+    </Compile>
+    <Compile Include="Enumerations\ConnectionState.cs">
+      <id>9598b1f8-e929-416c-9a06-edac3c377c5a</id>
+    </Compile>
+    <Compile Include="Enumerations\CurveType.cs">
+      <id>5fdaa080-48f4-4f21-b564-0faa792b9c1a</id>
+    </Compile>
+    <Compile Include="Enumerations\EditorType.cs">
+      <id>0b919425-5767-4b83-a84d-46c54e6b9896</id>
+    </Compile>
+    <Compile Include="Enumerations\FF912DiagnosticCategories.cs">
+      <id>0fb8f548-f31e-4c66-a97c-c3a6bcdbfc2b</id>
+    </Compile>
+    <Compile Include="Enumerations\MethodType.cs">
+      <id>85198b57-397f-4c20-83e0-d29713b97754</id>
+    </Compile>
+    <Compile Include="Enumerations\ParameterState.cs">
+      <id>68b6d117-e1ad-4ce8-acf4-0e6dec0ee2b8</id>
+    </Compile>
+    <Compile Include="Enumerations\ParameterType.cs">
+      <id>1383052a-a4e7-4345-9307-ecbd22b18ddc</id>
+    </Compile>
+    <Compile Include="Enumerations\TestCategory.cs">
+      <id>d7f53155-54c8-4a79-8110-183ed5ada156</id>
+    </Compile>
+    <Compile Include="Enumerations\TestDefinition.cs">
+      <id>5c408c33-c989-44e9-98fc-fa43ec366f74</id>
+    </Compile>
+    <Compile Include="Enumerations\TestFocus.cs">
+      <id>6b19300e-c343-4498-9659-75c854e9657f</id>
+    </Compile>
+    <Compile Include="Enumerations\TestScript.cs">
+      <id>e3ea90b6-1451-438f-aedb-54b47f50d417</id>
+    </Compile>
+    <Compile Include="Tools\CodeModules\CopyRecursiveFilesFolders.cs">
+      <id>25bf697c-f41c-4280-8dc7-9eb0ebedec01</id>
+    </Compile>
+    <Compile Include="Tools\CodeModules\CreateSystemSummary.cs">
+      <id>8d5c69b0-4f9e-4e7f-84ba-51a8c6a208c0</id>
+    </Compile>
+    <Compile Include="Relay\CodeModules\ClearRelaysDeditec.cs">
+      <id>e3af40e2-8991-4f78-91af-58c1a07f3dfd</id>
+    </Compile>
+    <Compile Include="Relay\CodeModules\SetRelaysDeditec.cs">
+      <id>1ea2f146-61b5-4630-b23e-58e633b20480</id>
+    </Compile>
+    <Compile Include="Tools\CodeModules\GetVersionInfo.cs">
+      <id>b4f06dc2-0585-40a9-90e1-9920e81b36a2</id>
+    </Compile>
+    <Compile Include="Relay\CodeModules\ClearRelaysQlib.cs">
+      <id>398d6156-775e-4d1f-ba37-93b2f51fab83</id>
+    </Compile>
+    <Compile Include="Relay\CodeModules\SetRelaysQlib.cs">
+      <id>d9b97680-8195-4b75-add8-2dabaad28c0c</id>
+    </Compile>
+    <Compile Include="Tools\CodeModules\SystemSleep.cs">
+      <id>06a9038a-4bf6-4d3c-a559-4f5265036cb2</id>
+    </Compile>
+    <Compile Include="Configurator\BO\Configuration.cs">
+      <id>2d5d9e30-ddc2-4c34-84bc-27c85b3c741c</id>
+    </Compile>
+    <Compile Include="Configurator\BO\ListToObjectConverter.cs">
+      <id>d34cdb3a-3b3e-4f9f-8f0a-1d8f8e5911e2</id>
+    </Compile>
+    <Compile Include="Configurator\BO\RegistryHandler.cs">
+      <id>3b76edbc-92e7-44ee-8fd1-d6bfba7bc96a</id>
+    </Compile>
+    <Compile Include="Configurator\BO\XmlFileHandler.cs">
+      <id>954ec38d-7011-45a5-a865-d1f0b221a1c0</id>
+    </Compile>
+    <Compile Include="Configurator\Data\MultipleData\CategoryAndItems.cs">
+      <id>0ecedb3f-2dbf-4683-bab7-ca25ff7c9307</id>
+    </Compile>
+    <Compile Include="Configurator\Data\MultipleData\SelectableConfiguration.cs">
+      <id>6305f289-cfc5-4932-9d26-cb0f04f55dea</id>
+    </Compile>
+    <Compile Include="Configurator\Data\MultipleData\ListOfCategoryAndItems.cs">
+      <id>e173b9d2-e9e7-4681-87a6-88d515b7ede4</id>
+    </Compile>
+    <Compile Include="Configurator\Data\SingleData\SelectedConfiguration.cs">
+      <id>2b54b3dd-aa90-4588-9f35-46a197c6fb89</id>
+    </Compile>
+    <Compile Include="Configurator\Data\SingleData\Element.cs">
+      <id>4c657e20-5bd8-4471-8069-7abf1bd39532</id>
+    </Compile>
+    <Compile Include="Configurator\Data\SingleData\TestEnvironment.cs">
+      <id>4e68e780-2c5b-4784-93bf-605b71b97dd9</id>
+    </Compile>
+    <Compile Include="Configurator\Data\SingleData\TestFramework.cs">
+      <id>928b938a-7a22-4ffe-86f6-5bfd00f4e440</id>
+    </Compile>
+    <Compile Include="Configurator\Data\SingleData\TestInformation.cs">
+      <id>fabc4ed5-0a33-48be-83b2-7c55a54517f4</id>
+    </Compile>
+    <Compile Include="Configurator\GUI\ConfiguratorDialog.cs">
+      <SubType>Form</SubType>
+      <id>910b6435-438a-41f9-9bc4-ded94916e0f0</id>
+    </Compile>
+    <Compile Include="Configurator\GUI\ConfiguratorDialog.Designer.cs">
+      <DependentUpon>ConfiguratorDialog.cs</DependentUpon>
+      <id>ca076103-f6ed-45db-897f-fbad4bcb0abd</id>
+      <BoundTo>910b6435-438a-41f9-9bc4-ded94916e0f0</BoundTo>
+    </Compile>
+    <Compile Include="Configurator\GUI\ControlTestInformation.cs">
+      <SubType>UserControl</SubType>
+      <id>fc32bfed-1613-440d-b9cc-fa0889c9a93d</id>
+    </Compile>
+    <Compile Include="Configurator\GUI\ControlTestInformation.Designer.cs">
+      <DependentUpon>ControlTestInformation.cs</DependentUpon>
+      <id>8ac78e87-dac6-415e-a18f-2afdfa8c062e</id>
+      <BoundTo>fc32bfed-1613-440d-b9cc-fa0889c9a93d</BoundTo>
+    </Compile>
+    <Compile Include="Configurator\GUI\ControlTestEnvironment.cs">
+      <SubType>UserControl</SubType>
+      <id>80b62876-73a8-4514-8f05-a9161e7ca6b1</id>
+    </Compile>
+    <Compile Include="Configurator\GUI\ControlTestEnvironment.Designer.cs">
+      <DependentUpon>ControlTestEnvironment.cs</DependentUpon>
+      <id>81471394-1c89-4a77-aa3c-7c78f9f382d6</id>
+      <BoundTo>80b62876-73a8-4514-8f05-a9161e7ca6b1</BoundTo>
+    </Compile>
+    <Compile Include="Configurator\GUI\ControlTestFramework.cs">
+      <SubType>UserControl</SubType>
+      <id>9d592cd3-e626-4d7f-a03b-75d659a00cad</id>
+    </Compile>
+    <Compile Include="Configurator\GUI\ControlTestFramework.Designer.cs">
+      <DependentUpon>ControlTestFramework.cs</DependentUpon>
+      <id>8d8657cd-bbda-4b15-89c5-7347dcda2318</id>
+      <BoundTo>9d592cd3-e626-4d7f-a03b-75d659a00cad</BoundTo>
+    </Compile>
+    <Compile Include="CreateDocumentationStateStrings.cs">
+      <id>b8be8c53-8fa7-478f-81bc-ae1bc0431554</id>
+    </Compile>
+    <Compile Include="CSVConnector.cs">
+      <id>21c1a243-a683-4298-8af7-ef9e065ad9b6</id>
+    </Compile>
+    <Compile Include="DeviceDTMList.cs">
+      <id>2a918871-232c-435c-83b4-90c2e36ec8d5</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\BO\ITestCase.cs">
+      <id>37066b9d-f432-4ec7-a717-40c9afbb0089</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\Common\TestStatus.cs">
+      <id>c97ea1e4-655c-4b10-962c-fd986554b363</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\Common\TestSuiteTypes.cs">
+      <id>1680a31d-a06e-4068-9a8d-30b7c4e9d5fa</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\Helper\DISEHHelper.cs">
+      <id>4cdcb16d-4d9e-49cb-866a-e17847b5fb8b</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\Helper\ReportDirectory.cs">
+      <id>aac0f79d-4ed4-47c4-8ad8-9ad4b673404d</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\Helper\SilexConnector.cs">
+      <id>8dcfe973-2678-4d52-a2a7-7309a345f29d</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\Helper\TestlabHelper.cs">
+      <id>4c6d72f1-a75e-4288-b742-83efc759344a</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestCases\TestCase.cs">
+      <id>a3c52e4d-10b7-42bc-a0e8-2c0e74212294</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestCases\TestCaseLoader.cs">
+      <id>391b8e87-be1a-456f-8f7b-4558d83fd07d</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\BenchmarkingTestResultItem.cs">
+      <id>fb7f53d7-114c-44e1-8250-3672faae4809</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\Device.cs">
+      <id>135d2574-f84d-4ae7-b7de-c7d058859f1e</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\ITestResultItem.cs">
+      <id>83763353-290c-4c74-ad24-b3bff294f660</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\PAMTool.cs">
+      <id>5aa297c3-9a18-4dc7-b9ca-89c27a5e40ea</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\TestRun.cs">
+      <id>31a48714-41bc-4028-92db-5ee2954902b5</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\TestRunFacade.cs">
+      <id>d8b4812e-eefe-4be8-8ece-bd5a82de6baa</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\TestSystem.cs">
+      <id>39e5f756-3e0f-42a4-ab9d-cad052bf6b70</id>
+    </Compile>
+    <Compile Include="Ditas\Configuration\TestEnvironment\VMWare.cs">
+      <id>c46a5ae3-4e90-4e44-9582-decb46fc3158</id>
+    </Compile>
+    <Compile Include="Ditas\Persistance\DBHandler\DBConnector.cs">
+      <id>ea49bc14-de99-4c39-ac66-192712642248</id>
+    </Compile>
+    <Compile Include="HandleFunctions.cs">
+      <id>bd6079ea-34e8-4bbc-baa4-691d48fee60a</id>
+    </Compile>
+    <Compile Include="ISelftestable.cs">
+      <id>805a88ec-7319-49af-a140-d99133ac77d0</id>
+    </Compile>
+    <Compile Include="Configuration\LoaderHelper.cs">
+      <id>eac3ee19-57d6-40b6-a376-56554206c1d6</id>
+    </Compile>
+    <Compile Include="Tools\Cygwin.cs">
+      <id>2e18d270-4f62-45f2-bb3a-7b6558b986e5</id>
+    </Compile>
+    <Compile Include="Relay\delib.cs">
+      <id>eb76797b-5d6c-4e37-b4e6-5c7ec61a1aa5</id>
+    </Compile>
+    <Compile Include="Tools\GetProgramFilesPath.cs">
+      <id>464be26a-ca51-4721-b72d-71d0aaecbec8</id>
+    </Compile>
+    <Compile Include="Tools\InstallationCheck.cs">
+      <id>6a14c785-237e-4bfd-8689-3a8ff2b257cd</id>
+    </Compile>
+    <Compile Include="Tools\Logging\Log.cs">
+      <id>a538db89-b0f8-4ef7-b890-77eb109586cf</id>
+    </Compile>
+    <Compile Include="Tools\Logging\Log4Net\Log4NetLog.cs">
+      <id>28fae11e-b2a1-4ef5-aa38-1e2f3d92a183</id>
+    </Compile>
+    <Compile Include="Tools\Logging\WinEventView\WindowsEventLog.cs">
+      <id>9841c9c9-90ef-4f71-a7c3-76d09334c769</id>
+    </Compile>
+    <Compile Include="Tools\Logging\WinEventView\WinEventLogConfiguration.cs">
+      <id>5fe83ea8-a448-4c51-ab99-4aa71a1ecfee</id>
+    </Compile>
+    <Compile Include="Tools\ProcessMemoryInfo.cs">
+      <id>ad7cd8b0-3943-4709-8ad3-1c49d608d562</id>
+    </Compile>
+    <Compile Include="Relay\qlib.cs">
+      <id>ff6e7844-ef28-4fa6-a9c4-2a2b0c9b0503</id>
+    </Compile>
+    <Compile Include="Relay\RelaysAccessMethodsQlib.cs">
+      <id>939209e4-2b48-416d-831c-c7dd77d5802c</id>
+    </Compile>
+    <Compile Include="Relay\RelaysAccessMethodsDeditec.cs">
+      <id>8cdb7b2c-261f-4e99-9d43-d8d453f0b429</id>
+    </Compile>
+    <Compile Include="ModuleNames.cs">
+      <id>179411a0-7951-4dfe-b973-950c9fdbd09d</id>
+    </Compile>
+    <Compile Include="OSSpecific\AddRemovePrograms.cs">
+      <id>ab6350cd-f99d-4757-8d02-c0c0e8f42823</id>
+    </Compile>
+    <Compile Include="OSSpecific\AddRemoveProgramsElements.cs">
+      <id>924589e7-1742-47b9-9b3c-f1e13c2bda0e</id>
+    </Compile>
+    <Compile Include="OSSpecific\AddRemoveProgramsPaths.cs">
+      <id>07b8debe-c9ea-4a85-bfe6-2b505c83ba23</id>
+    </Compile>
+    <Compile Include="Parameter.cs">
+      <id>00731d20-ad2b-4375-8ecc-14d6d4d1c0a2</id>
+    </Compile>
+    <Compile Include="RanorexMethods.cs">
+      <id>9751572c-7d76-4d83-9b5a-927ca517e3f9</id>
+    </Compile>
+    <Compile Include="DefaultValues.cs">
+      <ORIGINALPATH>C:\Documents and Settings\testadmin\My Documents\RanorexStudio Projects\FieldCareDEMO\Common\DefaultValues.cs</ORIGINALPATH>
+      <id>c2da2a67-5b05-4833-9b00-2138b71597ef</id>
+    </Compile>
+    <Compile Include="SystemInformation.cs">
+      <id>44ddfe8e-c1c3-42a3-8a0d-8c04c531cb71</id>
+    </Compile>
+    <Compile Include="Attributes\TestScriptInformation.cs">
+      <id>16bc4001-3b94-4e5a-a785-48c5d07146b0</id>
+    </Compile>
+    <Compile Include="Tools\AssertFunctions.cs">
+      <id>e5eed227-0608-4a78-a966-0c1c51504dca</id>
+    </Compile>
+    <Compile Include="Tools\Log.cs">
+      <id>7c0c6d0b-bd00-4ebf-bc04-3313dc8a1e6b</id>
+    </Compile>
+    <Compile Include="Tools\StringCombine.cs">
+      <id>8b56e677-c40e-43b5-bb6e-dc25f832a45e</id>
+    </Compile>
+    <Compile Include="Tools\FileWatcher.cs">
+      <id>cdc9d811-d701-4e9d-b953-9640ec456b76</id>
+    </Compile>
+    <Compile Include="Tools\LogInfo.cs">
+      <id>319897bb-e05e-47d1-b18e-571a3af157a9</id>
+    </Compile>
+    <Compile Include="Tools\StringToListConverter.cs">
+      <id>52e3d1e7-efd3-480e-a247-c813df8dfd08</id>
+    </Compile>
+    <Compile Include="Tools\StringToStringArrayConverter.cs">
+      <id>84adf882-a710-45a0-b00c-e3a821c5b845</id>
+    </Compile>
+    <Compile Include="Tools\WaitXSeconds.cs">
+      <id>89967f8d-77f0-403c-9812-0e0b7d63ff98</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configurator\GUI\ConfiguratorDialog.resx">
+      <DependentUpon>ConfiguratorDialog.cs</DependentUpon>
+      <id>f8e39611-d9e3-499c-b79e-ea47b5b00de6</id>
+      <BoundTo>910b6435-438a-41f9-9bc4-ded94916e0f0</BoundTo>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurator\GUI\ControlTestInformation.resx">
+      <DependentUpon>ControlTestInformation.cs</DependentUpon>
+      <id>f1450034-44a8-4085-9d34-2427c3e4d9db</id>
+      <BoundTo>fc32bfed-1613-440d-b9cc-fa0889c9a93d</BoundTo>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurator\GUI\ControlTestEnvironment.resx">
+      <DependentUpon>ControlTestEnvironment.cs</DependentUpon>
+      <id>728c8f63-b31b-4485-bf54-e91a7d4e1194</id>
+      <BoundTo>80b62876-73a8-4514-8f05-a9161e7ca6b1</BoundTo>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurator\GUI\ControlTestFramework.resx">
+      <DependentUpon>ControlTestFramework.cs</DependentUpon>
+      <id>3b3ba5bf-9635-4db1-9d25-b6eb0b992956</id>
+      <BoundTo>9d592cd3-e626-4d7f-a03b-75d659a00cad</BoundTo>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OSSpecific\ToDo.txt">
+      <id>33e83619-fd8c-409b-ac79-615f87c7883e</id>
+    </Content>
+    <Content Include="Tools\Logging\Dlls\Log4net.dll">
+      <id>379e1555-88fe-45bb-bd17-a4567d2e9a2c</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

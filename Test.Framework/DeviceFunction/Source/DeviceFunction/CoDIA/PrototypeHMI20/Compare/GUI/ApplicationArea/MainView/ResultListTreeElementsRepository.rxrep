@@ -1,0 +1,39 @@
+﻿<repository
+name="ResultListTreeElementsRepository"
+id="c417b8ae-68ef-4746-8976-c13056084c97"
+rxversion="6.1">
+	<codegen
+	classname="ResultListTreeElementsRepository"
+	namespace="EH.PCPS.TestAutomation.PrototypeHMI20.Compare.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="7ee79d9a-85ad-41ca-80f0-5323ebcb488c"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ResultListTreeItem"
+		id="0be51a2f-0740-4e45-919d-07e8eaf0d1d2"
+		searchtimeout="30000ms"
+		capname="treeitem">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/container[@controlname='CompareGuiPanel']/element[@controlname='_ComparisonTreeList']/tree/container[@accessiblename='Data Panel']/treeitem
+		</item>
+		<item
+		name="ScrollBarLineUp"
+		id="826cb772-e8b6-4309-9320-4b7d76465ae7"
+		searchtimeout="30000ms"
+		capname="button">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/container[@controlname='CompareGuiPanel']/element[@controlname='_ComparisonTreeList']/tree/scrollbar/button[@accessiblename='Line Up']
+		</item>
+		<item
+		name="ScrollBarLineDown"
+		id="64fd94d4-023e-426a-9892-c9a55673f50c"
+		searchtimeout="30000ms"
+		capname="button">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/container[@controlname='CompareGuiPanel']/element[@controlname='_ComparisonTreeList']/tree/scrollbar/button[@accessiblename='Line Down']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

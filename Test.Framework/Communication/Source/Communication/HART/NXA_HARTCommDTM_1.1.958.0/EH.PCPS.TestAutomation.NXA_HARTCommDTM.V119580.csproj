@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27996923-BBF3-404E-9984-52AAFF50F3CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\Communication\HART\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\Communication\HART\EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\Communication\HART\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\Communication\HART\EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox\Flows\CloseModule.cs">
+      <id>b82f68a3-d174-4bf9-b581-5ef7976d8007</id>
+    </Compile>
+    <Compile Include="AboutBox\Flows\OpenModuleOffline.cs">
+      <id>29ec1869-6935-4646-b774-1094826477db</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Execution\CopyToClipboard.cs">
+      <id>b88642e3-4d78-4c1d-a1b9-3f9b37f10171</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>a24004d8-7180-41ff-9799-00fc2de1f55f</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>a6430478-74b1-4f6d-91de-a977e83263dd</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>dac2b75b-8564-4332-ad55-c8d327bef987</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleIsReady.cs">
+      <id>f9fbed66-38e1-4461-864b-624495321db7</id>
+    </Compile>
+    <Compile Include="AboutBox\GUI\ApplicationArea\MainView\AboutBoxMainViewElements.cs">
+      <id>bdf7d708-3a06-4e1b-892f-9f4567b3ed14</id>
+    </Compile>
+    <Compile Include="AboutBox\GUI\ApplicationArea\MainView\AboutBoxMainViewRepository.cs">
+      <id>c4a31115-bcad-4dc3-a769-b60d1a4cbfab</id>
+      <BoundTo>05de491b-2054-4392-8bad-8c4a5fe2cf8a</BoundTo>
+      <DependentUpon>AboutBoxMainViewRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Flows\ChangeDeviceAddress.cs">
+      <id>06fa35c4-b21c-4075-b014-806f2cb46640</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Flows\CloseModule.cs">
+      <id>64061057-bfd5-45f0-b613-dcbb7c998fe2</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Flows\OpenModuleOffline.cs">
+      <id>578a2c86-b298-427b-97cd-bb1ebc2eaa4d</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Flows\OpenModuleOnline.cs">
+      <id>2d97f571-551a-4186-9636-6f5e5b2ed077</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\Change.cs">
+      <id>e1a269f7-70f8-4e70-b057-4ab260b10977</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\Refresh.cs">
+      <id>c740fcb7-626f-476b-9f34-72f409b371dd</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\SelectDevice.cs">
+      <id>63552b69-980d-49b5-860b-5d26c179926f</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution\SetParameter.cs">
+      <id>9b47e7c3-9730-4c02-9bfa-47b49a117659</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>71b41138-fe8b-4ceb-bf91-0f528ac043e9</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>ccde7621-e6c9-426f-8b2c-3a0db86b9828</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>22d658b9-b696-432a-bd92-6d60ec187f57</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>1d27ebca-d5b5-4adc-8d13-65849955b2d9</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>c1504dfd-c045-4b1c-ab87-c8bdb45493ba</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\IsDtmConnected.cs">
+      <id>eb1ec7df-f980-4168-b5b7-e7fe912d864c</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\IsDtmDisconnected.cs">
+      <id>29bf9386-59b6-43b3-a706-e151887ad9d9</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\WaitUntilDtmIsConnected.cs">
+      <id>b90d66ee-5f65-4c4e-a70f-ed1e8ab280ed</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation\WaitUntilDtmIsDisconnected.cs">
+      <id>ba17ebfb-d5d8-40e9-a314-99ceffb6d34a</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\GUI\ApplicationArea\MainView\ChangeDeviceAddressMainViewElements.cs">
+      <id>5e2ca04e-9080-4859-beb8-75c3f491a924</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\GUI\ApplicationArea\MainView\ChangeDeviceAddressMainViewRepository.cs">
+      <id>d80ec840-103d-470f-b304-386aa32f16a9</id>
+      <BoundTo>9fa15089-049f-48ca-96b9-48ec4fcaa2e6</BoundTo>
+      <DependentUpon>ChangeDeviceAddressMainViewRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>8c01f35e-c28e-4175-b7aa-8e12c99f6ab3</id>
+    </Compile>
+    <Compile Include="ChangeDeviceAddress\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>1b664b5a-67ce-4a0f-83be-addd0fbe226c</id>
+      <BoundTo>d8b17820-423c-4f26-9205-894749261dfe</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Flows\ChangeDtmAddress.cs">
+      <id>76741ff0-9ccf-4355-a9c4-6c86e8cd9be9</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Flows\CloseModule.cs">
+      <id>2d32504f-9bc2-4af2-9c6a-95841ed6987c</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Flows\OpenModuleOffline.cs">
+      <id>3c4c8429-f596-4c20-b1db-cf8ecf0c7ed8</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Flows\OpenModuleOnline.cs">
+      <id>dd267269-800c-420a-94dd-476e7d06ff2a</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\Change.cs">
+      <id>e1eda467-9ff4-450d-aa49-91e14c9962e2</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\Refresh.cs">
+      <id>9e15d7c3-b5bb-4502-8590-cb654cc45d63</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\SelectDevice.cs">
+      <id>b716f46e-976a-424c-8d1e-d303ac57e435</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution\SetParameter.cs">
+      <id>a99aa291-cf26-4198-9377-5ab2c2bc7b17</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>ab0ebf48-3ae2-4ea3-87c9-b4ca60c6ab93</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>e4a21da2-eb8d-4177-b793-04d8b1ca4730</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>227f7cec-32c0-4dd3-add8-a1c166a51303</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>c70592f1-1cba-4f50-98fc-7df8c964bb1e</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>7c495790-de50-4135-88fd-db5a9498f96e</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\IsDtmConnected.cs">
+      <id>62b603d6-9779-4db0-9fcd-e6b304755876</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\IsDtmDisconnected.cs">
+      <id>f69c9482-df3c-4516-a52b-6405a19de8c5</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>a8f40940-ba01-4047-9180-da7842a9ff11</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>4a233e0d-fa80-4713-9862-acda7e7f384e</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\GUI\ApplicationArea\MainView\ChangeDTMAddressMainViewElements.cs">
+      <id>3cabdbf1-c69a-400e-9695-2674d5c88b7f</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\GUI\ApplicationArea\MainView\ChangeDTMAddressMainViewRepository.cs">
+      <id>05fe6884-619d-4b7c-a72e-1d48514ac943</id>
+      <BoundTo>8c16962b-007e-413e-b8e7-e3260b05a67e</BoundTo>
+      <DependentUpon>ChangeDTMAddressMainViewRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\GUI\StatusArea\Stausbar\StatusbarElements.cs">
+      <id>adcfa751-ab4d-4ab3-88b5-61e5500cd3c4</id>
+    </Compile>
+    <Compile Include="ChangeDtmAddress\GUI\StatusArea\Stausbar\StatusbarElementsRepository.cs">
+      <id>5a77a84f-462f-4846-b139-d77d9560b52b</id>
+      <BoundTo>c56c5483-8d15-4299-bc9b-82d4a8147561</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Configuration\Flows\CloseModule.cs">
+      <id>1873dc4f-d6a4-4e5a-b3e3-08bef03bc235</id>
+    </Compile>
+    <Compile Include="Configuration\Flows\Configure.cs">
+      <id>6f978da1-35b4-43c8-b5a7-5b8331b53668</id>
+    </Compile>
+    <Compile Include="Configuration\Flows\OpenModuleOffline.cs">
+      <id>7232b0ae-f9f9-435e-bc74-1c3ff9e588b9</id>
+    </Compile>
+    <Compile Include="Configuration\Flows\OpenModuleOnline.cs">
+      <id>3954aa89-6c3f-4328-a189-5fc39da05c64</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Execution\Apply.cs">
+      <id>77b5cc75-da12-4a19-90f3-6939598cd5d0</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Execution\SetParameter.cs">
+      <id>1937cc15-ac7e-40bc-bfe8-c4dfc8976784</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>e9af1733-0b70-4d15-bccc-90fd6877821d</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>72428db4-364c-4823-ade8-7facc73f7a61</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>ab2b7218-4efe-4528-a417-0aadbb80abc3</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>464f0e7c-3a25-4068-9d37-2780ecb59d69</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>6407d83b-a0c2-495e-8a71-c0492ceba01d</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\StatusArea\Statusbar\Validation\IsDtmConnected.cs">
+      <id>2c22340f-9723-48ef-baff-0af71f8e9a2d</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\StatusArea\Statusbar\Validation\IsDtmDisconnected.cs">
+      <id>6240a383-0f90-49c8-9094-2e1198d75b88</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>434bdd1c-00d0-4708-a030-93e8554c130c</id>
+    </Compile>
+    <Compile Include="Configuration\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>1c690b9d-378f-422d-a2d7-95c844b8c053</id>
+    </Compile>
+    <Compile Include="Configuration\GUI\ApplicationArea\MainView\ConfigurationMainViewElements.cs">
+      <id>6c7f0d15-ac6e-4a31-b36e-a799b13338a2</id>
+    </Compile>
+    <Compile Include="Configuration\GUI\ApplicationArea\MainView\ConfigurationMainViewRepository.cs">
+      <id>ef2dd986-6bf1-4b04-9263-127bc8573785</id>
+      <BoundTo>c4c5ddc9-9c26-406e-8d18-708a41575d31</BoundTo>
+      <DependentUpon>ConfigurationMainViewRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Configuration\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>1de2d4a1-05a3-4828-b7d4-90de0810313e</id>
+    </Compile>
+    <Compile Include="Configuration\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>b5445653-90cb-4035-9f32-3d546c551b7b</id>
+      <BoundTo>55dd4dc3-c73d-40c8-81a6-9378a2d5a0ca</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>5cd4b5d6-3de9-4735-922d-dc7ef4b760a5</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{F50A421E-F8FB-49BD-BB83-3CAE985C4FD1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationLoader\EH.PCPS.TestAutomation.HostApplicationLoader.csproj">
+      <Project>{CF6B82E1-2E16-4978-85D2-79E36F69C39B}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CommunicationInterfaces\EH.PCPS.TestAutomation.CommunicationInterfaces.csproj">
+      <Project>{A6B9DE12-A966-496A-BC3C-95170F5F8E87}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CommunicationLoader\EH.PCPS.TestAutomation.CommunicationLoader.csproj">
+      <Project>{07C7C624-D9AD-4425-8EDF-91F42CDB83B0}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AboutBox\Functions\Dialogs\">
+      <id>11f07f55-0ed5-470b-a35e-8ff5dda56f16</id>
+    </Folder>
+    <Folder Include="AboutBox\Functions\MenuArea\">
+      <id>1d644871-0a25-459e-814e-8316231fe9d9</id>
+    </Folder>
+    <Folder Include="AboutBox\Functions\StatusArea\">
+      <id>e4807ac9-ad46-4cfc-ad48-cfb0a644b335</id>
+    </Folder>
+    <Folder Include="AboutBox\GUI\Dialogs\">
+      <id>d493b6c3-f746-4732-a9df-189a713ef174</id>
+    </Folder>
+    <Folder Include="AboutBox\GUI\MenuArea\">
+      <id>9a681688-1bdf-4af4-a743-5fabde1bfe70</id>
+    </Folder>
+    <Folder Include="AboutBox\GUI\StatusArea\">
+      <id>19c304be-70e6-4e87-8e4d-2e2c37851107</id>
+    </Folder>
+    <Folder Include="ChangeDeviceAddress\Functions\Dialogs\">
+      <id>54fd7d9e-8519-486d-90cf-8f7f7a5673bc</id>
+    </Folder>
+    <Folder Include="ChangeDeviceAddress\Functions\MenuArea\">
+      <id>10fe0691-a58b-41fc-8b67-1638c99c73d2</id>
+    </Folder>
+    <Folder Include="ChangeDeviceAddress\Functions\StatusArea\Statusbar\Execution\">
+      <id>e626143a-b99b-492b-b08d-945e4cc4b43c</id>
+    </Folder>
+    <Folder Include="ChangeDeviceAddress\GUI\Dialogs\">
+      <id>a64b8a87-7201-4278-a468-5a0f1f057a23</id>
+    </Folder>
+    <Folder Include="ChangeDeviceAddress\GUI\MenuArea\">
+      <id>5d091bd4-13fc-43d7-8b84-95a6f5e74e61</id>
+    </Folder>
+    <Folder Include="ChangeDtmAddress\Functions\Dialogs\">
+      <id>0037a7e1-c129-4e60-b739-c53c3eebc9b9</id>
+    </Folder>
+    <Folder Include="ChangeDtmAddress\Functions\MenuArea\">
+      <id>0d367471-65e2-4f6d-b248-3340d32abd64</id>
+    </Folder>
+    <Folder Include="ChangeDtmAddress\Functions\StatusArea\Statusbar\Execution\">
+      <id>5e14da6f-fcd1-4465-817e-ede662843e7e</id>
+    </Folder>
+    <Folder Include="ChangeDtmAddress\GUI\Dialogs\">
+      <id>4be3f5e0-edfc-4def-ae1e-287e4ae5a900</id>
+    </Folder>
+    <Folder Include="ChangeDtmAddress\GUI\MenuArea\">
+      <id>e913096f-087f-4e7a-8b75-4fba94049765</id>
+    </Folder>
+    <Folder Include="Configuration\Functions\Dialogs\">
+      <id>19a63ee7-7275-4da1-b842-7d6f015f8138</id>
+    </Folder>
+    <Folder Include="Configuration\Functions\MenuArea\">
+      <id>18f5b116-a5b7-4c98-843e-680564b3bbe7</id>
+    </Folder>
+    <Folder Include="Configuration\Functions\StatusArea\Statusbar\Execution\">
+      <id>b3498d3d-0c1f-46f4-91d1-8acfcb483549</id>
+    </Folder>
+    <Folder Include="Configuration\GUI\Dialogs\">
+      <id>59f10001-ad0e-4188-a9db-918abddb5e29</id>
+    </Folder>
+    <Folder Include="Configuration\GUI\MenuArea\">
+      <id>280c9806-826e-4489-b5a9-fee82adb4be5</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AboutBox\GUI\ApplicationArea\MainView\AboutBoxMainViewRepository.rximg">
+      <id>694b22cf-ea49-4aa6-98c3-14b772e9cba6</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="AboutBox\GUI\ApplicationArea\MainView\AboutBoxMainViewRepository.rxrep">
+      <id>05de491b-2054-4392-8bad-8c4a5fe2cf8a</id>
+      <repoid>7676845d-68aa-4dbc-9298-2c7ec28a56fe</repoid>
+      <reporootid>59222f02-23b7-4b28-9f1c-fe797abc3684</reporootid>
+    </None>
+    <None Include="ChangeDeviceAddress\GUI\ApplicationArea\MainView\ChangeDeviceAddressMainViewRepository.rximg">
+      <id>67f3a41e-cfd4-40c0-b2a4-7aa8c02f327a</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="ChangeDeviceAddress\GUI\ApplicationArea\MainView\ChangeDeviceAddressMainViewRepository.rxrep">
+      <id>9fa15089-049f-48ca-96b9-48ec4fcaa2e6</id>
+      <repoid>f6b995e8-396a-40dd-a157-2d79e725aec5</repoid>
+      <reporootid>9d9bb71b-d7cc-4ee9-ac62-14a12ce61e5d</reporootid>
+    </None>
+    <None Include="ChangeDeviceAddress\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>694bf0b2-20ba-47c7-be82-4d4931510e48</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="ChangeDeviceAddress\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>d8b17820-423c-4f26-9205-894749261dfe</id>
+      <repoid>4a704ca6-ad55-4735-b27e-39b7fd724977</repoid>
+      <reporootid>8d4ace5b-7e64-49f2-ae0f-28511b40808e</reporootid>
+    </None>
+    <None Include="ChangeDtmAddress\GUI\ApplicationArea\MainView\ChangeDTMAddressMainViewRepository.rximg">
+      <id>6b93d30c-4a28-4524-9afe-9310034e958b</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="ChangeDtmAddress\GUI\ApplicationArea\MainView\ChangeDTMAddressMainViewRepository.rxrep">
+      <id>8c16962b-007e-413e-b8e7-e3260b05a67e</id>
+      <repoid>ef9e59a2-418c-44dc-9f2a-603bff8356fc</repoid>
+      <reporootid>f3873453-29e4-4a85-8e18-2291ad47488d</reporootid>
+    </None>
+    <None Include="ChangeDtmAddress\GUI\StatusArea\Stausbar\StatusbarElementsRepository.rximg">
+      <id>71e29915-7b2e-4112-8733-9651583296bd</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="ChangeDtmAddress\GUI\StatusArea\Stausbar\StatusbarElementsRepository.rxrep">
+      <id>c56c5483-8d15-4299-bc9b-82d4a8147561</id>
+      <repoid>706057c0-ec6c-4675-a3ee-612a1894dad6</repoid>
+      <reporootid>1c62684a-0a47-49cf-8ddb-4226668c298b</reporootid>
+    </None>
+    <None Include="Configuration\GUI\ApplicationArea\MainView\ConfigurationMainViewRepository.rximg">
+      <id>2fa0b4a4-d008-4ca8-8fc0-5b5b74d777ae</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Configuration\GUI\ApplicationArea\MainView\ConfigurationMainViewRepository.rxrep">
+      <id>c4c5ddc9-9c26-406e-8d18-708a41575d31</id>
+      <repoid>c78364bc-ed0c-4abe-8e2b-d900d3059e16</repoid>
+      <reporootid>9c6472a8-320e-4a68-bfe4-d576ee52c744</reporootid>
+    </None>
+    <None Include="Configuration\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>b725e41f-b08a-43f9-b803-97a405682d2e</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Configuration\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>55dd4dc3-c73d-40c8-81a6-9378a2d5a0ca</id>
+      <repoid>20932f92-1d43-4cf2-8635-f7db6d379320</repoid>
+      <reporootid>19b35425-4206-4527-bab7-7fecf5d04022</reporootid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

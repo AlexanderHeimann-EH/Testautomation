@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECBFAACF-8FEC-494E-89B1-0C5CAD4FDF72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.FFH1CommDTM.V1542</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.FFH1CommDTM.V1542</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+    <projectdefaultrepository>f34c4878-2d94-42b0-bba1-841c5f180053</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\Communication\FF\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\Communication\FF\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\Communication\FF\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\Communication\FF\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\CloseConfiguration.cs">
+      <id>67c4f5d9-824a-41fa-87e1-250126524f46</id>
+    </Compile>
+    <Compile Include="CommonFlows\ConfigureCommunication.cs">
+      <id>0235b1e0-abf6-476e-a706-38bb620b26d2</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenConfiguration.cs">
+      <id>49832625-247a-41e3-9dbe-300b624838a4</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\PressButton.cs">
+      <id>7e7c1ec2-4468-49d0-a888-01a8c02573b6</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SetParameter.cs">
+      <id>353526be-e9b2-4481-8c3c-d95b0cbbc1d3</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleReady.cs">
+      <id>2d1f9627-4863-4130-8555-f090bf4e5869</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\WaitUntilModuleIsReady.cs">
+      <id>47390cfd-f9db-4c32-9ca0-a1d4eef37925</id>
+    </Compile>
+    <Compile Include="GUI\FFH1CommDTMRepo.cs">
+      <id>eca2f406-a46b-4acf-b0d9-a9ad6d67c2da</id>
+      <BoundTo>f34c4878-2d94-42b0-bba1-841c5f180053</BoundTo>
+      <DependentUpon>FFH1CommDTMRepo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\FFH1CommDTMRepoElements.cs">
+      <id>e2a0c6e8-bd81-4989-ae57-465da31f0790</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>c22a9be8-242d-420d-91c2-1df50d6db9b0</id>
+    </Compile>
+    <Compile Include="SpecificFlows\AcknowledgeMissingLinkDeviceDialog.cs">
+      <id>eff4ff01-064e-43d5-96b3-16feb1d62d41</id>
+    </Compile>
+    <Compile Include="SpecificFlows\CheckIfDialogIsShown.cs">
+      <id>b8ab8f92-6ee3-4c7c-9edf-a0984b6b753b</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonCancel.cs">
+      <id>89793576-a334-498b-a5db-dd8f52714777</id>
+    </Compile>
+    <Compile Include="SpecificFlows\ClickButtonOk.cs">
+      <id>40d4f9b3-2de8-4249-a711-7ec2352763f9</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SelectLinkDevice.cs">
+      <id>98c2d363-e29f-49c5-a61a-855171c1f61c</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csproj">
+      <Project>{D3C23E1A-7467-490D-B62F-738044A3D87D}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-dc3e-40e8-a120-7cc13b75213a}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions\Dialogs\Execution\">
+      <id>daa02be9-2909-4ae3-bb4b-7acf0c78ea47</id>
+    </Folder>
+    <Folder Include="Functions\Dialogs\Validation\">
+      <id>4ef905b6-922c-48f3-bca3-cc815e6a33f7</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Execution\">
+      <id>8c1b900e-f1db-4f10-9060-e8c7e860fbe5</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Validation\">
+      <id>3638c982-f44a-4c2d-b1b9-03251f39aaeb</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Execution\">
+      <id>0f9d2035-0ee8-4631-b47f-7c426059ac87</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Validation\">
+      <id>e8f8be97-7b3c-4cdc-ac0d-2e14c386b9d2</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\FFH1CommDTMRepo.rximg">
+      <BoundTo>f34c4878-2d94-42b0-bba1-841c5f180053</BoundTo>
+      <DependentUpon>FFH1CommDTMRepo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>869edc58-24b4-45cb-8d3d-f3b998ee32a5</id>
+    </None>
+    <None Include="GUI\FFH1CommDTMRepo.rxrep">
+      <id>f34c4878-2d94-42b0-bba1-841c5f180053</id>
+      <repoid>14927a9a-c5a7-418e-9f14-50dbef73a833</repoid>
+      <reporootid>303038cf-4df5-4435-b19f-92b4adb64693</reporootid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

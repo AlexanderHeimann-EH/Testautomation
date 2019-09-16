@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{EEBE573D-284B-41B3-99FC-0109046EE45C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Run</RootNamespace>
+    <AssemblyName>Run</AssemblyName>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>Bin\Debug\Run.XML</DocumentationFile>
+    <OutputPath>Bin\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Run.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>Bin\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>Bin\Release\Run.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>aa719be4-6c39-4ad5-9a2a-f874f2c0c875</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <ORIGINALPATH>C:\Documents and Settings\testadmin\My Documents\RanorexStudio Projects\FieldCareDEMO\Testlibrary\Program.cs</ORIGINALPATH>
+      <id>0d8d1545-aa74-4758-a867-8e5ede9e056e</id>
+    </Compile>
+    <None Include="app.config">
+      <id>3a260274-378d-4398-835c-8e5caba33156</id>
+    </None>
+    <None Include="PostBuild.bat">
+      <id>66418c28-370c-4291-be3c-9a1245cec22a</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfigData\DeviceFunctionMappingListFile.xml">
+      <SubType>Designer</SubType>
+      <id>ed768157-abed-4928-b0a4-1c50115a4882</id>
+    </Content>
+    <Content Include="Tests\Verification 40839.txt">
+      <id>2e1ba9bc-f9c8-4715-881c-4afed807093d</id>
+    </Content>
+    <Content Include="Tests\Verification 40840.txt">
+      <id>96584548-e109-402a-8db9-095eab62868b</id>
+    </Content>
+    <Content Include="Tests\Verification 40845.txt">
+      <id>95f48755-512d-4505-ac5a-910b88e577da</id>
+    </Content>
+    <Content Include="Tests\Verification 38579.txt">
+      <id>1df18a34-a4e5-43b7-a98d-28d52dd70c74</id>
+    </Content>
+    <Content Include="Tests\Verification 39540.txt">
+      <id>5358d266-e920-4492-9435-82c88396592f</id>
+    </Content>
+    <Content Include="Tests\Verification 39767.txt">
+      <id>e4448fd6-0f56-411d-9464-0ed1d1888bb5</id>
+    </Content>
+    <Content Include="Tests\DeviceCare.txt">
+      <id>554c8b5b-6156-4c51-93f9-8a5880c1ef4d</id>
+    </Content>
+    <Content Include="Tests\Ohneberg.txt">
+      <id>17725448-35af-45e9-8c7d-d9bcf62ecdc0</id>
+    </Content>
+    <Content Include="Tests\Verification Scanning PC-M.txt">
+      <id>dcaf6f4b-3e0a-48b5-98cb-de552536a716</id>
+    </Content>
+    <Content Include="Tests\Verification 40031.txt">
+      <id>9c2bc4c6-6bd4-46a0-86fc-1e7c50618da4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\Tools\Logging\Dlls\Log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csproj">
+      <Project>{d3c23e1a-7467-490d-b62f-738044a3d87d}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerLoader\EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.csproj">
+      <Project>{2e287672-463f-4f7b-bac3-43bc537ed2a4}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerInterfaces\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.csproj">
+      <Project>{0ef05611-60fb-4819-abcd-9bd8cbad021b}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerLoader\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.csproj">
+      <Project>{43abd28e-4ef1-4d62-9c0e-227a1b6ddc18}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{d2b68bef-c99a-40a1-b05c-0a52bc367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42cb849d-d4c6-4cc0-9c11-c705b7d38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-dc3e-40e8-a120-7cc13b75213a}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationInterfaces\EH.PCPS.TestAutomation.CommunicationInterfaces.csproj">
+      <Project>{a6b9de12-a966-496a-bc3c-95170f5f8e87}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationLoader\EH.PCPS.TestAutomation.CommunicationLoader.csproj">
+      <Project>{07c7c624-d9ad-4425-8edf-91f42cdb83b0}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMFXA291.V20501\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.csproj">
+      <Project>{df41762d-5198-4377-a378-9afc90fd34f8}</Project>
+      <Name>EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMFXA291.V20700\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700.csproj">
+      <Project>{acd81953-4775-466e-a2bc-aaae65d88d0d}</Project>
+      <Name>EH.PCPS.TestAutomation.CDICommDTMFXA291.V20700</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20501\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.csproj">
+      <Project>{0eea8e37-0034-4cb9-b1b3-fd4e5b81b68a}</Project>
+      <Name>EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20700\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.csproj">
+      <Project>{c61b1b47-aa72-4a6d-81f0-5fb987fb0c4b}</Project>
+      <Name>EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\FF\FFH1CommDTM.V1542\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.csproj">
+      <Project>{ecbfaacf-8fec-494e-89b1-0c5cad4fdf72}</Project>
+      <Name>EH.PCPS.TestAutomation.FFH1CommDTM.V1542</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\HARTCommunication.V1052\EH.PCPS.TestAutomation.HARTCommunication.V1052.csproj">
+      <Project>{0b712a24-42e6-40b7-a750-0bc7d758d18e}</Project>
+      <Name>EH.PCPS.TestAutomation.HARTCommunication.V1052</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\HARTCommunication_1.0.37\EH.PCPS.TestAutomation.HARTCommunication.V1037.csproj">
+      <Project>{e0ae6ff0-610b-48e1-8cf2-a95704bea472}</Project>
+      <Name>EH.PCPS.TestAutomation.HARTCommunication.V1037</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\NXA_HARTCommDTM_1.1.958.0\EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.csproj">
+      <Project>{27996923-bbf3-404e-9984-52aaff50f3cd}</Project>
+      <Name>EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\RSG45HARTCommunication.V1011436\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.csproj">
+      <Project>{4bfa9688-f692-441d-bc34-4a48dca3483a}</Project>
+      <Name>EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\Profibus\EH.PCPS.TestAutomation.PROFIdtmDPV1.V220\EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.csproj">
+      <Project>{afb619d2-4d7a-456d-88ab-5afb87cde394}</Project>
+      <Name>EH.PCPS.TestAutomation.PROFIdtmDPV1.V220</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\Profibus\PROFIdtmDPV1_2.11\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.csproj">
+      <Project>{85184150-3c2d-4e15-935e-8a39d7fe544c}</Project>
+      <Name>EH.PCPS.TestAutomation.PROFIdtmDPV1.V211</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunctionInterfaces\EH.PCPS.TestAutomation.DeviceFunctionInterfaces.csproj">
+      <Project>{33d95987-17da-4f6b-8796-b835749daeb4}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunctionLoader\EH.PCPS.TestAutomation.DeviceFunctionLoader.csproj">
+      <Project>{c48ce9b8-0bd6-4da2-b9d0-7e3ff138d16d}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\PrototypeHMI20\EH.PCPS.TestAutomation.PrototypeHMI20.csproj">
+      <Project>{9c5e4ff5-fbd6-407a-82b5-484324e67b98}</Project>
+      <Name>EH.PCPS.TestAutomation.PrototypeHMI20</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageCI\EH.PCPS.TestAutomation.TestPackageCI.csproj">
+      <Project>{d33b6f66-0805-4028-9af7-aca2f1fb2e81}</Project>
+      <Name>EH.PCPS.TestAutomation.TestPackageCI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\EH.PCPS.TestAutomation.TestPackageUpdateA2016.csproj">
+      <Project>{2376b971-0318-4b36-a3db-c7d4170ea155}</Project>
+      <Name>EH.PCPS.TestAutomation.TestPackageUpdateA2016</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2017\EH.PCPS.TestAutomation.TestPackageUpdateA2017.csproj">
+      <Project>{17fabc85-9066-461c-86fe-bfa1bfd5a9f1}</Project>
+      <Name>EH.PCPS.TestAutomation.TestPackageUpdateA2017</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateB2014\EH.PCPS.TestAutomation.TestPackageUpdateB2014.csproj">
+      <Project>{d2f119b4-ddc8-4c43-8801-0910f2b4730a}</Project>
+      <Name>EH.PCPS.TestAutomation.TestPackageUpdateB2014</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{f50a421e-f8fb-49bd-bb83-3cae985c4fd1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationLoader\EH.PCPS.TestAutomation.HostApplicationLoader.csproj">
+      <Project>{cf6b82e1-2e16-4978-85d2-79e36f69c39b}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDI\FdiReferenceHost\EH.PCPS.TestAutomation.FdiReferenceHost.csproj">
+      <Project>{224564e6-76c3-410a-b15c-a96d5ded35a8}</Project>
+      <Name>EH.PCPS.TestAutomation.FdiReferenceHost</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\DeviceCare_1.01.07\EH.PCPS.TestAutomation.DeviceCare.V10107.csproj">
+      <Project>{44b73cc3-f68d-48c3-a83c-3d42615c4cd6}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceCare.V10107</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.CI\EH.PCPS.TestAutomation.DeviceCare.CI.csproj">
+      <Project>{b612fc14-e6b1-4df3-b7d8-6144be39a675}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceCare.CI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10300\EH.PCPS.TestAutomation.DeviceCare.V10300.csproj">
+      <Project>{4ee05512-2511-45b6-aef9-006bc1ac9f32}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceCare.V10300</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.09.01\EH.PCPS.TestAutomation.FieldCare.V20901.csproj">
+      <Project>{8140e063-d82e-4cdb-b462-cf0cacbe4298}</Project>
+      <Name>EH.PCPS.TestAutomation.FieldCare.V20901</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\EH.PCPS.TestAutomation.FieldCare.V21000.csproj">
+      <Project>{cfcc38ba-dc74-4698-bde4-903271f9b696}</Project>
+      <Name>EH.PCPS.TestAutomation.FieldCare.V21000</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.11.00\EH.PCPS.TestAutomation.FieldCare.V21100.csproj">
+      <Project>{06388dd8-9d8f-4be8-8291-ed6e13058ecd}</Project>
+      <Name>EH.PCPS.TestAutomation.FieldCare.V21100</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\EH.PCPS.TestAutomation.FieldCare.CI.csproj">
+      <Project>{e5fd8c12-b1af-4dde-9e61-c1655a0eae7a}</Project>
+      <Name>EH.PCPS.TestAutomation.FieldCare.CI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\EH.PCPS.TestAutomation.OperatingSystemInterfaces.csproj">
+      <Project>{84570471-ed0c-4d17-8847-2a912da4ad5d}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\EH.PCPS.TestAutomation.OperatingSystemLoader.csproj">
+      <Project>{9743802e-a832-476a-b1d5-3dd503e52cc9}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\32Bit\WindowsXP\EH.PCPS.TestAutomation.WindowsXP.csproj">
+      <Project>{82abd21f-75b9-4a17-8585-e5454bac631a}</Project>
+      <Name>EH.PCPS.TestAutomation.WindowsXP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows10\EH.PCPS.TestAutomation.Windows10.csproj">
+      <Project>{97aedeb9-588d-4147-b2b5-507c1100a091}</Project>
+      <Name>EH.PCPS.TestAutomation.Windows10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows7\EH.PCPS.TestAutomation.Windows7.csproj">
+      <Project>{f63a2d3f-fde7-4c65-8c0b-9f46f530f818}</Project>
+      <Name>EH.PCPS.TestAutomation.Windows7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows81\EH.PCPS.TestAutomation.Windows81.csproj">
+      <Project>{d39eb2ac-2437-44c1-8831-b667b88f10be}</Project>
+      <Name>EH.PCPS.TestAutomation.Windows81</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows8\EH.PCPS.TestAutomation.Windows8.csproj">
+      <Project>{8d21bcf7-0a9a-44f6-b675-bf6a38ece769}</Project>
+      <Name>EH.PCPS.TestAutomation.Windows8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestLibrary\Source\Testlibrary\EH.PCPS.TestAutomation.Testlibrary.csproj">
+      <Project>{8e104076-56fe-4d9c-a876-966e20a9b2cc}</Project>
+      <Name>EH.PCPS.TestAutomation.Testlibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo $(SolutionDir)
+echo $(TargetDir)
+echo $(ProjectDir)
+echo $(OutDir)
+echo $(ConfigurationName)
+
+$(ProjectDir)PostBuild.bat $(TargetDir) $(OutDir) $(SolutionDir) $(ConfigurationName) || goto :ERROR</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

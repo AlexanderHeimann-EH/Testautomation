@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="ToolboxControl1.Endress+Hauser Process Solutions AG.c36d1238-e188-461a-b532-35d2e2a92901">
+    <Name>ToolboxControl1</Name>
+    <Author>Endress+Hauser Process Solutions AG</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">WPF Toolbox Control</Description>
+    <Locale>1033</Locale>
+    <Icon></Icon>
+    <PreviewImage></PreviewImage>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+  <Content>
+    <ToolboxControl>|%CurrentProject%;PkgdefProjectOutputGroup|</ToolboxControl>
+  </Content>
+</Vsix>

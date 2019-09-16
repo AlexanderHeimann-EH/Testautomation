@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryCreateDocumentation</DisplayName>
+      <Guid>dac73cb2-e422-4701-8414-64e0479b456a</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryCreateDocumentation</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open</DisplayName>
+          <Guid>588f98ce-91da-4413-9c1e-072da74d06fb</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Create Documentation when the device is online.</Description>
+              <DisplayName>CreateDocumentation.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>01234630-4ecd-4d99-9835-6328c8d3de66</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Create Documentation when the device is online.</ToolTip>
+              <AssemblyMethodRefId>3c5e1c86-a3ce-4fcd-bf76-00766de53ad2</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Save Two Times</DisplayName>
+          <Guid>fc7ef448-a19e-4dfd-b5eb-c9de56fec3cd</Guid>
+          <IsActive>false</IsActive>
+          <Name>Save Two Times</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the documentation as pdf file.</Description>
+              <DisplayName>CreateDocumentation.TC_SaveDocumentationAsPdf.Run</DisplayName>
+              <Guid>518f3dd8-b40b-4fe2-af8a-34eb0f21355c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the documentation as pdf file.</ToolTip>
+              <AssemblyMethodRefId>35C3870B-71C1-457A-B5D7-49B310645461</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the documentation as pdf file.</Description>
+              <DisplayName>CreateDocumentation.TC_SaveDocumentationAsPdf.Run</DisplayName>
+              <Guid>3fc73518-e7c3-4e3a-8539-181adff1af96</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the documentation as pdf file.</ToolTip>
+              <AssemblyMethodRefId>35C3870B-71C1-457A-B5D7-49B310645461</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close</DisplayName>
+          <Guid>e9758df2-6b2e-4a07-b964-db62b5d260bd</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Create Documentation</Description>
+              <DisplayName>CreateDocumentation.TC_CloseModule.Run()</DisplayName>
+              <Guid>0dfd74a9-70d2-4b1d-bef8-ff03156ade57</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Create Documentation</ToolTip>
+              <AssemblyMethodRefId>5b475791-875d-45c9-a5c7-f3fec83ff9af</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Save Close</DisplayName>
+          <Guid>ccf12cef-6ef3-43fe-a57b-23fbc6809f51</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Save Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Create Documentation when the device is online.</Description>
+              <DisplayName>CreateDocumentation.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>ff4b2248-c2d9-4812-86b2-72fb257fa748</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Create Documentation when the device is online.</ToolTip>
+              <AssemblyMethodRefId>3c5e1c86-a3ce-4fcd-bf76-00766de53ad2</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the documentation as pdf file.</Description>
+              <DisplayName>CreateDocumentation.TC_SaveDocumentationAsPdf.Run</DisplayName>
+              <Guid>3ddc6ac6-9034-4cd1-8154-39a9c382475b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the documentation as pdf file.</ToolTip>
+              <AssemblyMethodRefId>35C3870B-71C1-457A-B5D7-49B310645461</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Create Documentation</Description>
+              <DisplayName>CreateDocumentation.TC_CloseModule.Run()</DisplayName>
+              <Guid>2a781963-65b5-4fec-9b49-09c9b377e589</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Create Documentation</ToolTip>
+              <AssemblyMethodRefId>5b475791-875d-45c9-a5c7-f3fec83ff9af</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>ee240738-d6a6-4109-83bd-378770cc133e</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>CreateDocumentation</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

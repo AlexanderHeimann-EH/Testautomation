@@ -1,0 +1,11 @@
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\ReleaseBin\Debug\DeviceFunction\CoDIA\EH.PCPS.TestAutomation.TestPackageUpdateA2016.xml
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\ReleaseBin\Debug\DeviceFunction\CoDIA\EH.PCPS.TestAutomation.TestPackageUpdateA2016.dll
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\ReleaseBin\Debug\DeviceFunction\CoDIA\EH.PCPS.TestAutomation.TestPackageUpdateA2016.pdb
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.EnvelopeCurve.GUI.ApplicationArea.MainView.Diagram.resources
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.Historom.GUI.ApplicationArea.MainView.Diagram.resources
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.Historom.GUI.ApplicationArea.MainView.StatusIcons.resources
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.Parameterization.GUI.ApplicationArea.MainView.StatusIcons.resources
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.csproj.GenerateResource.Cache
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.dll
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.pdb
+P:\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunction\CoDIA\TestPackageUpdateA2016\obj\Debug\EH.PCPS.TestAutomation.TestPackageUpdateA2016.csprojResolveAssemblyReference.cache

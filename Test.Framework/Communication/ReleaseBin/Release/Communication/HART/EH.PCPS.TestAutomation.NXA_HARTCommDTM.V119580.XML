@@ -1,0 +1,2070 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Flows.CloseModule">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Flows.CloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Flows.OpenModuleOffline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Flows.OpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Execution.CopyToClipboard">
+            <summary>
+            Copies the About box information to clip board
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Execution.CopyToClipboard.Run">
+            <summary>
+            Starts execution
+            </summary>
+            <returns>
+            true if the button is found and clicked
+            false if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+                Provides Validation methods which Validation whether the module is ready or not
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+                Description of ModuleName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleName.Name">
+            <summary>
+            Gets name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            The module opening and closing.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleIsReady">
+            <summary>
+                Description of WaitUntilModuleIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewElements">
+            <summary>
+            Provides access to the GUI Elements of the About Box
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewElements.mdiClientPath">
+            <summary>
+            MDI client path 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewElements.repository">
+            <summary>
+            Repository which will be used
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewElements"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewElements.ButtonCopyToClipboard">
+            <summary>
+                Gets Copy to clip board button 
+            </summary>
+            <returns>
+                <br>Button: if the button is found</br>
+                <br>Null: if the button is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepository">
+            <summary>
+            The class representing the AboutBoxMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the AboutBoxMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepository.buttonCopyToClipboard">
+            <summary>
+            The buttonCopyToClipboard item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepository.buttonCopyToClipboardInfo">
+            <summary>
+            The buttonCopyToClipboard item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView.AboutBoxMainViewRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.ChangeDeviceAddress">
+            <summary>
+            The change device address.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.ChangeDeviceAddress.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="deviceTag">
+            The device tag.
+            </param>
+            <param name="deviceAddress">
+            The device address.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.CloseModule">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.CloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.OpenModuleOffline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.OpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.OpenModuleOnline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Flows.OpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.Change">
+            <summary>
+            The Change.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.Change.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.Refresh">
+            <summary>
+            The refresh.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.Refresh.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SelectDevice">
+            <summary>
+            Provides methods for selecting a device 
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SelectDevice.Run(System.String)">
+            <summary>
+            Selects a device from the list according to its tag
+            </summary>
+            <param name="deviceTag">
+            Tag of the device which will be selected
+            </param>
+            <returns>
+            True: if the device is found and selected
+            False: if an error occurred or the device is not found
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+                Provides methods for editing different parameter types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a specific control to a specific value
+            </summary>
+            <param name="element">control to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.GetParameterValue(Ranorex.Core.Element)">
+            <summary>
+                Get value of a specific control
+            </summary>
+            <param name="element">control to get the value from</param>
+            <returns>
+                <br>String: if everything worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.SetTextValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a text control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+                Provides Validation methods which Validation whether the module is ready or not
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+                Description of ModuleName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleName.Name">
+            <summary>
+            Gets name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            The module opening and closing.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady">
+            <summary>
+                Description of WaitUntilModuleOfflineIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (offline) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady">
+            <summary>
+                Description of WaitUntilModuleOnlineIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IsDtmConnected">
+            <summary>
+                Description of IsDTMConnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IsDtmConnected.Run">
+            <summary>
+                Determines whether online connection is established
+            </summary>
+            <returns>
+                true: if DTM is online
+                false: if DTM is offline or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected">
+            <summary>
+                Description of IsDTMDisconnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected.Run">
+            <summary>
+                Determines whether connection is offline
+            </summary>
+            <returns>
+                true: if DTM is offline
+                false: if DTM is online or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected">
+            <summary>
+                Description of Application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is connected</br>
+                <br>False: if module is not connected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected">
+            <summary>
+            The wait until connection is disconnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            ///
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is disconnected</br>
+                <br>False: if module is not disconnected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements">
+            <summary>
+            Provides access to the GUI elements
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.repository">
+            <summary>
+            Repository and mdiClient
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.mdiClientPath">
+            <summary>
+            MDI client path
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.RefreshButton">
+            <summary>
+            Gets refresh button
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.ChangeButton">
+            <summary>
+            Gets change button
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.ChangeDeviceAddressComboBox">
+            <summary>
+            Gets change device address combo box
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.ListItemsComboBox">
+            <summary>
+                Gets combo box list items
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewElements.DeviceList">
+            <summary>
+            Creates a list of all devices shown in the change DTM address module
+            </summary>
+            <returns>
+            List containing tree items representing the devices
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository">
+            <summary>
+            The class representing the ChangeDeviceAddressMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the ChangeDeviceAddressMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.comboBoxList">
+            <summary>
+            The comboBoxList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.comboBoxListInfo">
+            <summary>
+            The comboBoxList item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.comboBoxListItem">
+            <summary>
+            The comboBoxListItem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.comboBoxListItemInfo">
+            <summary>
+            The comboBoxListItem item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.ChangeDeviceAddressComboBox">
+            <summary>
+            The ChangeDeviceAddressComboBox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.ChangeDeviceAddressComboBoxInfo">
+            <summary>
+            The ChangeDeviceAddressComboBox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.Refresh">
+            <summary>
+            The Refresh item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.RefreshInfo">
+            <summary>
+            The Refresh item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.Change">
+            <summary>
+            The Change item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.ChangeInfo">
+            <summary>
+            The Change item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.treeItemDeviceList">
+            <summary>
+            The treeItemDeviceList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepository.treeItemDeviceListInfo">
+            <summary>
+            The treeItemDeviceList item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.ApplicationArea.MainView.ChangeDeviceAddressMainViewRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElements">
+            <summary>
+            Description of status bar elements 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElements.mdiClientPath">
+            <summary>
+            MDI client path
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElements.repository">
+            <summary>
+             Repository which will be used
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElements"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElements.ConnectionState">
+            <summary>
+             Gets StatusArea -> Connection state
+            </summary>
+            <returns>
+                <br>string: if call worked</br>
+                <br>empty string: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepository">
+            <summary>
+            The class representing the StatusbarElementsRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the StatusbarElementsRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepository.StatusbarItemConnectionState">
+            <summary>
+            The StatusbarItemConnectionState item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepository.StatusbarItemConnectionStateInfo">
+            <summary>
+            The StatusbarItemConnectionState item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDeviceAddress.GUI.StatusArea.Statusbar.StatusbarElementsRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.ChangeDtmAddress">
+            <summary>
+            The change device address.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.ChangeDtmAddress.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="deviceTag">
+            The device tag.
+            </param>
+            <param name="deviceAddress">
+            The device address.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.CloseModule">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.CloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.OpenModuleOffline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.OpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.OpenModuleOnline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Flows.OpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.Change">
+            <summary>
+            The Change.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.Change.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.Refresh">
+            <summary>
+            The refresh.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.Refresh.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SelectDevice">
+            <summary>
+            Provides methods for selecting a device 
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SelectDevice.Run(System.String)">
+            <summary>
+            Selects a device from the list according to its tag
+            </summary>
+            <param name="deviceTag">
+            Tag of the device which will be selected
+            </param>
+            <returns>
+            True: if the device is found and selected
+            False: if an error occurred or the device is not found
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+                Provides methods for editing different parameter types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a specific control to a specific value
+            </summary>
+            <param name="element">control to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.GetParameterValue(Ranorex.Core.Element)">
+            <summary>
+                Get value of a specific control
+            </summary>
+            <param name="element">control to get the value from</param>
+            <returns>
+                <br>String: if everything worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.SetTextValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a text control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+                Provides Validation methods which Validation whether the module is ready or not
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+                Description of ModuleName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleName.Name">
+            <summary>
+            Gets Returns name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            The module opening and closing.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady">
+            <summary>
+                Description of WaitUntilModuleOfflineIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (offline) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady">
+            <summary>
+                Description of WaitUntilModuleOnlineIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IsDtmConnected">
+            <summary>
+                Description of IsDTMConnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IsDtmConnected.Run">
+            <summary>
+                Determines whether online connection is established
+            </summary>
+            <returns>
+                true: if DTM is online
+                false: if DTM is offline or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected">
+            <summary>
+                Description of IsDTMDisconnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected.Run">
+            <summary>
+                Determines whether connection is offline
+            </summary>
+            <returns>
+                true: if DTM is offline
+                false: if DTM is online or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected">
+            <summary>
+                Description of Application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is connected</br>
+                <br>False: if module is not connected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected">
+            <summary>
+            The wait until connection is disconnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            ///
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is disconnected</br>
+                <br>False: if module is not disconnected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements">
+            <summary>
+            Provides access to the elements of the change DTM address module
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.repository">
+            <summary>
+            Repository and mdiClient
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.mdiClientPath">
+            <summary>
+             Path of the MDI client
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.RefreshButton">
+            <summary>
+            Gets the refresh button
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.ChangeButton">
+            <summary>
+            Gets the change button
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.ChangeDeviceAddressComboBox">
+            <summary>
+            Gets the device address combo box
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.ListItemsComboBox">
+            <summary>
+            Gets combo box list items
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewElements.DeviceList">
+            <summary>
+            Creates a list of all devices shown in the change DTM address module
+            </summary>
+            <returns>
+            List containing tree items representing the devices
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository">
+            <summary>
+            The class representing the ChangeDTMAddressMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the ChangeDTMAddressMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.Change">
+            <summary>
+            The Change item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.ChangeInfo">
+            <summary>
+            The Change item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.Refresh">
+            <summary>
+            The Refresh item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.RefreshInfo">
+            <summary>
+            The Refresh item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.ChangeDeviceAddressComboBox">
+            <summary>
+            The ChangeDeviceAddressComboBox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.ChangeDeviceAddressComboBoxInfo">
+            <summary>
+            The ChangeDeviceAddressComboBox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.comboBoxListItem">
+            <summary>
+            The comboBoxListItem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.comboBoxListItemInfo">
+            <summary>
+            The comboBoxListItem item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.comboBoxList">
+            <summary>
+            The comboBoxList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.comboBoxListInfo">
+            <summary>
+            The comboBoxList item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.treeItemDeviceList">
+            <summary>
+            The treeItemDeviceList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepository.treeItemDeviceListInfo">
+            <summary>
+            The treeItemDeviceList item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.ApplicationArea.MainView.ChangeDTMAddressMainViewRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElements">
+            <summary>
+            Description of status bar elements 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElements.mdiClientPath">
+            <summary>
+            MDI client path
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElements.repository">
+            <summary>
+             Repository which will be used
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElements"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElements.ConnectionState">
+            <summary>
+             Gets StatusArea -> Connection state
+            </summary>
+            <returns>
+                <br>string: if call worked</br>
+                <br>empty string: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepository">
+            <summary>
+            The class representing the StatusbarElementsRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the StatusbarElementsRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepository.StatusbarItemConnectionState">
+            <summary>
+            The StatusbarItemConnectionState item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepository.StatusbarItemConnectionStateInfo">
+            <summary>
+            The StatusbarItemConnectionState item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.ChangeDtmAddress.GUI.StatusArea.Stausbar.StatusbarElementsRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.CloseModule">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.CloseModule.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.Configure">
+            <summary>
+            Provides methods for configuring the NXA820 CommDTM
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.Configure.Run(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="ip">
+            The IP.
+            </param>
+            <param name="port">
+            The port.
+            </param>
+            <param name="password">
+            The password.
+            </param>
+            <param name="tankId">
+            The tank id.
+            </param>
+            <param name="startAddress">
+            The start address.
+            </param>
+            <param name="endAddress">
+            The end address.
+            </param>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.OpenModuleOffline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.OpenModuleOffline.Run">
+            <summary>
+             Open module via frame menu within a default time
+            </summary>
+            <returns>
+            <br>True: if everything worked fine</br>
+            <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.OpenModuleOnline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Flows.OpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.Apply">
+            <summary>
+            The Change.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.Apply.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+                Provides methods for editing different parameter types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a specific control to a specific value
+            </summary>
+            <param name="element">control to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter.GetParameterValue(Ranorex.Core.Element)">
+            <summary>
+                Get value of a specific control
+            </summary>
+            <param name="element">control to get the value from</param>
+            <returns>
+                <br>String: if everything worked fine</br>
+                <br>Empty String: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter.SetTextValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a text control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady">
+            <summary>
+                Provides Validation methods which Validation whether the module is ready or not
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Button)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOnlineReady(Ranorex.Adapter)">
+            <summary>
+                Checks if module (online) is ready
+            </summary>
+            <param name="adapter">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.IsModuleReady.IsModuleOfflineReady(Ranorex.Core.Element)">
+            <summary>
+                Checks if module (offline) is ready
+            </summary>
+            <param name="element">Element to check</param>
+            <returns>
+                <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+                Description of ModuleName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleName.Name">
+            <summary>
+            Gets Returns name of actual module
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            The module opening and closing.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleAlreadyOpened(System.String)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="moduleName">Name of module to check</param>
+            <returns>
+                <br>True: if module is already open</br>
+                <br>False: if module is not already opened</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleClosed(System.Int32)">
+            <summary>
+                Check if number of opened modules has decreased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsModuleOpened(System.Int32)">
+            <summary>
+                Check if number of opened modules has increased
+            </summary>
+            <param name="numberOfOpenedModules">Number of already opened modules</param>
+            <returns>
+                <br>True: if module is open</br>
+                <br>False: if module is not open</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsClosed(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is closed within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module must be closed
+            </param>
+            <returns>
+            <br>True: if module is closed</br>
+                <br>False: if module is not closed</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilModuleIsOpen(System.Int32,System.Int32)">
+            <summary>
+            Validation if module is opened within a specified time
+            </summary>
+            <param name="numberOfOpenedModules">
+            Number of already opened modules
+            </param>
+            <param name="timeOutInMilliseconds">
+            Time within module should be opened
+            </param>
+            <returns>
+            <br>True: if module is opened in time</br>
+                <br>False: if module is not opened in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady">
+            <summary>
+                Description of WaitUntilModuleOfflineIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOfflineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (offline) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady">
+            <summary>
+                Description of WaitUntilModuleOnlineIsReady.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.ApplicationArea.MainView.Validation.WaitUntilModuleOnlineIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module (online) is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.IsDtmConnected">
+            <summary>
+                Description of IsDTMConnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.IsDtmConnected.Run">
+            <summary>
+                Determines whether online connection is established
+            </summary>
+            <returns>
+                true: if DTM is online
+                false: if DTM is offline or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected">
+            <summary>
+                Description of IsDTMDisconnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.IsDtmDisconnected.Run">
+            <summary>
+                Determines whether connection is offline
+            </summary>
+            <returns>
+                true: if DTM is offline
+                false: if DTM is online or an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected">
+            <summary>
+                Description of Application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsConnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is connected</br>
+                <br>False: if module is not connected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected">
+            <summary>
+            The wait until connection is disconnected.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.Functions.StatusArea.Statusbar.Validation.WaitUntilDtmIsDisconnected.Run(System.Int32)">
+            <summary>
+                Wait until DTM connection is established and shown by GUI
+            </summary>
+            ///
+            <param name="timeOutInMilliseconds">Time until action must be performed</param>
+            <returns>
+                <br>True: if module is disconnected</br>
+                <br>False: if module is not disconnected</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements">
+            <summary>
+            Provides access to the elements of the NXA 820 configuration
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.mdiClientPath">
+            <summary>
+            MDI client path
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.repository">
+            <summary>
+            Repository and mdi client
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.ApplyButton">
+            <summary>
+                Gets button apply
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.CommunicationTimeout">
+            <summary>
+                Gets combo box "Communication timeout"
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.EndScanAddress">
+            <summary>
+                Gets combo box "EndScanAddress"
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.ListItemsComboBox">
+            <summary>
+             Gets the listItems of the combo boxes
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.Nxa820IpAddress">
+            <summary>
+             Gets EditControl "NXA 820 IP address" 
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.Nxa820Port">
+            <summary>
+                Gets EditControl "NXA 820 port" 
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.Password">
+            <summary>
+                Gets EditControl "Password"
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.StartScanAddress">
+            <summary>
+            Gets combo box "start scan address"
+            </summary>
+            <returns>
+            Button: if the element is found
+            Null: if the element is not found or an other error occurred
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewElements.TankIdentification">
+            <summary>
+                Gets EditControl "tank identification" 
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element is not found or an other error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository">
+            <summary>
+            The class representing the ConfigurationMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the ConfigurationMainViewRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlNXA820IPAdress">
+            <summary>
+            The editControlNXA820IPAdress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlNXA820IPAdressInfo">
+            <summary>
+            The editControlNXA820IPAdress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlNXA820Port">
+            <summary>
+            The editControlNXA820Port item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlNXA820PortInfo">
+            <summary>
+            The editControlNXA820Port item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlPassword">
+            <summary>
+            The editControlPassword item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlPasswordInfo">
+            <summary>
+            The editControlPassword item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlTankIdentification">
+            <summary>
+            The editControlTankIdentification item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.editControlTankIdentificationInfo">
+            <summary>
+            The editControlTankIdentification item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxStartScanAddress">
+            <summary>
+            The comboBoxStartScanAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxStartScanAddressInfo">
+            <summary>
+            The comboBoxStartScanAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxEndScanAddress">
+            <summary>
+            The comboBoxEndScanAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxEndScanAddressInfo">
+            <summary>
+            The comboBoxEndScanAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxCommunicationTimeout">
+            <summary>
+            The comboBoxCommunicationTimeout item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxCommunicationTimeoutInfo">
+            <summary>
+            The comboBoxCommunicationTimeout item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.buttonApply">
+            <summary>
+            The buttonApply item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.buttonApplyInfo">
+            <summary>
+            The buttonApply item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxListItem">
+            <summary>
+            The comboBoxListItem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxListItemInfo">
+            <summary>
+            The comboBoxListItem item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxList">
+            <summary>
+            The comboBoxList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepository.comboBoxListInfo">
+            <summary>
+            The comboBoxList item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.ApplicationArea.MainView.ConfigurationMainViewRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElements">
+            <summary>
+            Description of status bar elements 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElements.mdiClientPath">
+            <summary>
+            MDI client path
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElements.repository">
+            <summary>
+             Repository which will be used
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElements"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElements.ConnectionState">
+            <summary>
+             Gets StatusArea -> Connection state
+            </summary>
+            <returns>
+                <br>string: if call worked</br>
+                <br>empty string: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepository">
+            <summary>
+            The class representing the StatusbarElementsRepository element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the StatusbarElementsRepository element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepository.StatusbarItemConnectionState">
+            <summary>
+            The StatusbarItemConnectionState item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepository.StatusbarItemConnectionStateInfo">
+            <summary>
+            The StatusbarItemConnectionState item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar.StatusbarElementsRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.OperatingSystemInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.IOpenFileBrowser">
+            <summary>
+                Description of IOpenFileBrowser.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.IOpenFileBrowser.Load(System.String)">
+            <summary>
+                Load specified file
+            </summary>
+            <param name="fileName">Filename</param>
+            <returns>
+                <br>True: If call worked fine</br>
+                <br>False: If an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.IOpenFileBrowser.Close">
+            <summary>
+                Closes open dialog
+            </summary>
+            <returns>
+                true: if call worked fine
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.IOpenFileBrowser.Cancel">
+            <summary>
+            The cancel.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.ISaveAsFileBrowser">
+            <summary>
+                Description of ISaveAsFileBrowser.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.ISaveAsFileBrowser.ProposedFileName">
+            <summary>
+                Returns proposed filename or an empty string
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.ISaveAsFileBrowser.SaveAs(System.String)">
+            <summary>
+                save a file with given filename
+            </summary>
+            <param name="fileName">filename under which file will be saved</param>
+            <returns>
+                true: if saving was successful
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.ISaveAsFileBrowser.Save">
+            <summary>
+                save a file with proposed filename
+            </summary>
+            <returns>
+                true: if saving was successful
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Execution.ISaveAsFileBrowser.Close">
+            <summary>
+                Closes save as dialog
+            </summary>
+            <returns>
+                true: if call worked fine
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Validation.IIsOpenDialogOpen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Validation.IIsOpenDialogOpen.Run">
+            <summary>
+                Checks whether the Open File dialog is visible or not
+            </summary>
+            <returns>
+                true: if dialog is visible
+                false: if not
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Validation.IIsSaveAsDialogOpen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemInterfaces.Functions.Dialogs.Validation.IIsSaveAsDialogOpen.Run">
+            <summary>
+                Checks whether the Save as dialog is visible or not
+            </summary>
+            <returns>
+                true: if dialog is visible
+                false: if not
+            </returns>
+        </member>
+    </members>
+</doc>

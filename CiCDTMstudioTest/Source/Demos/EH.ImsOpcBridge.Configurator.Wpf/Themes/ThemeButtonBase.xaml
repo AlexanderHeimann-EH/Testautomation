@@ -1,0 +1,856 @@
+﻿<ResourceDictionary x:Uid="ResourceDictionary_1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:baseView="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+                    xmlns:converter="clr-namespace:EH.ImsOpcBridge.UI.Wpf.Converter;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+                    xmlns:effects="clr-namespace:EH.ImsOpcBridge.UI.Wpf.Effects;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+                    xmlns:view="clr-namespace:EH.ImsOpcBridge.Configurator.View">
+
+    <!-- converters -->
+
+    <BooleanToVisibilityConverter x:Uid="Converter:VisibilityInverterConverter_1" x:Key="ConvBoolToVisibility" />
+    <converter:VisibilityInverterConverter x:Uid="Converter:VisibilityInverterConverter_2" x:Key="ConvVisibilityInverter" />
+    <converter:StringToVisibilityConverter x:Uid="Converter:StringToVisibilityConverter_1" x:Key="ConvStringToVisibility" />
+    <converter:NullImageConverter x:Uid="Converter:NullImageConverter_1" x:Key="ConvNullImage"/>
+    <converter:ButtonImageConverter x:Uid="Converter:PressedImageConverter_1" x:Key="ConvButtonImage"/>
+    
+    <!-- image button -->
+
+    <ControlTemplate x:Uid="ControlTemplate_1" x:Key="ImageButtonTemplate" TargetType="{x:Type baseView:ImageButton}">
+        <Grid x:Uid="fullBtn" Name="fullBtn">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image x:Uid="BtnImageOuter" Name="BtnImageOuter" Grid.Column="0" Grid.Row="0" RenderTransformOrigin="0.5, 0.5" Cursor="Hand"
+                   Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                <Image.RenderTransform>
+                    <ScaleTransform x:Uid="ScaleTransform_2" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock x:Uid="BtnText" Name="BtnText" Grid.Column="0" Grid.Row="1" Margin="0,1,0,0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{TemplateBinding ButtonText}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_1" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_7" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_4" TargetName="BtnText" Property="Margin" Value="0,1,0,0"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_2" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_204" TargetName="BtnImageOuter" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_8" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_13" x:Key="BackgroundImageButtonTemplate" TargetType="{x:Type baseView:ImageButton}">
+        <Grid x:Uid="Grid_16" Name="fullBtn" Cursor="Hand">
+            <Image x:Uid="Image_14" Name="BtnImageBackground" 
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvNullImage}}" 
+                   Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Stretch="Uniform" StretchDirection="DownOnly">
+            </Image>
+            <Image x:Uid="Image_15" Name="BtnImageOuter"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Stretch="Uniform" StretchDirection="DownOnly"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+            </Image>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_35" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_208" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_203" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_36" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_209" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_205" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_59" Property="IsFlowDirected" Value="True">
+                <Setter x:Uid="Setter_297" TargetName="BtnImageOuter" Property="FlowDirection" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FlowDirection}"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_17" x:Key="NavigationImageButtonTemplate" TargetType="{x:Type baseView:ImageButton}">
+        <Grid x:Uid="Grid_19" Name="fullBtn">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_7" Height="Auto" />
+                <RowDefinition x:Uid="RowDefinition_21" Height="{DynamicResource ImageButtonTextGap}"></RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_8" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image x:Uid="Image_20" Name="BtnImageBackground" Grid.Row="0" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvNullImage}}">
+            </Image>
+            <Image x:Uid="Image_21" Name="BtnImageOuter" Grid.Row="0" RenderTransformOrigin="0.5, 0.5" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                <Image.RenderTransform>
+                    <ScaleTransform x:Uid="ScaleTransform_16" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                </Image.RenderTransform>
+            </Image>
+
+            <Border x:Uid="Border_16" Grid.Row="2" Width="{Binding  Width, ElementName=BtnImageOuter}">
+                <TextBlock x:Uid="TextBlock_9" Name="BtnText" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                           Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"
+                           Foreground="{DynamicResource TitleForegroundBrush}" LineHeight="20" 
+                           Margin="{DynamicResource ImageButtonTextMargin}">
+                    <Run x:Uid="Run_1" Text="{TemplateBinding ButtonText}" FontWeight="Bold"></Run>
+                    <Run x:Uid="Run_4" Text=" "></Run>
+                    <Run x:Uid="Run_2" Text="{TemplateBinding Description}" ></Run>
+                </TextBlock>
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_46" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_262" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_267" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_47" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_264" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_265" TargetName="BtnImageBackground" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_206" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_60" Property="IsFlowDirected" Value="True">
+                <Setter x:Uid="Setter_298" TargetName="BtnImageOuter" Property="FlowDirection" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FlowDirection}"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_19" x:Key="ContentImageButtonTemplate" TargetType="{x:Type baseView:ImageButton}">
+        <Grid x:Uid="Grid_25" Name="fullBtn">
+            <Image x:Uid="Image_23" Name="BtnImageBackground" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvNullImage}}">
+            </Image>
+            <ContentPresenter x:Uid="ButtonContentPresenter" x:Name="ButtonContentPresenter" 
+                              Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                              />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_51" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_274" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_2" Property="Foreground" Value="{DynamicResource ImageButtonPressedForegroundBrush}" />
+            </Trigger>
+            <Trigger x:Uid="Trigger_52" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_276" TargetName="BtnImageBackground" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_278" Property="Foreground" Value="{DynamicResource ImageButtonDisabledForegroundBrush}" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_4" x:Key="FramedImageButtonTemplate" TargetType="{x:Type baseView:ImageButton}">
+        <Grid x:Uid="Grid_24" Name="fullBtn">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_30" Height="Auto" />
+                <RowDefinition x:Uid="RowDefinition_31" Height="{DynamicResource ImageButtonTextGap}"></RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_32" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border x:Uid="BtnFrame" Name="BtnFrame" Grid.Column="0" Grid.Row="0" Cursor="Hand"
+                    Background="{TemplateBinding FrameBackground}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="{TemplateBinding CornerRadius}"
+                    VerticalAlignment="Top"
+                    Width="{TemplateBinding ImageSize}" Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}"  Margin="2">
+                <Grid x:Uid="Grid_8">
+                    <Image x:Uid="BtnImage" Name="BtnImage" RenderTransformOrigin="0.5, 0.5" Cursor="Hand" 
+                       Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}" VerticalAlignment="Top">
+                        <Image.RenderTransform>
+                            <ScaleTransform x:Uid="ScaleTransform_1" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+            </Border>
+            
+            <TextBlock x:Uid="TextBlock_10" Name="BtnText" Grid.Row="2" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"
+                       Foreground="{DynamicResource TitleForegroundBrush}" LineHeight="20" Width="{Binding  Width, ElementName=BtnFrame}">
+                <Run x:Uid="Run_8" Text="{TemplateBinding ButtonText}" FontWeight="Bold"></Run>
+                <Run x:Uid="Run_9" Text=" "></Run>
+                <Run x:Uid="Run_10" Text="{TemplateBinding Description}" ></Run>
+            </TextBlock>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_9" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_1" TargetName="BtnFrame" Property="Background" Value="{Binding FramePressedBackground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                <Setter x:Uid="Setter_128" TargetName="BtnFrame" Property="Margin" Value="4,4,0,0"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_10" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_5" TargetName="BtnFrame" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_6" TargetName="BtnImage" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_85" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_16" x:Key="MenuImageButtonTemplate" TargetType="baseView:ImageButton">
+        <ContentControl x:Uid="ContentControl_1" x:Name="BtnBackground" Style="{DynamicResource MenuBorderBackgroundStyle}" Cursor="Hand"
+                        Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}">
+            <Image x:Uid="Image_18" Name="BtnImage"
+                        Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                        Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}"
+                        Stretch="UniformToFill" >
+            </Image>
+        </ContentControl>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_24" Property="IsMouseOver" Value="true">
+                <Setter x:Uid="Setter_257" TargetName="BtnImage" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_227" TargetName="BtnBackground" Property="Style" Value="{DynamicResource MenuBorderBackgroundStylePressed}"></Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_48" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_255" TargetName="BtnImage" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_229" TargetName="BtnBackground" Property="Style" Value="{DynamicResource MenuBorderBackgroundStyleDisabled}"></Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_42" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_256" TargetName="BtnImage" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_230" TargetName="BtnBackground" Property="Style" Value="{DynamicResource MenuBorderBackgroundStylePressed}"></Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Uid="Style_1" x:Key="ImageButtonStyle" TargetType="{x:Type baseView:ImageButton}" BasedOn="{x:Null}">
+        <Setter x:Uid="Setter_10" Property="Margin" Value="5" />
+        <Setter x:Uid="Setter_11" Property="BorderThickness" Value="2"/>
+        <Setter x:Uid="Setter_12" Property="Foreground" Value="{DynamicResource ImageButtonTextBrush}" />
+        <Setter x:Uid="Setter_13" Property="FrameBackground" Value="{DynamicResource ImageButtonBackground}" />
+        <Setter x:Uid="Setter_14" Property="FramePressedBackground" Value="{DynamicResource ImageButtonPressedBackground}" />
+        <Setter x:Uid="Setter_15" Property="BorderBrush" Value="{DynamicResource ImageButtonBorderBrush}" />
+        <Setter x:Uid="Setter_271" Property="VerticalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_17" Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_77" Property="ButtonImage" Value=""/>
+        <Setter x:Uid="Setter_78" Property="FrameImage" Value=""/>
+        <Setter x:Uid="Setter_272" Property="ImageSize" Value="70" />
+        <Setter x:Uid="Setter_125" Property="FontSize" Value="{DynamicResource StandardFontSize}" />
+    </Style>
+
+    <Style x:Uid="Style_10" x:Key="ButtonStyle" TargetType="{x:Type Button}" BasedOn="{x:Null}">
+        <Setter x:Uid="Setter_157" Property="Margin" Value="5" />
+        <Setter x:Uid="Setter_158" Property="BorderThickness" Value="2"/>
+        <Setter x:Uid="Setter_159" Property="Foreground" Value="{DynamicResource ImageButtonTextBrush}" />
+        <Setter x:Uid="Setter_160" Property="BorderBrush" Value="{DynamicResource ImageButtonBorderBrush}" />
+        <Setter x:Uid="Setter_161" Property="VerticalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_162" Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_163" Property="FontSize" Value="{DynamicResource StandardFontSize}" />
+    </Style>
+
+    <!-- toggle button -->
+
+    <ControlTemplate x:Uid="ControlTemplate_2" x:Key="ImageToggleButtonTemplate" TargetType="{x:Type baseView:ImageToggleButton}">
+        <Grid x:Uid="Grid_1" Name="fullBtn" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_2" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_3" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_4" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image x:Uid="Image_2" Name="BtnImage" Grid.Column="0" Grid.Row="0" RenderTransformOrigin="0.5, 0.5" Cursor="Hand" Margin="0,0,1,1"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                <Image.RenderTransform>
+                    <ScaleTransform x:Uid="ScaleTransform_4" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock x:Uid="TextBlock_1" Name="BtnText" Grid.Column="0" Grid.Row="1" Margin="0,1,0,0" HorizontalAlignment="Center" TextWrapping="Wrap"
+                       Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_3" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_25" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_1" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameMarkerBrush}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_49" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_28" TargetName="BtnImage" Property="Margin" Value="1,1,0,0"/>
+                <Setter x:Uid="Setter_29" TargetName="BtnText" Property="Margin" Value="0,1,0,0"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_50" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_32" TargetName="BtnImage" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_33" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_5" x:Key="FramedImageToggleButtonTemplate" TargetType="{x:Type baseView:ImageToggleButton}">
+        <Grid x:Uid="Grid_4" Name="fullBtn" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_5" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_9" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_10" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border x:Uid="Border_20" Name="BtnFrame" Grid.Column="0" Grid.Row="0" Cursor="Hand"
+                    Background="{TemplateBinding FrameBackground}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="10"
+                    Width="{TemplateBinding ImageSize}" Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                <Image x:Uid="Image_1" Name="BtnImage" RenderTransformOrigin="0.5, 0.5" Cursor="Hand" Margin="0,0,1,1"
+                       Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                    <Image.RenderTransform>
+                        <ScaleTransform x:Uid="ScaleTransform_3" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                    </Image.RenderTransform>
+                </Image>
+            </Border>
+            <TextBlock x:Uid="TextBlock_4" Name="BtnText" Grid.Column="0" Grid.Row="1" Margin="0,1,0,0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{TemplateBinding ButtonText}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_11" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_87" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_3" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameMarkerBrush}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter x:Uid="Setter_104" TargetName="BtnFrame" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameMarkerBrush}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_12" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_26" TargetName="BtnFrame" Property="Background" Value="{Binding FramePressedBackground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                <Setter x:Uid="Setter_27" TargetName="BtnImage" Property="Margin" Value="1,1,0,0"/>
+                <Setter x:Uid="Setter_88" TargetName="BtnText" Property="Margin" Value="0,1,0,0"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_13" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_30" TargetName="BtnFrame" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_31" TargetName="BtnImage" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_89" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_9" x:Key="FlatImageToggleButtonTemplate" TargetType="{x:Type baseView:ImageToggleButton}">
+        <Grid x:Uid="Grid_11" Name="fullBtn" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_9" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_19" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_20" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border x:Uid="Border_5" Name="BtnFrame" Grid.Column="0" Grid.Row="0" Cursor="Hand"
+                    Background="{TemplateBinding FrameBackground}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="{DynamicResource FlatButtonRadius}"
+                    Width="{TemplateBinding ImageSize}" Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                <Image x:Uid="Image_7" Name="BtnImage" RenderTransformOrigin="0.5, 0.5" Cursor="Hand"
+                       Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                    <Image.RenderTransform>
+                        <ScaleTransform x:Uid="ScaleTransform_10" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                    </Image.RenderTransform>
+                </Image>
+            </Border>
+            <TextBlock x:Uid="TextBlock_8" Name="BtnText" Grid.Column="0" Grid.Row="1" Margin="0,1,0,0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{TemplateBinding ButtonText}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_22" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_141" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_8" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameMarkerBrush}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter x:Uid="Setter_142" TargetName="BtnFrame" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameMarkerBrush}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_23" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_143" TargetName="BtnFrame" Property="Background" Value="{Binding FramePressedBackground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                <Setter x:Uid="Setter_144" TargetName="fullBtn" Property="Margin" Value="4,4,0,0"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_43" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_145" TargetName="BtnFrame" Property="Background" Value="{Binding FramePressedBackground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                <Setter x:Uid="Setter_146" TargetName="BtnImage" Property="Effect">
+                    <Setter.Value>
+                        <effects:IconDisablerEffect x:Uid="Effects:IconDisablerEffect_3" BlendColor="{DynamicResource MenuButtonDisabledForegroundBrush.Color}">
+                        </effects:IconDisablerEffect>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_20" x:Key="BackgroundImageToggleButtonTemplate" TargetType="{x:Type baseView:ImageToggleButton}">
+        <Grid x:Uid="Grid_26" Name="fullBtn" Cursor="Hand">
+            <Image x:Uid="Image_24" Name="BtnImageBackground" 
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvNullImage}}" 
+                   Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Stretch="Uniform" StretchDirection="DownOnly">
+            </Image>
+            <Image x:Uid="Image_25" Name="BtnImageOuter"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Stretch="Uniform" StretchDirection="DownOnly"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+            </Image>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_53" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_283" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_284" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_54" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_285" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_286" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_55" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_287" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_288" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_21" x:Key="ContentImageToggleButtonTemplate" TargetType="{x:Type baseView:ImageToggleButton}">
+        <Grid x:Uid="Grid_27" Name="fullBtn">
+            <Image x:Uid="Image_26" Name="BtnImageBackground" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvNullImage}}">
+            </Image>
+            <ContentPresenter x:Uid="ContentPresenter_1" x:Name="ButtonContentPresenter" 
+                              Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                              />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_56" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_291" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_292" Property="Foreground" Value="{DynamicResource ImageButtonPressedForegroundBrush}" />
+            </Trigger>
+            <Trigger x:Uid="Trigger_57" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_293" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_294" Property="Foreground" Value="{DynamicResource ImageButtonPressedForegroundBrush}" />
+            </Trigger>
+            <Trigger x:Uid="Trigger_58" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_295" TargetName="BtnImageBackground" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_296" Property="Foreground" Value="{DynamicResource ImageButtonDisabledForegroundBrush}" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Uid="Style_4" x:Key="ImageToggleButtonStyle" TargetType="{x:Type baseView:ImageToggleButton}" BasedOn="{x:Null}">
+        <Setter x:Uid="Setter_35" Property="Margin" Value="5" />
+        <Setter x:Uid="Setter_36" Property="BorderThickness" Value="2"/>
+        <Setter x:Uid="Setter_37" Property="Foreground" Value="{DynamicResource ToggleButtonTextBrush}" />
+        <Setter x:Uid="Setter_38" Property="FrameBackground" Value="{DynamicResource ToggleButtonBackground}" />
+        <Setter x:Uid="Setter_39" Property="FramePressedBackground" Value="{DynamicResource ToggleButtonPressedBackground}" />
+        <Setter x:Uid="Setter_40" Property="BorderBrush" Value="{DynamicResource ToggleButtonBorderBrush}" />
+        <Setter x:Uid="Setter_41" Property="VerticalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_42" Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_79" Property="ButtonImage" Value=""/>
+        <Setter x:Uid="Setter_80" Property="FrameImage" Value=""/>
+        <Setter x:Uid="Setter_44" Property="MarkerColor" Value="{DynamicResource ToggleButtonMarkerColor}"/>
+        <Setter x:Uid="Setter_70" Property="FrameMarkerBrush" Value="{DynamicResource ToggleBorderMarkerBrush}"/>
+        <Setter x:Uid="Setter_45" Property="ImageSize" Value="70" />
+    </Style>
+
+    <Style x:Uid="Style_9" x:Key="ImageToggleButtonStyleFlat" TargetType="{x:Type baseView:ImageToggleButton}" BasedOn="{StaticResource ImageToggleButtonStyle}">
+        <Setter x:Uid="Setter_147" Property="Template" Value="{DynamicResource FlatImageToggleButtonTemplate}" />
+        <Setter x:Uid="Setter_148" Property="ImageSize" Value="{DynamicResource FlatButtonSize}" />
+        <Setter x:Uid="Setter_149" Property="ImageScale" Value="0.9" />
+        <Setter x:Uid="Setter_150" Property="FrameBackground" Value="{DynamicResource FlatButtonBackgroundBrush}" />
+        <Setter x:Uid="Setter_151" Property="FramePressedBackground" Value="{DynamicResource FlatButtonBackgroundBrush}" />
+        <Setter x:Uid="Setter_153" Property="BorderThickness" Value="0"/>
+        <Setter x:Uid="Setter_155" Property="MarkerColor" Value="{DynamicResource ToggleButtonMarkerColor}"/>
+        <Setter x:Uid="Setter_154" Property="Margin" Value="{DynamicResource FlatButtonMargin}" />
+    </Style>
+
+    <!-- radio button -->
+
+    <ControlTemplate x:Uid="ControlTemplate_3" x:Key="ImageRadioButtonTemplate" TargetType="{x:Type baseView:ImageRadioButton}">
+        <Grid x:Uid="Grid_2" Name="fullBtn" Margin="{DynamicResource ImageButtonMargin}" Width="{TemplateBinding ImageSize}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_3" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_40" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_22" Height="{DynamicResource ImageButtonTextGap}"></RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_41" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image x:Uid="Image_4" Name="BtnImage" Grid.Column="0" Grid.Row="0" RenderTransformOrigin="0.5, 0.5" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                <Image.RenderTransform>
+                    <ScaleTransform x:Uid="ScaleTransform_6" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock x:Uid="TextBlock_2" Name="BtnText" Grid.Column="0" Grid.Row="2" Margin="0,1,0,0" HorizontalAlignment="Left" TextWrapping="Wrap"
+                       Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText}"
+                       Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_44" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_51" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_2" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_7" Property="IsPressed" Value="True">
+                <!-- Setter x:Uid="Setter_54" TargetName="fullBtn" Property="Margin" Value="2,4,0,0"/> -->
+                <Setter x:Uid="Setter_139" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_6" BlurRadius="10" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_8" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_58" TargetName="BtnImage" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_59" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_14" x:Key="WizardImageButtonTemplate" TargetType="{x:Type baseView:ImageRadioButton}">
+        <Grid x:Uid="Grid_17" Name="fullBtn">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_33" Height="Auto" />
+                <RowDefinition x:Uid="RowDefinition_34" Height="{DynamicResource ImageButtonTextGap}"></RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_35" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image x:Uid="BtnImageBackground" Name="BtnImageBackground" Grid.Row="0" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvNullImage}}">
+            </Image>
+            <Image x:Uid="Image_16" Name="BtnImageOuter" Grid.Row="0" RenderTransformOrigin="0.5, 0.5" Cursor="Hand"
+                   Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                   Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                   Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                <Image.RenderTransform>
+                    <ScaleTransform x:Uid="ScaleTransform_15" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                </Image.RenderTransform>
+            </Image>
+
+            <Border x:Uid="Border_17" Grid.Row="2" Width="{Binding  Width, ElementName=BtnImageOuter}">
+                <TextBlock x:Uid="TextBlock_14" Name="BtnText" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                           Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"
+                           Foreground="{DynamicResource TitleForegroundBrush}" LineHeight="20"
+                           Margin="{DynamicResource ImageButtonTextMargin}">
+                    <Run x:Uid="Run_11" Text="{TemplateBinding ButtonText}" FontWeight="Bold"></Run>
+                    <Run x:Uid="Run_12" Text=" "></Run>
+                    <Run x:Uid="Run_13" Text="{TemplateBinding Description}" ></Run>
+                </TextBlock>
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_37" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_210" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_211" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_212" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_9" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_38" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_213" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_214" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=pressed}"/>
+                <Setter x:Uid="Setter_215" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_10" BlurRadius="10" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_39" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_216" TargetName="BtnImageOuter" Property="Source" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_217" TargetName="BtnImageBackground" Property="Source"  Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundImage, Converter={StaticResource ConvButtonImage}, ConverterParameter=disabled}"/>
+                <Setter x:Uid="Setter_218" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+    <ControlTemplate x:Uid="ControlTemplate_7" x:Key="ImageFramedRadioButtonTemplate" TargetType="{x:Type baseView:ImageRadioButton}">
+        <Grid x:Uid="Grid_6" Name="fullBtn">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_7" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_13" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_23" Height="{DynamicResource ImageButtonTextGap}"></RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_14" Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Border x:Uid="Border_15" Name="BtnFrame" Grid.Column="0" Grid.Row="0" Cursor="Hand"
+                Background="{TemplateBinding FrameBackground}" 
+                BorderBrush="{TemplateBinding BorderBrush}" 
+                BorderThickness="{TemplateBinding BorderThickness}" 
+                CornerRadius="{TemplateBinding CornerRadius}"
+                Width="{TemplateBinding ImageSize}" Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}"  Margin="2">
+                
+                <Grid x:Uid="Grid_15">
+                    <Image x:Uid="BtnImageFrame" Name="BtnImageFrame" Grid.Column="0" Grid.Row="0" Grid.ZIndex="99"  Cursor="Hand"
+                        Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                        Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameImage, Converter={StaticResource ConvNullImage}}">
+                    </Image>
+                    <Image x:Uid="Image_5" Name="BtnImage" Grid.Column="0" Grid.Row="0" Grid.ZIndex="100" RenderTransformOrigin="0.5, 0.5" Cursor="Hand"
+                        Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"
+                        Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                        Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                        <Image.RenderTransform>
+                            <ScaleTransform x:Uid="ScaleTransform_8" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+            </Border>
+
+            <TextBlock x:Uid="BtnText_" Name="BtnText" Grid.Row="2" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                    Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"
+                    Foreground="{DynamicResource TitleForegroundBrush}" LineHeight="20"  Width="{Binding  Width, ElementName=BtnFrame}">
+                <Run x:Uid="Run_5" Text="{TemplateBinding ButtonText}" FontWeight="Bold"></Run>
+                <Run x:Uid="Run_6" Text=" "></Run>
+                <Run x:Uid="Run_7" Text="{TemplateBinding Description}" ></Run>
+            </TextBlock>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_17" Property="IsChecked" Value="True">
+                    <Setter x:Uid="Setter_108" TargetName="BtnFrame" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_5" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_18" Property="IsPressed" Value="True">
+                    <Setter x:Uid="Setter_111" TargetName="BtnFrame" Property="Margin" Value="4,4,0,0"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_19" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_112" TargetName="BtnImageFrame" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_113" TargetName="BtnImage" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_114" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_6" x:Key="FramedImageRadioButtonTemplate" TargetType="{x:Type baseView:ImageRadioButton}">
+        <Grid x:Uid="Grid_5" Name="fullBtn" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_6" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_11" Height="*" />
+                <RowDefinition x:Uid="RowDefinition_12" Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border x:Uid="Border_3" Name="BtnFrame" Grid.Column="0" Grid.Row="0" Cursor="Hand"
+                    Background="{TemplateBinding FrameBackground}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="20"
+                    Width="{TemplateBinding ImageSize}" Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                <Grid x:Uid="Grid_10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Uid="RowDefinition_17" Height="*"></RowDefinition>
+                        <RowDefinition x:Uid="RowDefinition_18" Height="35"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image x:Uid="BtnImageInner" Name="BtnImage" Grid.Row="0" RenderTransformOrigin="0.5, 0.5" Cursor="Hand" Stretch="Uniform" Margin="10,10,10,0"
+                           Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}"
+                           Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvStringToVisibility}}">
+                        <Image.RenderTransform>
+                            <ScaleTransform x:Uid="ScaleTransform_7" ScaleX="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}" ScaleY="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageScale}"></ScaleTransform>
+                        </Image.RenderTransform>
+                    </Image>
+                    <TextBlock x:Uid="TextBlock_5" Name="BtnText" Grid.Row="1" Margin="5" HorizontalAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"
+                    Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText}"
+                    Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText, Converter={StaticResource ConvStringToVisibility}}"/>
+                </Grid>
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_14" Property="IsChecked" Value="True">
+                <Setter x:Uid="Setter_93" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_4" BlurRadius="20" Color="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type baseView:BaseSelectorControl}}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter x:Uid="Setter_105" TargetName="BtnFrame" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FrameMarkerBrush}"/>
+            </Trigger>
+            <Trigger x:Uid="Trigger_15" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_94" TargetName="BtnFrame" Property="Background" Value="{Binding FramePressedBackground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                <Setter x:Uid="Setter_95" TargetName="fullBtn" Property="Margin" Value="4,4,0,0"/>
+                <Setter x:Uid="Setter_140" TargetName="fullBtn" Property="Button.Effect">
+                    <Setter.Value>
+                        <DropShadowEffect x:Uid="DropShadowEffect_7" BlurRadius="10" Color="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type baseView:BaseSelectorControl}}, Path=MarkerColor}" RenderingBias="Performance" ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_16" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_98" TargetName="BtnFrame" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_99" TargetName="BtnImage" Property="Opacity" Value="0.50"/>
+                <Setter x:Uid="Setter_101" TargetName="BtnText" Property="Opacity" Value="0.50"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Uid="ControlTemplate_11" x:Key="MenuRadioButtonTemplate" TargetType="{x:Type baseView:ImageRadioButton}">
+        
+        <ContentControl x:Uid="ContentControl_2" x:Name="BtnBackground" Style="{DynamicResource MenuBorderBackgroundStyle}" Cursor="Hand" MinWidth="{DynamicResource MenuButtonMinWidth}">
+            <Border x:Uid="Border_18" Height="{DynamicResource MenuPaneHeight}" >
+                <Grid x:Uid="Grid_23"  Height="{DynamicResource MenuImageButtonSize}" VerticalAlignment="Top">
+                    <StackPanel Grid.Column="1" x:Uid="StackPanel_9" Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,0,20,0">
+                        <TextBlock x:Uid="TextBlock_12" Name="BtnText" Text="{Binding Path=Text, Mode=OneWay}" Style="{DynamicResource MenuTextBlockStyle}"/>
+                        <Image x:Uid="Image_17" Name="BtnImage" Style="{DynamicResource MenuImageStyle}"
+                                Source="{Binding ImageSource, Converter={StaticResource ConvNullImage}}"
+                                Visibility="{Binding ImageSource, Mode=OneWay, Converter={StaticResource ConvStringToVisibility}}">
+                        </Image>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </ContentControl>
+
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_29" Property="IsChecked" Value="true">
+                <Setter x:Uid="Setter_258" TargetName="BtnBackground" Property="Style" Value="{DynamicResource MenuBorderBackgroundStylePressed}"></Setter>
+                <Setter x:Uid="Setter_228" TargetName="BtnText" Property="Foreground" Value="White"></Setter>
+                <Setter x:Uid="Setter_231" TargetName="BtnImage" Property="Effect">
+                    <Setter.Value>
+                        <effects:IconDisablerEffect x:Uid="effects:IconDisablerEffect_1" BlendColor="White"></effects:IconDisablerEffect>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_27" Property="IsPressed" Value="True">
+                <Setter x:Uid="Setter_233" TargetName="BtnBackground" Property="Style" Value="{DynamicResource MenuBorderBackgroundStylePressed}"></Setter>
+                <Setter x:Uid="Setter_234" TargetName="BtnText" Property="Foreground" Value="White"></Setter>
+                <Setter x:Uid="Setter_235" TargetName="BtnImage" Property="Effect">
+                    <Setter.Value>
+                        <effects:IconDisablerEffect x:Uid="Effects:IconDisablerEffect_8" BlendColor="White"></effects:IconDisablerEffect>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_28" Property="IsEnabled" Value="False">
+                <Setter x:Uid="Setter_259" TargetName="BtnBackground" Property="Style" Value="{DynamicResource MenuBorderBackgroundStyleDisabled}"></Setter>
+                <Setter x:Uid="Setter_239" Property="Foreground" Value="{DynamicResource MenuButtonDisabledForegroundBrush}"/>
+                <Setter x:Uid="Setter_232" TargetName="BtnImage" Property="Effect">
+                    <Setter.Value>
+                        <effects:IconDisablerEffect x:Uid="effects:IconDisablerEffect_2" BlendColor="{DynamicResource MenuButtonDisabledForegroundBrush.Color}"></effects:IconDisablerEffect>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+    <Style x:Uid="Style_7" x:Key="ImageRadioButtonStyle" TargetType="{x:Type baseView:ImageRadioButton}" BasedOn="{x:Null}">
+        <Setter x:Uid="Setter_62" Property="BorderThickness" Value="2"/>
+        <Setter x:Uid="Setter_63" Property="Foreground" Value="{DynamicResource RadioButtonTextBrush}" />
+        <Setter x:Uid="Setter_64" Property="FrameBackground" Value="{DynamicResource RadioButtonBackground}" />
+        <Setter x:Uid="Setter_65" Property="FramePressedBackground" Value="{DynamicResource RadioButtonPressedBackground}" />
+        <Setter x:Uid="Setter_66" Property="BorderBrush" Value="{DynamicResource RadioButtonBorderBrush}" />
+        <Setter x:Uid="Setter_67" Property="VerticalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_68" Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter x:Uid="Setter_81" Property="ButtonImage" Value=""/>
+        <Setter x:Uid="Setter_82" Property="FrameImage" Value=""/>
+        <Setter x:Uid="Setter_107" Property="MarkerColor" Value="{DynamicResource RadioButtonMarkerColor}"/>
+        <Setter x:Uid="Setter_106" Property="FrameMarkerBrush" Value="{DynamicResource RadioBorderMarkerBrush}"/>
+        <Setter x:Uid="Setter_71" Property="ImageSize" Value="{DynamicResource FlatButtonSize}" />
+        <Setter x:Uid="Setter_138" Property="Margin" Value="{DynamicResource FlatButtonMargin}" />
+    </Style>
+
+    <Style x:Uid="Style_12" x:Key="WizardRadioButtonStyle" TargetType="{x:Type baseView:ImageRadioButton}" BasedOn="{StaticResource ImageRadioButtonStyle}">
+        <Setter x:Uid="Setter_195" Property="Template" Value="{DynamicResource WizardImageButtonTemplate}" />
+        <Setter x:Uid="Setter_196" Property="ImageScale"  Value="1.0" />
+        <Setter x:Uid="Setter_197" Property="ImageSize"  Value="{DynamicResource NavigationImageSize}" />
+        <Setter x:Uid="Setter_194" Property="Margin" Value="{DynamicResource ImageButtonMargin}"></Setter>
+        <Setter x:Uid="Setter_245" Property="BackgroundImage" Value="{DynamicResource BigButtonBackgroundImage}"></Setter>
+    </Style>
+
+    <Style x:Uid="Style_13" x:Key="NavigationButtonStyle" TargetType="{x:Type baseView:ImageButton}" BasedOn="{StaticResource ImageButtonStyle}">
+        <Setter x:Uid="Setter_219" Property="Template" Value="{DynamicResource NavigationImageButtonTemplate}" />
+        <Setter x:Uid="Setter_220" Property="ImageScale"  Value="1.0" />
+        <Setter x:Uid="Setter_221" Property="ImageSize"  Value="{DynamicResource NavigationImageSize}" />
+        <Setter x:Uid="Setter_222" Property="Margin" Value="{DynamicResource ImageButtonMargin}"></Setter>
+        <Setter x:Uid="Setter_266" Property="BackgroundImage" Value="{DynamicResource BigButtonBackgroundImage}"></Setter>
+    </Style>
+
+    <ControlTemplate x:Uid="ControlTemplate_15" x:Key="AriadneButtonTemplate" TargetType="{x:Type view:AriadneButton}">
+
+        <ContentControl x:Uid="BtnBackground" x:Name="BtnBackground" Grid.Row="0" Grid.RowSpan="2" Style="{DynamicResource MenuBorderBackgroundStyle}" 
+                            Template="{DynamicResource AriadneBorderBackgroundTemplatePast}"  Cursor="Hand" 
+                            MinWidth="{DynamicResource MenuButtonMinWidth}">
+            <Border x:Uid="Border_19" Height="{DynamicResource MenuPaneHeight}" >
+                <Grid x:Uid="Grid_18"  Height="{DynamicResource MenuImageButtonSize}" VerticalAlignment="Top">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Uid="RowDefinition_36" Height="10" />
+                        <RowDefinition x:Uid="RowDefinition_38" Height="*" />
+                        <RowDefinition  x:Uid="RowDefinition_37" Height="*" />
+                        <RowDefinition x:Uid="RowDefinition_39" Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Uid="ColumnDefinition_10" Width="34"/>
+                        <ColumnDefinition x:Uid="ColumnDefinition_13" Width="*"/>
+                        <ColumnDefinition x:Uid="ColumnDefinition_12" Width="10"/>
+                        <ColumnDefinition x:Uid="ColumnDefinition_11" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ImageSize}"/>
+                        <ColumnDefinition x:Uid="ColumnDefinition_14" Width="10"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Uid="TextBlock_13" Cursor="Hand" TextAlignment="Center" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonText}" Style="{DynamicResource MenuTextBlockStyle}" 
+                                Foreground="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Foreground}"/>
+                    <TextBlock x:Uid="TextBlock_3" Cursor="Hand" TextAlignment="Center" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Description}" Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Description, Converter={StaticResource ConvStringToVisibility}}" 
+                                Style="{DynamicResource MenuTextBlockStyle}" FontWeight="Normal"
+                                Foreground="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Foreground}" />
+                    <Image x:Uid="Image_19" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ButtonImage, Converter={StaticResource ConvNullImage}}" 
+                           StretchDirection="DownOnly" VerticalAlignment="Center" HorizontalAlignment="Right" 
+                           Visibility="{TemplateBinding IsTicked, Converter={StaticResource ConvBoolToVisibility}}"></Image>
+                </Grid>
+            </Border>
+        </ContentControl>
+            
+        <ControlTemplate.Triggers>
+            <Trigger x:Uid="Trigger_40" Property="IsEnabled" Value="True">
+                <Setter x:Uid="Setter_243" Property="Foreground" Value="{DynamicResource AriadneButtonForegroundBrush}"></Setter>
+            </Trigger>
+            <MultiTrigger x:Uid="MultiTrigger_1">
+                <MultiTrigger.Conditions>
+                    <Condition x:Uid="Condition_1" Property="IsFirstStep" Value="True"></Condition>
+                    <Condition x:Uid="Condition_2" Property="IsChecked" Value="False"></Condition>
+                </MultiTrigger.Conditions>
+                <Setter x:Uid="Setter_240" TargetName="BtnBackground" Property="Template" Value="{DynamicResource AriadneBorderBackgroundTemplatePastFirst}"></Setter>
+            </MultiTrigger>
+            <MultiTrigger x:Uid="MultiTrigger_2">
+                <MultiTrigger.Conditions>
+                    <Condition x:Uid="Condition_3" Property="IsFirstStep" Value="True"></Condition>
+                    <Condition x:Uid="Condition_4" Property="IsChecked" Value="True"></Condition>
+                </MultiTrigger.Conditions>
+                <Setter x:Uid="Setter_241" TargetName="BtnBackground" Property="Template" Value="{DynamicResource AriadneBorderBackgroundTemplateCheckedFirst}"></Setter>
+                <Setter x:Uid="Setter_279" Property="Foreground" Value="{DynamicResource AriadneButtonPressedForegroundBrush}"></Setter>
+            </MultiTrigger>
+            <MultiTrigger x:Uid="MultiTrigger_3">
+                <MultiTrigger.Conditions>
+                    <Condition x:Uid="Condition_5" Property="IsFirstStep" Value="False"></Condition>
+                    <Condition x:Uid="Condition_6" Property="IsChecked" Value="True"></Condition>
+                </MultiTrigger.Conditions>
+                <Setter x:Uid="Setter_242" TargetName="BtnBackground" Property="Template" Value="{DynamicResource AriadneBorderBackgroundTemplateChecked}"></Setter>
+                <Setter x:Uid="Setter_280" Property="Foreground" Value="{DynamicResource AriadneButtonPressedForegroundBrush}"></Setter>
+            </MultiTrigger>
+            <MultiTrigger x:Uid="MultiTrigger_4">
+                <MultiTrigger.Conditions>
+                    <Condition x:Uid="Condition_7" Property="IsFirstStep" Value="False"></Condition>
+                    <Condition x:Uid="Condition_8" Property="IsEnabled" Value="False"></Condition>
+                </MultiTrigger.Conditions>
+                <Setter x:Uid="Setter_246" TargetName="BtnBackground" Property="Template" Value="{DynamicResource AriadneBorderBackgroundTemplateDisabled}"></Setter>
+                <Setter x:Uid="Setter_281" Property="Foreground" Value="{DynamicResource AriadneButtonDisabledForegroundBrush}"></Setter>
+            </MultiTrigger>
+            <MultiTrigger x:Uid="MultiTrigger_5">
+                <MultiTrigger.Conditions>
+                    <Condition x:Uid="Condition_9" Property="IsFirstStep" Value="True"></Condition>
+                    <Condition x:Uid="Condition_10" Property="IsEnabled" Value="False"></Condition>
+                </MultiTrigger.Conditions>
+                <Setter x:Uid="Setter_289" TargetName="BtnBackground" Property="Template" Value="{DynamicResource AriadneBorderBackgroundTemplateDisabledFirst}"></Setter>
+                <Setter x:Uid="Setter_290" Property="Foreground" Value="{DynamicResource AriadneButtonDisabledForegroundBrush}"></Setter>
+            </MultiTrigger>
+            <Trigger x:Uid="Trigger_45" Property="IsFirstStep" Value="False">
+                <Setter x:Uid="Setter_261" Property="Margin" Value="{DynamicResource AriadneButtonOffsetMargin}"></Setter>
+            </Trigger>
+            <Trigger x:Uid="Trigger_41" Property="IsFirstStep" Value="True">
+                <Setter x:Uid="Setter_244" Property="Margin" Value="{DynamicResource AriadneButtonMargin}"></Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+</ResourceDictionary>

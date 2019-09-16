@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{224564E6-76C3-410A-B15C-A96D5DED35A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.FdiReferenceHost</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.FdiReferenceHost</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <projectdefaultrepository>a2ea95bf-6784-4b0b-9637-0503f99f94eb</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\HostApplication\FDI\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\HostApplication\FDI\EH.PCPS.TestAutomation.FdiReferenceHost.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\ReleaseBin\Release\HostApplication\FDI\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\HostApplication\FDI\EH.PCPS.TestAutomation.FdiReferenceHost.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\GetDtmContainerPath.cs">
+      <id>ade4706b-2687-4c99-a5fd-9d91fee02a1c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\MainView\Execution\GetDtmContainerPath.cs">
+      <id>5ac974e4-d227-4763-8bc9-4b4ffcc35e77</id>
+    </Compile>
+    <Compile Include="GUI\ApplicationArea\MainView\DTMContainer.cs">
+      <id>cfa1c990-b9c4-487c-9300-61ecfc7e1af6</id>
+      <BoundTo>a2ea95bf-6784-4b0b-9637-0503f99f94eb</BoundTo>
+      <DependentUpon>DTMContainer.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>059c8ed4-6fb4-4399-ac9d-ce7a2ed8ff65</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{F50A421E-F8FB-49BD-BB83-3CAE985C4FD1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\HostApplicationLoader\EH.PCPS.TestAutomation.HostApplicationLoader.csproj">
+      <Project>{CF6B82E1-2E16-4978-85D2-79E36F69C39B}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="GUI\ApplicationArea\MainView\DTMContainer.rximg">
+      <BoundTo>a2ea95bf-6784-4b0b-9637-0503f99f94eb</BoundTo>
+      <DependentUpon>DTMContainer.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a9be9e61-471a-4a6d-9459-6fe6f2f1a3d0</id>
+    </None>
+    <None Include="GUI\ApplicationArea\MainView\DTMContainer.rxrep">
+      <id>a2ea95bf-6784-4b0b-9637-0503f99f94eb</id>
+      <repoid>1e40a554-3682-4586-b7c6-936c392b4272</repoid>
+      <reporootid>8ef118e6-8b88-42b7-8080-2f46179bb0cb</reporootid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

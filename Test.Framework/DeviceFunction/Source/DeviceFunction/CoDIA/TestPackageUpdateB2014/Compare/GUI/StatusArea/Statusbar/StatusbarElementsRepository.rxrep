@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="StatusbarElementsRepository"
+id="15479da1-e1a5-4aaa-ae8b-218b523fe682"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateB2014.Compare.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="0bfcede5-4dc0-4506-8922-81cb86f7a072"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="txtConnectionState"
+		id="f2767c64-163b-4f7f-b9a4-81d3d59bad81"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="2e5695a9-f374-40d3-a070-1a2a88452513">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmStatusBar']//text[@childindex='0']
+		</item>
+		<item
+		name="ComparisonOfDataSets"
+		id="d4cdb8e7-b986-40ec-a9d8-bdd3426821a9"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="7c550ddc-601c-4cb9-b3cb-82dd06b801ff">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmStatusBar']//button[@accessiblename='Comparison of data sets']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

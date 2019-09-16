@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="1d7f37df-b503-4f65-8749-67170ade20d4"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		OpenTMT182
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenTMT182"
+	namespace="EH.PCPS.TestAutomation.DeviceCare.V10300.Functions.ApplicationArea.Page_ScanResult.Execution"/>
+	<variables/>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="cd5a169b-2914-4735-bde3-5317908c4e6e"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="0"
+		sy="0"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RepositoryEditor"
+			id="4308b61f-ac93-4e61-bfb1-61bd3257a88b">
+				<path>
+					/form[@automationid='me']/element[@automationid='scanResult']/button[2]
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="HARTCommDTM"
+	id="61bf976c-f6ed-46b0-a7e0-2287039f1e74"
+	rxversion="6.1"
+	relativepath="..\..\..\..\GUI\HARTCommDTM.rxrep">
+		<codegen
+		classname="HARTCommDTM"
+		namespace="EH.PCPS.TestAutomation.DeviceCare.V10300.GUI"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="a87b7634-c3b0-4654-ad19-32fb907ead9e"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenTMT182.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\..\..\..\..\..\Common\trunk\CommonCodeModules\bin\Debug\CommonCodeModules.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\..\..\..\Common\trunk\CommonCodeModules\bin\Debug\CommonMethods.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TM_DTMs\bin\Debug\TM_DTMs.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TC_DeviceCare\bin\Debug\TC_DeviceCare.exe
+		</reference>
+	</references>
+</recordtable>

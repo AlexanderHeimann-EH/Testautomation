@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryViscosity</DisplayName>
+      <Guid>58a04557-197d-4b98-868e-b73aca08763c</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryViscosity</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Activate Open Prepare Calculate Check Compare</DisplayName>
+          <Guid>b81fac1c-e0cd-4f44-851d-45951df25736</Guid>
+          <IsActive>false</IsActive>
+          <Name>Activate Open Prepare Calculate Check Compare</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Activates the software option for Viscosity using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:
+
+Param:
+The software option code.</Description>
+              <DisplayName>Viscosity.TC_ActivateViscositySoftwareOption.Run</DisplayName>
+              <Guid>3c1ba76c-a6bb-42d1-9a78-8e32d24abe7c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter, softwareOptionCode)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Activates the software option for Viscosity using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:
+
+Param:
+The software option code.</ToolTip>
+              <AssemblyMethodRefId>19b9922b-834f-4bdb-9ff4-4497a4807e2f</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The software option code.</Description>
+                  <Name>softwareOptionCode</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Module Viscosity when the device is online</Description>
+              <DisplayName>Viscosity.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>47898022-1850-4367-b18e-14416236d030</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Module Viscosity when the device is online</ToolTip>
+              <AssemblyMethodRefId>7ea8c739-d54d-44d3-8e3f-70586abf75c1</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Sets all table values provided from a string.E.g. 5.5;5.4;5.6;5.7
+
+Param:
+The input values.</Description>
+              <DisplayName>Viscosity.TC_SetTableValue.Run</DisplayName>
+              <Guid>2db99b5f-7472-4f4b-897d-6a1b01631e41</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(inputValues)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Sets all table values provided from a string.E.g. 5.5;5.4;5.6;5.7
+
+Param:
+The input values.</ToolTip>
+              <AssemblyMethodRefId>FEFE37A5-1088-4EB7-A8A0-2EBD5187B6EE</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The input values.</Description>
+                  <Name>inputValues</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>10;2;2;3;3;4;4;5;5;6;6;7</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Configures the parameter of the tab Fluid Properties.
+
+Param:
+The dynamic viscosity unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The temperature unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The reference temperature. Use string.empty if you want to skip this parameter.
+
+Param:
+The first column. Use string.empty if you want to skip this parameter.
+
+Param:
+The second column. Use string.empty if you want to skip this parameter.</Description>
+              <DisplayName>Viscosity.TC_ConfigureFluidPropertiesParameter.Run</DisplayName>
+              <Guid>b8949959-3fc9-4588-b809-2a5c7afad234</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(dynamicViscosityUnit, temperatureUnit, referenceTemperature, firstColumn, secondColumn)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Configures the parameter of the tab Fluid Properties.
+
+Param:
+The dynamic viscosity unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The temperature unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The reference temperature. Use string.empty if you want to skip this parameter.
+
+Param:
+The first column. Use string.empty if you want to skip this parameter.
+
+Param:
+The second column. Use string.empty if you want to skip this parameter.</ToolTip>
+              <AssemblyMethodRefId>c7f8d99e-e779-44ac-82a4-51138fff008c</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The dynamic viscosity unit. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>dynamicViscosityUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>cP</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature unit. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>temperatureUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>°C</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The reference temperature. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>referenceTemperature</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>5.00</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The first column. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>firstColumn</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The second column. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>secondColumn</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Calculates the Viscosity parameter</Description>
+              <DisplayName>Viscosity.TC_Calculate.Run</DisplayName>
+              <Guid>3394ecf6-77f4-4103-a027-f2f5bb5ed4db</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Calculates the Viscosity parameter</ToolTip>
+              <AssemblyMethodRefId>585a7c06-4d5e-420b-9466-b4f6521110e3</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens tab Fluid Properties and checks whether Reference viscosity represents a float value.
+            Then opens tab Results and checks whether Calculation Model, Coefficient X1, Coefficient X2 and Reference Temperature have valid values.
+            Finally opens tab Analysis and makes a screenshot of the module</Description>
+              <DisplayName>Viscosity.TC_CheckResultsAfterCalculation.Run</DisplayName>
+              <Guid>26c0e4e8-d465-427f-964c-447d71fcf719</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens tab Fluid Properties and checks whether Reference viscosity represents a float value.
+            Then opens tab Results and checks whether Calculation Model, Coefficient X1, Coefficient X2 and Reference Temperature have valid values.
+            Finally opens tab Analysis and makes a screenshot of the module</ToolTip>
+              <AssemblyMethodRefId>39878ed6-f6ce-40ee-bc1c-70c2407fb0d6</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares the compensation coefficients from the Results tab with values provided by the user.
+
+Param:
+Maximum allowed difference between two coefficients.
+
+Param:
+Value to compare the coefficient x1 with.
+
+Param:
+Value to compare the coefficient x2 with.</Description>
+              <DisplayName>Viscosity.TC_CompareCoefficients.Run</DisplayName>
+              <Guid>dd838712-231a-4145-a5bf-05c2a478b6d4</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(accuracy, expectedValueForX1, expectedValueForX2)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares the compensation coefficients from the Results tab with values provided by the user.
+
+Param:
+Maximum allowed difference between two coefficients.
+
+Param:
+Value to compare the coefficient x1 with.
+
+Param:
+Value to compare the coefficient x2 with.</ToolTip>
+              <AssemblyMethodRefId>d058c26c-ec1e-4d5a-bcbc-662294839b03</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>Maximum allowed difference between two coefficients.</Description>
+                  <Name>accuracy</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0.001</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Value to compare the coefficient x1 with.</Description>
+                  <Name>expectedValueForX1</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>-0.0908</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Value to compare the coefficient x2 with.</Description>
+                  <Name>expectedValueForX2</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0.0913</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Write Export Close</DisplayName>
+          <Guid>749bd125-cd21-4b5e-a321-a90746ee087c</Guid>
+          <IsActive>false</IsActive>
+          <Name>Write Export Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Writes VISCOSITY values to the device.
+
+Param:
+set to true if software option is enabled.</Description>
+              <DisplayName>Viscosity.TC_WriteValuesToDevice.Run</DisplayName>
+              <Guid>0adb6d43-e59a-43d1-961f-643ffb46deb9</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(isSoftwareOptionEnabled)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Writes VISCOSITY values to the device.
+
+Param:
+set to true if software option is enabled.</ToolTip>
+              <AssemblyMethodRefId>2b626aec-c33e-4363-a255-2497753574b2</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>set to true if software option is enabled.</Description>
+                  <Name>isSoftwareOptionEnabled</Name>
+                  <ParameterType>System.Boolean</ParameterType>
+                  <ParameterValue>true</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports Viscosity data</Description>
+              <DisplayName>Viscosity.TC_Export.Run</DisplayName>
+              <Guid>44ac902c-f632-4588-a8e7-989aee6e2be0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports Viscosity data</ToolTip>
+              <AssemblyMethodRefId>DAFD15DE-8A76-4AD3-8F42-15D141851F98</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Viscosity.</Description>
+              <DisplayName>Viscosity.TC_CloseModule.Run</DisplayName>
+              <Guid>bd4450c1-7c80-4ff8-b8ee-039bff43e5a4</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Viscosity.</ToolTip>
+              <AssemblyMethodRefId>b4462567-f517-49af-b57d-8c6326650036</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Import</DisplayName>
+          <Guid>722689ca-1be5-4752-a360-2a96c8d913f5</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Import</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the Module Viscosity when the device is online</Description>
+              <DisplayName>Viscosity.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>dcbc9223-3a26-47ea-8cfa-9a9aa1d1ca00</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the Module Viscosity when the device is online</ToolTip>
+              <AssemblyMethodRefId>7ea8c739-d54d-44d3-8e3f-70586abf75c1</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Imports a VISCOSITY file.</Description>
+              <DisplayName>Viscosity.TC_Import.Run</DisplayName>
+              <Guid>ae318445-2835-4ffe-bb60-82cd3b5a0ced</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Imports a VISCOSITY file.</ToolTip>
+              <AssemblyMethodRefId>A5E67E52-A368-41B2-BA0E-7743CED11106</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Configure Calculate Check Compare</DisplayName>
+          <Guid>d982cfe5-8f75-462c-bf97-db32e9052de0</Guid>
+          <IsActive>false</IsActive>
+          <Name>Configure Calculate Check Compare</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Configures the parameter of the tab Fluid Properties.
+
+Param:
+The dynamic viscosity unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The temperature unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The reference temperature. Use string.empty if you want to skip this parameter.
+
+Param:
+The first column. Use string.empty if you want to skip this parameter.
+
+Param:
+The second column. Use string.empty if you want to skip this parameter.</Description>
+              <DisplayName>Viscosity.TC_ConfigureFluidPropertiesParameter.Run</DisplayName>
+              <Guid>f8d64ddd-6935-4e4d-9e56-a1862d6e41a5</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(dynamicViscosityUnit, temperatureUnit, referenceTemperature, firstColumn, secondColumn)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Configures the parameter of the tab Fluid Properties.
+
+Param:
+The dynamic viscosity unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The temperature unit. Use string.empty if you want to skip this parameter.
+
+Param:
+The reference temperature. Use string.empty if you want to skip this parameter.
+
+Param:
+The first column. Use string.empty if you want to skip this parameter.
+
+Param:
+The second column. Use string.empty if you want to skip this parameter.</ToolTip>
+              <AssemblyMethodRefId>c7f8d99e-e779-44ac-82a4-51138fff008c</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The dynamic viscosity unit. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>dynamicViscosityUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>cP</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature unit. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>temperatureUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>°C</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The reference temperature. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>referenceTemperature</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>5.00</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The first column. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>firstColumn</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The second column. Use string.empty if you want to skip this parameter.</Description>
+                  <Name>secondColumn</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue />
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Calculates the Viscosity parameter</Description>
+              <DisplayName>Viscosity.TC_Calculate.Run</DisplayName>
+              <Guid>9f7c381c-e1f1-474f-ba91-9da248d16cc6</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Calculates the Viscosity parameter</ToolTip>
+              <AssemblyMethodRefId>585a7c06-4d5e-420b-9466-b4f6521110e3</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens tab Fluid Properties and checks whether Reference viscosity represents a float value.
+            Then opens tab Results and checks whether Calculation Model, Coefficient X1, Coefficient X2 and Reference Temperature have valid values.
+            Finally opens tab Analysis and makes a screenshot of the module</Description>
+              <DisplayName>Viscosity.TC_CheckResultsAfterCalculation.Run</DisplayName>
+              <Guid>34caeb41-5866-4ecd-9318-0cbc125a5ae0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens tab Fluid Properties and checks whether Reference viscosity represents a float value.
+            Then opens tab Results and checks whether Calculation Model, Coefficient X1, Coefficient X2 and Reference Temperature have valid values.
+            Finally opens tab Analysis and makes a screenshot of the module</ToolTip>
+              <AssemblyMethodRefId>39878ed6-f6ce-40ee-bc1c-70c2407fb0d6</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares the compensation coefficients from the Results tab with values provided by the user.
+
+Param:
+Maximum allowed difference between two coefficients.
+
+Param:
+Value to compare the coefficient x1 with.
+
+Param:
+Value to compare the coefficient x2 with.</Description>
+              <DisplayName>Viscosity.TC_CompareCoefficients.Run</DisplayName>
+              <Guid>99de364d-3176-4b06-a433-040817d8e086</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(accuracy, expectedValueForX1, expectedValueForX2)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares the compensation coefficients from the Results tab with values provided by the user.
+
+Param:
+Maximum allowed difference between two coefficients.
+
+Param:
+Value to compare the coefficient x1 with.
+
+Param:
+Value to compare the coefficient x2 with.</ToolTip>
+              <AssemblyMethodRefId>d058c26c-ec1e-4d5a-bcbc-662294839b03</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>Maximum allowed difference between two coefficients.</Description>
+                  <Name>accuracy</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0.001</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Value to compare the coefficient x1 with.</Description>
+                  <Name>expectedValueForX1</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>-0.0908</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Value to compare the coefficient x2 with.</Description>
+                  <Name>expectedValueForX2</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0.0913</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close Check</DisplayName>
+          <Guid>3a34313b-8405-4ab1-98a9-87295566266b</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Viscosity.</Description>
+              <DisplayName>Viscosity.TC_CloseModule.Run</DisplayName>
+              <Guid>d1952f6b-1a02-4eca-b7f0-24e7da41ba2f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Viscosity.</ToolTip>
+              <AssemblyMethodRefId>b4462567-f517-49af-b57d-8c6326650036</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>eb6afd8d-8b91-435c-a89b-16616e6b147d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>NotDefined</TestCategory>
+      <TestFocus>NotDefined</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile />
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

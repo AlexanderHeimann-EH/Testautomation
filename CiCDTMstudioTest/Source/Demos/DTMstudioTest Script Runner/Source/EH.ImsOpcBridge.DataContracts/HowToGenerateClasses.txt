@@ -1,0 +1,7 @@
+
+How to generate the DataContracts.cs:
+
+ - Enter Visual Studio Command Propmpt from VisualStudio (2010) Tools.
+ - Execute: svcutil DataContracts.xsd /dconly /language:cs /out:DataContracts.cs
+
+Remember to update the DataContracts.Default.cs also, implementing the constructors with default initial data.

@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryHistorom</DisplayName>
+      <Guid>14dd3fff-3024-489d-846f-50200787a9cb</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryHistorom</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Activate Service</DisplayName>
+          <Guid>5aa6adb9-8719-4299-bf1f-cea39071971e</Guid>
+          <IsActive>false</IsActive>
+          <Name>Activate Service</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Sets the device in service mode using the Online Parameterization
+
+Param:
+The path to the access code parameter. Use this form: Promass 100//Expert//Enter access code:
+
+Param:
+The service code for the device.</Description>
+              <DisplayName>Historom.TC_ActivateServiceMode.Run</DisplayName>
+              <Guid>6c6d1809-6191-42c4-af08-5bfbca5c5152</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter, serviceCode)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Sets the device in service mode using the Online Parameterization
+
+Param:
+The path to the access code parameter. Use this form: Promass 100//Expert//Enter access code:
+
+Param:
+The service code for the device.</ToolTip>
+              <AssemblyMethodRefId>f48724f1-9601-4237-a0c0-56f4c5bb2e63</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the access code parameter. Use this form: Promass 100//Expert//Enter access code:</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The service code for the device.</Description>
+                  <Name>serviceCode</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Read Save</DisplayName>
+          <Guid>705d3c88-6fdf-4684-9496-c690cf4f8f16</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Read Save</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Historom.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>bf691c55-5772-413c-b09e-fcda8e7bc001</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>d9c1aecc-5f0f-45e7-9282-797432614985</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads the events. Checks that there is no critical error afterwards.</Description>
+              <DisplayName>Historom.TC_ReadEvents.Run</DisplayName>
+              <Guid>df83f2c6-5340-4f21-917b-22fefaf3606f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads the events. Checks that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>028d356b-5ece-4fa7-9481-08bcd68a5643</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves Historom data with given filename, replaces already existing files with same filename
+                FILE WATCHER will check if file has been created or modified</Description>
+              <DisplayName>Historom.TC_SaveDataAs.Run</DisplayName>
+              <Guid>6f4a4aac-f421-4d50-81ee-784603873004</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves Historom data with given filename, replaces already existing files with same filename
+                FILE WATCHER will check if file has been created or modified</ToolTip>
+              <AssemblyMethodRefId>B59DB688-6270-412C-93FD-AC2242EA4CB8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Export Delete Load</DisplayName>
+          <Guid>015307c1-8ed3-42ae-b4d5-134723bc939c</Guid>
+          <IsActive>false</IsActive>
+          <Name>Export Delete Load</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports the HistoRom data.</Description>
+              <DisplayName>Historom.TC_ExportHistoRomData.Run</DisplayName>
+              <Guid>0c21972a-2c64-4712-abb9-59cea862cbac</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports the HistoRom data.</ToolTip>
+              <AssemblyMethodRefId>7EDB4AD5-7375-4855-8E4B-E7511805BBF1</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Deletes the HistoRom data via new button. Checks whether the event list and the statistic results are empty afterwards.</Description>
+              <DisplayName>Historom.TC_DeleteHistoromData.Run</DisplayName>
+              <Guid>0ebe3cbb-c2e3-42da-b7a8-20845990e911</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Deletes the HistoRom data via new button. Checks whether the event list and the statistic results are empty afterwards.</ToolTip>
+              <AssemblyMethodRefId>7ccf8d11-3c0c-4a0c-bcc8-8f26d8fa928e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens a HistoRom file and checks whether statistic results and the event list contain values afterwards.</Description>
+              <DisplayName>Historom.TC_OpenFile.Run</DisplayName>
+              <Guid>9c4978d5-3819-4120-9f92-8f1a8be60d17</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens a HistoRom file and checks whether statistic results and the event list contain values afterwards.</ToolTip>
+              <AssemblyMethodRefId>79DB268E-A43D-4A74-884D-3C5DB478D520</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Switch Tab Assign Channel Read</DisplayName>
+          <Guid>7c34179e-e89e-4404-aabb-3c82971b38ec</Guid>
+          <IsActive>false</IsActive>
+          <Name>Switch Tab Assign Channel Read</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Switches slowly through all tabs</Description>
+              <DisplayName>Historom.TC_SwitchTabs.Run</DisplayName>
+              <Guid>de5d7960-0250-4cb3-828d-223d589da193</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Switches slowly through all tabs</ToolTip>
+              <AssemblyMethodRefId>b9ae9704-73e6-460d-bf2f-67cd45d64c9f</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Assigns the channels in settings tab randomly</Description>
+              <DisplayName>Historom.TC_AssignChannelsRandomly.Run</DisplayName>
+              <Guid>741771a3-5e52-4e5f-9298-3957730b7d1c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Assigns the channels in settings tab randomly</ToolTip>
+              <AssemblyMethodRefId>64a231d5-4fad-492e-9651-e931b93d5d0a</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads the events. Checks that there is no critical error afterwards.</Description>
+              <DisplayName>Historom.TC_ReadEvents.Run</DisplayName>
+              <Guid>aa3f06df-2f2b-4cf4-9bdf-2cf99cc60850</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads the events. Checks that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>028d356b-5ece-4fa7-9481-08bcd68a5643</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Configure Read Check</DisplayName>
+          <Guid>6de930e3-59f8-48b7-ac11-b16a31eb69b8</Guid>
+          <IsActive>false</IsActive>
+          <Name>Configure Read Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Configures the HistoRom settings found in the tab Settings.
+
+Param:
+Assignment for channel1. Use string.empty if you do not want to modify this parameter.
+
+Param:
+Assignment for channel2.Use string.empty if you do not want to modify this parameter.
+
+Param:
+Assignment for channel3.Use string.empty if you do not want to modify this parameter.
+
+Param:
+Assignment for channel4.Use string.empty if you do not want to modify this parameter.
+
+Param:
+The logging interval.Use string.empty if you do not want to modify this parameter.
+
+Param:
+Clear logging data.Use string.empty if you do not want to modify this parameter.</Description>
+              <DisplayName>Historom.TC_ConfigureSettings.Run</DisplayName>
+              <Guid>9de2647c-8f61-4e25-9ac9-79d63a6fb35c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(assignChannel1, assignChannel2, assignChannel3, assignChannel4, loggingInterval, clearLoggingData)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Configures the HistoRom settings found in the tab Settings.
+
+Param:
+Assignment for channel1. Use string.empty if you do not want to modify this parameter.
+
+Param:
+Assignment for channel2.Use string.empty if you do not want to modify this parameter.
+
+Param:
+Assignment for channel3.Use string.empty if you do not want to modify this parameter.
+
+Param:
+Assignment for channel4.Use string.empty if you do not want to modify this parameter.
+
+Param:
+The logging interval.Use string.empty if you do not want to modify this parameter.
+
+Param:
+Clear logging data.Use string.empty if you do not want to modify this parameter.</ToolTip>
+              <AssemblyMethodRefId>374efc0b-bb8b-4c7f-b9ba-53ca99990b42</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>Assignment for channel1. Use string.empty if you do not want to modify this parameter.</Description>
+                  <Name>assignChannel1</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Off</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Assignment for channel2.Use string.empty if you do not want to modify this parameter.</Description>
+                  <Name>assignChannel2</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Off</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Assignment for channel3.Use string.empty if you do not want to modify this parameter.</Description>
+                  <Name>assignChannel3</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Off</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Assignment for channel4.Use string.empty if you do not want to modify this parameter.</Description>
+                  <Name>assignChannel4</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Off</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The logging interval.Use string.empty if you do not want to modify this parameter.</Description>
+                  <Name>loggingInterval</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>Clear logging data.Use string.empty if you do not want to modify this parameter.</Description>
+                  <Name>clearLoggingData</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads the events. Checks that there is no critical error afterwards.</Description>
+              <DisplayName>Historom.TC_ReadEvents.Run</DisplayName>
+              <Guid>0adf9346-6f93-47ac-b9de-1ba06861b00b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads the events. Checks that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>028d356b-5ece-4fa7-9481-08bcd68a5643</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks whether the Historom module info message contains a specified string
+
+Param:
+The value.</Description>
+              <DisplayName>Historom.TC_CheckHistoromInfoMessage.Run</DisplayName>
+              <Guid>3d9d5f71-155b-40be-8d67-20538c70b361</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(value)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks whether the Historom module info message contains a specified string
+
+Param:
+The value.</ToolTip>
+              <AssemblyMethodRefId>4587bef6-9762-4a75-9f88-46e7142a92a8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The value.</Description>
+                  <Name>value</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>All channels are disabled</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close Check</DisplayName>
+          <Guid>e1302380-3d95-478e-8e4f-f682e056c32d</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module.</Description>
+              <DisplayName>Historom.TC_CloseModule.Run</DisplayName>
+              <Guid>a8927e73-edcb-44a1-85cb-4faeb6f5bb0a</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module.</ToolTip>
+              <AssemblyMethodRefId>ec9e4551-e8cb-49f7-92da-3c859b51579e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>6e8266cf-4922-430e-b695-756b751023b9</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Activate Maintenance</DisplayName>
+          <Guid>c168bc3b-d741-48fe-9bb7-ee9f5d578f58</Guid>
+          <IsActive>false</IsActive>
+          <Name>Activate Maintenance</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Sets the device in maintenance mode using the Online Parameterization
+
+Param:
+The path to the access code parameter. Use this form: Promass 100//Expert//Enter access code:</Description>
+              <DisplayName>Historom.TC_ActivateMaintenanceMode.Run</DisplayName>
+              <Guid>2bd5351c-2483-4673-bd7f-cbf1a748b338</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Sets the device in maintenance mode using the Online Parameterization
+
+Param:
+The path to the access code parameter. Use this form: Promass 100//Expert//Enter access code:</ToolTip>
+              <AssemblyMethodRefId>5ebe05b9-ba01-44cd-8b5e-6f9b3c4032c2</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the access code parameter. Use this form: Promass 100//Expert//Enter access code:</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>NotDefined</TestCategory>
+      <TestFocus>NotDefined</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ranorex.Plugin.WinForms</name>
+    </assembly>
+    <members>
+        <member name="T:Ranorex.Control">
+            <summary>
+            Capability of a .NET Windows Forms control.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Control.Item(System.String)">
+            <summary>
+            Gets or sets the (serializable) value of the specified control property.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <value>The value of the property.</value>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+            <remarks>The getter of this property calls the <see cref="M:Ranorex.Control.GetPropertyValue(System.String)"/> method,
+            the setter calls the <see cref="M:Ranorex.Control.SetPropertyValue(System.String,System.Object)"/> method.</remarks>
+        </member>
+        <member name="M:Ranorex.Control.GetPropertyValue``1(System.String)">
+            <summary>
+            Gets the (serializable) value of the specified control property.
+            </summary>
+            <typeparam name="T">The type of the property to get the value from.</typeparam>
+            <param name="name">The name of the property.</param>
+            <returns>The value of the named property or the default value of the specified
+            type if the returned value is <c>null</c> and the specified type is a value type.</returns>
+            <exception cref="T:System.InvalidCastException">If the returned value cannot be casted
+            to the specified type.</exception>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.GetPropertyValue``1(System.Reflection.BindingFlags,System.String)">
+            <summary>
+            Gets the (serializable) value of the specified control property.
+            </summary>
+            <typeparam name="T">The type of the property to get the value from.</typeparam>
+            <param name="flags">A combination of flags that further specify which property to get.</param>
+            <param name="name">The name of the property.</param>
+            <returns>The value of the named property or the default value of the specified
+            type if the returned value is <c>null</c> and the specified type is a value type.</returns>
+            <exception cref="T:System.InvalidCastException">If the returned value cannot be casted
+            to the specified type.</exception>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.GetPropertyValue(System.String)">
+            <summary>
+            Gets the (serializable) value of the specified control property.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <returns>The value of the property.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.SetPropertyValue(System.String,System.Object)">
+            <summary>
+            Sets the (serializable) value of the specified control property.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="value">The value (must be serializable) to set the property to.</param>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeMethod(System.String)">
+            <summary>
+            Invokes the specified method on the control.
+            </summary>
+            <param name="name">The name of the method to invoke.</param>
+            <returns>The (serializable) return value of the invoked method.</returns>
+            <remarks>
+            Use this method to invoke public instance methods without arguments on a control.
+            </remarks>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeMethod(System.String,System.Object[])">
+            <summary>
+            Invokes the specified method on the control. All parameters need to be serializable.
+            </summary>
+            <param name="name">The name of the method to invoke.</param>
+            <param name="args">The (serializable) values passed as parameters to the method.</param>
+            <returns>The (serializable) return value of the invoked method.</returns>
+            <remarks>
+            Use this method to invoke public instance methods on a control.
+            </remarks>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeMethod(System.Reflection.BindingFlags,System.String,System.Object[])">
+            <summary>
+            Invokes the specified method on the control. All parameters and the return value need to be serializable.
+            </summary>
+            <param name="flags">A combination of flags that further specify which method to invoke.</param>
+            <param name="name">The name of the method to invoke.</param>
+            <param name="args">The (serializable) values passed as parameters to the method.</param>
+            <returns>The (serializable) return value of the invoked method.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeRemotely(Ranorex.RemotelyInvokedDelegate)">
+            <summary>
+            Invokes the delegate remotely at the control. All parameters and the return value need to be serializable.
+            </summary>
+            <param name="deleg">The delegate to invoke at the remote control.</param>
+            <returns>The (serializable) return value of the remotely invoked delegate.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeRemotely(Ranorex.RemotelyInvokedDelegate,System.Object)">
+            <summary>
+            Invokes the delegate remotely at the control. All parameters and the return value need to be serializable.
+            </summary>
+            <param name="deleg">The delegate to invoke at the remote control.</param>
+            <param name="inputData">The (serializable) input data passed to the delegate at the remote control.</param>
+            <returns>The (serializable) return value of the remotely invoked delegate.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.Control"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.Control.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.Control"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.Control.Name">
+            <summary>
+            The name of the Windows Forms control.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Control.Text">
+            <summary>
+            The text of the Windows Forms control.
+            </summary>
+            <exception cref="T:Ranorex.SetAttributeFailedException">Thrown if setting the attribute value failed.</exception>
+        </member>
+        <member name="P:Ranorex.Control.Type">
+            <summary>
+            The full type name of the Windows Forms control.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Control.TypeName">
+            <summary>
+            The (short) type name of the Windows Forms control.
+            </summary>
+        </member>
+        <member name="M:Ranorex.Control.GetPropertyValue(System.Reflection.BindingFlags,System.String)">
+            <summary>
+            Gets the (serializable) value of the specified control property.
+            </summary>
+            <param name="flags">A combination of flags that further specify which property to get.</param>
+            <param name="name">The name of the property.</param>
+            <returns>The value of the property.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeMethod(System.Reflection.BindingFlags,System.String,System.Object[],Ranorex.Duration)">
+            <summary>
+            Invokes the specified method on the control. All parameters and the return value need to be serializable.
+            </summary>
+            <param name="flags">A combination of flags that further specify which method to invoke.</param>
+            <param name="name">The name of the method to invoke.</param>
+            <param name="args">The (serializable) values passed as parameters to the method.</param>
+            <param name="timeout">The timeout for this action. The action will return after the timeout even if the method has not yet finished executing.</param>
+            <returns>The (serializable) return value of the invoked method.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.InvokeRemotely(Ranorex.RemotelyInvokedDelegate,System.Object,Ranorex.Duration)">
+            <summary>
+            Invokes the delegate remotely at the control. All parameters and the return value need to be serializable.
+            </summary>
+            <param name="deleg">The delegate to invoke at the remote control.</param>
+            <param name="inputData">The (serializable) input data passed to the delegate at the remote control.</param>
+            <param name="timeout">The timeout for this action. The action will return after the timeout even if the delegate has not yet finished executing.</param>
+            <returns>The (serializable) return value of the remotely invoked delegate.</returns>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.Control.SetPropertyValue(System.Reflection.BindingFlags,System.String,System.Object)">
+            <summary>
+            Sets the (serializable) value of the specified control property.
+            </summary>
+            <param name="flags">A combination of flags that further specify which property to set.</param>
+            <param name="name">The name of the property.</param>
+            <param name="value">The value (must be serializable) to set the property to.</param>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.Control.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.Control.op_Implicit(System.String)~Ranorex.Control">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The Control.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.Control.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The Control.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.Control.op_Implicit(Ranorex.Core.Element)~Ranorex.Control">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The Control.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.Control.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The Control.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.ControlNet11">
+            <summary>
+            Capability of a .NET 1.1 Windows Forms control.
+            </summary>
+        </member>
+        <member name="M:Ranorex.ControlNet11.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.ControlNet11"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.ControlNet11.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.ControlNet11"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.ControlNet11.ControlName">
+            <summary>
+            The name of the Windows Forms control.
+            </summary>
+        </member>
+        <member name="P:Ranorex.ControlNet11.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.ControlNet11.op_Implicit(System.String)~Ranorex.ControlNet11">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The ControlNet11.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.ControlNet11.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The ControlNet11.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.ControlNet11.op_Implicit(Ranorex.Core.Element)~Ranorex.ControlNet11">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The ControlNet11.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.ControlNet11.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The ControlNet11.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.RemotelyInvokedDelegate">
+            <summary>
+            Delegate for the <see cref="M:Ranorex.Control.InvokeRemotely(Ranorex.RemotelyInvokedDelegate)"/> method with input data.
+            </summary>
+            <param name="control">The remote <see cref="T:System.Windows.Forms.Control"/> on which
+            the <see cref="M:Ranorex.Control.InvokeRemotely(Ranorex.RemotelyInvokedDelegate)"/> method is called.</param>
+            <param name="inputData">(Serializable) data as additional input for the delegate.</param>
+            <returns>A serializable object.</returns>
+        </member>
+        <member name="T:Ranorex.Plugin.WinFormsCapIcons">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.WinFormsCapIcons.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.WinFormsCapIcons.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.WinFormsCapIcons.WinForm">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Ranorex.Plugin.WinFormsFlavor">
+            <summary>
+            The flavor for .NET Windows Forms support.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.WinFormsFlavor.Instance">
+            <summary>
+            Gets the local instance of this flavor.
+            </summary>
+        </member>
+    </members>
+</doc>

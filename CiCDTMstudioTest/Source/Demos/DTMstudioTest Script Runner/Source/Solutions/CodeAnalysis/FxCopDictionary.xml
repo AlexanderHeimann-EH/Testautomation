@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>app</Word>
+      <Word>appender</Word>
+      <Word>ascii</Word>
+      <Word>asterix</Word>
+      <Word>bar</Word>
+      <Word>comm</Word>
+      <Word>dataset</Word>
+      <Word>db</Word>
+      <Word>dir</Word>
+      <Word>dpv</Word>
+      <Word>dtm</Word>
+      <Word>dtms</Word>
+      <Word>endress</Word>
+      <Word>exp</Word>
+      <Word>enp</Word>
+      <Word>fc</Word>
+      <Word>fieldbus</Word>
+      <Word>gui</Word>
+      <Word>hart</Word>
+      <Word>http://</Word>
+      <Word>ident</Word>
+      <Word>infos</Word>
+      <Word>param</Word>
+      <Word>prov</Word>
+      <Word>realtime</Word>
+      <Word>sub</Word>
+      <Word>tcpip</Word>
+      <Word>Ims</Word>
+      <Word>Opc</Word>
+      <Word>opc</Word>
+      <Word>ims</Word>
+      <Word>Endress</Word>
+      <Word>ImsOpcBridge</Word>
+      <Word>Test</Word>
+      <Word>Ims</Word>      
+    </Recognized>
+    <Unrecognized />
+    <Deprecated />
+    <Compound />
+    <DiscreteExceptions />
+  </Words>
+  <Acronyms>
+    <CasingExceptions />
+  </Acronyms>
+</Dictionary>

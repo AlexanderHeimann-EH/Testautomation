@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 6.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EH.PCPS.TestAutomation.DeviceCare.V10300", "EH.PCPS.TestAutomation.DeviceCare.V10300.csproj", "{4EE05512-2511-45B6-AEF9-006BC1AC9F32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EE05512-2511-45B6-AEF9-006BC1AC9F32}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{4EE05512-2511-45B6-AEF9-006BC1AC9F32}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{4EE05512-2511-45B6-AEF9-006BC1AC9F32}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{4EE05512-2511-45B6-AEF9-006BC1AC9F32}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\EH.PCPS.TestAutomation.CommunicationInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\EH.PCPS.TestAutomation.CommunicationInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationInterfaces\obj\Release\EH.PCPS.TestAutomation.CommunicationInterfaces.dll

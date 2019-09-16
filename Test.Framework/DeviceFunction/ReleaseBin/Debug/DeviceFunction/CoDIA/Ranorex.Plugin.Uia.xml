@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ranorex.Plugin.Uia</name>
+    </assembly>
+    <members>
+        <member name="T:Ranorex.UIAutomation">
+            <summary>
+            Capability of an UI AutomationElement.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.AutomationElement">
+            <summary>
+            The internal <see cref="P:Ranorex.UIAutomation.AutomationElement"/> used to communicate with this
+            UI element.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomation.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomation"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomation.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomation"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomation.AcceleratorKey">
+            <summary>
+            The accelerator key combination of the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.AccessKey">
+            <summary>
+            The access key character of the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.AutomationId">
+            <summary>
+            The UI automation identifier of the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.ClassName">
+            <summary>
+            The class name of the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.ControlType">
+            <summary>
+            The control type of the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.FrameworkId">
+            <summary>
+            The name of the underlying UI framework.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.HelpText">
+            <summary>
+            The help text associated with the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.IsContentElement">
+            <summary>
+            A value that specifies whether the element is a content element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.IsControlElement">
+            <summary>
+            A value that indicates whether the element is viewed as a control.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.IsKeyboardFocusable">
+            <summary>
+            A value that indicates whether the element can accept keyboard focus.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.IsPassword">
+            <summary>
+            A value that indicates whether the element contains protected content.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.IsRequiredForForm">
+            <summary>
+            A value that indicates whether the element is required to be filled out on a form.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.ItemStatus">
+            <summary>
+            A description of the status of an item within an element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.ItemType">
+            <summary>
+            A description of the type of an item.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.LocalizedControlType">
+            <summary>
+            A description of the control type.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.Name">
+            <summary>
+            The name of the element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.NativeWindowHandle">
+            <summary>
+            The handle of the element's window.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.Orientation">
+            <summary>
+            The orientation of the control.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.ProcessId">
+            <summary>
+            The process identifier (ID) of this element.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomation.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomation.op_Implicit(System.String)~Ranorex.UIAutomation">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomation.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomation.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomation.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomation.op_Implicit(Ranorex.Core.Element)~Ranorex.UIAutomation">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomation.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomation.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomation.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.UIAutomationInvoke">
+            <summary>
+            Capability for the UIA Invoke pattern.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationInvoke"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationInvoke"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.Invoke">
+            <summary>
+            Sends a request to the element to initiate its action.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationInvoke.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.op_Implicit(System.String)~Ranorex.UIAutomationInvoke">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationInvoke.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationInvoke.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.op_Implicit(Ranorex.Core.Element)~Ranorex.UIAutomationInvoke">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationInvoke.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationInvoke.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationInvoke.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.UIAutomationRangeValue">
+            <summary>
+            Capability for the UIA RangeValue pattern.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationRangeValue.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationRangeValue"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationRangeValue.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationRangeValue"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationRangeValue.IsReadOnly">
+            <summary>
+            A value that specifies whether the value attribute is read-only.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomationRangeValue.Value">
+            <summary>
+            The value of the element.
+            </summary>
+            <exception cref="T:Ranorex.SetAttributeFailedException">Thrown if setting the attribute value failed.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationRangeValue.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationRangeValue.op_Implicit(System.String)~Ranorex.UIAutomationRangeValue">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationRangeValue.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationRangeValue.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationRangeValue.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationRangeValue.op_Implicit(Ranorex.Core.Element)~Ranorex.UIAutomationRangeValue">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationRangeValue.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationRangeValue.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationRangeValue.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.UIAutomationToggle">
+            <summary>
+            Capability for the UIA Toggle pattern.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationToggle"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationToggle"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationToggle.ToggleState">
+            <summary>
+            The value of the element.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.Toggle">
+            <summary>
+            Cycles through the toggle states of the element.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationToggle.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.op_Implicit(System.String)~Ranorex.UIAutomationToggle">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationToggle.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationToggle.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.op_Implicit(Ranorex.Core.Element)~Ranorex.UIAutomationToggle">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationToggle.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationToggle.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationToggle.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.UIAutomationValue">
+            <summary>
+            Capability for the UIA Value pattern.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationValue.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationValue"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationValue.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationValue"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationValue.IsReadOnly">
+            <summary>
+            A value that specifies whether the value attribute is read-only.
+            </summary>
+        </member>
+        <member name="P:Ranorex.UIAutomationValue.Value">
+            <summary>
+            The value of the element.
+            </summary>
+            <exception cref="T:Ranorex.SetAttributeFailedException">Thrown if setting the attribute value failed.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationValue.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationValue.op_Implicit(System.String)~Ranorex.UIAutomationValue">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationValue.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationValue.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationValue.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationValue.op_Implicit(Ranorex.Core.Element)~Ranorex.UIAutomationValue">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationValue.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationValue.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationValue.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.UIAutomationVirtualizedItem">
+            <summary>
+            Capability for the UIA VirtualizedItem pattern.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationVirtualizedItem"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.UIAutomationVirtualizedItem"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.Realize">
+            <summary>
+            Realizes the virtual item to make it and its children fully accessible.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.UIAutomationVirtualizedItem.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.op_Implicit(System.String)~Ranorex.UIAutomationVirtualizedItem">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationVirtualizedItem.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The UIAutomationVirtualizedItem.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.op_Implicit(Ranorex.Core.Element)~Ranorex.UIAutomationVirtualizedItem">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationVirtualizedItem.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.UIAutomationVirtualizedItem.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The UIAutomationVirtualizedItem.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.WindowsApp">
+            <summary>
+            Capability for Windows UI apps.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WindowsApp.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WindowsApp"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.WindowsApp.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WindowsApp"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.WindowsApp.AppFamilyName">
+            <summary>
+            The family name of the package the app belongs to.
+            </summary>
+        </member>
+        <member name="P:Ranorex.WindowsApp.AppId">
+            <summary>
+            The ID of the app.
+            </summary>
+        </member>
+        <member name="P:Ranorex.WindowsApp.AppPath">
+            <summary>
+            The location where the app is installed at.
+            </summary>
+        </member>
+        <member name="P:Ranorex.WindowsApp.AppPublisher">
+            <summary>
+            The publisher of the app.
+            </summary>
+        </member>
+        <member name="P:Ranorex.WindowsApp.AppVersion">
+            <summary>
+            The version of the app.
+            </summary>
+        </member>
+        <member name="P:Ranorex.WindowsApp.PackageName">
+            <summary>
+            The name of the package the app belongs to.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WindowsApp.AppDisableDebugging">
+            <summary>
+            Disables the debugging mode for the app package.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="M:Ranorex.WindowsApp.AppEnableDebugging">
+            <summary>
+            Enables the debugging mode for the app package.
+            </summary>
+            <exception cref="T:Ranorex.ActionFailedException">Thrown if invoking the action failed.</exception>
+        </member>
+        <member name="P:Ranorex.WindowsApp.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WindowsApp.op_Implicit(System.String)~Ranorex.WindowsApp">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WindowsApp.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WindowsApp.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WindowsApp.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WindowsApp.op_Implicit(Ranorex.Core.Element)~Ranorex.WindowsApp">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WindowsApp.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WindowsApp.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WindowsApp.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.Plugin.UiaCapIcons">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaCapIcons.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaCapIcons.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaCapIcons.UIAutomation">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaCapIcons.WinApp">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Ranorex.Plugin.UiaFlavor">
+            <summary>
+            The flavor for Windows Presentation Foundation (WPF) support.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.Instance">
+            <summary>
+            Gets the local instance of this flavor.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.IsFrameworkInstalled">
+            <summary>
+            Gets a value whether the UI<see cref="N:System.Windows.Automation"/> framework (i.e. the version 3.0 or higher
+            of the .NET Framework) is installed.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.ExpensiveAttributesEnabled">
+            <summary>
+            Gets or sets a value indicating if computationally expensive attributes are enabled,
+            e.g. <see cref="P:Ranorex.Cell.RowIndex"/>, <see cref="P:Ranorex.Column.Index"/>, or <see cref="P:Ranorex.Row.Index"/>.
+            </summary>
+            <remarks>Setting this value to <c>true</c> will instruct the plugin to evaluate attributes
+            that are expensive to compute and may result in longer delays when getting such
+            attributes. Note that spying an element with such expensive attributes may then take
+            considerable time.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.ForceVirtualItemRealization">
+            <summary>
+            Gets or sets a value indicating if virtual items are realized when trying to get their child elements.
+            </summary>
+            <remarks>Setting this value to <c>true</c> will allow to search lists with virtual items, but realizing may have
+            undesired effects on the list depending on the list implementation
+            e.g. that the list is scrolled to make the realized item visible.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.UseItemContainerPattern">
+            <summary>
+            Gets or sets a value indicating whether to use the ItemContainerPattern to iterate lists.
+            </summary>
+            <remarks>Setting this value to true instructs the plugin to use the ItemContainerPattern to
+            iterate items of virtual lists that implement this UI Automation pattern. Depending on the implementation of the control,
+            iterating children using this pattern should also return items that are currently scrolled out of view,
+            but might also be slower than the usual way to get child elements.
+            <para>Note that switching this setting can render existing RanoreXPaths invalid
+            for controls implementing the ItemContainerPattern.</para></remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.EnableNativeUiaSupport">
+            <summary>
+            Gets or sets a value indicating whether to provide elements for non-WPF windows natively implementing UIA.
+            </summary>
+            <remarks>Setting this value to true instructs the plugin to provide elements also for non-WPF windows which
+            natively implement the UIA interface.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.UseWinAppDebugMode">
+            <summary>
+            Gets or sets a value indicating whether the debugging mode for Windows apps will be enabled.
+            </summary>
+            <remarks>If set to true, the debugging mode for Windows apps will be enabled, causing them to not be suspended
+            until the logon session is closed (user logout). When set to false, the plugin will instead try to resume suspended apps when
+            it needs to access them (possible race condition may cause freeze until app is manually resumed).</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.EnableWinAppFrameFiltering">
+            <summary>
+            Gets or sets a value indicating whether frame filtering for Windows apps is enabled.
+            </summary>
+            <remarks>If set to true, the frames of Windows apps introduced with Windows 10 are filtered and
+            all relevant elements of those frames are displayed as child of the app element. This allows for transparent automation of
+            Windows apps in windowed and full-screen mode.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.UiaFlavor.UseDesktopImageCapture">
+            <summary>
+            Defines whether capturing screenshots from elements of this flavor should use the desktop capturing method.
+            </summary>
+        </member>
+    </members>
+</doc>

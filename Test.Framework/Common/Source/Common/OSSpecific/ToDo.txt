@@ -1,0 +1,1 @@
+﻿OSSpecific muss in die Operating System überführt werden, da diese Funktionen vom Betriebssystem abhängen.

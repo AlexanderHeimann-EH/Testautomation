@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F50A421E-F8FB-49BD-BB83-3CAE985C4FD1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.HostApplicationInterfaces</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.HostApplicationInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.HostApplicationInterfaces.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FDI\FdiReferenceHost\Functions\ApplicationArea\MainView\Execution\IGetDtmContainerPath.cs">
+      <id>15196437-c1d7-4123-9017-ac733af7c488</id>
+    </Compile>
+    <Compile Include="FDT\DeviceCare\Functions\ApplicationArea\MainView\Execution\IGetDtmContainerPath.cs">
+      <id>21f09e02-3fba-40ef-994c-c46499d2dbd6</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Execution\IGetCommDtmContainerPath.cs">
+      <id>40387b9d-3909-4d3d-856f-1ad51654b488</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\CloseProject\Validation\IClosingInProgressDialog.cs">
+      <id>a13d9512-eb4d-49b9-83ce-41e6e45267e3</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\DtmMessages\Validation\IScanDtmMessages.cs">
+      <id>0f2c2da2-30e8-42ca-bf47-6b4eab5f6ac0</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\SaveProjectInProgress\Validation\IValidationMethods.cs">
+      <id>651e0325-5808-4f47-9349-85f44e72a159</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Execution\IIgnoreUpdate.cs">
+      <id>4f02fa1b-6104-4270-8b4b-1790a2c78eef</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Execution\IUpdateCatalog.cs">
+      <id>4d7b583c-a381-45af-a1e5-65ccec72ed4e</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Validation\IValidationMethods.cs">
+      <id>9d974390-3d62-4e93-8010-8da47f8d58fa</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDTMCatalogue\Validation\IValidationMethods.cs">
+      <id>b98bc0ed-024f-4633-b27d-aaaa02f6b099</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenFunction.cs">
+      <id>b0c31355-2604-4ba2-9237-914c3476cdf9</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\ICreateNetwork.cs">
+      <id>ad75dc8b-151d-4bf4-99a3-9344c1b20314</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IFdtDownload.cs">
+      <id>dbd0f6eb-11f5-4265-b683-2e827f343d66</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IFdtPrintAsPdf.cs">
+      <id>39110755-1fd4-4d1a-8f9b-6019f45dfcdc</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IFdtUpload.cs">
+      <id>b7d30368-b030-4167-a2df-24f95149fd9e</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IFocusNetworkView.cs">
+      <id>8ec7af03-1ef3-4aa7-bef0-9c6c6b0c7f53</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IFrameExitWithoutSaving.cs">
+      <id>1a6198a4-91dd-48c1-86c9-eb7a609045d3</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IPrintDeviceInformation.cs">
+      <id>dfd663df-c5bd-448c-aefc-9a5be8874ae1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IProjectClose.cs">
+      <id>24df40de-f7a4-4541-9425-edb582abc41a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IProjectLoad.cs">
+      <id>c9bcb783-3a8e-4008-9a48-0d93f4ea4dbd</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IProjectNewEmpty.cs">
+      <id>346520e1-5670-42e3-b826-2e51e25ed405</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IProjectSave.cs">
+      <id>310be0fe-c1de-46b7-84a5-2ac5901c7704</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IProjectSaveAs.cs">
+      <id>ba4f982f-52a6-4bf6-8662-a121b19345c8</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Execution\IGetDtmContainerPath.cs">
+      <id>2be903c8-7f35-4c74-8c42-de8c51618f6b</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Execution\IStartFrame.cs">
+      <id>c2357d4d-3aa1-43e8-81ee-d77db0754a91</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation\IGetModuleAreaControl.cs">
+      <id>f16e806b-06a9-4565-bb03-deb5a965cbc3</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation\IGetNumberOfOpenedModules.cs">
+      <id>724e1388-f3e0-4484-b0e3-48d487316465</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation\IGetOpenedModules.cs">
+      <id>b3be73f4-71b9-4187-ad22-064e3040be7a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation\IIsFrameAvailable.cs">
+      <id>638458d4-b761-4c8c-907d-2194177dda2d</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation\IIsModuleAlreadyOpened.cs">
+      <id>965a214c-d997-4f4b-8831-90e516eae289</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation\IWaitUntilFrameClosed.cs">
+      <id>704c3188-1d2c-4dd0-a34e-c2eb5c3730ff</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\AddDevice\Execution\IAddDevice.cs">
+      <id>cc7115a6-2ab0-4947-9245-3106c3a3189f</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReadingFromDevice\Validation\IIsFDTUploadActive.cs">
+      <id>9d9fac27-6cdf-401c-856e-752ff738556b</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReportConfiguration\Validation\IIsFDTPrintActive.cs">
+      <id>ca31617a-7b58-4a80-9b4e-4556b6be0abc</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WritingToDevice\Validation\IIsFDTDownloadActive.cs">
+      <id>210d7b1d-09b1-4e71-b282-99874320a4d2</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Validation\IGetAdditionalFunctionModules.cs">
+      <id>cfaab82d-f360-46c5-9d84-56cbe5d648c1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Validation\IIsModuleAvailableAtMenu.cs">
+      <id>108ebb6f-5eb3-406b-92b8-79155f2a8cbf</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Validation\IIsModuleEnabledAtMenu.cs">
+      <id>0740dcb0-ec79-4054-9de5-f6e337623ae2</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Validation\IIsConnected.cs">
+      <id>54963f45-60f9-448b-92cd-79a01cd2db0a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Validation\IIsDisconnected.cs">
+      <id>21309d66-f82b-458d-b009-5d269fdd73b7</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Validation\IWaitUntilFrameConnected.cs">
+      <id>6cae043b-5c9e-43d1-8a50-3350f851486f</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Validation\IWaitUntilFrameDisconnected.cs">
+      <id>9ff9ecc5-905c-4cd3-969b-1b0866fbb7dc</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ConfirmDeleteMessage\Execution\IConfirmDelete.cs">
+      <id>0a73e40a-6ca1-43f5-a5e8-a7fa38a52408</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceErrorMessage\Execution\IWriteToDeviceError.cs">
+      <id>8ee7c169-778f-4fa9-a66b-3c8f37d7dfb3</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\CreateNetwork\Execution\ICreateNetwork.cs">
+      <id>5b6ce621-358e-4a95-9340-a87df9cc8e30</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\DtmMessages\Execution\IDtmMessages.cs">
+      <id>fea37fdd-d946-4791-af30-2b4cab4ad5c4</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\EvaluationInfo\Execution\IEvaluationInfo.cs">
+      <id>c7737b93-b2bf-4820-974d-c6b550a1c018</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\FindDevice\Execution\IFindDevice.cs">
+      <id>4b484954-3e4b-4911-863f-7510422ba9c7</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ProjectBrowser\Execution\IProjectBrowser.cs">
+      <id>983f21ad-60d6-4239-8efb-08830e3a2b6b</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReadFromDeviceMessage\Execution\IReadFromDevice.cs">
+      <id>275b2809-62e0-4e22-8bcc-36cdf84da929</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReadingFromDevice\Execution\IReadingFromDevice.cs">
+      <id>d349b868-3482-474b-8c0a-5708ca8433d9</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReportConfiguration\Execution\IReportConfiguration.cs">
+      <id>39098d26-018e-4c00-817b-48d61882e361</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\SaveAsMessage\Execution\ISaveAs.cs">
+      <id>82feb38f-686b-45b7-b855-7c81b4f51474</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ScanningInProgressMessage\Execution\IScanningInProgress.cs">
+      <id>7a2857cb-d2ef-433c-a50e-e61db1c44850</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDTMCatalogue\Execution\IUpdateDTMCatalogue.cs">
+      <id>c5e1adb4-74cd-4a87-bb73-f09496705e43</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceInfoMessage\Execution\IWriteToDeviceInfo.cs">
+      <id>9847084c-37bc-471e-8670-d47dbf1a032d</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceSuccessMessage\Execution\IWriteToDeviceSuccess.cs">
+      <id>ac7a6978-22e0-4bd6-9a58-e51f5c5cbf80</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceWarningMessage\Execution\IWriteToDeviceWarning.cs">
+      <id>a6b5ab5f-3ff4-4854-8a77-51a12e88258a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WritingToDevice\Execution\IWritingToDevice.cs">
+      <id>17851f6e-f0ef-4e73-96c4-1b095fed9c98</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\ICloseAdditionalModule.cs">
+      <id>bb29fb39-9617-4e57-8e2d-189f6479504a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenAddDevice.cs">
+      <id>448fdf90-844f-4426-990a-fdeb35883e2d</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenAdditionalFunctions.cs">
+      <id>a6a7bb60-c8cf-406a-aa9e-041ac7b240ab</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenAdditionalModule.cs">
+      <id>93df58fa-084c-40e7-8651-0b59f572e3b1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenConfiguration.cs">
+      <id>8f539049-a2c8-410d-abdb-e85942a404c5</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenCreateNetwork.cs">
+      <id>b70049c5-3629-4b25-9cac-c5e5d0d89bd6</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenDeviceFunction.cs">
+      <id>a475dd3a-fa5f-46bc-a29b-ebc26f792ba0</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenDisplayDtmCatalogue.cs">
+      <id>7edfc535-9df9-40ec-a6b7-f89c74f4b782</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenFdtPrint.cs">
+      <id>9a576200-d305-4613-82e9-9b439dbf028d</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenFindDevice.cs">
+      <id>5ed399d8-bc62-480f-99bc-c63c0b928784</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenFindNextDevice.cs">
+      <id>2d09aad1-bd67-48c7-a6cf-b12d65391e6a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenOfflineParameterization.cs">
+      <id>c50beb1c-ef78-4e7a-b2ce-92497c8639fe</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenOnlineParameterization.cs">
+      <id>3465bed4-fc38-46b7-8c11-e1389fad1581</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenOptions.cs">
+      <id>76c10045-fd94-41cc-bf20-aae99074bd3b</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenPrintSetup.cs">
+      <id>3dfae61a-7e58-44fd-a9c4-5ee5a5bd7657</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenProjectLoad.cs">
+      <id>4f418bc8-9857-4134-97ec-c9e88cf329d9</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenProjectNew.cs">
+      <id>2cf1de29-71d2-4a67-933e-59244b8a3dac</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenProjectSaveAs.cs">
+      <id>b0842c75-fdbf-4b6e-9a4a-49a45523a779</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IOpenUpdateDtmCatalogue.cs">
+      <id>ef6ef7c3-b2e6-41ce-8484-2351492eebd1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunCloseAllWindows.cs">
+      <id>daf56a4d-9089-44de-844e-9328a912f3db</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunConnect.cs">
+      <id>d8b926d8-7ae4-4bbd-906b-12193f99b0cb</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunCreateNetwork.cs">
+      <id>6c1c678c-aef4-47a4-a5c4-9ad8ae8c32c8</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunDeleteDevice.cs">
+      <id>8135f12a-7233-4712-baa2-a17e064f2061</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunDeviceOperation.cs">
+      <id>0f698f97-ee54-4b7b-86a3-96959664dee1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunDisconnect.cs">
+      <id>9c7eb75c-2ac7-4b72-b124-cc23eb4127e2</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunDtmCatalogue.cs">
+      <id>1d792d3e-51a5-433a-b958-b33baf10c3a1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunEdit.cs">
+      <id>34a5af84-96c0-4882-b095-ecafb933c8ab</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunExtras.cs">
+      <id>c5bfd962-bc0a-4a6d-848a-33874f8cdd63</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunFdtReadFromDevice.cs">
+      <id>06755fd9-5edc-4b74-b964-e42a9a4bfd24</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunFdtWriteToDevice.cs">
+      <id>55b0c0b1-ed71-4325-aea0-729cbe8798d1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunFile.cs">
+      <id>a8f9438e-c235-4fe7-b47d-226b0f12844a</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunFindDevice.cs">
+      <id>e17dfd89-939c-45cf-b9ca-fae5a71e1510</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunFrameExit.cs">
+      <id>d05d1405-2a78-459a-bd00-ac038d295ba8</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunHelp.cs">
+      <id>64b2e93f-32c5-417f-8a0b-7a706eac7fbf</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunLogOff.cs">
+      <id>b3141f51-0dd0-4d94-8603-c78b7f3ee1af</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunProjectClose.cs">
+      <id>7d349ea1-ff94-4988-aaec-8558ff1d64ca</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunProjectLoad.cs">
+      <id>74b18f24-51ea-4b29-90a4-a08761de270f</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunProjectSave.cs">
+      <id>7d55ed42-b086-40b1-aeb9-0ed1f1c253c8</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunScanningTools.cs">
+      <id>0710a977-905f-4202-8217-7782a801c111</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunSelectModule.cs">
+      <id>51bef0de-1b2e-471b-92a9-932c52c41d4c</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunTools.cs">
+      <id>b5df24b7-7aa1-4d3d-80f4-5cc1fb5cf342</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunView.cs">
+      <id>2e1e28e4-ebd1-48c6-8c7a-730ec0677d5d</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution\IRunWindow.cs">
+      <id>f88c10c9-aa8a-43c8-8ec1-67dd0e466663</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IOpenAddDevice.cs">
+      <id>7a27a9e9-9b2a-4415-9688-0f34ecca57fc</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IOpenFdtPrint.cs">
+      <id>e9a82bfe-918d-4855-aca2-a8980496718c</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IOpenPrintSetup.cs">
+      <id>be85d613-89a4-461e-a514-dbab85420dbf</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IOpenProjectLoad.cs">
+      <id>4af1eba9-0810-426b-8933-84afb9dec6a4</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IOpenProjectNew.cs">
+      <id>ebf3f335-cbbf-4624-99bf-3a9f0382fc83</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunConnect.cs">
+      <id>7d44a929-d1e9-47d4-8907-56f48820a34d</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunCreateNetwork.cs">
+      <id>e4fb87c0-8bcf-49d0-85a6-158c1129157e</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunDeleteDevice.cs">
+      <id>ac0e2a9c-bd55-4cd8-8fd5-57f1d5af1bee</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunDisconnect.cs">
+      <id>86d7761c-aefa-4717-98c5-58d726b2d475</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunFdtReadFromDevice.cs">
+      <id>2538b898-7a9f-42ba-90a0-28a5c9ff2a04</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunFdtWriteToDevice.cs">
+      <id>9c23dcdf-4585-4807-b23e-6540661e1fd3</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution\IRunProjectSave.cs">
+      <id>fc43de72-6756-4ed4-8a15-5e4fe6f534b0</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\ISetNetworkTag.cs">
+      <id>560318cf-ac40-4098-9219-e14ff0348eba</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows\IUpdateDtmCatalog.cs">
+      <id>9e688c57-d877-49b9-ac0e-9dae827b6896</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>a0cb82f1-0e98-4794-9ce9-edc899b17c3c</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EDD\AMS\">
+      <id>801affa1-6f99-425f-92f4-a2484ddb6029</id>
+    </Folder>
+    <Folder Include="FDT\FieldCare\Functions\StatusArea\">
+      <id>e3966994-7254-4026-a238-33e02f602d4f</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

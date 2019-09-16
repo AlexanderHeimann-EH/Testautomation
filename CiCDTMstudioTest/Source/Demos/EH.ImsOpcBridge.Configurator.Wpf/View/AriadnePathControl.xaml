@@ -1,0 +1,39 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.Configurator.View.AriadnePathControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.Configurator.View"
+             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance {x:Type viewModel:AriadnePathControlVm}, IsDesignTimeCreatable=True}"
+             d:DesignWidth="1000" d:DesignHeight="70">
+    
+    <Grid x:Uid="Grid_3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_3" Width="Auto"/>
+            <ColumnDefinition x:Uid="ColumnDefinition_4" Width="Auto"/>
+            <ColumnDefinition x:Uid="ColumnDefinition_5" Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Uid="ItemsControl_1" AutomationProperties.AutomationId="automId_AriadneListBox" ItemsSource="{Binding PathItems}" SelectionMode="Single" 
+                 Style="{StaticResource ListBoxMenuStyle}" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                 IsEnabled="{Binding IsEnabled}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate x:Uid="ItemsPanelTemplate_1">
+                    <StackPanel x:Uid="StackPanel_1" Orientation="Horizontal" HorizontalAlignment="Left"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style x:Uid="Style_1" TargetType="{x:Type ListBoxItem}" BasedOn="{StaticResource ListBoxFocusInvisible}">
+                    <Setter x:Uid="Setter_3" Property="Template" Value="{StaticResource BorderlessListBoxItemTemplate}"></Setter>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate x:Uid="DataTemplate_1">
+                    <view:AriadneButton x:Uid="view:AriadneButton_1"  AutomationProperties.AutomationId="{Binding AutomationId}" Template="{StaticResource AriadneButtonTemplate}" Style="{StaticResource AriadneButtonStyle}" Command="{Binding Path=ExecuteActionCommand}" ButtonText="{Binding ButtonName}" Description="{Binding ItemDetailText}" 
+                                        IsChecked="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}, Path=IsSelected}" IsFirstStep="{Binding IsFirstStepVisible}" IsTicked="{Binding IsTicked}"></view:AriadneButton>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

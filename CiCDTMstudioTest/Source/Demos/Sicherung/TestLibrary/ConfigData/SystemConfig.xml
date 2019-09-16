@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestFrameworkConfiguration>
+  <!-- TestConfiguration describes which 
+         - Operating System Type, 
+         - Frame Type, 
+         - Frame Name, 
+         - Frame Version, 
+         - Device DTM Type (CoDIA or Classic), 
+         - Device Type
+         is used-->
+  <TestConfiguration>
+    <OperatingSystem>
+      <OperatingSystemType>Win7</OperatingSystemType>
+    </OperatingSystem>
+    <Frame>
+      <FrameType>FDT</FrameType>
+      <FrameName>FieldCare</FrameName>
+      <FrameVersion>V20900_1611</FrameVersion>
+    </Frame>
+    <CommDTM>
+      <CommDTMProtocol>
+      </CommDTMProtocol>
+      <CommDTMName>
+      </CommDTMName>
+      <CommDTMVersion>
+      </CommDTMVersion>
+    </CommDTM>
+    <DeviceDTM>
+      <DeviceDTMType>CoDIA</DeviceDTMType>
+      <DeviceType>Micropilot / FMR5x / PA / FW 1.00.zz / Dev.Rev. 1</DeviceType>
+    </DeviceDTM>
+  </TestConfiguration>
+  <!-- FrameworkConfiguration provides 
+         - DLL filenames and
+         - parts of namespaces 
+         to related implementations-->
+  <FrameworkConfiguration>
+    <OperatingSystem>
+      <OperatingSystemDLL>OperatingSystem</OperatingSystemDLL>
+    </OperatingSystem>
+    <Frame>
+      <FrameDLL>HostApplication</FrameDLL>
+    </Frame>
+    <CommDTM>
+      <CommDTMDLL>Communication</CommDTMDLL>
+    </CommDTM>
+    <DeviceDTM>
+      <DeviceDTMDLL>DeviceFunction</DeviceDTMDLL>
+      <!-- Information about usable device functions are collected from device type specific 
+                 application server configuration. To be able to search for this information, the 
+                 device type under test must be known and available at "Testconfiguration" -->
+      <Modules>
+        <Module name="AboutBox" enabled="true">
+          <ModuleDisplayName>About Box</ModuleDisplayName>
+          <ModuleInternalName>AboutBox</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+	<Module name="CreateDocumentation" enabled="true">
+          <ModuleDisplayName>Create Documentation</ModuleDisplayName>
+          <ModuleInternalName>CreateDocumentation</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="Compare" enabled="true">
+          <ModuleDisplayName>Compare</ModuleDisplayName>
+          <ModuleInternalName>Compare</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="Concentration" enabled="true">
+          <ModuleDisplayName>Concentration</ModuleDisplayName>
+          <ModuleInternalName>Concentration</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="EnvelopeCurve" enabled="true">
+          <ModuleDisplayName>Envelope Curve</ModuleDisplayName>
+          <ModuleInternalName>EnvelopeCurve</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="EventList" enabled="true">
+          <ModuleDisplayName>Event List</ModuleDisplayName>
+          <ModuleInternalName>EventList</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="Historom" enabled="true">
+          <ModuleDisplayName>Historom</ModuleDisplayName>
+          <ModuleInternalName>Historom</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="Linearization" enabled="true">
+          <ModuleDisplayName>Linearization</ModuleDisplayName>
+          <ModuleInternalName>Linearization</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="Parameterization" enabled="true">
+          <ModuleDisplayName>Parameterization</ModuleDisplayName>
+          <ModuleInternalName>Parameterization</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="SaveRestore" enabled="true">
+          <ModuleDisplayName>Save Restore</ModuleDisplayName>
+          <ModuleInternalName>SaveRestore</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+        <Module name="Viscosity" enabled="true">
+          <ModuleDisplayName>Viscosity</ModuleDisplayName>
+          <ModuleInternalName>Viscosity</ModuleInternalName>
+          <ModuleVersion>xx.xx.xx.xxxx</ModuleVersion>
+        </Module>
+      </Modules>
+    </DeviceDTM>
+  </FrameworkConfiguration>
+</TestFrameworkConfiguration>

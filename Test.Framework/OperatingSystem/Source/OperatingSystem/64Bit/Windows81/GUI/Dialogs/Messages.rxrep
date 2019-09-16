@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Messages"
+id="c9741e97-6e1f-4df6-ac89-4402adb7469b"
+rxversion="6.1">
+	<codegen
+	classname="Messages"
+	namespace="EH.PCPS.TestAutomation.Windows81.GUI.Dialogs"/>
+	<rootfolder
+	name="Root"
+	id="dab644b0-0297-4856-ac4f-3a65318a3e51"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<folder
+		name="OpenMessages"
+		id="809cf477-f0c6-42a2-a1f6-b78b0aeee18f"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="False">
+			<appfolder
+			name="Open"
+			id="1cbef4bc-da73-45f4-bb45-4841e5d53bf3"
+			searchtimeout="5000ms"
+			capname="form"
+			addcaps="form,nativewindow"
+			isrooted="True"
+			usecache="True">
+				<item
+				name="buttonOK"
+				id="92c58a69-b196-4694-8481-7df548b7a6a2"
+				searchtimeout="5000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form/container/element/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJdSURBVDhPnZLdS9NhFMcPERHYy00XUdBVdNNf
+INVdeCFJBEEX6w0TjIoMKt+n0SY6X2gkI50YaYiZbzV1kkmZtWi9MchNMzCWRCg4UzP8LeXTmZrb
+zG564MuP33Oe53O+55xHRBdTiRjTxRgLPox57+IXbERikeV5uAMM2z/jChCMgMBQjD4Lxe5TlMz3
+w4TG/UJ4UOPBZU3KSgLhpzDXspmL9emY60yYb5uw1hxjv81M3tgAjAm/3NuhN2HlUr5pUwxgVqlt
+SuwdQPzDiGcIeaJqH+T615cwroCuBJIzs6OX/tS32IOFe9CsAH8IRSHTqlHVe7AEO2C6GtwaP9fG
+ica+vyHMVzN3X7jQnku2N5ecnkJKevMWAdbhCKAUuhRgfYY4Xq8BMG5h+HZBaK/m19ThYvDqhVZ1
+8KkzCsh5hNj7SHM2x0MIOzE8an5ENbz8faUA+xcsH11RQN5jpLQLMbdy+sihmCZGSmgXMirTKXCY
+KLAfp/zmYeRGAEtAbcyULZVw2YUUtSBZjascKIAOPVDhR+p0ClU6jco3SI0CfA0KKF9qYkYTYlFd
+vbsGwKUHnKNI9xTiGkeaRhQWxPq2Fn4ooFvjqbVqX7Nfcq4B0ANbTpYjD74h9R+QhoA68mL1VMFs
+BXQKu7OKkPONbLuioPh3UAcvNixtXtMaq95pA/sR23MFONSBQx+SNlchqRYTdxxHVwGMFAVsXdk8
+m12AlPUgmU2UPtUGft+HMXGQcChJJ3IAplQkx0wh8v6GdsZR01KS2HMmn8RCNzPBjTC5Tt/J+qiM
+ZcdxtfzHz2+fwAjsrw11mwAAAABJRU5ErkJggg==
+				</icon>
+			</appfolder>
+		</folder>
+		<folder
+		name="SaveAsMessages"
+		id="d8a7c1ac-842c-4bf3-bc43-a50b3c96098b"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="False">
+			<appfolder
+			name="ConfirmSaveAs"
+			id="c4f55adf-780a-4862-accb-588f3f338387"
+			searchtimeout="5000ms"
+			capname="form"
+			addcaps="form,nativewindow"
+			isrooted="True"
+			usecache="True">
+				<item
+				name="buttonNo"
+				id="b99ecf2d-0ff0-4081-8399-3e2fa6914dc4"
+				searchtimeout="5000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form/container/element/button[@accessiblename='No' or @accessiblename='Nein']
+				</item>
+				<item
+				name="buttonYes"
+				id="c8e3641b-715a-4b2a-8761-faf786e92d7e"
+				searchtimeout="5000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form/container/element/button[@accessiblename='Yes' or @accessiblename='Ja']
+				</item>
+				<basepath>
+					/form
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAl1JREFU
+OE+dkt1L02EUxw8REdjLTRdR0FV0018g1V14IUkEQRfrDROMigwq36fRJjpfaCQjnRhpiJlvNXWS
+SZm1aL0xyE0zMJZEKDhTM/wt5dOZmtvMbnrgy4/fc57nc77nnEdEF1OJGNPFGAs+jHnv4hdsRGKR
+5Xm4AwzbP+MKEIyAwFCMPgvF7lOUzPfDhMb9QnhQ48FlTcpKAuGnMNeymYv16ZjrTJhvm7DWHGO/
+zUze2ACMCb/c26E3YeVSvmlTDGBWqW1K7B1A/MOIZwh5omof5PrXlzCugK4EkjOzo5f+1LfYg4V7
+0KwAfwhFIdOqUdV7sAQ7YLoa3Bo/18aJxr6/IcxXM3dfuNCeS7Y3l5yeQkp68xYB1uEIoBS6FGB9
+hjherwEwbmH4dkFor+bX1OFi8OqFVnXwqTMKyHmE2PtIczbHQwg7MTxqfkQ1vPx9pQD7FywfXVFA
+3mOktAsxt3L6yKGYJkZKaBcyKtMpcJgosB+n/OZh5EYAS0BtzJQtlXDZhRS1IFmNqxwogA49UOFH
+6nQKVTqNyjdIjQJ8DQooX2piRhNiUV29uwbApQeco0j3FOIaR5pGFBbE+rYWfiigW+OptWpfs19y
+rgHQA1tOliMPviH1H5CGgDryYvVUwWwFdAq7s4qQ841su6Kg+HdQBy82LG1e0xqr3mkD+xHbcwU4
+1IFDH5I2VyGpFhN3HEdXAYwUBWxd2TybXYCU9SCZTZQ+1QZ+34cxcZBwKEkncgCmVCTHTCHy/oZ2
+xlHTUpLYcyafxEI3M8GNMLlO38n6qIxlx3G1/MfPb5/ACOyvDXWbAAAAAElFTkSuQmCC
+				</icon>
+			</appfolder>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

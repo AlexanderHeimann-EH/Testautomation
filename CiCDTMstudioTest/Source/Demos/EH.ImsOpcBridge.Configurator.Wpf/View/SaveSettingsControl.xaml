@@ -1,0 +1,81 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.Configurator.View.SettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:View="clr-namespace:EH.ImsOpcBridge.Configurator.View"       
+             xmlns:View1="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:Converter="clr-namespace:EH.ImsOpcBridge.Configurator.Converter"
+             xmlns:DeviceCare="clr-namespace:EH.ImsOpcBridge.Configurator"
+             mc:Ignorable="d"
+             d:DesignHeight="760" d:DesignWidth="691">
+    <UserControl.Resources>
+        <Converter:SettingsSectionToVisibilityConverter x:Uid="SettingsToVisibilityConverter_1" x:Key="convSettingsSectionToVisibility" />
+    </UserControl.Resources>
+    <Grid x:Uid="Grid_1" Background="{DynamicResource PaneBackgroundBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_2" Width="*" />
+            <ColumnDefinition x:Uid="ColumnDefinition_3" Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <RowDefinition x:Uid="RowDefinition_8" Height="{StaticResource ClientAreaGap}" />
+        </Grid.RowDefinitions>
+        <Grid x:Uid="Grid_3" Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_4" Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_6" Height="*" />
+            </Grid.RowDefinitions>
+
+            <View:LanguageControl x:Uid="View:LanguageControl_1" AutomationProperties.AutomationId="LanguagesControl" DataContext="{Binding Path=LanguageControlVm}"
+                                  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=View:SettingsControl}, Path=DataContext.CurrentSection, Converter={StaticResource convSettingsSectionToVisibility}, ConverterParameter=Language}"/>
+
+            <View:PagingControl x:Uid="View:PagingControl_1" Template="{DynamicResource PagingTemplate}" DataContext="{Binding EventLogViewModel}" Visibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=View:SettingsControl}, Path=DataContext.CurrentSection, Converter={StaticResource convSettingsSectionToVisibility}, ConverterParameter=FieldInformationServer}" PreviousPageCommand="{Binding PreviousPageCommand}" NextPageCommand="{Binding NextPageCommand}">
+                <Grid x:Uid="Grid_4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Uid="RowDefinition_7" Height="*" />
+                        <RowDefinition x:Uid="RowDefinition_9" Height="{StaticResource ClientAreaGap}" />
+                        <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <View:EventLogCtrl x:Uid="View:EventLogCtrl_1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ></View:EventLogCtrl>
+                    <StackPanel x:Uid="StackPanel_1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock x:Uid="TextBlock_1" Text="{Binding Path=NumberOfItems}" Margin="4,0,0,0"/>
+                    </StackPanel>
+                </Grid>
+            </View:PagingControl>
+
+
+            <View:MonitorDataCtrl x:Uid="View:MonitorDataCtrl_1" AutomationProperties.AutomationId="MonitorDataCtrl" DataContext="{Binding Path=MonitorDataCtrlVm}"
+                                  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=View:SettingsControl}, Path=DataContext.CurrentSection, Converter={StaticResource convSettingsSectionToVisibility}, ConverterParameter=ImsOpcBridge}"/>
+
+<!--
+
+            <View:PagingControl x:Uid="View:PagingControl_2" Template="{DynamicResource PagingTemplate}" DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=DeviceCare:MainWindow}, Path=DataContext.DtmCatalogUpdateViewModel}" Visibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=View:SettingsControl}, Path=DataContext.CurrentSection, Converter={StaticResource convSettingsSectionToVisibility}, ConverterParameter=ImsOpcBridge}" PreviousPageCommand="{Binding CurrentCatalogEntries.PreviousPageCommand}" NextPageCommand="{Binding CurrentCatalogEntries.NextPageCommand}">
+                <Grid x:Uid="Grid_5">
+                    <Grid.RowDefinitions>    
+                        <RowDefinition x:Uid="RowDefinition_10" Height="*" />
+                        <RowDefinition x:Uid="RowDefinition_11" Height="{StaticResource ClientAreaGap}" />
+                        <RowDefinition x:Uid="RowDefinition_12" Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <View:MonitorDataGrid x:Uid="DeviceTypeInfoGrid_1" DataContext="{Binding Path=CurrentCatalogEntries}"></View:MonitorDataGrid>
+                    
+                    <StackPanel x:Uid="StackPanel_2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBlock x:Uid="TextBlock_2" Text="{Binding Path=NumberOfItems}" Margin="4,0,0,0"/>
+                    </StackPanel>
+                    
+                </Grid>
+            </View:PagingControl>
+                        
+            <View1:NavigationPage x:Uid="View1:NavigationPage_1" AutomationProperties.AutomationId="automnId_FlashCtrl" VerticalAlignment="Top" Margin="60,0,70,0" DataContext="{Binding FlashPageViewModel}" Visibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=View:SettingsControl}, Path=DataContext.CurrentSection, Converter={StaticResource convSettingsSectionToVisibility}, ConverterParameter=UserLoginPassword}" ButtonStyle="{DynamicResource NavigationButtonStyle}">
+            </View1:NavigationPage>
+        
+            -->    
+            
+        </Grid>
+    </Grid>
+</UserControl>

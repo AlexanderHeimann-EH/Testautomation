@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EH.ImsOpcBridge.Agent.Wpf.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClientUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:8092/ServiceModel/EH/ImsOpcBridge/ServiceCallback</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

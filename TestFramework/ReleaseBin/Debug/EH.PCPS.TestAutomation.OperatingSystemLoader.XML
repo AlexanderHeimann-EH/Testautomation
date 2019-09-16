@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.OperatingSystemLoader</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution">
+            <summary>
+                Contains interfaces to access frame Dialogs
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution.PathToDll">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution"/> class. 
+                Connect interfaces to DLL version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution.OpenFileBrowser">
+            <summary>
+            Gets the open file browser.
+            </summary>
+            <value>The open file browser.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Execution.SaveAsFileBrowser">
+            <summary>
+            Gets the save as file browser.
+            </summary>
+            <value>The save as file browser.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation">
+            <summary>
+                Contains interfaces to access validations
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation.PathToDll">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation"/> class. 
+                Connect interfaces to dll-version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation.IsOpenDialogOpen">
+            <summary>
+            Gets the is open dialog open.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.OperatingSystemLoader.Functions.Dialogs.Validation.IsSaveAsDialogOpen">
+            <summary>
+            Gets the is save as dialog open.
+            </summary>
+        </member>
+    </members>
+</doc>

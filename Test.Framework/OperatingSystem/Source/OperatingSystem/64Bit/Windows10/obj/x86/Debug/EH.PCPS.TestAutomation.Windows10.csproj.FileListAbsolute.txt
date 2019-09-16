@@ -1,0 +1,5 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows10.xml
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows10.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows10.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows10\obj\x86\Debug\EH.PCPS.TestAutomation.Windows10.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows10\obj\x86\Debug\EH.PCPS.TestAutomation.Windows10.pdb

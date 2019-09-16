@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF6B82E1-2E16-4978-85D2-79E36F69C39B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.HostApplicationLoader</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.HostApplicationLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.HostApplicationLoader.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.HostApplicationLoader.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FDI\FdiReferenceHost\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>62659281-4278-4dfb-b9fe-4f6a2a56c2ce</id>
+    </Compile>
+    <Compile Include="FDT\DeviceCare\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>0a1c61ff-f67d-4eb8-bad3-03aa063dafb0</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>63ea8a6e-0b29-4a3e-a6ef-9497351b87a4</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\ApplicationArea\MainView\Validation.cs">
+      <id>b2415c6c-82a4-4388-865a-ed69153547e1</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\CloseProject\Validation.cs">
+      <id>90905946-eb38-42e4-9e94-5b3400eac2ea</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\DtmMessages\Validation.cs">
+      <id>ffbd00c1-8d4a-4c4b-842a-65df5eff7e67</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\SaveProjectInProgress\Validation.cs">
+      <id>5f4f4aba-fa66-4533-b4c8-76d84682dd6e</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Execution.cs">
+      <id>f8d7320e-dc56-4834-8b37-65efae27c75c</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDtmCatalogMessageOnStartup\Validation.cs">
+      <id>3cc0445d-afde-4602-b3e2-27e0044898d8</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDTMCatalogue\Validation.cs">
+      <id>313a3391-66a2-4372-a3b1-560586cf84a0</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\SpecificFlows.cs">
+      <id>2c5e1749-c05a-466f-811e-93d55d1c526b</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\AddDevice\Execution.cs">
+      <id>9475a17b-004c-41eb-88af-461e28b32b91</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ConfirmDeleteMessage\Execution.cs">
+      <id>8e104382-bcd6-459d-9dfd-b23d85701343</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\CreateNetwork\Execution.cs">
+      <id>9a9f7a17-0575-4898-99de-b1893357cef5</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\DtmMessages\Execution.cs">
+      <id>5c6deca9-f1bb-44ea-b792-e631c0a32404</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\EvaluationInfo\Execution.cs">
+      <id>c2d6d9a7-4572-48b9-a331-c0e3bed1a886</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\FindDevice\Execution.cs">
+      <id>33240489-8248-4210-ba87-1b0420667418</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ProjectBrowser\Execution.cs">
+      <id>fde22fed-8e1c-4087-8073-a733e6bc455c</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReadFromDeviceMessage\Execution.cs">
+      <id>e8ea67d7-88a7-462b-8013-25f56352a6ca</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReadingFromDevice\Execution.cs">
+      <id>33fe31fd-f7d4-4e70-8114-9ed43f4390aa</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReadingFromDevice\Validation.cs">
+      <id>e4802a01-6c74-4edd-96e4-7bbd8e98d15e</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReportConfiguration\Execution.cs">
+      <id>9ffa5ef0-9bda-42fc-9662-ab01d4b4ee33</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ReportConfiguration\Validation.cs">
+      <id>95b31efc-1935-476b-b425-80df1ca6b521</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\SaveAsMessage\Execution.cs">
+      <id>fbb56483-3ea9-4456-a0cc-1c682bcd0d4e</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\ScanningInProgressMessage\Execution.cs">
+      <id>1092f585-a06d-40e2-bd15-b7936dbd7cf7</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\UpdateDTMCatalogue\Execution.cs">
+      <id>5d5b44a7-e7ae-4b6a-b443-d90d6b442f1b</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceErrorMessage\Execution.cs">
+      <id>ad532e48-4984-4cea-b49c-e00f2d24b4a0</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceInfoMessage\Execution.cs">
+      <id>f905ab10-3c75-4d12-98d2-e9d5d8f32c40</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceSuccessMessage\Execution.cs">
+      <id>eab1e6a4-1a2c-488f-8d34-873e146d3751</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WriteToDeviceWarningMessage\Execution.cs">
+      <id>73662447-5ebb-4dce-9772-6fee601c44b4</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WritingToDevice\Execution.cs">
+      <id>4b01a4c0-90cb-4005-b6bf-6f8bd75f140f</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\Dialogs\WritingToDevice\Validation.cs">
+      <id>67edd1c9-6452-464a-bda5-d7905d7bddde</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Execution.cs">
+      <id>8810764a-6894-4aa5-bbdc-cd7e6ae242e5</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Menubar\Validation.cs">
+      <id>bb86dbb6-a110-4620-acff-82039fc58595</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Execution.cs">
+      <id>b581da9b-904a-42fd-8660-9305ccde2a65</id>
+    </Compile>
+    <Compile Include="FDT\FieldCare\Functions\MenuArea\Toolbar\Validation.cs">
+      <id>e73df8d0-a0a4-44df-ac5f-c0bbb11f5986</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>8e2aa9e6-9772-472d-96e3-9ce1bc9acf79</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EDD\AMS\">
+      <id>122135de-0a20-49c6-aaea-9a11ee98bc7f</id>
+    </Folder>
+    <Folder Include="FDT\FieldCare\Functions\StatusArea\">
+      <id>20b4cd90-0c49-4144-ae37-f5047bfaa4fe</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-dc3e-40e8-a120-7cc13b75213a}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{f50a421e-f8fb-49bd-bb83-3cae985c4fd1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

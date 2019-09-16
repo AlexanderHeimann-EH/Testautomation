@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\Profibus\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\Profibus\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\Profibus\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\Profibus\PROFIdtmDPV1_2.11\obj\Release\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\Profibus\PROFIdtmDPV1_2.11\obj\Release\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\Profibus\PROFIdtmDPV1_2.11\obj\Release\EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.pdb

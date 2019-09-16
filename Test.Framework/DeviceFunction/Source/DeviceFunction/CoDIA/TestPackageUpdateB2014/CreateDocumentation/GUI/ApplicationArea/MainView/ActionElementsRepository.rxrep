@@ -1,0 +1,45 @@
+﻿<repository
+name="ActionElementsRepository"
+id="c481c4fb-32a1-4265-bed3-bd1a5d9fd3cd"
+rxversion="6.1">
+	<codegen
+	classname="ActionElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateB2014.CreateDocumentation.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="f3ddc732-4bf6-4bb6-ba7d-c7002176ed04"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonCancel"
+		id="7da13b35-7825-418c-80af-c1d657730c39"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="2e200b7d-080d-48b8-8676-144c53c65a1b">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']/container[@controlname='splitContainerControl1']/container[@controlname='panel2']/?/?/container[@controlname='_actionArea']/?/?/button[@accessiblename='Cancel']
+		</item>
+		<item
+		name="buttonPrint"
+		id="c595e8fa-baa5-4676-b9b1-449dfa290a46"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="8ea9563e-7d3f-4120-b58f-d86804e99e2c">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']/container[@controlname='splitContainerControl1']/container[@controlname='panel2']/?/?/container[@controlname='_actionArea']/?/?/button[@accessiblename='Print']
+		</item>
+		<item
+		name="buttonSaveAs"
+		id="c03f55b5-2e6a-48f6-89d7-09099d711af8"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="74f37d42-f7d1-4f3b-ab4e-87944bfe81b3">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']/container[@controlname='splitContainerControl1']/container[@controlname='panel2']/?/?/container[@controlname='_actionArea']/?/?/button[@accessiblename='Save as ...']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

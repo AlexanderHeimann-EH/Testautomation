@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryConcentrationV2</DisplayName>
+      <Guid>f4081e7f-29f3-43fa-870a-7774b5eaf5a4</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryConcentrationV2</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Activate Software Option</DisplayName>
+          <Guid>cd817b3c-9b6a-4da5-b714-67ec01891a72</Guid>
+          <IsActive>false</IsActive>
+          <Name>Activate Software Option</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Activates the software using the Online Parameterization
+
+Param:
+The path to the software activation option parameter.
+
+Param:
+The software option code.
+
+Returns:
+True if passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_ActivateSoftwareOption.Run</DisplayName>
+              <Guid>b12a4278-9f38-4b35-9fa1-e56cb0913719</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run(pathToParameter, softwareOptionCode)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Activates the software using the Online Parameterization
+
+Param:
+The path to the software activation option parameter.
+
+Param:
+The software option code.
+
+Returns:
+True if passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>09847387-C331-4949-8902-BF5C2A6607B8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the software activation option parameter.</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The software option code.</Description>
+                  <Name>softwareOptionCode</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Module Check Tabs</DisplayName>
+          <Guid>33c85d11-1125-4713-a7cc-0621dc45d9a6</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Module Check Tabs</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>e429289b-7041-4272-8ab3-81934c37c70c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>B819EBB4-3358-4015-B816-CAAAFA32D43E</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks, whether tab behavior is correct after opening Concentration initially.
+            Liquid properties and Reference values are inactive
+            All other tabs are active
+
+Returns:
+True if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CheckTabsAfterOpenModule.Run</DisplayName>
+              <Guid>17812961-c0d0-49e0-b907-06d23c605619</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks, whether tab behavior is correct after opening Concentration initially.
+            Liquid properties and Reference values are inactive
+            All other tabs are active
+
+Returns:
+True if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>36FA0D3F-7078-431E-A292-2D4B9D124A0D</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Configure Calculation Base Calculate Coefficients</DisplayName>
+          <Guid>5b29922d-5f3d-4e67-aeff-5b47bdb2662d</Guid>
+          <IsActive>false</IsActive>
+          <Name>Configure Calculation Base Calculate Coefficients</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Sets Calculation base to Predefined liquid, checks calculation button and tabs behavior.
+
+Returns:
+true if passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_ConfigureCalculationBaseToPredefinedLiquid.Run</DisplayName>
+              <Guid>e82d4b4e-0b39-47ad-aea3-04d8506addba</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Sets Calculation base to Predefined liquid, checks calculation button and tabs behavior.
+
+Returns:
+true if passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>147D2921-0831-48BD-8692-9C1D0B1A236A</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Calculates the concentration coefficients. Checks that there is no critical error and that tab Coefficients overview shows calculated coefficients.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CalculateCoefficientsAndCheckOutput.Run</DisplayName>
+              <Guid>2e515bd6-5eaa-45ef-876c-e8db4898db17</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Calculates the concentration coefficients. Checks that there is no critical error and that tab Coefficients overview shows calculated coefficients.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>DB0DC822-8DA1-42B2-B0F0-5249C9828683</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Save Create New Load Check Compare Results</DisplayName>
+          <Guid>a58b6856-db8e-4e90-b9e0-4f19bf6b9f65</Guid>
+          <IsActive>false</IsActive>
+          <Name>Save Create New Load Check Compare Results</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the Concentration data and uses a file name given by the user
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_SaveAs.Run</DisplayName>
+              <Guid>46ec377d-bd6e-4dcb-84d4-e5083da34d58</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the Concentration data and uses a file name given by the user
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>899B4F2B-38CB-41A8-82CE-BC4B8B4850BF</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CreateNewConcentration.Run</DisplayName>
+              <Guid>d59d2317-338b-4033-b88c-4b79414d1b56</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>CFE9E180-C72D-486B-936F-89F3721487A5</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.
+
+Returns:
+The .</Description>
+              <DisplayName>ConcentrationV2.TC_LoadConcentrationFile.Run</DisplayName>
+              <Guid>2096360a-ed06-406e-bf37-9655476ceda4</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.
+
+Returns:
+The .</ToolTip>
+              <AssemblyMethodRefId>28CD7A51-AAC5-42B0-BDB0-481F96BB0906</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens tab Expert results and makes a screenshot of every result diagram available.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CheckExpertResults.Run</DisplayName>
+              <Guid>01811451-e5f6-4c2a-9e15-993075d745e1</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens tab Expert results and makes a screenshot of every result diagram available.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>F5661ACF-BBC3-4842-A5D1-D0ABB0099A98</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens tab Expert results and makes a screenshot of every result diagram available.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CompareCoefficientsWithExpectedCoefficients.Run</DisplayName>
+              <Guid>dab114a4-2768-48f3-8d4e-2767b9f46769</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens tab Expert results and makes a screenshot of every result diagram available.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>340530E0-AFC8-460B-AE93-B42C83DE8AA3</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Write Create New Read Coefficients</DisplayName>
+          <Guid>f2d62485-27e3-48f8-8f8d-cd82911419c9</Guid>
+          <IsActive>false</IsActive>
+          <Name>Write Create New Read Coefficients</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_WriteCoefficientsToDevice.Run</DisplayName>
+              <Guid>ea4c3413-28e8-467f-9c9a-8aed6982ecb5</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>463285AA-57B1-4F2E-98DB-392713FC2397</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CreateNewConcentration.Run</DisplayName>
+              <Guid>1cdbc6ee-09d9-4092-b3b3-c4e51c7dce72</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>CFE9E180-C72D-486B-936F-89F3721487A5</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_ReadCoefficientsFromDevice.Run</DisplayName>
+              <Guid>13709552-840c-4e4b-a240-99115f39571b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>B712C661-DF97-4008-929B-A4D3E5105A14</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Enter Data Check Calculation Result</DisplayName>
+          <Guid>3b076a5d-870a-4132-8d23-763dbb07a3b5</Guid>
+          <IsActive>false</IsActive>
+          <Name>Enter Data Check Calculation Result</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Enters table values in tap Liquid Properties
+
+Returns:
+true if passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_EnterDataForLiquidProperties.Run</DisplayName>
+              <Guid>de3e7512-8a9a-4f09-8512-310abfaf1585</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Enters table values in tap Liquid Properties
+
+Returns:
+true if passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>DAE0995B-5A27-4814-8904-25E5232E4AC3</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Export Create New Import</DisplayName>
+          <Guid>ad2fe220-bcd9-44d3-8be9-1216dedfee79</Guid>
+          <IsActive>false</IsActive>
+          <Name>Export Create New Import</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Concentration file. Verifies that there is no critical error afterwards.
+
+Returns:
+The .</Description>
+              <DisplayName>ConcentrationV2.TC_ExportConcentrationFile.Run</DisplayName>
+              <Guid>db667860-4c3e-4d5c-991a-1a43ec88f597</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Concentration file. Verifies that there is no critical error afterwards.
+
+Returns:
+The .</ToolTip>
+              <AssemblyMethodRefId>78F8F574-79EF-4242-AF5B-9DB0D6D5F6A3</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CreateNewConcentration.Run</DisplayName>
+              <Guid>b8ab6c6f-dc4f-4469-bad8-ca15786c1970</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>CFE9E180-C72D-486B-936F-89F3721487A5</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Imports a Concentration file.Makes a screenshot of tab Expert results to check if the diagram is not shown any longer and verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_ImportConcentrationFile.Run</DisplayName>
+              <Guid>1da8af12-8a1f-41fa-8865-3d4c44e64c7d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Imports a Concentration file.Makes a screenshot of tab Expert results to check if the diagram is not shown any longer and verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>85664B52-C01F-4279-9A67-F603640EA5C4</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Create New Check Tab Behaviour Check Fine Tuning</DisplayName>
+          <Guid>cd438179-a233-4d33-aed6-47249641f799</Guid>
+          <IsActive>false</IsActive>
+          <Name>Create New Check Tab Behaviour Check Fine Tuning</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CreateNewConcentration.Run</DisplayName>
+              <Guid>21df7cd6-1718-4b23-970d-5782e4627ab0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Concentration file to the report folder. Verifies that there is no critical error afterwards.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>CFE9E180-C72D-486B-936F-89F3721487A5</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Activates the software using the Online Parameterization
+
+Returns:
+True if passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CheckReferenceValueTabBehaviour.Run</DisplayName>
+              <Guid>aef34af8-49dc-47bc-ac5d-6ecfa322b840</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Activates the software using the Online Parameterization
+
+Returns:
+True if passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>7822D6A2-58E2-4302-95C4-F3E4FEB58110</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Activates the software using the Online Parameterization
+
+Returns:
+True if passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CheckFineTuningGuiBehaviour.Run</DisplayName>
+              <Guid>f6ca8cda-c04b-4944-a6a9-cd2affc09dbc</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Activates the software using the Online Parameterization
+
+Returns:
+True if passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>8543CAA8-8F26-43B8-A600-50E6AE355982</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Check Help Close Module Open Module</DisplayName>
+          <Guid>d92f26f5-296d-4b6d-a77a-31f43708105d</Guid>
+          <IsActive>false</IsActive>
+          <Name>Check Help Close Module Open Module</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens help file for Concentration and takes a screenshot.
+
+Returns:
+true if passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CheckHelpForConcentration.Run</DisplayName>
+              <Guid>39e364de-11a2-47d2-9f50-8b49ec040a13</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens help file for Concentration and takes a screenshot.
+
+Returns:
+true if passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>2180CA8F-DAB0-462A-8FC3-2056772717F0</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CloseModule.Run</DisplayName>
+              <Guid>c65c38e2-82c8-4a03-a999-2aae02e8f93a</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>C354BA82-164F-4559-A10D-77B40D2EBE20</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>7c3bb9ce-e829-4917-b261-ac0f77372f6a</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>B819EBB4-3358-4015-B816-CAAAFA32D43E</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Create Documenation Print Close Create Documentation</DisplayName>
+          <Guid>3268e6a0-0571-40ae-8fb3-5f48b4f7b4f8</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Create Documenation Print Close Create Documentation</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module Create Documentation when the device is online.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>CreateDocumentation.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>cc1c9867-d75c-4607-b9d0-af0049b75688</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module Create Documentation when the device is online.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>3c5e1c86-a3ce-4fcd-bf76-00766de53ad2</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the documentation as pdf file.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>CreateDocumentation.TC_SaveDocumentationAsPdf.Run</DisplayName>
+              <Guid>b6310a64-972d-4952-8532-3e1310f47a06</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the documentation as pdf file.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>35C3870B-71C1-457A-B5D7-49B310645461</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module Create Documentation
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>CreateDocumentation.TC_CloseModule.Run</DisplayName>
+              <Guid>1a94906f-63eb-4071-ac8d-23905de3771a</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module Create Documentation
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>5b475791-875d-45c9-a5c7-f3fec83ff9af</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close Module Deactivate Software Option</DisplayName>
+          <Guid>863c79e9-efb0-4e64-906a-10b08e9b278a</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close Module Deactivate Software Option</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_CloseModule.Run</DisplayName>
+              <Guid>d093f4ec-5537-4817-982b-8d32e1698cb4</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>C354BA82-164F-4559-A10D-77B40D2EBE20</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Deactivates the software option using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>ConcentrationV2.TC_DeactivateSoftwareOption.Run</DisplayName>
+              <Guid>53df9a7d-22c0-4a20-b1c0-a0c03879d85c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run(pathToParameter)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Deactivates the software option using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>89B2A0D9-AD9B-4E25-B2E3-2E49A5B8B11B</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Check Critical Error</DisplayName>
+          <Guid>3ae9bb23-84db-4f8b-a424-1ea6340f76f8</Guid>
+          <IsActive>false</IsActive>
+          <Name>Check Critical Error</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.
+
+Returns:
+Returns true if test case is passed, false otherwise.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>b8ca8f06-a89c-4412-ac56-7c2ee9826a3b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Boolean Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.
+
+Returns:
+Returns true if test case is passed, false otherwise.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>NotDefined</TestCategory>
+      <TestFocus>NotDefined</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile />
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

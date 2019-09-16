@@ -1,0 +1,46 @@
+﻿						/*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+
+                        // SIL-Sequenz:
+                        // Auswahl in Parametrierung
+                        // Wert in Application Area setzen
+                        // Sequenz durchführen
+                        // Schreibschutz setzen
+
+                        int timeout = 100000;
+
+                        Execution.Navigation navigation = new Execution.Navigation();
+                        Execution.Application application = new Execution.Application();
+                        Execution.SilWhgFunctions silExecution = new Execution.SilWhgFunctions();
+                        Validation.SilWhg silValidation = new Validation.SilWhg();
+                        navigation.SearchAndSelectParameter("OnlineDeviceMenu//_Setup_//_AdvancedSetup_//_SILSequence_");
+
+                        Unknown element = application.SearchAndSelectParameter("OnlineDeviceMenu//_Setup_//_AdvancedSetup_//_SILSequence_");
+                        if (element != null)
+                        {
+                            application.SetParameterValue(element, "7452", true);
+                            if (silValidation.WaitUntilNextButtonIsActive(timeout))
+                            {
+                                silExecution.Next();
+
+                                silExecution.SetSilWhgParameter("SIL_Commissioning_", "Expertenmodus");
+                                if (silValidation.WaitUntilNextButtonIsActive(timeout))
+                                {
+                                    silExecution.Next();
+
+                                    if (silValidation.WaitUntilNextButtonIsActive(timeout))
+                                    {
+                                        silExecution.Next();
+
+                                        silExecution.SetSilWhgParameter("SIL_ConfirmFunctionTest_", "Ja");
+                                        if (silValidation.WaitUntilNextButtonIsActive(timeout))
+                                        {
+                                            silExecution.Next();
+
+                                            silExecution.SetSilWhgParameter(".STD_SetWriteProtection_", "7452");
+                                        }
+                                    }
+                                }
+                            }
+                        }

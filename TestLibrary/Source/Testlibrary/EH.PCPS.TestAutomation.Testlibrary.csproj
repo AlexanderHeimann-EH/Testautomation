@@ -1,0 +1,1145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8E104076-56FE-4D9C-A876-966E20A9B2CC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EH.PCPS.TestAutomation.Testlibrary</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.Testlibrary</AssemblyName>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.Testlibrary.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.Testlibrary.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>59143cb3-f5ec-4733-ba61-cb925c045a33</id>
+    </Compile>
+    <Compile Include="TestCases\Common\TC_WaitXSeconds.cs">
+      <id>b0a5da7e-90bd-4376-8f9a-de852b930f04</id>
+    </Compile>
+    <Compile Include="TestCases\Communication\TC_CloseConfiguration.cs">
+      <id>70d454a5-ee5e-4cc3-a688-e79b8957e466</id>
+    </Compile>
+    <Compile Include="TestCases\Communication\TC_ConfigureCommunication.cs">
+      <id>add2cd1a-38ec-4a1a-93a3-6d901491f135</id>
+    </Compile>
+    <Compile Include="TestCases\Communication\TC_OpenConfiguration.cs">
+      <id>38e33d09-a8be-4405-9e3d-fe44b797a5e8</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\AboutBox\TC_CheckDeviceTypeName.cs">
+      <id>dbfe31f0-7a4a-4b45-91b7-497f7bb2a236</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\AboutBox\TC_CheckSetupVersion.cs">
+      <id>a1a5478c-a9fa-48d9-a70b-e43c8704ab8a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\AboutBox\TC_CloseModule.cs">
+      <id>ae0d02f8-930f-41b7-9951-06a1d3a76168</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\AboutBox\TC_OpenModule.cs">
+      <id>3ed44d0a-9754-4f86-9b61-cd5ec8530066</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\AboutBox\TC_SaveClipboardDataToFile.cs">
+      <id>ae6be928-111b-44fe-a125-40b775508621</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\AboutBox\TC_SaveClipboardDataToReport.cs">
+      <id>1aa31fa5-7a83-42c7-bbd3-cc1ef6b39ec5</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CancelCompareDehWithDeh.cs">
+      <id>42c360b6-03ab-4eb6-91fd-8f68c45bcf56</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CancelCompareOfflineWithDehFile.cs">
+      <id>b1e5a5aa-b94b-4d40-85d5-84636aa7347e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CancelCompareOfflineWithOnline.cs">
+      <id>c4c6c4b0-9f83-4d61-87b6-39f1c6ba888f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CancelCompareOnlineWithDehFile.cs">
+      <id>cb3214fe-4b7e-4562-b35d-63123469fd4c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CheckThatParameterAreEqual.cs">
+      <id>e5cc0b63-750b-4048-9163-f9287d5f15da</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CheckThatParameterAreNotEqual.cs">
+      <id>59c5087e-06d2-4974-9c42-a63321ad845d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CloseModule.cs">
+      <id>bac8c3b7-baa1-46b7-804c-31bdca17475c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CompareDehFileWithDehFile.cs">
+      <id>d0451ea2-8634-4c68-8cff-0bceb9d9e5bb</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CompareOfflineWithDehFile.cs">
+      <id>5408a844-7694-4660-a8ee-c6032442728c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CompareOfflineWithOnline.cs">
+      <id>db1ba44a-3b20-4a13-b5db-4bf8618da1f1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_CompareOnlineWithDehFile.cs">
+      <id>daffa31e-cf38-485f-bcbb-1cb5bf45f21d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_LogAllDifferentParameter.cs">
+      <id>1ccb2d39-8090-4531-82e3-1fea1483e58e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_LogAllIdenticalParameter.cs">
+      <id>9b67124a-51f6-41a7-bc41-45e1c2b6ce4d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_LogAllParameter.cs">
+      <id>790d05ec-b7ee-4f59-a7ed-382144f76664</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_OpenModuleOffline.cs">
+      <id>87bb0e73-01fd-4da3-bf40-3f16a03dd577</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Compare\TC_OpenModuleOnline.cs">
+      <id>7c26b958-d31c-4e2b-9674-577d4f07e336</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckFineTuningGuiBehaviour.cs">
+      <id>70489158-9468-46a0-8ce9-abf62d8b6838</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckReferenceValueTabBehaviour.cs">
+      <id>6d7ba82c-cc53-4198-bca0-917d84a49764</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_EnterDataForFineTuning.cs">
+      <id>15bd8c61-bc9d-4930-a926-4f9d0324734b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CompareCoefficientsWithExpectedCoefficients.cs">
+      <id>b7a4b651-2ab2-4680-8b59-f29b45cac2c4</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_LoadConcentrationFile.cs">
+      <id>097f4ca0-b0d0-4e5e-92c2-12493f6bb320</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureReferenceValues.cs">
+      <id>96a93b76-7e33-4426-a26c-f44ae4097ec0</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureFineTuning.cs">
+      <id>2356ea28-baa0-45ec-b4a7-ea93a6e9193e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureLiquidProperties.cs">
+      <id>fef01b59-4d56-49dd-b5e8-a47565eb5043</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureExpertResults.cs">
+      <id>c93356ee-83e7-4ab1-9466-47719faa568a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckHelpForConcentration.cs">
+      <id>f166a0d9-b009-459f-b525-ac5c83e161ae</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_EnterDataForLiquidProperties.cs">
+      <id>54894470-9f0f-4c67-8abb-049117f6e600</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CreateNewConcentration.cs">
+      <id>433ebeef-f431-434b-81c2-b1c5c1dd1896</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CalculateCoefficientsAndCheckOutput.cs">
+      <id>e0f7cd6c-b220-453b-8dba-0a254e7979e3</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureCalculationBaseToPredefinedLiquid.cs">
+      <id>acb29167-0408-4938-8f9e-0276a1dfc0d9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckTabsAfterOpenModule.cs">
+      <id>cc56aaf6-0abd-47b9-9bbd-b3c34251ce2c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureBaseSettingsProcessConditions.cs">
+      <id>3eeb3407-5be4-40f7-a169-d218d9b5eb8c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureBaseSettingsProcessPressure.cs">
+      <id>52b83be8-59fa-4faf-ad8b-2f51b79f2e25</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatExpertResultsIsInactive.cs">
+      <id>0bb4a518-d612-4312-9d12-650edcc1b9fa</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatExpertResultsIsActive.cs">
+      <id>92c03e73-8d31-48fa-a108-299e611ed320</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatCoefficientsOverviewIsInactive.cs">
+      <id>c3f4f3bd-faf1-4fac-96ab-fcddbe72d85f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatCoefficientsOverviewIsActive.cs">
+      <id>087be559-a400-407d-a17f-caab7bc9d752</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatLiquidPropertiesIsInactive.cs">
+      <id>0fd832ed-0aa1-4450-b602-72c3bcb8321a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatLiquidPropertiesIsActive.cs">
+      <id>1b07c8d6-f09e-4fad-871e-d6ae95eafdd1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatReferenceValuesIsInactive.cs">
+      <id>1006abee-c755-4640-9979-eab6d79b0512</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatReferenceValuesIsActive.cs">
+      <id>0f754428-b225-4455-b9d4-78979cd1d1af</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatBaseSettingsIsInactive.cs">
+      <id>86401529-5a70-455a-a368-dfd41405b447</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatBaseSettingsIsActive.cs">
+      <id>b7e91766-e943-4f55-a9a2-781d46f8292e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ActivateSoftwareOption.cs">
+      <id>af6a988f-41b7-4d47-bd46-d3061c1aebb9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CalculateCoefficients.cs">
+      <id>fa6ade02-ed34-4234-a842-c0928a738cf6</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckExpertResults.cs">
+      <id>bd2aaf37-aca1-46b2-a097-a07a3be441d9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CheckThatAllFieldsInBaseSettingsAreGrayed.cs">
+      <id>65fc198e-0e1d-4607-9c42-d69f490afcea</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CloseModule.cs">
+      <id>992d34a7-f7bf-4516-981c-a2c4c5b4cf0d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CompareCalculatedCoefficientsWithCoefficientsReadFromDevice.cs">
+      <id>5b3bdfe2-a322-4a2b-aad5-e63de4628f5e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CompareCalculatedCoefficientsWithExpectedCoefficients.cs">
+      <id>33a6f08b-9ef7-4774-94b0-34d145c0b0af</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CompareCoefficientsReadFromDeviceWithExpectedCoefficients.cs">
+      <id>2e0ab552-7f7e-41ec-bea6-e118321ad523</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_CompareTableValue.cs">
+      <id>49084f87-5726-4a8d-8af7-f2ada49042ab</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ConfigureBaseSettingsBaseConfiguration.cs">
+      <id>c4aa308c-0bdb-4a8b-ba59-bc941ad2ac7d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_DeactivateSoftwareOption.cs">
+      <id>15d31019-05d0-4bd6-808f-f207f3a835dc</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_DeleteConcentrationData.cs">
+      <id>a9885798-c890-43f1-b369-27c9776f811c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ExportConcentrationFile.cs">
+      <id>861201ce-f6ae-498c-b66d-442284405576</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ImportConcentrationFile.cs">
+      <id>34fa15fe-f81b-4b83-9839-0c328c00ca82</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_OpenModuleOffline.cs">
+      <id>bbb998da-8151-4367-9dda-b9d7732aa561</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_OpenModuleOnline.cs">
+      <id>9b8a5673-b16d-45b6-ba2a-04e73b8f8b40</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_ReadCoefficientsFromDevice.cs">
+      <id>03150786-a703-4fff-aaeb-9a132fe7a285</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_Save.cs">
+      <id>b0f2a863-651f-4f7b-9005-ded7423da33f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_SaveAs.cs">
+      <id>a047776e-fbb6-48f3-be42-3ae721871a63</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_SetCoefficientsFromDevice.cs">
+      <id>97be3c42-b22b-46d7-87f1-e29cc3dcba96</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_SetTableValue.cs">
+      <id>d5284db4-0608-41ef-acc8-7b0f2625ee34</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\ConcentrationV2\TC_WriteCoefficientsToDevice.cs">
+      <id>1d910018-7bb5-4b40-b375-f7725212f37b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_ActivateSoftwareOption.cs">
+      <id>c7f3c7dd-b90a-4a8b-ab03-b93c43813ddd</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CompareTableValue.cs">
+      <id>4334e69d-30d9-4586-abf6-1e013e1e23fc</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_DeactivateSoftwareOption.cs">
+      <id>da5ee0e8-f0cb-4c9d-a971-dcf45a82e763</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_SetTableValue.cs">
+      <id>e8103231-b137-43ff-86d2-c5bc24e09af2</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_WriteCoefficientsToDevice.cs">
+      <id>46ab9b10-2853-4bee-9c77-0aa043bd744d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_SetCoefficientsFromDevice.cs">
+      <id>b08ce934-ed11-434f-a649-c1c549daf431</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_SaveAs.cs">
+      <id>b74ea92a-164b-4e0d-901c-493e7e35dbee</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_Save.cs">
+      <id>b4588cc5-414d-406b-8799-7a8148f3227c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_ReadCoefficientsFromDevice.cs">
+      <id>1b8d8e9b-ebb6-4e50-a9d9-e09db2101cb9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_OpenModuleOnline.cs">
+      <id>35f00b46-3d11-406c-ad9d-ee4fb7f23ce5</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_OpenModuleOffline.cs">
+      <id>3fa254c7-427a-44c6-a3d3-c104eac67143</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_Load.cs">
+      <id>3f67750b-c9d0-4d3d-8341-1c25d6d0c31f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_Import.cs">
+      <id>240154c5-2d13-40e0-967c-311fb4bd15fa</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_Export.cs">
+      <id>9542aae3-bca9-4a1d-89b8-d30faf78748f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_DeleteConcentrationData.cs">
+      <id>fa756e8e-e910-40e6-97fa-a6990fe40981</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_ConfigureBaseSettings.cs">
+      <id>b2c145e4-814a-49b0-9b5a-b5d128c76475</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CompareCoefficientsReadFromDeviceWithExpectedCoefficients.cs">
+      <id>7d705913-b319-4d6d-adaf-ad1f17a32e53</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CompareCalculatedCoefficientsWithExpectedCoefficients.cs">
+      <id>2cc1860d-697c-45e5-b12a-fc3bfd06e64b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CompareCalculatedCoefficientsWithCoefficientsReadFromDevice.cs">
+      <id>23803352-d4f4-4b57-86c8-06c0a4b36cfe</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CloseModule.cs">
+      <id>eae73567-28bf-45f6-8362-195b493fe02d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CheckThatAllTabPagesExceptLiquidPropertiesAreActive.cs">
+      <id>9cc3794b-25c7-40dd-8126-094c88c7849b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CheckThatAllTabPagesAreActive.cs">
+      <id>e56d4c7f-5c76-4c0e-89e2-7343fc2af242</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CheckThatAllFieldsInBaseSettingsAreGrayed.cs">
+      <id>37682893-af80-41b9-8e13-6a4c0ce24571</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CheckExpertResults.cs">
+      <id>6b88624e-732a-4573-a73c-b2a8c1030655</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CalculateCoefficients.cs">
+      <id>daed563c-b4a5-42ff-ab0f-e2216ae3b76d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Concentration\TC_CheckCoefficientCalculation.cs">
+      <id>0c947870-114a-4028-9eb5-6fbeac584608</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\CreateDocumentation\TC_CloseModule.cs">
+      <id>89c9bccb-0f07-4865-8695-2d48abb6c3a1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\CreateDocumentation\TC_OpenModuleOnline.cs">
+      <id>4ef92886-5525-4e14-aeb4-e547a787beb3</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\CreateDocumentation\TC_SaveDocumentationAsPdf.cs">
+      <id>dc2cd494-ab6f-468d-837c-6fab0d1f5446</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_CloseModule.cs">
+      <id>bd4cc817-090b-4af6-87c2-cf1326f32c96</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_LoadCurves.cs">
+      <id>1501bf6b-4bea-47e3-b7f6-05c360762067</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_NewCurve.cs">
+      <id>43a1d6e7-5c54-4f5b-8bb2-a7df0f2535b5</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_OpenModuleOffline.cs">
+      <id>c871b97b-1a4b-458b-ac57-082a00c1b1d1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_OpenModuleOnline.cs">
+      <id>6ad363c4-01c2-4775-a274-675dfacd3650</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_ReadCurvesCyclic.cs">
+      <id>d5ceaeee-e95e-4229-b386-fe4f7b914543</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_ReadSingleCurve.cs">
+      <id>a29bd1e8-d0e3-41a3-84cb-0d61a5dfa472</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_SaveCurve.cs">
+      <id>44db1476-2373-45a7-8126-92c7fcae4a04</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurveShed\TC_SaveCurveAs.cs">
+      <id>4c65dd43-a99e-4a4c-b88b-4afcfc42b81d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_CloseModule.cs">
+      <id>23e105ea-49a7-49a2-ac1d-7a45be482e1e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_LoadCurves.cs">
+      <id>31d7c27b-6e7a-403d-aff8-134dbb17771d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_NewCurve.cs">
+      <id>c3eed55b-e2eb-4b79-987f-577087824594</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_OpenModuleOffline.cs">
+      <id>914a4c04-54de-420a-90d2-5dc3d380f685</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_OpenModuleOnline.cs">
+      <id>cb51d2bf-b285-4cce-9bb9-1fbedbc5cea2</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_ReadCurvesCyclic.cs">
+      <id>354a19ab-c68f-4ee9-8851-13179f87f1d8</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_ReadMap.cs">
+      <id>ad559758-158e-4aa5-8e98-51482211b3f8</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_ReadSingleCurve.cs">
+      <id>fdef0f58-631b-4307-9da7-3aeaa4db8f46</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_SaveCurve.cs">
+      <id>5a4de5ab-1115-4205-af38-26ee308c6a5b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_SaveCurveAs.cs">
+      <id>c20a53ab-93d1-4fa7-a77c-bf6dc2a6235e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EnvelopeCurve\TC_WriteMap.cs">
+      <id>e4a070a6-7c1c-466f-a3e3-dd67d87220d4</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EventList\TC_ActivateMaintenanceMode.cs">
+      <id>9835b714-c79d-469a-a5a6-c64b3017b711</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EventList\TC_ActivateServiceMode.cs">
+      <id>b01bd3d3-a847-4649-99d7-343277b22fb7</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EventList\TC_CheckNumberOfEvents.cs">
+      <id>7cf52370-fd9c-405b-9786-7e811a3a1d3f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EventList\TC_CloseModule.cs">
+      <id>bfac6542-6696-4397-b122-b43962d767d9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EventList\TC_OpenModuleOnline.cs">
+      <id>3513cbe7-f97c-457b-9ece-3be1f93c5da8</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\EventList\TC_RefreshEventList.cs">
+      <id>fde09cc6-ae7a-41cf-837d-6d5a3a1c9d06</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ActivateHistoromSoftwareOption.cs">
+      <id>7d5cfa6c-72d1-4934-a3bd-9f6eb18c3483</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ActivateMaintenanceMode.cs">
+      <id>411565e4-d079-4ce1-831d-0e3374cb77ec</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ActivateServiceMode.cs">
+      <id>97a43764-1325-4761-8bfb-b391da90cc08</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_AssignChannelsRandomly.cs">
+      <id>55d63742-0207-4df9-83c4-ad3d66dace8b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ChannelAssignment.cs">
+      <id>a3d15210-68e6-4778-9e46-33747ba8cd89</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CheckDiagram.cs">
+      <id>1f799368-3044-4ba5-b21f-55c91cc957ee</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CheckHistoromInfoMessage.cs">
+      <id>ca0caa2c-5c67-4a0e-b351-dd6cb940870c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CheckMaximumNumberOfEvents.cs">
+      <id>305cd036-c7d6-47a0-a2bf-5d6e65216ac8</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CheckMinimumNumberOfEvents.cs">
+      <id>55bc9f27-edf5-40cf-ba26-b6d2d30eb397</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CheckStatisticResults.cs">
+      <id>4a951209-1a14-4b47-891a-d864e2b3e763</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CloseModule.cs">
+      <id>ac6c45d4-6987-47be-8ea3-692fd1caef9d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ConfigureSettings.cs">
+      <id>171f02f5-e695-4fb5-8184-0656633b0a71</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_CreateDocumentationHistorom.cs">
+      <id>6946d33f-e1b4-4803-bbef-73ac0983444b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_DeactivateHistoromSoftwareOption.cs">
+      <id>6b5be78d-2da4-4a3b-b0d3-b523acc12192</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_DeleteHistoromData.cs">
+      <id>a80bc2c5-af6b-4291-a4d4-56127bbcd340</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ExportHistoRomData.cs">
+      <id>383b9c28-bfee-43bf-8f85-ec9a15fe20ce</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_OpenFile.cs">
+      <id>089ff934-fb35-41d4-9c1c-39240041b3dd</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_OpenModuleOffline.cs">
+      <id>0af22540-bd1b-4590-bd47-32f258ef04f2</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_OpenModuleOnline.cs">
+      <id>d699a6f7-f7e5-4e28-83d6-507481a8b30a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_ReadEvents.cs">
+      <id>0d9ecf41-87e8-4a4d-a0c6-f84ecb74ee75</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_SaveData.cs">
+      <id>a268345e-e372-4650-bcc4-fc4304b3cc63</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_SaveDataAs.cs">
+      <id>f2013954-c3b8-435d-9dc1-bce1d756f1cf</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Historom\TC_SwitchTabs.cs">
+      <id>b7e1ac66-36e9-4b86-afab-df8899fed68c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_Calculate.cs">
+      <id>e65d69a8-d8d3-4a01-89af-da63e440448f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_CheckSettingsParameterNotInvalid.cs">
+      <id>0d46c512-d8a3-4b33-bf0d-56ea0b89fbf7</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_CompareTableValue.cs">
+      <id>d19a7de9-5aca-471d-a8c3-6c4cfd6e8f61</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_SetTableValue.cs">
+      <id>30186a77-5f2e-43dd-affb-5610f2d11b42</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_DragAndDropParameterIntoHeader.cs">
+      <id>a9d68ddb-f6ef-4b01-aef8-416bced7984f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ConnectToSoftwareUnderTest.cs">
+      <id>6c104ebf-0aa6-4109-b510-9cb6163e877e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_DisconnectSoftwareUnderTest.cs">
+      <id>3b779e1a-3712-4741-9740-b0b903c22af9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CheckThatDeviceHasNoFailure.cs">
+      <id>f39dbb21-1e9a-42f5-9ac4-6054adc9f8e3</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_CloseModule.cs">
+      <id>30d32ae2-7486-44c3-9b38-e2b523114bfc</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureCylindricalTankStanding.cs">
+      <id>9ec29875-948e-4146-b1ca-ce2c202ee767</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureGeneralSettings.cs">
+      <id>2d43cebd-280b-4bb0-a601-40c12697fa72</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureHorizontalCylindricalTank.cs">
+      <id>90956c8c-435e-4122-99be-72caa4c131b1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureModularTank.cs">
+      <id>0a8bd662-0128-4da6-8dd1-7eceba14eff8</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureModularTanksCircular.cs">
+      <id>23c83751-e818-40de-bec1-13ce781dad55</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureSphericalTank.cs">
+      <id>0fe7d895-59dc-4a22-b8b1-dba395d4d5bf</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ConfigureUserSettings.cs">
+      <id>7fe07973-96d6-4331-9291-c06944ceae79</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_Export.cs">
+      <id>bc00a002-b2d8-44c4-9796-8eeaa7803889</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_Import.cs">
+      <id>c9ad8e6f-c5bf-403a-bc62-321da24f6894</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_OpenModuleOffline.cs">
+      <id>024dab89-48a6-469d-ac0c-f071a15c0518</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_OpenModuleOnline.cs">
+      <id>8ee32881-238b-4eac-a95b-27f0cc9870c9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_ReadTable.cs">
+      <id>dcfacbbb-1d5d-4fa2-a956-2599aaa44994</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Linearization\TC_WriteTable.cs">
+      <id>540b5219-61e8-467b-b792-065337ae6d53</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ChangeParameter.cs">
+      <id>b15e3f6f-ef9d-4445-9555-7a23f94d7143</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ChangeParameterAndCheckValue.cs">
+      <id>bf9e2d70-9502-4b7c-8e43-cd7551668ffb</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ChangeParameterWithoutConfirmingAndCheckValue.cs">
+      <id>92955aec-ff3c-42b1-9be7-12be83ad1f27</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CheckNamurStatus.cs">
+      <id>e53f9197-1c21-4860-a3a2-c0ad33056a04</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CheckParameterStatus.cs">
+      <id>beb309ce-60e7-4c3d-985d-83157d46cfa1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CheckParameterValue.cs">
+      <id>efa7493a-c396-403e-a1fe-8e9b378148df</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CheckThatParameterAreNotInvalid.cs">
+      <id>dc830fd2-bd6f-4e0b-bb84-f028437d2f81</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CheckThatParameterCannotBeSetToAnInvalidValue.cs.cs">
+      <id>9862383f-0d8d-4091-bd0e-8acadc63b850</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CloseModuleOffline.cs">
+      <id>3c070cc2-9795-4140-9e4e-46172306bc9f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CloseModuleOnline.cs">
+      <id>29dd2cd4-2358-4a7f-a491-03bcd43353bc</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_IsParameterExisting.cs">
+      <id>7cdcbbd5-023b-46cd-94de-99b44e64a2e0</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_OpenModuleOffline.cs">
+      <id>24be527c-ef26-4e4c-a62f-5e2a25145889</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_OpenModuleOnline.cs">
+      <id>2b7a7ec8-8b65-4fcb-8cf4-f0bcb155d0cf</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ResetDevice.cs">
+      <id>12757272-8507-4503-acc1-7c77b1e3f98a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ReturnToHomeFromSilSequence.cs">
+      <id>a62e05e3-3b73-4859-a510-6ca0fbaef666</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CancelSilSequence.cs">
+      <id>c40b1b0c-4a46-4dfb-a6e0-62ff8abf5bc0</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_LockSilAndCheckParameter.cs">
+      <id>0dd5b340-3ced-49e4-b7c7-dd65511f58f3</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_ReturnToHomeFromWhgSequence.cs">
+      <id>32f6b577-6033-4780-8177-dbcff4856fb4</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_CancelWhgSequence.cs">
+      <id>4033a2c2-8476-4bc5-90dc-1167c3e3e6fa</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_LockWhgAndCheckParameter.cs">
+      <id>0463bc00-c65a-4de7-84e9-e2e0b2c8f12a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Parameterization\TC_SelectItem.cs">
+      <id>17d94dcd-e3f7-424d-82d2-77d60780d752</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_CloseModule.cs">
+      <id>3147a93d-0948-488b-95ec-369de6747325</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_OpenModuleOffline.cs">
+      <id>2127f869-21a8-4197-b60d-ed5bcb1ea60b</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_OpenModuleOnline.cs">
+      <id>22670e0a-861b-4e74-9800-fb96cc678e15</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_RestoreInvalidFile.cs">
+      <id>13e780e0-a62f-4e8e-bede-9c9c13bbe8bd</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_RestoreWithDownload.cs">
+      <id>e6db25e7-8452-4d98-847a-c14b940e4212</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_RestoreWithoutDownload.cs">
+      <id>d62fea7f-2491-4337-8fc8-779674e9147f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_SaveWithoutUpload.cs">
+      <id>c04d1aab-0115-40de-b191-55436f89f27c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\SaveRestore\TC_SaveWithUpload.cs">
+      <id>e722540e-3460-46e7-a4b8-3715eabce104</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_ActivateViscositySoftwareOption.cs">
+      <id>cfdd2d69-793b-4a4f-ba46-6fce3fa45220</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_Calculate.cs">
+      <id>4a7597c7-19a9-4883-ada4-13467222447d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_CheckResultsAfterCalculation.cs">
+      <id>2f56ceb1-896d-4589-a3a1-a8a33d589dd2</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_CloseModule.cs">
+      <id>3849228f-e49a-4c66-9e93-a2df072b7239</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_CompareCoefficients.cs">
+      <id>33c3c78c-e988-41f9-9d24-9f3a13abc19e</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_CompareTableValue.cs">
+      <id>1ada74f2-5e5f-4d2a-8b57-f417f27c65e5</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_ConfigureFluidPropertiesParameter.cs">
+      <id>9220cff3-a0ea-4fc7-a6f8-6a4a285a351a</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_DeactivateViscositySoftwareOption.cs">
+      <id>d1c62355-1f3e-4c19-9df7-30c8b1a0f8d1</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_DeleteViscosityData.cs">
+      <id>6268b58b-36da-489e-aae1-87545ecab12f</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_Export.cs">
+      <id>c6305f3a-5ba4-41f2-bd9e-339d309f26de</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_Import.cs">
+      <id>47d2877c-afcc-4d28-ad5b-59377e414402</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_IsCalculateButtonActive.cs">
+      <id>aa399583-1754-407d-b157-7a43a39309af</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_IsCalculateButtonInactive.cs">
+      <id>2e166ecc-d69c-43d9-83f8-626af6ce65e9</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_OpenModuleOffline.cs">
+      <id>9b8ca1e8-178e-47b5-bde3-d80a5c351e2c</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_OpenModuleOnline.cs">
+      <id>e3fcf982-7cc6-4d6d-bc96-afaac673e11d</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_SetTableValue.cs">
+      <id>71256122-62d5-4823-bb1f-0ee7c80cf649</id>
+    </Compile>
+    <Compile Include="TestCases\DeviceFunction\CoDIA\Viscosity\TC_WriteValuesToDevice.cs">
+      <id>e3332209-15d1-4326-a9e7-6502caa19ed0</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_AddDeviceToProject.cs">
+      <id>65d8d9ae-867d-4f30-a743-06164d60aa69</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_CloseHostApplication.cs">
+      <id>c944b94e-1fc0-41db-978b-67eac32d2a67</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_CloseProject.cs">
+      <id>19754fb1-1b2e-434a-ab76-252f21fa92a0</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_ConnectDevice.cs">
+      <id>0816aa5e-db7f-424e-83ae-01c2afd6dd55</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_CreateNewProject.cs">
+      <id>b627b1b6-bedc-4457-912f-668e72c69ca9</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\FieldCare\TC_CreateProjectAddCommDtmAndScan.cs">
+      <id>deca09aa-1b64-48ec-afd7-dd7741c22cf0</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_DisconnectDevice.cs">
+      <id>2a77ca2f-719a-4d70-a77d-6aed4ce5671e</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_FindAndSelectDeviceInTopology.cs">
+      <id>9458fbca-3e63-4743-ba71-2d63812153bb</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_LoadProject.cs">
+      <id>a1aa9e8c-e1f8-4434-9580-8d7b83fa6525</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_OpenHostApplication.cs">
+      <id>a0d8e98c-323a-4c38-a127-1e6e0a0bd1ec</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_SaveProject.cs">
+      <id>9b1dabd0-5b74-4799-af44-f22c5614ea83</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\FieldCare\TC_UpdateDtmCatalog.cs">
+      <id>d19f933c-088f-41a7-9ea2-8c2c1e738eda</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\TC_CheckForCriticalError.cs">
+      <id>b5be9086-4729-42f6-82b8-4f0d5c004369</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\TC_FdtDownload.cs">
+      <id>e2b503d3-dde5-4aa7-91f8-43d8c355d0a3</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\TC_FdtPrint.cs">
+      <id>c7764500-2d97-4a6a-b641-307cc6fde464</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\TC_FdtUpload.cs">
+      <id>ac1dbd96-03c6-4463-9e4a-39246616107e</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\FieldCare\TC_CheckFrameGUI.cs">
+      <id>fa3f23a0-c6d6-47fb-8e48-82ddab71caf6</id>
+    </Compile>
+    <Compile Include="TestCases\HostApplication\FDT\FieldCare\TC_TESTAREA.cs">
+      <id>2351a242-d583-4108-b80b-f636a5df5b75</id>
+    </Compile>
+    <Compile Include="TestModules\DeviceFunction\CoDIA\Compare\TM_CompareOnlineVsOffline.cs">
+      <id>9ce97b55-5935-4835-8fcd-47714f55386b</id>
+    </Compile>
+    <Compile Include="TestModules\DeviceFunction\CoDIA\Historom\TM_ChangeSettings.cs">
+      <id>5f2acde6-93e3-49f3-9059-79378a2097d4</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_DisconnectCurrentDeviceViaIcon.cs">
+      <id>9a814a04-c565-4a95-903b-6cf43be30eb4</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_AddParentDTM.cs">
+      <ORIGINALPATH>C:\Documents and Settings\testadmin\My Documents\RanorexStudio Projects\FieldCareDEMO\FieldCareDEMO\FC20700-1424\Functions\AddDevice.cs</ORIGINALPATH>
+      <id>6ad2d234-0a2e-4cb8-b4ef-08507246bf59</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_ConnectCurrentDeviceViaIcon.cs">
+      <id>fb492061-8e2e-4460-8f7f-0f3376adbce3</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_ConnectCurrentDeviceViaMenu.cs">
+      <id>2856cb68-054b-4751-affe-70e5d29d1a12</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_ConnectDisconnectSeveralTimesViaIcon.cs">
+      <id>d7134945-74fc-4442-b80a-bf24f33c4eca</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_ConnectDisconnectSeveralTimesViaMenu.cs">
+      <id>0042d0bf-1329-4914-a48a-8fbd3cd3dceb</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_DisconnectCurrentDeviceViaMenu.cs">
+      <id>6d2fcc00-0550-42c6-a08f-aa930995f042</id>
+    </Compile>
+    <Compile Include="TestModules\HostApplication\FDT\FieldCare\TM_FindDevice.cs">
+      <ORIGINALPATH>C:\Documents and Settings\testadmin\My Documents\RanorexStudio Projects\FieldCareDEMO\FieldCareDEMO\FC20700-1424\Functions\FindDevice.cs</ORIGINALPATH>
+      <id>8f79f52c-d09d-449e-9c30-a249610cb96b</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\AboutBox\VorlageSetupDelivery.cs">
+      <id>1ef1ddd5-da20-48c5-a1eb-8225f7970597</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Compare\VorlageSetupDelivery.cs">
+      <id>975e1d82-de00-4cb2-b717-2d9fb40b1b8c</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Concentration\VorlageSetupDelivery.cs">
+      <id>8afad948-a942-4fdf-9e94-b9629a1ccd82</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\ConcentrationV2\VorlageSetupDelivery.cs">
+      <id>bc2652a1-1a78-46ae-81ea-95e7f9adb91b</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\CreateDocumentation\VorlageSetupDelivery.cs">
+      <id>8c5383fa-f7d8-4228-ad1e-470c0c511635</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\EnvelopeCurveShed\VorlageSetupDelivery.cs">
+      <id>5227840d-0e51-4932-9e62-2bd704fee3b0</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\EnvelopeCurve\VorlageSetupDelivery.cs">
+      <id>cccb7c40-40d2-4cc0-b0cc-38c9718a2958</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\EventList\VorlageSetupDelivery.cs">
+      <id>3528fa0a-6cf6-489c-a908-2de37ff0f379</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Historom\VorlageSetupDelivery.cs">
+      <id>7ae0beca-ceea-4fc3-97e9-83030451a1f7</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Linearization\VorlageSetupDelivery.cs">
+      <id>c3973039-3ab8-496f-bbd5-4f778554d43f</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Parameterization\VorlageSetupDeliveryOffline.cs">
+      <id>7f9fbf8f-78e6-4c7e-ac51-4f93012178a8</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Parameterization\TS_ResetDevice.cs">
+      <id>1b2d3f60-2033-4456-8da6-a6dda54f76cf</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Parameterization\VorlageSetupDeliveryOnline.cs">
+      <id>b063ae47-2aa7-4c30-a113-e763d83a28af</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\SaveRestore\VorlageSetupDelivery.cs">
+      <id>7038bafc-99f5-4d65-a853-c6621db2dbe6</id>
+    </Compile>
+    <Compile Include="TestSuites\DeviceFunction\CoDIA\Viscosity\VorlageSetupDelivery.cs">
+      <id>b52dbb9e-0015-4603-89c9-99cc9e95cea9</id>
+    </Compile>
+    <Compile Include="TestSuites\HostApplication\FDT\FdtFunctions\TS_SetupDelivery.cs">
+      <id>9cfe1e1e-15df-4ba3-a1e8-0c47b68f7656</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestCases\DeviceFunction\Classic\">
+      <id>63512123-069a-425a-9a9c-3562b70ac3cb</id>
+    </Folder>
+    <Folder Include="TestCases\DeviceFunction\EDD\">
+      <id>3f612177-2dbf-471f-afd2-a66bc36e2051</id>
+    </Folder>
+    <Folder Include="TestCases\HostApplication\EDD\">
+      <id>b6d3216c-41ae-450b-9f28-29fe23ed19ec</id>
+    </Folder>
+    <Folder Include="TestCases\HostApplication\FDI\">
+      <id>ce57e8ea-34fa-4593-b21a-c5831b442d0d</id>
+    </Folder>
+    <Folder Include="TestCases\OperatingSystem\">
+      <id>bf5b86b9-4a50-4678-b812-a670ffbc2d97</id>
+    </Folder>
+    <Folder Include="TestModules\Communication\">
+      <id>b2f78200-fd9c-4183-856f-742052696862</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\Classic\">
+      <id>35211614-c09f-427e-af15-11037ee572fb</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\AboutBox\">
+      <id>10d41b39-9fae-4e42-9707-c13862d6c511</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\Concentration\">
+      <id>3d63f18d-1e36-4282-9e97-c1ad793eb6c9</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\CreateDocumentation\">
+      <id>089f8ef4-5da1-4c88-96ba-2812fd51d2ed</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\EnvelopeCurve\">
+      <id>c8aa7eda-4c91-4c36-9015-ead0a3aa4c76</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\EventList\">
+      <id>7294cdca-12b8-45e3-83fd-f6900afe4566</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\Linearization\">
+      <id>38414a22-45f7-4a3e-9194-5c13c7738d5d</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\Parameterization\">
+      <id>08dda6fe-fa24-448d-ae94-e3f58a5f08b3</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\SaveRestore\">
+      <id>27c8de2f-892a-441b-beac-314009b6bdc9</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\CoDIA\Viscosity\">
+      <id>43d80c1d-2a76-4dd8-855b-9e53bb9a2775</id>
+    </Folder>
+    <Folder Include="TestModules\DeviceFunction\EDD\">
+      <id>c6386099-cab2-4628-94a4-79290ed00b0d</id>
+    </Folder>
+    <Folder Include="TestModules\HostApplication\EDD\">
+      <id>a861b81e-be2d-4299-932b-53eeff1b8dc5</id>
+    </Folder>
+    <Folder Include="TestModules\HostApplication\FDI\">
+      <id>776d5591-fbe9-4fdb-8612-ca4040350d1a</id>
+    </Folder>
+    <Folder Include="TestModules\OperatingSystem\">
+      <id>0b6ea4c9-edca-4d7d-803a-8f14014fe6e5</id>
+    </Folder>
+    <Folder Include="TestSuites\Communication\">
+      <id>eb691143-e867-4144-8e4f-42e158088ab0</id>
+    </Folder>
+    <Folder Include="TestSuites\DeviceFunction\Classic\">
+      <id>8f08e653-b0be-4ed5-88b5-18c1b0553915</id>
+    </Folder>
+    <Folder Include="TestSuites\DeviceFunction\EDD\">
+      <id>2ddceb03-a468-44cf-b774-c808d5abb240</id>
+    </Folder>
+    <Folder Include="TestSuites\OperatingSystem\">
+      <id>1e85cbe9-0d24-49f6-a09f-e31f2f09840b</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\AboutBox\TS_SetupDeliveryAboutBox.xml">
+      <SubType>Designer</SubType>
+      <id>6dc4a1b4-fc50-46fa-94b3-987746117039</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\Compare\TS_SetupDeliveryCompare.xml">
+      <id>45914620-3537-487d-a763-134dce4073a4</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\Concentration\TS_SetupDeliveryConcentration.xml">
+      <SubType>Designer</SubType>
+      <id>2e12705a-ba1c-4fb5-a63d-315acf04dc6a</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\CreateDocumentation\TS_SetupDeliveryCreateDocumentation.xml">
+      <id>255b8346-5d20-45da-899f-1883631406af</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\EnvelopeCurve\TS_SetupDeliveryEnvelopeCurve.xml">
+      <id>39e39897-51f0-4d5e-97b9-7c6b09693338</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\EventList\TS_SetupDeliveryEventList.xml">
+      <id>5e7e44c7-71f3-4603-9df4-5c972af306e1</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\Historom\TS_SetupDeliveryHistorom.xml">
+      <id>32849f65-c859-4988-9ca9-dd437f1926ce</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\Linearization\TS_SetupDeliveryLinearization.xml">
+      <SubType>Designer</SubType>
+      <id>8c554cf6-ad71-4d87-89dc-cb533b21e03d</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\Parameterization\TS_SetupDeliveryParameterization.xml">
+      <SubType>Designer</SubType>
+      <id>eb32c734-6d2a-427a-8366-843337f223f7</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\SaveRestore\TS_SetupDeliverySaveRestore.xml">
+      <id>b2728a49-1531-49f3-98b2-aa3f756393cc</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\Viscosity\TS_SetupDeliveryViscosity.xml">
+      <SubType>Designer</SubType>
+      <id>4f76ce98-1929-4bc4-ada6-a22da9f5264b</id>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestSuites\HostApplication\FDT\FieldCare\TS_PrepareFieldCareAndProject.xml">
+      <id>9c3aa45b-a97a-4441-8064-4986bcb3a14e</id>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\DeviceTypeAcceptanceTest.xml">
+      <SubType>Designer</SubType>
+      <id>8869af5d-791f-43df-8fe0-59367df83384</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\EnvelopeCurveShed\TS_SetupDeliveryEnvelopeCurveShed.xml">
+      <id>fa8b2502-b32c-4896-b4b3-5a4d974be359</id>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestSuites\DeviceFunction\CoDIA\TestConfiguration.xsd">
+      <SubType>Designer</SubType>
+      <id>544a416e-5259-4dd8-8abd-eba036eee844</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csproj">
+      <Project>{D3C23E1A-7467-490D-B62F-738044A3D87D}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerLoader\EH.PCPS.TestAutomation.CommonCommunicationLayerLoader.csproj">
+      <Project>{2E287672-463F-4F7B-BAC3-43BC537ED2A4}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerInterfaces\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces.csproj">
+      <Project>{0EF05611-60FB-4819-ABCD-9BD8CBAD021B}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerLoader\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.csproj">
+      <Project>{43ABD28E-4EF1-4D62-9C0E-227A1B6DDC18}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationInterfaces\EH.PCPS.TestAutomation.CommunicationInterfaces.csproj">
+      <Project>{A6B9DE12-A966-496A-BC3C-95170F5F8E87}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationLoader\EH.PCPS.TestAutomation.CommunicationLoader.csproj">
+      <Project>{07C7C624-D9AD-4425-8EDF-91F42CDB83B0}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunctionInterfaces\EH.PCPS.TestAutomation.DeviceFunctionInterfaces.csproj">
+      <Project>{33D95987-17DA-4F6B-8796-B835749DAEB4}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.DeviceFunction\Source\DeviceFunctionLoader\EH.PCPS.TestAutomation.DeviceFunctionLoader.csproj">
+      <Project>{C48CE9B8-0BD6-4DA2-B9D0-7E3FF138D16D}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{F50A421E-F8FB-49BD-BB83-3CAE985C4FD1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationLoader\EH.PCPS.TestAutomation.HostApplicationLoader.csproj">
+      <Project>{CF6B82E1-2E16-4978-85D2-79E36F69C39B}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\EH.PCPS.TestAutomation.OperatingSystemInterfaces.csproj">
+      <Project>{84570471-ED0C-4D17-8847-2A912DA4AD5D}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\EH.PCPS.TestAutomation.OperatingSystemLoader.csproj">
+      <Project>{9743802E-A832-476A-B1D5-3DD503E52CC9}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestSuites\DeviceFunction\CoDIA\ConcentrationV2\TS_SetupDeliveryConcentrationV2.xml">
+      <SubType>Designer</SubType>
+      <id>571e7281-d9a6-49ff-a3b2-b9a8211322b0</id>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

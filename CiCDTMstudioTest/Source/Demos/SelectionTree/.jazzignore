@@ -1,0 +1,39 @@
+﻿### Jazz Ignore 0
+# Ignorierte Dateien und Ordner werden nicht festgeschrieben, können jedoch
+# während der Übernahme oder Aktualisierung modifiziert werden.
+# - Eigenschaften für Ignorierungen müssen eine durch Leerzeichen getrennte Liste von Dateinamensmustern enthalten.
+# - Jedes Muster beachtet die Groß-/Kleinschreibung und wird in geschweifte Klammern ('{' und '}') gesetzt. 
+# - "*" entspricht keinem oder mehreren Zeichen.
+# - "?" entspricht einem Einzelzeichen. 
+# - Die Liste der Muster kann mehrere Zeilen umfassen. Jede Zeile muss dann mit einem
+#     umgekehrten Schrägstrich beendet und jede neue Zeile mit einem Tabulator begonnen werden.
+# - Muster in core.ignore verhindern, dass übereinstimmende Ressourcen in demselben
+#     Verzeichnis festgeschrieben werden.
+# - Muster in core.ignore.recursive verhindern, dass übereinstimmende Ressourcen im aktuellen
+#     Verzeichnis und allen Unterverzeichnissen festgeschrieben werden.
+# - Der Standardwert von core.ignore.recursive ist *.class. 
+# - Der Standardwert von core.ignore ist bin. 
+# 
+# Zum Ignorieren von Shell-Scripts und verdeckten Dateien in einer Unterverzeichnisstruktur:
+#     z. B.: core.ignore.recursive = {*.sh} {\.*} 
+# 
+# Zum Ignorieren von Ressourcen mit dem Namen 'bin' im aktuellen Verzeichnis (bei gleichzeitigem
+#  Zulassen der Ressourcen in allen Unterverzeichnissen): 
+#     z. B.: core.ignore.recursive = {*.sh} {\.*} 
+# 
+# HINWEIS: Durch das Modifizieren von Ignorierungsdateien wird nicht der Ignorierungsstatus von
+#     Ressourcen geändert, die aus Eclipse abgeleitet sind.
+
+core.ignore.recursive= \
+	{obj} \
+	{bin} \
+	{_ReSharper*} \
+	{*csproj.user} \
+	{*resharper.user} \
+	{*sln.resources} \
+	{*.ccscc} \
+	{*.suo}
+	
+	
+core.ignore= \
+	

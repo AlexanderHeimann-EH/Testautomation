@@ -1,0 +1,3 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\EH.PCPS.TestAutomation.HostApplicationInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\EH.PCPS.TestAutomation.HostApplicationInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\obj\Release\EH.PCPS.TestAutomation.HostApplicationInterfaces.dll

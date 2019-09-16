@@ -1,0 +1,62 @@
+//------------------------------------------------------------------------------
+// <copyright file="OpenAbout.cs" company="Endress+Hauser Process Solutions AG">
+//     Copyright (c) Endress+Hauser Process Solutions AG. All rights reserved.
+// </copyright>
+// <summary>Description of file.</summary>
+//------------------------------------------------------------------------------
+
+namespace EH.PCPS.TestAutomation.TestPackageCI.EnvelopeCurve.Functions.MenuArea.Menubar.Execution
+{
+    using System;
+    using System.Reflection;
+
+    using EH.PCPS.TestAutomation.Common;
+    using EH.PCPS.TestAutomation.Common.Tools;
+    using EH.PCPS.TestAutomation.DeviceFunctionInterfaces.CoDIA.EnvelopeCurve.Functions.MenuArea.Menubar.Execution;
+    using EH.PCPS.TestAutomation.TestPackageCI.EnvelopeCurve.GUI.MenuArea.Menubar;
+
+    using Ranorex;
+    using Ranorex.Core;
+
+    /// <summary>
+    ///     Open about box of module Envelope Curve
+    /// </summary>
+    public class OpenAbout : MarshalByRefObject, IOpenAbout
+    {
+        /// <summary>
+        ///     Open via related menu-entry
+        /// </summary>
+        /// <returns>
+        ///     <br>Button: If call worked fine</br>
+        ///     <br>NULL: If an error occurred</br>
+        /// </returns>
+        public bool ViaMenu()
+        {
+            try
+            {
+                Element element = (new RunHelp()).ViaMenu();
+                if (element != null && element.Enabled)
+                {
+                    Button button = (new Elements()).EntryAbout;
+                    if (button != null && button.Enabled)
+                    {
+                        Mouse.MoveTo(button, 500);
+                        button.Click(DefaultValues.locDefaultLocation);
+                        return true;
+                    }
+
+                    EH.PCPS.TestAutomation.Common.Tools.Log.Error(LogInfo.Namespace(MethodBase.GetCurrentMethod()), "Menu entry is not accessable");
+                    return false;
+                }
+
+                EH.PCPS.TestAutomation.Common.Tools.Log.Error(LogInfo.Namespace(MethodBase.GetCurrentMethod()), "Menu is not accessable");
+                return false;
+            }
+            catch (Exception exception)
+            {
+                EH.PCPS.TestAutomation.Common.Tools.Log.Error(LogInfo.Namespace(MethodBase.GetCurrentMethod()), exception.Message);
+                return false;
+            }
+        }
+    }
+}

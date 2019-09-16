@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ReplaceFileElementsRepository"
+id="0835a886-4d5b-4328-b770-ba5e739f0e88"
+rxversion="6.1">
+	<codegen
+	classname="ReplaceFileElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateB2014.EnvelopeCurveShed.GUI.Dialogs"/>
+	<rootfolder
+	name="Root"
+	id="526fdbe6-f20b-4ea2-a8e6-cdabac22cebc"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonYes"
+		id="743fc5aa-66eb-4cff-bc3b-74be42ee385c"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@accessiblename='Yes']
+		</item>
+		<item
+		name="buttonNo"
+		id="a784d4ef-7f7c-4160-ac6c-95a09fd41664"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@accessiblename='No']
+		</item>
+		<item
+		name="buttonCancel"
+		id="9ede16c1-9b48-4a5b-b3c2-44a8bfbe9932"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@accessiblename='Cancel']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

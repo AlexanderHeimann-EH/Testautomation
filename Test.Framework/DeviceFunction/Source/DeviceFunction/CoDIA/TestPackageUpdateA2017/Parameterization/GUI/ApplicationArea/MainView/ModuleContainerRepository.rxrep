@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ModuleContainerRepository"
+id="2026b91a-bbec-4846-bbe0-de29c08ac6b8"
+rxversion="6.1">
+	<codegen
+	classname="ModuleContainerRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.Parameterization.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="028bc93a-f3bd-4692-9311-5829bbdee554"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="OnlineParameterizationModuleContainer"
+		id="ddae3bee-5ab0-453b-a8c7-123552164469"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="button,accessible"
+		refimgid="e18032cb-7f28-494d-aecc-7f708c802e5d">
+			/container[@controltypename='DtmUserInterface']
+		</item>
+		<item
+		name="OfflineParameterizationModuleContainer"
+		id="4c717084-dbc0-4ac3-ae71-624566375c89"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="button,accessible"
+		refimgid="f94eb88e-cb82-410f-91a1-9055c81daabb">
+			/container[@controltypename='DtmUserInterface']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,89 @@
+﻿<UserControl
+    x:Class="EH.DTMstudioTest.ScriptConfigurator.Content.ScriptConfiguratorControl.Content.EditParameterControl.EditParameterControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EH.DTMstudioTest.ScriptConfigurator.Content.ScriptConfiguratorControl.Content.EditParameterControl"
+    mc:Ignorable="d"
+    d:DesignHeight="400" d:DesignWidth="640">
+    <Grid>
+        <Border Background="#90000000" Visibility="{Binding Visibility}">
+
+            <Border Height="400" Width="640" BorderBrush="Black" BorderThickness="1" Background="AliceBlue" CornerRadius="10,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Border.BitmapEffect>
+                    <DropShadowBitmapEffect Color="Black" Opacity="0.5" Direction="270" ShadowDepth="0.7" />
+                </Border.BitmapEffect>
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Text="{Binding HeaderMessage, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:EditParameterControl}}}"
+                        Grid.Row="0" TextWrapping="Wrap" Margin="5"/>
+                    <DataGrid Grid.Row="1" ItemsSource="{Binding EditParameters, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:EditParameterControl}}}"
+                              AutoGenerateColumns="false" CanUserAddRows="False" Margin="0,0,0,37" Grid.RowSpan="2" MaxHeight="315">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="Parameter" MinWidth="150" MaxWidth="150" Width="SizeToCells" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=DisplayName}" Grid.Row="0" TextWrapping="Wrap" Margin="5" ToolTip="{Binding Path=Description}" MinWidth="50" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="Value" MinWidth="250" MaxWidth="250" Width="SizeToCells" IsReadOnly="false">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBox x:Name="tbDescription" Grid.Row="0" TextWrapping="Wrap" Margin="5" MinWidth="100">
+                                            <TextBox.Text>
+                                                <Binding Path="ParameterValue" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" />
+                                            </TextBox.Text>
+                                            <TextBox.Style>
+                                                <Style TargetType="{x:Type TextBox}">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Path=ParameterValueValid}" Value="false">
+                                                            <Setter Property="BorderBrush" Value="Red" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBox.Style>
+                                        </TextBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="Description" MinWidth="200" MaxWidth="200" Width="SizeToCells" IsReadOnly="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBox Grid.Row="0" TextWrapping="Wrap" Margin="5" IsReadOnly="True" ToolTip="{Binding Path=Description}" MinWidth="80" MaxWidth="300" >
+                                            <TextBox.Text>
+                                                <Binding Path="Description" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>    
+                                            </TextBox.Text>
+                                        </TextBox>    
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <UniformGrid Grid.Row="3" Margin="5" Columns="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <Button x:Name="OkButton" Click="OkButtonClick" Margin="10,5,5,5"  Width="100" Content="Save" IsDefault="True">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="IsEnabled"
+                                            Value="{Binding IsValidated, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:EditParameterControl}}}" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsValidated, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:EditParameterControl}}}" Value="True">
+                                            <Setter Property="IsEnabled" Value="True" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <Button x:Name="CancelButton" Click="CancelButtonClick" Content="Cancel" Margin="10,5,5,5"  Width="100"/>
+                    </UniformGrid>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="EH.DTMstudioTest.ScriptExplorer.Content.ScriptExplorerControl.ScriptExplorerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:scriptExplorerTree="clr-namespace:EH.PCPS.ScriptExplorerTree;assembly=EH.PCPS.ScriptExplorerTree"
+             xmlns:controls="clr-namespace:EH.DTMstudioTest.ScriptExplorer.Content.ScriptExplorerControl.Content.EditParameterControl"
+             xmlns:messageBoxControl="clr-namespace:EH.DTMstudioTest.ScriptExplorer.Content.ScriptExplorerControl.Content.MessageBoxControl"
+             SizeChanged="SuiteConfiguratorControl_OnSizeChanged">
+    <Grid>
+        <Grid x:Name="TestSuiteTreeControl">
+            <scriptExplorerTree:ScriptExplorerTreeControl
+                    x:Name="TestSuiteSelectionTreeControl"
+                    ForegroundColor="White"
+                    BackgroundColor="Black"
+                    BackgroundFocusColor="#ff007caa"
+                    BackgroundNotValidColor="Red"
+                    TreeViewItemMouseMove="OnTreeViewItemMouseMove"
+                    KeyDown="OnKeyDown"
+                    KeyUp="OnKeyUp"/>
+        </Grid>
+        <controls:EditParameterControl x:Name="EditParameterControl" />
+        <messageBoxControl:MessageBoxControl x:Name="MessageBoxControl" />
+    </Grid>
+</UserControl>

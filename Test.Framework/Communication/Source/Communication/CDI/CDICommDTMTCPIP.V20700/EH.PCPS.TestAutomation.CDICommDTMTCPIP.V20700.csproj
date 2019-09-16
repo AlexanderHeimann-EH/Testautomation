@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C61B1B47-AA72-4A6D-81F0-5FB987FB0C4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <projectdefaultrepository>2df68e3c-8ce5-45e9-86f9-103f07f25e3f</projectdefaultrepository>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\Communication\CDI\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\Communication\CDI\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\CloseConfiguration.cs">
+      <id>362bbae5-7a6a-4e31-8ca5-c8962b641176</id>
+    </Compile>
+    <Compile Include="CommonFlows\ConfigureCommunication.cs">
+      <id>0cb28a0d-5ae7-4266-a373-7c28cc721d7a</id>
+    </Compile>
+    <Compile Include="CommonFlows\OpenConfiguration.cs">
+      <id>9e049af1-7846-4904-8ee0-7ff972a7cf0c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SetParameterInText.cs">
+      <id>f9fd7450-eb02-4d1c-9a2d-fde8a7783ed3</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\PressButton.cs">
+      <id>33e00b48-f38e-4d04-a7d4-47692955015c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SetParameterInComboBox.cs">
+      <id>95cec039-acf5-4819-be04-5e3d6beedd90</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Execution\SettingParser.cs">
+      <id>915e5b88-fba1-492b-a4a6-d38beff40e41</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleConfigurable.cs">
+      <id>e20bba2c-fcc0-4df7-80e0-369a7123bfd4</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\IsModuleReady.cs">
+      <id>367da2aa-3ae2-4f32-a3ec-7fda280765c5</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Validation\WaitUntilModuleIsReady.cs">
+      <id>0039d285-4c51-40ab-bd2e-b569b82e9137</id>
+    </Compile>
+    <Compile Include="GUI\CDICommDTMRepo.cs">
+      <id>25c81a26-161c-4f2a-b058-dfeb468236b8</id>
+      <BoundTo>2df68e3c-8ce5-45e9-86f9-103f07f25e3f</BoundTo>
+      <DependentUpon>CDICommDTMRepo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\CDICommDTMRepoElements.cs">
+      <id>4420d394-7f9b-49ee-aee1-0f3059953a69</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>3c1e2b9c-b297-4dec-bc49-0d3465143b6f</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetIpAddress.cs">
+      <id>02e4e16f-8758-49e1-a6f4-5b5ec88156f7</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetPort.cs">
+      <id>9ec2abf2-9a13-4eaa-95de-f99cef4c020d</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetFoundDevice.cs">
+      <id>2d4b6e48-4463-44da-b1a8-f2d1a0ea4323</id>
+    </Compile>
+    <Compile Include="SpecificFlows\SetTimeout.cs">
+      <id>e0772dba-d76f-43a8-bafc-fa75856ea687</id>
+    </Compile>
+    <None Include="GUI\CDICommDTMRepo.rximg">
+      <BoundTo>2df68e3c-8ce5-45e9-86f9-103f07f25e3f</BoundTo>
+      <DependentUpon>CDICommDTMRepo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>790d4b1f-3652-4593-b08d-e3af90ffdd5f</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\CDICommDTMRepo.rxrep">
+      <id>2df68e3c-8ce5-45e9-86f9-103f07f25e3f</id>
+      <repoid>abab2861-ba05-4a6d-831d-bc8ea839c802</repoid>
+      <reporootid>f5a87b78-57c1-4fe5-86b0-b7cf9c1b47b2</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions\Dialogs\Execution\">
+      <id>a40e9733-e1dd-4f17-b84f-9c4631aa05a9</id>
+    </Folder>
+    <Folder Include="Functions\Dialogs\Validation\">
+      <id>bfa8840a-7f16-4853-b29e-a6d3a4a862d1</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Execution\">
+      <id>fbea28fe-bf67-4f33-969d-347848ae3c25</id>
+    </Folder>
+    <Folder Include="Functions\MenuArea\Validation\">
+      <id>c38a40ea-d32f-4803-a9c1-cda824e5ccac</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Execution\">
+      <id>ee09e0b3-d537-413f-82f6-499ea83fd3e7</id>
+    </Folder>
+    <Folder Include="Functions\StatusArea\Validation\">
+      <id>734799f1-859c-4989-9fc6-5a29234df87e</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csproj">
+      <Project>{D3C23E1A-7467-490D-B62F-738044A3D87D}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

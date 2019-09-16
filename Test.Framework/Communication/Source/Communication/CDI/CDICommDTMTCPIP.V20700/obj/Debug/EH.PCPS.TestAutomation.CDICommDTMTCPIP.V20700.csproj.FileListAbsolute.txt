@@ -1,0 +1,5 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.xml
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20700\obj\Debug\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20700\obj\Debug\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20700.pdb

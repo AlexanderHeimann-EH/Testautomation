@@ -1,0 +1,1311 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.HostApplicationLoader</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+            Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.PathToDll">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution"/> class. 
+            Connect interfaces to assembly-version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDI.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath">
+            <summary>
+            Gets the get DTM container path.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.DeviceCare.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath">
+            <summary>
+            Gets the get DTM container path.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.GetCommDtmContainerPath">
+            <summary>
+            Gets the get comm DTM container path.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath">
+            <summary>
+            Gets the get STM container path.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Execution.StartFrame">
+            <summary>
+            Gets the start frame.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.GetModuleAreaControl">
+            <summary>
+            Gets the get module area control.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.GetNumberOfOpenedModules">
+            <summary>
+            Gets the get number of opened modules.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.GetOpenedModules">
+            <summary>
+            Gets the get opened modules.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IsFrameAvailable">
+            <summary>
+            Gets the is frame available.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.IsModuleAlreadyOpened">
+            <summary>
+            Gets the is module already opened.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.ApplicationArea.MainView.Validation.WaitUntilFrameClosed">
+            <summary>
+            Gets the wait until frame closed.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation">
+            <summary>
+                Description of Validation.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.NamespaceForCloseProject">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CloseProject.Validation.ClosingInProgressDialog">
+            <summary>
+            Gets the closing in progress dialog.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation"/> class. 
+                Connect interfaces to DLL version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Validation.ScanDtmMessages">
+            <summary>
+            Gets the scan DTM messages.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution"/> class. 
+                Connect interfaces to DLL version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.DtmMessages.Execution.DtmMessages">
+            <summary>
+            Gets the DTM messages.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveProjectInProgress.Validation.ValidationMethods">
+            <summary>
+            Gets the validation methods.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.IgnoreUpdate">
+            <summary>
+            Gets the ignore update.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Execution.UpdateCatalog">
+            <summary>
+            Gets the update catalog.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDtmCatalogMessageOnStartup.Validation.ValidationMethods">
+            <summary>
+            Gets the validation methods.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Validation.ValidationMethods">
+            <summary>
+            Gets the validation methods.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.UpdateDTMCatalogue.Execution.UpdateDtmCatalogue">
+            <summary>
+            Gets the update DTM catalogue.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.AddDevice.Execution.AddDevice">
+            <summary>
+            Gets the add device.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ConfirmDeleteMessage.Execution.ConfirmDelete">
+            <summary>
+            Gets the confirm delete.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.CreateNetwork.Execution.CreateNetwork">
+            <summary>
+            Gets the create network.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.EvaluationInfo.Execution.EvaluationInfo">
+            <summary>
+            Gets the evaluation info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.FindDevice.Execution.FindDevice">
+            <summary>
+            Gets the find device.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ProjectBrowser.Execution.ProjectBrowser">
+            <summary>
+            Gets the project browser.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadFromDeviceMessage.Execution.ReadFromDevice">
+            <summary>
+            Gets the read from device.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Execution.ReadingFromDevice">
+            <summary>
+            Gets the reading from device.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation"/> class. 
+            AppDomain
+            </summary>
+            <summary>
+            Connect interfaces to dll-version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReadingFromDevice.Validation.IsFdtUploadActive">
+            <summary>
+            Gets the is FDT upload active.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Execution.ReportConfiguration">
+            <summary>
+            Gets the report configuration.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ReportConfiguration.Validation.IsFdtPrintActive">
+            <summary>
+            Gets the is FDT print active.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.SaveAsMessage.Execution.SaveAs">
+            <summary>
+            Gets the save as.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.ScanningInProgressMessage.Execution.ScanningInProgress">
+            <summary>
+            Gets the scanning in progress.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceErrorMessage.Execution.WriteToDeviceError">
+            <summary>
+            Gets the write to device error.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceInfoMessage.Execution.WriteToDeviceInfo">
+            <summary>
+            Gets the write to device info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceSuccessMessage.Execution.WriteToDeviceSuccess">
+            <summary>
+            Gets the write to device success.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WriteToDeviceWarningMessage.Execution.WriteToDeviceWarning">
+            <summary>
+            Gets the write to device warning.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Execution.WritingToDevice">
+            <summary>
+            Gets the writing to device.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.Dialogs.WritingToDevice.Validation.IsFdtDownloadActive">
+            <summary>
+            Gets the is FDT download active.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution">
+            <summary>
+            Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.CloseAdditionalModule">
+            <summary>
+            Gets the close additional module.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenAddDevice">
+            <summary>
+            Gets the open add device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenAdditionalFunctions">
+            <summary>
+            Gets the open additional functions.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenAdditionalModule">
+            <summary>
+            Gets the open additional module.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenConfiguration">
+            <summary>
+            Gets the open configuration.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenDisplayDtmCatalogue">
+            <summary>
+            Gets the open display DTM catalogue.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenFdtPrint">
+            <summary>
+            Gets the open FDT print.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenFindDevice">
+            <summary>
+            Gets the open find device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenFindNextDevice">
+            <summary>
+            Gets the open find next device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenFunction">
+            <summary>
+            Gets the open function.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenOfflineParameterization">
+            <summary>
+            Gets the open offline parameterization.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenOnlineParameterization">
+            <summary>
+            Gets the open online parameterization.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenOptions">
+            <summary>
+            Gets the open options.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenPrintSetup">
+            <summary>
+            Gets the open print setup.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenProjectLoad">
+            <summary>
+            Gets the open project load.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenProjectNew">
+            <summary>
+            Gets the open project new.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenProjectSaveAs">
+            <summary>
+            Gets the open project save as.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.OpenUpdateDtmCatalogue">
+            <summary>
+            Gets the open update DTM catalogue.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunCloseAllWindows">
+            <summary>
+            Gets the run close all windows.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunConnect">
+            <summary>
+            Gets the run connect.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunCreateNetwork">
+            <summary>
+            Gets the run create network.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunDeleteDevice">
+            <summary>
+            Gets the run delete device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunDeviceFunction">
+            <summary>
+            Gets the run device function.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunDeviceOperation">
+            <summary>
+            Gets the run device operation.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunDisconnect">
+            <summary>
+            Gets the run disconnect.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunDtmCatalogue">
+            <summary>
+            Gets the run DTM catalogue.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunEdit">
+            <summary>
+            Gets the run edit.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunExtras">
+            <summary>
+            Gets the run extras.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunFdtReadFromDevice">
+            <summary>
+            Gets the run FDT read from device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunFdtWriteToDevice">
+            <summary>
+            Gets the run FDT write to device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunFile">
+            <summary>
+            Gets the run file.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunFrameExit">
+            <summary>
+            Gets the run frame exit.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunHelp">
+            <summary>
+            Gets the run help.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunLogOff">
+            <summary>
+            Gets the run log off.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunProjectClose">
+            <summary>
+            Gets the run project close.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunProjectSave">
+            <summary>
+            Gets the run project save.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunScanningTools">
+            <summary>
+            Gets the run scanning tools.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunSelectModule">
+            <summary>
+            Gets the run select module.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunTools">
+            <summary>
+            Gets the run tools.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunView">
+            <summary>
+            Gets the run view.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Execution.RunWindow">
+            <summary>
+            Gets the run window.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.GetAdditionalFunctionModules">
+            <summary>
+            Gets the get additional function modules.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IsModuleAvailableAtMenu">
+            <summary>
+            Gets the is module available at menu.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Menubar.Validation.IsModuleEnabledAtMenu">
+            <summary>
+            Gets the is module enabled at menu.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution">
+            <summary>
+            Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution"/> class. 
+                Connect interfaces to DLL version related implementation
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.OpenAddDevice">
+            <summary>
+            Gets the open add device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.OpenFdtPrint">
+            <summary>
+            Gets the open FDT print.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.OpenPrintSetup">
+            <summary>
+            Gets the open print setup.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.OpenProjectLoad">
+            <summary>
+            Gets the open project load.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.OpenProjectNew">
+            <summary>
+            Gets the open project new.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunConnect">
+            <summary>
+            Gets the run connect.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunCreateNetwork">
+            <summary>
+            Gets the run create network.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunDeleteDevice">
+            <summary>
+            Gets the run delete device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunDisconnect">
+            <summary>
+            Gets the run disconnect.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunFdtReadFromDevice">
+            <summary>
+            Gets the run FDT read from device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunFdtWriteToDevice">
+            <summary>
+            Gets the run FDT write to device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Execution.RunProjectSave">
+            <summary>
+            Gets the run project save.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation">
+            <summary>
+                Contains interfaces to access frame application area
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IsConnected">
+            <summary>
+            Gets the is connected.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.IsDisconnected">
+            <summary>
+            Gets the is disconnected.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.WaitUntilFrameConnected">
+            <summary>
+            Gets the wait until frame connected.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.Functions.MenuArea.Toolbar.Validation.WaitUntilFrameDisconnected">
+            <summary>
+            Gets the wait until frame disconnected.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows">
+            <summary>
+                Contains interfaces to access frame Flows
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.NamespaceForFrames">
+            <summary>
+            The namespace communication.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.SetNetworkTag">
+            <summary>
+            Gets the create network.
+            </summary>
+            <value>The create network.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.CreateNetwork">
+            <summary>
+            Gets the create network.
+            </summary>
+            <value>The create network.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.FdtDownload">
+            <summary>
+            Gets the FDT download.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.FdtPrintAsPdf">
+            <summary>
+            Gets the FDT print as PDF.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.FdtUpload">
+            <summary>
+            Gets the FDT upload.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.FocusNetworkView">
+            <summary>
+            Gets the focus network view.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.FrameExitWithoutSaving">
+            <summary>
+            Gets the frame exit without saving.
+            </summary>
+            <value>The frame exit without saving.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.ProjectClose">
+            <summary>
+            Gets the project close.
+            </summary>
+            <value>The project close.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.ProjectLoad">
+            <summary>
+            Gets the project load.
+            </summary>
+            <value>The project load.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.ProjectNewEmpty">
+            <summary>
+            Gets the project new empty.
+            </summary>
+            <value>The project new empty.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.ProjectSave">
+            <summary>
+            Gets the project save.
+            </summary>
+            <value>The project save.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.ProjectSaveAs">
+            <summary>
+            Gets the project save as.
+            </summary>
+            <value>The project save as.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.UpdateDtmCatalog">
+            <summary>
+            Gets the update DTM catalog.
+            </summary>
+            <value>The update DTM catalog.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.PrintDeviceInformation">
+            <summary>
+            Gets the update DTM catalog.
+            </summary>
+            <value>The update DTM catalog.</value>
+        </member>
+    </members>
+</doc>

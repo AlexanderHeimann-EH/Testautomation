@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\EH.PCPS.TestAutomation.OperatingSystemInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\EH.PCPS.TestAutomation.OperatingSystemInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\EH.PCPS.TestAutomation.OperatingSystemInterfaces.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\obj\Debug\EH.PCPS.TestAutomation.OperatingSystemInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\obj\Debug\EH.PCPS.TestAutomation.OperatingSystemInterfaces.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\obj\Debug\EH.PCPS.TestAutomation.OperatingSystemInterfaces.csprojResolveAssemblyReference.cache

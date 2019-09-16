@@ -1,0 +1,20 @@
+﻿// Assembly Spark, Version 1.7.0.0
+
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: System.Runtime.CompilerServices.Extension]
+[assembly: System.Reflection.AssemblyInformationalVersion("1.7.2.0")]
+[assembly: System.Reflection.AssemblyTrademark("")]
+[assembly: System.Runtime.InteropServices.Guid("cadfaf7e-67ac-47c9-845f-7076eafeb598")]
+[assembly: System.Reflection.AssemblyConfiguration("release")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.0", FrameworkDisplayName=".NET Framework 4")]
+[assembly: System.Reflection.AssemblyTitle("Spark")]
+[assembly: System.Reflection.AssemblyDescription("")]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Security.AllowPartiallyTrustedCallers]
+[assembly: System.Reflection.AssemblyCopyright("Copyright (c) Louis DeJardin 2008-2012")]
+[assembly: System.Reflection.AssemblyCompany("Louis DeJardin")]
+[assembly: System.Reflection.AssemblyFileVersion("1.7.2.0")]
+[assembly: System.Reflection.AssemblyProduct("Spark")]
+

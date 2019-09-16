@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="DtmViewPaths"
+id="6d477a0c-b212-49b7-bd5f-c3425a7f3522"
+rxversion="6.1">
+	<codegen
+	classname="DtmViewPaths"
+	namespace="EH.PCPS.TestAutomation.FieldCare.V20901.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="b87112a2-0a48-486f-9bec-5e6d3574bcc4"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<folder
+		name="DTMViewPaths"
+		id="7ea2f6be-e0f2-4e89-8413-ca33e28902e9"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="False">
+			<item
+			name="MDIClient"
+			id="b939a2e7-7d0d-4c18-b59c-86c1f240f126"
+			searchtimeout="30000ms"
+			capname="unknown">
+				/form[@processname='FMPFrame']/element[@controltypename='MdiClient']
+			</item>
+			<item
+			name="MDIClientChildForms"
+			id="698a586c-5de1-43bf-8621-2e0fbe0c08e7"
+			searchtimeout="30000ms"
+			capname="form">
+				/form[@processname='FMPFrame']/element[@controltypename='MdiClient']/form
+			</item>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,27 @@
+﻿<repository
+name="StatusbarElementsRepository"
+id="20932f92-1d43-4cf2-8635-f7db6d379320"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.Configuration.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="19b35425-4206-4527-bab7-7fecf5d04022"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="StatusbarItemConnectionState"
+		id="800b9761-c1ef-4e89-9cc7-bebfc6284caa"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="05a98853-5bf3-43d0-9756-252f5c0223b1">
+			/?/form//element[@controlname='StatusBar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/text[@accessiblename~'^Statusbar\.Item\.Connection']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

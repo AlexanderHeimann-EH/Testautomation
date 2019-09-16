@@ -1,0 +1,5 @@
+﻿path,setParameter,setValue,checkParameter,checkValue
+Promag 400//Setup//Current output//Current span:,Current span:,4...20 mA US,Current span:,4...20 mA US
+Promag 400//Setup//Current output//Current span:,Current span:,4...20 mA NAMUR,Current span:,4...20 mA NAMUR
+Promag 400//Setup//Low flow cut off//Off value low flow cutoff:,Off value low flow cutoff:,60,Off value low flow cutoff:,60
+Promag 400//Setup//Low flow cut off//Off value low flow cutoff:,Off value low flow cutoff:,50,Off value low flow cutoff:,50

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ModuleContainerRepository"
+id="e69ac1f8-e423-4e67-8001-c8787bdaf742"
+rxversion="6.1">
+	<codegen
+	classname="ModuleContainerRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.Compare.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="d89f3fe4-86ea-4bb3-bc2f-a34a84537a4a"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="CompareModuleContainer"
+		id="ddb8678c-f29f-49e0-94f4-710687358056"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="button,accessible"
+		refimgid="49e923bb-5ac7-4152-8f0a-dcc24f99742d">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,18 @@
+﻿<FlowDocument xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Uid="FlowDocument_1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              FontSize="15" FontFamily="Arial" LineHeight="20" IsHyphenationEnabled="false" PagePadding="5" >
+    
+    <Paragraph x:Uid="Paragraph_1">
+        <Hyperlink NavigateUri="http://logging.apache.org/log4net/license.html" Name="LoggingServices">
+            <Bold x:Uid="Bold_1">Apache log4net™</Bold>
+        </Hyperlink>
+    </Paragraph>
+
+    <!--<Paragraph x:Uid="Paragraph_2">
+        <Hyperlink NavigateUri="D:\Users\i02401012\Downloads\d301013_de.pdf" Name="ZIPComponent">
+            <Bold x:Uid="Bold_1">Manual</Bold>
+        </Hyperlink>
+    </Paragraph>-->
+
+</FlowDocument>
+
+

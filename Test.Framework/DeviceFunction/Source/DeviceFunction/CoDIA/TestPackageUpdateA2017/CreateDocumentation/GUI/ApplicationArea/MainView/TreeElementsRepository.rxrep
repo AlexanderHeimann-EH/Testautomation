@@ -1,0 +1,42 @@
+﻿<repository
+name="TreeElementsRepository"
+id="b3ea96de-b94a-46ed-9f34-84d629229185"
+rxversion="6.1">
+	<codegen
+	classname="TreeElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.CreateDocumentation.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="73ac9170-e47c-4486-a78c-880a46de940b"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="treeItemPrintoutSelection"
+		id="6280f0ed-dfe8-4275-947e-094d40374ef8"
+		searchtimeout="30000ms"
+		capname="treeitem"
+		addcaps="cell,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']/container/container[@controlname='panel1']/container/container[@controlname='panel1']/container/container/element/tree/container[@accessiblename='Data Panel']/treeitem[@accessiblename='Node0']
+		</item>
+		<item
+		name="cellDocumentation"
+		id="0bbde99a-9cd2-4f3b-b6ac-7eef246b5f75"
+		searchtimeout="30000ms"
+		capname="cell"
+		addcaps="cell,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']/container/container[@controlname='panel1']/container/container[@controlname='panel1']/container/container/element/tree/container[@accessiblename='Data Panel']/treeitem[@accessiblename='Node0']/cell[@accessiblename='Documentation row 0']
+		</item>
+		<item
+		name="cellStatus"
+		id="9d783648-8645-496f-9871-269e08ccb63c"
+		searchtimeout="30000ms"
+		capname="cell"
+		addcaps="cell,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']/container/container[@controlname='panel1']/container/container[@controlname='panel1']/container/container/element/tree/container[@accessiblename='Data Panel']/treeitem[@accessiblename='Node0']/cell[@accessiblename='Status row 0']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

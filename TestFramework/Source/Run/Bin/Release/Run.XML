@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Run</name>
+    </assembly>
+    <members>
+        <member name="T:Run.Program">
+            <summary>
+            The program.
+            </summary>
+        </member>
+        <member name="F:Run.Program.configuratorDialog">
+            <summary>
+            The configurator dialog.
+            </summary>
+        </member>
+        <member name="M:Run.Program.Main(System.String[])">
+            <summary>
+            The main.
+            </summary>
+            <param name="args">
+            The args.
+            </param>
+            <returns>
+            The <see cref="T:System.Int32"/>.
+            </returns>
+        </member>
+    </members>
+</doc>

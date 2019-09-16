@@ -1,0 +1,40 @@
+﻿<UserControl
+    x:Class="EH.DTMstudioTest.ScriptExplorer.Content.ScriptExplorerControl.Content.MessageBoxControl.MessageBoxControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EH.DTMstudioTest.ScriptExplorer.Content.ScriptExplorerControl.Content.MessageBoxControl"
+    mc:Ignorable="d"
+    d:DesignHeight="422" d:DesignWidth="617">
+    <Grid>
+        <Border Background="#90000000" Visibility="{Binding Visibility}">
+
+            <Border Height="187" Width="400" BorderBrush="Black" BorderThickness="1" Background="AliceBlue" CornerRadius="10,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Border.BitmapEffect>
+                    <DropShadowBitmapEffect Color="Black" Opacity="0.5" Direction="270" ShadowDepth="0.7" />
+                </Border.BitmapEffect>
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding MessageHeader, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MessageBoxControl}}}" Grid.Row="0" TextWrapping="Wrap" Margin="5"/>
+                    <StackPanel Grid.Row="1"  HorizontalAlignment="Stretch">
+                        <Border BorderBrush="Black" BorderThickness="1" Background="Black" Margin="0" />
+                    </StackPanel>
+                    <TextBlock Text="{Binding MessageLine1, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MessageBoxControl}}}"    Grid.Row="2" TextWrapping="Wrap" Margin="5"/>
+                    <TextBlock Text="{Binding MessageLine2, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MessageBoxControl}}}" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Margin="15"/>
+
+                    <UniformGrid Grid.Row="4" Margin="5" Columns="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <Button x:Name="YesButton"  Width="100" Margin="10,5,5,5" Click="YesButtonClick" Content="Yes" IsDefault="True" />
+                        <Button x:Name="NoButton" Width="100" Margin="10,5,5,5" Click="NoButtonClick" Content="No"  />
+                    </UniformGrid>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</UserControl>

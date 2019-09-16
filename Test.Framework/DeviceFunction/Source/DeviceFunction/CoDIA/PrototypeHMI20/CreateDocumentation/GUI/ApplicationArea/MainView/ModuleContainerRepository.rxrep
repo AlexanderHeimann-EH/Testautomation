@@ -1,0 +1,27 @@
+﻿<repository
+name="ModuleContainerRepository"
+id="626ec461-78fe-4b57-aa5d-418af180a544"
+rxversion="6.1">
+	<codegen
+	classname="ModuleContainerRepository"
+	namespace="EH.PCPS.TestAutomation.PrototypeHMI20.CreateDocumentation.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="3a79cfb7-757b-46ee-91b3-e1241f2aef88"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="CreateDocumentationModuleContainer"
+		id="ed2a9c0d-99c3-4729-b652-14554fb61ea8"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="button,accessible"
+		refimgid="3c6d77e6-a6cc-4786-9719-b6cb3f35943c">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='ModulePresentationArea']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

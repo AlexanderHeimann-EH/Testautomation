@@ -1,0 +1,12 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{44B73CC3-F68D-48C3-A83C-3D42615C4CD6}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution EH.PCPS.TestAutomation.DeviceCare.V10107[EH.PCPS.TestAutomation.DeviceCare.V10107[Functions[ApplicationArea[Page_DeviceScreen[]]]]]]&#xD;&#xA;Solution EH.PCPS.TestAutomation.DeviceCare.V10107\EH.PCPS.TestAutomation.DeviceCare.V10107\Functions\ApplicationArea\Page_DeviceScreen\Page_DeviceScreen_Functions.cs&#xD;&#xA;Solution EH.PCPS.TestAutomation.DeviceCare.V10107\EH.PCPS.TestAutomation.DeviceCare.V10107" />
+  <StartupProject value="" />
+</Properties>

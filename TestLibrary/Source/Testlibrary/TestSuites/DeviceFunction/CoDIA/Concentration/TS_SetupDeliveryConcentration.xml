@@ -1,0 +1,1254 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryConcentration</DisplayName>
+      <Guid>ea07d8cc-52fd-48fb-aa08-9cbfbfd94903</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryConcentration</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Activate Software Option Open And Prepare</DisplayName>
+          <Guid>42ba5eb2-c88e-4561-b579-77ab7d498035</Guid>
+          <IsActive>false</IsActive>
+          <Name>Activate Software Option Open And Prepare</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Activates the software using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:
+
+Param:
+The software option code.</Description>
+              <DisplayName>Concentration.TC_ActivateSoftwareOption.Run</DisplayName>
+              <Guid>6f8af8c6-dfd6-4bb9-8fc3-6aeaa009dee6</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToParameter, softwareOptionCode)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Activates the software using the Online Parameterization
+
+Param:
+The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:
+
+Param:
+The software option code.</ToolTip>
+              <AssemblyMethodRefId>DBAF418A-E2BC-4537-B62C-84200A9AD924</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The path to the software activation option parameter. Use this form: Promass 100//Expert//System//Administration//Activate SW option:</Description>
+                  <Name>pathToParameter</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The software option code.</Description>
+                  <Name>softwareOptionCode</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Concentration.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>9d20302f-6493-421b-b91c-b2ce7ca54753</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>DC63E1CE-0ED9-4F35-B21F-285F613BE9EC</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Deletes the Concentration data by clicking the button New. Verifies that coefficients are deleted afterwards.</Description>
+              <DisplayName>Concentration.TC_DeleteConcentrationData.Run()</DisplayName>
+              <Guid>ec69a5b5-337e-4f98-9da5-4c1d7c40817b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Deletes the Concentration data by clicking the button New. Verifies that coefficients are deleted afterwards.</ToolTip>
+              <AssemblyMethodRefId>13C4AD35-3199-4208-BEBB-BE6564ABD854</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Check Configure Check Calculate Compare Check Values</DisplayName>
+          <Guid>8a66c76c-6add-400a-a139-add6cf6e3a3e</Guid>
+          <IsActive>false</IsActive>
+          <Name>Check Configure Check Calculate Compare Check Values</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</Description>
+              <DisplayName>Concentration.TC_CheckThatAllTabPagesExceptLiquidPropertiesAreActive.Run()</DisplayName>
+              <Guid>44eb31d1-e2c7-41f5-88e9-b1a0bd2726d0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</ToolTip>
+              <AssemblyMethodRefId>F0772535-E807-42BB-BF71-C8B17BEB71A4</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</Description>
+              <DisplayName>Concentration.TC_ConfigureBaseSettings.Run</DisplayName>
+              <Guid>628b0af4-cb37-437b-9ca1-59047ef9bda1</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(calculationBase, liquidType, densityCalibration, fieldDensityAdjustment, sensor, temperatureUnit, temperatureMin, temperatureMax, concentrationUnit, concentrationMin, concentrationMax)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</ToolTip>
+              <AssemblyMethodRefId>A6A4A4F1-FF87-4F71-9FF8-FA6A1260F586</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The calculation Base.</Description>
+                  <Name>calculationBase</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Defined liquid</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The liquid Type.</Description>
+                  <Name>liquidType</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Aqueous sugar</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The density Calibration.</Description>
+                  <Name>densityCalibration</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Standard calibration</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The field Density Adjustment.</Description>
+                  <Name>fieldDensityAdjustment</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The sensor.</Description>
+                  <Name>sensor</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Unit.</Description>
+                  <Name>temperatureUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>°C</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Min.</Description>
+                  <Name>temperatureMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>10.00</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Max.</Description>
+                  <Name>temperatureMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>50.00</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Unit.</Description>
+                  <Name>concentrationUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>%</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Min.</Description>
+                  <Name>concentrationMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>33.00</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Max.</Description>
+                  <Name>concentrationMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>88.00</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</Description>
+              <DisplayName>Concentration.TC_CheckThatAllTabPagesExceptLiquidPropertiesAreActive.Run()</DisplayName>
+              <Guid>71234519-7528-400c-b813-19800620e8ed</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</ToolTip>
+              <AssemblyMethodRefId>F0772535-E807-42BB-BF71-C8B17BEB71A4</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Calculates the concentration coefficients. Checks that there is no critical error and that tab Coefficients overview shows calculated coefficients.</Description>
+              <DisplayName>Concentration.TC_CalculateCoefficients.Run()</DisplayName>
+              <Guid>479c7ba9-f14e-40e8-8430-1d86ed80d17b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Calculates the concentration coefficients. Checks that there is no critical error and that tab Coefficients overview shows calculated coefficients.</ToolTip>
+              <AssemblyMethodRefId>350ECA23-BFE2-4FA3-BCCA-4183073AA9E4</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the tab Coefficients overview and compares the calculated coefficients against a set of expected coefficients provided by the user.
+
+Param:
+The maximum allowed difference between two coefficients.
+
+Param:
+String with the expected coefficients. Use semicolons to separate the values. E.g. -5.0;10.1;8.9</Description>
+              <DisplayName>Concentration.TC_CompareCalculatedCoefficientsWithExpectedCoefficients.Run</DisplayName>
+              <Guid>ac1adf4a-3e34-4c9b-8620-b51cf083109d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(accuracy, expectedCoefficients)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the tab Coefficients overview and compares the calculated coefficients against a set of expected coefficients provided by the user.
+
+Param:
+The maximum allowed difference between two coefficients.
+
+Param:
+String with the expected coefficients. Use semicolons to separate the values. E.g. -5.0;10.1;8.9</ToolTip>
+              <AssemblyMethodRefId>E2FBCB65-D529-4219-9388-4D57797EA03B</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The maximum allowed difference between two coefficients.</Description>
+                  <Name>accuracy</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0.001</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>String with the expected coefficients. Use semicolons to separate the values. E.g. -5.0;10.1;8.9</Description>
+                  <Name>expectedCoefficients</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>-8.8044;19.5445;-16.4714;6.76874;-1.05918;0.87672;3.07597; </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens tab Expert results and makes a screenshot of every result diagram available.</Description>
+              <DisplayName>Concentration.TC_CheckExpertResults.Run()</DisplayName>
+              <Guid>92aa17b7-2f0b-4145-b7d1-5d9263566ae8</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens tab Expert results and makes a screenshot of every result diagram available.</ToolTip>
+              <AssemblyMethodRefId>B6FA6204-B176-41A4-ABDF-FD3EABB6D4B8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Set Write Read Compare Coefficients</DisplayName>
+          <Guid>6b825351-4387-4a1d-9bb8-846feab4e52c</Guid>
+          <IsActive>false</IsActive>
+          <Name>Set Write Read Compare Coefficients</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the tab'Coefficients Overview and sets the coefficients from device.
+
+Param:
+The a0 coefficient.
+
+Param:
+The a1 coefficient.
+
+Param:
+The a2 coefficient.
+
+Param:
+The a3 coefficient.
+
+Param:
+The a4 coefficient.
+
+Param:
+The b1 coefficient.
+
+Param:
+The b2 coefficient.
+
+Param:
+The b3 coefficient.</Description>
+              <DisplayName>Concentration.TC_SetCoefficientsFromDevice.Run</DisplayName>
+              <Guid>70bc270c-4b3f-46a1-932d-64256bea6ca7</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(a0, a1, a2, a3, a4, b1, b2, b3)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the tab'Coefficients Overview and sets the coefficients from device.
+
+Param:
+The a0 coefficient.
+
+Param:
+The a1 coefficient.
+
+Param:
+The a2 coefficient.
+
+Param:
+The a3 coefficient.
+
+Param:
+The a4 coefficient.
+
+Param:
+The b1 coefficient.
+
+Param:
+The b2 coefficient.
+
+Param:
+The b3 coefficient.</ToolTip>
+              <AssemblyMethodRefId>589694A6-7EEF-408A-9090-3833D1118C65</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The a0 coefficient.</Description>
+                  <Name>a0</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The a1 coefficient.</Description>
+                  <Name>a1</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>1</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The a2 coefficient.</Description>
+                  <Name>a2</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>2</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The a3 coefficient.</Description>
+                  <Name>a3</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>3</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The a4 coefficient.</Description>
+                  <Name>a4</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>4</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The b1 coefficient.</Description>
+                  <Name>b1</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>5</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The b2 coefficient.</Description>
+                  <Name>b2</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>6</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The b3 coefficient.</Description>
+                  <Name>b3</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>7</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.</Description>
+              <DisplayName>Concentration.TC_WriteCoefficientsToDevice.Run</DisplayName>
+              <Guid>e7259ca6-56d5-4c6d-ae71-f339ceadbcf2</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>67C4B002-0337-48B2-96F1-99C5C4DD91C6</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.</Description>
+              <DisplayName>Concentration.TC_ReadCoefficientsFromDevice.Run</DisplayName>
+              <Guid>617b3c85-b870-4f8d-bc56-ee830a9ecc7d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Writes coefficients to device and checks that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>030211CD-3828-435D-B7FD-D5B364F686E9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the tab Coefficients overview and compares the coefficients read from device with the calculated coefficients.
+
+Param:
+The maximum allowed difference between two coefficients.</Description>
+              <DisplayName>Concentration.TC_CompareCalculatedCoefficientsWithCoefficientsReadFromDevice.Run</DisplayName>
+              <Guid>4605706a-7e1b-4e5a-a54b-f1f19f58d7f6</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(accuracy)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the tab Coefficients overview and compares the coefficients read from device with the calculated coefficients.
+
+Param:
+The maximum allowed difference between two coefficients.</ToolTip>
+              <AssemblyMethodRefId>6F6BFE9B-B010-4BAB-9FD3-02A323972E5C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The maximum allowed difference between two coefficients.</Description>
+                  <Name>accuracy</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>0.001</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Save Delete Load Configure</DisplayName>
+          <Guid>7ea8b5e1-646f-411a-9337-0bb55e24765b</Guid>
+          <IsActive>false</IsActive>
+          <Name>Save Delete Load Configure</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Saves the Concentration data and uses a file name given by the user</Description>
+              <DisplayName>Concentration.TC_SaveAs.Run</DisplayName>
+              <Guid>1eb23588-3b07-453e-bf70-bb62aff7d82d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Saves the Concentration data and uses a file name given by the user</ToolTip>
+              <AssemblyMethodRefId>9B107CC4-55A2-42A5-94E0-81BDE8EC3E0F</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Deletes the Concentration data by clicking the button New. Verifies that coefficients are deleted afterwards.</Description>
+              <DisplayName>Concentration.TC_DeleteConcentrationData.Run()</DisplayName>
+              <Guid>b36a9952-ca0f-4ebf-a88c-0f9c0185a78c</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Deletes the Concentration data by clicking the button New. Verifies that coefficients are deleted afterwards.</ToolTip>
+              <AssemblyMethodRefId>13C4AD35-3199-4208-BEBB-BE6564ABD854</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Loads a Concentration file. Verifies that coefficients are available at tab Coefficients overview after loading.</Description>
+              <DisplayName>Concentration.TC_Load.Run</DisplayName>
+              <Guid>ecf056b3-0d5d-4c55-9695-0eacd78d34b8</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Loads a Concentration file. Verifies that coefficients are available at tab Coefficients overview after loading.</ToolTip>
+              <AssemblyMethodRefId>AFC95591-1A93-4D8B-84A9-F47AEE1A0339</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Check Configure Check</DisplayName>
+          <Guid>9b0dd92d-9958-489f-a869-f38a8e5f0ce0</Guid>
+          <IsActive>false</IsActive>
+          <Name>Check Configure Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</Description>
+              <DisplayName>Concentration.TC_ConfigureBaseSettings.Run</DisplayName>
+              <Guid>c37fcea2-8bd7-452d-9e5d-3754a545d6a1</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(calculationBase, liquidType, densityCalibration, fieldDensityAdjustment, sensor, temperatureUnit, temperatureMin, temperatureMax, concentrationUnit, concentrationMin, concentrationMax)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</ToolTip>
+              <AssemblyMethodRefId>A6A4A4F1-FF87-4F71-9FF8-FA6A1260F586</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The calculation Base.</Description>
+                  <Name>calculationBase</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Fine Tuning</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The liquid Type.</Description>
+                  <Name>liquidType</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The density Calibration.</Description>
+                  <Name>densityCalibration</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The field Density Adjustment.</Description>
+                  <Name>fieldDensityAdjustment</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The sensor.</Description>
+                  <Name>sensor</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Unit.</Description>
+                  <Name>temperatureUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Min.</Description>
+                  <Name>temperatureMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Max.</Description>
+                  <Name>temperatureMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Unit.</Description>
+                  <Name>concentrationUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Min.</Description>
+                  <Name>concentrationMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Max.</Description>
+                  <Name>concentrationMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks whether all elements in the tab Base settings ( combo boxes, edit fields etc...) except Calculation base are grayed and inactive. 
+            This is the case when selecting Fine tuning as Calculation base.</Description>
+              <DisplayName>Concentration.TC_CheckThatAllFieldsInBaseSettingsAreGrayed.Run()</DisplayName>
+              <Guid>a93b650f-d119-4670-b6e2-04daf05eb2f0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks whether all elements in the tab Base settings ( combo boxes, edit fields etc...) except Calculation base are grayed and inactive. 
+            This is the case when selecting Fine tuning as Calculation base.</ToolTip>
+              <AssemblyMethodRefId>71A3B1E5-6700-4864-8FB1-D37FB1323545</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</Description>
+              <DisplayName>Concentration.TC_CheckThatAllTabPagesAreActive.Run()</DisplayName>
+              <Guid>7ef8f64c-af32-44b9-bf8d-bfdbbcbf0624</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</ToolTip>
+              <AssemblyMethodRefId>7C68EF45-451B-42AF-AB42-91A319F4FD35</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</Description>
+              <DisplayName>Concentration.TC_ConfigureBaseSettings.Run</DisplayName>
+              <Guid>af09521d-2dbf-484f-a948-61abb77afb90</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(calculationBase, liquidType, densityCalibration, fieldDensityAdjustment, sensor, temperatureUnit, temperatureMin, temperatureMax, concentrationUnit, concentrationMin, concentrationMax)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</ToolTip>
+              <AssemblyMethodRefId>A6A4A4F1-FF87-4F71-9FF8-FA6A1260F586</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The calculation Base.</Description>
+                  <Name>calculationBase</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Liquid properties</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The liquid Type.</Description>
+                  <Name>liquidType</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The density Calibration.</Description>
+                  <Name>densityCalibration</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The field Density Adjustment.</Description>
+                  <Name>fieldDensityAdjustment</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The sensor.</Description>
+                  <Name>sensor</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Unit.</Description>
+                  <Name>temperatureUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Min.</Description>
+                  <Name>temperatureMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Max.</Description>
+                  <Name>temperatureMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Unit.</Description>
+                  <Name>concentrationUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Min.</Description>
+                  <Name>concentrationMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Max.</Description>
+                  <Name>concentrationMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</Description>
+              <DisplayName>Concentration.TC_CheckThatAllTabPagesAreActive.Run()</DisplayName>
+              <Guid>8c0c6b9a-0e15-41dc-afe1-c2dfb99aecb8</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Checks which tab pages of the concentration module are active. All tab pages except for Liquid properties are active. This is the default case.</ToolTip>
+              <AssemblyMethodRefId>7C68EF45-451B-42AF-AB42-91A319F4FD35</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Export Import</DisplayName>
+          <Guid>4c3919be-2487-4cb5-8c89-53d583420f70</Guid>
+          <IsActive>false</IsActive>
+          <Name>Export Import</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</Description>
+              <DisplayName>Concentration.TC_ConfigureBaseSettings.Run</DisplayName>
+              <Guid>e5b2537f-3e0b-4915-b173-f4e834e6f213</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(calculationBase, liquidType, densityCalibration, fieldDensityAdjustment, sensor, temperatureUnit, temperatureMin, temperatureMax, concentrationUnit, concentrationMin, concentrationMax)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Selects tab Basic settings and configures the parameter
+
+Param:
+The calculation Base.
+
+Param:
+The liquid Type.
+
+Param:
+The density Calibration.
+
+Param:
+The field Density Adjustment.
+
+Param:
+The sensor.
+
+Param:
+The temperature Unit.
+
+Param:
+The temperature Min.
+
+Param:
+The temperature Max.
+
+Param:
+The concentration Unit.
+
+Param:
+The concentration Min.
+
+Param:
+The concentration Max.</ToolTip>
+              <AssemblyMethodRefId>A6A4A4F1-FF87-4F71-9FF8-FA6A1260F586</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The calculation Base.</Description>
+                  <Name>calculationBase</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>Liquid properties</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The liquid Type.</Description>
+                  <Name>liquidType</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The density Calibration.</Description>
+                  <Name>densityCalibration</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The field Density Adjustment.</Description>
+                  <Name>fieldDensityAdjustment</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The sensor.</Description>
+                  <Name>sensor</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Unit.</Description>
+                  <Name>temperatureUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Min.</Description>
+                  <Name>temperatureMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The temperature Max.</Description>
+                  <Name>temperatureMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Unit.</Description>
+                  <Name>concentrationUnit</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Min.</Description>
+                  <Name>concentrationMin</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The concentration Max.</Description>
+                  <Name>concentrationMax</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue> </ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Sets all table values provided from a string.E.g. 5.5;5.4;5.6;5.7
+
+Param:
+The input values.</Description>
+              <DisplayName>Concentration.TC_SetTableValue.Run</DisplayName>
+              <Guid>eddd5963-d9a8-4172-9b21-de766068d751</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(inputValues)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Sets all table values provided from a string.E.g. 5.5;5.4;5.6;5.7
+
+Param:
+The input values.</ToolTip>
+              <AssemblyMethodRefId>53E5FE20-BD7F-4F93-ABF8-3061B69C4F53</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The input values.</Description>
+                  <Name>inputValues</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValue>5;-10;0.5;10;0;0.6;15;10;0.7;20;20;0.8;25;30;0.9;30;40;1;35;50;1.1;40;60;1.2;45;70;1.3;50;75;1.4;55;80;1.5</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Exports a Concentration file. Verifies that there is no critical error afterwards.</Description>
+              <DisplayName>Concentration.TC_Export.Run</DisplayName>
+              <Guid>fe0b6228-e8c3-49a4-8b7d-56c5cf982106</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Exports a Concentration file. Verifies that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>B5BCD555-728D-4C10-9977-A274025099FE</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Imports a Concentration file.Makes a screenshot of tab Expert results to check if the diagram is not shown any longer and verifies that there is no critical error afterwards.</Description>
+              <DisplayName>Concentration.TC_Import.Run</DisplayName>
+              <Guid>203fee51-20b2-4250-88d5-cd29597bf3cf</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Imports a Concentration file.Makes a screenshot of tab Expert results to check if the diagram is not shown any longer and verifies that there is no critical error afterwards.</ToolTip>
+              <AssemblyMethodRefId>D0112A80-9655-4E14-B989-B67DEB7C9C3C</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close And Check</DisplayName>
+          <Guid>dcf91a38-8415-4401-b40a-e278da7e2cbc</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close And Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Executes the test</Description>
+              <DisplayName>Concentration.TC_CloseModule.Run()</DisplayName>
+              <Guid>361bd677-e298-4386-9b61-7cec7d26ff04</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Executes the test</ToolTip>
+              <AssemblyMethodRefId>0954F222-D998-4286-B5D7-5D6BB76228C1</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>04873ae3-e919-4b2c-85e7-ead716c439cd</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>NotDefined</TestCategory>
+      <TestFocus>NotDefined</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile />
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

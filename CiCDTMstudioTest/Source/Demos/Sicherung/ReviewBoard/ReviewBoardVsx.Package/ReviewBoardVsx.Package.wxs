@@ -1,0 +1,63 @@
+﻿<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?ifndef packageVersion ?>
+  <?define packageVersion=0.5.1.0 ?>
+  <?endif?>
+  <Fragment>
+    <ComponentGroup Id="ReviewBoardVsx.Package">
+      <ComponentGroupRef Id="ReviewBoardVsx.Ids"/>
+      <ComponentRef Id="C_ReviewBoardVsx.Package.dll"/>
+    </ComponentGroup>
+    <DirectoryRef Id="APP_bin" FileSource="$(var.ReviewBoardVsx.Package.TargetDir)">
+      <Component Id="C_ReviewBoardVsx.Package.dll" Guid="*">
+        <!-- File must be called File_$(ReviewBoardVsx.Package.TargetName).dll for the following includes-->
+        <File Id="File_ReviewBoardVsx.Package.dll" Name="ReviewBoardVsx.Package.dll" Checksum="yes" Vital="yes" KeyPath="yes" />
+        <?ifdef ReviewBoardVsx_Pdb?>
+        <File Id="CF_ReviewBoardVsx.Package.pdb" Name="ReviewBoardVsx.Package.pdb" Checksum="yes" Vital="yes" />
+        <?endif?>
+        <!-- Allow checking if ReviewBoardVsx is installed -->
+        <RegistryKey Root="HKLM" Key="Software\reviewboard.org\ReviewBoardVsx\CurrentVersion\Installation">
+          <RegistryValue Name="CurrentVersion" Value="$(var.packageVersion)" Type="string"/>
+          <RegistryValue Name="InstallLocation" Value="[APP_bin]" Type="string"/>
+        </RegistryKey>
+        <!-- The 1.0 in the next line MUST match the MyPackageLoadKey.Version -->
+        <RegistryKey Root="HKLM" Key="Software\reviewboard.org\ReviewBoardVsx\Installation\1.0">
+          <RegistryValue Name="CurrentVersion" Value="$(var.packageVersion)" Type="string"/>
+          <RegistryValue Name="InstallLocation" Value="[APP_bin]" Type="string"/>
+        </RegistryKey>
+        <!-- This allows detecting ReviewBoardVsx with conditional comments in Internet Explorer -->
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\Internet Explorer\Version Vector">
+          <RegistryValue Name="ReviewBoardVsx" Value="$(var.packageVersion)" Type="string" />
+          <RegistryValue Name="ReviewBoardVsx2" Value="$(var.packageVersion)" Type="string" />
+        </RegistryKey>
+      </Component>
+<!--
+      <Component Id="CR_Pkg_2005" Guid="*">
+        <RegistryValue Root="HKLM" Key="Software\reviewboard.org\ReviewBoardVsx\Installation\1.0" Name="Pkg-VS2005" Value="1" Type="integer" KeyPath="yes" />
+        <?include $(var.ReviewBoardVsx.Package.ProjectDir)obj\$(var.ReviewBoardVsx.Package.Configuration)\$(var.ReviewBoardVsx.Package.TargetName)-2005.wxi ?>
+      </Component>
+-->
+      <Component Id="CR_Pkg_2008" Guid="*">
+        <RegistryValue Root="HKLM" Key="Software\reviewboard.org\ReviewBoardVsx\Installation\1.0" Name="Pkg-VS2008" Value="1" Type="integer" KeyPath="yes" />
+        <?include $(var.ReviewBoardVsx.Package.ProjectDir)obj\$(var.ReviewBoardVsx.Package.Configuration)\$(var.ReviewBoardVsx.Package.TargetName)-2008.wxi ?>
+      </Component>
+      <Component Id="CR_Pkg_2010" Guid="*">
+        <RegistryValue Root="HKLM" Key="Software\reviewboard.org\ReviewBoardVsx\Installation\1.0" Name="Pkg-VS2010" Value="1" Type="integer" KeyPath="yes" />
+        <?include $(var.ReviewBoardVsx.Package.ProjectDir)obj\$(var.ReviewBoardVsx.Package.Configuration)\$(var.ReviewBoardVsx.Package.TargetName)-2010.wxi ?>
+      </Component>
+    </DirectoryRef>
+<!--
+    <ComponentGroup Id="PkgReg2005">
+      <ComponentGroupRef Id="ReviewBoardVsx.Package"/>
+      <ComponentRef Id="CR_Pkg_2005"/>
+    </ComponentGroup>
+-->
+    <ComponentGroup Id="PkgReg2008">
+      <ComponentGroupRef Id="ReviewBoardVsx.Package"/>
+      <ComponentRef Id="CR_Pkg_2008"/>
+    </ComponentGroup>
+    <ComponentGroup Id="PkgReg2010">
+      <ComponentGroupRef Id="ReviewBoardVsx.Package"/>
+      <ComponentRef Id="CR_Pkg_2010"/>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

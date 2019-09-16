@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="4ff644f2-9ec5-4e66-b2d8-f4ea94291837"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		Run_Ni_FBUS_MANAGER
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Run_Ni_FBUS_MANAGER"
+	namespace="EH.PCPS.TestAutomation.DeviceCare.V10300.Functions.Helpers"/>
+	<variables/>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		optional="False"
+		maximized="False">
+			<comment/>
+			<bindings/>
+			<filename>
+				C:\Program Files (x86)\National Instruments\NI-FBUS\Binaries\nifb.exe
+			</filename>
+			<args/>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	name="DeviceCareApplication"
+	id="5ba506d9-7892-4217-a92d-376694a8250d"
+	rxversion="6.1"
+	relativepath="..\..\GUI\DeviceCareApplication.rxrep">
+		<codegen
+		classname="DeviceCareApplication"
+		namespace="EH.PCPS.TestAutomation.DeviceCare.V10300.GUI"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="99701df9-ab1e-473f-b3e6-7540c2ead80c"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Run_Ni_FBUS_MANAGER.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\ExternalReferences\CommonCodeModules.dll
+		</reference>
+		<reference>
+			..\..\..\ExternalReferences\CommonMethods.dll
+		</reference>
+		<reference>
+			..\..\..\TM_DTMs\bin\Debug\TM_DTMs.dll
+		</reference>
+		<reference>
+			..\..\..\TC_DeviceCare\bin\Debug\TC_DeviceCare.exe
+		</reference>
+	</references>
+</recordtable>

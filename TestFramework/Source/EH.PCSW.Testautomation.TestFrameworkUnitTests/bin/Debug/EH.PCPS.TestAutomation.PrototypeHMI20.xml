@@ -1,0 +1,1444 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.PrototypeHMI20</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.AppComController">
+            <summary>
+            Class AppComController.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.AppComController.controller">
+            <summary>
+            The controller
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.AppComController.Controller">
+            <summary>
+            Gets or sets the controller.
+            </summary>
+            <value>The controller.</value>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.AppComController.Connect(System.String,System.UInt16,System.String,System.UInt16)">
+            <summary>
+            Connects the specified remote host.
+            </summary>
+            <param name="remoteHost">The remote host.</param>
+            <param name="remotePort">The remote port.</param>
+            <param name="pushMessageServerHost">The push message server host.</param>
+            <param name="pushMessageServerPort">The push message server port.</param>
+            <returns><c>true</c> if connected, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.AppComController.Disconnect">
+            <summary>
+            Disconnects this instance.
+            </summary>
+            <returns><c>true</c> if disconnected, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.AppComController.GetDisplayContent">
+            <summary>
+            Gets the display content.
+            </summary>
+            <returns>The display content xml.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController">
+            <summary>
+            Controller class for TDD_APPCOM. This is the main entry point for commands.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DefaultDeviceNumber">
+            <summary>
+            The device id.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.NoErrorString">
+            <summary>
+            No error string.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.WaitForTerminalResponsePeriodMs">
+            <summary>
+            Polling interval for polling responses received via terminal.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.WaitForEchoResponsePeriodMs">
+            <summary>
+            Polling interval for polling echo responses received.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DateFormats">
+            <summary>
+            The data format strings.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.TimeFormats">
+            <summary>
+            The time format strings.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.httpClient">
+            <summary>
+            The APPCOM HTTP client.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.pushMessageServer">
+            <summary>
+            The APPCOM HTTP server (used for reception of push messages).
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.pushMessageProcessor">
+            <summary>
+            The push message processor.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.appComProtocolLayer">
+            <summary>
+            The APPCOM protocol layer.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.uriCreator">
+            <summary>
+            The URI creator. This instance is used for creation of URIs.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.#ctor(System.String,System.UInt16,System.String,System.UInt16)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController"/> class.
+            </summary>
+            <param name="remoteHost">The host name of APP interface.</param>
+            <param name="remotePort">The port of APP interface.</param>
+            <param name="pushMessageServerHost">The host name of the push message server.</param>
+            <param name="pushMessageServerPort">The port of the push message server.</param>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DeviceNumber">
+            <summary>
+            Gets the device number.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.ChannelNumber">
+            <summary>
+            Gets the channel number.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.ThreadQueueId">
+            <summary>
+            Gets or sets the thread queue id.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.LastError">
+            <summary>
+            Gets the last error.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.RegisterPushMessageServer">
+            <summary>
+            This method registers the push message server to test automation server in app.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.UnregisterPushMessageServer">
+            <summary>
+            This method unregisters a push message server.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.CallEcho(System.String,System.UInt32)">
+            <summary>
+            This method sends a echo message and waits for a response.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="timeoutMilliseconds">The timeout in milliseconds.</param>
+            <returns>The echo.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetDeviceList">
+            <summary>
+            This method queries the device list from app.
+            </summary>
+            <returns>The device list.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.ConnectToDeviceByName(System.String,System.String,System.String)">
+            <summary>
+            This method establishes a connection to device by wireless name.
+            </summary>
+            <param name="name">The wireless name of the device.</param>
+            <param name="username">The user name for log-in to field device.</param>
+            <param name="password">The password for log-in to field device.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.ConnectToDeviceByUuid(System.String,System.String,System.String)">
+            <summary>
+            This method establishes a connection to device by UUID.
+            </summary>
+            <param name="uuid">The UUID of the device.</param>
+            <param name="username">The user name for log-in to field device.</param>
+            <param name="password">The password for log-in to field device.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DisconnectFromDevice">
+            <summary>
+            This method disconnects from device.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.IdentifyCurrentDeviceConnection">
+            <summary>
+            This method returns current connection data.
+            </summary>
+            <returns>The data of connected device.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SaveScreenScreenshot(System.String)">
+            <summary>
+            This method creates a screenshot of complete screen and stores it in a file.
+            </summary>
+            <param name="filename">The screenshot file name.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetScreenScreenshot">
+            <summary>
+            This method creates a screenshot of complete screen and returns its content as base64 string.
+            </summary>
+            <returns>The base64 encoded screenshot.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SaveAppContentScreenshot(System.String)">
+            <summary>
+            This method creates a screenshot of app content and stores it in a file.
+            </summary>
+            <param name="filename">The screenshot file name.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetAppContentScreenshot">
+            <summary>
+            This method creates a screenshot of app content and returns its content as base64 string.
+            </summary>
+            <returns>The base64 encoded screenshot.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetDisplayContent">
+            <summary>
+            This method queries the display content of field device.
+            </summary>
+            <returns>The display content.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetDisplayContentAsJson">
+            <summary>
+            This method queries display content and converts it to a JSON string.
+            </summary>
+            <returns>The display content as JSON string.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.CallAsciiCommand(System.String,System.UInt32,System.String)">
+            <summary>
+            This method sends an ASCII command and collects the response/s. The commands are sent via terminal tunnel.
+            </summary>
+            <param name="message">The message that shall be sent.</param>
+            <param name="answerCollectPeriodMilliseconds">The time duration in milliseconds in which the responses are collected.</param>
+            <param name="endTag">
+            The answer is complete, if end tag is found. If end tag is null or empty, the end tag will not be searched.
+            </param>
+            <returns>The response to the command.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SendAsciiCommand(System.String)">
+            <summary>
+            This method sends a ASCII command. The commands are sent via terminal tunnel.
+            </summary>
+            <param name="message">
+            The message.
+            </param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SelectItem(System.String)">
+            <summary>
+            This method is used to command the SmartBlue application to select a selectable item. 
+            </summary>
+            <param name="id">
+            ID of item that shall be selected.
+            </param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.ScrollToItem(System.String)">
+            <summary>
+            This method is used to command the SmartBlue application to scroll a list.
+            </summary>
+            <param name="id">
+            After scrolling, the item referenced by this ID should be the first visible item in the list. 
+            </param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SetStringValue(System.String,System.String)">
+            <summary>
+            This command is used to command the SmartBlue application to set the text value of a text box to the specified value.
+            </summary>
+            <param name="id">
+            The ID of the item, whose value shall be set.
+            </param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SetNumericValue(System.String,System.Double)">
+            <summary>
+            This method is used to command the SmartBlue application to set the text value of a text box to the specified value.
+            </summary>
+            <param name="id">
+            The ID of the item, whose value shall be set.
+            </param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SetDateValue(System.String,System.String)">
+            <summary>
+            This method is used to command the SmartBlue application to set the date of an editable control to the specified value.
+            </summary>
+            <param name="id">
+            The ID of the item, whose value shall be set.
+            </param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SetTimeValue(System.String,System.String)">
+            <summary>
+            This command is used to command the SmartBlue application to set the time of an editable control to the specified value.
+            </summary>
+            <param name="id">
+            The ID of the item, whose value shall be set.
+            </param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SetBooleanValue(System.String,System.Boolean)">
+            <summary>
+            This command is used to command the SmartBlue application to set the Boolean value of an editable control to the specified value.
+            </summary>
+            <param name="id">
+            The ID of the item, whose value shall be set.
+            </param>
+            <param name="value">New value</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.SetSelectionValue(System.String,System.Int32[])">
+            <summary>
+            This command is used to command the SmartBlue application to set the selection of a selection control to the specified value.
+            </summary>
+            <param name="id">
+            The ID of the item, whose value shall be set.
+            </param>
+            <param name="values">A list of values that shall be selected.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetTerminalOutputMessage">
+            <summary>
+            This method returns all terminal output messages.
+            </summary>
+            <returns>A list of output messages.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetToastDataSets">
+            <summary>
+            This method returns a list of toast data sets and clears the list.
+            </summary>
+            <returns>The toast data sets.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetExceptions">
+            <summary>
+            This method returns a list of asynchronous errors.
+            </summary>
+            <returns>A list of error messages.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.LoginNotificationListener(System.String,System.String,System.UInt16)">
+            <summary>
+            A notification listener can log in to notification service using this method.
+            </summary>
+            <param name="listenerName">The name of the notification listener.</param>
+            <param name="listenerAddress">The address of the notification listener. Messages are sent to this address.</param>
+            <param name="listenerPort">The port of the notification listener. Messages are sent to this port.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.LogoutNotificationListener(System.String)">
+            <summary>
+            A notification listener can log out from notification service using this method.
+            </summary>
+            <param name="listenerName">The name of the notification listener.</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.GetNotificationListenerNames">
+            <summary>
+            This method returns a list of notification listener names.
+            </summary>
+            <returns>
+            An array of notification listener names.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DynamicMethodInvoker``1(System.String,System.Object[])">
+            <summary>
+            The dynamic method invoker.
+            </summary>
+            <param name="methodName">
+            The method name.
+            </param>
+            <param name="parameters">
+            The parameters.
+            </param>
+            <typeparam name="T"> the return value of the invoked method
+            </typeparam>
+            <returns>
+            The result of the invoked method.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DynamicMethodInvoker``1(System.Int32,System.String,System.Object[])">
+            <summary>
+            The dynamic method invoker.
+            </summary>
+            <param name="channelNumber">
+            The channel number.
+            </param>
+            <param name="methodName">
+            The method name.
+            </param>
+            <param name="parameters">
+            The parameters.
+            </param>
+            <typeparam name="T">
+            </typeparam>
+            <returns>
+            The object of given type.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.Dispose">
+            <summary>
+            Dispose methods. Frees all resources.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DragAndDrop(System.String,System.String,System.String)">
+            <summary>
+            Moves one parameter in header from one region to another
+            </summary>
+            <param name="itemId"></param>
+            <param name="source"></param>
+            <param name="destination"></param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.Reset">
+            <summary>
+            The reset.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.EnableTerminalNotifications">
+            <summary>
+            This method enables the terminal notifications.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Controller.TddAppComController.DisableTerminalNotifications">
+            <summary>
+            This method disables the terminal notifications.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Flows.CloseModuleOnline">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Flows.CloseModuleOnline.Run">
+            <summary>
+                Close module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Flows.CloseModuleOnline.Run(System.Int32)">
+            <summary>
+            Close module via frame menu within a default time
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout In Milliseconds for the module closing.
+            </param>
+            <returns>
+            <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Flows.OpenModuleOnline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Flows.OpenModuleOnline.Run">
+            <summary>
+                Open module via frame menu within a default time
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Flows.OpenModuleOnline.Run(System.Int32)">
+            <summary>
+            Open module via frame menu within a default time
+            </summary>
+            <param name="timeoutInMilliseconds">
+            The timeout In Milliseconds for the module opening.
+            </param>
+            <returns>
+            <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.ClickButton">
+            <summary>
+            Class ClickButton.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.ClickButton.Run(System.String)">
+            <summary>
+             Clicks a specified button
+            </summary>
+            <param name="buttonId">The button identifier.</param>
+            <returns><c>true</c> if button clicked, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CloseModuleOffline">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CloseModuleOffline.ViaWindow">
+            <summary>
+                Close module via DTM window
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CloseModuleOffline.ViaWindow(System.String)">
+            <summary>
+                Close module via tab at related tab control
+            </summary>
+            <param name="moduleToClose">Module name, if it differs from intended name</param>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CloseModuleOnline">
+            <summary>
+                Provides function to close module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CloseModuleOnline.ViaWindow">
+            <summary>
+                Close module via DTM window
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CloseModuleOnline.ViaWindow(System.String)">
+            <summary>
+                Close module via tab at related tab control
+            </summary>
+            <param name="moduleToClose">Module name, if it differs from intended name</param>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CompareDescriptionWithExpectedText">
+            <summary>
+            Class CompareDescriptionWithExpectedText.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CompareDescriptionWithExpectedText.Run(System.String,System.String)">
+            <summary>
+            Runs the specified parameter identifier.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <param name="expectedText">The expected text.</param>
+            <returns>System.Boolean.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CompareStateOfStatusIcon">
+            <summary>
+            Class CompareStateOfStatusIcon.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CompareStateOfStatusIcon.Run(System.String,System.String)">
+            <summary>
+            Compares the current state of header status icon with expected value
+            </summary>
+            <param name="statusIconId">The status icon identifier.</param>
+            <param name="expectedValue">The reference value.</param>
+            <returns><c>true</c> if states are the same, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.ConnectToSoftwareUnderTest">
+            <summary>
+            Class ConnectToSoftwareUnderTest.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.ConnectToSoftwareUnderTest.Run(System.String,System.UInt16,System.String,System.UInt16)">
+            <summary>
+            Runs the specified remote host.
+            </summary>
+            <param name="remoteHost">The remote host.</param>
+            <param name="remotePort">The remote port.</param>
+            <param name="pushMessageServerHost">The push message server host.</param>
+            <param name="pushMessageServerPort">The push message server port.</param>
+            <returns><c>true</c> if connected, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CreateScreenshot">
+            <summary>
+            Class CreateScreenshot.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.CreateScreenshot.Run">
+            <summary>
+            Takes a screenshot.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.DisconnectSoftwareUnderTest">
+            <summary>
+            Class DisconnectSoftwareUnderTest.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.DisconnectSoftwareUnderTest.Run">
+            <summary>
+            Runs this instance.
+            </summary>
+            <returns><c>true</c> if disconnected, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.DragAndDropParameterIntoHeader">
+            <summary>
+            Class DragAndDropParameterIntoHeader.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.DragAndDropParameterIntoHeader.Run(System.String,System.String,System.String)">
+            <summary>
+            Runs the specified item identifier.
+            </summary>
+            <param name="itemId">The item identifier.</param>
+            <param name="source">The source.</param>
+            <param name="destination">The destination.</param>
+            <returns><c>true</c> if executed, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetDescriptionText">
+            <summary>
+            Class GetDescriptionText.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetDescriptionText.Run(System.String)">
+            <summary>
+            Gets the description of a parameter (if available). Empty if not.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterEnumItems">
+            <summary>
+            Class GetParameterEnumItems.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterEnumItems.Run(System.String)">
+            <summary>
+            Gets all enums from a parameter in current display content
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns>List with all enums of a parameter</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterLabel">
+            <summary>
+            Class GetParameterLabel.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterLabel.Run(System.String)">
+            <summary>
+            Returns label of specified parameter.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterUnit">
+            <summary>
+            Class GetParameterUnit.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterUnit.Run(System.String)">
+            <summary>
+            Gets the unit from a parameter in current display content
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns>List with all enums of a parameter</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValue">
+            <summary>
+            Gets the value of a specified parameter
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValue.Run(System.String)">
+            <summary>
+            Searches for the specified parameter and returns its value
+            </summary>
+            <param name="pathToParameter">
+            The path to the parameter
+            </param>
+            <returns>
+            The value of the parameter
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValueRange">
+            <summary>
+            Class GetParameterValueRange.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValueRange.MaximumRange(System.String)">
+            <summary>
+            Gets the maximum range from parameter in current display content.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetParameterValueRange.MinimumRange(System.String)">
+            <summary>
+            Gets the minimum range from parameter in current display content.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetStatusIconState">
+            <summary>
+            Class GetStatusIconState.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.GetStatusIconState.Run(System.String)">
+            <summary>
+            Gets the current state from the status icon within the device header
+            </summary>
+            <param name="statusIconId">The status icon identifier.</param>
+            <returns>Current state</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectMenuItem">
+            <summary>
+            Class SelectMenuItem.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectMenuItem.Run(System.String)">
+            <summary>
+            Selects a menu 
+            </summary>
+            <param name="menuId">The menu identifier.</param>
+            <returns><c>true</c> if menu opened, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectParameterAbsolute">
+            <summary>
+            Class SelectParameterAbsolute.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectParameterAbsolute.Run(System.String)">
+            <summary>
+            Selects a parameter with an absolute path
+            </summary>
+            <param name="pathToParameter">The path to parameter.</param>
+            <returns><c>true</c> if selected, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectParameterRelative">
+            <summary>
+            Class SelectParameterRelative.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectParameterRelative.Run(System.String)">
+            <summary>
+            Selects parameter with relative path
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns><c>true</c> if selected, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.OpenModuleOffline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.OpenModuleOffline.ViaMenu">
+            <summary>
+                Open module via frame menu
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.OpenModuleOnline">
+            <summary>
+                Provides function to open module frame-independent
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.OpenModuleOnline.ViaMenu">
+            <summary>
+                Open module via frame menu
+            </summary>
+            <returns>
+                <br>True: if everything worked fine</br>
+                <br>False: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectParameter">
+            <summary>
+                Description of SelectParameter.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SelectParameter.Run(System.String)">
+            <summary>
+            Selects specified parameter
+            </summary>
+            <param name="pathToParameter">Path to parameter including parameter name. Use this form: Setup//Advanced setup//Locking status:</param>
+            <returns>
+            true: when parameter was found and selected
+            false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SetParameter">
+            <summary>
+                Description of SetParameter.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SetParameter.Run(System.String,System.String)">
+            <summary>
+            Set a specified parameter
+            </summary>
+            <param name="pathToParameter">
+            Path to parameter including parameter name
+            </param>
+            <param name="inputValue">
+            New value
+            </param>
+            <returns>
+            <br>Parameter: if call worked fine</br>
+            <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SetParameter.Run(System.String,System.String,System.Boolean)">
+            <summary>
+            Set a specified parameter
+            </summary>
+            <param name="pathToParameter">
+            Path to parameter including parameter name
+            </param>
+            <param name="inputValue">
+            New value
+            </param>
+            <param name="confirmChange">
+            Determines whether to confirm the changed value
+            </param>
+            <returns>
+            <br>Parameter: if call worked fine</br>
+            <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Execution.SetParameter.Run(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Set a specified parameter
+            </summary>
+            <param name="pathToParameter">
+            Path to parameter including parameter name
+            </param>
+            <param name="inputValue">
+            New value
+            </param>
+            <param name="withTreeTracing">
+            Enables / disables tree tracing
+            </param>
+            <param name="confirmChange">
+            Determines whether to confirm the changed value
+            </param>
+            <returns>
+            <br>Parameter: if call worked fine</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsBreadcrumbAvailable">
+            <summary>
+            Class IsBreadcrumbAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsBreadcrumbAvailable.Run(System.String)">
+            <summary>
+            Determines whether a specific bread crumb is available in current display content        
+            </summary>
+            <param name="breadcrumbId">The bread crumb identifier.</param>
+            <returns><c>true</c> if bread crumb is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsBreadcrumbAvailable.Run">
+            <summary>
+            Determines whether a bread crumb exists in current display content
+            </summary>
+            <returns><c>true</c> if bread crumb exists, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsBreadcrumbVisible">
+            <summary>
+            Class IsBreadcrumbVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsBreadcrumbVisible.Run(System.String)">
+            <summary>
+            Determines whether a bread crumb exists in current display content
+            </summary>
+            <returns><c>true</c> if bread crumb exists, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsButtonAvailable">
+            <summary>
+            Class IsButtonAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsButtonAvailable.Run(System.String)">
+            <summary>
+            Validates, whether a specified button exists in current display content.
+            </summary>        
+            <param name="buttonId">The parameter identifier.</param>
+            <returns><c>true</c> if button is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsButtonVisible">
+            <summary>
+            Class IsButtonVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsButtonVisible.Run(System.String)">
+            <summary>
+            Validates, whether a specified parameter is visible in current display content.
+            </summary>        
+            <param name="buttonId">The parameter identifier.</param>
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsExtendedHeaderAvailable">
+            <summary>
+            Class IsExtendedHeaderAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsExtendedHeaderAvailable.Run">
+            <summary>
+            Validates, whether extended device header exists in current display content.
+            </summary>                
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsExtendedHeaderVisible">
+            <summary>
+            Class IsExtendedHeaderVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsExtendedHeaderVisible.Run">
+            <summary>
+            Validates, whether extended device header is visible in current display content.
+            </summary>                
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsHeaderAvailable">
+            <summary>
+            Class IsHeaderAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsHeaderAvailable.Run">
+            <summary>
+            Validates, whether device header exists in current display content.
+            </summary>                
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsHeaderParameterAvailable">
+            <summary>
+            Class IsHeaderParameterAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsHeaderParameterAvailable.Run(System.String)">
+            <summary>
+            Determines whether a header parameter exists in current display content.
+            </summary>
+            <param name="parameterId">The parameter identifier.</param>
+            <returns><c>true</c> if parameter exists, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsHeaderVisible">
+            <summary>
+            Class IsHeaderVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsHeaderVisible.Run">
+            <summary>
+            Validates, whether device header is visible in current display content.
+            </summary>                
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemAvailable">
+            <summary>
+            Class IsMenuItemAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemAvailable.Run(System.String)">
+            <summary>
+            Validates, whether a specified menu item exists in current display content.
+            </summary>        
+            <param name="menuItemId">The menu item identifier.</param>
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemDynamic">
+            <summary>
+            Class IsMenuItemDynamic.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemDynamic.Run(System.String)">
+            <summary>
+            Determines whether a menu item is dynamic
+            </summary>
+            <param name="menuItemId">The menu item identifier.</param>
+            <returns><c>true</c> if menu item is dynamic, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemPrintable">
+            <summary>
+            Class IsMenuItemPrintable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemPrintable.Run(System.String)">
+            <summary>
+            Determines whether a menu item is printable
+            </summary>
+            <param name="menuItemId">The menu item identifier.</param>
+            <returns><c>true</c> if menu item is printable, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemVisible">
+            <summary>
+            Class IsMenuItemVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsMenuItemVisible.Run(System.String)">
+            <summary>
+            Runs the specified menu item identifier.
+            </summary>
+            <param name="menuItemId">The menu item identifier.</param>
+            <returns><c>true</c> if menu item is visible, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsModuleOffline.Run">
+            <summary>
+            Determines whether module is offline
+            </summary>
+            <returns><c>true</c> if offline, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsModuleOnline.Run">
+            <summary>
+            Determines whether module is online
+            </summary>
+            <returns><c>true</c> if online, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsModuleReady.Run">
+            <summary>
+            Determines whether module is ready
+            </summary>
+            <returns><c>true</c> if ready, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterDescriptionAvailable">
+            <summary>
+            Class IsParameterDescriptionAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterDescriptionAvailable.Run(System.String)">
+            <summary>
+            Checks whether a help text for a parameter is available in current display content.
+            </summary>
+            <param name="parameterId">The parameter id.</param>
+            <returns><c>true</c> if help available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterAvailable">
+            <summary>
+            Class IsParameterAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterAvailable.Run(System.String)">
+            <summary>
+            Validates, whether a specified parameter exists in current display content.
+            </summary>        
+            <param name="parameterId">The parameter identifier.</param>
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterDynamic">
+            <summary>
+            Class IsParameterDynamic.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterDynamic.Run(System.String)">
+            <summary>
+            Validates, whether a specified parameter is dynamic in current display content.
+            </summary>        
+            <param name="parameterId">The parameter identifier.</param>
+            <returns><c>true</c> if parameter is dynamic, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterPrintable">
+            <summary>
+            Class IsParameterPrintable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterPrintable.Run(System.String)">
+            <summary>
+            Validates, whether a specified parameter is printable in current display content.
+            </summary>        
+            <param name="parameterId">The parameter identifier.</param>
+            <returns><c>true</c> if parameter is printable, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterVisible">
+            <summary>
+            Class IsParameterVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterVisible.Run(System.String)">
+            <summary>
+            Validates, whether a specified parameter is visible in current display content.
+            </summary>        
+            <param name="parameterId">The parameter identifier.</param>
+            <returns><c>true</c> if parameter is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsPictureAvailable">
+            <summary>
+            Class IsPictureAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsPictureAvailable.Run(System.String)">
+            <summary>
+            Checks whether a picture is displayed (on help page) for a parameter in current display content.
+            </summary>
+            <param name="parameterId">The parameter id.</param>
+            <returns><c>true</c> if picture available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsPictureAvailable.Run2(System.String)">
+            <summary>
+            Checks whether a picture is displayed (on help page) for a parameter in current display content.
+            </summary>
+            <param name="parameterId">The parameter id.</param>
+            <returns><c>true</c> if picture available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsPictureVisible">
+            <summary>
+            Class IsPictureVisible.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsPictureVisible.Run(System.String)">
+            <summary>
+            Checks whether a picture is visible (on help page) for a parameter in current display content.
+            </summary>
+            <param name="parameterId">The parameter id.</param>
+            <returns><c>true</c> if picture available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardActive">
+            <summary>
+            Class IsWizardActive.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardActive.Run">
+            <summary>
+            Determines whether a wizard sequence is active. (Are wizard navigation buttons on screen?)
+            </summary>        
+            <returns><c>true</c> if wizard sequence is active, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardButtonAvailable">
+            <summary>
+            Class IsWizardButtonAvailable.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardButtonAvailable.Run(System.String)">
+            <summary>
+            Determines whether a specific wizard button (next, previous, cancel) is available in current display content
+            </summary>
+            <param name="buttonId">The button identifier.</param>
+            <returns><c>true</c> if button is available, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardButtonClickable">
+            <summary>
+            Class IsWizardButtonClickable.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardFinished">
+            <summary>
+            Class IsWizardFinished.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.IsWizardFinished.Run">
+            <summary>
+            Determines whether a wizard sequence is finished.
+            </summary>        
+            <returns><c>true</c> if wizard sequence is finished, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleName">
+            <summary>
+                Description of ModuleName.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleName.ModuleNameOffline">
+            <summary>
+            Gets the module name offline.
+            </summary>
+            <value>
+            The module name offline.
+            </value>
+            <returns>
+            The translated module name.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleName.ModuleNameOnline">
+            <summary>
+            Gets the module name online.
+            </summary>
+            <value>
+            The module name online.
+            </value>
+            <returns>
+            The translated module name.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing">
+            <summary>
+            The module opening and closing.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsOnlineModuleAlreadyOpened">
+            <summary>
+            Validates that a module is already open or not (brings module to foreground if it is already open)
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsOnlineModuleClosed">
+            <summary>
+            Validates that a module is closed
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsOnlineModuleOpened">
+            <summary>
+            Validates that a module is open
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilOnlineModuleIsClosed(System.Int32)">
+            <summary>
+            Wait until module is closed.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time Out In Milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilOnlineModuleIsOpen(System.Int32)">
+            <summary>
+            The wait until module is open.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time out in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsOfflineModuleAlreadyOpened">
+            <summary>
+            Validates that a module is already open or not (brings module to foreground if it is already open)
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsOfflineModuleClosed">
+            <summary>
+            Validates that a module is closed
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.IsOfflineModuleOpened">
+            <summary>
+            Validates that a module is open
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilOfflineModuleIsClosed(System.Int32)">
+            <summary>
+            Wait until module is closed.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time Out In Milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Functions.ApplicationArea.MainView.Validation.ModuleOpeningAndClosing.WaitUntilOfflineModuleIsOpen(System.Int32)">
+            <summary>
+            The wait until module is open.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time out in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.English">
+            <summary>
+              Looks up a localized string similar to Offline.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.French">
+            <summary>
+              Looks up a localized string similar to Hors ligne.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.German">
+            <summary>
+              Looks up a localized string similar to Offline.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.Italian">
+            <summary>
+              Looks up a localized string similar to Non in linea.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineConnectionStateTranslations.Spanish">
+            <summary>
+              Looks up a localized string similar to Fuera de línea.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.English">
+            <summary>
+              Looks up a localized string similar to Offline Parameterize.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.French">
+            <summary>
+              Looks up a localized string similar to Paramétrage hors ligne.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.German">
+            <summary>
+              Looks up a localized string similar to Offline-Parametrierung.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.Italian">
+            <summary>
+              Looks up a localized string similar to Configura offline.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OfflineModuleNameTranslations.Spanish">
+            <summary>
+              Looks up a localized string similar to Parametrizar Off Line.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.English">
+            <summary>
+              Looks up a localized string similar to Online.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.French">
+            <summary>
+              Looks up a localized string similar to En ligne.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.German">
+            <summary>
+              Looks up a localized string similar to Online.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.Italian">
+            <summary>
+              Looks up a localized string similar to In linea.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineConnectionStateTranslations.Spanish">
+            <summary>
+              Looks up a localized string similar to En línea.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.English">
+            <summary>
+              Looks up a localized string similar to Online Parameterize.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.French">
+            <summary>
+              Looks up a localized string similar to Paramétrage en ligne.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.German">
+            <summary>
+              Looks up a localized string similar to Online-Parametrierung.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.Italian">
+            <summary>
+              Looks up a localized string similar to Configura online.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Parameterization.Resources.OnlineModuleNameTranslations.Spanish">
+            <summary>
+              Looks up a localized string similar to Parametrizar On Line.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PrototypeHMI20.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PrototypeHMI20.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="DTMContainer"
+id="1e40a554-3682-4586-b7c6-936c392b4272"
+rxversion="6.1">
+	<codegen
+	classname="DtmContainer"
+	namespace="EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="8ef118e6-8b88-42b7-8080-2f46179bb0cb"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="DTMContainer"
+		id="5d2797fb-6f66-4173-91b1-6d12f7fe12a6"
+		searchtimeout="30000ms"
+		capname="unknown">
+			/form[@processname='Fdi.Reference.Client' and @windowtext='']/?/container[@automationid='TransparentProxyHost']/?
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

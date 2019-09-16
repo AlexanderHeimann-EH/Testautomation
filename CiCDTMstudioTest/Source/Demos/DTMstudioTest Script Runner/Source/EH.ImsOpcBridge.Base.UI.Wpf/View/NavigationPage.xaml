@@ -1,0 +1,48 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.UI.Wpf.View.NavigationPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View"
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.UI.Wpf.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" d:DataContext="{d:DesignInstance Type=viewModel:NavigationPageVm, IsDesignTimeCreatable=True}">
+    <UserControl.Resources>
+
+        <view:BoolToVisibilityConverter x:Uid="View:BoolToVisibilityConverter_1" x:Key="convBoolToVisibility"/>
+
+        <CollectionViewSource x:Uid="CollectionViewSource_1" x:Key="buttonSource" Source="{Binding Path=ButtonItems, Mode=OneWay}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription x:Uid="scm:SortDescription_1" PropertyName="SortIndex"></scm:SortDescription>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </UserControl.Resources>
+    
+    <Grid x:Uid="Grid_1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="120"></RowDefinition>
+            <RowDefinition x:Uid="RowDefinition_2" Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid x:Uid="Grid_2" Grid.Row="0" Margin="{DynamicResource ImageButtonMarginLeft}" VerticalAlignment="Bottom">
+            <TextBlock x:Uid="TextBlock_1" Text="{Binding Caption, Mode=OneWay, StringFormat={}{0}:}" Style="{DynamicResource HeadLineTextBlockStyle}"></TextBlock>
+        </Grid>
+        
+        <ItemsControl  x:Uid="ItemsControl_1" x:Name="NavigationItemsControl" Grid.Row="1" ItemsSource="{Binding Source={StaticResource buttonSource}}" VerticalContentAlignment="Top">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:Uid="DataTemplate_1">
+                    <view:ImageButton x:Uid="View:ImageButton_1" AutomationProperties.AutomationId="{Binding AutomationId}" ButtonImage="{Binding ImageSource}" 
+                                      ButtonText="{Binding Text}" Command="{Binding Path=Command}" CommandParameter="{Binding Path=CommandParameter}" 
+                                      Description="{Binding Description}" Style="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=view:NavigationPage}, Path=ButtonStyle, Mode=OneWay}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate x:Uid="ItemsPanelTemplate_1">
+                    <StackPanel x:Uid="StackPanel_1" Orientation="Horizontal"></StackPanel>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>        
+    </Grid>
+</UserControl>

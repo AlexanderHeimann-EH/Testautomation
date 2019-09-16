@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\obj\x86\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\obj\x86\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\obj\x86\Debug\EH.PCPS.TestAutomation.HostApplicationInterfaces.csprojResolveAssemblyReference.cache

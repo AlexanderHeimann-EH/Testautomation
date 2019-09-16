@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="8f1ee3b0-62be-49ad-9bb0-00557a423870"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		OpenAssistant
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenAssistant"
+	namespace="EH.PCPS.TestAutomation.DeviceCare.V10107.Functions.ApplicationArea.Page_Home.Execution"/>
+	<variables/>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="3000ms"
+		searchpropertyid="b4008d08-9c30-4ae8-921f-cd910606e8a1"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="0"
+		sy="0"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RepositoryEditor"
+			id="46f7678e-2f52-4a11-9b72-d1be36ef8d95">
+				<path>
+					/form[@automationid='me']/element[@automationid='View:NavigationPage_1']/button[@automationid='automId_ConnectionWizard']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="DeviceCareApplication"
+	id="57e11cea-d0df-4ac0-9488-32b6f6120ba9"
+	rxversion="6.1"
+	relativepath="..\..\..\..\GUI\DeviceCareApplication.rxrep">
+		<codegen
+		classname="DeviceCareApplication"
+		namespace="EH.PCPS.TestAutomation.DeviceCare.V10107.GUI"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="99701df9-ab1e-473f-b3e6-7540c2ead80c"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenAssistant.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\..\..\ExternalReferences\CommonCodeModules.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\ExternalReferences\CommonMethods.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TM_DTMs\bin\Debug\TM_DTMs.dll
+		</reference>
+		<reference>
+			..\..\..\..\..\TC_DeviceCare\bin\Debug\TC_DeviceCare.exe
+		</reference>
+	</references>
+</recordtable>

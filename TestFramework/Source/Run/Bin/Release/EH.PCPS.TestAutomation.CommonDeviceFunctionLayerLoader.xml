@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows.NamespaceAboutBox">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows.CloseAboutBox">
+            <summary>
+            Gets the close about box.
+            </summary>
+            <value>The close about box.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows.CopyData">
+            <summary>
+            Gets the copy data.
+            </summary>
+            <value>The copy data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.AboutBox.CommonFlows.OpenAboutBox">
+            <summary>
+            Gets the open about box.
+            </summary>
+            <value>The open about box.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows.NamespaceCompare">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows.CloseCompare">
+            <summary>
+            Gets the close compare.
+            </summary>
+            <value>The close compare.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows.CompareData">
+            <summary>
+            Gets the compare data.
+            </summary>
+            <value>The compare data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Compare.CommonFlows.OpenCompare">
+            <summary>
+            Gets the open compare.
+            </summary>
+            <value>The open compare.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.NamespaceConcentration">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.CalculateConcentration">
+            <summary>
+            Gets the calculate concentration.
+            </summary>
+            <value>The calculate concentration.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.CloseConcentration">
+            <summary>
+            Gets the close concentration.
+            </summary>
+            <value>The close concentration.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.ExportConcentrationData">
+            <summary>
+            Gets the export concentration data.
+            </summary>
+            <value>The export concentration data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.ImportConcentrationData">
+            <summary>
+            Gets the import concentration data.
+            </summary>
+            <value>The import concentration data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.LoadConcentrationData">
+            <summary>
+            Gets the load concentration data.
+            </summary>
+            <value>The load concentration data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.OpenConcentration">
+            <summary>
+            Gets the open concentration.
+            </summary>
+            <value>The open concentration.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Concentration.CommonFlows.SaveConcentrationData">
+            <summary>
+            Gets the save concentration data.
+            </summary>
+            <value>The save concentration data.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.NamespaceCreateDocumentation">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.CloseCreateDocumentation">
+            <summary>
+            Gets the close create documentation.
+            </summary>
+            <value>The close create documentation.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.ConfigureDocument">
+            <summary>
+            Gets the configure document.
+            </summary>
+            <value>The configure document.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.ConfigurePrinter">
+            <summary>
+            Gets the configure printer.
+            </summary>
+            <value>The configure printer.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.OpenCreateDocumentation">
+            <summary>
+            Gets the open create documentation.
+            </summary>
+            <value>The open create documentation.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.CreateDocumentation.CommonFlows.PrintDocumentation">
+            <summary>
+            Gets the print documentation.
+            </summary>
+            <value>The print documentation.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.NamespaceEnvelopeCurve">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.CloseEnvelopeCurve">
+            <summary>
+            Gets the close envelope curve.
+            </summary>
+            <value>The close envelope curve.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.CyclicReading">
+            <summary>
+            Gets the cyclic reading.
+            </summary>
+            <value>The cyclic reading.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.LoadCurves">
+            <summary>
+            Gets the load curves.
+            </summary>
+            <value>The load curves.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.OpenEnvelopeCurve">
+            <summary>
+            Gets the open envelope curve.
+            </summary>
+            <value>The open envelope curve.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.ReadCurves">
+            <summary>
+            Gets the read curves.
+            </summary>
+            <value>The read curves.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EnvelopeCurve.CommonFlows.SaveCurves">
+            <summary>
+            Gets the save curves.
+            </summary>
+            <value>The save curves.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows.NamespaceEventList">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows.CloseEventList">
+            <summary>
+            Gets the close event list.
+            </summary>
+            <value>The close event list.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows.OpenEventList">
+            <summary>
+            Gets the open event list.
+            </summary>
+            <value>The open event list.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.EventList.CommonFlows.ReadEvents">
+            <summary>
+            Gets the read events.
+            </summary>
+            <value>The read events.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.NamespaceHistorom">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.CloseHistorom">
+            <summary>
+            Gets the close HISTOROM.
+            </summary>
+            <value>The close HISTOROM.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.ExportHistoromData">
+            <summary>
+            Gets the export HISTOROM data.
+            </summary>
+            <value>The export HISTOROM data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.OpenHistorom">
+            <summary>
+            Gets the open HISTOROM.
+            </summary>
+            <value>The open HISTOROM.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Historom.CommonFlows.ReadEvents">
+            <summary>
+            Gets the read events.
+            </summary>
+            <value>The read events.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.NamespaceLinearization">
+            <summary>
+            The namespace linearization
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.CloseLinearization">
+            <summary>
+            Gets the close linearization.
+            </summary>
+            <value>The close linearization.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.ExportLinearizationData">
+            <summary>
+            Gets the export linearization data.
+            </summary>
+            <value>The export linearization data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.ImportLinearizationData">
+            <summary>
+            Gets the import linearization data.
+            </summary>
+            <value>The import linearization data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.LoadTable">
+            <summary>
+            Gets the load table.
+            </summary>
+            <value>The load table.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.OpenLinearization">
+            <summary>
+            Gets the open linearization.
+            </summary>
+            <value>The open linearization.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.ReadTable">
+            <summary>
+            Gets the read table.
+            </summary>
+            <value>The read table.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.SaveTable">
+            <summary>
+            Gets the save table.
+            </summary>
+            <value>The save table.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Linearization.CommonFlows.WriteTable">
+            <summary>
+            Gets the write table.
+            </summary>
+            <value>The write table.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.NamespaceParameterization">
+            <summary>
+            The namespace host application
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.CloseParameterization">
+            <summary>
+            Gets the close parameterization.
+            </summary>
+            <value>The close parameterization.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.GetParameter">
+            <summary>
+            Gets the get parameter.
+            </summary>
+            <value>The get parameter.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.OpenParameterization">
+            <summary>
+            Gets the open parameterization.
+            </summary>
+            <value>The open parameterization.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Parameterization.CommonFlows.SetParameter">
+            <summary>
+            Gets the set parameter.
+            </summary>
+            <value>The set parameter.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.NamespaceSaveRestore">
+            <summary>
+            The namespace host application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.CloseSaveRestore">
+            <summary>
+            Gets the close save restore.
+            </summary>
+            <value>The close save restore.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.OpenSaveRestore">
+            <summary>
+            Gets the open save restore.
+            </summary>
+            <value>The open save restore.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.RestoreWithDownload">
+            <summary>
+            Gets the restore with download.
+            </summary>
+            <value>The restore with download.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.RestoreWithoutDownload">
+            <summary>
+            Gets the restore without download.
+            </summary>
+            <value>The restore without download.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.SaveWithUpload">
+            <summary>
+            Gets the save with upload.
+            </summary>
+            <value>The save with upload.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.SaveRestore.CommonFlows.SaveWithoutUpload">
+            <summary>
+            Gets the save without upload.
+            </summary>
+            <value>The save without upload.</value>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.NamespaceViscosity">
+            <summary>
+            The namespace viscosity
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows"/> class. 
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.CalculateViscosityData">
+            <summary>
+            Gets the calculate viscosity data.
+            </summary>
+            <value>The calculate viscosity data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.CloseViscosity">
+            <summary>
+            Gets the close viscosity.
+            </summary>
+            <value>The close viscosity.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.ExportViscosityData">
+            <summary>
+            Gets the export viscosity data.
+            </summary>
+            <value>The export viscosity data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.ImportViscosityData">
+            <summary>
+            Gets the import viscosity data.
+            </summary>
+            <value>The import viscosity data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.Viscosity.CommonFlows.OpenViscosity">
+            <summary>
+            Gets the open viscosity.
+            </summary>
+            <value>The open viscosity.</value>
+        </member>
+    </members>
+</doc>

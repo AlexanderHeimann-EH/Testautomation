@@ -1,0 +1,24 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="bc4b01f9-07bd-4792-9950-e0e9e600e7e4" Version="2.0.0" Language="en-US" Publisher="Endress+Hauser Process Solutions AG" />
+    <DisplayName>EH.DTMstudioTest.Plugin</DisplayName>
+    <Description xml:space="preserve">DTMstudio Test Plugin for Visual Studio 2015</Description>
+    <GettingStartedGuide>CiC DTMstudio Test - Getting Started.docx</GettingStartedGuide>
+    <ReleaseNotes>CiC DTMstudio Test - Release Notes.rtf</ReleaseNotes>
+    <Icon>DTTestProject.ico</Icon>
+    <PreviewImage>Preview.png</PreviewImage>
+    <Tags>DTMstudio Test</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="EH.DTMstudioTest.Plugin.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+  </Assets>
+</PackageManifest>

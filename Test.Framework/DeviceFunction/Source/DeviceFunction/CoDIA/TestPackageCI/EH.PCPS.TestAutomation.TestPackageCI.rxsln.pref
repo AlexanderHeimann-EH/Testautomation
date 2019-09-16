@@ -1,0 +1,9 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="Any CPU" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution EH.PCPS.TestAutomation.TestPackageCI[EH.PCPS.TestAutomation.TestPackageCI[ConcentrationV2[GUI[ApplicationArea[MainView[]]]]]]]&#xD;&#xA;Solution EH.PCPS.TestAutomation.TestPackageCI\EH.PCPS.TestAutomation.TestPackageCI\ConcentrationV2\GUI\ApplicationArea\MainView\Controls.rxrep&#xD;&#xA;Solution EH.PCPS.TestAutomation.TestPackageCI" />
+  <StartupProject value="" />
+</Properties>

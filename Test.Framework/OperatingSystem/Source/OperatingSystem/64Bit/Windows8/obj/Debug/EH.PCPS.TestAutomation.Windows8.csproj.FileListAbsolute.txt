@@ -1,0 +1,5 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows8.XML
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows8.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows8.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows8\obj\Debug\EH.PCPS.TestAutomation.Windows8.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows8\obj\Debug\EH.PCPS.TestAutomation.Windows8.pdb

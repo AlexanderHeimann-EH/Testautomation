@@ -1,0 +1,2 @@
+﻿fob = True
+oar = False

@@ -1,0 +1,4 @@
+﻿<FlowDocument xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Uid="FlowDocument_1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              FontSize="15" FontFamily="Arial" LineHeight="25" IsHyphenationEnabled="false" PagePadding="5" >
+    <Paragraph x:Uid="Paragraph_1" TextAlignment="Left" >Text will be coming soon.</Paragraph>
+</FlowDocument>

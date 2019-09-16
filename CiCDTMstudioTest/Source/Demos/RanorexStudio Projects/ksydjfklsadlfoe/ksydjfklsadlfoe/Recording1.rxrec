@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="4.1.6.17768"
+id="1bddbd3a-f0b7-482b-bd68-0a70ce73b95a"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="ksydjfklsadlfoe"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="ksydjfklsadlfoeRepository"
+	id="a1b82029-e40d-45db-8578-29c56951b07a"
+	rxversion="4.1.6.17768"
+	relativepath="ksydjfklsadlfoeRepository.rxrep">
+		<codegen
+		classname="ksydjfklsadlfoeRepository"
+		namespace="ksydjfklsadlfoe"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="e953d2d6-701b-4c51-870d-29d560e6f851"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

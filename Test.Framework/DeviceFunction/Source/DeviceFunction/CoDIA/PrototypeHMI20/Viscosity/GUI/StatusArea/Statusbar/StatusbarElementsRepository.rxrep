@@ -1,0 +1,42 @@
+﻿<repository
+name="StatusbarElementsRepository"
+id="e8636f93-9818-4d5e-845c-7d1810463c59"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.PrototypeHMI20.Viscosity.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="cfe7e7f3-ed10-4a10-9f46-51b13d361cc5"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="TxtConnectionState"
+		id="388b3d68-c08d-4bed-a218-6502613d153c"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="c30ac035-635c-44be-b115-fcb8b8d71b73">
+			/container[@automationid='ViscosityModule.ViscosityForm.Form']/element[@automationid='ViscosityModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/text[@childindex='0']
+		</item>
+		<item
+		name="ButtonOperationInProgress"
+		id="c728a83b-edbd-4d7a-abd9-7604e3b8013c"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="text,accessible"
+		refimgid="3fd72332-d78c-441e-bdb3-5d1d7470e248">
+			/container[@automationid='ViscosityModule.ViscosityForm.Form']/element[@automationid='ViscosityModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/button[@accessiblename~'^Statusbar\.Item\.OperationP']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables>
+		<var
+		name="index"
+		id="05082aaf-f6b4-45b0-b541-c58b9c923838">
+			0
+		</var>
+	</variables>
+</repository>

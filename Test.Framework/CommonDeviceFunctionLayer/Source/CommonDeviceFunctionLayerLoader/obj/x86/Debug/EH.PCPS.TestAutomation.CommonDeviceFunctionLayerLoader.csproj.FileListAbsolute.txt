@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.XML
+P:\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.pdb
+P:\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerLoader\obj\x86\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerLoader\obj\x86\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonDeviceFunctionLayer\Source\CommonDeviceFunctionLayerLoader\obj\x86\Debug\EH.PCPS.TestAutomation.CommonDeviceFunctionLayerLoader.pdb

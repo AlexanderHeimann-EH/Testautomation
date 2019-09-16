@@ -1,0 +1,66 @@
+### Jazz Ignore 0
+# Ignored files and folders will not be committed, but may be modified during 
+# accept or update.  
+# - Ignore properties should contain a space separated list of filename patterns.  
+# - Each pattern is case sensitive and surrounded by braces ('{' and '}').  
+# - "*" matches zero or more characters.  
+# - "?" matches a single character.  
+# - The pattern list may be split across lines by ending the line with a 
+#     backslash and starting the next line with a tab.  
+# - Patterns in core.ignore prevent matching resources in the same 
+#     directory from being committed.  
+# - Patterns in core.ignore.recursive matching resources in the current 
+#     directory and all subdirectories from being committed.  
+# - The default value of core.ignore.recursive is *.class 
+# - The default value for core.ignore is bin 
+# 
+# To ignore shell scripts and hidden files in this subtree: 
+#     e.g: core.ignore.recursive = {*.sh} {\.*} 
+# 
+# To ignore resources named 'bin' in the current directory (but allow 
+#  them in any sub directorybelow): 
+#     e.g: core.ignore = {bin} 
+# 
+# NOTE: modifying ignore files will not change the ignore status of 
+#     Eclipse derived resources.
+
+core.ignore.recursive= 
+
+core.ignore= \
+	{Deploy_i02497601 2017-12-07 12_24_29} \
+	{Deploy_i02497601 2017-12-07 12_26_07} \
+	{Deploy_i02497601 2017-12-07 12_27_14} \
+	{Deploy_i02497601 2017-12-07 12_30_46} \
+	{Deploy_i02497601 2017-12-07 12_30_56} \
+	{Deploy_i02497601 2017-12-07 12_31_12} \
+	{Deploy_i02497601 2017-12-07 12_32_27} \
+	{Deploy_i02497601 2017-12-07 12_38_15} \
+	{Deploy_i02497601 2017-12-07 12_40_36} \
+	{Deploy_i02497601 2017-12-07 12_41_19} \
+	{Deploy_i02497601 2017-12-07 12_48_49} \
+	{Deploy_i02497601 2017-12-07 12_57_15} \
+	{Deploy_i02497601 2017-12-07 13_00_08} \
+	{Deploy_i02497601 2017-12-07 14_13_41} \
+	{Deploy_i02497601 2017-12-07 14_14_13} \
+	{Deploy_i02497601 2017-12-07 14_17_10} \
+	{Deploy_i02497601 2017-12-18 11_14_47} \
+	{Deploy_i02497601 2017-12-18 11_53_10} \
+	{Deploy_i02497601 2017-12-18 11_55_18} \
+	{Deploy_i02497601 2017-12-18 13_33_02} \
+	{Deploy_i02497601 2018-01-16 09_07_15} \
+	{Deploy_i02497601 2018-01-16 09_08_19} \
+	{Deploy_i02497601 2018-01-16 09_08_38} \
+	{Deploy_i02497601 2018-01-16 09_10_12} \
+	{Deploy_i02497601 2018-01-16 09_12_27} \
+	{Deploy_i02497601 2018-01-16 09_16_43} \
+	{Deploy_i02497601 2018-01-16 12_24_31} \
+	{Deploy_i02497601 2018-01-16 13_33_20} \
+	{Deploy_i02497601 2018-01-16 13_36_07} \
+	{Deploy_i02497601 2018-01-16 13_39_01} \
+	{Deploy_i02497601 2018-01-16 13_43_36} \
+	{Deploy_i02497601 2018-01-16 13_46_17} \
+	{Deploy_i02497601 2018-01-16 13_47_29} \
+	{Deploy_i02497601 2018-01-16 13_59_02} \
+	{Deploy_i02497601 2018-01-16 14_02_50} \
+	{Deploy_i02497601 2018-01-16 14_07_48} \
+	{Deploy_i02497601 2018-01-16 14_08_19} 

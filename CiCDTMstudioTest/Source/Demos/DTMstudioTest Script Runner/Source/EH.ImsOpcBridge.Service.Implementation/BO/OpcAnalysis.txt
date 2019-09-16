@@ -1,0 +1,26 @@
+﻿
+System.Diagnostics.Debug.WriteLine(
+    "{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}",
+    e.ErrorCode,
+    e.ErrorMessage,
+    e.Exception == null ? "(null)" : e.Exception.Message,
+    e.Handle,
+    e.ItemDescriptor.BrowsePath == null ? "(null)" : e.ItemDescriptor.BrowsePath.ToString(),
+    e.State,
+    e.Vtq == null ? "(null)" : e.Vtq.Value,
+    e.Vtq == null ? "(null)" : e.Vtq.Quality.ToString(),
+    e.Vtq == null ? "(null)" : e.Vtq.Timestamp.ToString(CultureInfo.InvariantCulture));
+
+Possible answers from subscribed items:
+---------------------------------------
+
+Answers when everything works fine.
+0, , (null), 12585986, (null), System.Object, 0, Good GoodNonspecific LimitOk (192), 07/11/2014 13:04:32
+0, , (null), 12585986, (null), System.Object, 1, Good GoodNonspecific LimitOk (192), 07/11/2014 13:04:33
+0, , (null), 12585986, (null), System.Object, 2, Good GoodNonspecific LimitOk (192), 07/11/2014 13:04:34
+
+Answer when the ItemId does not exist.
+-1073479672, The item definition does not conform to the server syntax., The item definition does not conform to the server syntax., 12585986, (null), System.Object, (null), (null), (null)
+
+Answer when the server does not exist.
+-2147221005, Invalid class string , Invalid class string , 12585986, (null), System.Object, (null), (null), (null)

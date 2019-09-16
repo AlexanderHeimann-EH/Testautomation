@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07C7C624-D9AD-4425-8EDF-91F42CDB83B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.CommunicationLoader</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.CommunicationLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommunicationLoader.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.CommunicationLoader.XML</DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HART\HartComm\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>cde0d3fd-fd86-4e6c-8342-ef8a097a1b64</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Flows.cs">
+      <id>2bbaa4c0-2e48-414c-bc69-eb4895fdb585</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Validation.cs">
+      <id>c827d6fc-4680-40e1-be8e-ce1cdb2eeb9e</id>
+    </Compile>
+    <Compile Include="HART\NXA820\AboutBox\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>8bd0b3cb-8c79-45a8-b9b9-e5c4d32fe108</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Flows.cs">
+      <id>f6cdc1fb-4fbf-4c9c-8737-b092555f1573</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>79b89470-20dd-4805-aa5b-a5ad9d107969</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\ApplicationArea\MainView\Validation.cs">
+      <id>e7ab3008-7693-4c06-b23b-f9a103f3799e</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDeviceAddress\Functions\StatusArea\Statusbar\Validation.cs">
+      <id>871b9d8e-a0c6-424c-acf6-c6e57212017a</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Flows.cs">
+      <id>44b52887-d395-4ef6-ad63-edc0510fe79e</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>42745fd3-73f5-442f-964b-7ed4f6535fe2</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\ApplicationArea\MainView\Validation.cs">
+      <id>1e87ed91-c684-49be-bf7d-4a4162253568</id>
+    </Compile>
+    <Compile Include="HART\NXA820\ChangeDtmAddress\Functions\StatusArea\Statusbar\Validation.cs">
+      <id>0437aedc-2016-4b96-9f8d-aad2957cf8bc</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Flows.cs">
+      <id>75e051d2-139e-4592-91eb-da2f7ffff30a</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Execution.cs">
+      <id>e6b5e1a6-7abc-4643-8e04-5d337930eef5</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\ApplicationArea\MainView\Validation.cs">
+      <id>f95a3b76-1b9c-4cb5-9b25-e173c8ef1f60</id>
+    </Compile>
+    <Compile Include="HART\NXA820\Configuration\Functions\StatusArea\Statusbar\Validation.cs">
+      <id>5f713412-6676-4d74-a0f6-e9af2d88b564</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>db3f2f98-54e1-4470-8a70-e64303eef572</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\CommunicationInterfaces\EH.PCPS.TestAutomation.CommunicationInterfaces.csproj">
+      <Project>{A6B9DE12-A966-496A-BC3C-95170F5F8E87}</Project>
+      <Name>EH.PCPS.TestAutomation.CommunicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HART\NXA820\ChangeDeviceAddress\Functions\Dialogs\">
+      <id>b49bab64-f2f7-49db-a10c-fffedf38e294</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDeviceAddress\Functions\MenuArea\">
+      <id>87e642cb-1904-4b0a-b561-c2d030b2dd9d</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDtmAddress\Functions\Dialogs\">
+      <id>2ab3ec6b-8b7a-4576-8243-4373ab25dfb6</id>
+    </Folder>
+    <Folder Include="HART\NXA820\ChangeDtmAddress\Functions\MenuArea\">
+      <id>0c62eeaa-c536-4ba8-aacb-d02afa2a8e8b</id>
+    </Folder>
+    <Folder Include="HART\NXA820\Configuration\Functions\Dialogs\">
+      <id>80701e81-ab2d-410f-b6bd-6d6dde92e2aa</id>
+    </Folder>
+    <Folder Include="HART\NXA820\Configuration\Functions\MenuArea\">
+      <id>0f76ed5a-2e6e-471a-94d8-4268778ce934</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<DeviceFunctionMappingList>
+  <DeviceFunctionList>
+    <DeviceFunctionMapping>
+	  <DisplayName>Viscosity</DisplayName>
+      <TestFrameworkDeviceFunctionName>Viscosity</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EH.CoDIA.Viscosity.GUI</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>Save / Restor</DisplayName>
+      <TestFrameworkDeviceFunctionName>SaveRestore</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>UploadDownloadManagerGui</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>Create Dokumentation</DisplayName>
+      <TestFrameworkDeviceFunctionName>CreateDocumentation</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>OneClickPrint.Gui</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>About Box</DisplayName>	
+      <TestFrameworkDeviceFunctionName>AboutBox</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>AboutBoxDialog</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>Envelope Curve</DisplayName>	
+      <TestFrameworkDeviceFunctionName>EnvelopeCurve</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EHCoDIAEnvelopeCurve.GUI</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>HistoROM</DisplayName>	 
+      <TestFrameworkDeviceFunctionName>ExtendedHistoRom</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EH.CoDIA.HistoROM.GUI</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>Compare</DisplayName>	
+      <TestFrameworkDeviceFunctionName>Compare</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>DatasetComparison.GUI</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>Event List</DisplayName>  
+      <TestFrameworkDeviceFunctionName>EventList</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EHCoDIAEventList.GUI</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>EH EddUserInterface Online</DisplayName>
+      <TestFrameworkDeviceFunctionName>ParameterizationOnline</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EH.EddUserInterface.Online</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>EH EddUserInterface Offline</DisplayName>
+      <TestFrameworkDeviceFunctionName>ParameterizationOffline</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EH.EddUserInterface.Offline</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+    <DeviceFunctionMapping>
+	  <DisplayName>Concentration</DisplayName>	
+      <TestFrameworkDeviceFunctionName>Concentration</TestFrameworkDeviceFunctionName>
+      <CoDIADeviceFunctionName>EH.CoDIA.Concentration.GUI</CoDIADeviceFunctionName>
+    </DeviceFunctionMapping>
+  </DeviceFunctionList>
+</DeviceFunctionMappingList>

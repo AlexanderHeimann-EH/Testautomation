@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\RSG45HARTCommunication.V1011436\obj\x86\Debug\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\HART\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\HART\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\HART\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\RSG45HARTCommunication.V1011436\obj\x86\Debug\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\RSG45HARTCommunication.V1011436\obj\x86\Debug\EH.PCPS.TestAutomation.RSG45HARTCommunication.V1011436.pdb

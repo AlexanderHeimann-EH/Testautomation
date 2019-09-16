@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.CloseConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            CDI Communication FXA291
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.CloseConfiguration.Run">
+            <summary>
+            Opens the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication">
+            <summary>
+            Implementation of IConfigureCommunication for
+            CDI Communication FXA291
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication.Run(EH.PCPS.TestAutomation.Common.DataTypes.Communication)">
+            <summary>
+            Performs the configuration of the CDI Communication FXA291 Communication DTM
+            </summary>
+            <param name="communication">
+            The communication.
+            </param>
+            <returns>
+            <br>True: if configuration was successful</br>
+            <br>False: if configuration was unsuccessful or errors occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication configuration.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication.SetIpAddress(EH.PCPS.TestAutomation.Common.DataTypes.CommunicationSetting)">
+            <summary>
+            The set IP address.
+            </summary>
+            <param name="ipAddress">
+            The ip address.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication.SetFoundDevice(EH.PCPS.TestAutomation.Common.DataTypes.CommunicationSetting)">
+            <summary>
+            The set found device.
+            </summary>
+            <param name="foundDevice">
+            The found device.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication.SetPort(EH.PCPS.TestAutomation.Common.DataTypes.CommunicationSetting)">
+            <summary>
+            The set port.
+            </summary>
+            <param name="port">
+            The port.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.ConfigureCommunication.SetTimeout(EH.PCPS.TestAutomation.Common.DataTypes.CommunicationSetting)">
+            <summary>
+            The set timeout.
+            </summary>
+            <param name="timeout">
+            The timeout.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.OpenConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for
+            CDI Communication FXA291
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.CommonFlows.OpenConfiguration.Run">
+            <summary>
+            Closes the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInText">
+            <summary>
+            Provides functionality to set parameter for different control types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInText.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInText.SetTextValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInText.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.PressButton">
+            <summary>
+            Provides functionalities for buttons
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.PressButton.ExecuteButtonPress(Ranorex.Button)">
+            <summary>
+            Clicks the button <see>
+                    <cref>CDICommDTMRepoElements.ButtonRefresh</cref>
+                </see>
+            </summary>
+            <param name="button">
+            The button.
+            </param>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInComboBox">
+            <summary>
+            Provides functionality to set parameter for different control types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInComboBox.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInComboBox.SetComboBoxValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a comboBox control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SetParameterInComboBox.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SettingParser">
+            <summary>
+            The setting parser.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SettingParser.Parse(System.String)">
+            <summary>
+            The parse.
+            </summary>
+            <param name="input">
+            The input.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Execution.SettingParser.Compare(System.String,System.String)">
+            <summary>
+            Checks, after parsing, if two strings are equal
+            </summary>
+            <param name="input1">The first string argument</param>
+            <param name="input2">The second string argument</param>
+            <returns>
+            True, if both strings are equal
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Validation.IsModuleConfigurable">
+            <summary>
+            Checks if the module is offline
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Validation.IsModuleConfigurable.Run">
+            <summary>
+            Checks if the module configurable (offline)
+            by determining if the communication Unit combo box is enabled
+            </summary>
+            <returns>
+                <br>True: if module is configurable (offline)</br>
+                <br>False: if module is not configurable (online) or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Validation.IsModuleReady">
+            <summary>
+            Checks if a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Validation.IsModuleReady.Run">
+            <summary>
+            Checks if button of Combobox [Found Devices] is available
+            </summary>
+            <returns>
+            <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady">
+            <summary>
+            Waits until a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepo">
+            <summary>
+            The class representing the CDICommDTMRepo element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepo.Instance">
+            <summary>
+            Gets the singleton class instance representing the CDICommDTMRepo element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepo.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepo.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepo.ApplicationArea">
+            <summary>
+            The ApplicationArea folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepo.ComboboxList">
+            <summary>
+            The ComboboxList folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder">
+            <summary>
+            The ApplicationAreaAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ApplicationArea  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.IpAddress">
+            <summary>
+            The IpAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.IpAddressInfo">
+            <summary>
+            The IpAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ComboboxFoundDevices">
+            <summary>
+            The ComboboxFoundDevices item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ComboboxFoundDevicesInfo">
+            <summary>
+            The ComboboxFoundDevices item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonFoundDevices">
+            <summary>
+            The ButtonFoundDevices item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonFoundDevicesInfo">
+            <summary>
+            The ButtonFoundDevices item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.Port">
+            <summary>
+            The Port item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.PortInfo">
+            <summary>
+            The Port item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ComboboxTimeout">
+            <summary>
+            The ComboboxTimeout item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ComboboxTimeoutInfo">
+            <summary>
+            The ComboboxTimeout item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonTimeout">
+            <summary>
+            The ButtonTimeout item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonTimeoutInfo">
+            <summary>
+            The ButtonTimeout item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.Text">
+            <summary>
+            The Text item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.TextInfo">
+            <summary>
+            The Text item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ComboBox">
+            <summary>
+            The ComboBox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ComboBoxInfo">
+            <summary>
+            The ComboBox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.Button">
+            <summary>
+            The Button item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ApplicationAreaAppFolder.ButtonInfo">
+            <summary>
+            The Button item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder">
+            <summary>
+            The ComboboxListAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ComboboxList  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoFolders.ComboboxListAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements">
+            <summary>
+            Provides access to the GUI elements of the repository 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.textIpAddress">
+            <summary>
+            The text ip address.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.textPort">
+            <summary>
+            The text port.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.comboBoxFoundDevices">
+            <summary>
+            The combo box found devices.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.comboBoxTimeout">
+            <summary>
+            The combo box timeout.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.buttonFoundDevices">
+            <summary>
+            The button found devices.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.buttonTimeout">
+            <summary>
+            The button timeout.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.cdiRepository">
+            <summary>
+            Holds the instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.commDtmContainerPath">
+            <summary>
+            Holds the path to the commDtmContainer
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements"/> class. 
+            and gets the communication DTMContainerPath
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.DtmWindowSelf">
+            <summary>
+            Gets the 'Communication DTM Window' element itself
+            </summary>
+            <returns>
+            <br>Element: if the element is found</br>
+            <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ComboboxList">
+            <summary>
+            Gets a list of all items in the combo boxes of this graphical user interface
+            </summary>
+            <returns>
+            <br>Ilist: if the list can be created</br>
+            <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.TextIpAddress">
+            <summary>
+            Gets the text ip-address.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ComboboxFoundDevices">
+            <summary>
+            Gets the combo box found devices.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ButtonFoundDevices">
+            <summary>
+            Gets the button found devices.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ItemsFoundDevices">
+            <summary>
+            Gets the items found devices.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.TextPort">
+            <summary>
+            Gets the text port.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ComboBoxTimeOut">
+            <summary>
+            Gets the combo box time out.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ButtonTimeout">
+            <summary>
+            Gets the button timeout.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.ItemsTimeOut">
+            <summary>
+            Gets the items time out.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.GetTextElements">
+            <summary>
+            Get unidentifiable text elements from CDI Communication DTM GUI TCP IP
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.GetComboBoxElements">
+            <summary>
+            Get unidentifiable combobox elements from CDI Communication DTM GUI TCP IP
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.GUI.CDICommDTMRepoElements.GetButtonElements">
+            <summary>
+            Get unidentifiable button elements from CDI Communication DTM GUI TCP IP
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetIpAddress">
+            <summary>
+            Provides a method to set the Baud rate
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetIpAddress.Run(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+            
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetPort">
+            <summary>
+            Provides a method to set the Baud rate
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetPort.Run(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+            
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetFoundDevice">
+            <summary>
+            Provides a method to set Found Device
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetFoundDevice.Run(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+            
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetTimeout">
+            <summary>
+            Provides a method to select a Timeout
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.SpecificFlows.SetTimeout.Run(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value">The value of the list item to select</param>
+            <returns>
+            
+            </returns>
+        </member>
+    </members>
+</doc>

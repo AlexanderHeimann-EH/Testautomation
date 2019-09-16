@@ -1,0 +1,36 @@
+﻿                        /*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+                        
+                        int loops = 20;
+
+                        // TC_OpenHostApplication
+                        string pathToFrame = @"C:\Program Files (x86)\Endress+Hauser\FieldCare\Frame\FMPFrame.exe"; 
+
+                        // TC_UpdateDtmCatalog
+                        int timeToWaitForUpdateMessage = 5000; 
+                        int timeoutForUpdateProgress = 12000; 
+                        bool shouldFindNewOrChangedDevice = false;
+                        int maxMinutesSinceDtmWasInstalled = 10;
+                        int timeToWaitForMoving = 10;
+                        
+                        // TC_LoadProject
+                        string projectName = "CDI10"; 
+
+                        // TC_FindAndSelectDeviceInTopology
+                        string deviceName = "CDI Communication FXA291";
+
+                        // TC_CloseHostApplication
+                        int timeOut = 100000;
+                        string deviceType = "Micropilot";
+
+                        for (int counter = 0; counter < loops; counter++)
+                        {
+                            Report.Info(string.Format("Loop: {0}:", counter));
+                            TC_OpenHostApplication.Run(pathToFrame);
+                            //TC_UpdateDtmCatalog.Run(timeToWaitForUpdateMessage, timeoutForUpdateProgress, shouldFindNewOrChangedDevice, maxMinutesSinceDtmWasInstalled, timeToWaitForMoving);
+                            //TC_LoadProject.Run(projectName);
+                            //TC_FindAndSelectDeviceInTopology.Run(deviceName);
+                            //EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.CreateNetwork.Run(timeOut, deviceType);
+                            TC_CloseHostApplication.Run();
+                        }

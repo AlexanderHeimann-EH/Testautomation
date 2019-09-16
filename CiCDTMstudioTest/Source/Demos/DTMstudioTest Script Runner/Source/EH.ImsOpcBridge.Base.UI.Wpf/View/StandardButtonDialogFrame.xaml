@@ -1,0 +1,29 @@
+﻿<Window x:Uid="Window_1" x:Class="EH.ImsOpcBridge.UI.Wpf.View.StandardButtonDialogFrame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:View="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View"
+        Title="{Binding Path=Title}" Height="300" Width="300" Icon="/EH.ImsOpcBridge.Base.UI.Wpf;component/Resources/ImsOpcBridge.ico" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" SizeToContent="Width">
+    <Window.Resources>
+        <View:BoolToVisibilityConverter x:Uid="View:BoolToVisibilityConverter_1" x:Key="convBoolToVisibility" />
+    </Window.Resources>
+    
+    <Grid x:Uid="Grid_1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+            <ColumnDefinition x:Uid="ColumnDefinition_2" Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Uid="controlContainer" Name="controlContainer" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <StackPanel x:Uid="StackPanel_1" Grid.Column="1" Grid.Row="1" Orientation="Horizontal"  HorizontalAlignment="right">
+            <Button x:Uid="Button_1" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=YesCommand}" Visibility="{Binding Path=IsYesButtonVisible, Converter={StaticResource convBoolToVisibility}}">Yes</Button>
+            <Button x:Uid="Button_2" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=NoCommand}" Visibility="{Binding Path=IsNoButtonVisible, Converter={StaticResource convBoolToVisibility}}">No</Button>
+            <Button x:Uid="Button_3" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=AbortCommand}" Visibility="{Binding Path=IsAbortButtonVisible, Converter={StaticResource convBoolToVisibility}}">Abort</Button>
+            <Button x:Uid="Button_4" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=RetryCommand}" Visibility="{Binding Path=IsRetryButtonVisible, Converter={StaticResource convBoolToVisibility}}">Retry</Button>
+            <Button x:Uid="Button_5" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=IgnoreCommand}" Visibility="{Binding Path=IsIgnoreButtonVisible, Converter={StaticResource convBoolToVisibility}}">Ignore</Button>
+            <Button x:Uid="Button_6" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=OkCommand}" Visibility="{Binding Path=IsOkButtonVisible, Converter={StaticResource convBoolToVisibility}}">OK</Button>
+            <Button x:Uid="Button_7" Margin="4,4,0,4" Click="ButtonClicked" Command="{Binding Path=CancelCommand}" Visibility="{Binding Path=IsCancelButtonVisible, Converter={StaticResource convBoolToVisibility}}">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

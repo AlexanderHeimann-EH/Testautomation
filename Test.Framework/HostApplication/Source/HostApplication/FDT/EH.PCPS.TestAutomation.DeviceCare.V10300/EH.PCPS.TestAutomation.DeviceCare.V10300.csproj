@@ -1,0 +1,2350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EE05512-2511-45B6-AEF9-006BC1AC9F32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.DeviceCare.V10300</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.DeviceCare.V10300</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\HostApplication\FDT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10300.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\HostApplication\FDT\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10300.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\HostApplication\FDT\</OutputPath>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10300.XML</DocumentationFile>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\DTMCatalog\RegisterDeviceType.cs">
+      <id>fcb9ad1f-2204-4949-bbbd-ed7c85f5c5f2</id>
+    </Compile>
+    <Compile Include="CommonFlows\DTMCatalog\UnregisterDeviceType.cs">
+      <id>2f2da29f-55e2-402f-83f5-4def23967624</id>
+    </Compile>
+    <Compile Include="CommonFlows\DTMData\RestoreDeviceData.cs">
+      <id>cd3293c6-08d8-4bb1-9d5a-128eb6a02f4f</id>
+    </Compile>
+    <Compile Include="CommonFlows\DTMData\SaveDeviceData.cs">
+      <id>a9b21dc0-063e-48b6-9268-31f5f2ea9a50</id>
+    </Compile>
+    <Compile Include="CommonFlows\DTMFunctions\CloseFunction.cs">
+      <id>cc7cb595-7d6f-47b9-90d0-bd060670ee0c</id>
+    </Compile>
+    <Compile Include="CommonFlows\DTMFunctions\OpenAdditionalFunction.cs">
+      <id>4ee41944-1d46-4a61-a078-2913a872a12b</id>
+    </Compile>
+    <Compile Include="CommonFlows\DTMFunctions\OpenFunction.cs">
+      <id>52a61cb4-f388-4406-af7f-40aecfa0f7f4</id>
+    </Compile>
+    <Compile Include="CommonFlows\Eventlog\GetMessageLog.cs">
+      <id>9a2e3a36-035e-4aff-ad3c-ed40eb1718e6</id>
+    </Compile>
+    <Compile Include="CommonFlows\FDTPrint\PrintDeviceInformation.cs">
+      <id>371fc956-ba3d-4266-9e65-a5586a1734ec</id>
+    </Compile>
+    <Compile Include="CommonFlows\FDTUpDownload\ReadDataFromDevice.cs">
+      <id>63d8976d-3c1a-43d5-9a20-2aad9af5fd2e</id>
+    </Compile>
+    <Compile Include="CommonFlows\FDTUpDownload\WriteDataToDevice.cs">
+      <id>f0c4f128-2e6c-4d3b-98f5-33c9657b59e7</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetCommDTMContainerPath.cs">
+      <id>fddc5f66-b4c0-422d-b9a2-2e5ed3c57965</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetCriticalError.cs">
+      <id>b82f871a-1ab4-4bfc-b1e0-8e3b1d9222bb</id>
+    </Compile>
+    <Compile Include="CommonFlows\GetDtmContainerPath.cs">
+      <id>86ba44f4-25b3-467f-97a4-c5bae20d1570</id>
+    </Compile>
+    <Compile Include="CommonFlows\Process\CloseHostApplication.cs">
+      <id>074abdd4-2d13-47e1-a29b-923c29f1c223</id>
+    </Compile>
+    <Compile Include="CommonFlows\Process\OpenHostApplication.cs">
+      <id>d4b627b3-b5a1-4503-a4a3-f7f56db8e16a</id>
+    </Compile>
+    <Compile Include="CommonFlows\Project\CloseProject.cs">
+      <id>2c04c836-56e7-4956-a3de-390332ea1a0a</id>
+    </Compile>
+    <Compile Include="CommonFlows\Project\CreateProject.cs">
+      <id>65224df8-52b0-4891-8d43-8e86dca825a3</id>
+    </Compile>
+    <Compile Include="CommonFlows\Project\DeleteProject.cs">
+      <id>b4b41e86-0c47-4e42-a748-a2d64ef21b55</id>
+    </Compile>
+    <Compile Include="CommonFlows\Project\LoadProject.cs">
+      <id>30a89a24-de06-4471-bd53-b683b4818a09</id>
+    </Compile>
+    <Compile Include="CommonFlows\Project\SaveProject.cs">
+      <id>2822d394-ded4-4dcb-a3b4-c3068906cd5c</id>
+    </Compile>
+    <Compile Include="CommonFlows\SwitchToFunction.cs">
+      <id>b39cba87-cd83-414b-8179-28983c59d72e</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\AddDevice.cs">
+      <id>8a39c5ef-bc9a-44f2-aeef-ff29936d01e1</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\ConnectDevice.cs">
+      <id>d12a6238-55b3-4c27-aa11-4c4ea8e1c7ed</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\CreateTopologyOffline.cs">
+      <id>b44c0f3b-f1ec-428d-a032-e600b8e8669b</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\CreateTopologyOnline.cs">
+      <id>853f85d8-9ecd-4b83-bf04-b212f40a8b9e</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\DisconnectDevice.cs">
+      <id>35b6b25f-f91a-427f-9353-fa8fd8353a07</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\GetDeviceList.cs">
+      <id>e5f48460-0426-431a-9f20-86b6119b833b</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\GetSelectedDevice.cs">
+      <id>34d585ac-0160-49bb-8bf2-636d9887d44b</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\RemoveDevice.cs">
+      <id>677a8844-2c0f-42bb-81a3-29d669287d55</id>
+    </Compile>
+    <Compile Include="CommonFlows\Topology\SelectDevice.cs">
+      <id>8a266a8f-72dd-4941-ac74-083efc4a8093</id>
+    </Compile>
+    <Compile Include="CommonInternal\DConst.cs">
+      <id>d1cc6fcd-a8e7-4801-ac16-dc9189a0f0f8</id>
+    </Compile>
+    <Compile Include="CommonInternal\ProcessInformation.cs">
+      <id>71cf13bf-3e92-4432-a605-9c9cf76bc4f7</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Assistant_ConfigureCommDTM_Functions.cs">
+      <id>ce84bdf0-5042-49b1-8c4b-b347586fc626</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureCDI_USB.cs">
+      <DependentUpon>ConfigureCDI_USB.rxrec</DependentUpon>
+      <BoundTo>986f295c-547b-4a3d-98e4-08523bd02551</BoundTo>
+      <id>29cea7d4-c8ff-49eb-bc12-b961f89a1a45</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureCDI_USB.UserCode.cs">
+      <DependentUpon>ConfigureCDI_USB.rxrec</DependentUpon>
+      <BoundTo>986f295c-547b-4a3d-98e4-08523bd02551</BoundTo>
+      <id>d5673584-c943-4e67-9658-3f4860ce31b4</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureCommDTM_OLD.cs">
+      <id>27d871ad-475f-420e-bd96-d1e2f37a2a46</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureFoundationDTM.cs">
+      <DependentUpon>ConfigureFoundationDTM.rxrec</DependentUpon>
+      <BoundTo>0dc5c22b-9336-42ce-86d9-d7e2909e6260</BoundTo>
+      <id>10ec9132-9b89-4d99-aa57-6ec3a4c90ce1</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureFoundationDTM.UserCode.cs">
+      <DependentUpon>ConfigureFoundationDTM.rxrec</DependentUpon>
+      <BoundTo>0dc5c22b-9336-42ce-86d9-d7e2909e6260</BoundTo>
+      <id>248e2595-0771-44d2-924b-d6c12f83d8f6</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureHart.cs">
+      <id>4ffee0b8-3fa7-47ca-9e41-770bfd43fb1a</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureProfibus.cs">
+      <DependentUpon>ConfigureProfibus.rxrec</DependentUpon>
+      <BoundTo>22343acf-c967-43e0-a694-42c82d6cd01d</BoundTo>
+      <id>55b54c74-81a5-4034-9977-cce1fa7d3722</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureProfibus.UserCode.cs">
+      <DependentUpon>ConfigureProfibus.rxrec</DependentUpon>
+      <BoundTo>22343acf-c967-43e0-a694-42c82d6cd01d</BoundTo>
+      <id>eac6ecfd-4d95-4964-b75d-e97fa5d642f3</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenAdvancedConfiguration.cs">
+      <DependentUpon>OpenAdvancedConfiguration.rxrec</DependentUpon>
+      <BoundTo>8b74f46f-9e45-4f6a-8ba3-438050cd089d</BoundTo>
+      <id>0564f2d9-6099-449c-8c29-0d066b8856e5</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenAdvancedConfiguration.UserCode.cs">
+      <DependentUpon>OpenAdvancedConfiguration.rxrec</DependentUpon>
+      <BoundTo>8b74f46f-9e45-4f6a-8ba3-438050cd089d</BoundTo>
+      <id>9c1aed5e-49a4-4403-926f-31d7d6c5744d</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenDeviceAdress.cs">
+      <DependentUpon>OpenDeviceAdress.rxrec</DependentUpon>
+      <BoundTo>df0ea1ca-1f2e-45dc-a794-3470436a1954</BoundTo>
+      <id>c5353dee-2d30-472c-9982-f1c764ad95d4</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenDeviceAdress.UserCode.cs">
+      <DependentUpon>OpenDeviceAdress.rxrec</DependentUpon>
+      <BoundTo>df0ea1ca-1f2e-45dc-a794-3470436a1954</BoundTo>
+      <id>2f158c31-31be-4ab4-a5f3-8fae3eaa9e23</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenLiveList.cs">
+      <DependentUpon>OpenLiveList.rxrec</DependentUpon>
+      <BoundTo>c3bd9837-f4e7-4d7a-b537-09b0128ef7ec</BoundTo>
+      <id>c6f889ee-10a6-4074-b2e1-919360391fff</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenLiveList.UserCode.cs">
+      <DependentUpon>OpenLiveList.rxrec</DependentUpon>
+      <BoundTo>c3bd9837-f4e7-4d7a-b537-09b0128ef7ec</BoundTo>
+      <id>06cfd96e-9ecc-405e-99f3-48bf4a6867cb</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\PressScanButton.cs">
+      <DependentUpon>PressScanButton.rxrec</DependentUpon>
+      <BoundTo>9e3d4fa2-1fb5-464c-a1a6-8ca91f023f84</BoundTo>
+      <id>dd51dfb0-c52f-4df7-ae79-79338df24986</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\PressScanButton.UserCode.cs">
+      <DependentUpon>PressScanButton.rxrec</DependentUpon>
+      <BoundTo>9e3d4fa2-1fb5-464c-a1a6-8ca91f023f84</BoundTo>
+      <id>a7675e0c-9b68-4159-81b6-6a3814746784</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckConfigMenu.cs">
+      <DependentUpon>EH_CheckConfigMenu.rxrec</DependentUpon>
+      <BoundTo>1a1adf41-4205-49e0-90b4-b4f1d98ce6f0</BoundTo>
+      <id>4a3d0af2-add7-40ae-a1a0-41180235f10d</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckConfigMenu.UserCode.cs">
+      <DependentUpon>EH_CheckConfigMenu.rxrec</DependentUpon>
+      <BoundTo>1a1adf41-4205-49e0-90b4-b4f1d98ce6f0</BoundTo>
+      <id>1dfebc6b-387f-41fd-83d7-b3a7dcaccfce</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_CDITCPIP.cs">
+      <DependentUpon>EH_CheckOwnConfig_CDITCPIP.rxrec</DependentUpon>
+      <BoundTo>df468ed7-327b-428f-b1fc-7f58721dbdd6</BoundTo>
+      <id>bbec5328-a611-4908-bd72-63b672e629b9</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_CDITCPIP.UserCode.cs">
+      <DependentUpon>EH_CheckOwnConfig_CDITCPIP.rxrec</DependentUpon>
+      <BoundTo>df468ed7-327b-428f-b1fc-7f58721dbdd6</BoundTo>
+      <id>ef309878-0ca2-4504-9da2-4903ca365e56</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_IPC_PCP.cs">
+      <DependentUpon>EH_CheckOwnConfig_IPC_PCP.rxrec</DependentUpon>
+      <BoundTo>4ae7d262-f160-4ca0-8e9c-62deef861a4a</BoundTo>
+      <id>c7f539ab-2d10-485d-af35-89b9d541e5fb</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_IPC_PCP.UserCode.cs">
+      <DependentUpon>EH_CheckOwnConfig_IPC_PCP.rxrec</DependentUpon>
+      <BoundTo>4ae7d262-f160-4ca0-8e9c-62deef861a4a</BoundTo>
+      <id>e8c31311-fa8b-448d-a5cd-0cc24b29bf36</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_ISS_CDI_CDIUSB.cs">
+      <DependentUpon>EH_CheckOwnConfig_ISS_CDI_CDIUSB.rxrec</DependentUpon>
+      <BoundTo>5e11d0c3-5f38-4882-a73f-7111f686bd68</BoundTo>
+      <id>f8a65ea8-2bc2-440f-9bc6-9528132b194c</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_ISS_CDI_CDIUSB.UserCode.cs">
+      <DependentUpon>EH_CheckOwnConfig_ISS_CDI_CDIUSB.rxrec</DependentUpon>
+      <BoundTo>5e11d0c3-5f38-4882-a73f-7111f686bd68</BoundTo>
+      <id>0a6d90fe-c80d-4b40-9945-bcd479445115</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\FF_CheckConfigMenu_NI.cs">
+      <DependentUpon>FF_CheckConfigMenu_NI.rxrec</DependentUpon>
+      <BoundTo>b28025f4-9ba6-4ab2-a34a-184e5eac17d5</BoundTo>
+      <id>284bc999-1bb3-4fdd-8e26-b273911fe86c</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\FF_CheckConfigMenu_NI.UserCode.cs">
+      <DependentUpon>FF_CheckConfigMenu_NI.rxrec</DependentUpon>
+      <BoundTo>b28025f4-9ba6-4ab2-a34a-184e5eac17d5</BoundTo>
+      <id>66c57dd1-9d3b-4b57-a5f9-a261f9aa8ce5</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckConfigMenu.cs">
+      <DependentUpon>HART_CheckConfigMenu.rxrec</DependentUpon>
+      <BoundTo>7521d174-dd46-4cb3-8c29-2e80a24b3933</BoundTo>
+      <id>88706662-8a9c-49dc-9797-18548720c590</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckConfigMenu.UserCode.cs">
+      <DependentUpon>HART_CheckConfigMenu.rxrec</DependentUpon>
+      <BoundTo>7521d174-dd46-4cb3-8c29-2e80a24b3933</BoundTo>
+      <id>be6b553f-90f4-4a7f-aa7d-e044591dd08f</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckOwnConfig.cs">
+      <DependentUpon>HART_CheckOwnConfig.rxrec</DependentUpon>
+      <BoundTo>9514ddf9-5ae0-42d0-a152-3311376ffb15</BoundTo>
+      <id>108cc8d6-7b7e-49b8-aa2c-387bc86a8b27</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckOwnConfig.UserCode.cs">
+      <DependentUpon>HART_CheckOwnConfig.rxrec</DependentUpon>
+      <BoundTo>9514ddf9-5ae0-42d0-a152-3311376ffb15</BoundTo>
+      <id>19a2ae81-9b8a-4f49-9ab8-2ecee6ab9915</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckSimulationDTM.cs">
+      <DependentUpon>HART_CheckSimulationDTM.rxrec</DependentUpon>
+      <BoundTo>a48a6714-86e1-4d9d-adc8-54d27aecb54b</BoundTo>
+      <id>9a40f71b-404b-474d-82e4-dd02deb93e6c</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckSimulationDTM.UserCode.cs">
+      <DependentUpon>HART_CheckSimulationDTM.rxrec</DependentUpon>
+      <BoundTo>a48a6714-86e1-4d9d-adc8-54d27aecb54b</BoundTo>
+      <id>23fa7830-514c-441b-98f0-a78a65604a93</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\PB_CheckConfigMenu.cs">
+      <DependentUpon>PB_CheckConfigMenu.rxrec</DependentUpon>
+      <BoundTo>4eb74f61-0d75-4af4-937f-dbddf46fa6a4</BoundTo>
+      <id>d1bbca5c-971e-47a6-87b8-e2e5072215f0</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\PB_CheckConfigMenu.UserCode.cs">
+      <DependentUpon>PB_CheckConfigMenu.rxrec</DependentUpon>
+      <BoundTo>4eb74f61-0d75-4af4-937f-dbddf46fa6a4</BoundTo>
+      <id>9969eea2-03ef-4ce1-bb47-d9f2995f8c80</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\PB_CheckOwnConfig_Softing.cs">
+      <DependentUpon>PB_CheckOwnConfig_Softing.rxrec</DependentUpon>
+      <BoundTo>e0faa853-a83b-4413-a845-75dde65d6a80</BoundTo>
+      <id>76d17776-c7ab-418c-b776-c2f339209b58</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\PB_CheckOwnConfig_Softing.UserCode.cs">
+      <DependentUpon>PB_CheckOwnConfig_Softing.rxrec</DependentUpon>
+      <BoundTo>e0faa853-a83b-4413-a845-75dde65d6a80</BoundTo>
+      <id>ffe19bd0-1477-4612-b9ff-71d7bac9e37c</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Assistant_EH_ProtocolSelection_Functions.cs">
+      <id>d7eac115-bb57-46d3-a925-8ea0edf1574a</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_CDI.cs">
+      <DependentUpon>SelectProtocol_CDI.rxrec</DependentUpon>
+      <BoundTo>5badf798-ab8b-4799-8fc5-c159c5ae161d</BoundTo>
+      <id>a98739e2-99d1-429b-ae45-38fc7f00cbc1</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_CDI.UserCode.cs">
+      <DependentUpon>SelectProtocol_CDI.rxrec</DependentUpon>
+      <BoundTo>5badf798-ab8b-4799-8fc5-c159c5ae161d</BoundTo>
+      <id>825097a3-1946-495c-a115-17a5121d5d59</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_IPC.cs">
+      <DependentUpon>SelectProtocol_IPC.rxrec</DependentUpon>
+      <BoundTo>7ab1f3f9-dac7-4d21-8549-96977c2ff594</BoundTo>
+      <id>57a660ac-3f78-4ed0-84c5-6b94fd112659</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_IPC.UserCode.cs">
+      <DependentUpon>SelectProtocol_IPC.rxrec</DependentUpon>
+      <BoundTo>7ab1f3f9-dac7-4d21-8549-96977c2ff594</BoundTo>
+      <id>a79d159b-7329-4508-bffb-182d52a15d0e</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_ISS.cs">
+      <DependentUpon>SelectProtocol_ISS.rxrec</DependentUpon>
+      <BoundTo>bb671ae0-6b2f-46fb-ab79-ea146cfc0fc0</BoundTo>
+      <id>738346a4-646c-497c-95f8-e8bcef46eac9</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_ISS.UserCode.cs">
+      <DependentUpon>SelectProtocol_ISS.rxrec</DependentUpon>
+      <BoundTo>bb671ae0-6b2f-46fb-ab79-ea146cfc0fc0</BoundTo>
+      <id>9ac47987-08b1-4fca-8003-35763c5ad44b</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_PCP.cs">
+      <DependentUpon>SelectProtocol_PCP.rxrec</DependentUpon>
+      <BoundTo>ee4ac24b-7963-4ccb-a717-847a9317fced</BoundTo>
+      <id>7608c3d5-ea64-4d94-b396-251c52ed3075</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_PCP.UserCode.cs">
+      <DependentUpon>SelectProtocol_PCP.rxrec</DependentUpon>
+      <BoundTo>ee4ac24b-7963-4ccb-a717-847a9317fced</BoundTo>
+      <id>09ed22ab-608d-47e5-a5c1-fa850e251fee</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Validation\CheckEHInterfaceSelectionPage.cs">
+      <DependentUpon>CheckEHInterfaceSelectionPage.rxrec</DependentUpon>
+      <BoundTo>ebc93212-32e5-488d-8c31-e9c9646ef36d</BoundTo>
+      <id>018dfe9e-b6eb-4d09-9e07-358b7309b645</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Validation\CheckEHInterfaceSelectionPage.UserCode.cs">
+      <DependentUpon>CheckEHInterfaceSelectionPage.rxrec</DependentUpon>
+      <BoundTo>ebc93212-32e5-488d-8c31-e9c9646ef36d</BoundTo>
+      <id>fa02b8f9-727d-4557-b79f-1b711bbef1be</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Assistant_ModemSelection_Functions.cs">
+      <id>72ff9187-311f-48a0-96ef-d601e3ba5639</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_FXA291.cs">
+      <DependentUpon>SelectCDIModem_FXA291.rxrec</DependentUpon>
+      <BoundTo>41b0ba16-4d78-4547-8a1c-e5c401d0baa7</BoundTo>
+      <id>5669a675-de91-49f0-9f99-964f3e9a70d5</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_FXA291.UserCode.cs">
+      <DependentUpon>SelectCDIModem_FXA291.rxrec</DependentUpon>
+      <BoundTo>41b0ba16-4d78-4547-8a1c-e5c401d0baa7</BoundTo>
+      <id>8edb744e-0243-489e-aca7-c0d0cae60144</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_TCPIP.cs">
+      <DependentUpon>SelectCDIModem_TCPIP.rxrec</DependentUpon>
+      <BoundTo>423c9a8e-30ad-407e-8679-bd8eff1ccf43</BoundTo>
+      <id>23bb6b35-6002-4592-b17b-e5c22301f885</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_TCPIP.UserCode.cs">
+      <DependentUpon>SelectCDIModem_TCPIP.rxrec</DependentUpon>
+      <BoundTo>423c9a8e-30ad-407e-8679-bd8eff1ccf43</BoundTo>
+      <id>34ce6a46-908a-413f-a7e6-673917cd82c2</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_TXU10.cs">
+      <DependentUpon>SelectCDIModem_TXU10.rxrec</DependentUpon>
+      <BoundTo>dde30441-3c64-4dd5-b212-224db9844d37</BoundTo>
+      <id>853bbbbb-0c64-4a1e-b232-ba8fd3462266</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_TXU10.UserCode.cs">
+      <DependentUpon>SelectCDIModem_TXU10.rxrec</DependentUpon>
+      <BoundTo>dde30441-3c64-4dd5-b212-224db9844d37</BoundTo>
+      <id>876a79e3-45b3-407d-97fd-45042c3b2eae</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_USB.cs">
+      <DependentUpon>SelectCDIModem_USB.rxrec</DependentUpon>
+      <BoundTo>939af356-0a56-418c-8297-9593920305ce</BoundTo>
+      <id>28f7dfa1-aa80-42f8-aeb7-90b7198300f4</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_USB.UserCode.cs">
+      <DependentUpon>SelectCDIModem_USB.rxrec</DependentUpon>
+      <BoundTo>939af356-0a56-418c-8297-9593920305ce</BoundTo>
+      <id>59d09cc3-ff5a-4e2a-b18a-d27c4c3d0142</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectFFModem_NIUSB.cs">
+      <DependentUpon>SelectFFModem_NIUSB.rxrec</DependentUpon>
+      <BoundTo>f743cf58-2d55-4285-9130-a94d777e1707</BoundTo>
+      <id>19ecfd7f-01f5-4ec6-a0ce-c72e1cbf9539</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectFFModem_NIUSB.UserCode.cs">
+      <DependentUpon>SelectFFModem_NIUSB.rxrec</DependentUpon>
+      <BoundTo>f743cf58-2d55-4285-9130-a94d777e1707</BoundTo>
+      <id>b765c6ab-e55d-42ca-90a0-79ce249e4f47</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_FXA195.cs">
+      <DependentUpon>SelectHARTModem_FXA195.rxrec</DependentUpon>
+      <BoundTo>05e6afcd-f35f-409b-bd76-a56ddea63410</BoundTo>
+      <id>317b8b4a-e719-44eb-8b45-d7a8ce5663b0</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_FXA195.UserCode.cs">
+      <DependentUpon>SelectHARTModem_FXA195.rxrec</DependentUpon>
+      <BoundTo>05e6afcd-f35f-409b-bd76-a56ddea63410</BoundTo>
+      <id>58169c93-e00a-4afb-9d85-af091484850e</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_MacTek.cs">
+      <DependentUpon>SelectHARTModem_MacTek.rxrec</DependentUpon>
+      <BoundTo>c11b5b29-0245-4603-9a13-b062130ea8e1</BoundTo>
+      <id>d733dc28-675f-4f76-b60e-eb5cdbca586f</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_MacTek.UserCode.cs">
+      <DependentUpon>SelectHARTModem_MacTek.rxrec</DependentUpon>
+      <BoundTo>c11b5b29-0245-4603-9a13-b062130ea8e1</BoundTo>
+      <id>87f985ba-bf57-4ad7-85d7-ba329986499f</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_Simulation.cs">
+      <DependentUpon>SelectHARTModem_Simulation.rxrec</DependentUpon>
+      <BoundTo>30769d33-0509-473a-bd01-93277e90e5b3</BoundTo>
+      <id>5988eec8-d2c2-47c5-90e5-2f535902a63b</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_Simulation.UserCode.cs">
+      <DependentUpon>SelectHARTModem_Simulation.rxrec</DependentUpon>
+      <BoundTo>30769d33-0509-473a-bd01-93277e90e5b3</BoundTo>
+      <id>f36c8251-1611-4037-9cbc-472eda24cc6d</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_VectorInfotec.cs">
+      <DependentUpon>SelectHARTModem_VectorInfotec.rxrec</DependentUpon>
+      <BoundTo>8e10653f-125f-4634-bbf2-c9722c54b758</BoundTo>
+      <id>df0f069a-b104-470e-9cd9-fb4633445fe8</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_VectorInfotec.UserCode.cs">
+      <DependentUpon>SelectHARTModem_VectorInfotec.rxrec</DependentUpon>
+      <BoundTo>8e10653f-125f-4634-bbf2-c9722c54b758</BoundTo>
+      <id>05e99a5c-5050-4042-9283-d81c0b7fd468</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectIPCModem_FXA193.cs">
+      <DependentUpon>SelectIPCModem_FXA193.rxrec</DependentUpon>
+      <BoundTo>dfe14cf2-5a81-4097-b412-1a8b6b37c05d</BoundTo>
+      <id>66b77460-5a3c-4a8a-8605-01e378af1575</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectIPCModem_FXA193.UserCode.cs">
+      <DependentUpon>SelectIPCModem_FXA193.rxrec</DependentUpon>
+      <BoundTo>dfe14cf2-5a81-4097-b412-1a8b6b37c05d</BoundTo>
+      <id>91b84c4f-5abd-4d19-a3aa-58b8840ed441</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectIPCModem_FXA291.cs">
+      <DependentUpon>SelectIPCModem_FXA291.rxrec</DependentUpon>
+      <BoundTo>0ce19e28-25d6-46f5-a682-069400ce8913</BoundTo>
+      <id>415281f0-7715-46ea-a22b-bcde7fd36489</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectIPCModem_FXA291.UserCode.cs">
+      <DependentUpon>SelectIPCModem_FXA291.rxrec</DependentUpon>
+      <BoundTo>0ce19e28-25d6-46f5-a682-069400ce8913</BoundTo>
+      <id>f8a9214f-4853-4cc7-a78f-825385883fc1</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectISSModem_FXA193.cs">
+      <DependentUpon>SelectISSModem_FXA193.rxrec</DependentUpon>
+      <BoundTo>8fc39ed7-3ef0-4532-8b45-6558a221cade</BoundTo>
+      <id>96992b48-c8b0-4dab-a292-99b7c7e5e65e</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectISSModem_FXA193.UserCode.cs">
+      <DependentUpon>SelectISSModem_FXA193.rxrec</DependentUpon>
+      <BoundTo>8fc39ed7-3ef0-4532-8b45-6558a221cade</BoundTo>
+      <id>74ebf016-343b-443f-930b-27c32b7b5b41</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPBModem_PCMCIA.cs">
+      <DependentUpon>SelectPBModem_PCMCIA.rxrec</DependentUpon>
+      <BoundTo>e5a1ed78-5a48-46c0-b52f-df71ed223345</BoundTo>
+      <id>ed0da132-f053-4b4b-995e-ebb42fbe63a0</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPBModem_PCMCIA.UserCode.cs">
+      <DependentUpon>SelectPBModem_PCMCIA.rxrec</DependentUpon>
+      <BoundTo>e5a1ed78-5a48-46c0-b52f-df71ed223345</BoundTo>
+      <id>5e5262d5-e100-484b-aed2-d6db60f39c31</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPBModem_USBSofting.cs">
+      <DependentUpon>SelectPBModem_USBSofting.rxrec</DependentUpon>
+      <BoundTo>e5ad612b-e8ac-49f4-8523-06cf5152faa9</BoundTo>
+      <id>aed3cc0b-0db5-47eb-b015-cc44952c133e</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPBModem_USBSofting.UserCode.cs">
+      <DependentUpon>SelectPBModem_USBSofting.rxrec</DependentUpon>
+      <BoundTo>e5ad612b-e8ac-49f4-8523-06cf5152faa9</BoundTo>
+      <id>91f738bd-4473-496a-bd33-01bb5c110a0f</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPCPModem_FXA291.cs">
+      <DependentUpon>SelectPCPModem_FXA291.rxrec</DependentUpon>
+      <BoundTo>47968b61-7670-4882-8754-255c1d44c164</BoundTo>
+      <id>dc60eff4-f794-4ecb-9770-8f939dc963d9</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPCPModem_FXA291.UserCode.cs">
+      <DependentUpon>SelectPCPModem_FXA291.rxrec</DependentUpon>
+      <BoundTo>47968b61-7670-4882-8754-255c1d44c164</BoundTo>
+      <id>ae70bcee-1afd-456e-ae4c-b77f3b4e9f3c</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPCPModem_TXU10.cs">
+      <DependentUpon>SelectPCPModem_TXU10.rxrec</DependentUpon>
+      <BoundTo>3c95b22f-03ce-41d2-80b7-43e6ea7ed71a</BoundTo>
+      <id>17b7687e-f8fc-49b2-a473-9fce4bbd9273</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPCPModem_TXU10.UserCode.cs">
+      <DependentUpon>SelectPCPModem_TXU10.rxrec</DependentUpon>
+      <BoundTo>3c95b22f-03ce-41d2-80b7-43e6ea7ed71a</BoundTo>
+      <id>11a0e007-3f4a-43d0-92fd-cd6c280c1a6c</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectVariableModem.cs">
+      <id>8a59320c-adc6-42b9-993e-f9af83b9a12c</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_CDI.cs">
+      <DependentUpon>CheckModemSelectionPage_CDI.rxrec</DependentUpon>
+      <BoundTo>a3d0b7ba-82e1-40fa-a002-108d79565912</BoundTo>
+      <id>d6f7c9cd-e0c9-412a-bd6b-4521bfd0923c</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_CDI.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_CDI.rxrec</DependentUpon>
+      <BoundTo>a3d0b7ba-82e1-40fa-a002-108d79565912</BoundTo>
+      <id>873c6688-2d30-49ce-8704-b1cddcdf37c7</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_FF.cs">
+      <DependentUpon>CheckModemSelectionPage_FF.rxrec</DependentUpon>
+      <BoundTo>d7ee7f2e-7ad5-498b-8e77-e14d0dca3c94</BoundTo>
+      <id>70820e2d-979f-4944-bf74-ad06a46075dc</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_FF.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_FF.rxrec</DependentUpon>
+      <BoundTo>d7ee7f2e-7ad5-498b-8e77-e14d0dca3c94</BoundTo>
+      <id>9f75d252-7e2c-4733-9ae2-fa1b256b4aa3</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_HART.cs">
+      <DependentUpon>CheckModemSelectionPage_HART.rxrec</DependentUpon>
+      <BoundTo>58d55c03-5a9b-47bb-8c22-8ecc11b8e450</BoundTo>
+      <id>8949b707-1bb8-4338-80f6-57aa5c49bffe</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_HART.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_HART.rxrec</DependentUpon>
+      <BoundTo>58d55c03-5a9b-47bb-8c22-8ecc11b8e450</BoundTo>
+      <id>fd0055bb-6c66-45d9-8368-3fc3045c951a</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_IPC.cs">
+      <DependentUpon>CheckModemSelectionPage_IPC.rxrec</DependentUpon>
+      <BoundTo>4298af21-f63f-4663-b0da-9976959aab02</BoundTo>
+      <id>19565eb2-f248-41db-a379-6e143c97378c</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_IPC.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_IPC.rxrec</DependentUpon>
+      <BoundTo>4298af21-f63f-4663-b0da-9976959aab02</BoundTo>
+      <id>808c4a53-5d08-4a62-aa11-b6547aa4eef8</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_ISS.cs">
+      <DependentUpon>CheckModemSelectionPage_ISS.rxrec</DependentUpon>
+      <BoundTo>bcf666d4-5f24-4fb3-ba78-2facf34e189f</BoundTo>
+      <id>abeb9c44-24c1-4966-b093-565be796ed3c</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_ISS.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_ISS.rxrec</DependentUpon>
+      <BoundTo>bcf666d4-5f24-4fb3-ba78-2facf34e189f</BoundTo>
+      <id>42ae1212-461c-4f0e-ad92-f32321506b8e</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_PCP.cs">
+      <DependentUpon>CheckModemSelectionPage_PCP.rxrec</DependentUpon>
+      <BoundTo>f559ac2a-4948-4764-a24f-ab1a0d209e9a</BoundTo>
+      <id>0da77fac-5edf-4d9d-8e65-aec43a5dff82</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_PCP.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_PCP.rxrec</DependentUpon>
+      <BoundTo>f559ac2a-4948-4764-a24f-ab1a0d209e9a</BoundTo>
+      <id>6da42cd3-73e5-4e94-94d5-1b7ba1b0ea0e</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_PROFIBUS.cs">
+      <DependentUpon>CheckModemSelectionPage_PROFIBUS.rxrec</DependentUpon>
+      <BoundTo>266ac973-c721-4c87-890b-ef3e551be885</BoundTo>
+      <id>310e34d2-bd28-46f9-8053-e71083d44a38</id>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_PROFIBUS.UserCode.cs">
+      <DependentUpon>CheckModemSelectionPage_PROFIBUS.rxrec</DependentUpon>
+      <BoundTo>266ac973-c721-4c87-890b-ef3e551be885</BoundTo>
+      <id>5f65d63e-763e-431e-b922-eb98bff8aa89</id>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Assistant_ProtocolSelection_Function.cs">
+      <id>4544ea15-e73a-4f09-9b73-aa051d739d97</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_EHInterface.cs">
+      <DependentUpon>SelectProtocol_EHInterface.rxrec</DependentUpon>
+      <id>dcaad299-956c-4ebe-a9d0-f2ca8d628958</id>
+      <BoundTo>d1627b43-9eca-4c37-8ade-4898f06ca61b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_EHInterface.UserCode.cs">
+      <DependentUpon>SelectProtocol_EHInterface.rxrec</DependentUpon>
+      <id>6c2d112d-b9be-4df1-a2a5-9e970c590437</id>
+      <BoundTo>d1627b43-9eca-4c37-8ade-4898f06ca61b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_FF.cs">
+      <DependentUpon>SelectProtocol_FF.rxrec</DependentUpon>
+      <id>0c287d9a-de63-4b4a-8c20-7e26ccd1f50a</id>
+      <BoundTo>05177c56-7daa-4f55-b387-415b362fb62c</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_FF.UserCode.cs">
+      <DependentUpon>SelectProtocol_FF.rxrec</DependentUpon>
+      <id>f518df65-9af1-47dc-a59a-75dba66f64c9</id>
+      <BoundTo>05177c56-7daa-4f55-b387-415b362fb62c</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_HART.cs">
+      <DependentUpon>SelectProtocol_HART.rxrec</DependentUpon>
+      <id>606e9daf-5acb-4e3e-a6bf-6d3b358b40fb</id>
+      <BoundTo>87841a0d-f0b8-46bf-98af-d03c742af488</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_HART.UserCode.cs">
+      <DependentUpon>SelectProtocol_HART.rxrec</DependentUpon>
+      <id>16a1c880-7772-4bab-abea-9646dfe24862</id>
+      <BoundTo>87841a0d-f0b8-46bf-98af-d03c742af488</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_PROFIBUS.cs">
+      <DependentUpon>SelectProtocol_PROFIBUS.rxrec</DependentUpon>
+      <id>14b2e7cf-d58d-448a-afe3-88d1c105a96f</id>
+      <BoundTo>15535357-23d8-4a61-a51a-c304310ba326</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_PROFIBUS.UserCode.cs">
+      <DependentUpon>SelectProtocol_PROFIBUS.rxrec</DependentUpon>
+      <id>29d362fa-6ff8-4be7-b513-e72355bcd9c8</id>
+      <BoundTo>15535357-23d8-4a61-a51a-c304310ba326</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectVariableProtocol.cs">
+      <id>ff803ee5-6cc2-4e4d-b5b4-f8624beecfc4</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Validation\CheckProtocolSelectionPage.cs">
+      <DependentUpon>CheckProtocolSelectionPage.rxrec</DependentUpon>
+      <id>d5bb091d-f7b1-4bb5-bed9-2457e9751aaa</id>
+      <BoundTo>96250d0b-7188-494e-9f8c-6d4a4e822aa0</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Validation\CheckProtocolSelectionPage.UserCode.cs">
+      <DependentUpon>CheckProtocolSelectionPage.rxrec</DependentUpon>
+      <id>8a4b4797-24a2-422c-b986-0347e0b440f7</id>
+      <BoundTo>96250d0b-7188-494e-9f8c-6d4a4e822aa0</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\CloseOnlineFunctionTab.cs">
+      <id>3ca435fb-df15-498d-a33e-0ce8738f45f7</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\CreateDTMReport.cs">
+      <DependentUpon>CreateDTMReport.rxrec</DependentUpon>
+      <id>08d4911f-d201-4d75-9596-8092799c88a1</id>
+      <BoundTo>59a291bf-7c90-4406-95be-b22006241a24</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\CreateDTMReport.UserCode.cs">
+      <DependentUpon>CreateDTMReport.rxrec</DependentUpon>
+      <id>e1324032-bd5c-4cd7-8da1-527ca1b8bffe</id>
+      <BoundTo>59a291bf-7c90-4406-95be-b22006241a24</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\LoadOrignalDTMData.cs">
+      <DependentUpon>LoadOrignalDTMData.rxrec</DependentUpon>
+      <id>eb12d8c7-e2dc-4117-bb98-e2237854a47b</id>
+      <BoundTo>53bf6755-7493-4b13-ba34-61cf877e9542</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\LoadOrignalDTMData.UserCode.cs">
+      <DependentUpon>LoadOrignalDTMData.rxrec</DependentUpon>
+      <id>dcaa0d1c-7a56-4978-baef-f6202967265e</id>
+      <BoundTo>53bf6755-7493-4b13-ba34-61cf877e9542</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenAdditionalFunctions_LockUnlock.cs">
+      <DependentUpon>OpenAdditionalFunctions_LockUnlock.rxrec</DependentUpon>
+      <id>7c137f6e-1bb5-480a-a3a5-453abed08634</id>
+      <BoundTo>487cb075-ed12-4e8c-8ee2-07ce531b71f3</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenAdditionalFunctions_LockUnlock.UserCode.cs">
+      <DependentUpon>OpenAdditionalFunctions_LockUnlock.rxrec</DependentUpon>
+      <id>13579dda-3dbf-454d-9b0f-1bc5a09dae6c</id>
+      <BoundTo>487cb075-ed12-4e8c-8ee2-07ce531b71f3</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDeviceReport_OLD.cs">
+      <DependentUpon>OpenDeviceReport_OLD.rxrec</DependentUpon>
+      <id>54137f8c-2224-4615-877f-b127cfa6fb82</id>
+      <BoundTo>f224b67c-ef13-46ab-805d-c1a0f3c33281</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDeviceReport_OLD.UserCode.cs">
+      <DependentUpon>OpenDeviceReport_OLD.rxrec</DependentUpon>
+      <id>73f94695-84a7-4893-bce5-65dc5a836dd1</id>
+      <BoundTo>f224b67c-ef13-46ab-805d-c1a0f3c33281</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDTMfunctions_Diagnosis.cs">
+      <id>6fa59039-b33d-4ff2-95d1-8be16dceac1a</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDTMfunctions_Observe.cs">
+      <DependentUpon>OpenDTMfunctions_Observe.rxrec</DependentUpon>
+      <id>1ae526aa-86d6-4650-a1e9-6aa61c1be34c</id>
+      <BoundTo>8fd1ae4b-9b2e-4a5d-8082-ccbeea7cb34e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDTMfunctions_Observe.UserCode.cs">
+      <DependentUpon>OpenDTMfunctions_Observe.rxrec</DependentUpon>
+      <id>95b08d6a-b9d0-4d7d-b895-1b719568f0b8</id>
+      <BoundTo>8fd1ae4b-9b2e-4a5d-8082-ccbeea7cb34e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenOnlineFunction.cs">
+      <id>d9c30044-6837-458e-a851-98a472311432</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\SaveDataDTM.cs">
+      <DependentUpon>SaveDataDTM.rxrec</DependentUpon>
+      <id>79441a17-31ed-484b-8f6d-bc05c2ffa8a7</id>
+      <BoundTo>260a0460-55ac-42d0-a898-e595bc33f9f0</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\SaveDataDTM.UserCode.cs">
+      <DependentUpon>SaveDataDTM.rxrec</DependentUpon>
+      <id>ff4bbe5a-98ec-461b-819a-2836f9846ab9</id>
+      <BoundTo>260a0460-55ac-42d0-a898-e595bc33f9f0</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Page_DeviceScreen_Functions.cs">
+      <id>ae9b2f2c-e4d6-4b15-b0db-b05825de6fb7</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckAdditionalFunctions_LockUnlock.cs">
+      <DependentUpon>CheckAdditionalFunctions_LockUnlock.rxrec</DependentUpon>
+      <id>e125ce9c-21f3-4872-9a4e-924702350c0d</id>
+      <BoundTo>7fff90fe-581d-45c8-80ab-2dff5f0b99c5</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckAdditionalFunctions_LockUnlock.UserCode.cs">
+      <DependentUpon>CheckAdditionalFunctions_LockUnlock.rxrec</DependentUpon>
+      <id>6c044dac-0866-4695-9559-347d9128405a</id>
+      <BoundTo>7fff90fe-581d-45c8-80ab-2dff5f0b99c5</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDeviceReport.cs">
+      <DependentUpon>CheckDeviceReport.rxrec</DependentUpon>
+      <id>e9eadbf8-198a-4a17-abc0-6834eb9be882</id>
+      <BoundTo>ea5313fb-f277-4a68-9be1-f15ea486df80</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDeviceReport.UserCode.cs">
+      <DependentUpon>CheckDeviceReport.rxrec</DependentUpon>
+      <id>3189bea9-413e-4924-beae-05146147edc5</id>
+      <BoundTo>ea5313fb-f277-4a68-9be1-f15ea486df80</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMfunctions_Diagnosis.cs">
+      <DependentUpon>CheckDTMfunctions_Diagnosis.rxrec</DependentUpon>
+      <id>c80bdafc-075f-49b5-b1b4-d75e42f7a0f3</id>
+      <BoundTo>a66e603a-b7be-43cf-bf6e-0b7bd057e91b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMfunctions_Diagnosis.UserCode.cs">
+      <DependentUpon>CheckDTMfunctions_Diagnosis.rxrec</DependentUpon>
+      <id>6b7a67a7-a937-431f-97f3-29a3200755b0</id>
+      <BoundTo>a66e603a-b7be-43cf-bf6e-0b7bd057e91b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMfunctions_Observe.cs">
+      <DependentUpon>CheckDTMfunctions_Observe.rxrec</DependentUpon>
+      <id>7daf5a85-5959-4099-ad01-fd85ccf2e422</id>
+      <BoundTo>48e02ef7-5d91-4221-9e77-63db060f6627</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMfunctions_Observe.UserCode.cs">
+      <DependentUpon>CheckDTMfunctions_Observe.rxrec</DependentUpon>
+      <id>db5dce82-9d9e-4ed8-8ed3-5cf7d71275fd</id>
+      <BoundTo>48e02ef7-5d91-4221-9e77-63db060f6627</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMHostingGUIVisible.cs">
+      <DependentUpon>CheckDTMHostingGUIVisible.rxrec</DependentUpon>
+      <id>4ecfe157-1044-4083-b4a9-601d68dd0112</id>
+      <BoundTo>75392ff3-b7a2-4421-a0a0-3097635852cc</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMHostingGUIVisible.UserCode.cs">
+      <DependentUpon>CheckDTMHostingGUIVisible.rxrec</DependentUpon>
+      <id>d18fa595-8ccc-425c-904c-aaaf658fae74</id>
+      <BoundTo>75392ff3-b7a2-4421-a0a0-3097635852cc</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckOnlineFunctionOpen.cs">
+      <id>95cd42db-5340-405d-9da7-eeef6d1bfd77</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckAbout.cs">
+      <DependentUpon>CheckAbout.rxrec</DependentUpon>
+      <id>b7cdce7e-d2df-43aa-bd19-ac79d1dd4610</id>
+      <BoundTo>f629b350-40ab-4148-9310-d51d78fbdf58</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckAbout.UserCode.cs">
+      <DependentUpon>CheckAbout.rxrec</DependentUpon>
+      <id>4a8ae55b-a15c-46c1-8a61-9a31dd30af1e</id>
+      <BoundTo>f629b350-40ab-4148-9310-d51d78fbdf58</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckConnection.cs">
+      <DependentUpon>CheckConnection.rxrec</DependentUpon>
+      <id>7ccf6d87-2856-4b07-83b5-aee586a4e180</id>
+      <BoundTo>6a2d19bd-22da-4e85-9d03-04f0a0dc4445</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckConnection.UserCode.cs">
+      <DependentUpon>CheckConnection.rxrec</DependentUpon>
+      <id>143187b7-c9f7-4492-8270-0ada6a3c1aa2</id>
+      <BoundTo>6a2d19bd-22da-4e85-9d03-04f0a0dc4445</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckDTM.cs">
+      <DependentUpon>CheckDTM.rxrec</DependentUpon>
+      <id>6570d404-d0f5-4f82-bca5-b9059b30d8d0</id>
+      <BoundTo>22bf2dec-5875-4112-9c93-1f6e0d10068c</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckDTM.UserCode.cs">
+      <DependentUpon>CheckDTM.rxrec</DependentUpon>
+      <id>576faf78-0a1e-4b89-aec6-3bf87070bb86</id>
+      <BoundTo>22bf2dec-5875-4112-9c93-1f6e0d10068c</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckProgram.cs">
+      <DependentUpon>CheckProgram.rxrec</DependentUpon>
+      <id>bece7adf-5254-440d-b0ec-4a1cc2a57b21</id>
+      <BoundTo>72cb5cb8-f349-412a-b576-b2d52e88b4a9</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Help\Validation\CheckProgram.UserCode.cs">
+      <DependentUpon>CheckProgram.rxrec</DependentUpon>
+      <id>6d56e36d-73fa-464b-8dca-b7bc0c8310e3</id>
+      <BoundTo>72cb5cb8-f349-412a-b576-b2d52e88b4a9</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Execution\OpenAssistant.cs">
+      <DependentUpon>OpenAssistant.rxrec</DependentUpon>
+      <id>62401864-0cad-4b3b-84ec-5c8ec5a7f586</id>
+      <BoundTo>a050e85f-1cac-47a3-b744-52ac561b35cf</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Execution\OpenAssistant.UserCode.cs">
+      <DependentUpon>OpenAssistant.rxrec</DependentUpon>
+      <id>d9499a58-0e65-4bd2-b974-309bcbb4ba90</id>
+      <BoundTo>a050e85f-1cac-47a3-b744-52ac561b35cf</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Execution\OpenAutomatic.cs">
+      <DependentUpon>OpenAutomatic.rxrec</DependentUpon>
+      <id>9d6cf1e1-6a00-482c-a35b-52446b009c1a</id>
+      <BoundTo>985b8c92-845e-4b4b-89e3-a661572a1136</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Execution\OpenAutomatic.UserCode.cs">
+      <DependentUpon>OpenAutomatic.rxrec</DependentUpon>
+      <id>11421dee-40a7-4de7-87c0-02113a55c3ee</id>
+      <BoundTo>985b8c92-845e-4b4b-89e3-a661572a1136</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Page_Home_Functions.cs">
+      <id>2af81a3b-7c9a-45c8-ad4f-11d66d8cccfa</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Validation\CheckHome.cs">
+      <DependentUpon>CheckHome.rxrec</DependentUpon>
+      <id>8e654b47-1765-4fbd-8cae-385b97b051cf</id>
+      <BoundTo>f1a3d951-6ad5-40a9-9148-94f82c3662b4</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Home\Validation\CheckHome.UserCode.cs">
+      <DependentUpon>CheckHome.rxrec</DependentUpon>
+      <id>d9a943d3-fca4-4fa3-9038-83b1c2814a5f</id>
+      <BoundTo>f1a3d951-6ad5-40a9-9148-94f82c3662b4</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_FieldCare.cs">
+      <DependentUpon>CheckPAM_FieldCare.rxrec</DependentUpon>
+      <id>a3a5cb42-a17c-4c42-8bed-1439193fcbe7</id>
+      <BoundTo>cb4cd6d3-4451-4c36-959c-8a2ff2447769</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_FieldCare.UserCode.cs">
+      <DependentUpon>CheckPAM_FieldCare.rxrec</DependentUpon>
+      <id>fa906b89-f591-49ca-b45d-b36b4fc26083</id>
+      <BoundTo>cb4cd6d3-4451-4c36-959c-8a2ff2447769</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_Fieldgate.cs">
+      <DependentUpon>CheckPAM_Fieldgate.rxrec</DependentUpon>
+      <id>c7e082bb-0106-4ab7-9898-c03121c561aa</id>
+      <BoundTo>52068123-6dfa-45a4-95d0-cb22d88b1113</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_Fieldgate.UserCode.cs">
+      <DependentUpon>CheckPAM_Fieldgate.rxrec</DependentUpon>
+      <id>e0b73096-db85-4d97-aa73-021e6553e030</id>
+      <BoundTo>52068123-6dfa-45a4-95d0-cb22d88b1113</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_FieldXpert.cs">
+      <DependentUpon>CheckPAM_FieldXpert.rxrec</DependentUpon>
+      <id>3bcfd88f-5823-45af-896f-f3644b647d1a</id>
+      <BoundTo>8273dcf3-98dd-425b-91d2-7f6456b20611</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_FieldXpert.UserCode.cs">
+      <DependentUpon>CheckPAM_FieldXpert.rxrec</DependentUpon>
+      <id>f6220435-01ac-42f3-941b-501b80de8773</id>
+      <BoundTo>8273dcf3-98dd-425b-91d2-7f6456b20611</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_Modems.cs">
+      <DependentUpon>CheckPAM_Modems.rxrec</DependentUpon>
+      <id>c0a463a0-c1cd-40a3-9d5e-0736b2e80bf1</id>
+      <BoundTo>9cd2724e-376a-4952-aef8-1f97f2a13801</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_Modems.UserCode.cs">
+      <DependentUpon>CheckPAM_Modems.rxrec</DependentUpon>
+      <id>ab2b73ac-b823-49ba-9b59-f951c87af325</id>
+      <BoundTo>9cd2724e-376a-4952-aef8-1f97f2a13801</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_PAMSuite.cs">
+      <DependentUpon>CheckPAM_PAMSuite.rxrec</DependentUpon>
+      <id>a9184866-c431-4392-8e63-330d232cf6af</id>
+      <BoundTo>a5dafd3b-3dff-47a7-b7d4-7f8cefa916f6</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_PAMSuite.UserCode.cs">
+      <DependentUpon>CheckPAM_PAMSuite.rxrec</DependentUpon>
+      <id>08457ac1-7199-49b9-8659-7292120cc5b8</id>
+      <BoundTo>a5dafd3b-3dff-47a7-b7d4-7f8cefa916f6</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_ScanResult\Execution\OpenDevice.cs">
+      <id>09e961bc-0621-4992-a80a-7797e48b7c9e</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_ScanResult\Execution\OpenTMT182.cs">
+      <DependentUpon>OpenTMT182.rxrec</DependentUpon>
+      <id>9a66e76d-0af9-4268-b679-91857d4efaaa</id>
+      <BoundTo>d10ceaeb-ada3-4510-8bdd-714d40eb2c90</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_ScanResult\Execution\OpenTMT182.UserCode.cs">
+      <DependentUpon>OpenTMT182.rxrec</DependentUpon>
+      <id>d30f9e6d-8767-4c27-a6e0-447ce6c308e4</id>
+      <BoundTo>d10ceaeb-ada3-4510-8bdd-714d40eb2c90</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Execution\ChangeLanguage.cs">
+      <id>d29850da-5d57-4f8a-ae17-4c33a64162b2</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Execution\GetEventLogMessages.cs">
+      <id>4a00b4e0-323c-4862-a906-4c4369a1b9f1</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Execution\TriggerManualCatalogUpdate.cs">
+      <id>c4f05dff-0d87-4216-be0e-e7d13ec5cf7d</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Page_Settings_Functions.cs">
+      <id>6a357e19-5dbb-43de-b97f-52a88915d37b</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckDTMCatalog.cs">
+      <DependentUpon>CheckDTMCatalog.rxrec</DependentUpon>
+      <id>b8bfac3a-25ea-4105-b0bd-8de7e2f4846b</id>
+      <BoundTo>8184eaa8-54c2-4abd-b41f-9e75b3c9727d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckDTMCatalog.UserCode.cs">
+      <DependentUpon>CheckDTMCatalog.rxrec</DependentUpon>
+      <id>847ae702-3d52-4b13-891e-9079199ca98c</id>
+      <BoundTo>8184eaa8-54c2-4abd-b41f-9e75b3c9727d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckEventLog.cs">
+      <DependentUpon>CheckEventLog.rxrec</DependentUpon>
+      <id>02ee44cb-b29e-4f04-9e08-40e854bebf9c</id>
+      <BoundTo>e7f50a7d-cd66-49e6-8225-2333c72a7be9</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckEventLog.UserCode.cs">
+      <DependentUpon>CheckEventLog.rxrec</DependentUpon>
+      <id>2dd15c8a-c54b-4ee7-886d-92f20cfe2f47</id>
+      <BoundTo>e7f50a7d-cd66-49e6-8225-2333c72a7be9</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckFirmware.cs">
+      <DependentUpon>CheckFirmware.rxrec</DependentUpon>
+      <id>724d6f13-fff1-4197-86e6-99e4b1726379</id>
+      <BoundTo>c661d56b-1b00-4b6d-91dc-d1a95961b3ab</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckFirmware.UserCode.cs">
+      <DependentUpon>CheckFirmware.rxrec</DependentUpon>
+      <id>fae5b0aa-7867-4a9e-a38a-8709abbaada2</id>
+      <BoundTo>c661d56b-1b00-4b6d-91dc-d1a95961b3ab</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckLanguagePage.cs">
+      <id>86c102ef-8bd6-4b72-b9d2-c6708511c045</id>
+    </Compile>
+    <Compile Include="Functions\ApplicationArea\Page_Settings\Validation\CheckSelectedLanguage.cs">
+      <id>7fe2d6bf-4fcb-43a0-b8ce-ff2568561972</id>
+    </Compile>
+    <Compile Include="Functions\Functions.cs">
+      <id>faa27852-944d-4332-82a6-cd1aaed17260</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\CheckItem.cs">
+      <id>a2e4bc09-86b4-4a32-8fd7-d77612bd1428</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\CloseAndKillDeviceCare.cs">
+      <DependentUpon>CloseAndKillDeviceCare.rxrec</DependentUpon>
+      <id>b2ab73af-71e1-40b5-b4b8-5aace2c58f70</id>
+      <BoundTo>140558e0-c5db-4179-b5d4-2b59ee300dae</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\Helpers\CloseAndKillDeviceCare.UserCode.cs">
+      <DependentUpon>CloseAndKillDeviceCare.rxrec</DependentUpon>
+      <id>f9302fa3-894a-49f0-b694-33427f7d1438</id>
+      <BoundTo>140558e0-c5db-4179-b5d4-2b59ee300dae</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\Helpers\ConfigureConnectionOption.cs">
+      <id>9722b8b9-f307-495a-b999-f2bf87bf36ae</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\ConfigureConnectionWizardFile.cs">
+      <id>9d899f38-c03f-4b1f-a8f4-61916784b3c1</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\ConfigureTestDTMs.cs">
+      <id>a010f602-1663-4286-b27e-0f2b349fd966</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\DeviceCareProcessFunctions.cs">
+      <id>0b8b49df-6998-4a8d-acde-3d35c10bf30b</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\DialogFunctions.cs">
+      <id>2c1779d1-ee37-42f1-b248-138c0923dfef</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\Generics\AssistantConnect.cs">
+      <id>4eb55b58-6ab4-491f-bb7a-6ca8d281b15d</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\Generics\ExecuteAssistantConnect.cs">
+      <id>7cf3aad9-0a47-421e-9f38-270e8f5553d9</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\Generics\IGoOnline.cs">
+      <id>03f76b92-c430-4a07-aa11-5dd2fe3956b1</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\InterfaceHelpers\DeviceReportFunctions.cs">
+      <id>5f1000a6-0cde-46e5-8355-4cb88bf67c45</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\InterfaceHelpers\DTMFunctions.cs">
+      <id>c3cd331d-b5e3-4632-8c7b-136bdddd25d5</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\InterfaceHelpers\OnlineConnectFunctions.cs">
+      <id>49bc5ee2-3360-4fbf-9667-af8caf775f25</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\NavigateToLanguagePage.cs">
+      <id>3c0cce10-e656-462a-a04b-eb1286a50a0e</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\RelaisClearAll.cs">
+      <id>a8d8fe12-f750-4db0-887d-71dbf70ef8de</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\RelaisConnect.cs">
+      <id>e11ab8b4-d2b6-475b-ad6a-25512f45b2b3</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\RunDeviceCare.cs">
+      <id>74d8dc2d-367e-45f0-a94b-426b373d1a5f</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\Run_Ni_FBUS_MANAGER.cs">
+      <DependentUpon>Run_Ni_FBUS_MANAGER.rxrec</DependentUpon>
+      <id>b3ec8c67-7068-4938-a16d-6f610d55e82a</id>
+      <BoundTo>49793c99-9bf7-41f5-acee-682e11a5210e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\Helpers\Run_Ni_FBUS_MANAGER.UserCode.cs">
+      <DependentUpon>Run_Ni_FBUS_MANAGER.rxrec</DependentUpon>
+      <id>48968c0e-ec54-4847-9458-83ef1cb673c1</id>
+      <BoundTo>49793c99-9bf7-41f5-acee-682e11a5210e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\Helpers\Sections_to_changeDAta_in_DTM.cs">
+      <id>f535f374-ee98-40b5-b6cb-e55fd166a2aa</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\SetCodeModuleFunctionsDTMRange.cs">
+      <id>1897e1bc-5b61-45a9-a033-8f0bbb86500e</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\SetInstallationPathVariable.cs">
+      <id>746ec9d2-f048-4a3a-b3f0-c46f4e94d384</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\Start_DeviceCare.cs">
+      <id>ae610655-405e-4a44-adc4-e7015482a768</id>
+    </Compile>
+    <Compile Include="Functions\Helpers\WaitForEvent.cs">
+      <id>aaaec913-3ef3-4f4d-a648-086dbd38745d</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToConfigurationPage.cs">
+      <DependentUpon>NavigateToConfigurationPage.rxrec</DependentUpon>
+      <id>c8974402-f491-47ea-88b3-dc6083e1070c</id>
+      <BoundTo>c9932f53-dd22-4de4-8828-ef787e32f4ea</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToConfigurationPage.UserCode.cs">
+      <DependentUpon>NavigateToConfigurationPage.rxrec</DependentUpon>
+      <id>23d93430-6d1a-4e18-8526-421dbd0d3cf9</id>
+      <BoundTo>c9932f53-dd22-4de4-8828-ef787e32f4ea</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToModemSelectionPage.cs">
+      <DependentUpon>NavigateToModemSelectionPage.rxrec</DependentUpon>
+      <id>cfa9d13e-9089-417a-b9d4-be14ec8bc1bf</id>
+      <BoundTo>6d4ad177-5307-4e40-a24e-21dbb24e642f</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToModemSelectionPage.UserCode.cs">
+      <DependentUpon>NavigateToModemSelectionPage.rxrec</DependentUpon>
+      <id>e7e3195b-2262-4a7f-8398-f46ff76d5f69</id>
+      <BoundTo>6d4ad177-5307-4e40-a24e-21dbb24e642f</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToProtocolSelectionPage.cs">
+      <DependentUpon>NavigateToProtocolSelectionPage.rxrec</DependentUpon>
+      <id>7ce47d0a-d4cf-4d7a-ade1-00e389106e1b</id>
+      <BoundTo>74dd6517-a0fa-42c0-9fe0-15b97d16bb4a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToProtocolSelectionPage.UserCode.cs">
+      <DependentUpon>NavigateToProtocolSelectionPage.rxrec</DependentUpon>
+      <id>8a07af34-a360-4195-9fb1-86a9f1a65188</id>
+      <BoundTo>74dd6517-a0fa-42c0-9fe0-15b97d16bb4a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToScanResultPage.cs">
+      <DependentUpon>NavigateToScanResultPage.rxrec</DependentUpon>
+      <id>bfbcea45-ba0d-4920-b02c-01b542e8f6fd</id>
+      <BoundTo>6ed2a5f7-3028-47e0-8e61-7bfdf91b379e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToScanResultPage.UserCode.cs">
+      <DependentUpon>NavigateToScanResultPage.rxrec</DependentUpon>
+      <id>4935b739-07c9-45be-8a4a-13455c7d8ae8</id>
+      <BoundTo>6ed2a5f7-3028-47e0-8e61-7bfdf91b379e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToServiceInterfaceSelectionPage.cs">
+      <DependentUpon>NavigateToServiceInterfaceSelectionPage.rxrec</DependentUpon>
+      <id>57253011-fead-44dc-969c-f634e4a4d27b</id>
+      <BoundTo>ed5a00f1-3e75-4b61-9b77-64adfadbab7a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Execution\NavigateToServiceInterfaceSelectionPage.UserCode.cs">
+      <DependentUpon>NavigateToServiceInterfaceSelectionPage.rxrec</DependentUpon>
+      <id>94abe989-ecdd-4b57-a61e-2c2f48b6ee16</id>
+      <BoundTo>ed5a00f1-3e75-4b61-9b77-64adfadbab7a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Validation\CheckAriadnePath_NoServiceInterface.cs">
+      <DependentUpon>CheckAriadnePath_NoServiceInterface.rxrec</DependentUpon>
+      <id>59023e58-1b17-4755-a838-f11190d3ce19</id>
+      <BoundTo>fb5afff8-2bca-4ac3-900c-003b438f7641</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\AriadnePath\Validation\CheckAriadnePath_NoServiceInterface.UserCode.cs">
+      <DependentUpon>CheckAriadnePath_NoServiceInterface.rxrec</DependentUpon>
+      <id>66400373-7e95-4417-b255-7da7b1098775</id>
+      <BoundTo>fb5afff8-2bca-4ac3-900c-003b438f7641</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\MainMenu\Execution\CloseDeviceCare.cs">
+      <DependentUpon>CloseDeviceCare.rxrec</DependentUpon>
+      <id>e00f5475-a57c-4a66-a659-713bb65133ac</id>
+      <BoundTo>ceb6e4a8-86ad-48aa-8261-f605dd6286d9</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\MainMenu\Execution\CloseDeviceCare.UserCode.cs">
+      <DependentUpon>CloseDeviceCare.rxrec</DependentUpon>
+      <id>f61ad058-e927-4a85-9e3e-479c3c6c018f</id>
+      <BoundTo>ceb6e4a8-86ad-48aa-8261-f605dd6286d9</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\MainMenu\Execution\OpenHome.cs">
+      <DependentUpon>OpenHome.rxrec</DependentUpon>
+      <id>1302492d-4690-4d9e-99c5-f249d3c7fd3d</id>
+      <BoundTo>687f831a-fc88-4abf-bf51-d9bfa4248343</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\MainMenu\Execution\OpenHome.UserCode.cs">
+      <DependentUpon>OpenHome.rxrec</DependentUpon>
+      <id>055e580b-28fd-4898-a673-b8c0a322c22e</id>
+      <BoundTo>687f831a-fc88-4abf-bf51-d9bfa4248343</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\MainMenu\Validation\CheckMainMenu.cs">
+      <DependentUpon>CheckMainMenu.rxrec</DependentUpon>
+      <id>7634b2a0-e5fe-4e71-a084-71a1421ad093</id>
+      <BoundTo>22904b12-bb3e-4b45-96a4-615aa987dbb9</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\MainMenu\Validation\CheckMainMenu.UserCode.cs">
+      <DependentUpon>CheckMainMenu.rxrec</DependentUpon>
+      <id>8299e4d0-c569-47f2-86ab-45bf5cb340b0</id>
+      <BoundTo>22904b12-bb3e-4b45-96a4-615aa987dbb9</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_DeviceScreen\Execution\CloseAdditionalModule.cs">
+      <id>1a5d92a0-34db-4cc5-bdda-1d188fee1aed</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_DeviceScreen\Execution\OpenAdditionalModule.cs">
+      <id>3479802f-954f-4876-8d64-0822c77807aa</id>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpAbout.cs">
+      <DependentUpon>OpenHelpAbout.rxrec</DependentUpon>
+      <id>102955f9-4448-4eea-ae96-db9627cd55d9</id>
+      <BoundTo>65209585-97b6-41cd-805a-09f126e3656a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpAbout.UserCode.cs">
+      <DependentUpon>OpenHelpAbout.rxrec</DependentUpon>
+      <id>f6224394-034a-4e65-a8ee-41e7d6eaa58c</id>
+      <BoundTo>65209585-97b6-41cd-805a-09f126e3656a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpConnection.cs">
+      <DependentUpon>OpenHelpConnection.rxrec</DependentUpon>
+      <id>767c05c2-d768-4bc8-a346-848e8f33399b</id>
+      <BoundTo>7b634bba-4199-44e5-9daa-bc9cac38df43</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpConnection.UserCode.cs">
+      <DependentUpon>OpenHelpConnection.rxrec</DependentUpon>
+      <id>b1d6de9e-615e-4437-97a2-4a78b2c6d561</id>
+      <BoundTo>7b634bba-4199-44e5-9daa-bc9cac38df43</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpDTM.cs">
+      <DependentUpon>OpenHelpDTM.rxrec</DependentUpon>
+      <id>70df5f57-4a2a-440d-a65e-1adba899a9b8</id>
+      <BoundTo>c5192069-b1ab-4273-b5b9-0fcb71787061</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpDTM.UserCode.cs">
+      <DependentUpon>OpenHelpDTM.rxrec</DependentUpon>
+      <id>7858041f-2907-4c5c-87da-df9f12e02a98</id>
+      <BoundTo>c5192069-b1ab-4273-b5b9-0fcb71787061</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpProgram.cs">
+      <DependentUpon>OpenHelpProgram.rxrec</DependentUpon>
+      <id>b8a03860-aa32-427f-9535-630bce9397ba</id>
+      <BoundTo>0baf9273-ec0d-4b1b-9f69-a7a3ec7cd79e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpProgram.UserCode.cs">
+      <DependentUpon>OpenHelpProgram.rxrec</DependentUpon>
+      <id>8f43d963-8a51-48d9-9d56-cfbb8fddb0a9</id>
+      <BoundTo>0baf9273-ec0d-4b1b-9f69-a7a3ec7cd79e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Validation\CheckMenuHelp.cs">
+      <DependentUpon>CheckMenuHelp.rxrec</DependentUpon>
+      <id>92ac676d-653e-4410-8461-a149075212e0</id>
+      <BoundTo>4ac4747a-8e5a-425b-8b11-8442d51ea6fe</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Help\Validation\CheckMenuHelp.UserCode.cs">
+      <DependentUpon>CheckMenuHelp.rxrec</DependentUpon>
+      <id>f014207e-1f1e-4f1c-81b6-6f4ba79ddd36</id>
+      <BoundTo>4ac4747a-8e5a-425b-8b11-8442d51ea6fe</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Execution\OpenHelp.cs">
+      <DependentUpon>OpenHelp.rxrec</DependentUpon>
+      <id>c40abf17-d9d4-422e-b81a-def50adf4b4d</id>
+      <BoundTo>adde53ad-947b-40d1-bee5-ccd885c6c50c</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Execution\OpenHelp.UserCode.cs">
+      <DependentUpon>OpenHelp.rxrec</DependentUpon>
+      <id>df65d2de-840d-4da8-a16a-189daa096b54</id>
+      <BoundTo>adde53ad-947b-40d1-bee5-ccd885c6c50c</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Execution\OpenPAM.cs">
+      <DependentUpon>OpenPAM.rxrec</DependentUpon>
+      <id>9f98d8db-d082-4cdf-aaef-8697b3dcb176</id>
+      <BoundTo>022bdb18-1683-4b28-8168-f87ea673fde8</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Execution\OpenPAM.UserCode.cs">
+      <DependentUpon>OpenPAM.rxrec</DependentUpon>
+      <id>ad877a50-6d24-4268-b9be-6fb694ed9d79</id>
+      <BoundTo>022bdb18-1683-4b28-8168-f87ea673fde8</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Execution\OpenSettings.cs">
+      <DependentUpon>OpenSettings.rxrec</DependentUpon>
+      <id>e914edbd-79de-43a3-b0f9-c9289e4b84e2</id>
+      <BoundTo>9008a3b6-1214-47ac-9227-d6b48c8b1587</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Execution\OpenSettings.UserCode.cs">
+      <DependentUpon>OpenSettings.rxrec</DependentUpon>
+      <id>afdb5e12-4b35-48bc-aeb0-e8c4feb67ca5</id>
+      <BoundTo>9008a3b6-1214-47ac-9227-d6b48c8b1587</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Validation\CheckMenuHome.cs">
+      <DependentUpon>CheckMenuHome.rxrec</DependentUpon>
+      <id>7615216e-adf9-43ca-99fb-37f39055ce8b</id>
+      <BoundTo>ae4cdee9-5fa4-489d-98ae-465395a0b468</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Home\Validation\CheckMenuHome.UserCode.cs">
+      <DependentUpon>CheckMenuHome.rxrec</DependentUpon>
+      <id>d3cb91cb-2508-480a-a8e2-a25239e75599</id>
+      <BoundTo>ae4cdee9-5fa4-489d-98ae-465395a0b468</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldCare.cs">
+      <DependentUpon>OpenFieldCare.rxrec</DependentUpon>
+      <id>d102453e-9c48-4623-8078-6d615dae65b5</id>
+      <BoundTo>155763d1-3c79-4fa9-90aa-745bd5590929</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldCare.UserCode.cs">
+      <DependentUpon>OpenFieldCare.rxrec</DependentUpon>
+      <id>2bb181e1-847b-43be-8373-9ed6b7d5e7ca</id>
+      <BoundTo>155763d1-3c79-4fa9-90aa-745bd5590929</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldgate.cs">
+      <DependentUpon>OpenFieldgate.rxrec</DependentUpon>
+      <id>38286004-77b6-4a4f-b7ca-d884744089ff</id>
+      <BoundTo>d748358e-71d4-4304-a893-1ffb5f6a3d78</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldgate.UserCode.cs">
+      <DependentUpon>OpenFieldgate.rxrec</DependentUpon>
+      <id>1401666c-1fad-4a6a-b750-7baeb8a928d7</id>
+      <BoundTo>d748358e-71d4-4304-a893-1ffb5f6a3d78</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldXpert.cs">
+      <DependentUpon>OpenFieldXpert.rxrec</DependentUpon>
+      <id>195dcd75-5610-416c-8b0b-8e9494733f92</id>
+      <BoundTo>5304f2b0-8b8a-42f4-ad43-7911fedd61f6</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldXpert.UserCode.cs">
+      <DependentUpon>OpenFieldXpert.rxrec</DependentUpon>
+      <id>3c643349-a70e-4e11-a887-e00e3b1f6744</id>
+      <BoundTo>5304f2b0-8b8a-42f4-ad43-7911fedd61f6</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenModems.cs">
+      <DependentUpon>OpenModems.rxrec</DependentUpon>
+      <id>4a9015e4-a12c-4840-beb4-a6d74625fa98</id>
+      <BoundTo>d86181a7-849a-4f5a-80dd-8d3c14d53b47</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenModems.UserCode.cs">
+      <DependentUpon>OpenModems.rxrec</DependentUpon>
+      <id>59e68884-0b22-4140-8739-11644d90a8d8</id>
+      <BoundTo>d86181a7-849a-4f5a-80dd-8d3c14d53b47</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenPAMSuite.cs">
+      <DependentUpon>OpenPAMSuite.rxrec</DependentUpon>
+      <id>8390b1cf-cfe5-490f-9ecb-6187bec34b43</id>
+      <BoundTo>788b7d61-df89-44d7-a865-e925be2c55fb</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Execution\OpenPAMSuite.UserCode.cs">
+      <DependentUpon>OpenPAMSuite.rxrec</DependentUpon>
+      <id>8e8907f9-a2ce-4ee7-8051-d19892035433</id>
+      <BoundTo>788b7d61-df89-44d7-a865-e925be2c55fb</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Validation\CheckMenuPAM.cs">
+      <DependentUpon>CheckMenuPAM.rxrec</DependentUpon>
+      <id>d2c61ee9-b14c-4335-8ebd-99eea26a12f5</id>
+      <BoundTo>f68050a1-5c49-4dd9-81d9-5a709145b482</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_PAM\Validation\CheckMenuPAM.UserCode.cs">
+      <DependentUpon>CheckMenuPAM.rxrec</DependentUpon>
+      <id>6daa934e-f568-41f5-b74e-12d2498813ed</id>
+      <BoundTo>f68050a1-5c49-4dd9-81d9-5a709145b482</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenDTMCatalog.cs">
+      <DependentUpon>OpenDTMCatalog.rxrec</DependentUpon>
+      <id>d12ebd02-c3d3-495c-aa20-9c680e9cf288</id>
+      <BoundTo>5ebf4034-122a-43e2-9508-5c19ed598d5c</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenDTMCatalog.UserCode.cs">
+      <DependentUpon>OpenDTMCatalog.rxrec</DependentUpon>
+      <id>4692c73e-86d0-402e-9afc-8c1408b28f3b</id>
+      <BoundTo>5ebf4034-122a-43e2-9508-5c19ed598d5c</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenEventLog.cs">
+      <DependentUpon>OpenEventLog.rxrec</DependentUpon>
+      <id>b5a35715-677d-4b74-9bd3-839d2b7dd7a8</id>
+      <BoundTo>63a8dfac-8e78-4922-a163-43daba2e1270</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenEventLog.UserCode.cs">
+      <DependentUpon>OpenEventLog.rxrec</DependentUpon>
+      <id>f4ed3d16-9fbd-4bdb-8f9f-1619da6e3997</id>
+      <BoundTo>63a8dfac-8e78-4922-a163-43daba2e1270</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenFirmware.cs">
+      <DependentUpon>OpenFirmware.rxrec</DependentUpon>
+      <id>911b881b-5a5b-41c0-9728-464406cada8d</id>
+      <BoundTo>575f20a4-a017-4057-a934-f10b21d16215</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenFirmware.UserCode.cs">
+      <DependentUpon>OpenFirmware.rxrec</DependentUpon>
+      <id>cceb24f5-1e05-412e-91dc-1cb40efb57e8</id>
+      <BoundTo>575f20a4-a017-4057-a934-f10b21d16215</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenLanguageDialog.cs">
+      <DependentUpon>OpenLanguageDialog.rxrec</DependentUpon>
+      <id>1623c3fe-7f41-491a-8244-d1e93c8d21ef</id>
+      <BoundTo>68cebe8e-6d39-465a-a69e-8eadd84e6af5</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Execution\OpenLanguageDialog.UserCode.cs">
+      <DependentUpon>OpenLanguageDialog.rxrec</DependentUpon>
+      <id>40220b37-98b7-4e87-a0d8-4e4e47f6f681</id>
+      <BoundTo>68cebe8e-6d39-465a-a69e-8eadd84e6af5</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Validation\CheckMenuSettings.cs">
+      <DependentUpon>CheckMenuSettings.rxrec</DependentUpon>
+      <id>3be6ed63-cfdd-4aed-bba2-4ff11b671dee</id>
+      <BoundTo>3320ef14-3dff-451c-a100-efa15862906e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\MenuArea\Menu_Settings\Validation\CheckMenuSettings.UserCode.cs">
+      <DependentUpon>CheckMenuSettings.rxrec</DependentUpon>
+      <id>c3f3a7b6-5041-45b4-a0b4-0c1910c8d169</id>
+      <BoundTo>3320ef14-3dff-451c-a100-efa15862906e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\DummyStausbarTryout.cs">
+      <id>b2dcbcae-787e-4e32-b76b-cad207f50405</id>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Execution\Wait30CircularProgressCompleted.cs">
+      <id>0e4019e6-2e6a-44ed-86e2-9de354a64f91</id>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Statusbar_Functions.cs">
+      <id>a3c718a6-084a-416c-a38f-adea21d24072</id>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitConnected.cs">
+      <id>4e6e3d6a-fe9d-42ef-94de-ab21d3ca7568</id>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitList.cs">
+      <DependentUpon>CheckCommUnitList.rxrec</DependentUpon>
+      <id>e0ab31cc-a548-4aa8-b9da-542f71b1e578</id>
+      <BoundTo>917dc063-9959-4b3e-987a-c924d6df689b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitList.UserCode.cs">
+      <DependentUpon>CheckCommUnitList.rxrec</DependentUpon>
+      <id>64885fee-04ad-4abc-bf9f-e2bdb50e287c</id>
+      <BoundTo>917dc063-9959-4b3e-987a-c924d6df689b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitRecord.cs">
+      <DependentUpon>CheckCommUnitRecord.rxrec</DependentUpon>
+      <id>8d502732-874c-4fbe-9e86-3f6ae53531d8</id>
+      <BoundTo>e336c1e1-4719-42c1-aa31-68ea8ffe7b12</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitRecord.UserCode.cs">
+      <DependentUpon>CheckCommUnitRecord.rxrec</DependentUpon>
+      <id>ee982ccf-3383-4910-a9ee-31b286f559c3</id>
+      <BoundTo>e336c1e1-4719-42c1-aa31-68ea8ffe7b12</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckCurrentTime.cs">
+      <id>5ea2878c-9cc3-45f8-9480-9129ced9c78d</id>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckModemConnected.cs">
+      <DependentUpon>CheckModemConnected.rxrec</DependentUpon>
+      <id>07c9b75f-cd4e-48df-9b57-984e9e9fa31e</id>
+      <BoundTo>4facb275-1350-46bd-9640-fcc765928545</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Functions\StatusArea\Statusbar\Validation\CheckModemConnected.UserCode.cs">
+      <DependentUpon>CheckModemConnected.rxrec</DependentUpon>
+      <id>a4070ca1-921c-41b4-a18d-514dcb6d8907</id>
+      <BoundTo>4facb275-1350-46bd-9640-fcc765928545</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="GUI\CommDTMContainerRepo.cs">
+      <DependentUpon>CommDTMContainerRepo.rxrep</DependentUpon>
+      <id>299c8843-c8e5-4edc-9d94-460f6a65369d</id>
+      <BoundTo>be23be8e-1942-461c-9fa1-fdfbc97af927</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\DeviceCareApplication.cs">
+      <DependentUpon>DeviceCareApplication.rxrep</DependentUpon>
+      <id>d9e4eae0-6966-472b-920e-eec26974bb1c</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\DTMContainerRepo.cs">
+      <DependentUpon>DTMContainerRepo.rxrep</DependentUpon>
+      <id>f0273d49-29f9-4756-83d2-e942cc45a63c</id>
+      <BoundTo>6cb872b0-a2ef-4321-a6c3-0d8b52182e05</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\HARTCommDTM.cs">
+      <DependentUpon>HARTCommDTM.rxrep</DependentUpon>
+      <id>81020557-9814-45df-ba08-2d8e5562c1d6</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>c3989a50-0ea0-42da-b5bf-04b389a7de89</id>
+    </Compile>
+    <Compile Include="Protocol\AutoScan_ModemRelations.cs">
+      <id>2429a9ed-2739-447c-b49c-974df6448f15</id>
+    </Compile>
+    <Compile Include="Protocol\CDIFXA291.cs">
+      <id>7855af37-5a71-4369-adae-9e19566babd5</id>
+    </Compile>
+    <Compile Include="Protocol\CDITCPIP.cs">
+      <id>263d8439-af7a-4b05-a045-9da93def10b3</id>
+    </Compile>
+    <Compile Include="Protocol\CDIUSB.cs">
+      <id>d293005e-6cc6-45a4-91c2-8299efb6ff3b</id>
+    </Compile>
+    <Compile Include="Protocol\FoundationFieldbus.cs">
+      <id>d5bbf124-1434-4137-912a-48e20479bb40</id>
+    </Compile>
+    <Compile Include="Protocol\HART.cs">
+      <id>8bf053c0-dc2e-4e01-9f4c-911c3d6adc5a</id>
+    </Compile>
+    <Compile Include="Protocol\IPC.cs">
+      <id>cf53e8f0-07a9-4940-ad94-ed1eb82bb117</id>
+    </Compile>
+    <Compile Include="Protocol\ISS.cs">
+      <id>8808eae4-38a3-4250-a663-98a5f8cab8cf</id>
+    </Compile>
+    <Compile Include="Protocol\PCP.cs">
+      <id>7dd7c939-4574-43ad-9b57-ff1a01c377fb</id>
+    </Compile>
+    <Compile Include="Protocol\Profibus.cs">
+      <id>807f8e78-aa42-4c1c-8cb0-f240d5797634</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureCDI_USB.rxrec">
+      <id>986f295c-547b-4a3d-98e4-08523bd02551</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>eb0a1dd4-04b9-4ba4-95fe-26a450fe8882</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureFoundationDTM.rxrec">
+      <id>0dc5c22b-9336-42ce-86d9-d7e2909e6260</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>92708b64-babf-492d-b2a9-69682695a64d</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\ConfigureProfibus.rxrec">
+      <id>22343acf-c967-43e0-a694-42c82d6cd01d</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>45db6ca6-2706-4d70-ba4d-32404722f3fc</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenAdvancedConfiguration.rxrec">
+      <id>8b74f46f-9e45-4f6a-8ba3-438050cd089d</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>15d1c43b-8a49-415a-b2fd-4443c303e4b6</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenDeviceAdress.rxrec">
+      <id>df0ea1ca-1f2e-45dc-a794-3470436a1954</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>013a3699-37e7-4b68-bc30-4377dbe0b6d6</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\OpenLiveList.rxrec">
+      <id>c3bd9837-f4e7-4d7a-b537-09b0128ef7ec</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>16132864-268b-436b-ab0d-21f307c2a0bf</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Execution\PressScanButton.rxrec">
+      <id>9e3d4fa2-1fb5-464c-a1a6-8ca91f023f84</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>0d9b4c49-0cb8-4e9b-8bba-e4a80b151f38</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckConfigMenu.rxrec">
+      <id>1a1adf41-4205-49e0-90b4-b4f1d98ce6f0</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>1eeae315-a49d-41a7-b455-5d9d44a508f2</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_CDITCPIP.rxrec">
+      <id>df468ed7-327b-428f-b1fc-7f58721dbdd6</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>fe9c6bdc-5aa6-454d-b64b-9a846b74e7ba</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_IPC_PCP.rxrec">
+      <id>4ae7d262-f160-4ca0-8e9c-62deef861a4a</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>c39661cb-bbeb-4998-a6eb-df32ebcbaa38</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\EH_CheckOwnConfig_ISS_CDI_CDIUSB.rxrec">
+      <id>5e11d0c3-5f38-4882-a73f-7111f686bd68</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>480f030e-4138-4d76-b53c-16d89f999b84</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\FF_CheckConfigMenu_NI.rxrec">
+      <id>b28025f4-9ba6-4ab2-a34a-184e5eac17d5</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>8aec857b-9c67-4fcc-85ea-839b708e91ce</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckConfigMenu.rxrec">
+      <id>7521d174-dd46-4cb3-8c29-2e80a24b3933</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>137c72da-9f2a-41e1-a736-881bbf933895</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckOwnConfig.rxrec">
+      <id>9514ddf9-5ae0-42d0-a152-3311376ffb15</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>16c92ab2-c337-4e0e-923d-b1c775e548b8</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\HART_CheckSimulationDTM.rxrec">
+      <id>a48a6714-86e1-4d9d-adc8-54d27aecb54b</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>4d808069-ba10-486b-9683-87074bdb31d9</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\PB_CheckConfigMenu.rxrec">
+      <id>4eb74f61-0d75-4af4-937f-dbddf46fa6a4</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>8d2a739b-71a5-4918-92ce-9ae8fb59be52</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ConfigureCommDTM\Validation\PB_CheckOwnConfig_Softing.rxrec">
+      <id>e0faa853-a83b-4413-a845-75dde65d6a80</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>044b942c-543f-418a-9e83-a610dd12304a</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_CDI.rxrec">
+      <id>5badf798-ab8b-4799-8fc5-c159c5ae161d</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>d0b32685-6a41-4956-83dd-22e485dc9f91</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_IPC.rxrec">
+      <id>7ab1f3f9-dac7-4d21-8549-96977c2ff594</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>6325364f-5fb5-4d05-8b99-1a52fa337ebb</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_ISS.rxrec">
+      <id>bb671ae0-6b2f-46fb-ab79-ea146cfc0fc0</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>7668f727-e5f5-40b3-af86-f41938284581</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Execution\SelectProtocol_PCP.rxrec">
+      <id>ee4ac24b-7963-4ccb-a717-847a9317fced</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>dd16d362-359b-421b-9f3c-1b90929ef353</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_EH_ProtocolSelection\Validation\CheckEHInterfaceSelectionPage.rxrec">
+      <id>ebc93212-32e5-488d-8c31-e9c9646ef36d</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>bc30b567-4fe6-44a3-afa3-6cf667b2a147</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_FXA291.rxrec">
+      <id>41b0ba16-4d78-4547-8a1c-e5c401d0baa7</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>5833ea75-d3db-4398-a413-e9754bcd0360</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_TCPIP.rxrec">
+      <id>423c9a8e-30ad-407e-8679-bd8eff1ccf43</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>a6ed3f56-7489-45f2-a9a8-9ee902bd4a33</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_TXU10.rxrec">
+      <id>dde30441-3c64-4dd5-b212-224db9844d37</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>a66033c1-7832-4149-b4f3-370c02f6afa3</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectCDIModem_USB.rxrec">
+      <id>939af356-0a56-418c-8297-9593920305ce</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>117f4a65-b51b-4acc-95a8-1856137b6f45</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectFFModem_NIUSB.rxrec">
+      <id>f743cf58-2d55-4285-9130-a94d777e1707</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>85f57f66-7790-499d-986e-cb6d7b9b889a</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_FXA195.rxrec">
+      <id>05e6afcd-f35f-409b-bd76-a56ddea63410</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>22c547df-a6e5-46fc-b0e5-1df80aa888a5</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_MacTek.rxrec">
+      <id>c11b5b29-0245-4603-9a13-b062130ea8e1</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>b2ff77cf-4d69-4eb7-b6ef-2653671a0997</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_Simulation.rxrec">
+      <id>30769d33-0509-473a-bd01-93277e90e5b3</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>756d732c-7d82-4ed9-8d76-b85eb89cdbe4</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectHARTModem_VectorInfotec.rxrec">
+      <id>8e10653f-125f-4634-bbf2-c9722c54b758</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>3820367d-7745-403a-a19e-3006fd346530</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectIPCModem_FXA193.rxrec">
+      <id>dfe14cf2-5a81-4097-b412-1a8b6b37c05d</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>42367733-6966-46b0-b3b5-090898a6e749</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectIPCModem_FXA291.rxrec">
+      <id>0ce19e28-25d6-46f5-a682-069400ce8913</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>1b1427b4-3b1a-40af-9039-f8bf5b4c48db</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectISSModem_FXA193.rxrec">
+      <id>8fc39ed7-3ef0-4532-8b45-6558a221cade</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>9bc167b8-5ab5-4abc-a230-4a070823b64f</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPBModem_PCMCIA.rxrec">
+      <id>e5a1ed78-5a48-46c0-b52f-df71ed223345</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>b55b0514-0b47-42da-b613-ab29ede23808</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPBModem_USBSofting.rxrec">
+      <id>e5ad612b-e8ac-49f4-8523-06cf5152faa9</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>3b705d5e-786c-4f49-9281-ace68f0dbcdb</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPCPModem_FXA291.rxrec">
+      <id>47968b61-7670-4882-8754-255c1d44c164</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>042a934f-464a-440c-8df9-965e44918c4c</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Execution\SelectPCPModem_TXU10.rxrec">
+      <id>3c95b22f-03ce-41d2-80b7-43e6ea7ed71a</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>1c963f11-95a7-48f0-b53c-748a4ab4c10d</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_CDI.rxrec">
+      <id>a3d0b7ba-82e1-40fa-a002-108d79565912</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>c64baf4e-c20a-4318-9d06-6a884a13a64c</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_FF.rxrec">
+      <id>d7ee7f2e-7ad5-498b-8e77-e14d0dca3c94</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>7a3b7697-3537-4492-b6e3-76afbc841244</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_HART.rxrec">
+      <id>58d55c03-5a9b-47bb-8c22-8ecc11b8e450</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>d0ef8420-9e22-439e-a320-44cb56643ceb</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_IPC.rxrec">
+      <id>4298af21-f63f-4663-b0da-9976959aab02</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>f1d93660-f677-4b13-a398-5c35edddb94b</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_ISS.rxrec">
+      <id>bcf666d4-5f24-4fb3-ba78-2facf34e189f</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>ae10b2db-a7f6-4025-8e16-e28e6e908b13</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_PCP.rxrec">
+      <id>f559ac2a-4948-4764-a24f-ab1a0d209e9a</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>2482de12-d472-46d2-a0b9-1e7e311442fd</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ModemSelection\Validation\CheckModemSelectionPage_PROFIBUS.rxrec">
+      <id>266ac973-c721-4c87-890b-ef3e551be885</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>bcd25007-0c14-4198-83b0-1182d9a3673b</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_EHInterface.rxrec">
+      <id>d1627b43-9eca-4c37-8ade-4898f06ca61b</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>eb054f4d-3947-4b99-b253-fc5d509a7139</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_FF.rxrec">
+      <id>05177c56-7daa-4f55-b387-415b362fb62c</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>5f94db15-77b6-4833-844d-93a7b91be70c</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_HART.rxrec">
+      <id>87841a0d-f0b8-46bf-98af-d03c742af488</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>499a13cf-efb7-4adb-a2c1-b8945ef30d61</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Execution\SelectProtocol_PROFIBUS.rxrec">
+      <id>15535357-23d8-4a61-a51a-c304310ba326</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>62d0a80f-d7b9-48b3-a4c4-51f30eaed46e</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Assistant_ProtocolSelection\Validation\CheckProtocolSelectionPage.rxrec">
+      <id>96250d0b-7188-494e-9f8c-6d4a4e822aa0</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>4d66b09b-bf44-4c2c-a503-1b6aefb1d8be</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\CreateDTMReport.rxrec">
+      <id>59a291bf-7c90-4406-95be-b22006241a24</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>ce9b7e71-4d8d-4d5d-83bf-1913d60ed3ed</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\LoadOrignalDTMData.rxrec">
+      <id>53bf6755-7493-4b13-ba34-61cf877e9542</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>5f328b14-ae89-47d3-b16c-0d43594e0ae9</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenAdditionalFunctions_LockUnlock.rxrec">
+      <id>487cb075-ed12-4e8c-8ee2-07ce531b71f3</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>99670a0d-aa22-45bc-90f4-d00fe7556380</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDeviceReport_OLD.rxrec">
+      <id>f224b67c-ef13-46ab-805d-c1a0f3c33281</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>33f77926-60b9-4acb-843f-dc52fbf279b4</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\OpenDTMfunctions_Observe.rxrec">
+      <id>8fd1ae4b-9b2e-4a5d-8082-ccbeea7cb34e</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>0bad3298-f0b6-4438-864f-4d627739a07e</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Execution\SaveDataDTM.rxrec">
+      <id>260a0460-55ac-42d0-a898-e595bc33f9f0</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>32376b8c-58a3-4cb8-bb9d-7822e5e45c7f</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckAdditionalFunctions_LockUnlock.rxrec">
+      <id>7fff90fe-581d-45c8-80ab-2dff5f0b99c5</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>4ce96ab1-e4c0-4a3b-8ae7-42694d8631a8</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDeviceReport.rxrec">
+      <id>ea5313fb-f277-4a68-9be1-f15ea486df80</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>a0bbbfd4-c5ad-4729-9740-e4e6a4b5836b</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMfunctions_Diagnosis.rxrec">
+      <id>a66e603a-b7be-43cf-bf6e-0b7bd057e91b</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>5d466dd6-7ea7-4d8f-8343-7d025e3a0aa8</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMfunctions_Observe.rxrec">
+      <id>48e02ef7-5d91-4221-9e77-63db060f6627</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>9eed071e-ed00-4763-a9ac-a18892d56b1a</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_DeviceScreen\Validation\CheckDTMHostingGUIVisible.rxrec">
+      <id>75392ff3-b7a2-4421-a0a0-3097635852cc</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>cecedcd9-47fd-4940-9458-e7f3c8314d83</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Help\Validation\CheckAbout.rxrec">
+      <id>f629b350-40ab-4148-9310-d51d78fbdf58</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>48b1a535-5535-455a-ab1e-7c6082d101e9</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Help\Validation\CheckConnection.rxrec">
+      <id>6a2d19bd-22da-4e85-9d03-04f0a0dc4445</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>f359d49e-5257-43c3-9a4b-d1c95a02a2a0</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Help\Validation\CheckDTM.rxrec">
+      <id>22bf2dec-5875-4112-9c93-1f6e0d10068c</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>9d8d2ca2-8ccb-43d5-bbbc-7a44d614afae</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Help\Validation\CheckProgram.rxrec">
+      <id>72cb5cb8-f349-412a-b576-b2d52e88b4a9</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>ab6b4135-f536-44fc-a1cd-72c42e92dff8</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Home\Execution\OpenAssistant.rxrec">
+      <id>a050e85f-1cac-47a3-b744-52ac561b35cf</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>8f1ee3b0-62be-49ad-9bb0-00557a423870</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Home\Execution\OpenAutomatic.rxrec">
+      <id>985b8c92-845e-4b4b-89e3-a661572a1136</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>f699497f-463a-4c36-88dd-4db945d3d69d</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Home\Validation\CheckHome.rxrec">
+      <id>f1a3d951-6ad5-40a9-9148-94f82c3662b4</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>f7da46db-ceab-4e4e-ac53-66e6de09e44b</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_FieldCare.rxrec">
+      <id>cb4cd6d3-4451-4c36-959c-8a2ff2447769</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>65679774-da50-4c0c-b973-0f9c54dece8f</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_Fieldgate.rxrec">
+      <id>52068123-6dfa-45a4-95d0-cb22d88b1113</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>ce0541cb-1e14-4ed3-a45c-5bc8422d6c1a</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_FieldXpert.rxrec">
+      <id>8273dcf3-98dd-425b-91d2-7f6456b20611</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>673e9b04-d886-4c08-9542-ea430ea03a58</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_Modems.rxrec">
+      <id>9cd2724e-376a-4952-aef8-1f97f2a13801</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>2519f901-9b66-4457-9ddd-339a82874f98</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_PAM\Validation\CheckPAM_PAMSuite.rxrec">
+      <id>a5dafd3b-3dff-47a7-b7d4-7f8cefa916f6</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>c2697e95-83e1-401f-8a49-703d14cca564</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_ScanResult\Execution\OpenTMT182.rxrec">
+      <id>d10ceaeb-ada3-4510-8bdd-714d40eb2c90</id>
+      <BoundTo>c2033a05-ab3c-4096-bff9-e799b4efc97e</BoundTo>
+      <recordtableid>1d7f37df-b503-4f65-8749-67170ade20d4</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Settings\Validation\CheckDTMCatalog.rxrec">
+      <id>8184eaa8-54c2-4abd-b41f-9e75b3c9727d</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>81956cd7-2382-428d-a8dd-e7f444c712d3</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Settings\Validation\CheckEventLog.rxrec">
+      <id>e7f50a7d-cd66-49e6-8225-2333c72a7be9</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>98104369-b54d-4060-9f71-71ab19d74688</recordtableid>
+    </None>
+    <None Include="Functions\ApplicationArea\Page_Settings\Validation\CheckFirmware.rxrec">
+      <id>c661d56b-1b00-4b6d-91dc-d1a95961b3ab</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>da11e21e-0bc1-4a8f-8e44-b8a615037706</recordtableid>
+    </None>
+    <None Include="Functions\Helpers\CloseAndKillDeviceCare.rxrec">
+      <id>140558e0-c5db-4179-b5d4-2b59ee300dae</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>212df8b3-f4d6-4656-acb4-e56626667fde</recordtableid>
+    </None>
+    <None Include="Functions\Helpers\Run_Ni_FBUS_MANAGER.rxrec">
+      <id>49793c99-9bf7-41f5-acee-682e11a5210e</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>4ff644f2-9ec5-4e66-b2d8-f4ea94291837</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\AriadnePath\Execution\NavigateToConfigurationPage.rxrec">
+      <id>c9932f53-dd22-4de4-8828-ef787e32f4ea</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>672d149a-3b02-4f1e-b454-6cea867f9089</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\AriadnePath\Execution\NavigateToModemSelectionPage.rxrec">
+      <id>6d4ad177-5307-4e40-a24e-21dbb24e642f</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>736c1d06-6564-49ca-8ba5-521e5845568e</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\AriadnePath\Execution\NavigateToProtocolSelectionPage.rxrec">
+      <id>74dd6517-a0fa-42c0-9fe0-15b97d16bb4a</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>36dea045-a2b0-41ed-92a7-8b67248522a1</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\AriadnePath\Execution\NavigateToScanResultPage.rxrec">
+      <id>6ed2a5f7-3028-47e0-8e61-7bfdf91b379e</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>8a2ba8a8-0b9f-40b4-9c82-373f2847c2a3</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\AriadnePath\Execution\NavigateToServiceInterfaceSelectionPage.rxrec">
+      <id>ed5a00f1-3e75-4b61-9b77-64adfadbab7a</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>e6f238cf-4f87-4e77-8c6a-c85b19abfc9c</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\AriadnePath\Validation\CheckAriadnePath_NoServiceInterface.rxrec">
+      <id>fb5afff8-2bca-4ac3-900c-003b438f7641</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>fd3533dd-b78f-4cfc-a6b0-679a07eba530</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\MainMenu\Execution\CloseDeviceCare.rxrec">
+      <id>ceb6e4a8-86ad-48aa-8261-f605dd6286d9</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>95739d21-a4be-4d2f-875f-26949ca55924</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\MainMenu\Execution\OpenHome.rxrec">
+      <id>687f831a-fc88-4abf-bf51-d9bfa4248343</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>087a4148-d2b0-49d5-a570-c8fd1c077ba9</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\MainMenu\Validation\CheckMainMenu.rxrec">
+      <id>22904b12-bb3e-4b45-96a4-615aa987dbb9</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>b8b71212-a247-458d-9ed4-b5d241a91d56</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpAbout.rxrec">
+      <id>65209585-97b6-41cd-805a-09f126e3656a</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>65835ed1-55dc-4717-9f3b-2e4892c4f995</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpConnection.rxrec">
+      <id>7b634bba-4199-44e5-9daa-bc9cac38df43</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>2ffce056-b25b-4a44-813a-b3b6883b86f2</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpDTM.rxrec">
+      <id>c5192069-b1ab-4273-b5b9-0fcb71787061</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>1d18f9d4-3175-482d-91f5-6faedd511f39</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Help\Execution\OpenHelpProgram.rxrec">
+      <id>0baf9273-ec0d-4b1b-9f69-a7a3ec7cd79e</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>96ee0e9e-e509-4ad6-b941-950542f6ad11</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Help\Validation\CheckMenuHelp.rxrec">
+      <id>4ac4747a-8e5a-425b-8b11-8442d51ea6fe</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>40879e88-66ac-4123-9adb-0967831b327f</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Home\Execution\OpenHelp.rxrec">
+      <id>adde53ad-947b-40d1-bee5-ccd885c6c50c</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>f4367365-8196-4b38-b989-3c4388086114</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Home\Execution\OpenPAM.rxrec">
+      <id>022bdb18-1683-4b28-8168-f87ea673fde8</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>b7714e73-0370-418f-81d3-b9b247a58f45</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Home\Execution\OpenSettings.rxrec">
+      <id>9008a3b6-1214-47ac-9227-d6b48c8b1587</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>0a350745-9fae-4afc-9f34-e327263a6e71</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Home\Validation\CheckMenuHome.rxrec">
+      <id>ae4cdee9-5fa4-489d-98ae-465395a0b468</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>cf1b85ec-08f9-4bdb-a6a4-56554f7ccc9a</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldCare.rxrec">
+      <id>155763d1-3c79-4fa9-90aa-745bd5590929</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>7e555428-885d-4e39-9fbf-58a24d7d0ee1</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldgate.rxrec">
+      <id>d748358e-71d4-4304-a893-1ffb5f6a3d78</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>bc5c5a28-f237-47e6-ad70-039f35040681</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_PAM\Execution\OpenFieldXpert.rxrec">
+      <id>5304f2b0-8b8a-42f4-ad43-7911fedd61f6</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>659a48e5-fe92-419a-ac55-4e3619b5ce15</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_PAM\Execution\OpenModems.rxrec">
+      <id>d86181a7-849a-4f5a-80dd-8d3c14d53b47</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>11dc8588-b5d8-458f-8ccd-6344cc0177f9</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_PAM\Execution\OpenPAMSuite.rxrec">
+      <id>788b7d61-df89-44d7-a865-e925be2c55fb</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>4874dfd0-2020-47c9-97f5-3b88489928dd</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_PAM\Validation\CheckMenuPAM.rxrec">
+      <id>f68050a1-5c49-4dd9-81d9-5a709145b482</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>7dc667f1-6e83-4f19-ac06-a521d67c3ebd</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Settings\Execution\OpenDTMCatalog.rxrec">
+      <id>5ebf4034-122a-43e2-9508-5c19ed598d5c</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>737d9413-0d34-46cf-b80c-19d1a4f53655</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Settings\Execution\OpenEventLog.rxrec">
+      <id>63a8dfac-8e78-4922-a163-43daba2e1270</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>59c7bb03-1e09-4f71-a7b7-89843d98a393</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Settings\Execution\OpenFirmware.rxrec">
+      <id>575f20a4-a017-4057-a934-f10b21d16215</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>8edf7000-0f45-401c-bd81-35449d787d95</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Settings\Execution\OpenLanguageDialog.rxrec">
+      <id>68cebe8e-6d39-465a-a69e-8eadd84e6af5</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>7b538fd1-1433-4fe0-a06e-293a7285375d</recordtableid>
+    </None>
+    <None Include="Functions\MenuArea\Menu_Settings\Validation\CheckMenuSettings.rxrec">
+      <id>3320ef14-3dff-451c-a100-efa15862906e</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>89d0d8d3-5e2c-4f6b-a6bc-ac08bf049c2a</recordtableid>
+    </None>
+    <None Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitList.rxrec">
+      <id>917dc063-9959-4b3e-987a-c924d6df689b</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>30cf5800-4616-4e44-b9ab-6a9834794b57</recordtableid>
+    </None>
+    <None Include="Functions\StatusArea\Statusbar\Validation\CheckCommUnitRecord.rxrec">
+      <id>e336c1e1-4719-42c1-aa31-68ea8ffe7b12</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>fc87c8f6-9970-44e8-8b5f-522bc48ac309</recordtableid>
+    </None>
+    <None Include="Functions\StatusArea\Statusbar\Validation\CheckModemConnected.rxrec">
+      <id>4facb275-1350-46bd-9640-fcc765928545</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <recordtableid>ba3a7f66-699e-46ee-b7c7-5a57d1f26c74</recordtableid>
+    </None>
+    <None Include="GUI\.jazzignore">
+      <id>ece8bac9-3b2a-4900-91f0-96df38d96e0f</id>
+    </None>
+    <None Include="GUI\CommDTMContainerRepo.rximg">
+      <id>01220517-5486-4372-882a-ce989b1eef3c</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="GUI\CommDTMContainerRepo.rxrep">
+      <id>be23be8e-1942-461c-9fa1-fdfbc97af927</id>
+      <repoid>60775183-1286-47cf-90d8-a07d401ecc28</repoid>
+      <reporootid>8e98a12a-0da4-448a-ac39-2d747b4fff40</reporootid>
+    </None>
+    <None Include="GUI\DeviceCareApplication.rximg">
+      <DependentUpon>DeviceCareApplication.rxrep</DependentUpon>
+      <id>a66810eb-5adf-4ba6-98ef-bf8b62c6faa5</id>
+      <BoundTo>a3489f5a-8646-4989-a077-729a8dc2309b</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="GUI\DeviceCareApplication.rxrep">
+      <id>a3489f5a-8646-4989-a077-729a8dc2309b</id>
+      <repoid>5ba506d9-7892-4217-a92d-376694a8250d</repoid>
+      <reporootid>99701df9-ab1e-473f-b3e6-7540c2ead80c</reporootid>
+    </None>
+    <None Include="GUI\DTMContainerRepo.rximg">
+      <id>bfaa0b8a-7c94-4b2f-bfb8-6ae639d89f6d</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="GUI\DTMContainerRepo.rxrep">
+      <id>6cb872b0-a2ef-4321-a6c3-0d8b52182e05</id>
+      <repoid>99f91916-e5ed-4565-be0a-e1c17b5525d6</repoid>
+      <reporootid>dca46ee5-e911-4def-89d3-8a01e2c56bc6</reporootid>
+    </None>
+    <None Include="GUI\HARTCommDTM.rximg">
+      <id>2ee1304f-e686-4a13-8359-e6aa38ceca87</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="GUI\HARTCommDTM.rxrep">
+      <id>c2033a05-ab3c-4096-bff9-e799b4efc97e</id>
+      <repoid>61bf976c-f6ed-46b0-a7e0-2287039f1e74</repoid>
+      <reporootid>a87b7634-c3b0-4654-ad19-32fb907ead9e</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions\MenuArea\Menu_DeviceScreen\Validation\">
+      <id>e3e84c4c-68c5-40df-a30c-d124eb3a16a7</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

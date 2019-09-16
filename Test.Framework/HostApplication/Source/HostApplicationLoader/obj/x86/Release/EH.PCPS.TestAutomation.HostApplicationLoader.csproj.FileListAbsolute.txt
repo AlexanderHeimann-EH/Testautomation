@@ -1,0 +1,4 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\EH.PCPS.TestAutomation.HostApplicationLoader.XML
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\EH.PCPS.TestAutomation.HostApplicationLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationLoader\obj\x86\Release\EH.PCPS.TestAutomation.HostApplicationLoader.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationLoader\obj\x86\Release\EH.PCPS.TestAutomation.HostApplicationLoader.dll

@@ -1,0 +1,60 @@
+﻿<repository
+name="Controls"
+id="b8f87e78-4487-4735-bef4-ea56bd2668f6"
+rxversion="6.1">
+	<codegen
+	classname="Controls"
+	namespace="EH.PCPS.TestAutomation.PrototypeHMI20.EnvelopeCurveShed.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="0a838cfd-8f7b-4906-83b8-7612e8d28287"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="CurveDataNumber"
+		id="5dc7d9cb-4d39-46d5-91cc-2365f7e16fb6"
+		searchtimeout="30000ms"
+		capname="unknown"
+		addcaps="text,control,nativewindow">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.CurveDisplayExtension.EnvelopeCurveComposite']/container[@controlname='EnvelopeCurveModule.GroupControlBase.CurveData']/element[@controlname='EnvelopeCurveModule.LabelControlBase.CurveDataValue1']
+		</item>
+		<item
+		name="ProgressbarContainer"
+		id="4dd33315-3300-46a0-ba33-7f7df423066a"
+		searchtimeout="30000ms"
+		capname="container"
+		addcaps="toolbar,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.CurveDisplayExtension.EnvelopeCurveComposite']/container[@controlname='EnvelopeCurveModule.SplitContainerControlBase.VerticalSplitter']/?/?/container[@controlname='diagramControl']
+		</item>
+		<item
+		name="CurveContainer"
+		id="01dd8961-53f1-4e43-a98d-c4134a1967b5"
+		searchtimeout="30000ms"
+		capname="container"
+		addcaps="container,control,nativewindow">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.CurveDisplayExtension.EnvelopeCurveComposite']/container[@controlname='EnvelopeCurveModule.SplitContainerControlBase.VerticalSplitter']/?/?/container[@controlname='diagramControl']
+		</item>
+		<item
+		name="DiagramControl"
+		id="953195e2-3c7f-4214-9d7e-c8a868955423"
+		searchtimeout="30000ms"
+		capname="container"
+		addcaps="container,control,nativewindow"
+		refimgid="0751802b-7778-4973-a8b7-4e4fe9bd945e">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.CurveDisplayExtension.EnvelopeCurveComposite']/container[@controlname='EnvelopeCurveModule.SplitContainerControlBase.VerticalSplitter']/?/?/container[@controlname='diagramControl']
+		</item>
+		<item
+		name="EnvelopeCurveModuleContainer"
+		id="7cdbe01a-6ae6-4adf-8159-8d702d58d995"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="container,control,nativewindow"
+		refimgid="2aeab829-4aa1-4672-a351-ce1279d21c54">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

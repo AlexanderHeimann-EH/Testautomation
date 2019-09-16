@@ -1,0 +1,274 @@
+﻿<repository
+name="IconsRepository"
+id="a3812250-667b-4efe-8f8e-55252860b4d1"
+rxversion="6.1">
+	<codegen
+	classname="IconsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2016.EnvelopeCurve.GUI.MenuArea.Toolbar"/>
+	<rootfolder
+	name="Root"
+	id="288ddd5e-4be9-4a3e-aa84-637b4b5577a5"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonNewCurve"
+		id="bd785d57-0f76-427a-a728-6919956d9ae4"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='New Curve']
+		</item>
+		<item
+		name="buttonOpenCurve"
+		id="81bc2f61-71f8-41d0-94f3-e5cfd2727ff0"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Open Curve...']
+		</item>
+		<item
+		name="buttonSaveCurve"
+		id="1a86d0a9-360b-427e-96d7-0bce68829cb1"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Save Curve']
+		</item>
+		<item
+		name="buttonFirstEnvelopeCurve"
+		id="6ee627a0-2b48-480f-99ee-7b37001d46f7"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='First Envelope Curve']
+		</item>
+		<item
+		name="buttonPreviousEnvelopeCurve"
+		id="dfe87479-dde2-4df9-99e0-2fc89d09e2f7"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Previous Envelope Curve']
+		</item>
+		<item
+		name="buttonNextEnvelopeCurve"
+		id="4a13e89a-0ee8-4822-bcdd-6d3433502c75"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Next Envelope Curve']
+		</item>
+		<item
+		name="buttonLastEnvelopeCurve"
+		id="1ff5a72a-dbf3-4059-96bb-773f5ac2dbe3"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Last Envelope Curve']
+		</item>
+		<item
+		name="buttonReadCurve"
+		id="78e01a1b-5e97-48b2-9800-a693dcd1d646"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Read Curve']
+		</item>
+		<item
+		name="buttonEndReadWrite"
+		id="7f7b3429-fbc3-4a51-be7a-b68c64f8dddd"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='End Read/Write']
+		</item>
+		<item
+		name="buttonReadSettings"
+		id="48fbd275-dd2b-4ff6-a88e-f49157e74d15"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Read Settings...']
+		</item>
+		<item
+		name="buttonCyclicRead"
+		id="96c5fda9-630a-4d62-8ec9-c40ed1928705"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Cyclic Read']
+		</item>
+		<item
+		name="buttonCyclicReadSettings"
+		id="ad5a303f-2180-4d92-aad4-123b09ce10e2"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Cyclic Read Settings...']
+		</item>
+		<item
+		name="buttonReadReferenceCurve"
+		id="02957160-1bf6-4df2-9e97-f916ee3cd770"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Read Reference Curve']
+		</item>
+		<item
+		name="buttonReadDiagnosticCurves"
+		id="ed11a38d-0cc1-45f8-93b3-a0dcb4a5300c"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Read Diagnostic Curves']
+		</item>
+		<item
+		name="buttonResetReadingRange"
+		id="22168811-eb4a-40ea-aebc-fdf020fdc6d3"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Reset Reading Range']
+		</item>
+		<item
+		name="buttonResetZoomArea"
+		id="79fd9153-10aa-47bd-82b9-2640c94794ca"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Reset Zoom Area']
+		</item>
+		<item
+		name="buttonUndoZoom"
+		id="ced13460-273d-4f43-938d-bd8289d62a13"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Undo Zoom']
+		</item>
+		<item
+		name="buttonSelectedCurves"
+		id="e83e36b1-76ca-4335-9255-aaa1d4147ea1"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Selected Curves...']
+		</item>
+		<item
+		name="buttonFastReverse"
+		id="96263b2d-5071-473b-88ce-6c720c17ba41"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Fast Reverse']
+		</item>
+		<item
+		name="buttonReverse"
+		id="09bcdfba-8ae1-479c-8ec0-db01343c0d7d"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Reverse']
+		</item>
+		<item
+		name="buttonStop"
+		id="06ec903b-07f8-4e06-838b-3be444b63a6a"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Stop']
+		</item>
+		<item
+		name="buttonPause"
+		id="7d7fdf54-9a1b-4e5f-b9f4-9955b7130a42"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Pause']
+		</item>
+		<item
+		name="buttonForward"
+		id="86b67793-b4f9-40ed-bb04-37b27053fead"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Forward']
+		</item>
+		<item
+		name="buttonFastForward"
+		id="ecf8a93b-9f17-4607-b378-4dc7259f5426"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Fast Forward']
+		</item>
+		<item
+		name="buttonLinearizationTableOnline"
+		id="6258bb1d-38ef-4902-a258-9c05b08e9db2"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename~'^Linearization\ Table\ \(onli']
+		</item>
+		<item
+		name="buttonEnvelopeCurve"
+		id="93acc259-884d-48f3-9369-6a74e80f4fd5"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Envelope Curve']
+		</item>
+		<item
+		name="buttonSaveRestore"
+		id="5d9f9525-cfd8-44ab-871b-66309f6f9543"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Save / Restore']
+		</item>
+		<item
+		name="buttonCreateDocumentation"
+		id="39decbb3-4797-4506-b732-eac25e7ff245"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Create Documentation']
+		</item>
+		<item
+		name="buttonCompareDatasets"
+		id="6f937d56-9bb1-4724-91a1-05a30eac9dac"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Compare Datasets']
+		</item>
+		<item
+		name="buttonEventlistExtendedHistoROM"
+		id="23afdb39-4925-4a2c-a4bf-aee7249f0b37"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename~'^Eventlist\ /\ Extended\ Hist']
+		</item>
+		<item
+		name="buttonAbout"
+		id="b7f218d6-7a11-489d-adb0-47aef2f089c5"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='About']
+		</item>
+		<item
+		name="buttonContents"
+		id="a7aba89b-33af-4fd4-87fd-5c7528d7233d"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@automationid='EnvelopeCurveModule.EnvelopeCurveForm.Form']/container[@controlname='EnvelopeCurveModule.ToolBarStub.Toolbar']/element[@controlname='barDockControlTop']/element/toolbar/button[@accessiblename='Contents...']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

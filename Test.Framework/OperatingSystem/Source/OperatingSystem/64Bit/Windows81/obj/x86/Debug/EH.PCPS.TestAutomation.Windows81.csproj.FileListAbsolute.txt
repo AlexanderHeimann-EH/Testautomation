@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows81.XML
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows81.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows81.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows81\obj\x86\Debug\EH.PCPS.TestAutomation.Windows81.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows81\obj\x86\Debug\EH.PCPS.TestAutomation.Windows81.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\64Bit\Windows81\obj\x86\Debug\EH.PCPS.TestAutomation.Windows81.csprojResolveAssemblyReference.cache

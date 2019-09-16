@@ -1,0 +1,28 @@
+﻿						/*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+
+                        // Wizard:
+                        // Auswahl in Parametrierung
+                        // Sequenz durchführen
+
+                        int timeout = 100000;
+
+                        Execution.Navigation navigation = new Execution.Navigation();
+                        Execution.Application application = new Execution.Application();
+                        Execution.WizardFunctions wizardExecution = new Execution.WizardFunctions();
+                        Validation.Wizard wizardValidation = new Validation.Wizard();
+                        navigation.SearchAndSelectParameter("OnlineDeviceMenu//_MENU_ONLINE_DIAG//.MENU_ONLINE_SERVICE//.device_master_reset");
+
+                        Report.Info("Text: Restart ot the device while maintaining the customer specific settings");
+                        if (wizardValidation.WaitUntilNextButtonIsActive(timeout))
+                        {
+                            wizardExecution.Next();
+
+                            Report.Info("Text: Performing device restart");
+                            if (wizardValidation.WaitUntilNextButtonIsActive(timeout))
+                            {
+                                wizardExecution.Next();
+                                Report.Info("Text: from initial page");
+                            }
+                        }

@@ -1,0 +1,9 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="Any CPU" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution EH.PCPS.TestAutomation.FieldCare.V21000[EH.PCPS.TestAutomation.FieldCare.V21000[GUI[Dialogs[]]]]]&#xD;&#xA;Solution EH.PCPS.TestAutomation.FieldCare.V21000\EH.PCPS.TestAutomation.FieldCare.V21000\CommonFlows&#xD;&#xA;Solution EH.PCPS.TestAutomation.FieldCare.V21000\EH.PCPS.TestAutomation.FieldCare.V21000\CommonFlows" />
+  <StartupProject value="" />
+</Properties>

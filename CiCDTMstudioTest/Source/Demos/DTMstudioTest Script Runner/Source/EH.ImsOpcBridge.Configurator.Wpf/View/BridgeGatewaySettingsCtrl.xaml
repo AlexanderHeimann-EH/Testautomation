@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.BridgeGatewaySettingsCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.Configurator.View"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             d:DataContext="{d:DesignInstance {x:Type viewModel:BridgeGatewaySettingsControlVm}, IsDesignTimeCreatable=True}"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="1200">
+
+
+
+    <Grid x:Uid="Grid_1"  Name="OwnCommDtmGui" Grid.Row="1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_0" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_1" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_3" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_4" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_5" Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  x:Uid="ColumnDefinition_1" Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <view:TextBoxesSmallControl  x:Uid="TextBoxesControl1" x:Name="TextBoxesControl1" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top"  Visibility="Visible" IsReadOnlyTextBox1="True"
+                                   TextBoxLabel1="{Binding Path=TextBoxLabel1, Mode=TwoWay}" TextBoxValue1="{Binding Path=TextBox1Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox1Changed="{Binding TextBox1TextChanged}" TextBoxLabelUnit1="{Binding Path=TextBoxLabelUnit1, Mode=TwoWay}"  ValidationError="{Binding Path=ValidationError, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ValidationRuleTextBox1="NotNullOrEmptyRule"
+                                   IsTextBox2Visible="Visible" TextBoxLabel2="{Binding Path=IdentificationLabel1, Mode=TwoWay}" TextBoxValue2="{Binding Path=IdentificationText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   ValidationRuleTextBox2="EhSerialNumberRule" TextBox2Changed="{Binding IdentificationTextChanged}" TextBoxLabelUnit2="" />
+
+
+
+
+        <view:TextBoxesSmallControl  x:Uid="TextBoxesControl2" x:Name="TextBoxesControl2" Grid.Column="0" Grid.Row="3" VerticalAlignment="Top"  Visibility="Hidden" IsReadOnlyTextBox1="False" IsReadOnlyTextBox2="True"
+                                   TextBoxLabel1="" TextBoxValue1="" IsTextBox1Visible="Hidden"
+                                   TextBox1Changed="{Binding IdentificationTextChanged}" TextBoxLabelUnit1="" ValidationError="{Binding Path=ValidationError, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ValidationRuleTextBox1="NotNullOrEmptyRule" IsTextBox2Visible="Visible" 
+                                   TextBoxLabel2="{Binding Path=ActivationKeyLabel2, Mode=TwoWay}" TextBoxValue2="{Binding Path=ActivationKeyText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox2Changed="{Binding ActivationKeyTextChanged}" TextBoxLabelUnit2="" />
+
+
+        <view:ButtonControl  x:Uid="ButtonControl" x:Name="ButtonControl" Grid.Column="0" Grid.Row="3"  Visibility="Hidden" ButtonControlBitmapPath="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2\Refresh active.png"  ButtonControlLabel="{Binding Path=ButtonControlLabel, Mode=TwoWay}" ButtonPressedCommand="{Binding Path=GenerateActivationKeyCommand}"/>
+
+
+
+    </Grid>
+</UserControl>
+             

@@ -1,0 +1,69 @@
+﻿<UserControl x:Uid="Parent" x:Class="EH.ImsOpcBridge.Configurator.View.ComboTextBoxControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:custom="clr-namespace:EH.ImsOpcBridge.UI.Wpf.EventArguments;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             mc:Ignorable="d"
+             x:Name="parent"
+             d:DesignHeight="90" d:DesignWidth="1215">
+
+    <Grid x:Uid="Grid_1" MaxHeight="90" MinHeight="90" DataContext="{Binding ElementName=parent}" VerticalAlignment="Center" >
+
+        <Grid.ColumnDefinitions>
+            <!-- Button -->
+            <ColumnDefinition x:Uid="ColumnDefinition_0" Width="Auto"/>
+            <!-- Gap -->
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="10"/>
+            <!-- Caption -->
+            <ColumnDefinition x:Uid="ColumnDefinition_2" Width="120"/>
+            <!-- Label -->
+            <ColumnDefinition x:Uid="ColumnDefinition_3" Width="110"/>
+            <!-- Gap -->
+            <ColumnDefinition x:Uid="ColumnDefinition_4" Width="10"/>
+            <!-- ComboBox -->
+            <ColumnDefinition x:Uid="ColumnDefinition_5" Width="310"/>
+            <!-- Label -->
+            <ColumnDefinition x:Uid="ColumnDefinition_6" Width="165"/>
+            <!-- Gap -->
+            <ColumnDefinition x:Uid="ColumnDefinition_7" Width="10"/>
+            <!-- TextBox -->
+            <ColumnDefinition x:Uid="ColumnDefinition_8" Width="310"/>
+            <!-- Rest -->
+            <ColumnDefinition x:Uid="ColumnDefinition_9" Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="90" />
+        </Grid.RowDefinitions>
+
+        <view:ImageButton x:Uid="View:ImageButton1" Name="ImageButton1"  Style="{DynamicResource MenuImageButtonStyle}" Grid.Column="0" Grid.Row="0" Visibility="{Binding Path=ExtendButtonVisible, Converter={StaticResource ConvBoolToVisibility}}"
+                          AutomationProperties.AutomationId="automId_UsbRefresh" ButtonImage="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2\Refresh active.png" ButtonText="" Command="{Binding Path=ButtonPressedCommand}" 
+                          Margin="0,15,0,0" VerticalAlignment="Top"/>
+
+        <TextBlock x:Uid="Caption" Grid.Column="2" Grid.Row="0" FontWeight="Bold"
+                   FontSize="{DynamicResource LabelFontSize}"  TextAlignment="Left"  HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth ="120" Text="{Binding Path=Caption}" Visibility="Visible" TextWrapping="Wrap">
+        </TextBlock>
+
+        <TextBlock x:Uid="ComboBoxLabel" Grid.Column="3" Grid.Row="0" FontWeight="Normal" 
+                   FontSize="{DynamicResource LabelFontSize}" TextAlignment="Right" HorizontalAlignment="Right"  VerticalAlignment="Center" MinWidth ="110" Text="{Binding Path=ComboBoxLabel}" Visibility="Visible" TextWrapping="Wrap">
+        </TextBlock>
+
+        <ComboBox x:Uid="ComboBox" Grid.Column="5" Grid.Row="0" Style="{DynamicResource ImageButtonComboBoxStyle}" AutomationProperties.AutomationId="ComboTextBoxControl"
+                     Width="310" Height="60" ItemsSource="{Binding Path=ComboBoxItemsSource}" SelectedItem="{Binding Path=ComboBoxActiveItem, Mode=TwoWay}" IsSynchronizedWithCurrentItem="True"
+                     VerticalContentAlignment="Top" VerticalAlignment="Center" HorizontalAlignment="Left" custom:SelectionChangedBehavior.SelectionChangedCommand="{Binding ComboBoxSelectionChanged}"
+                     Text ="{Binding Path=ComboTextBoxValue, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEditable="{Binding Path=ComboBoxTextIsEditable}" custom:TextBoxBehavior.LostFocusCommand="{Binding  ComboTextBoxValueChanged}"/>
+
+        <TextBlock x:Uid="TextBoxLabel" Grid.Column="6" Grid.Row="0"  FontWeight="Normal" 
+                   FontSize="{DynamicResource LabelFontSize}" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center" MinWidth ="120" Text="{Binding Path=TextBoxLabel}"
+                   Visibility="{Binding Path=TextBoxVisible, Converter={StaticResource ConvBoolToVisibility}}" TextWrapping="Wrap">
+        </TextBlock>
+
+        <TextBox x:Uid="TextBox" Grid.Column="8" Grid.Row="0"  FontWeight="Bold" VerticalContentAlignment="Center" TextAlignment="Left" TextWrapping="NoWrap" 
+                   FontSize="{DynamicResource StandardFontSize}" VerticalAlignment="Center" Height="60" MinWidth ="120" MinHeight="50" 
+                   Visibility="{Binding Path=TextBoxVisible, Converter={StaticResource ConvBoolToVisibility}}" Text="{Binding Path=TextBoxValue, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                   AutomationProperties.AutomationId="automnId_ImsOpcBridgeTextBox" custom:TextBoxBehavior.LostFocusCommand="{Binding  TextBoxValueChanged}"/>
+    </Grid>
+
+</UserControl>

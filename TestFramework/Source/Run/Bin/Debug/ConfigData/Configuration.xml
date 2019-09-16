@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SelectedConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TestEnvironment>
+    <Communication>
+      <Folder>Communication</Folder>
+      <Category>CDI</Category>
+      <Assembly>EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501</Assembly>
+    </Communication>
+    <HostApplication>
+      <Folder>HostApplication</Folder>
+      <Category>FDT</Category>
+      <Assembly>EH.PCPS.TestAutomation.FieldCare.CI</Assembly>
+    </HostApplication>
+    <OperatingSystem>
+      <Folder>OperatingSystem</Folder>
+      <Category>64Bit</Category>
+      <Assembly>EH.PCPS.TestAutomation.Windows7</Assembly>
+    </OperatingSystem>
+    <DeviceFunction>
+      <Folder>DeviceFunction</Folder>
+      <Category>CoDIA</Category>
+      <Assembly>EH.PCPS.TestAutomation.PrototypeHMI20</Assembly>
+    </DeviceFunction>
+  </TestEnvironment>
+  <TestFramework>
+    <PathToAssemblies>P:\EH.PCSW.Testautomation.TestFramework\ReleaseBin\Debug</PathToAssemblies>
+  </TestFramework>
+  <TestInformation>
+    <DateOfTest>2017-10-17T13:05:49.8608078+02:00</DateOfTest>
+    <NameOfTester />
+    <Company />
+    <DeviceType />
+    <DeviceId />
+    <DeviceSerialNumber />
+    <DeviceTypeProjectPath />
+  </TestInformation>
+</SelectedConfiguration>

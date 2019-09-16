@@ -1,0 +1,3 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Release\EH.PCPS.TestAutomation.OperatingSystemInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Release\EH.PCPS.TestAutomation.OperatingSystemInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\obj\Release\EH.PCPS.TestAutomation.OperatingSystemInterfaces.dll

@@ -1,0 +1,365 @@
+﻿<report>
+	<activity
+	user="sampleuser"
+	host="samplemachine"
+	rxversion="4.1.0.21500"
+	osversion="Windows 8 64bit"
+	runtimeversion="4.0.30319.18033"
+	procarch="32bit"
+	language="en-US"
+	screenresolution="3360x1050"
+	timestamp="01.01.2013 10:00:00"
+	timeoutfactor="1"
+	result="Success"
+	duration="0ms"
+	type="root"
+	rid="175f69aed1c60a8a"
+	totalerrorcount="0"
+	totalwarningcount="1"
+	totalsuccesscount="2"
+	totalfailedcount="0"
+	totalblockedcount="0">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+		testsuitename="test"
+		runconfigname="TestRun"
+		runlabel=""
+		maxchildren="2"
+		result="Success"
+		duration="500ms"
+		type="test suite"
+		rid="6bad837975e22bc"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesscount="2"
+		totalfailedcount="0"
+		totalblockedcount="0">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+			testcasename="SampleTestCase1"
+			testcaseid="c2c36174-61f8-407d-a022-938341aefc8d"
+			maxchildren="0"
+			result="Success"
+			duration="155ms"
+			type="test case"
+			rid="2a03bc5d66a6a056"
+			totalerrorcount="0"
+			totalwarningcount="1"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+				modulename="Recording1"
+				moduleid="c0870284-abf6-4dc6-a7ac-48d64de76bf2"
+				moduletype="Recording"
+				result="Success"
+				duration="138ms"
+				type="test module"
+				rid="21555026b7ebbf6"
+				totalerrorcount="0"
+				totalwarningcount="1"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+					time="00:00.178"
+					level="Info"
+					category="User">
+						<message>
+							A sample log message.
+						</message>
+						<metainfo
+						itemindex="0"
+						codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording1.cs"
+						codeline="81"
+						loglvl="Info"/>
+					</item>
+					<item
+					time="00:00.250"
+					level="Warn"
+					category="User">
+						<message>
+							A sample warning.
+						</message>
+						<metainfo
+						itemindex="1"
+						codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording1.cs"
+						codeline="83"
+						loglvl="Warn"/>
+					</item>
+				</activity>
+			</activity>
+			<activity
+			testcasename="SampleTestCase2"
+			testcaseid="78fa2a19-1117-40a2-930b-440a4fe5e837"
+			maxchildren="0"
+			result="Success"
+			duration="331ms"
+			type="test case"
+			rid="81e6688aacf68a"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+				modulerepeatcontainername="'Recording2' Repeat Container"
+				headertext="Report for selected recording module:"
+				testmoduleid="21912960-f6fc-4a55-bacc-b0eb77d21208"
+				repeatCount="5"
+				result="Success"
+				duration="330ms"
+				type="repeat container"
+				rid="35d75c0954a0927"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0">
+					<params/>
+					<detail>
+						Container for the module repeats.
+					</detail>
+					<activity
+					testcasename="'Recording2' Repeat"
+					iteration="1"
+					result="Success"
+					duration="62ms"
+					type="test module iteration"
+					rid="cea1820d2e4896c"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<activity
+						modulename="Recording2"
+						moduleid="c3f0bec0-f71c-478d-9c19-11907205b8d4"
+						moduletype="Recording"
+						result="Success"
+						duration="60ms"
+						type="test module"
+						rid="128e8a32385b53ae"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0">
+							<detail>
+							</detail>
+							<varbindings/>
+							<item
+							time="00:00.318"
+							level="Info"
+							category="User">
+								<message>
+									Iteration
+								</message>
+								<metainfo
+								itemindex="0"
+								codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording2.cs"
+								codeline="81"
+								loglvl="Info"/>
+							</item>
+						</activity>
+					</activity>
+					<activity
+					testcasename="'Recording2' Repeat"
+					iteration="2"
+					result="Success"
+					duration="69ms"
+					type="test module iteration"
+					rid="d857e6426769281"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<activity
+						modulename="Recording2"
+						moduleid="c3f0bec0-f71c-478d-9c19-11907205b8d4"
+						moduletype="Recording"
+						result="Success"
+						duration="65ms"
+						type="test module"
+						rid="13739308700a38cb"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0">
+							<detail>
+							</detail>
+							<varbindings/>
+							<item
+							time="00:00.380"
+							level="Info"
+							category="User">
+								<message>
+									Iteration
+								</message>
+								<metainfo
+								itemindex="0"
+								codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording2.cs"
+								codeline="81"
+								loglvl="Info"/>
+							</item>
+						</activity>
+					</activity>
+					<activity
+					testcasename="'Recording2' Repeat"
+					iteration="3"
+					result="Success"
+					duration="66ms"
+					type="test module iteration"
+					rid="a0805e5bd73e7be"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<activity
+						modulename="Recording2"
+						moduleid="c3f0bec0-f71c-478d-9c19-11907205b8d4"
+						moduletype="Recording"
+						result="Success"
+						duration="63ms"
+						type="test module"
+						rid="2745354bcc091d5d"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0">
+							<detail>
+							</detail>
+							<varbindings/>
+							<item
+							time="00:00.450"
+							level="Info"
+							category="User">
+								<message>
+									Iteration
+								</message>
+								<metainfo
+								itemindex="0"
+								codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording2.cs"
+								codeline="81"
+								loglvl="Info"/>
+							</item>
+						</activity>
+					</activity>
+					<activity
+					testcasename="'Recording2' Repeat"
+					iteration="4"
+					result="Success"
+					duration="66ms"
+					type="test module iteration"
+					rid="fbe9e740160bd00"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<activity
+						modulename="Recording2"
+						moduleid="c3f0bec0-f71c-478d-9c19-11907205b8d4"
+						moduletype="Recording"
+						result="Success"
+						duration="63ms"
+						type="test module"
+						rid="29958abd7f39135"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0">
+							<detail>
+							</detail>
+							<varbindings/>
+							<item
+							time="00:00.516"
+							level="Info"
+							category="User">
+								<message>
+									Iteration
+								</message>
+								<metainfo
+								itemindex="0"
+								codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording2.cs"
+								codeline="81"
+								loglvl="Info"/>
+							</item>
+						</activity>
+					</activity>
+					<activity
+					testcasename="'Recording2' Repeat"
+					iteration="5"
+					result="Success"
+					duration="66ms"
+					type="test module iteration"
+					rid="f592b96d541092"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<activity
+						modulename="Recording2"
+						moduleid="c3f0bec0-f71c-478d-9c19-11907205b8d4"
+						moduletype="Recording"
+						result="Success"
+						duration="63ms"
+						type="test module"
+						rid="b9569f91748b604"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0">
+							<detail>
+							</detail>
+							<varbindings/>
+							<item
+							time="00:00.582"
+							level="Info"
+							category="User">
+								<message>
+									Iteration
+								</message>
+								<metainfo
+								itemindex="0"
+								codefile="c:\Users\fjöbstl\Documents\Ranorex\RanorexStudio Projects\test\test\Recording2.cs"
+								codeline="81"
+								loglvl="Info"/>
+							</item>
+						</activity>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

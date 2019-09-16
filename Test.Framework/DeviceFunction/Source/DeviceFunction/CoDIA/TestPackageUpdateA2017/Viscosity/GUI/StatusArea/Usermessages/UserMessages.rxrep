@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="UserMessages"
+id="130251ca-3fe3-48d8-8b29-1e3507b54023"
+rxversion="6.1">
+	<codegen
+	classname="UserMessages"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.Viscosity.GUI.StatusArea.Usermessages"/>
+	<rootfolder
+	name="Root"
+	id="149f3f54-ff76-44c0-90dd-922644a87f57"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ViscosityModuleMessageControlPopupEdit"
+		id="d7c858ea-95f2-4e82-b0cb-5751d1a16c38"
+		searchtimeout="30000ms"
+		capname="unknown"
+		addcaps="text,accessible"
+		refimgid="e2b2de14-b01d-49d0-80dd-f26a9181ef9f">
+			/container[@automationid='ViscosityModule.ViscosityForm.Form']/element[@automationid='ViscosityModule.MessageControl.popupEdit']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

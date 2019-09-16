@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="UserMessagesRepository"
+id="e217d86a-7095-4754-bc26-6e79afa0f2d6"
+rxversion="6.1">
+	<codegen
+	classname="UserMessagesRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.DipTable.GUI.StatusArea.UserMessages"/>
+	<rootfolder
+	name="Root"
+	id="c76fdfd0-7df0-4332-9d56-3dbe2eb34244"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ElementUserMessage"
+		id="a9a40ecf-bf26-4d69-8fe9-bc8db08d61ff"
+		searchtimeout="30000ms"
+		capname="unknown"
+		addcaps="text,accessible"
+		refimgid="1dafb199-6931-487f-a86e-f3ca3ec0329f">
+			/container[@automationid='LinearizationModule.LinearizationForm.DtmFormBase']/element[@automationid='LinearizationModule.MessageControl.messageControl']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

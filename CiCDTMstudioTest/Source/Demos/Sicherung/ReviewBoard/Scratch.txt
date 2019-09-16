@@ -1,0 +1,57 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio 2008 SDK\VisualStudioIntegration\Common\inc\vsshlids.h
+
+C++ Filter Folder: 6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c
+
+
+name=tps_base
+expandable=1
+itemsubtype=
+typename=Microsoft Visual C++
+typeguid=6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c
+storagetype=
+savename=tps_base
+canonicalName=WTCSHARED\tps_base
+not exists: WTCSHARED\tps_base
+
+
+Physical File	{6BB5F8EE-4483-11D3-8BCF-00C04F8EC28C}
+
+Physical Folder	{6BB5F8EF-4483-11D3-8BCF-00C04F8EC28C}
+
+Virtual Folder	{6BB5F8F0-4483-11D3-8BCF-00C04F8EC28C}
+
+Subproject		{EA6618E8-6E24-4528-94BE-6889FE16485C}
+
+
+// Slctn of one or more ProjNodes & SolnNode (doesn't involve ProjItem nodes)
+#define IDM_VS_CTXT_XPROJ_SLNPROJ     0x0415
+// Slctn of one or more ProjItems & SolnNode (min 1 ProjItem & may involve ProjNodes too)
+#define IDM_VS_CTXT_XPROJ_SLNITEM     0x0416
+// Selection of one more Project Nodes and one or more Project Items across projects (does not involve Solution Node) 
+#define IDM_VS_CTXT_XPROJ_PROJITEM    0x0417
+// Selection of two or more Project Nodes (does not involve the Solution Node or Project Item Nodes)
+#define IDM_VS_CTXT_XPROJ_MULTIPROJ   0x0418
+// Selection of one more Project Items across projects (does not involve Project Nodes or Solution Node)
+#define IDM_VS_CTXT_XPROJ_MULTIITEM   0x0419
+
+
+AnkhSnv.xml:
+
+IDG_VS_VIEW_ORG_WINDOWS		<!-- View - The Group containing the Solution Explorer,.. -->
+IDG_VS_CTXT_SOLUTION_SCC	<!-- VS Predefined group for SCC commands on the solution -->
+IDG_VS_CTXT_PROJECT_SCC		<!-- VS Predefined group for SCC commands on projects -->
+IDG_VS_CTXT_ITEM_SCC		<!-- VS Predefined group for SCC commands on project items -->
+
+
+
+    <GroupRef id="guidSHLMainMenu:IDG_VS_MENU_CONTEXTMENUS">
+      <ButtonRef id="Cmd_ForceUIShow" priority="0x000001" />
+      <Menu id="Grp_AnkhContextMenus" priority="0x0F0" name="AnkhSVNContextMenus" text="&amp;AnkhSVN Context Menus" type="Context" noCustomize="true" notInTBList="true">
+        <Group id="Grp_AnkhContextMenus" priority="0x100">
+
+        </Group>
+      </Menu>
+    </GroupRef>
+    <GroupRef id="Grp_AnkhContextMenus">
+      <!-- The Repository Explorer Context Menu -->
+      ...

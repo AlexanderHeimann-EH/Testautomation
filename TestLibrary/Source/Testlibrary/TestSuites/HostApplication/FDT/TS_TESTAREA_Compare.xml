@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_TESTAREA_Compare</DisplayName>
+      <Guid>f0a06ad8-6e8a-4eb3-8214-81bb8afddca8</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_TESTAREA_Compare</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>Compare</TestFocus>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>TC_CompareOfflineWithDehFile</DisplayName>
+          <Guid>a7467dba-1bff-4997-82da-a1a052eeb8f8</Guid>
+          <IsActive>false</IsActive>
+          <Name>TC_CompareOfflineWithDehFile</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares the offline data with a .deh file
+
+Param:
+The file name and path of a deh file. Use this form: C:\Test\test.deh
+
+Param:
+The timeout For the comparison in milliseconds.</Description>
+              <DisplayName>Compare.TC_CompareOfflineWithDehFile.Run</DisplayName>
+              <Guid>c0b1040d-482e-498b-8ccf-2e647abfdb64</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToDehFile, timeoutForComparisonInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares the offline data with a .deh file
+
+Param:
+The file name and path of a deh file. Use this form: C:\Test\test.deh
+
+Param:
+The timeout For the comparison in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>08e51512-e559-4b1a-ae62-750fd97f1375</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The file name and path of a deh file. Use this form: C:\Test\test.deh</Description>
+                  <Name>pathToDehFile</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The timeout For the comparison in milliseconds.</Description>
+                  <Name>timeoutForComparisonInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>TC_CompareOnlineWithDehFile</DisplayName>
+          <Guid>91cc4d46-cac2-4068-926b-ec44c0906981</Guid>
+          <IsActive>false</IsActive>
+          <Name>TC_CompareOnlineWithDehFile</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares the online data with a .deh file
+
+Param:
+The file name and path of a deh file. Use this form: C:\Test\test.deh
+
+Param:
+The timeout For the comparison in milliseconds.</Description>
+              <DisplayName>Compare.TC_CompareOnlineWithDehFile.Run</DisplayName>
+              <Guid>28ef4ce1-7192-4938-b3d4-0af621405a8b</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(pathToDehFile, timeoutForComparisonInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares the online data with a .deh file
+
+Param:
+The file name and path of a deh file. Use this form: C:\Test\test.deh
+
+Param:
+The timeout For the comparison in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>2b3884cf-3bb7-4e0d-8bf0-d8873056023c</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The file name and path of a deh file. Use this form: C:\Test\test.deh</Description>
+                  <Name>pathToDehFile</Name>
+                  <ParameterType>System.String</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+                <TestParameter>
+                  <Description>The timeout For the comparison in milliseconds.</Description>
+                  <Name>timeoutForComparisonInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>TC_CompareOfflineWithOnline</DisplayName>
+          <Guid>2483d9b7-1ded-4078-bff2-90b1bacc3151</Guid>
+          <IsActive>false</IsActive>
+          <Name>TC_CompareOfflineWithOnline</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compare the online data with the offline data
+
+Param:
+The timeout for the comparison in milliseconds.</Description>
+              <DisplayName>Compare.TC_CompareOfflineWithOnline.Run</DisplayName>
+              <Guid>71ab2e23-d5e8-4a29-a6b5-4a410cf26b50</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(timeoutForComparisonInMilliseconds)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compare the online data with the offline data
+
+Param:
+The timeout for the comparison in milliseconds.</ToolTip>
+              <AssemblyMethodRefId>744855b1-d79e-4795-a6fd-a4e54b2fb592</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The timeout for the comparison in milliseconds.</Description>
+                  <Name>timeoutForComparisonInMilliseconds</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValueValid>false</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>TC_LogAllParameter</DisplayName>
+          <Guid>0463a88d-d240-41e1-bc16-8671dcd26cbd</Guid>
+          <IsActive>false</IsActive>
+          <Name>TC_LogAllParameter</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Navigates through the Compare result and logs all parameter with offline and online values. Result is shown in the report.</Description>
+              <DisplayName>Compare.TC_LogAllParameter.Run</DisplayName>
+              <Guid>3546ba65-f001-4e22-b5b2-aa018ff4dd16</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Navigates through the Compare result and logs all parameter with offline and online values. Result is shown in the report.</ToolTip>
+              <AssemblyMethodRefId>2a07aac2-7a54-4e06-b166-7ea98a809422</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile>d:\users\i02401156\documents\visual studio 2010\Projects\DeviceTypeProjectName_Test429\UserDefinedProjectName1\TS_Compare.xml</ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

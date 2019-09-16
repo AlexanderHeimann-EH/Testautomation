@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="SaveFileElementsRepository"
+id="bf826f2f-138c-43d3-b7d0-f8c0af2661a1"
+rxversion="6.1">
+	<codegen
+	classname="SaveFileElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateB2014.EnvelopeCurveShed.GUI.Dialogs"/>
+	<rootfolder
+	name="Root"
+	id="00264644-77b8-4b7b-a407-18383efe68fa"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonNo"
+		id="4b498841-fa62-46e6-9c7a-8e8391653b68"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@accessiblename='No']
+		</item>
+		<item
+		name="buttonYes"
+		id="8d271a85-0940-4504-b106-ad29c2e756ee"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@accessiblename='Yes']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

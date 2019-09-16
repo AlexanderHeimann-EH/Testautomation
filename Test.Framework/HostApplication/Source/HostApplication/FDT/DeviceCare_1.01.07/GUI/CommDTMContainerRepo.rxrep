@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="CommDTMContainerRepo"
+id="60775183-1286-47cf-90d8-a07d401ecc28"
+rxversion="6.1">
+	<codegen
+	classname="CommDTMContainerRepo"
+	namespace="EH.PCPS.TestAutomation.DeviceCare.V10107.GUI"/>
+	<rootfolder
+	name="Root"
+	id="8e98a12a-0da4-448a-ac39-2d747b4fff40"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="CommDTMContainer"
+		id="faf3424e-75f6-49a9-8116-ddce44706f74"
+		searchtimeout="30000ms"
+		capname="container"
+		addcaps="form,uiautomation,nativewindow"
+		refimgid="f17840f9-3317-4845-8788-a6f988429ef6"
+		isrooted="True"
+		usecache="True">
+			<basepath>
+				/form[@automationid='automId_MainWindow']/element[@automationid='connectionWizard']/element[@automationid~'DtmHostWindow']/?/?/tabpagelist[@automationid='tabControl']/tabpage[@automationid~'TabItem']//container[@class~'HwndWrapper\[Fdt1Surrogate\.exe']/element[@childindex='0']/container[@class='ThunderRT6UserControlDC']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFrSURBVDhP3ZI7SwNBEMf3kkY/gIKfwkchCBYW
+CoIWfofYiI9GQbBIoViJmHjenUIgvYIvFLTxFYiYRvGFCBYaUlhFSSA7t5cbd3dycAnxA+jAsP/9
+s/tjZ2fYf4k0tjALlliSp+vSkmnWtFoDLX3D5umIDeMEWHd7u7ZdnMl4dTl46OLAAfn9ey6OHAut
+e3ZcNDYAIw4UCJDk8YUbDxtjLivQeSTfvPfw5L2qdTznIUsqAH8gQALOZrN08PXLx8lLgVMZgW0p
+wK0n8lduPdx9I8D8NQEMG0zG7FK7fEExAHC5fJR8jJ17+FL0EegOVqQf6AAQtfgYi9p8VG3CgNwn
+AQplX+9VVEQDIMG/2Wa5gxkOrIUBqoSJCyphaF/8XkKCX+nyIza/U4Bmn3iar2Lqmfwmn7hYA0De
+sAA7ZRunZYvCOXwkdBuVDtqodLc8y0y3jwAOxNRQ6KEJD1Hj8NQNEiyzVb9VA/56MPYDmrXHgJvd
+BogAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

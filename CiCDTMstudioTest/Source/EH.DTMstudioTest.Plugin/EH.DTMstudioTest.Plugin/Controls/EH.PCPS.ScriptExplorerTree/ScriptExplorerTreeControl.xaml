@@ -1,0 +1,181 @@
+﻿<UserControl x:Class="EH.PCPS.ScriptExplorerTree.ScriptExplorerTreeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:model="clr-namespace:EH.PCPS.SelectionTree.Controls.Model;assembly=EH.PCPS.SelectionTree.Controls"
+             xmlns:behaviors="clr-namespace:EH.PCPS.ScriptExplorerTree.Behavior"
+             xmlns:converter="clr-namespace:EH.PCPS.ScriptExplorerTree.Converter"
+             xmlns:model2="clr-namespace:EH.PCPS.ScriptExplorerTree.Model"
+             xmlns:scriptExplorerTree="clr-namespace:EH.PCPS.ScriptExplorerTree"
+             mc:Ignorable="d"
+	         SizeChanged="TestScriptTreeControl_OnSizeChanged"
+             AutomationProperties.AutomationId="TestSuiteTreeControl"
+             Loaded="SelectionTreeControl_OnControlLoaded">
+
+    <UserControl.Resources>
+
+        <converter:ToUpperConverter x:Key="ToUpperConverter" />
+        <converter:ColorConverter x:Key="ColorConverter" />
+        <converter:VisibilityConverter x:Key="VisibilityConverter" />
+        <converter:InverseVisibilityConverter x:Key="InverseVisibilityConverter" />
+
+        <Style x:Key="NameStyle" TargetType="{x:Type TextBlock}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsGroup}" Value="true">
+                    <Setter Property="FontWeight" Value="Bold" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <DataTemplate x:Key="MetroDataGridColumnHeaderTemplate">
+            <TextBlock Text="{Binding Converter={StaticResource ToUpperConverter}}"
+                       Foreground="#ff333333"
+                       Background="#ffe6ecf0"
+                       Margin="4,0,4,0">
+            </TextBlock>
+        </DataTemplate>
+
+        <Style x:Key="ColumnHeaderLeft" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="ContentTemplate" Value="{StaticResource MetroDataGridColumnHeaderTemplate}" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Background" Value="#ffe6ecf0" />
+            <Setter Property="Foreground" Value="#ff333333" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background"
+                            Value="{Binding Path=BackgroundColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ColumnHeaderCenter" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="ContentTemplate" Value="{StaticResource MetroDataGridColumnHeaderTemplate}" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="Background" Value="#ffe6ecf0" />
+            <Setter Property="Foreground" Value="#ff333333" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background"
+                            Value="{Binding Path=BackgroundColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="{x:Type model:TreeListItem}" TargetType="{x:Type model:TreeListItem}">
+            <EventSetter Event="DragOver" Handler="OnTreeListItemDragOver" />
+            <EventSetter Event="Drop" Handler="OnTreeListItemDrop" />
+            <EventSetter Event="MouseMove" Handler="OnTreeListItemMouseMove" />
+            <EventSetter Event="MouseDoubleClick" Handler="OnTreeListItemDoubleClick" />
+            
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Foreground" Value="#ff333333" />
+            <Setter Property="UIElement.SnapsToDevicePixels" Value="True" />
+            <Setter Property="AllowDrop" Value="True" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListViewItem}">
+                        <Border SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+                                Margin="0,4,0,0"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                Background="{TemplateBinding Background}">
+                            <Grid>
+                                <GridViewRowPresenter Content="{TemplateBinding ContentControl.Content}"
+                                                      HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                                                      SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Foreground"
+                                        Value="{Binding Path=BackgroundFocusColor, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+
+    </UserControl.Resources>
+    <model2:ScriptExplorerTreeListView x:Name="ColumnTreeList"
+                        model:GridViewColumnResize.Enabled="True"
+                        IsSynchronizedWithCurrentItem="True"
+                        SelectionChanged="OnTreeListSelectionChanged">
+        <model:TreeListView.View>
+            <GridView model:GridViewColumnResize.Enabled="True">
+                <GridView.Columns>
+
+                    <!--Column "Name"-->
+                    <GridViewColumn Header="{Binding ColumnHeader1}"
+                                    HeaderContainerStyle="{StaticResource ColumnHeaderLeft}"
+                                    model:GridViewColumnResize.Width="2*">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Name="TestSuiteTreeItem" MouseRightButtonDown="OnItemMouseRightButtonDown">
+
+                                    <model:RowExpander AutomationProperties.AutomationId="{Binding Name, StringFormat=TestSuiteTreeControl.RowExpander.{0}}" Margin="0,0,5,0">
+                                        <model:RowExpander.BackgroundColor>
+                                            <MultiBinding Converter="{StaticResource ColorConverter}" Mode="OneWay">
+                                                <Binding Path="BackgroundColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="BackgroundFocusColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="BackgroundNotValidColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="IsInFocusChain" /> 
+                                                <Binding Path="IsValid" />
+                                            </MultiBinding>
+                                        </model:RowExpander.BackgroundColor>
+                                    </model:RowExpander>
+                                    
+                                    <Image Source="{Binding IconName}" />
+
+                                    <TextBox x:Name="NameTextBox" 
+                                             behaviors:TextBoxBehavior.SelectAllTextOnFocus="True"
+                                             Visibility="{Binding IsEditMode, Converter={StaticResource InverseVisibilityConverter}}"
+                                             Text="{Binding Name}" 
+                                             HorizontalAlignment="Stretch"
+                                             VerticalAlignment="Center" 
+                                             Margin="5,1" 
+                                             ToolTip="{Binding ToolTip}"
+                                             IsVisibleChanged="TextBox_OnIsVisibleChanged" 
+                                             LostFocus="OnTreeListEditItemLostFocus">
+                                        <TextBox.Foreground>
+                                            <MultiBinding Converter="{StaticResource ColorConverter}" Mode="OneWay">
+                                                <Binding Path="BackgroundColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="BackgroundFocusColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="BackgroundNotValidColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="IsInFocusChain" />
+                                                <Binding Path="IsValid" />
+                                            </MultiBinding>
+                                        </TextBox.Foreground>
+                                    </TextBox>
+                                    <TextBlock x:Name="NameTextBlock"
+                                        Visibility="{Binding IsEditMode, Converter={StaticResource VisibilityConverter}}"
+                                        Style="{StaticResource NameStyle}" 
+                                        Text="{Binding Name}"
+                                        VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="5,1"
+                                        ToolTip="{Binding ToolTip}">
+                                        <TextBlock.Foreground>
+                                            <MultiBinding Converter="{StaticResource ColorConverter}" Mode="OneWay">
+                                                <Binding Path="BackgroundColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="BackgroundFocusColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="BackgroundNotValidColor" RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type scriptExplorerTree:ScriptExplorerTreeControl}}" />
+                                                <Binding Path="IsInFocusChain" />
+                                                <Binding Path="IsValid" />
+                                            </MultiBinding>
+                                        </TextBlock.Foreground>
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    
+
+                </GridView.Columns>
+            </GridView>
+        </model:TreeListView.View>
+    </model2:ScriptExplorerTreeListView>
+</UserControl>

@@ -1,0 +1,9 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="Any CPU" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution EH.PCSW.Testautomation.TestFramework[DeviceFunction[CoDIA[EH.PCPS.TestAutomation.PrototypeHMI20[AboutBox[GUI[ApplicationArea[MainView[]]]]]]]]]&#xD;&#xA;Solution EH.PCSW.Testautomation.TestFramework\DeviceFunction\CoDIA\EH.PCPS.TestAutomation.PrototypeHMI20&#xD;&#xA;Solution EH.PCSW.Testautomation.TestFramework" />
+  <StartupProject value="" />
+</Properties>

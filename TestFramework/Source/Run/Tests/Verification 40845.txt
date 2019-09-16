@@ -1,0 +1,8 @@
+﻿                        /*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+
+                        string path = "DeviceMenu//DS_MeasurementChannels_1";
+                        string value = "2-channel device";
+                        TC_OpenModuleOffline.Run();
+                        TC_ChangeParameter.Run(path, value);

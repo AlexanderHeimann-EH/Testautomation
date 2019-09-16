@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="EH.ImsOpcBridge.DataContracts"
+xmlns="EH.ImsOpcBridge.DataContracts"
+elementFormDefault="qualified">
+
+    <xs:complexType name="Authentication">
+      <xs:sequence>
+        <xs:element name="User" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Password" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Active" minOccurs="1" maxOccurs="1" nillable="false" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+	
+    <xs:complexType name="Gateway">
+      <xs:sequence>
+        <xs:element name="Model" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="SerialNumber" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="ActivationKey" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+	<xs:complexType name="OpcItems">
+	  <xs:sequence>
+		<xs:element name="opcItem" type="OpcItem" maxOccurs="unbounded" />
+	  </xs:sequence>
+	</xs:complexType>
+    
+	<xs:complexType name="OpcItem">
+      <xs:sequence>
+        <xs:element name="Name" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="ItemId" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Children" minOccurs="1" maxOccurs="1" nillable="false" type="OpcItems"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+	<xs:complexType name="OpcServerItem">
+      <xs:sequence>
+        <xs:element name="Name" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="ClassId" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="IpAddress" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+
+	<xs:complexType name="SupplyCareSettings">
+      <xs:sequence>
+        <xs:element name="Authentication" minOccurs="1" maxOccurs="1" nillable="false" type="Authentication"/>
+        <xs:element name="Port" minOccurs="1" maxOccurs="1" nillable="false" type="xs:integer"/>
+        <xs:element name="SamplingRate" minOccurs="1" maxOccurs="1" nillable="false" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+
+	<xs:complexType name="ConfiguredMeasurementItem">
+      <xs:sequence>
+        <xs:element name="Value" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="MappingType" minOccurs="1" maxOccurs="1" nillable="false" type="MappingTypes"/>
+      </xs:sequence>
+    </xs:complexType>
+
+	<xs:complexType name="ConfiguredMeasurement">
+      <xs:sequence>
+        <xs:element name="DeviceId" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurementItem"/>
+        <xs:element name="SensorId" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurementItem"/>
+        <xs:element name="Unit" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurementItem"/>
+        <xs:element name="DataType" minOccurs="1" maxOccurs="1" nillable="false" type="CommonFormatDataTypes"/>
+        <xs:element name="Timestamp" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurementItem"/>
+        <xs:element name="Quality" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurementItem"/>
+        <xs:element name="Value" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurementItem"/>
+        <xs:element name="Active" minOccurs="1" maxOccurs="1" nillable="false" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+
+	<xs:complexType name="RuntimeMeasurement">
+      <xs:sequence>
+        <xs:element name="RequestIndex" minOccurs="1" maxOccurs="1" nillable="false" type="xs:integer"/>
+        <xs:element name="DeviceId" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="SensorId" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Unit" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="DataType" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Timestamp" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Quality" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+        <xs:element name="Value" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+
+	<xs:complexType name="ConfiguredMeasurements">
+	  <xs:sequence>
+		<xs:element name="configuredMeasurement" type="ConfiguredMeasurement" maxOccurs="unbounded" />
+	  </xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="RuntimeMeasurements">
+    <xs:sequence>
+      <xs:element name="runtimeMeasurement" type="RuntimeMeasurement" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OpcServerItems">
+    <xs:sequence>
+      <xs:element name="opcServerItem" type="OpcServerItem" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InternetAddress">
+    <xs:sequence>
+      <xs:element name="Url" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+      <xs:element name="Port" minOccurs="1" maxOccurs="1" nillable="false" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="FisSettings">
+    <xs:sequence>
+      <xs:element name="Enabled" minOccurs="1" maxOccurs="1" nillable="false" type="xs:boolean"/>
+      <xs:element name="InternetAddress" minOccurs="1" maxOccurs="1" nillable="false" type="InternetAddress"/>
+      <xs:element name="Authentication" minOccurs="1" maxOccurs="1" nillable="false" type="Authentication"/>
+      <xs:element name="TimeSchedule" minOccurs="1" maxOccurs="1" nillable="false" type="FisTimeSchedules"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="ProxySettings">
+    <xs:sequence>
+      <xs:element name="Enabled" minOccurs="1" maxOccurs="1" nillable="false" type="xs:boolean"/>
+      <xs:element name="InternetAddress" minOccurs="1" maxOccurs="1" nillable="false" type="InternetAddress"/>
+      <xs:element name="Authentication" minOccurs="1" maxOccurs="1" nillable="false" type="Authentication"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Configuration">
+    <xs:sequence>
+      <xs:element name="Authentication" minOccurs="1" maxOccurs="1" nillable="false" type="Authentication"/>
+      <xs:element name="Gateway" minOccurs="1" maxOccurs="1" nillable="false" type="Gateway"/>
+      <xs:element name="SupplyCareSettings" minOccurs="1" maxOccurs="1" nillable="false" type="SupplyCareSettings"/>
+      <xs:element name="FisSettings" minOccurs="1" maxOccurs="1" nillable="false" type="FisSettings"/>
+      <xs:element name="ProxySettings" minOccurs="1" maxOccurs="1" nillable="false" type="ProxySettings"/>
+      <xs:element name="ConfiguredMeasurements" minOccurs="1" maxOccurs="1" nillable="false" type="ConfiguredMeasurements"/>
+      <xs:element name="CurrentLanguage" minOccurs="1" maxOccurs="1" nillable="false" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+	
+  <xs:simpleType name="CommonFormatDataTypes"> 
+    <xs:restriction base="xs:string"> 
+      <xs:enumeration value="ByteType" /> 
+      <xs:enumeration value="ShortType" /> 
+      <xs:enumeration value="UnsignedShortType" /> 
+      <xs:enumeration value="IntType" /> 
+      <xs:enumeration value="UnsignedIntType" /> 
+      <xs:enumeration value="LongType" /> 
+      <xs:enumeration value="UnsignedLongType" /> 
+      <xs:enumeration value="FloatType" /> 
+      <xs:enumeration value="DoubleType" /> 
+      <xs:enumeration value="IEEE754_32Type" /> 
+      <xs:enumeration value="IEEE754_64Type" /> 
+      <xs:enumeration value="DecimalType" /> 
+      <xs:enumeration value="BooleanType" /> 
+      <xs:enumeration value="StringType" /> 
+      <xs:enumeration value="DateTimeType" /> 
+    </xs:restriction> 
+  </xs:simpleType> 
+  
+  <xs:simpleType name="MappingTypes"> 
+    <xs:restriction base="xs:string"> 
+      <xs:enumeration value="StaticType" /> 
+      <xs:enumeration value="OpcValueType" /> 
+      <xs:enumeration value="OpcTimestampType" /> 
+      <xs:enumeration value="OpcQualityType" /> 
+    </xs:restriction> 
+  </xs:simpleType> 
+
+  <xs:simpleType name="FisTimeSchedules"> 
+    <xs:restriction base="xs:string"> 
+      <xs:enumeration value="TimeSchedule1min" /> 
+      <xs:enumeration value="TimeSchedule2min" /> 
+      <xs:enumeration value="TimeSchedule5min" /> 
+      <xs:enumeration value="TimeSchedule10min" /> 
+      <xs:enumeration value="TimeSchedule15min" /> 
+      <xs:enumeration value="TimeSchedule30min" /> 
+      <xs:enumeration value="TimeSchedule1h" /> 
+      <xs:enumeration value="TimeSchedule2h" /> 
+      <xs:enumeration value="TimeSchedule3h" /> 
+      <xs:enumeration value="TimeSchedule4h" /> 
+      <xs:enumeration value="TimeSchedule6h" /> 
+      <xs:enumeration value="TimeSchedule8h" /> 
+      <xs:enumeration value="TimeSchedule12h" /> 
+      <xs:enumeration value="TimeSchedule24h" /> 
+    </xs:restriction> 
+  </xs:simpleType> 
+
+</xs:schema>

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{BCF86347-8979-4301-AFEC-DEFE9AF5F9A4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ProTof_Testlibrary</RootNamespace>
+    <AssemblyName>ProTof_Testlibrary</AssemblyName>
+    <RanorexVersion>4</RanorexVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <NoWin32Manifest>True</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>..\DLL\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Communication">
+      <HintPath>..\DLL\Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunicationInterfaces">
+      <HintPath>..\DLL\CommunicationInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunicationLoader">
+      <HintPath>..\DLL\CommunicationLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceFunction">
+      <HintPath>..\DLL\DeviceFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceFunctionLoader">
+      <HintPath>..\DLL\DeviceFunctionLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceFuntionInterfaces">
+      <HintPath>..\DLL\DeviceFuntionInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="HostApplication">
+      <HintPath>..\DLL\HostApplication.dll</HintPath>
+    </Reference>
+    <Reference Include="HostApplicationInterfaces">
+      <HintPath>..\DLL\HostApplicationInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="HostApplicationLoader">
+      <HintPath>..\DLL\HostApplicationLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="OperatingSystem">
+      <HintPath>..\DLL\OperatingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="OperatingSystemInterfaces">
+      <HintPath>..\DLL\OperatingSystemInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="OperatingSystemLoader">
+      <HintPath>..\DLL\OperatingSystemLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="Testlibrary">
+      <HintPath>..\DLL\Testlibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\DLL\Validation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>eeb4d762-fdd4-40c1-850e-f5a319cabc07</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>d54bd91d-1dc9-43ee-bb7a-ebc242280766</id>
+    </Compile>
+    <Compile Include="TestModule\Configuration\GetConfigurationData.cs">
+      <id>9b060cc3-fbd5-463a-888f-70fdb2e02fb3</id>
+    </Compile>
+    <Compile Include="TestModule\Configuration\GetTestFrameworkVersion.cs">
+      <id>76d63fdd-646c-4180-ac24-a88addc0515e</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Compare\TM_CloseCompareViaWindow.cs">
+      <id>37bffc71-b747-4925-9a45-2903ab905662</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Compare\TM_CompareOnlineVsOffline.cs">
+      <id>34c61b14-ea81-4e60-a17b-7c72a4471d27</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Compare\TM_OpenCompareViaMenu.cs">
+      <id>8b4977bc-ca8f-4867-b934-5c822e441faf</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_CloseConcentrationViaWindow.cs">
+      <id>049a4001-6dc2-448e-8f6e-7346e53a24d8</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_CompareAndClose.cs">
+      <id>695e7e11-faf6-49e9-a26d-c8454e04e574</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_ConcentrationRegressionBaseSettings.cs">
+      <id>2dc4f354-b3a8-4e1c-a723-caf76405ee7b</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_ConcentrationRegressionCoefficients.cs">
+      <id>0a2e8a24-4feb-475b-b0c7-46b351046d9f</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_ConcentrationSetupDelivery.cs">
+      <id>52e2a117-2d45-4b99-be02-22a573cf5803</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_ConfigureBaseSettingsForFineTuning.cs">
+      <id>2a18c738-26ee-4677-a05a-da636d00b24b</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_ImportFile.cs">
+      <id>cf8794d5-5a45-47a3-88b3-72346aa73d78</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_OpenAndConfigureModule.cs">
+      <id>a2dfac5d-2fb9-4077-9fc4-d8e61461ec32</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Concentration\TM_OpenConcentrationViaMenu.cs">
+      <id>04a7eb42-a198-4a35-84a2-e63db0227fe2</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\CreateDocumentation\TM_CloseCreateDocumentationViaWindow.cs">
+      <id>6e07392b-ca19-4198-99ce-f8b2fb6b9447</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\CreateDocumentation\TM_CreateDokumentationAsPDF.cs">
+      <id>3044dd48-9148-435d-b17f-980e0ed5f080</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\CreateDocumentation\TM_OpenCreateDocumentationWithWaiting.cs">
+      <id>e1b39cd2-8625-4edf-b5d0-00a888826bd3</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\LZT.cs">
+      <id>51f53d4d-f9c7-4558-a8d1-25eb4c2fb2c3</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_CloseEnvelopeCurveWithoutSaving.cs">
+      <id>2e051f7e-8f15-481e-b696-ea40da822d2c</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_CreateNewDiagramWithoutSavingAvailable.cs">
+      <id>fd358e2a-fce5-4d20-a116-4629891606bd</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_LongtimeOpenReadCurveClose.cs">
+      <id>60cd2bce-5bc5-4232-b8a7-40c8e7c1a579</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_DiscardMAPEditing.cs">
+      <id>d0056996-42dc-4465-b144-1adf3f370ed7</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_OpenEnvelopeCurveViaMenuWithWaiting.cs">
+      <id>3b1d1394-ad7c-4830-a38c-b51ee49e035c</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_ReadMAPFromDevice.cs">
+      <id>883914cc-261e-422c-acb7-c4a80aac961b</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EnvelopeCurve\TM_SingleCurveReadingViaIconWithWaiting.cs">
+      <id>8554bd2c-f39a-4222-8ce4-273aa0d03c2f</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EventList\TM_CloseEventListViaWindow.cs">
+      <id>2870f469-dbc2-4890-a46c-23f9b7167ba4</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EventList\TM_OpenEventListViaMenuWithWaiting.cs">
+      <id>f34ec15e-ce56-4e16-8ba9-eeabe671212a</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\EventList\TM_RefreshEventList.cs">
+      <id>fd3d688b-a293-4237-9b9d-6bf07d9a5354</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_CheckGUIAfterOpening.cs">
+      <id>44c642e9-53b5-413e-8500-5a7442429375</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_CloseHistoromViaWindow.cs">
+      <id>13850573-e37d-4ec3-beac-a677e8235847</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_DeleteHistoromData.cs">
+      <id>1386da1a-5f66-4e06-b882-26f346e4e43a</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_ExportHistoromData.cs">
+      <id>9f3b45f4-64dc-4f4a-8968-db3d97106a76</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_LoadHistoromData.cs">
+      <id>67684b9f-aefb-41fe-a534-0d4987c2f400</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_OpenHistoromViaMenuWithWaiting.cs">
+      <id>b71ea653-353c-4b0c-b57b-b798b9ac235a</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_ReadEvents.cs">
+      <id>ed6a75be-82d9-4e7b-88c4-23b7d7360e1f</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Historom\TM_SaveHistoromData.cs">
+      <id>ef82bd94-0f24-4088-afbc-41f702678a84</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Linearization\TM_CloseLinearizationOffline.cs">
+      <id>9597750b-94ec-43df-99d1-060825996107</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Linearization\TM_CloseLinearizationOnline.cs">
+      <id>1859bbf5-3890-4e0d-81c7-6edb29d666c4</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Linearization\TM_OpenLinearizationOfflineWithWaiting.cs">
+      <id>66396902-9726-4816-ad87-7249cde6d4ff</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Linearization\TM_OpenLinearizationOnlineWithWaiting.cs">
+      <id>c2ca3db4-04af-461b-ad45-832ca508fcb2</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_CheckParameterForValue.cs">
+      <id>20364476-6dab-4abe-ab1e-927d50cd3238</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_CloseParameterizationOffline.cs">
+      <id>2560da48-98b3-49d8-93b6-98177df0e685</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_CloseParameterizationOnline.cs">
+      <id>3e79c931-5cc8-45f7-9e5b-64495acc80f8</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_OpenParameterisationOfflineWithWaiting.cs">
+      <id>cbea4e6a-2930-4ebc-a67a-3e019007bbdc</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_OpenParameterisationOnlineWithWaiting.cs">
+      <id>eb6bd949-fd46-40d9-b1e6-567587d58a68</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_SelectParameter.cs">
+      <id>44cf9c5b-367e-4d24-90da-757a0799f7ef</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\Parameterisation\TM_SetParameter.cs">
+      <id>abb17ab4-9e9c-4a53-98f9-f889c5cc499e</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\TM_RandomOpenCloseComplex.cs">
+      <id>b345ccf5-4c4a-4d87-83b0-e8a90a0907e0</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\TM_RandomOpenCloseComplexWithMatrix.cs">
+      <id>3427fa2b-d14e-4fd6-aa3c-6cb465c0a79a</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\TM_RandomOpenCloseSimple.cs">
+      <id>071ef3f5-e8d2-4b96-ae91-820ce93365b8</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\SaveRestore\TM_CloseSaveRestoreViaWindow.cs">
+      <id>55126b30-b418-4283-8618-91ed375c62b3</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\SaveRestore\TM_OpenSaveRestoreViaMenuWithWaiting.cs">
+      <id>97103319-2fb6-43f7-997f-9b163f1a0a5c</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\SaveRestore\TM_RestoreWithDownload.cs">
+      <id>375a769a-f966-43de-bf84-c1c5519c2901</id>
+    </Compile>
+    <Compile Include="TestModule\DeviceDTMs\SaveRestore\TM_SaveWithUpload.cs">
+      <id>017d56e0-1868-401c-b226-b590c7abdf50</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_ConnectCurrentDeviceViaIcon.cs">
+      <id>4f3b7da5-25cb-482b-b34e-3e7e3187c27e</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_ExitFrame.cs">
+      <id>55d92e15-7959-4a1b-9527-c87392635e0a</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_FDTDownload.cs">
+      <id>1e9fca29-9702-4ab9-a613-691f49a5a137</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_FDTPrintAsPDF.cs">
+      <id>080b511d-aeaa-4509-ac28-2476612099e5</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_FDTUpload.cs">
+      <id>8c72fd1e-0725-4b2c-9c03-cfc6d25683cf</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_FindDevice.cs">
+      <id>d0cc6bcf-65c7-4c87-a305-0ee1e83c0c3d</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_ProjectCloseWithoutSaving.cs">
+      <id>bd1353db-b0a8-4919-95d1-1e5583844783</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_ProjectLoadViaTextField.cs">
+      <id>e9c62b11-26c6-42ab-9d2c-7aff33e71a6c</id>
+    </Compile>
+    <Compile Include="TestModule\Frames\TM_StartFrameFieldCareWithDefault.cs">
+      <id>5fe9b332-66eb-4df6-bc65-b74ab0ec6ce5</id>
+    </Compile>
+    <Compile Include="TestModule\LongTerm\TM_CreateDocumentation.cs">
+      <id>cb2b9226-63c0-4159-bc26-a48d502750b3</id>
+    </Compile>
+    <Compile Include="TestModule\LongTerm\TM_EnvelopeCurve.cs">
+      <id>14227124-7b8a-4e87-b818-fbbd2856e702</id>
+    </Compile>
+    <Compile Include="TestModule\LongTerm\TM_EventList.cs">
+      <id>c20b7529-1a3f-4510-a109-a4acf9a76f4b</id>
+    </Compile>
+    <Compile Include="TestModule\LongTerm\TM_OnlineParameterisation.cs">
+      <id>2de7dda3-b5da-4bc7-9be3-2e562c368de8</id>
+    </Compile>
+    <None Include="app.config">
+      <id>83a548c0-e127-41c1-818b-32ee71d4f9b0</id>
+    </None>
+    <Content Include="ProTof_Testlibrary.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>5685fda4-02b8-4f54-88e6-ec690ff789a3</id>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

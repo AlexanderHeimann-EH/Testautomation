@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMFXA291.V20501\obj\x86\Release\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMFXA291.V20501\obj\x86\Release\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMFXA291.V20501\obj\x86\Release\EH.PCPS.TestAutomation.CDICommDTMFXA291.V20501.csprojResolveAssemblyReference.cache

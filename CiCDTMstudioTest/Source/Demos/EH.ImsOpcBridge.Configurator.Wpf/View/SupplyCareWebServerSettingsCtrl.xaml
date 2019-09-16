@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Configurator.View.SupplyCareWebServerSettingsCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.Configurator.View"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             d:DataContext="{d:DesignInstance {x:Type viewModel:FisConnectionSettingsControlVm}, IsDesignTimeCreatable=True}"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="1200">
+
+
+
+    <Grid x:Uid="Grid_1"  Name="OwnCommDtmGui" Grid.Row="1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_0" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_1" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_3" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_4" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_5" Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  x:Uid="ColumnDefinition_1" Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <view:CheckBoxSmallControl  x:Uid="CheckBoxSmallControl1" x:Name="CheckBoxSmallControl1" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top"  Visibility="Visible"
+                                    CheckBoxLabel="{Binding Path=CheckBoxLabel, Mode=TwoWay}" IsChecked="{Binding Path=IsChecked, Mode=TwoWay}" />
+
+
+
+        <!--<view:ComboTextBoxSmallControl x:Uid="ComboTextBoxSmallControl1" x:Name="ComboTextBoxSmallControl1" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top"  Visibility="Visible"
+                                  ComboBoxLabel="{Binding Path=ComboBoxLabel1}" ComboBoxLabelUnit="" ComboBoxSelectionChangedCommand="{Binding NetworkConnectionChanged}"
+                                  ComboBoxItemsSource="{Binding Path=NetworkConnections, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ComboBoxActiveItem="{Binding Path=ActiveNetworkConnection, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                  IsTextBoxVisible="Hidden" TextBoxLabel="{Binding Path=TextBoxLabel, Mode=TwoWay}" TextBoxValue="{Binding Path=TextBoxText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                  TextBoxChanged="{Binding TextBoxTextChanged}" TextBoxLabelUnit="{Binding Path=TextBoxLabelUnit, Mode=TwoWay}" />
+
+
+
+        <view:TextBoxesSmallControl  x:Uid="TextBoxesControl1" x:Name="TextBoxesControl1" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top"  Visibility="Visible" IsTextBox1Visible="Hidden"
+                                   TextBoxLabel1="" TextBoxValue1="{Binding Path=TextBox1Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox1Changed="{Binding TextBox1TextChanged}" TextBoxLabelUnit1="{Binding Path=TextBoxLabelUnit1, Mode=TwoWay}" IsTextBox2Visible="Visible" 
+                                   TextBoxLabel2="{Binding Path=NetworkPropertiesLabel, Mode=TwoWay}" TextBoxValue2="{Binding Path=PropertiesText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                   IsReadOnlyTextBox2="True"  TextBoxLabelUnit2="" />-->
+
+
+        <view:TextBoxesSmallControl  x:Uid="TextBoxesControl2" x:Name="TextBoxesControl2" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top"  Visibility="Visible" IsTextBox1Visible="Hidden"
+                                   TextBoxLabel1="{Binding Path=TextBoxLabel1, Mode=TwoWay}" TextBoxValue1="{Binding Path=TextBox1Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox1Changed="{Binding TextBox1TextChanged}" TextBoxLabelUnit1="{Binding Path=TextBoxLabelUnit1, Mode=TwoWay}" ValidationError="{Binding Path=ValidationError, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ValidationRuleTextBox1="NotNullOrEmptyRule" IsTextBox2Visible="Visible" 
+                                   TextBoxLabel2="{Binding Path=TextBoxLabel2, Mode=TwoWay}" TextBoxValue2="{Binding Path=TextBox2Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox2Changed="{Binding TextBox2TextChanged}" TextBoxLabelUnit2="{Binding Path=TextBoxLabelUnit2, Mode=TwoWay}" ValidationRuleTextBox2="IntRangeRule|NotNullOrEmptyRule" IntRangeRuleMinValueTextBox2="0" IntRangeRuleMaxValueTextBox2="65536" />
+
+
+        <view:TextBoxesSmallControl  x:Uid="TextBoxesControl3" x:Name="TextBoxesControl3" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top"  Visibility="Visible"
+                                   TextBoxLabel1="{Binding Path=LoginLabel1, Mode=TwoWay}" TextBoxValue1="{Binding Path=LoginText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox1Changed="{Binding LoginTextChanged}" TextBoxLabelUnit1="" ValidationError="{Binding Path=ValidationError, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"  ValidationRuleTextBox1="" IsTextBox2Visible="Visible" 
+                                   TextBoxLabel2="{Binding Path=PassWordLabel2, Mode=TwoWay}" TextBoxValue2="{Binding Path=PassWordText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                                   TextBox2Changed="{Binding PassWordTextChanged}" TextBoxLabelUnit2=""  ValidationRuleTextBox2="" />
+
+    </Grid>
+</UserControl>
+             

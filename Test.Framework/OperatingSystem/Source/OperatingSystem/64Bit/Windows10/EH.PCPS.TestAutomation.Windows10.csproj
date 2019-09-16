@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97AEDEB9-588D-4147-B2B5-507C1100A091}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.Windows10</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.Windows10</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <RanorexVersion>6.1</RanorexVersion>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\OperatingSystem\64Bit\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows10.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\OperatingSystem\64Bit\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\OperatingSystem\64Bit\EH.PCPS.TestAutomation.Windows10.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functions\Dialogs\Execution\OpenFileBrowser.cs">
+      <id>cc1f231e-62c4-474a-bc8f-228028eef5ab</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\Execution\SaveAsFileBrowser.cs">
+      <id>93ac8a79-192b-4ca1-85a2-26026d5d27ce</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\Validation\IsOpenDialogOpen.cs">
+      <id>1366c0c0-afcd-4b5f-9747-c3c24dd85b46</id>
+    </Compile>
+    <Compile Include="Functions\Dialogs\Validation\IsSaveAsDialogOpen.cs">
+      <id>a08902e5-7dd9-4b2b-b325-08d1c49ff7cb</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FileBrowserRepository.cs">
+      <id>cf0e42fd-eaad-43d0-b8c7-009c77411216</id>
+      <BoundTo>e1805565-316d-4e3b-b79b-7e868b9f5391</BoundTo>
+      <DependentUpon>FileBrowserRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\Dialogs\MessageElements.cs">
+      <id>d4bf9356-704f-4f61-aee5-439007598ac8</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\Messages.cs">
+      <id>aba0f93f-08c6-472b-bc76-cb64b16a1ec9</id>
+      <BoundTo>3d226b2e-dd1f-4eb3-bb9c-e3405f14ee31</BoundTo>
+      <DependentUpon>Messages.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="GUI\Dialogs\OpenFileBrowserElements.cs">
+      <id>5534a2b6-219d-4881-92b1-6cf81046e086</id>
+    </Compile>
+    <Compile Include="GUI\Dialogs\SaveAsFileBrowserElements.cs">
+      <id>e99dc41c-6ae1-4d11-bb4b-c5278a67807d</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>2d1fef4a-5b61-4424-abf1-2d5959f0a26f</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\OperatingSystemInterfaces\EH.PCPS.TestAutomation.OperatingSystemInterfaces.csproj">
+      <Project>{84570471-ED0C-4D17-8847-2A912DA4AD5D}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GUI\Dialogs\FileBrowserRepository.rximg">
+      <BoundTo>e1805565-316d-4e3b-b79b-7e868b9f5391</BoundTo>
+      <DependentUpon>FileBrowserRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a10373cd-41a8-48a2-ab8d-15a5be425faa</id>
+    </None>
+    <None Include="GUI\Dialogs\FileBrowserRepository.rxrep">
+      <id>e1805565-316d-4e3b-b79b-7e868b9f5391</id>
+      <repoid>45ca7189-48e6-4e3a-aaa6-e1d2e59ee2b8</repoid>
+      <reporootid>109df65e-c2c5-45b6-b9ed-8d7be86f998a</reporootid>
+    </None>
+    <None Include="GUI\Dialogs\Messages.rximg">
+      <BoundTo>3d226b2e-dd1f-4eb3-bb9c-e3405f14ee31</BoundTo>
+      <DependentUpon>Messages.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a8c925c4-3200-4cbe-ba18-321e8f6f7acc</id>
+    </None>
+    <None Include="GUI\Dialogs\Messages.rxrep">
+      <id>3d226b2e-dd1f-4eb3-bb9c-e3405f14ee31</id>
+      <repoid>c9741e97-6e1f-4df6-ac89-4402adb7469b</repoid>
+      <reporootid>dab644b0-0297-4856-ac4f-3a65318a3e51</reporootid>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

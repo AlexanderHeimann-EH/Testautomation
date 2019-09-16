@@ -1,0 +1,12 @@
+﻿<FlowDocument xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Uid="FlowDocument_1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              FontSize="15" FontFamily="Arial" LineHeight="20" IsHyphenationEnabled="false" PagePadding="5" >
+    <Paragraph x:Uid="Paragraph_1" Margin="0, 0, 0, 10">
+        OPC Bridge - Copyright <TextBlock x:Uid="TextBlock_1" TextWrapping="NoWrap">Endress+Hauser</TextBlock> 2014. All rights reserved. The entire content of this program including pictures and logos are the exclusive property of <TextBlock x:Uid="TextBlock_2" TextWrapping="NoWrap">Endress+Hauser</TextBlock> and/or its affiliates (<TextBlock x:Uid="TextBlock_3" TextWrapping="NoWrap">"Endress+Hauser"</TextBlock>) or <TextBlock x:Uid="TextBlock_4" TextWrapping="NoWrap">Endress+Hauser</TextBlock> has the rights to use it. Without the express written permission of <TextBlock x:Uid="TextBlock_5" TextWrapping="NoWrap">Endress+Hauser</TextBlock>, this content may not be disseminated and altered. It may also not be copied and modified in any form, whether in whole or in part or made accessible to third parties for commercial purpose.
+    </Paragraph>
+    <Paragraph x:Uid="Paragraph_2" Margin="0, 0, 0, 10">
+        <TextBlock x:Uid="TextBlock_6" TextWrapping="NoWrap">Endress+Hauser</TextBlock>, People for Process Automation and OPC Bridge are trademarks or registered trademarks of <TextBlock x:Uid="TextBlock_7" TextWrapping="NoWrap">Endress+Hauser</TextBlock> in many jurisdictions worldwide as well as the logos of <TextBlock x:Uid="TextBlock_8" TextWrapping="NoWrap">Endress+Hauser</TextBlock>.
+    </Paragraph>
+    <Paragraph x:Uid="Paragraph_3" Margin="0">
+        By using this program you agree to the End User License Agreement. You can find this license agreement, identified as "EulaEH_EN.txt", in the OPC Bridge folder or on the DVD. Please read this agreement carefully before using this program.
+    </Paragraph>
+</FlowDocument>

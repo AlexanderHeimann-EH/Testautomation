@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\CDI\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20501\obj\Release\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20501\obj\Release\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\CDI\CDICommDTMTCPIP.V20501\obj\Release\EH.PCPS.TestAutomation.CDICommDTMTCPIP.V20501.pdb

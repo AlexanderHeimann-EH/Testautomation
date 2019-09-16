@@ -1,0 +1,5 @@
+path,setParameter,setValue,checkParameter,checkValue
+CLD18//Set up//Damping main value://Damping main value:,Damping main value:,10,Damping main value:,10
+CLD18//Set up//Expert//System//Device tag:,Device tag:,EH_CLD18_9999,Device tag:,EH_CLD18_9999
+CLD18//Set up//Damping main value://Damping main value:,Damping main value:,0,Damping main value:,0
+CLD18//Set up//Expert//System//Device tag:,Device tag:,EH_CLD18_0000,Device tag:,EH_CLD18_0000

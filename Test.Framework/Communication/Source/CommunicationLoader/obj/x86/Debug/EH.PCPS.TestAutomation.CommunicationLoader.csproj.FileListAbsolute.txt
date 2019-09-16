@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationLoader\obj\x86\Debug\EH.PCPS.TestAutomation.CommunicationLoader.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommunicationLoader.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommunicationLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommunicationLoader.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationLoader\obj\x86\Debug\EH.PCPS.TestAutomation.CommunicationLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\CommunicationLoader\obj\x86\Debug\EH.PCPS.TestAutomation.CommunicationLoader.pdb

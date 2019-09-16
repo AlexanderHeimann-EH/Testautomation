@@ -1,0 +1,9 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.V21000.XML
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.V21000.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.V21000.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.V21000.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.V21000.GUI.MenuArea.Toolbar.Icons.resources
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.V21000.Resources.FieldCareLanguageIDs.resources
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.V21000.csproj.GenerateResource.Cache
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.V21000.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_2.10.00\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.V21000.pdb

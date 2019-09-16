@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    
+    <Name>View Model</Name>
+    <Description>Creates a class suitable for use as a View Model, which implements INotifyPropertyChanged.</Description>
+    <Icon>ViewModelItemTemplate.ico</Icon>
+    <TemplateID>341358cd-cacb-4f5f-9e5d-be7b3f8a4a97</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>ViewModel.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>System</Assembly>
+			</Reference>
+		</References>
+    <ProjectItem ReplaceParameters="true">ViewModel.cs</ProjectItem>    
+  </TemplateContent>
+
+  <!-- Use the appropriate IWizard from the ViewModelWizard assembly. -->
+  <WizardExtension>
+    <Assembly>
+      ViewModelWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e0700af0fcefc5c7
+    </Assembly>
+    <FullClassName>ViewModelWizard.ViewModelWizard</FullClassName>
+  </WizardExtension>
+  
+</VSTemplate>

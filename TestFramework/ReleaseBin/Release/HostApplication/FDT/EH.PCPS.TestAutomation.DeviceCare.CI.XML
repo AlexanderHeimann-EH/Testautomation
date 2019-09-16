@@ -1,0 +1,3304 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.DeviceCare.CI</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.AddDevice">
+            <summary>
+            Description of AddDevice.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.AddDevice.Run(System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            The run.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+            <param name="device">
+            The device.
+            </param>
+            <param name="configurationSettings">
+            The configuration Settings.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.AddDevice.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+            <param name="device">
+            The device.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseFunction">
+            <summary>
+            Description of CloseFunction.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseFunction.Run(System.String)">
+            <summary>
+            Closes any DTM function by its name and validates if the action was successful
+            </summary>
+            <param name="functionName">The name of the DTM function</param>
+            <returns>True if the action was successful</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseHostApplication">
+            <summary>
+            The close host application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseHostApplication.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseHostApplication.Run(System.Int32)">
+            <summary>
+            The run.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time out in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseProject">
+            <summary>
+            The close project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CloseProject.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.ConnectDevice">
+            <summary>
+            The connect device.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.ConnectDevice.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SwitchToFunction">
+            <summary>
+            The close project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SwitchToFunction.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateProject">
+            <summary>
+            Description of CreateProject.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateProject.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="projectName">
+            The project name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateTopologyOffline">
+            <summary>
+            The create topology offline.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateTopologyOffline.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateTopologyOffline.Run(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication.
+            </param>
+            <param name="devices">
+            The devices.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateTopologyOnline">
+            <summary>
+            The create topology online.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateTopologyOnline.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.CreateTopologyOnline.Run(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication.
+            </param>
+            <param name="devices">
+            The devices.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.DeleteProject">
+            <summary>
+            Description of CloseProject.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.DeleteProject.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="projectName">
+            The project Name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.DisconnectDevice">
+            <summary>
+            The disconnect device.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.DisconnectDevice.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetCommDtmContainerPath">
+            <summary>
+            Description of GetCommDTMContainerPath.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetCommDtmContainerPath.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetCriticalError">
+            <summary>
+            Class GetCriticalError.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetCriticalError.Run">
+            <summary>
+            Checks DTM messages for a critical error
+            </summary>
+            <returns>List with critical error message or list with empty string.</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetDeviceFunctionInFocus">
+            <summary>
+            The get device function in focus.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetDeviceFunctionInFocus.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetDeviceList">
+            <summary>
+            The get device list.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetDeviceList.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetDtmContainerPath">
+            <summary>
+            The get DTM container path.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetDtmContainerPath.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetHostApplicationLanguage">
+            <summary>
+            The get host application language.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetHostApplicationLanguage.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetMessageLog">
+            <summary>
+            Description of GetMessageLog.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetMessageLog.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:Ranorex.List"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetSelectedDevice">
+            <summary>
+            The get selected device.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.GetSelectedDevice.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.LoadProject">
+            <summary>
+            The load project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.LoadProject.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="projectName">
+            The project Name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenAdditionalFunction">
+            <summary>
+            Description of OpenAdditionalFunction.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenAdditionalFunction.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenFunction">
+            <summary>
+            The open function.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenFunction.Run(System.String)">
+            <summary>
+            Opens a FDT specified DTM function by its name and validates if the action was successful
+            </summary>
+            <param name="functionName">The name of the DTM function</param>
+            <returns>True if the action was successful</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenHostApplication">
+            <summary>
+            The open host application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenHostApplication.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenHostApplication.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="path">
+            The path.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.OpenHostApplication.Run(System.String,System.Int32)">
+            <summary>
+            The run.
+            </summary>
+            <param name="path">
+            The path.
+            </param>
+            <param name="timeOutInMilliseconds">
+            The time out in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.PrintDeviceInformation">
+            <summary>
+            Description of PrintDeviceInformation.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.PrintDeviceInformation.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="filePathAndName">
+            The file path and name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.PrintDeviceInformation.Run(System.String,System.Int32)">
+            <summary>
+            The run.
+            </summary>
+            <param name="word">
+            The word.
+            </param>
+            <param name="number">
+            The number.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.ReadDataFromDevice">
+            <summary>
+            Description of ReadDataFromDevice.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.ReadDataFromDevice.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RegisterDeviceType">
+            <summary>
+            The register device type.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RegisterDeviceType.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RegisterDeviceType.Run(System.Collections.Generic.List{System.String})">
+            <summary>
+            The run.
+            </summary>
+            <param name="devices">
+            The devices.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RemoveDevice">
+            <summary>
+            The remove device.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RemoveDevice.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="parent">
+            The parent.
+            </param>
+            <param name="device">
+            The device.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RestoreDeviceData">
+            <summary>
+            Description of RestoreDeviceData.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RestoreDeviceData.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="fileName">
+            The file name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.RestoreDeviceData.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="filePath">
+            The file path.
+            </param>
+            <param name="fileName">
+            The file name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveDeviceData">
+            <summary>
+            The save device data.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveDeviceData.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="filePath">
+            The file path.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveDeviceData.Run(System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="filePath">
+            The file path.
+            </param>
+            <param name="fileName">
+            The file name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveDeviceData.Run(System.String,System.String,System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="filePath">
+            The file path.
+            </param>
+            <param name="fileName">
+            The file name.
+            </param>
+            <param name="fileFormat">
+            The file format.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveProject">
+            <summary>
+            Description of CloseProject.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveProject.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SaveProject.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="projectName">
+            The project Name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SelectDevice">
+            <summary>
+            The remove device.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.SelectDevice.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="device">
+            The device.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.UnregisterDeviceType">
+            <summary>
+            Description of UnregisterDeviceType.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.UnregisterDeviceType.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.UnregisterDeviceType.Run(System.Collections.Generic.List{System.String})">
+            <summary>
+            The run.
+            </summary>
+            <param name="devices">
+            The devices.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.WriteDataToDevice">
+            <summary>
+            Description of WriteDataToDevice.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.CommonFlows.WriteDataToDevice.Run">
+            <summary>
+            The run.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.AdditionalFunctions">
+            <summary>
+            The program functions.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.AdditionalFunctions.OpenMenu">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.AdditionalFunctions.OpenAdditionalFunction(System.String)">
+            <summary>
+            The open additional function.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.AdditionalFunctions.CloseAdditionalFunction(System.String)">
+            <summary>
+            The close additional function.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DeviceReport">
+            <summary>
+            The device report.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DeviceReport.OpenMenu">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DeviceReport.SaveDeviceReport">
+            <summary>
+            The open dtm function.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DeviceReport.PrintDeviceReport">
+            <summary>
+            The open dtm function.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DtmFunctions">
+            <summary>
+            The program functions.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DtmFunctions.OpenMenu">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DtmFunctions.OpenDtmFunction(System.String)">
+            <summary>
+            The open dtm function.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DtmFunctions.CloseDtmFunction(System.String)">
+            <summary>
+            The close dtm function.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DtmFunctions.SelectDtmFunctions(System.String)">
+            <summary>
+            The select dtm functions.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.DtmFunctions.CloseTabPage(System.String)">
+            <summary>
+            The close tab page.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions">
+            <summary>
+            The program functions.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.OpenMenu">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.RunToggleOnline">
+            <summary>
+            The toggle online.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.RunReadFromDevice">
+            <summary>
+            The read from device.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.RunWriteToDevice">
+            <summary>
+            The write to device.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.RunSaveDeviceData">
+            <summary>
+            The save device data.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.RunRestoreDeviceData">
+            <summary>
+            The restore device data.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.OpenRestoreDeviceDataBrowse">
+            <summary>
+            The restore device data browse.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.RunAdditionalFunctions">
+            <summary>
+            The additional functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Execution.ProgramFunctions.OpenShowProgress">
+            <summary>
+            The show progress.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.AdditionalFunctions">
+            <summary>
+            The program functions.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.AdditionalFunctions.IsMenuAvailable">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DeviceReport">
+            <summary>
+            The device report.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DeviceReport.IsMenuAvailable">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DtmFunctions">
+            <summary>
+            The program functions.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DtmFunctions.IsMenuAvailable">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DtmFunctions.IsMenuItemAvailable">
+            <summary>
+            The is menu item available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DtmFunctions.IsOnlineParameterizeAvailable">
+            <summary>
+            The is online parameterize available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.DtmFunctions.IsOfflineParameterizeAvailable">
+            <summary>
+            The is offline parameterize available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.ProgramFunctions">
+            <summary>
+            The program functions.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.MenuArea.MenuBar.Validation.ProgramFunctions.IsMenuAvailable">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath">
+            <summary>
+                Description of GetDTMContainerPath.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath.repo">
+            <summary>
+            Create an instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath.Run">
+            <summary>
+                Gets the path of the DTM Container(mdi client) from the DTMContainer repository of the actually used frame
+            </summary>
+            <returns>
+                string: with the absolute path of the DTM Container
+                null: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.HostApplication">
+            <summary>
+            The host application.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.HostApplication.CloseHostApplication">
+            <summary>
+            The open program functions.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.HostApplication.StartHostApplication(System.String)">
+            <summary>
+            Runs an application with a specified path
+            </summary>
+            <param name="path">The path of the program to start</param>
+            <returns>The process id of the started process</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.Project">
+            <summary>
+            The project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.Project.CreateAutomatically">
+            <summary>
+            The create automatically.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Execution.Project.CreateByAssistant">
+            <summary>
+            The create by assistant.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareModuleFunctions">
+            <summary>
+            This class provides function to close a singular module, which normaly cannot be closed because there is no close button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareModuleFunctions.IsClosingElementAvailable">
+            <summary>
+            The is closing element available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareModuleFunctions.IsFunctionOpened(System.String)">
+            <summary>
+            The is function opened.
+            </summary>
+            <param name="functionName">
+            The function name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions">
+            <summary>
+            Description of DeviceCareProcessFunctions.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.drives">
+            <summary>
+            The drives.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.driveList">
+            <summary>
+            The drive list.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.pathFragments">
+            <summary>
+            The path fragments.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.installationPath">
+            <summary>
+            The installation path.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.InstallationPath">
+            <summary>
+            Gets or sets the installation path.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.Run">
+            <summary>
+            Tries to find the DeviceCare directory on the local host
+            and starts the application if a directory was found
+            </summary>
+            <returns>True if the process was found and could be started</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.Run(System.String)">
+            <summary>
+            Tries to start DeviceCare under a provided path
+            </summary>
+            <param name="path">The complete path to the application including the application name</param>
+            <returns>Returns the process ID of the running process</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.Run(System.String,System.Int32)">
+            <summary>
+            Tries to start DeviceCare under a provided path
+            Waits for the frame for a specific amount of time provided in
+            'timeOutInMilliseconds'
+            </summary>
+            <param name="path">The complete path to the application including the application name</param>
+            <param name="timeOutInMilliseconds">The time in milliseconds to wait for the frame to exist</param>
+            <returns>The process ID of the running process</returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.GetSubDirectories(System.String)">
+            <summary>
+            Searches all subdirectories in a directory which matches the search pattern "En*"
+            This is used for top hierarchy search (searching for "Endress+Hauser" folders)
+            </summary>
+            <param name="root">The directory to get subdirectories from</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.LoadSubDirs(System.String)">
+            <summary>
+            Gets all subdirectories of a directory which match the search pattern "DeviceCare"
+            If directory is found, the installation path is set
+            </summary>
+            <param name="dir">The directory to search in</param>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.GetDriveVolumeLabel">
+            <summary>
+            Adds all volume labels of all hard drives of the host to a list
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Helpers.DeviceCareProcessFunctions.PopulatePathFragments">
+            <summary>
+            Here you can specify all the directories where the application should be searched subsequently
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication">
+            <summary>
+            The host application.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.ProcessName">
+            <summary>
+            The process name.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.IsHostApplicationOpen(System.String)">
+            <summary>
+            The is host application open.
+            </summary>
+            <param name="processName">
+            The process Name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.IsHostApplicationOpen(System.Int32)">
+            <summary>
+            The is host application open.
+            </summary>
+            <param name="processId">
+            The process id.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.IsHostApplicationClosed(System.String)">
+            <summary>
+            The is host application closed.
+            </summary>
+            <param name="processName">
+            The process Name.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.IsHostApplicationClosed(System.Int32)">
+            <summary>
+            The is host application open.
+            </summary>
+            <param name="processId">
+            The process id.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.WaitUntilHostApplicationOpened(System.Int32)">
+            <summary>
+            The wait until host application opened.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time out in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.HostApplication.WaitUntilHostApplicationClosed(System.Int32)">
+            <summary>
+            The wait until host application closed.
+            </summary>
+            <param name="timeOutInMilliseconds">
+            The time out in milliseconds.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.Project">
+            <summary>
+            The project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.ApplicationArea.MainView.Validation.Project.IsProjectCreated">
+            <summary>
+            The create automatically.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Execution.EventLog">
+            <summary>
+            The project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Execution.EventLog.OpenEventLog">
+            <summary>
+            The create automatically.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Execution.EventLog.CloseEventLog">
+            <summary>
+            The create by assistant.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Execution.EventLog.GetAllCriticalErrorFromEventLog">
+            <summary>
+            The get all critical error from event log.
+            </summary>
+            <returns>
+            The <see cref="T:System.Collections.Generic.List`1"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Execution.EventLog.GetAllMessagesFromEventLog">
+            <summary>
+            The get all messages from event log.
+            </summary>
+            <returns>
+            The <see cref="T:System.Collections.Generic.List`1"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Execution.EventLog.GetLastMessageFromEventLog">
+            <summary>
+            The get last message from event log.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Validation.EventLog">
+            <summary>
+            The project.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Validation.EventLog.IsEventLogOpen">
+            <summary>
+            The is event log open.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Validation.EventLog.IsEventLogClosed">
+            <summary>
+            The create automatically.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Validation.EventLog.IsEventLogTableAvailable">
+            <summary>
+            The is event log table available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.Dialogs.Validation.EventLog.AreMessagesAvailable">
+            <summary>
+            The are messages available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.Connection">
+            <summary>
+            The connection.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.Connection.IsDeviceConnected">
+            <summary>
+            The is device connected.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.ProgressIndicator">
+            <summary>
+            The progress indicator.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.ProgressIndicator.WaitUntilProgressIndicatorBecomesAvailable">
+            <summary>
+            The is progress indicator available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.ProgressIndicator.WaitUntilProgressIndicatorBecomesNotAvailable">
+            <summary>
+            The is progress indicator available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.ProgressIndicator.IsProgressIndicatorVisible">
+            <summary>
+            The is progress indicator visible.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.StatusMessage">
+            <summary>
+            The progress indicator.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.StatusMessage.WaitUntilStatusMessageBecomesAvailable">
+            <summary>
+            The wait until status message becomes available.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.Functions.StatusArea.StatusBar.Validation.StatusMessage.IsStatusMessageAvailable">
+            <summary>
+            The is progress indicator visible.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication">
+            <summary>
+            The class representing the DeviceCareApplication element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Instance">
+            <summary>
+            Gets the singleton class instance representing the DeviceCareApplication element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.ProtocolSelections">
+            <summary>
+            Gets or sets the value of variable ProtocolSelections.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.protocolselection">
+            <summary>
+            Gets or sets the value of variable protocolselection.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Modem">
+            <summary>
+            Gets or sets the value of variable Modem.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.modem_name">
+            <summary>
+            Gets or sets the value of variable modem_name.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Modem_CDI">
+            <summary>
+            Gets or sets the value of variable Modem_CDI.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.DTM_MenuSeparator">
+            <summary>
+            Gets or sets the value of variable DTM_MenuSeparator.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Function">
+            <summary>
+            Gets or sets the value of variable Function.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.TabElement">
+            <summary>
+            Gets or sets the value of variable TabElement.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.functiontext">
+            <summary>
+            Gets or sets the value of variable functiontext.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Device">
+            <summary>
+            Gets or sets the value of variable Device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.DeviceName">
+            <summary>
+            Gets or sets the value of variable DeviceName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.TabFunction">
+            <summary>
+            Gets or sets the value of variable TabFunction.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.tabfunctio">
+            <summary>
+            Gets or sets the value of variable tabfunctio.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.BoxName">
+            <summary>
+            Gets or sets the value of variable BoxName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.NewVariable">
+            <summary>
+            Gets or sets the value of variable NewVariable.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.USBModem">
+            <summary>
+            Gets or sets the value of variable USBModem.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Baudrate">
+            <summary>
+            Gets or sets the value of variable Baudrate.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Culture">
+            <summary>
+            Gets or sets the value of variable Culture.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.TabName">
+            <summary>
+            Gets or sets the value of variable TabName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.var_CommUnitName">
+            <summary>
+            Gets or sets the value of variable var_CommUnitName.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Header">
+            <summary>
+            The Header folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.ApplicationArea">
+            <summary>
+            The ApplicationArea folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.StatusArea">
+            <summary>
+            The StatusArea folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.MenuArea">
+            <summary>
+            The MenuArea folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplication.Dialog">
+            <summary>
+            The Dialog folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder">
+            <summary>
+            The HeaderFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Header  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder.TextTitle">
+            <summary>
+            The TextTitle item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder.TextTitleInfo">
+            <summary>
+            The TextTitle item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder.PictureLogoEndressHauser">
+            <summary>
+            The PictureLogoEndressHauser item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HeaderFolder.PictureLogoEndressHauserInfo">
+            <summary>
+            The PictureLogoEndressHauser item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder">
+            <summary>
+            The ApplicationAreaFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ApplicationArea  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.DTMContainer">
+            <summary>
+            The DTMContainer item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.DTMContainerInfo">
+            <summary>
+            The DTMContainer item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.ProtocolSelection">
+            <summary>
+            The ProtocolSelection folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.ConfigurationAdvanced">
+            <summary>
+            The ConfigurationAdvanced folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.ConnectionSelection">
+            <summary>
+            The ConnectionSelection folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ApplicationAreaFolder.ModuleSelection">
+            <summary>
+            The ModuleSelection folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder">
+            <summary>
+            The ProtocolSelectionFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ProtocolSelection  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonHART">
+            <summary>
+            The ButtonHART item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonHARTInfo">
+            <summary>
+            The ButtonHART item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonHART">
+            <summary>
+            The Text_ButtonHART item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonHARTInfo">
+            <summary>
+            The Text_ButtonHART item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonPROFIBUS">
+            <summary>
+            The ButtonPROFIBUS item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonPROFIBUSInfo">
+            <summary>
+            The ButtonPROFIBUS item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonPROFIBUS">
+            <summary>
+            The Text_ButtonPROFIBUS item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonPROFIBUSInfo">
+            <summary>
+            The Text_ButtonPROFIBUS item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonFOUNDATIONFieldbus">
+            <summary>
+            The ButtonFOUNDATIONFieldbus item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonFOUNDATIONFieldbusInfo">
+            <summary>
+            The ButtonFOUNDATIONFieldbus item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonFOUNDATIONFieldbus">
+            <summary>
+            The Text_ButtonFOUNDATIONFieldbus item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonFOUNDATIONFieldbusInfo">
+            <summary>
+            The Text_ButtonFOUNDATIONFieldbus item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonServiceInterface">
+            <summary>
+            The ButtonServiceInterface item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonServiceInterfaceInfo">
+            <summary>
+            The ButtonServiceInterface item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonServiceInterface">
+            <summary>
+            The Text_ButtonServiceInterface item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_ButtonServiceInterfaceInfo">
+            <summary>
+            The Text_ButtonServiceInterface item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonProtocol_General">
+            <summary>
+            The ButtonProtocol_General item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.ButtonProtocol_GeneralInfo">
+            <summary>
+            The ButtonProtocol_General item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_Title_Protocol">
+            <summary>
+            The Text_Title_Protocol item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProtocolSelectionFolder.Text_Title_ProtocolInfo">
+            <summary>
+            The Text_Title_Protocol item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder">
+            <summary>
+            The ConfigurationAdvancedFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ConfigurationAdvanced  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ButtonConfiguration">
+            <summary>
+            The ButtonConfiguration item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ButtonConfigurationInfo">
+            <summary>
+            The ButtonConfiguration item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ButtonAdvanced">
+            <summary>
+            The ButtonAdvanced item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ButtonAdvancedInfo">
+            <summary>
+            The ButtonAdvanced item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ContainerCommDtm">
+            <summary>
+            The ContainerCommDtm item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ContainerCommDtmInfo">
+            <summary>
+            The ContainerCommDtm item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ButtonScan">
+            <summary>
+            The ButtonScan item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfigurationAdvancedFolder.ButtonScanInfo">
+            <summary>
+            The ButtonScan item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder">
+            <summary>
+            The ConnectionSelectionFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ConnectionSelection  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.ButtonConnectionAutomatic">
+            <summary>
+            The ButtonConnectionAutomatic item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.ButtonConnectionAutomaticInfo">
+            <summary>
+            The ButtonConnectionAutomatic item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.Text_ButtonConnectionAutomatic">
+            <summary>
+            The Text_ButtonConnectionAutomatic item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.Text_ButtonConnectionAutomaticInfo">
+            <summary>
+            The Text_ButtonConnectionAutomatic item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.ButtonConnectionWizard">
+            <summary>
+            The ButtonConnectionWizard item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.ButtonConnectionWizardInfo">
+            <summary>
+            The ButtonConnectionWizard item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.Text_ButtonConnectionWizard">
+            <summary>
+            The Text_ButtonConnectionWizard item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionSelectionFolder.Text_ButtonConnectionWizardInfo">
+            <summary>
+            The Text_ButtonConnectionWizard item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder">
+            <summary>
+            The ModuleSelectionFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ModuleSelection  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleCloseButton">
+            <summary>
+            The ModuleCloseButton item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleCloseButtonInfo">
+            <summary>
+            The ModuleCloseButton item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPage">
+            <summary>
+            The ModuleTabPage item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPageInfo">
+            <summary>
+            The ModuleTabPage item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPages">
+            <summary>
+            The ModuleTabPages item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPagesInfo">
+            <summary>
+            The ModuleTabPages item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPagesText">
+            <summary>
+            The ModuleTabPagesText item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPagesTextInfo">
+            <summary>
+            The ModuleTabPagesText item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPageList">
+            <summary>
+            The ModuleTabPageList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ModuleSelectionFolder.ModuleTabPageListInfo">
+            <summary>
+            The ModuleTabPageList item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder">
+            <summary>
+            The StatusAreaFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new StatusArea  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.ProgressIndicator">
+            <summary>
+            The ProgressIndicator item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.ProgressIndicatorInfo">
+            <summary>
+            The ProgressIndicator item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.ConnectionIndicator">
+            <summary>
+            The ConnectionIndicator item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.ConnectionIndicatorInfo">
+            <summary>
+            The ConnectionIndicator item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.Text_CurrentTime">
+            <summary>
+            The Text_CurrentTime item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.Text_CurrentTimeInfo">
+            <summary>
+            The Text_CurrentTime item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.UsbCommunicationUnitList">
+            <summary>
+            The UsbCommunicationUnitList item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.UsbCommunicationUnitListInfo">
+            <summary>
+            The UsbCommunicationUnitList item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.UsbCommunicationUnitListElementText">
+            <summary>
+            The UsbCommunicationUnitListElementText item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.UsbCommunicationUnitListElementTextInfo">
+            <summary>
+            The UsbCommunicationUnitListElementText item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.UsbCommunicationUnitListElement">
+            <summary>
+            The UsbCommunicationUnitListElement item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.UsbCommunicationUnitListElementInfo">
+            <summary>
+            The UsbCommunicationUnitListElement item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.EventLog">
+            <summary>
+            The EventLog item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.EventLogInfo">
+            <summary>
+            The EventLog item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.StatusBar">
+            <summary>
+            The StatusBar item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.StatusBarInfo">
+            <summary>
+            The StatusBar item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.StatusBarText">
+            <summary>
+            The StatusBarText item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.StatusAreaFolder.StatusBarTextInfo">
+            <summary>
+            The StatusBarText item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MenuAreaFolder">
+            <summary>
+            The MenuAreaFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MenuAreaFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new MenuArea  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MenuAreaFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MenuAreaFolder.MainMenu">
+            <summary>
+            The MainMenu folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder">
+            <summary>
+            The MainMenuFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new MainMenu  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.ProgramFunctions">
+            <summary>
+            The ProgramFunctions item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.ProgramFunctionsInfo">
+            <summary>
+            The ProgramFunctions item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.DTMFunctions">
+            <summary>
+            The DTMFunctions item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.DTMFunctionsInfo">
+            <summary>
+            The DTMFunctions item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.AdditionalFunctions">
+            <summary>
+            The AdditionalFunctions item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.AdditionalFunctionsInfo">
+            <summary>
+            The AdditionalFunctions item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.DeviceReport">
+            <summary>
+            The DeviceReport item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.DeviceReportInfo">
+            <summary>
+            The DeviceReport item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.ProgramFunctionsMenuItems">
+            <summary>
+            The ProgramFunctionsMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.DTMFunctionMenuItems">
+            <summary>
+            The DTMFunctionMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.AdditionalFunctionMenuItems">
+            <summary>
+            The AdditionalFunctionMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.MainMenuItems">
+            <summary>
+            The MainMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.HelpMenuItems">
+            <summary>
+            The HelpMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.PAMMenuItems">
+            <summary>
+            The PAMMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.SettingsMenuItems">
+            <summary>
+            The SettingsMenuItems folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.ConnectionAssistantWizard">
+            <summary>
+            The ConnectionAssistantWizard folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuFolder.DeviceReportMenuItems">
+            <summary>
+            The DeviceReportMenuItems folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder">
+            <summary>
+            The ProgramFunctionsMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ProgramFunctionsMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.ToggleOnline">
+            <summary>
+            The ToggleOnline item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.ToggleOnlineInfo">
+            <summary>
+            The ToggleOnline item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.ReadFromDevice">
+            <summary>
+            The ReadFromDevice item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.ReadFromDeviceInfo">
+            <summary>
+            The ReadFromDevice item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.WriteToDevice">
+            <summary>
+            The WriteToDevice item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.WriteToDeviceInfo">
+            <summary>
+            The WriteToDevice item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.SaveDeviceData">
+            <summary>
+            The SaveDeviceData item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.SaveDeviceDataInfo">
+            <summary>
+            The SaveDeviceData item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.RestoreDeviceData">
+            <summary>
+            The RestoreDeviceData item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.RestoreDeviceDataInfo">
+            <summary>
+            The RestoreDeviceData item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.RestoreBrowse">
+            <summary>
+            The RestoreBrowse item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.RestoreBrowseInfo">
+            <summary>
+            The RestoreBrowse item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.AdditionalFunctions">
+            <summary>
+            The AdditionalFunctions item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.AdditionalFunctionsInfo">
+            <summary>
+            The AdditionalFunctions item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.ShowProgress">
+            <summary>
+            The ShowProgress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ProgramFunctionsMenuItemsFolder.ShowProgressInfo">
+            <summary>
+            The ShowProgress item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder">
+            <summary>
+            The DTMFunctionMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DTMFunctionMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OnlineParameterization">
+            <summary>
+            The OnlineParameterization item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OnlineParameterizationInfo">
+            <summary>
+            The OnlineParameterization item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OnlineParameterization_Text">
+            <summary>
+            The OnlineParameterization_Text item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OnlineParameterization_TextInfo">
+            <summary>
+            The OnlineParameterization_Text item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OfflineParameterization">
+            <summary>
+            The OfflineParameterization item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OfflineParameterizationInfo">
+            <summary>
+            The OfflineParameterization item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OfflineParameterization_Text">
+            <summary>
+            The OfflineParameterization_Text item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.OfflineParameterization_TextInfo">
+            <summary>
+            The OfflineParameterization_Text item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.MenuItem">
+            <summary>
+            The MenuItem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DTMFunctionMenuItemsFolder.MenuItemInfo">
+            <summary>
+            The MenuItem item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.AdditionalFunctionMenuItemsFolder">
+            <summary>
+            The AdditionalFunctionMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.AdditionalFunctionMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new AdditionalFunctionMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.AdditionalFunctionMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.AdditionalFunctionMenuItemsFolder.MenuItem">
+            <summary>
+            The MenuItem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.AdditionalFunctionMenuItemsFolder.MenuItemInfo">
+            <summary>
+            The MenuItem item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder">
+            <summary>
+            The MainMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new MainMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonExit">
+            <summary>
+            The ButtonExit item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonExitInfo">
+            <summary>
+            The ButtonExit item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonHome">
+            <summary>
+            The ButtonHome item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonHomeInfo">
+            <summary>
+            The ButtonHome item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonFullScreen">
+            <summary>
+            The ButtonFullScreen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonFullScreenInfo">
+            <summary>
+            The ButtonFullScreen item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonPAM">
+            <summary>
+            The ButtonPAM item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonPAMInfo">
+            <summary>
+            The ButtonPAM item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonSettings">
+            <summary>
+            The ButtonSettings item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonSettingsInfo">
+            <summary>
+            The ButtonSettings item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonHelp">
+            <summary>
+            The ButtonHelp item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonHelpInfo">
+            <summary>
+            The ButtonHelp item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonOnScreenKeyboard">
+            <summary>
+            The ButtonOnScreenKeyboard item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonOnScreenKeyboardInfo">
+            <summary>
+            The ButtonOnScreenKeyboard item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonBack">
+            <summary>
+            The ButtonBack item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.MainMenuItemsFolder.ButtonBackInfo">
+            <summary>
+            The ButtonBack item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder">
+            <summary>
+            The HelpMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new HelpMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonConnection">
+            <summary>
+            The ButtonConnection item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonConnectionInfo">
+            <summary>
+            The ButtonConnection item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonProgram">
+            <summary>
+            The ButtonProgram item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonProgramInfo">
+            <summary>
+            The ButtonProgram item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonDTM">
+            <summary>
+            The ButtonDTM item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonDTMInfo">
+            <summary>
+            The ButtonDTM item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonAbout">
+            <summary>
+            The ButtonAbout item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.ButtonAboutInfo">
+            <summary>
+            The ButtonAbout item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonConnection">
+            <summary>
+            The Text_ButtonConnection item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonConnectionInfo">
+            <summary>
+            The Text_ButtonConnection item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonProgram">
+            <summary>
+            The Text_ButtonProgram item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonProgramInfo">
+            <summary>
+            The Text_ButtonProgram item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonDTM">
+            <summary>
+            The Text_ButtonDTM item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonDTMInfo">
+            <summary>
+            The Text_ButtonDTM item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonAbout">
+            <summary>
+            The Text_ButtonAbout item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.HelpMenuItemsFolder.Text_ButtonAboutInfo">
+            <summary>
+            The Text_ButtonAbout item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder">
+            <summary>
+            The PAMMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new PAMMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonPAMSuite">
+            <summary>
+            The ButtonPAMSuite item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonPAMSuiteInfo">
+            <summary>
+            The ButtonPAMSuite item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonFieldCare">
+            <summary>
+            The ButtonFieldCare item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonFieldCareInfo">
+            <summary>
+            The ButtonFieldCare item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonModem">
+            <summary>
+            The ButtonModem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonModemInfo">
+            <summary>
+            The ButtonModem item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonFieldGate">
+            <summary>
+            The ButtonFieldGate item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonFieldGateInfo">
+            <summary>
+            The ButtonFieldGate item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonFieldXpert">
+            <summary>
+            The ButtonFieldXpert item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.ButtonFieldXpertInfo">
+            <summary>
+            The ButtonFieldXpert item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonPAMSuite">
+            <summary>
+            The Text_ButtonPAMSuite item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonPAMSuiteInfo">
+            <summary>
+            The Text_ButtonPAMSuite item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonFieldCare">
+            <summary>
+            The Text_ButtonFieldCare item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonFieldCareInfo">
+            <summary>
+            The Text_ButtonFieldCare item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonModems">
+            <summary>
+            The Text_ButtonModems item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonModemsInfo">
+            <summary>
+            The Text_ButtonModems item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonFieldGate">
+            <summary>
+            The Text_ButtonFieldGate item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonFieldGateInfo">
+            <summary>
+            The Text_ButtonFieldGate item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonFieldXpert">
+            <summary>
+            The Text_ButtonFieldXpert item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PAMMenuItemsFolder.Text_ButtonFieldXpertInfo">
+            <summary>
+            The Text_ButtonFieldXpert item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder">
+            <summary>
+            The SettingsMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SettingsMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonEventLog">
+            <summary>
+            The ButtonEventLog item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonEventLogInfo">
+            <summary>
+            The ButtonEventLog item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonDtmCatalog">
+            <summary>
+            The ButtonDtmCatalog item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonDtmCatalogInfo">
+            <summary>
+            The ButtonDtmCatalog item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonLanguage">
+            <summary>
+            The ButtonLanguage item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonLanguageInfo">
+            <summary>
+            The ButtonLanguage item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonFirmware">
+            <summary>
+            The ButtonFirmware item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.ButtonFirmwareInfo">
+            <summary>
+            The ButtonFirmware item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonEventLog">
+            <summary>
+            The Text_ButtonEventLog item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonEventLogInfo">
+            <summary>
+            The Text_ButtonEventLog item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonDtmCatalog">
+            <summary>
+            The Text_ButtonDtmCatalog item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonDtmCatalogInfo">
+            <summary>
+            The Text_ButtonDtmCatalog item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonLanguage">
+            <summary>
+            The Text_ButtonLanguage item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonLanguageInfo">
+            <summary>
+            The Text_ButtonLanguage item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonFirmware">
+            <summary>
+            The Text_ButtonFirmware item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.SettingsMenuItemsFolder.Text_ButtonFirmwareInfo">
+            <summary>
+            The Text_ButtonFirmware item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder">
+            <summary>
+            The ConnectionAssistantWizardFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ConnectionAssistantWizard  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Protocol">
+            <summary>
+            The Protocol item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ProtocolInfo">
+            <summary>
+            The Protocol item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Modem">
+            <summary>
+            The Modem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ModemInfo">
+            <summary>
+            The Modem item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Configuration">
+            <summary>
+            The Configuration item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ConfigurationInfo">
+            <summary>
+            The Configuration item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ScanResult">
+            <summary>
+            The ScanResult item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ScanResultInfo">
+            <summary>
+            The ScanResult item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ServiceInterface">
+            <summary>
+            The ServiceInterface item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.ServiceInterfaceInfo">
+            <summary>
+            The ServiceInterface item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_Protocol">
+            <summary>
+            The Text_Protocol item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ProtocolInfo">
+            <summary>
+            The Text_Protocol item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_Modem">
+            <summary>
+            The Text_Modem item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ModemInfo">
+            <summary>
+            The Text_Modem item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_Configuration">
+            <summary>
+            The Text_Configuration item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ConfigurationInfo">
+            <summary>
+            The Text_Configuration item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ScanResult">
+            <summary>
+            The Text_ScanResult item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ScanResultInfo">
+            <summary>
+            The Text_ScanResult item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ServiceInterface">
+            <summary>
+            The Text_ServiceInterface item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.Text_ServiceInterfaceInfo">
+            <summary>
+            The Text_ServiceInterface item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.AriadnePath">
+            <summary>
+            The AriadnePath item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConnectionAssistantWizardFolder.AriadnePathInfo">
+            <summary>
+            The AriadnePath item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder">
+            <summary>
+            The DeviceReportMenuItemsFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DeviceReportMenuItems  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder.PrintDeviceReport">
+            <summary>
+            The PrintDeviceReport item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder.PrintDeviceReportInfo">
+            <summary>
+            The PrintDeviceReport item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder.SaveDeviceReport">
+            <summary>
+            The SaveDeviceReport item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DeviceReportMenuItemsFolder.SaveDeviceReportInfo">
+            <summary>
+            The SaveDeviceReport item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder">
+            <summary>
+            The DialogFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Dialog  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.RestoreDeviceData">
+            <summary>
+            The RestoreDeviceData folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.PrintPreview">
+            <summary>
+            The PrintPreview folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.PrintToFile">
+            <summary>
+            The PrintToFile folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.Print">
+            <summary>
+            The Print folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.ConfirmRestoreDeviceData">
+            <summary>
+            The ConfirmRestoreDeviceData folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.OverwriteExistingFdtPrintFile">
+            <summary>
+            The OverwriteExistingFdtPrintFile folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.DialogFolder.EventLog">
+            <summary>
+            The EventLog folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder">
+            <summary>
+            The RestoreDeviceDataFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new RestoreDeviceData  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.ButtonGo">
+            <summary>
+            The ButtonGo item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.ButtonGoInfo">
+            <summary>
+            The ButtonGo item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.ButtonCancel">
+            <summary>
+            The ButtonCancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.ButtonCancelInfo">
+            <summary>
+            The ButtonCancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.AddressTextbox">
+            <summary>
+            The AddressTextbox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.AddressTextboxInfo">
+            <summary>
+            The AddressTextbox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.Form">
+            <summary>
+            The Form item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.RestoreDeviceDataFolder.FormInfo">
+            <summary>
+            The Form item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder">
+            <summary>
+            The PrintPreviewFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new PrintPreview  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.ButtonClose">
+            <summary>
+            The ButtonClose item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.ButtonCloseInfo">
+            <summary>
+            The ButtonClose item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.ButtonPrint">
+            <summary>
+            The ButtonPrint item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.ButtonPrintInfo">
+            <summary>
+            The ButtonPrint item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.Form">
+            <summary>
+            The Form item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintPreviewFolder.FormInfo">
+            <summary>
+            The Form item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder">
+            <summary>
+            The PrintToFileFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new PrintToFile  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.Form">
+            <summary>
+            The Form item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.FormInfo">
+            <summary>
+            The Form item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.ButtonCancel">
+            <summary>
+            The ButtonCancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.ButtonCancelInfo">
+            <summary>
+            The ButtonCancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.FileNameText">
+            <summary>
+            The FileNameText item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintToFileFolder.FileNameTextInfo">
+            <summary>
+            The FileNameText item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder">
+            <summary>
+            The PrintFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Print  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.EPlusHFieldCare">
+            <summary>
+            The EPlusHFieldCare item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.EPlusHFieldCareInfo">
+            <summary>
+            The EPlusHFieldCare item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.ButtonApply">
+            <summary>
+            The ButtonApply item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.ButtonApplyInfo">
+            <summary>
+            The ButtonApply item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.Cancel">
+            <summary>
+            The Cancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.CancelInfo">
+            <summary>
+            The Cancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.ButtonPrint">
+            <summary>
+            The ButtonPrint item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.ButtonPrintInfo">
+            <summary>
+            The ButtonPrint item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.Form">
+            <summary>
+            The Form item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.PrintFolder.FormInfo">
+            <summary>
+            The Form item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder">
+            <summary>
+            The ConfirmRestoreDeviceDataFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ConfirmRestoreDeviceData  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.ButtonYes">
+            <summary>
+            The ButtonYes item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.ButtonYesInfo">
+            <summary>
+            The ButtonYes item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.ButtonNo">
+            <summary>
+            The ButtonNo item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.ButtonNoInfo">
+            <summary>
+            The ButtonNo item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.Form">
+            <summary>
+            The Form item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.FormInfo">
+            <summary>
+            The Form item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.TitleBar">
+            <summary>
+            The TitleBar item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.ConfirmRestoreDeviceDataFolder.TitleBarInfo">
+            <summary>
+            The TitleBar item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder">
+            <summary>
+            The OverwriteExistingFdtPrintFileFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new OverwriteExistingFdtPrintFile  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.ButtonCancel">
+            <summary>
+            The ButtonCancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.ButtonCancelInfo">
+            <summary>
+            The ButtonCancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.Form">
+            <summary>
+            The Form item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.OverwriteExistingFdtPrintFileFolder.FormInfo">
+            <summary>
+            The Form item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder">
+            <summary>
+            The EventLogFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new EventLog  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.Clear">
+            <summary>
+            The Clear item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.ClearInfo">
+            <summary>
+            The Clear item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.Table">
+            <summary>
+            The Table item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.DeviceCareApplicationFolders.EventLogFolder.TableInfo">
+            <summary>
+            The Table item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.English_download_successful">
+            <summary>
+              Looks up a localized string similar to download_ successful.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.English_upload_successful">
+            <summary>
+              Looks up a localized string similar to upload_ successful.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.French_download_successful">
+            <summary>
+              Looks up a localized string similar to téléchargement_réussi.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.French_upload_successful">
+            <summary>
+              Looks up a localized string similar to téléchargement_réussi.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.German_download_successful">
+            <summary>
+              Looks up a localized string similar to download_erfolgreich.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.German_upload_successful">
+            <summary>
+              Looks up a localized string similar to hochladen_erfolgreich.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.Italian_download_successful">
+            <summary>
+              Looks up a localized string similar to download_completato.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.Italian_upload_successful">
+            <summary>
+              Looks up a localized string similar to caricamento_completato.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.Spanish_download_successful">
+            <summary>
+              Looks up a localized string similar to descarga_satisfactoriamente.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.DeviceCare.CI.GUI.StringTranslation.Spanish_upload_successful">
+            <summary>
+              Looks up a localized string similar to carga_satisfactoriamente.
+            </summary>
+        </member>
+    </members>
+</doc>

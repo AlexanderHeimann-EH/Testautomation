@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="EH.DTMstudioTest.ScriptConfigurator.ScriptConfiguratorWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:scriptConfiguratorControl="clr-namespace:EH.DTMstudioTest.ScriptConfigurator.Content.ScriptConfiguratorControl"
+             SizeChanged="ScriptConfiguratorWindow_OnSizeChanged">
+    <Grid>
+        <scriptConfiguratorControl:ScriptConfiguratorControl x:Name="ScriptConfigurator" />
+    </Grid>
+
+</UserControl>

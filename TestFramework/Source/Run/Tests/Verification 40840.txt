@@ -1,0 +1,13 @@
+﻿                        /*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+
+                        string path = "DeviceMenu//_Setup_//SU_Length_";
+                        string value1 = "mm";
+                        string value2 = "m";
+                        int loops = 100;
+                        for (int counter = 0; counter < loops; counter++)
+                        {
+                            TC_ChangeParameter.Run(path, value1);
+                            TC_ChangeParameter.Run(path, value2);
+                        }

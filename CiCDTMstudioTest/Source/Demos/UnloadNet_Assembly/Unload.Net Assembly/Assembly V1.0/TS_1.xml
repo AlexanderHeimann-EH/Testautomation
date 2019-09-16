@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <ConfigurationFile>D:\Users\i02401156\Documents\Visual Studio 2010\Projects\[DEVICE_TYPE_PROJECT_NAME]_Test1\[DEVICE_TYPE_PROJECT_NAME]_Test1\bin\Debug\ControlDocument.xml</ConfigurationFile>
+  <AllAvailableTestObjects>
+    <TestObject d3p1:type="TestFolder" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <Guid>dac73cb2-e422-4701-8414-64e0479b446a</Guid>
+      <Name>TestFolder</Name>
+      <TestMethods />
+    </TestObject>
+  </AllAvailableTestObjects>
+  <TestSequence>
+    <TestObjectGuids />
+  </TestSequence>
+</TestConfiguration>

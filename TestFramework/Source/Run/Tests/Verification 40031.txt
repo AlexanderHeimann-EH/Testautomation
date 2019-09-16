@@ -1,0 +1,34 @@
+﻿        public bool Run(string pathToParameter)
+        {
+            bool result;
+
+            var navigationArea = new Navigation();
+            if (!navigationArea.SearchAndSelectParameter(pathToParameter))
+            {
+                Log.Error(LogInfo.Namespace(MethodBase.GetCurrentMethod()), "Cannot find parameter with path:' " + pathToParameter + "'.");
+                result = false;
+            }
+            else
+            {
+                var applicationArea = new Application();
+                Element element = applicationArea.SearchAndSelectParameter(pathToParameter);
+                if (element == null)
+                {
+                    Log.Error(LogInfo.Namespace(MethodBase.GetCurrentMethod()), "Parameter with path:' " + pathToParameter + "' is null.");
+                    result = false;
+                }
+                else
+                {
+                    Mouse.MoveTo(element);
+                    result = Convert.ToBoolean(element.GetAttributeValue("ReadOnly"));   
+                }                
+            }
+
+            return result;
+        }
+
+
+		TEST CODE:
+
+		bool test = new EH.PCPS.TestAutomation.TestPackageCI.Parameterization.Functions.ApplicationArea.MainView.Validation.IsParameterReadOnly().Run(@"Menu_OnlineDeviceMenu//Setup//AdvancedSetup//SensorAdjustment//ZeroPointAdjustmentSelection//Dev_Progress_1");                        
+        MessageBox.Show(test.ToString());

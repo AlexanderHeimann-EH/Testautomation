@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_PrepareFieldCareAndProject</DisplayName>
+      <Guid>b8ef8397-1c26-4679-afc5-d8052e4929a1</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_PrepareFieldCareAndProject</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestCase">
+          <Description>Summary:
+Opens FieldCare using installation path provided by the user.
+
+Param:
+The installation path of FieldCare. Use this form: C:\Program Files (x86)\Endress+Hauser\FieldCare\Frame\FMPFrame.exe</Description>
+          <DisplayName>FieldCare.TC_OpenHostApplication.Run</DisplayName>
+          <Guid>49c326e1-5c7f-4eb8-a22f-e707af208c10</Guid>
+          <IsActive>true</IsActive>
+          <Name>Void Run(path)</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <ToolTip>Summary:
+Opens FieldCare using installation path provided by the user.
+
+Param:
+The installation path of FieldCare. Use this form: C:\Program Files (x86)\Endress+Hauser\FieldCare\Frame\FMPFrame.exe</ToolTip>
+          <AssemblyMethodRefId>203B33E8-BBEB-40B1-9776-F1F3EE88866D</AssemblyMethodRefId>
+          <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+          <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+          <Parameters>
+            <TestParameter>
+              <Description>The installation path of FieldCare. Use this form: C:\Program Files (x86)\Endress+Hauser\FieldCare\Frame\FMPFrame.exe</Description>
+              <Name>path</Name>
+              <ParameterType>System.String</ParameterType>
+              <ParameterValue>C:\Program Files (x86)\Endress+Hauser\FieldCare\Frame\FMPFrame.exe</ParameterValue>
+              <ParameterValueValid>true</ParameterValueValid>
+            </TestParameter>
+          </Parameters>
+        </TestObject>
+        <TestObject d3p1:type="TestCase">
+          <Description>Summary:
+Opens the FieldCare Catalog via Menu, starts an update and adds new devices if necessary.
+
+Param:
+The time to wait for the update window to appear in milliseconds. Recommended: 5000.
+
+Param:
+The timeout For the Update Progress. This depends on how many dtms are found. Recommended: 120000.
+
+Param:
+Set to true only if new devices have been installed. They will be added to the catalog.
+
+Param:
+The approximate time in minutes since the dtm has been installed
+
+Param:
+The time To Wait For Moving. This is important if the update is huge.</Description>
+          <DisplayName>FieldCare.TC_UpdateDtmCatalog.Run</DisplayName>
+          <Guid>7abd96b9-4936-461b-9b38-8f0606f238f3</Guid>
+          <IsActive>true</IsActive>
+          <Name>Void Run(timeToWaitForUpdateMessage, timeoutForUpdateProgress, shouldFindNewDevice, maxMinutesSinceDtmWasInstalled, timeToWaitForMoving)</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <ToolTip>Summary:
+Opens the FieldCare Catalog via Menu, starts an update and adds new devices if necessary.
+
+Param:
+The time to wait for the update window to appear in milliseconds. Recommended: 5000.
+
+Param:
+The timeout For the Update Progress. This depends on how many dtms are found. Recommended: 120000.
+
+Param:
+Set to true only if new devices have been installed. They will be added to the catalog.
+
+Param:
+The approximate time in minutes since the dtm has been installed
+
+Param:
+The time To Wait For Moving. This is important if the update is huge.</ToolTip>
+          <AssemblyMethodRefId>d84e0406-dd8a-4e5b-a83e-b43e66b2d7fe</AssemblyMethodRefId>
+          <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+          <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+          <Parameters>
+            <TestParameter>
+              <Description>The time to wait for the update window to appear in milliseconds. Recommended: 5000.</Description>
+              <Name>timeToWaitForUpdateMessage</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValue>5000</ParameterValue>
+              <ParameterValueValid>true</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The timeout For the Update Progress. This depends on how many dtms are found. Recommended: 120000.</Description>
+              <Name>timeoutForUpdateProgress</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValue>120000</ParameterValue>
+              <ParameterValueValid>true</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>Set to true only if new devices have been installed. They will be added to the catalog.</Description>
+              <Name>shouldFindNewDevice</Name>
+              <ParameterType>System.Boolean</ParameterType>
+              <ParameterValue>true</ParameterValue>
+              <ParameterValueValid>true</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The approximate time in minutes since the dtm has been installed</Description>
+              <Name>maxMinutesSinceDtmWasInstalled</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValue>2</ParameterValue>
+              <ParameterValueValid>true</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The time To Wait For Moving. This is important if the update is huge.</Description>
+              <Name>timeToWaitForMoving</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValue>10000</ParameterValue>
+              <ParameterValueValid>true</ParameterValueValid>
+            </TestParameter>
+          </Parameters>
+        </TestObject>
+        <TestObject d3p1:type="TestCase">
+          <Description>Summary:
+Creates a new project, adds the specified CommDtm and creates a network
+
+Param:
+The comm DTM which will be used.
+
+Param:
+The timeout in milliseconds for the scanning progress.
+
+Param:
+The network Tag for the device found.</Description>
+          <DisplayName>FieldCare.TC_CreateProjectAddCommDtmAndScan.Run</DisplayName>
+          <Guid>a4139a05-cefa-4b6d-9bbd-3534ccdc05cf</Guid>
+          <IsActive>false</IsActive>
+          <Name>Void Run(commDtm, timeoutInMilliseconds, networkTag)</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <ToolTip>Summary:
+Creates a new project, adds the specified CommDtm and creates a network
+
+Param:
+The comm DTM which will be used.
+
+Param:
+The timeout in milliseconds for the scanning progress.
+
+Param:
+The network Tag for the device found.</ToolTip>
+          <AssemblyMethodRefId>a58c36b3-c792-4cc2-a5bb-b8c0887e6e49</AssemblyMethodRefId>
+          <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+          <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+          <Parameters>
+            <TestParameter>
+              <Description>The comm DTM which will be used.</Description>
+              <Name>commDtm</Name>
+              <ParameterType>System.String</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The timeout in milliseconds for the scanning progress.</Description>
+              <Name>timeoutInMilliseconds</Name>
+              <ParameterType>System.Int32</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+            <TestParameter>
+              <Description>The network Tag for the device found.</Description>
+              <Name>networkTag</Name>
+              <ParameterType>System.String</ParameterType>
+              <ParameterValueValid>false</ParameterValueValid>
+            </TestParameter>
+          </Parameters>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>NotDefined</TestCategory>
+      <TestFocus>NotDefined</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

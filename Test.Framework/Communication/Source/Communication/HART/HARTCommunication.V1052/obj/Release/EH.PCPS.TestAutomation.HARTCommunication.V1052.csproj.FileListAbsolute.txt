@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\HART\EH.PCPS.TestAutomation.HARTCommunication.V1052.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\HART\EH.PCPS.TestAutomation.HARTCommunication.V1052.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Release\Communication\HART\EH.PCPS.TestAutomation.HARTCommunication.V1052.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\HARTCommunication.V1052\obj\Release\EH.PCPS.TestAutomation.HARTCommunication.V1052.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\HARTCommunication.V1052\obj\Release\EH.PCPS.TestAutomation.HARTCommunication.V1052.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\HART\HARTCommunication.V1052\obj\Release\EH.PCPS.TestAutomation.HARTCommunication.V1052.pdb

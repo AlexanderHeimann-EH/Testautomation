@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDI\EH.PCPS.TestAutomation.FdiReferenceHost.XML
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDI\EH.PCPS.TestAutomation.FdiReferenceHost.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDI\EH.PCPS.TestAutomation.FdiReferenceHost.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDI\FdiReferenceHost\obj\x86\Release\EH.PCPS.TestAutomation.FdiReferenceHost.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDI\FdiReferenceHost\obj\x86\Release\EH.PCPS.TestAutomation.FdiReferenceHost.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDI\FdiReferenceHost\obj\x86\Release\EH.PCPS.TestAutomation.FdiReferenceHost.csprojResolveAssemblyReference.cache

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="PROFIdtmDPV1Repo"
+id="6086f9d0-8872-4888-8f2e-36f8029ab470"
+rxversion="6.1">
+	<codegen
+	classname="PROFIdtmDPV1Repo"
+	namespace="EH.PCPS.TestAutomation.PROFIdtmDPV1.V211.GUI"/>
+	<rootfolder
+	name="Root"
+	id="cdf4991d-208a-4901-8252-2bd4641c9380"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="BoardNameCombobox"
+		id="a7ce5ba0-b09a-415c-8666-465e9b6c8e5a"
+		searchtimeout="30000ms"
+		capname="combobox"
+		addcaps="combobox,nativewindow"
+		refimgid="3cbb69be-52a9-450b-8553-bb4eec47d50b">
+			/combobox[@class='ComboBox' and @instance='0']
+		</item>
+		<item
+		name="BoardNameComboboxButtonOpen"
+		id="fe82c482-0f61-41c1-9e85-498c2cd31be5"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button"
+		refimgid="02e720e5-90f7-4154-9a9b-50b9a95064b3">
+			/combobox[@class='ComboBox' and @instance='0']/button[@text='&gt;']
+		</item>
+		<item
+		name="BaudRateCombobox"
+		id="6f48130f-4609-4df8-bfca-f187e446abf7"
+		searchtimeout="30000ms"
+		capname="combobox"
+		addcaps="combobox,nativewindow"
+		refimgid="abecbd6f-c41c-4200-b226-1ada36a08f5c">
+			/combobox[@class='ComboBox' and @instance='1']
+		</item>
+		<item
+		name="BaudRateComboboxButtonOpen"
+		id="cd2a5d28-92ca-43b2-b23b-aa6eae81b39c"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button"
+		refimgid="5853030c-3a12-4766-88f0-d6e719f5c38e">
+			/combobox[@class='ComboBox' and @instance='1']/button[@text='&gt;']
+		</item>
+		<item
+		name="StartAddress"
+		id="dd3a1ad9-a6ac-4f72-981e-2b9a3b5e432b"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,nativewindow"
+		refimgid="d93b8381-a3e5-4fd0-bee8-7e794aab191c">
+			/text[@class='Edit' and @instance='8']
+		</item>
+		<item
+		name="EndAddress"
+		id="4a58e45d-17dc-436c-96a5-3f79ffc43fe7"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,nativewindow"
+		refimgid="33d90d4e-1529-41f2-947f-afc1caa59500">
+			/text[@class='Edit' and @instance='11']
+		</item>
+		<item
+		name="Defaults"
+		id="c3352c68-3209-4d22-8d99-4307b6b8c4d4"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow"
+		refimgid="f2507897-526d-434b-8c20-1dd787495e92">
+			/button[@text='Defaults' and @class='Button']
+		</item>
+		<item
+		name="ButtonOK"
+		id="ca95a814-17f0-4355-8558-26bfad791906"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow"
+		refimgid="2f8705a9-e533-4b7d-97c3-01f11298c875">
+			/button[@text='OK' and @class='Button']
+		</item>
+		<item
+		name="Cancel"
+		id="63a54dd7-f78f-47d1-969d-3b4a2276797d"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow"
+		refimgid="a681ad02-b429-4d74-86ae-d6638c35221a">
+			/button[@text='Cancel' and @class='Button']
+		</item>
+		<item
+		name="Apply"
+		id="f522d4d3-0e72-4100-b68f-c0f26a24d595"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow"
+		refimgid="f42a3e82-53f0-4f7b-acf0-3137ed806148">
+			/button[@text='Apply' and @class='Button']
+		</item>
+		<item
+		name="HighestStationAddress"
+		id="5a8dc062-4e04-4ea7-830d-49517c3f100c"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,nativewindow"
+		refimgid="b59d338c-d0e7-439f-bf17-9483b8831a9c">
+			/text[@class='Edit' and @instance='9']
+		</item>
+		<item
+		name="StationAddress"
+		id="9e17019b-4fc0-4ed9-a2bc-e31a0f5fd745"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,nativewindow"
+		refimgid="a5c5cecc-1101-42f9-8d15-d023af4e195f">
+			/text[@class='Edit' and @instance='10']
+		</item>
+		<appfolder
+		name="ComboboxList"
+		id="35f93217-b892-4476-b281-a624962bdca5"
+		searchtimeout="30000ms"
+		capname="list"
+		addcaps="list,nativewindow"
+		refimgid="1bb02d0e-f029-47ed-9888-97d8cc910260"
+		isrooted="True"
+		usecache="True">
+			<basepath>
+				/list[@processname='FMPFrame' and @class='ComboLBox']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		name="DialogBox"
+		id="022319ce-8011-4ae2-96fd-a3b76031038f"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='PROFIdtm [PROFIdtm DPV1]']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ButtonOK"
+			id="423a56d1-c7b6-4deb-9b88-d72d76c4fbb5"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,nativewindow"
+			refimgid="c5743c01-3402-42c9-a959-46e2c5e6b695">
+				/form[@title='PROFIdtm [PROFIdtm DPV1]' and @processname='FMPFrame' and @class='#32770']/button[@text='OK' and @class='Button']
+			</item>
+			<item
+			name="DialogMessage"
+			id="c942bc59-293d-4fe7-9845-0b6b140be273"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,nativewindow"
+			refimgid="f6d3f6b5-be89-4f96-80e8-0c76b107c520">
+				/form[@title='PROFIdtm [PROFIdtm DPV1]' and @processname='FMPFrame' and @class='#32770']/text[@class='RICHEDIT' and @instance='0']
+			</item>
+			<item
+			name="ButtonClose"
+			id="e7d4e1bb-1aa8-4e2b-90f9-285943ab88c4"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='PROFIdtm [PROFIdtm DPV1]']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Close']"
+			addcaps="button,accessible"
+			refimgid="7b0067ee-400f-444f-b456-11467964c8c5">
+				/form[@title='PROFIdtm [PROFIdtm DPV1]' and @processname='FMPFrame' and @class='#32770']/titlebar[@accessiblerole='TitleBar' and @accessibledescription~'^Displays\ the\ name\ of\ the\ ' and @text='PROFIdtm [PROFIdtm DPV1]']/button[@accessiblename='Close' and @accessiblerole='PushButton' and @text='Close']
+			</item>
+			<basepath>
+				/form[@title='PROFIdtm [PROFIdtm DPV1]' and @processname='FMPFrame' and @class='#32770']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFrSURBVDhP3ZI7SwNBEMf3kkY/gIKfwkchCBYW
+CoIWfofYiI9GQbBIoViJmHjenUIgvYIvFLTxFYiYRvGFCBYaUlhFSSA7t5cbd3dycAnxA+jAsP/9
+s/tjZ2fYf4k0tjALlliSp+vSkmnWtFoDLX3D5umIDeMEWHd7u7ZdnMl4dTl46OLAAfn9ey6OHAut
+e3ZcNDYAIw4UCJDk8YUbDxtjLivQeSTfvPfw5L2qdTznIUsqAH8gQALOZrN08PXLx8lLgVMZgW0p
+wK0n8lduPdx9I8D8NQEMG0zG7FK7fEExAHC5fJR8jJ17+FL0EegOVqQf6AAQtfgYi9p8VG3CgNwn
+AQplX+9VVEQDIMG/2Wa5gxkOrIUBqoSJCyphaF/8XkKCX+nyIza/U4Bmn3iar2Lqmfwmn7hYA0De
+sAA7ZRunZYvCOXwkdBuVDtqodLc8y0y3jwAOxNRQ6KEJD1Hj8NQNEiyzVb9VA/56MPYDmrXHgJvd
+BogAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

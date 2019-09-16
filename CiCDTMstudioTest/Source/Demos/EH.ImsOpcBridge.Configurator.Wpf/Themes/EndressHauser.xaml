@@ -1,0 +1,145 @@
+﻿<ResourceDictionary x:Uid="ResourceDictionary_1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:View="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary x:Uid="ResourceDictionary_2" Source="/EH.ImsOpcBridge.Configurator.Wpf;component/Themes/ThemeButtonBase.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- general section -->
+
+    <SolidColorBrush x:Uid="SolidColorBrush_1" x:Key="WindowBackground" Color="White"></SolidColorBrush>
+    
+    <!-- title section -->
+    
+    <LinearGradientBrush x:Uid="LinearGradientBrush_1" x:Key="titleGradientBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop x:Uid="GradientStop_1" Color="#FF76BFFA" Offset="0"/>
+        <GradientStop x:Uid="GradientStop_2" Color="#FF3E7BC5" Offset="0.2"/>
+        <GradientStop x:Uid="GradientStop_3" Color="#FF3E7BC5" Offset="0.8"/>
+        <GradientStop x:Uid="GradientStop_4" Color="#FF1E3C61" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Uid="LinearGradientBrush_2" x:Key="menuGradientBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop x:Uid="GradientStop_5" Color="#FF3E7BC5" Offset="0.95"/>
+        <GradientStop x:Uid="GradientStop_6" Color="#FF1E3C61" Offset="1"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Uid="SolidColorBrush_17" x:Key="TitleComboPopupForegroundBrush" Color="#99C1F2" />
+    <SolidColorBrush x:Uid="SolidColorBrush_2" x:Key="TitleComboPopupBackgroundBrush" Color="#FF3E7BC5" />
+    <SolidColorBrush x:Uid="SolidColorBrush_3" x:Key="TitleComboBackgroundBrush" Color="Transparent" />
+    
+    <!-- command bar section -->
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_5" x:Key="cmdControlGradientLeft" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop x:Uid="GradientStop_13" Color="#603E7BC5" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_14" Color="#003E7BC5" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Uid="LinearGradientBrush_6" x:Key="cmdControlGradientRight" StartPoint="1,0" EndPoint="0,0">
+        <GradientStop x:Uid="GradientStop_15" Color="#603E7BC5" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_16" Color="#003E7BC5" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!-- image (command) button section -->
+
+    <SolidColorBrush x:Uid="SolidColorBrush_18" x:Key="ImageButtonBorderBrush" Color="#415E7E" />
+    <SolidColorBrush x:Uid="SolidColorBrush_5" x:Key="ImageButtonBorderBrushBright" Color="#CFDBE9" />
+    <SolidColorBrush x:Uid="SolidColorBrush_19" x:Key="ImageButtonTextBrush" Color="Black" />
+    <SolidColorBrush x:Uid="SolidColorBrush_4" x:Key="ImageButtonBackgroundBrush" Color="Transparent" />
+
+    <Color x:Uid="Color_1" x:Key="ImageButtonMarkerColor">#FFF900</Color>
+    <SolidColorBrush x:Uid="SolidColorBrush_6" x:Key="ImageBorderMarkerBrush" Color="#FFF900" />
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_3" x:Key="ImageButtonBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop x:Uid="GradientStop_9" Color="#CFDBE9" Offset="0.0"/>
+        <GradientStop x:Uid="GradientStop_10" Color="#5E9DE9" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_11" Color="#5E9DE9" Offset="0.9"/>
+        <GradientStop x:Uid="GradientStop_12" Color="#2F4F76" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_4" x:Key="ImageButtonPressedBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop x:Uid="GradientStop_17" Color="#2F4F76" Offset="0.0"/>
+        <GradientStop x:Uid="GradientStop_18" Color="#5E9DE9" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_7" Color="#5E9DE9" Offset="0.9"/>
+        <GradientStop x:Uid="GradientStop_8" Color="#CFDBE9" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style x:Uid="Style_2" x:Key="ButtonStyleFramed" TargetType="{x:Type View:ImageButton}" BasedOn="{StaticResource ImageButtonStyle}">
+        <Setter x:Uid="Setter_18" Property="Template" Value="{DynamicResource FramedImageButtonTemplate}" />
+        <Setter x:Uid="Setter_22" Property="ImageScale"  Value="0.8" />
+    </Style>
+
+    <Style x:Uid="Style_3" x:Key="ButtonStyleImage" TargetType="{x:Type View:ImageButton}" BasedOn="{StaticResource ImageButtonStyle}">
+        <Setter x:Uid="Setter_86" Property="Template" Value="{DynamicResource ImageButtonTemplate}" />
+        <Setter x:Uid="Setter_83" Property="ImageScale"  Value="0.9" />
+    </Style>
+
+    <!-- radio button section -->
+
+    <SolidColorBrush x:Uid="SolidColorBrush_7" x:Key="RadioButtonBorderBrush" Color="#415E7E" />
+    <SolidColorBrush x:Uid="SolidColorBrush_8" x:Key="RadioButtonBorderBrushBright" Color="#CFDBE9" />
+    <SolidColorBrush x:Uid="SolidColorBrush_9" x:Key="RadioButtonTextBrush" Color="Black" />
+    <SolidColorBrush x:Uid="SolidColorBrush_10" x:Key="RadioButtonBackgroundBrush" Color="Transparent" />
+
+    <Color x:Uid="Color_2" x:Key="RadioButtonMarkerColor">#FFF900</Color>
+    <SolidColorBrush x:Uid="SolidColorBrush_11" x:Key="RadioBorderMarkerBrush" Color="#FFF900" />
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_7" x:Key="RadioButtonBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop x:Uid="GradientStop_19" Color="#CFDBE9" Offset="0.0"/>
+        <GradientStop x:Uid="GradientStop_20" Color="#5E9DE9" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_21" Color="#5E9DE9" Offset="0.9"/>
+        <GradientStop x:Uid="GradientStop_22" Color="#2F4F76" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_8" x:Key="RadioButtonPressedBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop x:Uid="GradientStop_23" Color="#2F4F76" Offset="0.0"/>
+        <GradientStop x:Uid="GradientStop_24" Color="#5E9DE9" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_25" Color="#5E9DE9" Offset="0.9"/>
+        <GradientStop x:Uid="GradientStop_26" Color="#CFDBE9" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style x:Uid="Style_8" x:Key="RadioButtonStyleFramed" TargetType="{x:Type View:ImageRadioButton}" BasedOn="{StaticResource ImageRadioButtonStyle}">
+        <Setter x:Uid="Setter_69" Property="Template" Value="{DynamicResource FramedImageRadioButtonTemplate}" />
+        <Setter x:Uid="Setter_74" Property="ImageScale"  Value="0.8" />
+    </Style>
+
+    <Style x:Uid="Style_9" x:Key="RadioButtonStyleImage" TargetType="{x:Type View:ImageRadioButton}" BasedOn="{StaticResource ImageRadioButtonStyle}">
+        <Setter x:Uid="Setter_102" Property="Template" Value="{DynamicResource ImageRadioButtonTemplate}" />
+        <Setter x:Uid="Setter_103" Property="ImageScale"  Value="0.9" />
+    </Style>
+    
+    <!-- toggle button section -->
+
+    <SolidColorBrush x:Uid="SolidColorBrush_12" x:Key="ToggleButtonBorderBrush" Color="#415E7E" />
+    <SolidColorBrush x:Uid="SolidColorBrush_13" x:Key="ToggleButtonBorderBrushBright" Color="#CFDBE9" />
+    <SolidColorBrush x:Uid="SolidColorBrush_14" x:Key="ToggleButtonTextBrush" Color="Black" />
+    <SolidColorBrush x:Uid="SolidColorBrush_15" x:Key="ToggleButtonBackgroundBrush" Color="Transparent" />
+
+    <Color x:Uid="Color_3" x:Key="ToggleButtonMarkerColor">#FFF900</Color>
+    <SolidColorBrush x:Uid="SolidColorBrush_16" x:Key="ToggleBorderMarkerBrush" Color="#FFF900" />
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_9" x:Key="ToggleButtonBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop x:Uid="GradientStop_27" Color="#CFDBE9" Offset="0.0"/>
+        <GradientStop x:Uid="GradientStop_28" Color="#5E9DE9" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_29" Color="#5E9DE9" Offset="0.9"/>
+        <GradientStop x:Uid="GradientStop_30" Color="#2F4F76" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Uid="LinearGradientBrush_10" x:Key="ToggleButtonPressedBackground" StartPoint="0,0" EndPoint="0,1" >
+        <GradientStop x:Uid="GradientStop_31" Color="#2F4F76" Offset="0.0"/>
+        <GradientStop x:Uid="GradientStop_32" Color="#5E9DE9" Offset="0.1"/>
+        <GradientStop x:Uid="GradientStop_33" Color="#5E9DE9" Offset="0.9"/>
+        <GradientStop x:Uid="GradientStop_34" Color="#CFDBE9" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style x:Uid="Style_5" x:Key="ToggleButtonStyleFramed" TargetType="{x:Type View:ImageToggleButton}" BasedOn="{StaticResource ImageToggleButtonStyle}">
+        <Setter x:Uid="Setter_90" Property="Template" Value="{DynamicResource FramedImageToggleButtonTemplate}" />
+        <Setter x:Uid="Setter_48" Property="ImageScale"  Value="0.8" />
+    </Style>
+
+    <Style x:Uid="Style_6" x:Key="ToggleButtonStyleImage" TargetType="{x:Type View:ImageToggleButton}" BasedOn="{StaticResource ImageToggleButtonStyle}">
+        <Setter x:Uid="Setter_91" Property="Template" Value="{DynamicResource ImageToggleButtonTemplate}" />
+        <Setter x:Uid="Setter_92" Property="ImageScale"  Value="0.9" />
+    </Style>
+
+</ResourceDictionary>

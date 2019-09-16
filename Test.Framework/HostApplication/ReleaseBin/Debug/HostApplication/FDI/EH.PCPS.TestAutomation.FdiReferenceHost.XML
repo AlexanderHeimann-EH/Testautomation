@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.FdiReferenceHost</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.FdiReferenceHost.CommonFlows.GetDtmContainerPath">
+            <summary>
+                Description of GetDTMContainerPath.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FdiReferenceHost.CommonFlows.GetDtmContainerPath.Run">
+            <summary>
+            Provides the host application specific DTM container Ranorex path. 
+            To work with the actual device functions in this framework, the path needs to include the container "ControlAXSourcingSite" for Device Care and the container "GuiTransparentProxy" for FieldCare.
+            </summary>
+            <returns>
+            string: The DTM container path
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath">
+            <summary>
+            Description of GetDTMContainerPath.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath.dtmContainerRepository">
+            <summary>
+            Create an instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FdiReferenceHost.Functions.ApplicationArea.MainView.Execution.GetDtmContainerPath.GetMDIClientPath">
+            <summary>
+                Gets the path of the DTM Container(mdi client) from the DTMContainer repository of the actually used frame
+            </summary>
+            <returns>
+                string: with the absolute path of the DTM Container
+                null: if an error occurred
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainer">
+            <summary>
+            The class representing the DtmContainer element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainer.Instance">
+            <summary>
+            Gets the singleton class instance representing the DtmContainer element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainer.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainer.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainer.DTMContainer">
+            <summary>
+            The DTMContainer item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainer.DTMContainerInfo">
+            <summary>
+            The DTMContainer item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.FdiReferenceHost.GUI.ApplicationArea.MainView.DtmContainerFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+    </members>
+</doc>

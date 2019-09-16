@@ -1,0 +1,51 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.UI.Wpf.View.CommandControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             xmlns:ViewModel="clr-namespace:EH.ImsOpcBridge.UI.Wpf.ViewModel"
+             xmlns:View="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View"
+             mc:Ignorable="d"
+             d:DesignHeight="150" d:DesignWidth="600" 
+						 d:DataContext="{d:DesignInstance ViewModel:CommandCtrlVm, IsDesignTimeCreatable=True}"
+             >
+    <UserControl.Resources>
+
+        <View:BoolToVisibilityConverter x:Uid="View:BoolToVisibilityConverter_1" x:Key="convBoolToVisibility"/>
+
+        <CollectionViewSource x:Uid="CollectionViewSource_1" x:Key="buttonSource" Source="{Binding Path=ButtonItems, Mode=OneWay}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription x:Uid="scm:SortDescription_1" PropertyName="SortIndex" />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </UserControl.Resources>
+
+    <Grid x:Uid="Grid_1">
+        <Grid.Background>
+            <SolidColorBrush x:Uid="SolidColorBrush_1" Color="AliceBlue" Opacity="0.6"></SolidColorBrush>
+        </Grid.Background>
+            <ItemsControl x:Uid="ItemsControl_1" ItemsSource="{Binding Source={StaticResource buttonSource}}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate x:Uid="DataTemplate_1">
+                        <StackPanel x:Uid="StackPanel_1">
+                            <View:LinkButton x:Uid="View:LinkButton_1" AutomationProperties.AutomationId="{Binding AutomationId}" ButtonText="{Binding Text}" HorizontalContentAlignment="Stretch" IsEnabled="{Binding Path=IsEnabled}" Visibility="{Binding HasButton, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}" Command="{Binding Path=ExecuteCommand}" Margin="4">
+                            </View:LinkButton>
+                            <Expander x:Uid="Expander_1" Header="{Binding Text}" IsExpanded="True" IsEnabled="{Binding Path=IsEnabled}" Visibility="{Binding HasChildItems, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}" Margin="2">
+                                <View:CommandControl x:Uid="View:CommandControl_1" Margin="8, 0, 0, 0" Visibility="{Binding HasChildItems, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}" DataContext="{Binding Path=CommandCtrlViewModel}">
+                                </View:CommandControl>
+                            </Expander>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        <ItemsControl x:Uid="ItemsControl_2">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate x:Uid="DataTemplate_2">
+                    <View:LinkButton x:Uid="View:LinkButton_2" AutomationProperties.Name="{Binding Text}" AutomationProperties.AutomationId="{Binding AutomationId}" ButtonText="{Binding Text}" HorizontalContentAlignment="Stretch" IsEnabled="{Binding Path=IsEnabled}" Command="{Binding Path=ExecuteCommand}">
+                    </View:LinkButton>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</UserControl>

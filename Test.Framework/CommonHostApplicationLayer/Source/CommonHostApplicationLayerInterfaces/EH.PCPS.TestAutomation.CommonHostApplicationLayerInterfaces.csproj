@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\ReleaseBin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\ReleaseBin\Debug\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\ReleaseBin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CommonFlows\IGetCommDtmContainerPath.cs">
+      <id>a21b62ff-136c-4779-bb41-99d11a9db846</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetCriticalError.cs">
+      <id>ad535cd1-47e7-4044-9537-bc901bfc25e3</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetDtmContainerPath.cs">
+      <id>aa204822-a98e-4077-a499-6ab4e42f27c3</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetHostApplicationLanguage.cs">
+      <id>77123929-7580-40cd-b179-246a3114b41f</id>
+    </Compile>
+    <Compile Include="CommonFlows\IRemoveDevice.cs">
+      <id>1f8149e5-0458-4662-a66f-352d787e03bb</id>
+    </Compile>
+    <Compile Include="CommonFlows\IAddDevice.cs">
+      <id>f48c6b39-f3b9-43ed-a39e-fc944ec5b002</id>
+    </Compile>
+    <Compile Include="CommonFlows\ICreateTopologyOffline.cs">
+      <id>10eda836-0c62-43a6-af3a-9b9bb094c584</id>
+    </Compile>
+    <Compile Include="CommonFlows\ICloseFunction.cs">
+      <id>80397f50-61ef-4c9a-afba-80d1a0b395f9</id>
+    </Compile>
+    <Compile Include="CommonFlows\ICloseHostApplication.cs">
+      <id>962006ab-d684-490d-aac1-9a92e3863cf6</id>
+    </Compile>
+    <Compile Include="CommonFlows\ICloseProject.cs">
+      <id>2fb95782-aef5-41ac-b24c-8a8705a71d52</id>
+    </Compile>
+    <Compile Include="CommonFlows\IConnectDevice.cs">
+      <id>2ca7c64d-3578-4f5e-9186-d3fdaa6b0772</id>
+    </Compile>
+    <Compile Include="CommonFlows\ICreateTopologyOnline.cs">
+      <id>ef45edf3-d19a-40e3-b216-67138a286bef</id>
+    </Compile>
+    <Compile Include="CommonFlows\ICreateProject.cs">
+      <id>eab5ac17-948d-4ec1-847c-1dc3295d945b</id>
+    </Compile>
+    <Compile Include="CommonFlows\IDeleteProject.cs">
+      <id>a321b035-5a5c-44db-b0a7-14899f7d9998</id>
+    </Compile>
+    <Compile Include="CommonFlows\IDisconnectDevice.cs">
+      <id>86b94a38-97b8-41e6-9378-56ed9a319227</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetDeviceList.cs">
+      <id>706584da-0493-486f-aaa6-afee14f7de07</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetMessageLog.cs">
+      <id>59247f61-dc97-435c-8f69-052a72f7773b</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetSelectedDevice.cs">
+      <id>82d336da-f897-44f5-8e8a-dda59184bd1b</id>
+    </Compile>
+    <Compile Include="CommonFlows\IOpenAdditionalFunction.cs">
+      <id>dc323102-dd6d-4427-b929-7aeb211ef2aa</id>
+    </Compile>
+    <Compile Include="CommonFlows\IOpenFunction.cs">
+      <id>4eccfaf0-245d-46f6-82f1-c0aa36cbdc0e</id>
+    </Compile>
+    <Compile Include="CommonFlows\IRegisterDeviceType.cs">
+      <id>23c39988-1dc6-4c21-8a46-3e9fbebea4f6</id>
+    </Compile>
+    <Compile Include="CommonFlows\IRestoreDeviceData.cs">
+      <id>25d47b54-906e-4d52-9a2b-e3a1a59a98cc</id>
+    </Compile>
+    <Compile Include="CommonFlows\ISaveDeviceData.cs">
+      <id>85145ef1-f57c-408c-97d4-ed517d4e506b</id>
+    </Compile>
+    <Compile Include="CommonFlows\ISelectDevice.cs">
+      <id>b052160e-2b7b-4949-a5b5-1d4c087fd786</id>
+    </Compile>
+    <Compile Include="CommonFlows\IGetDeviceFunctionInFocus.cs">
+      <id>55908535-65af-4d0d-9140-16e052724e82</id>
+    </Compile>
+    <Compile Include="CommonFlows\ISwitchToFunction.cs">
+      <id>aa235386-3002-49b5-886d-af33be8e0758</id>
+    </Compile>
+    <Compile Include="CommonFlows\IUnregisterDeviceType.cs">
+      <id>3abcd695-9d6b-4440-b597-faa3868af0cd</id>
+    </Compile>
+    <Compile Include="CommonFlows\IWriteDataToDevice.cs">
+      <id>0eec9f45-fcd8-4e37-8c4b-bb1f234879a3</id>
+    </Compile>
+    <Compile Include="CommonFlows\IPrintDeviceInformation.cs">
+      <id>e12bc7ab-bab8-4eec-8bd3-c26a26dd4698</id>
+    </Compile>
+    <Compile Include="CommonFlows\IReadDataFromDevice.cs">
+      <id>408cbc19-7731-41f6-8508-15284654d15e</id>
+    </Compile>
+    <Compile Include="CommonFlows\IOpenHostApplication.cs">
+      <id>25fca315-0fe3-4e4d-889a-f3f3bfc14258</id>
+    </Compile>
+    <Compile Include="CommonFlows\ISaveProject.cs">
+      <id>34c16f24-ed5c-4ba0-b73a-c22be5b6dac8</id>
+    </Compile>
+    <Compile Include="CommonFlows\ILoadProject.cs">
+      <id>1a4c3853-44df-458a-9cbc-54cb54da03b5</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>6ef62c80-8299-4d9b-a584-220d9f0d50b4</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03BED77A-D124-4C7A-9059-49498CE682CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.ImsOpcBridge.Configurator</RootNamespace>
+    <AssemblyName>EH.ImsOpcBridge.Configurator.Wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
+    <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
+    <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
+    <SccProvider>Jazz Source Control Provider:{AC8810C5-F6E7-4145-83AA-FDFFF6F5506D}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>EH.ImsOpcBridge.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fdt.ClrExtension.Interfaces, Version=1.2.0.0, Culture=neutral, PublicKeyToken=da168afd73e6c3f5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\integration\Compile_Time\FDT\Debug\Fdt.ClrExtension.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Fdt.Datatypes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d09fa7629c8cbe5a, processorArchitecture=MSIL" />
+    <Reference Include="Fdt.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d09fa7629c8cbe5a, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Integration\CompileTime\Log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="Prosa.LogAppender, Version=11.1.311.1, Culture=neutral, PublicKeyToken=4f00b09a1fd60f6e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Integration\CompileTime\Log4net\Prosa.LogAppender.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Main\CommonProperties\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Converter\BoolToStretchedConverter.cs" />
+    <Compile Include="Converter\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converter\CommUnitCountToVisibilityConverter.cs" />
+    <Compile Include="Converter\DateTimeToShortTimeConverter.cs" />
+    <Compile Include="Converter\HowToUsePageToVisibilityConverter.cs" />
+    <Compile Include="Converter\MessageAgentModeToVisibilityConverter.cs" />
+    <Compile Include="Converter\PercentageToBrushConverter.cs" />
+    <Compile Include="Converter\PowerConnectedToVisibilityConverter.cs" />
+    <Compile Include="Converter\SettingsSectionToVisibilityConverter.cs" />
+    <Compile Include="Converter\WidthConverter.cs" />
+    <Compile Include="Converter\WizardStepToVisibilityConverter.cs" />
+    <Compile Include="DefaultHost\ConfiguratorHost.cs" />
+    <Compile Include="EventArguments\AddressSpaceDataEventArgs.cs" />
+    <Compile Include="EventArguments\DiagnosticsDataEventArgs.cs" />
+    <Compile Include="Interfaces\IConfiguratorHost.cs" />
+    <Compile Include="EventArguments\ConfigurationDataEventArgs.cs" />
+    <Compile Include="EventArguments\ServiceErrorDataEventArgs.cs" />
+    <Compile Include="Model\ConfiguredMeasurementData.cs" />
+    <Compile Include="Model\ConfiguredMeasurementItemData.cs" />
+    <Compile Include="Model\RuntimeMeasurementData.cs" />
+    <Compile Include="EventArguments\RuntimeMeasurementsDataEventArgs.cs" />
+    <Compile Include="Model\ServerData.cs" />
+    <Compile Include="EventArguments\ServerDataEventArgs.cs" />
+    <Compile Include="Model\ServiceDataReceiver.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ISplashScreen.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ImsOpcBridgeEventLog.cs" />
+    <Compile Include="Model\ConfigStorage.cs" />
+    <Compile Include="Model\ImsOpcBridgeSettings.cs" />
+    <Compile Include="Model\IReadOnlyImsOpcBridgeSettings.cs" />
+    <Compile Include="Model\ThemeDictionary.cs" />
+    <Compile Include="Model\ThemeSelector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rules\ByteArrayRule.cs" />
+    <Compile Include="Rules\EhSerialNumberRule.cs" />
+    <Compile Include="Rules\IntRangeRule.cs" />
+    <Compile Include="Rules\IpAddressRule.cs" />
+    <Compile Include="Rules\NotNullOrEmptyRule.cs" />
+    <Compile Include="Rules\OpcItemIdRule.cs" />
+    <Compile Include="Rules\SingleItemRule.cs" />
+    <Compile Include="ViewModel\AriadnePathControlItemVm.cs" />
+    <Compile Include="ViewModel\AriadnePathControlVm.cs" />
+    <Compile Include="ViewModel\CommandControlVm.cs" />
+    <Compile Include="ViewModel\CommandVm.cs" />
+    <Compile Include="ViewModel\BridgeSettingCtrlVm.cs" />
+    <Compile Include="ViewModel\BridgeSettingItemVm.cs" />
+    <Compile Include="ViewModel\BridgeGatewaySettingsControlVm.cs" />
+    <Compile Include="ViewModel\SupplyCareWebServerSettingsControlVm.cs" />
+    <Compile Include="ViewModel\SupplyCareSamplingRateSettingsControlVm.cs" />
+    <Compile Include="ViewModel\SupplyCareSettingItemVm.cs" />
+    <Compile Include="ViewModel\SupplyCareSettingCtrlVm.cs" />
+    <Compile Include="ViewModel\FisProxySettingsControlVm.cs" />
+    <Compile Include="ViewModel\FisConnectionSettingsControlVm.cs" />
+    <Compile Include="ViewModel\FisTimeScheduleSettingsControlVm.cs" />
+    <Compile Include="ViewModel\FisSettingItemVm.cs" />
+    <Compile Include="ViewModel\FisSettingCtrlVm.cs" />
+    <Compile Include="ViewModel\DocumentationItemVm.cs" />
+    <Compile Include="ViewModel\DocumentationVm.cs" />
+    <Compile Include="ViewModel\EventLogControlVm.cs" />
+    <Compile Include="ViewModel\MappingControlVm.cs" />
+    <Compile Include="ViewModel\MonitorDataControlVm.cs" />
+    <Compile Include="ViewModel\HowToUseVm.cs" />
+    <Compile Include="ViewModel\LanguageControlItemVm.cs" />
+    <Compile Include="ViewModel\LanguageControlVm.cs" />
+    <Compile Include="ViewModel\LanguageVm.cs" />
+    <Compile Include="ViewModel\MainWindowVm.cs" />
+    <Compile Include="ViewModel\MessageAgentVm.cs" />
+    <Compile Include="ViewModel\OpcItemMappingTreeChildrenVm.cs" />
+    <Compile Include="ViewModel\OwnConfigurationControlVm.cs" />
+    <Compile Include="ViewModel\OwnConfigurationInformationControlVm.cs" />
+    <Compile Include="ViewModel\PageViewModel.cs" />
+    <Compile Include="ViewModel\OpcItemMappingTreeParentVm.cs" />
+    <Compile Include="ViewModel\OpcItemMappingTreeRootVm.cs" />
+    <Compile Include="ViewModel\ServerControlVm.cs" />
+    <Compile Include="ViewModel\SettingsVm.cs" />
+    <Compile Include="ViewModel\TreeViewItemVm.cs" />
+    <Compile Include="View\AriadneButton.cs" />
+    <Compile Include="View\AriadnePathControl.xaml.cs">
+      <DependentUpon>AriadnePathControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BridgeSettingControl.xaml.cs">
+      <DependentUpon>BridgeSettingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BridgeSettingCtrl.xaml.cs">
+      <DependentUpon>BridgeSettingCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CircularProgress.xaml.cs">
+      <DependentUpon>CircularProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ComboTextBoxControl.xaml.cs">
+      <DependentUpon>ComboTextBoxControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommandControl.xaml.cs">
+      <DependentUpon>CommandControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BridgeGatewaySettingsCtrl.xaml.cs">
+      <DependentUpon>BridgeGatewaySettingsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ComboTextBoxSmallControl.xaml.cs">
+      <DependentUpon>ComboTextBoxSmallControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CheckBoxSmallControl.xaml.cs">
+      <DependentUpon>CheckBoxSmallControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ButtonControl.xaml.cs">
+      <DependentUpon>ButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DocumentationControlManual.xaml.cs">
+      <DependentUpon>DocumentationControlManual.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmptyHotkeyControl.xaml.cs">
+      <DependentUpon>EmptyHotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventLogHotkeyControl.xaml.cs">
+      <DependentUpon>EventLogHotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PagingHotkeyControl.xaml.cs">
+      <DependentUpon>PagingHotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServerHotkeyControl.xaml.cs">
+      <DependentUpon>ServerHotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplyCareSamplingRateSettingsCtrl.xaml.cs">
+      <DependentUpon>SupplyCareSamplingRateSettingsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplyCareSettingCtrl.xaml.cs">
+      <DependentUpon>SupplyCareSettingCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplyCareSettingControl.xaml.cs">
+      <DependentUpon>SupplyCareSettingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplyCareWebServerSettingsCtrl.xaml.cs">
+      <DependentUpon>SupplyCareWebServerSettingsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FisProxySettingsCtrl.xaml.cs">
+      <DependentUpon>FisProxySettingsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FisConnectionSettingsCtrl.xaml.cs">
+      <DependentUpon>FisConnectionSettingsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TextBoxesSmallControl.xaml.cs">
+      <DependentUpon>TextBoxesSmallControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FisSettingCtrl.xaml.cs">
+      <DependentUpon>FisSettingCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FisTimeScheduleSettingsCtrl.xaml.cs">
+      <DependentUpon>FisTimeScheduleSettingsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FisSettingControl.xaml.cs">
+      <DependentUpon>FisSettingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingDetailsDataGridCtrl.xaml.cs">
+      <DependentUpon>MappingDetailsDataGridCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingHotkeyControl.xaml.cs">
+      <DependentUpon>MappingHotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DocumentationControl.xaml.cs">
+      <DependentUpon>DocumentationControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventLogControl.xaml.cs">
+      <DependentUpon>EventLogControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventLogCtrl.xaml.cs">
+      <DependentUpon>EventLogCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\HowToUseControl.xaml.cs">
+      <DependentUpon>HowToUseControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LanguageControl.xaml.cs">
+      <DependentUpon>LanguageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingControl.xaml.cs">
+      <DependentUpon>MappingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingDataGridCtrl.xaml.cs">
+      <DependentUpon>MappingDataGridCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MaskedTextBoxBehavior.cs" />
+    <Compile Include="View\MenuControl.xaml.cs">
+      <DependentUpon>MenuControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MessageAgentControl.xaml.cs">
+      <DependentUpon>MessageAgentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MonitorDataCtrl.xaml.cs">
+      <DependentUpon>MonitorDataCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MonitorDataGridCtrl.xaml.cs">
+      <DependentUpon>MonitorDataGridCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OpcAddressSpaceControl.xaml.cs">
+      <DependentUpon>OpcAddressSpaceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OwnConfigurationControl.xaml.cs">
+      <DependentUpon>OwnConfigurationControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OwnConfigurationInformationControl.xaml.cs">
+      <DependentUpon>OwnConfigurationInformationControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PagingControl.xaml.cs">
+      <DependentUpon>PagingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServerControl.xaml.cs">
+      <DependentUpon>ServerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServerDataGridCtrl.xaml.cs">
+      <DependentUpon>ServerDataGridCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingsControl.xaml.cs">
+      <DependentUpon>SettingsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingsHotkeyControl.xaml.cs">
+      <DependentUpon>SettingsHotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TextBoxesControl.xaml.cs">
+      <DependentUpon>TextBoxesControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wcf\CommServerClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EH.ImsOpcBridge.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Base.Interfaces\EH.ImsOpcBridge.Base.Interfaces.csproj">
+      <Project>{1fed0491-1f3a-4483-8057-aab3cb05fbcb}</Project>
+      <Name>EH.ImsOpcBridge.Base.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Base.UI.Wpf\EH.ImsOpcBridge.Base.UI.Wpf.csproj">
+      <Project>{d9bd1c4d-78af-4772-8331-36a19055eabe}</Project>
+      <Name>EH.ImsOpcBridge.Base.UI.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Base\EH.ImsOpcBridge.Base.csproj">
+      <Project>{529f377b-8490-4142-bfed-52d3c292a247}</Project>
+      <Name>EH.ImsOpcBridge.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Common\EH.ImsOpcBridge.Common.csproj">
+      <Project>{d3c7435f-8d4c-4282-af96-402e7d48d7ea}</Project>
+      <Name>EH.ImsOpcBridge.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.ImsOpcBridge.DataContracts\EH.ImsOpcBridge.DataContracts.csproj">
+      <Project>{c4bbffc6-6bb6-4bae-8746-951db69827ac}</Project>
+      <Name>EH.ImsOpcBridge.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Wcf.Interfaces\EH.ImsOpcBridge.Wcf.Interfaces.csproj">
+      <Project>{322c3d2e-bed3-4319-95d8-ea9843eebe33}</Project>
+      <Name>EH.ImsOpcBridge.Wcf.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.de-DE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Arrow left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Arrow right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Arrow up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Assistant active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Assistant disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Assistant pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Automatic active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Automatic pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Configuration active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Configuration pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Ethernet active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Ethernet pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\ExitImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Export pressed.png" />
+    <Resource Include="Resources\DesignA2\Flash active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Flash pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Help active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Help disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Help pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Home active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Home disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Home pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Options active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Options disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Options pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\PAM active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\PAM disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\PAM pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\PCMCIA card active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\PCMCIA card pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Plug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol CDI pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol Fieldbus active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol Fieldbus pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol Hart active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol Hart pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol Profibus active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Protocol Profibus pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Quit active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Quit disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Quit pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Refresh active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Refresh disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Refresh pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Reload active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Reload pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Scan active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Scan pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Scan Result active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Scan Result pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Serial Port active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Serial Port pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interface 1 active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interface 1 pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interface 2 active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interface 2 pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interface 3 active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interface 3 pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interfaces active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Service Interfaces pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Set Address active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Set Address pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\USB active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\USB Ethernet CDI active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\USB Ethernet CDI pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\USB pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\USB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Documents\HowToUseAboutImprintDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Documents\TestDocument.xaml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\E+H_Bildmarke_2c 16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\E+H_Bildmarke_2c 24x24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\E+H_Bildmarke_2c 32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\E+H_Bildmarke_2c 64x64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <EmbeddedResource Include="Resources\Documents\HowToUseAboutVersionDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Documents\HowToUseAboutOpenSourceDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Documents\HowToUseAboutImprintDocument_de-DE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Documents\HowToUseAboutManualDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Documents\HowToUseAboutManualDocument_de-DE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Page Include="Themes\DesignA2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Themes\EndressHauser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Themes\GreyCloud.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\ThemeBaseSelectorBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\ThemeButtonBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Themes\ThemeButtonFrameBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Themes\WinterGray.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\AriadnePathControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\BridgeSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\BridgeSettingCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CircularProgress.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\ComboTextBoxControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\CommandControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\BridgeGatewaySettingsCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ComboTextBoxSmallControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CheckBoxSmallControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ButtonControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DocumentationControlManual.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\EmptyHotkeyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\EventLogHotkeyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PagingHotkeyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ServerHotkeyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SupplyCareSamplingRateSettingsCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SupplyCareSettingCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SupplyCareSettingControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\SupplyCareWebServerSettingsCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FisProxySettingsCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FisConnectionSettingsCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TextBoxesSmallControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FisSettingCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FisTimeScheduleSettingsCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\FisSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MappingDetailsDataGridCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MappingHotkeyControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\DocumentationControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\EventLogControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EventLogCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\HowToUseControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\LanguageControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\MappingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MappingDataGridCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MenuControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\MessageAgentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\MonitorDataCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MonitorDataGridCtrl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\OpcAddressSpaceControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\OwnConfigurationControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\OwnConfigurationInformationControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\PagingControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\ServerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ServerDataGridCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="View\SettingsHotkeyControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TextBoxesControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DeviceCare32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="E+H Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DesignA2\Save pressed1.png" />
+    <Content Include="Resources\DesignA2\City.png" />
+    <Resource Include="Resources\DesignA2\BulletTree.png" />
+    <Resource Include="Resources\DesignA2\ArrowTree.png" />
+    <Resource Include="Resources\DesignA2\Details.png" />
+    <Resource Include="Resources\DesignA2\InsertRow active.png" />
+    <Resource Include="Resources\DesignA2\Arrow down.png" />
+    <Resource Include="Resources\DesignA2\ArrowSmall down.png" />
+    <Resource Include="Resources\DesignA2\DeleteRow pressed.png" />
+    <Resource Include="Resources\DesignA2\Arrow left begin.png" />
+    <Resource Include="Resources\DesignA2\ConnectServer active.png" />
+    <Resource Include="Resources\DesignA2\Arrow right end.png" />
+    <Resource Include="Resources\DesignA2\Search.png" />
+    <Resource Include="Resources\DesignA2\UndoTmp.png" />
+    <Resource Include="Resources\DesignA2\Save2.png" />
+    <Resource Include="Resources\DesignA2\Save active1.png" />
+    <Resource Include="Resources\DesignA2\Export active.png" />
+    <Resource Include="Resources\DesignA2\Import active.png" />
+    <Resource Include="Resources\DesignA2\Import pressed.png" />
+    <Resource Include="Resources\DesignA2\Undo active.png" />
+    <Resource Include="Resources\DesignA2\EditTable active.png" />
+    <Resource Include="Resources\DesignA2\EditTable pressed.png" />
+    <Resource Include="Resources\DesignA2\ConnectServer pressed.png" />
+    <Resource Include="Resources\DesignA2\CheckBox active.png" />
+    <Resource Include="Resources\DesignA2\Delete active.png" />
+    <Resource Include="Resources\DesignA2\Delete pressed.png" />
+    <Resource Include="Resources\DesignA2\FilterSmall active.png" />
+    <Resource Include="Resources\DesignA2\InsertRow pressed.png" />
+    <Resource Include="Resources\DesignA2\DeleteRow active.png" />
+    <Resource Include="Resources\DesignA2\InsertRow disabled.png" />
+    <Resource Include="Resources\DesignA2\DeleteRow disabled.png" />
+    <Resource Include="Resources\DesignA2\Settings active.png" />
+    <Resource Include="Resources\DesignA2\Settings pressed.png" />
+    <Resource Include="Resources\DesignA2\Save active.png" />
+    <Resource Include="Resources\DesignA2\Save pressed.png" />
+    <Resource Include="Resources\DesignA2\BrowseAddresSpace pressed.png" />
+    <Resource Include="Resources\DesignA2\BrowseAddresSpace active.png" />
+    <Content Include="Resources\DesignA2\Region.png" />
+    <Content Include="Resources\DesignA2\Save1.png" />
+    <Resource Include="Resources\DesignA2\Undo pressed.png" />
+    <Content Include="Resources\DesignA2\Setting active.png" />
+    <Content Include="Resources\DesignA2\Setting pressed.png" />
+    <Content Include="Resources\DesignA2\State.png" />
+    <Content Include="Resources\ImsOpcBridge.ico" />
+    <Content Include="Resources\DesignA2\LeftButtonDeviceTypeInfoCtrl.png" />
+    <Content Include="Resources\DesignA2\RightButtonDeviceTypeInfoCtrl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

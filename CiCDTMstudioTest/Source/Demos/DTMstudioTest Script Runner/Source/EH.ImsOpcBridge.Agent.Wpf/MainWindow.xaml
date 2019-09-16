@@ -1,0 +1,40 @@
+﻿<Window x:Class="EH.ImsOpcBridge.Agent.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:EH.ImsOpcBridge.Agent.Wpf" Width="500" Height="400"
+        d:DataContext="{d:DesignInstance vm:MainWindowViewModel, IsDesignTimeCreatable=False}"
+        
+        Icon="{Binding Path=IconSource}"
+        Title="{Binding Path=Title}"
+        Visibility="Hidden" 
+        Loaded="WindowLoaded"
+        Closing="IsClosing" mc:Ignorable="d" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:tb="clr-namespace:EH.ImsOpcBridge.UI.Wpf.TaskbarIcon;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+        xmlns:cl="clr-namespace:EH.ImsOpcBridge.Agent.Wpf.View"
+        AutomationProperties.AutomationId="automnId_ImsOpcBridgeAgentWindow">
+    <Window.TaskbarItemInfo >
+        <TaskbarItemInfo />
+    </Window.TaskbarItemInfo>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <tb:TaskbarIconClass
+            x:Name="tb"
+            IconSource="{Binding IconSource}"
+            ToolTipText="Agent for communication with the service" HorizontalAlignment="Left" VerticalAlignment="Top" AutomationProperties.AutomationId="ImsOpcBridgeTaskbarIcon" TrayMouseDoubleClick="TrayMouseDoubleClick">
+            <tb:TaskbarIconClass.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="Show/Hide Window" Click="ShowHideWindow" ToolTip="Show/Hide the Agent Window" AutomationProperties.AutomationId="automnId_ContextMenuShowHideWindow"/>
+                    <MenuItem Header="Close" Click="Close" ToolTip="Close the Agent." AutomationProperties.AutomationId="automnId_ContextMenuCloseWindow"/>
+                </ContextMenu>
+            </tb:TaskbarIconClass.ContextMenu>
+        </tb:TaskbarIconClass>
+        <cl:ServerViewControl x:Uid="ServerViewControl" x:Name="ServerViewControl" Margin="5,5,5,5" AutomationProperties.AutomationId="automnId_ImsOpcBridgeConnectionControl"/>
+    </Grid>
+</Window>

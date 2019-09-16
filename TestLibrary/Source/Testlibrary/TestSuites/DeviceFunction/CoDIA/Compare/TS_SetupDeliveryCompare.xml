@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryCompare</DisplayName>
+      <Guid>dac73cb2-e422-4701-8414-64e0479b456a</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryCompare</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Compare Online With File Close</DisplayName>
+          <Guid>f93307f9-22c5-4317-b7fc-7a341f7818f4</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Compare Online With File Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Compare.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>eaaf69bc-fb27-4cbc-a0e3-b740da805334</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>f000388d-12c2-45ec-a6c0-aefe12cb8ce7</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares the online data with a .deh file</Description>
+              <DisplayName>Compare.TC_CompareOnlineWithDehFile.Run</DisplayName>
+              <Guid>92229367-6161-4e19-adf4-b2581a82a5e9</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares the online data with a .deh file</ToolTip>
+              <AssemblyMethodRefId>03FB8D98-1FE8-44EF-909E-5148F0EFCFD1</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module</Description>
+              <DisplayName>Compare.TC_CloseModule.Run()</DisplayName>
+              <Guid>f842e411-0a24-4f7d-844a-157b5e22c8fb</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module</ToolTip>
+              <AssemblyMethodRefId>601b88d7-8863-4e1e-a721-82e38bf926f8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Compare Offline With File Close</DisplayName>
+          <Guid>d68cf65a-8ff6-499d-b999-1276a6e562d9</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Compare Offline With File Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Compare.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>ba34b7dc-f04f-44b2-961a-c673edce497a</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>f000388d-12c2-45ec-a6c0-aefe12cb8ce7</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares the offline data with a .deh file</Description>
+              <DisplayName>Compare.TC_CompareOfflineWithDehFile.Run</DisplayName>
+              <Guid>f2a7eb03-c37f-49e9-911b-639abc43227f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares the offline data with a .deh file</ToolTip>
+              <AssemblyMethodRefId>310D723F-7D4E-4F6C-8142-1F787783D449</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module</Description>
+              <DisplayName>Compare.TC_CloseModule.Run()</DisplayName>
+              <Guid>0449b5c8-7b89-401b-95ec-22dc07418b2d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module</ToolTip>
+              <AssemblyMethodRefId>601b88d7-8863-4e1e-a721-82e38bf926f8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Compare File With File Close</DisplayName>
+          <Guid>b6266dff-3fbf-4952-9ae0-c66a8c6da377</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Compare File With File Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Compare.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>6297b43e-fe78-47c1-b683-02f0fd358f24</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>f000388d-12c2-45ec-a6c0-aefe12cb8ce7</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compares two .deh files</Description>
+              <DisplayName>Compare.TC_CompareDehFileWithDehFile.Run</DisplayName>
+              <Guid>c1350aea-a6c6-4ce1-8d1c-e53f3ad50357</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compares two .deh files</ToolTip>
+              <AssemblyMethodRefId>3ABF8E59-0F66-4C2D-9350-573A702BD975</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module</Description>
+              <DisplayName>Compare.TC_CloseModule.Run()</DisplayName>
+              <Guid>2f13328d-6435-4024-b61e-446c90cb1137</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module</ToolTip>
+              <AssemblyMethodRefId>601b88d7-8863-4e1e-a721-82e38bf926f8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Compare Online With Offline Close</DisplayName>
+          <Guid>cdeecffd-c6ea-47c8-91fa-702c27bdcf2b</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Compare Online With Offline Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Compare.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>705da273-63dc-4eb4-8d17-00ecbc3a732f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>f000388d-12c2-45ec-a6c0-aefe12cb8ce7</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Compare the online data with the offline data</Description>
+              <DisplayName>Compare.TC_CompareOfflineWithOnline.Run</DisplayName>
+              <Guid>3a46cf77-174a-4ecf-9312-3477e02d0e78</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Compare the online data with the offline data</ToolTip>
+              <AssemblyMethodRefId>4693DCF8-1D59-493D-AEF2-F0F2F46458BE</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module</Description>
+              <DisplayName>Compare.TC_CloseModule.Run()</DisplayName>
+              <Guid>bb881b97-d5ce-4061-8bb9-c222a36d19ca</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module</ToolTip>
+              <AssemblyMethodRefId>601b88d7-8863-4e1e-a721-82e38bf926f8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Compare Cancel Close</DisplayName>
+          <Guid>d34d8964-37e6-4f8f-bc7e-d64c2cde4992</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Compare Cancel Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online</Description>
+              <DisplayName>Compare.TC_OpenModuleOnline.Run()</DisplayName>
+              <Guid>90bd2940-0f95-4f80-8a69-33d6b1de7fcc</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online</ToolTip>
+              <AssemblyMethodRefId>f000388d-12c2-45ec-a6c0-aefe12cb8ce7</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Starts a comparison Online data with Offline data and cancels it after a user defined time</Description>
+              <DisplayName>Compare.TC_CancelCompareOfflineWithOnline.Run</DisplayName>
+              <Guid>5ef1a129-a638-4c48-8a67-676bb3451d4d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Starts a comparison Online data with Offline data and cancels it after a user defined time</ToolTip>
+              <AssemblyMethodRefId>A694409F-C0AC-4859-B5B4-308E9907DF10</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module</Description>
+              <DisplayName>Compare.TC_CloseModule.Run()</DisplayName>
+              <Guid>24ddc401-15ee-4c0e-a095-9224da2f3038</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module</ToolTip>
+              <AssemblyMethodRefId>601b88d7-8863-4e1e-a721-82e38bf926f8</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>90770f1c-0266-4b74-ae8e-bdafe6718bae</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>Compare</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

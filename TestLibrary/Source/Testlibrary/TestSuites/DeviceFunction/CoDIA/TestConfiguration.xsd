@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    xmlns:xs=       "http://www.w3.org/2001/XMLSchema"
+    xmlns=          "http://tempuri.org/TestConfiguration.xsd"
+    xmlns:mstns=    "http://tempuri.org/TestConfiguration.xsd"
+    targetNamespace="http://tempuri.org/TestConfiguration.xsd"
+    xmlns:d3p1=     "http://www.w3.org/2001/XMLSchema-instance"
+    elementFormDefault="qualified"
+>
+  <xs:element name ="TestConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AvailableTestObjects"   type="mstns:AvailableTestObjects"></xs:element>
+        <xs:element name="ConfigurationFile"      type="xs:string"></xs:element>
+        <xs:element name="DTMstudioCoDIAVersion"  type="xs:string"></xs:element>
+        <xs:element name="Description"            type="xs:string"></xs:element>
+        <xs:element name="Name"                   type="xs:string"></xs:element>
+        <xs:element name="TestFrameworkVersion"   type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="AvailableTestObjects">
+    <xs:sequence>
+      <xs:element name="TestObject"               type="mstns:TestObject"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TestObject">
+    <xs:sequence>
+
+    </xs:sequence>
+    <xs:attribute name="type" type="xs:string"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="TestSuite">
+    <xs:complexContent>
+      <xs:extension base="mstns:TestObject">
+        <xs:sequence>
+          <xs:element name="DisplayName"              type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="Guid"                     type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="IsActive"                 type="xs:boolean" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="Name"                     type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="TestDefinition"           type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="TestObjects"              type="mstns:TestObjects"  minOccurs="0" maxOccurs="1"></xs:element>
+          <xs:element name="TestCategory"             type="xs:string" minOccurs="0"></xs:element>
+          <xs:element name="TestFocus"                type="xs:string" minOccurs="0"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TestFolder">
+    <xs:complexContent>
+      <xs:extension base="mstns:TestObject">
+        <xs:sequence>
+          <xs:element name="DisplayName"              type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="Guid"                     type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="IsActive"                 type="xs:boolean" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="Name"                     type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="TestDefinition"           type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="TestObjects"              type="mstns:TestObjects"  minOccurs="0" maxOccurs="1"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TestCase">
+    <xs:complexContent>
+      <xs:extension base="mstns:TestObject">
+        <xs:sequence>
+          <xs:element name="Description"              type="xs:string" minOccurs="0"></xs:element>
+          <xs:element name="DisplayName"              type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="Guid"                     type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="IsActive"                 type="xs:boolean" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="Name"                     type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="TestDefinition"           type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+          <xs:element name="ToolTip"                  type="xs:string" minOccurs="0"></xs:element>
+          <xs:element name="AssemblyMethodRefId"      type="xs:string" minOccurs="0"></xs:element>
+          <xs:element name="AssemblyName"             type="xs:string" minOccurs="0"></xs:element>
+          <xs:element name="CustomAttributTestScript" type="xs:string" minOccurs="0"></xs:element>
+          <xs:element name="Parameters"               type="mstns:Parameters"  minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="TestObjects">
+    <xs:sequence>
+      <xs:element name="TestObject"               type="mstns:TestObject" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TestParameter">
+    <xs:sequence>
+      <xs:element name="Description"          type="xs:string"></xs:element>
+      <xs:element name="Name"                 type="xs:string"></xs:element>
+      <xs:element name="ParameterType"        type="xs:string"></xs:element>
+      <xs:element name="ParameterValue"       type="xs:string"></xs:element>
+      <xs:element name="ParameterValueValid"  type="xs:boolean"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Parameters">
+    <xs:sequence>
+      <xs:element name="TestParameter" type="mstns:TestParameter" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

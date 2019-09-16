@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D30F9EE4-A69D-4314-BF06-95CE5D026EF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.ScriptExplorerTree</RootNamespace>
+    <AssemblyName>EH.PCPS.ScriptExplorerTree</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>EH.PCPS.ScriptExplorerTree.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavior\TextBoxBehavior.cs" />
+    <Compile Include="Converter\ColorConverter.cs" />
+    <Compile Include="Converter\InstallActionConverter.cs" />
+    <Compile Include="Converter\InverseVisibilityConverter.cs" />
+    <Compile Include="Converter\ToUpperConverter.cs" />
+    <Compile Include="Converter\VisibilityConverter.cs" />
+    <Compile Include="Model\ScriptExplorerCollection.cs" />
+    <Compile Include="Model\ScriptExplorerItem.cs" />
+    <Compile Include="Model\ScriptExplorerModel.cs" />
+    <Compile Include="Model\ScriptExplorerTreeListView.cs" />
+    <Compile Include="Model\ScriptExplorerTreeNode.cs" />
+    <Compile Include="Model\TreeModel.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptExplorerTreeControl.xaml.cs">
+      <DependentUpon>ScriptExplorerTreeControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\add_file.png" />
+    <Resource Include="Resources\Icons\add_folder.png" />
+    <Resource Include="Resources\Icons\copy.png" />
+    <Resource Include="Resources\Icons\cut.png" />
+    <Resource Include="Resources\Icons\delete.png" />
+    <Resource Include="Resources\Icons\down.png" />
+    <Resource Include="Resources\Icons\DTM\Icon_About.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_Compare.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_Concentration.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_EchoCurve.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_EventList.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_Help.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_Linearisation.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_OneClickPrint.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_SaveRestore.ico" />
+    <Resource Include="Resources\Icons\DTM\Icon_Viscosity.ico" />
+    <Resource Include="Resources\Icons\file.png" />
+    <Resource Include="Resources\Icons\minus.png" />
+    <Resource Include="Resources\Icons\paste.png" />
+    <Resource Include="Resources\Icons\plus.png" />
+    <Resource Include="Resources\Icons\save_as.png" />
+    <Resource Include="Resources\Icons\settings.png" />
+    <Resource Include="Resources\Icons\TestCase.png" />
+    <Resource Include="Resources\Icons\TestFolder.png" />
+    <Resource Include="Resources\Icons\TestModule.png" />
+    <Resource Include="Resources\Icons\TestSuite.png" />
+    <Resource Include="Resources\Icons\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ScriptExplorerTreeControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\EH.DTMstudioTest.Common\EH.DTMstudioTest.Common.csproj">
+      <Project>{caa7eb4d-c7f9-41a7-a273-8ada0755d8b9}</Project>
+      <Name>EH.DTMstudioTest.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.PCPS.SelectionTree.Controls\EH.PCPS.SelectionTree.Controls.csproj">
+      <Project>{e5f6b6e6-50ab-4a7f-b82a-5922b5d5e0d9}</Project>
+      <Name>EH.PCPS.SelectionTree.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EH.PCPS.ScriptExplorerTree.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

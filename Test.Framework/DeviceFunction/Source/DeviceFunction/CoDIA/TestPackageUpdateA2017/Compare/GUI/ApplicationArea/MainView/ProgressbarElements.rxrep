@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ProgressbarElements"
+id="209f827f-c913-4f3f-ac49-9cd6d25f697e"
+rxversion="6.1">
+	<codegen
+	classname="ProgressbarElements"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.Compare.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="0895062f-065b-4db5-974c-7553a8d59b41"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ProgressBar"
+		id="ba064636-f9dd-4958-a41f-60683d59b8ec"
+		searchtimeout="30000ms"
+		capname="progressbar"
+		addcaps="progressbar,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/container[@controlname='CompareGuiPanel']/container[@controlname='_BottomButtonsGroupControl']/element[@controlname='_ProgressBarControl']/progressbar
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

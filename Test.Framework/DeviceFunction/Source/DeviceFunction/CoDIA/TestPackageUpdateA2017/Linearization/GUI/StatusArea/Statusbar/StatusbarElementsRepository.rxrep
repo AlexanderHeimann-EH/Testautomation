@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="StatusbarElementsRepository"
+id="958e2902-96ea-4cfc-b538-568cddba1786"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.Linearization.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="b3965ad5-3b8b-4787-9762-a5fd045d0247"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="StatusbarItemConnectionState"
+		id="e6e63e6e-04e4-48b0-b77b-64e3e6185ec9"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="4f40f782-3a53-4590-9c28-68c1c4db4cd9">
+			/container[@automationid='LinearizationModule.LinearizationForm.DtmFormBase']/element[@automationid='LinearizationModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/element[@controltypename='DockedBarControl']/toolbar[@accessiblename='Bar']/text[@accessiblename='Statusbar.Item.ConnectionState']
+		</item>
+		<item
+		name="ButtonOperationInProgress"
+		id="bbb629c5-ef3e-4de6-8095-4a21d937b347"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="text,accessible"
+		refimgid="e772ee85-cd10-4fd0-9707-deb9e0845ce4">
+			/container[@automationid='LinearizationModule.LinearizationForm.DtmFormBase']/element[@automationid='LinearizationModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/element[@controltypename='DockedBarControl']/toolbar[@accessiblename='Bar']/button[@accessiblename='Statusbar.Item.OperationProgress']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ranorex.Plugin.Wpf</name>
+    </assembly>
+    <members>
+        <member name="T:Ranorex.WpfElement">
+            <summary>
+            Capability of a WPF element.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfElement.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WpfElement"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfElement.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WpfElement"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.WpfElement.AutomationId">
+            <summary>
+            AutomationId of the instance
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfElement.BaseType">
+            <summary>
+            FQTN of first known WPF type of DependencyObject instance's base-types
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfElement.FullType">
+            <summary>
+            FQTN of DependencyObject instance
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfElement.Name">
+            <summary>
+            Name of the instance
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfElement.Type">
+            <summary>
+            Short type-name of DependencyObject instance
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfElement.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfElement.op_Implicit(System.String)~Ranorex.WpfElement">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WpfElement.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfElement.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WpfElement.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfElement.op_Implicit(Ranorex.Core.Element)~Ranorex.WpfElement">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WpfElement.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfElement.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WpfElement.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.WpfDebug">
+            <summary>
+            (DEBUG) Capability of a WPF element.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfDebug.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WpfDebug"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfDebug.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WpfDebug"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.WpfDebug.DependencyObjectTypeLineage">
+            <summary>
+            FQTN of all types in the DependencyObject's type hierarchy
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfDebug.RanorexObjectID">
+            <summary>
+            GUID used to identify DependencyObject
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfDebug.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfDebug.op_Implicit(System.String)~Ranorex.WpfDebug">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WpfDebug.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfDebug.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WpfDebug.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfDebug.op_Implicit(Ranorex.Core.Element)~Ranorex.WpfDebug">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WpfDebug.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfDebug.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WpfDebug.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="T:Ranorex.WpfWin32Element">
+            <summary>
+            Capability of a WPF window element.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfWin32Element.#ctor">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WpfWin32Element"/> adapter instance. This constructor is used
+            internally by the Ranorex Core Framework for performance issues!
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfWin32Element.#ctor(Ranorex.Core.Element)">
+            <summary>
+            Creates a new <see cref="T:Ranorex.WpfWin32Element"/> adapter instance.
+            </summary>
+            <param name="element">The element to create the adapter for.</param>
+            <exception cref="T:System.NullReferenceException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="P:Ranorex.WpfWin32Element.Win32OwnerWindowLevel">
+            <summary>
+            Number of owning windows
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfWin32Element.Win32ParentWindowLevel">
+            <summary>
+            Number of parent windows
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfWin32Element.WpfNative">
+            <summary>
+            Indicates that the element is created by the native WPF plug-in. Used for path disambiguation when also using UIA.
+            </summary>
+        </member>
+        <member name="P:Ranorex.WpfWin32Element.RequiredCapabilities">
+            <summary>
+            Capabilities required by the adapter implementation.
+            </summary>
+        </member>
+        <member name="M:Ranorex.WpfWin32Element.op_Implicit(System.String)~Ranorex.WpfWin32Element">
+            <summary>
+            Implicitly converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WpfWin32Element.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfWin32Element.FromPath(System.String)">
+            <summary>
+            Converts a string to an instance of this class by searching the root.
+            </summary>
+            <param name="path">The search path.</param>
+            <returns>The WpfWin32Element.</returns>
+            <remarks>The <see cref="P:Ranorex.Adapter.DefaultSearchTimeout"/> is used to search for the specified path.</remarks>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="path"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.RxPathException">If the specified <paramref name="path"/> is not valid.</exception>
+            <exception cref="T:Ranorex.ElementNotFoundException">If no element is found.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfWin32Element.op_Implicit(Ranorex.Core.Element)~Ranorex.WpfWin32Element">
+            <summary>
+            Implicitly converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WpfWin32Element.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="M:Ranorex.WpfWin32Element.FromElement(Ranorex.Core.Element)">
+            <summary>
+            Converts an <see cref="T:Ranorex.Core.Element"/> to an instance of this class.
+            </summary>
+            <param name="element">The element to convert.</param>
+            <returns>The WpfWin32Element.</returns>
+            <exception cref="T:System.ArgumentNullException">If <paramref name="element"/> is <c>null</c>.</exception>
+            <exception cref="T:Ranorex.CapabilityNotSupportedException">If the element does not support the
+            capabilities required by this adapter.</exception>
+        </member>
+        <member name="F:Ranorex.Plugin.WpfFlavor.instance">
+            <summary>
+            legaxxxy remove with v6.1
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.WpfFlavor.Instance">
+            <summary>
+            Gets the local instance of this flavor.
+            </summary>
+        </member>
+        <member name="P:Ranorex.Plugin.WpfFlavor.ExpensiveAttributesEnabled">
+            <summary>
+            Gets or sets a value indicating if computationally expensive attributes are enabled,
+            e.g. <see cref="P:Ranorex.Cell.RowIndex"/>, <see cref="P:Ranorex.Column.Index"/>, or <see cref="P:Ranorex.Row.Index"/>.
+            </summary>
+            <remarks>Setting this value to <c>true</c> will instruct the plugin to evaluate attributes
+            that are expensive to compute and may result in longer delays when getting such
+            attributes. Note that spying an element with such expensive attributes may then take
+            considerable time.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.WpfFlavor.ForceVirtualItemRealization">
+            <summary>
+            Gets or sets a value indicating if virtual items are realized when trying to get their child elements.
+            </summary>
+            <remarks>Setting this value to <c>true</c> will allow to search lists with virtual items, but realizing may have
+            undesired effects on the list depending on the list implementation
+            e.g. that the list is scrolled to make the realized item visible.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.WpfFlavor.UseItemContainerPattern">
+            <summary>
+            Gets or sets a value indicating whether to use the ItemContainerPattern to iterate lists.
+            </summary>
+            <remarks>Setting this value to true instructs the plugin to use the ItemContainerPattern to
+            iterate items of virtual lists that implement this UI Automation pattern. Depending on the implementation of the control,
+            iterating children using this pattern should also return items that are currently scrolled out of view,
+            but might also be slower than the usual way to get child elements.
+            <para>Note that switching this setting can render existing RanoreXPaths invalid
+            for controls implementing the ItemContainerPattern.</para></remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.WpfFlavor.EnableNativeUiaSupport">
+            <summary>
+            Gets or sets a value indicating whether to provide elements for non-WPF windows natively implementing UIA.
+            </summary>
+            <remarks>Setting this value to true instructs the plugin to provide elements also for non-WPF windows which
+            natively implement the UIA interface.</remarks>
+        </member>
+        <member name="P:Ranorex.Plugin.WpfFlavor.UseWinAppDebugMode">
+            <summary>
+            Gets or sets a value indicating whether the debugging mode for Windows apps will be enabled.
+            </summary>
+            <remarks>If set to true, the debugging mode for Windows apps will be enabled, causing them to not be suspended
+            until the logon session is closed (user logout). When set to false, the plugin will instead try to resume suspended apps when
+            it needs to access them (possible race condition may cause freeze until app is manually resumed).</remarks>
+        </member>
+    </members>
+</doc>

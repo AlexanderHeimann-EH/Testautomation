@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EH.ImsOpcBridge.Base.UI.Wpf", "EH.ImsOpcBridge.Base.UI.Wpf.csproj", "{D9BD1C4D-78AF-4772-8331-36A19055EABE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9BD1C4D-78AF-4772-8331-36A19055EABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BD1C4D-78AF-4772-8331-36A19055EABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BD1C4D-78AF-4772-8331-36A19055EABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BD1C4D-78AF-4772-8331-36A19055EABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529F377B-8490-4142-BFED-52D3C292A247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529F377B-8490-4142-BFED-52D3C292A247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529F377B-8490-4142-BFED-52D3C292A247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529F377B-8490-4142-BFED-52D3C292A247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FED0491-1F3A-4483-8057-AAB3CB05FBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FED0491-1F3A-4483-8057-AAB3CB05FBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FED0491-1F3A-4483-8057-AAB3CB05FBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FED0491-1F3A-4483-8057-AAB3CB05FBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

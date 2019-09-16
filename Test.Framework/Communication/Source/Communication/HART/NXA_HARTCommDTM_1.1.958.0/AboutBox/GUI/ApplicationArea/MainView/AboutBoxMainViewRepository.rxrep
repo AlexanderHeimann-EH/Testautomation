@@ -1,0 +1,27 @@
+﻿<repository
+name="AboutBoxMainViewRepository"
+id="7676845d-68aa-4dbc-9298-2c7ec28a56fe"
+rxversion="6.1">
+	<codegen
+	classname="AboutBoxMainViewRepository"
+	namespace="EH.PCPS.TestAutomation.NXA_HARTCommDTM.V119580.AboutBox.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="59222f02-23b7-4b28-9f1c-fe797abc3684"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonCopyToClipboard"
+		id="80a99daa-32e1-4614-ad4a-075b00957c34"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="157fe31b-8524-4416-ac07-33cde093a736">
+			/?/form//container[@controlname='AboutBoxPresentation']/container[@controlname='MainContentPanel']/element[@controlname='_CopyToClipboardButton']/button[@accessiblename='Copy To Clipboard']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

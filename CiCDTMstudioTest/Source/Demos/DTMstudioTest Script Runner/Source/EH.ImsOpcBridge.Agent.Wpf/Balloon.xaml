@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="EH.ImsOpcBridge.Agent.Wpf.Balloon" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:TaskbarIcon="clr-namespace:EH.ImsOpcBridge.UI.Wpf.TaskbarIcon;assembly=EH.ImsOpcBridge.Base.UI.Wpf" mc:Ignorable="d" x:Name="me"
+             DataContext="{Binding}"
+             AutomationProperties.AutomationId="automnId_ImsOpcBridgeBalloon"
+             Background="AliceBlue">
+  <UserControl.Resources>
+    <Storyboard x:Key="FadeInAndOut">
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid"
+                                     Storyboard.TargetProperty="(UIElement.Opacity)">
+        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
+        <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.895" />
+        <SplineDoubleKeyFrame KeyTime="00:00:10" Value="0.895" />
+        <SplineDoubleKeyFrame KeyTime="00:00:11.6000000" Value="0" />
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+  </UserControl.Resources>
+  <UserControl.Triggers>
+    <EventTrigger RoutedEvent="TaskbarIcon:TaskbarIconClass.BalloonShowing">
+      <BeginStoryboard Storyboard="{StaticResource FadeInAndOut}" x:Name="FadeInAndOut_BeginStoryboard" />
+    </EventTrigger>
+  </UserControl.Triggers>
+  <Grid x:Name="grid" Width="220">
+
+    <Border x:Name="border" CornerRadius="10,10,10,10" Margin="0,0,5,5"></Border>
+    <TextBlock Margin="10" VerticalAlignment="Top" Width="33" Height="33" HorizontalAlignment="Left">
+      <Image Source="/Icons/Green.ico" Width="32" Height="32" />
+    </TextBlock>
+    <TextBlock Margin="50,20,10,10" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold">
+      Agent Notifications:
+    </TextBlock>
+        <TextBlock Margin="10,45,10,10"  TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left"><Run Text="{Binding Path=BalloonText, ElementName=me, Mode=Default}" AutomationProperties.AutomationId="automnId_BallonText" /></TextBlock>
+  </Grid>
+</UserControl>

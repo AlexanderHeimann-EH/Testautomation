@@ -1,0 +1,292 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.Configurator.View.MappingDetailsDataGridCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:bv="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:model="clr-namespace:EH.ImsOpcBridge.Configurator.Model"
+             xmlns:custom="clr-namespace:EH.ImsOpcBridge.UI.Wpf.EventArguments;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:Converter="clr-namespace:EH.ImsOpcBridge.UI.Wpf.Converter;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.Configurator.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="400" d:DesignWidth="625"
+             Background="#FFF6F8FA" AutomationProperties.AutomationId="automId_DeviceTypeInfoListView"
+             d:DataContext="{d:DesignInstance {x:Type viewModel:MappingControlVm}, IsDesignTimeCreatable=False}">
+    
+    <UserControl.Resources>
+
+        <ContextMenu x:Key="TextBoxContextMenu" Visibility="Hidden"/>
+
+        <Style x:Uid="Style_1" x:Key="DeviceTypeItemStyle" TargetType="{x:Type DataGridRow}">
+            <Setter x:Uid="Setter_36" Property="BorderThickness" Value="0"></Setter>
+            <EventSetter x:Uid="EventSetter_1" Event="MouseDoubleClick" Handler="ItemDoubleClick" />
+            
+       
+            <Style.Triggers>
+                <Trigger x:Uid="Trigger_1" Property="ListBox.AlternationIndex" Value="0">
+                    <Setter x:Uid="Setter_6" Property="Background" Value="Transparent" />
+                </Trigger>
+                <Trigger x:Uid="Trigger_2" Property="ListBox.AlternationIndex" Value="1">
+                    <Setter x:Uid="Setter_5" Property="Background" Value="Transparent" />
+                </Trigger>
+                
+            <!--
+                <MultiTrigger x:Uid="MultiTrigger_1">
+                    <MultiTrigger.Conditions>
+                        <Condition x:Uid="Condition_1" Property="ItemsControl.AlternationIndex" Value="0" />
+                        <Condition x:Uid="Condition_2" Property="IsSelected" Value="False" />
+                        <Condition x:Uid="Condition_3" Property="IsMouseOver" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <Setter x:Uid="Setter_1" Property="Background" Value="AntiqueWhite" />
+                </MultiTrigger>
+                <MultiTrigger x:Uid="MultiTrigger_2">
+                    <MultiTrigger.Conditions>
+                        <Condition x:Uid="Condition_4" Property="ItemsControl.AlternationIndex" Value="1" />
+                        <Condition x:Uid="Condition_5" Property="IsSelected" Value="False" />
+                        <Condition x:Uid="Condition_6" Property="IsMouseOver" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <Setter x:Uid="Setter_7" Property="Background" Value="AntiqueWhite" />
+                </MultiTrigger>
+            -->
+                
+            </Style.Triggers>
+            
+        </Style>
+
+        <Style x:Uid="Style_2" x:Key="GridViewColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+            <Setter x:Uid="Setter_13" Property="Height" Value="30" />
+            <Setter x:Uid="Setter_16" Property="Background" Value="Transparent" />
+            <Setter x:Uid="Setter_48" Property="Margin" Value="-1,0,0,0"></Setter>
+            <Setter x:Uid="Setter_57" Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Uid="Style_9" x:Key="GridViewCellStyle" TargetType="{x:Type DataGridCell}">
+            <Setter x:Uid="Setter_60" Property="BorderThickness" Value="0" />
+   
+            <Style.Triggers>
+              
+                
+                <Trigger Property="DataGridCell.IsSelected" Value="True">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="Foreground" Value="Black" />
+   
+                </Trigger>
+                
+                <!--<Trigger Property="DataGridCell.IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                </Trigger>-->
+            </Style.Triggers>
+
+        </Style>
+
+<!--
+
+        <Style x:Uid="Style_9" x:Key="TextBoxStyle" TargetType="{x:Type TextBox}">
+
+            <Style.Triggers>
+                <Trigger Property="TextBox.IsReadOnly" Value="True">
+                    <Setter Property="Background" Value="{StaticResource MenuButtonDisabledForegroundBrush}" />
+                </Trigger>
+                <Trigger Property="TextBox.IsReadOnly" Value="False">
+                    <Setter Property="Background" Value="GreenYellow" />
+                </Trigger>
+            </Style.Triggers>
+
+        </Style>
+
+-->
+
+        <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle">
+
+            <Setter Property="ContextMenu" Value="{StaticResource TextBoxContextMenu}" />
+            
+            <Style.Triggers>
+                <Trigger Property="TextBox.IsReadOnly" Value="True">
+                    <!-- <Setter Property="Background" Value="{StaticResource MenuPopupDisabledBackgroundBrush}" /> -->
+                    <Setter Property="Background" Value="Transparent" />                
+                    <Setter Property="AllowDrop" Value="False" />
+                    <Setter x:Uid="Setter_18" Property="BorderBrush" Value="Transparent" />
+
+                </Trigger>
+                <Trigger Property="TextBox.IsReadOnly" Value="False">
+                    <Setter Property="Background" Value="White" />
+                    <Setter Property="AllowDrop" Value="True" />
+                    <Setter x:Uid="Setter_18" Property="BorderBrush" Value="Transparent" />
+                </Trigger>
+
+
+                <!--<Trigger Property="TextBox.IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                    <Setter Property="BorderThickness" Value="2" />
+                </Trigger>
+
+                <Trigger Property="TextBox.IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource MenuPopupHighlightedBackgroundBrush}" />
+                    <Setter Property="BorderThickness" Value="2" />
+                </Trigger>-->
+
+
+
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid x:Uid="Grid_1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="*" />
+        </Grid.RowDefinitions>
+        <bv:PageableDataGrid x:Uid="MappingDetailsDataGrid" Name="MappingDetailsDataGrid" Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  EnableColumnVirtualization="True"
+                  EnableRowVirtualization="True"
+                  
+                  AlternationCount="2"
+                  ItemContainerStyle="{StaticResource DeviceTypeItemStyle}"
+                  ItemsSource="{Binding Path=ConfiguredMeasurementItems, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                  HorizontalContentAlignment="Stretch"
+                  ScrollViewer.CanContentScroll="True"
+                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                  
+                  SelectionMode="Single"
+                  SelectionUnit="CellOrRowHeader"
+                             
+                  IsReadOnly="False"
+                             
+                  SelectedItem="{Binding Path=CurrentDeviceTypeInfo, Mode=TwoWay}"
+                  SelectedIndex="{Binding Path=SelectedIndex, Mode=TwoWay}"
+                  Grid.IsSharedSizeScope="True"
+                  VirtualizingStackPanel.IsVirtualizing="False"
+                  ColumnHeaderStyle="{StaticResource GridViewColumnHeaderStyle}"
+                  CellStyle="{StaticResource GridViewCellStyle}"           
+                  BorderThickness="1,1,1,1"
+                  BorderBrush="LightGray"
+                  RowHeaderWidth="1"
+                  GridLinesVisibility="Vertical"
+                  VerticalGridLinesBrush="LightGray"
+                  DataContextChanged="DeviceTypeItemsDataGridDataContextChanged">
+            
+            <DataGrid.Background>
+                <LinearGradientBrush x:Uid="LinearGradientBrush_1" EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop x:Uid="GradientStop_3" Color="#FFD6DEE2" Offset="1" />
+                    <GradientStop x:Uid="GradientStop_4" Color="#FFEBF0F3" />
+                </LinearGradientBrush>
+            </DataGrid.Background>
+
+            <DataGrid.Columns>
+
+                <!-- Field -->
+                <DataGridTemplateColumn x:Uid="DataGridTemplateColumn_1" Width="180" IsReadOnly="True" DisplayIndex="0" ClipboardContentBinding="{Binding Path=Field}">
+
+                    <DataGridTemplateColumn.Header >
+                        <DataGridColumnHeader Content="{Binding Path=FieldHeader}" />
+                    </DataGridTemplateColumn.Header>
+
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style x:Uid="Style_4" TargetType="DataGridColumnHeader">
+                            <Setter x:Uid="Setter_17" Property="BorderThickness" Value="0,0,1,1" />
+                            <Setter x:Uid="Setter_18" Property="BorderBrush" Value="Gray" />
+                            <Setter x:Uid="Setter_52" Property="Padding" Value="5,0,0,0" />
+                            <Setter x:Uid="Setter_59" Property="AutomationProperties.AutomationId" Value="automnId_DeviceTypeInfoListVw_DtmDeviceType" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+
+ 
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:Uid="DataTemplate_2" DataType="model:ConfiguredMeasurementItemData">
+
+                            <Grid x:Uid="Grid_1">
+                                <TextBlock x:Uid="TextBlock_3" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextWrapping="Wrap" Margin="5, 10, 5, 10" Text="{Binding Path=Field}"/>
+
+                                <Line x:Uid="Line_1" VerticalAlignment="Bottom" Stroke="Gray" StrokeThickness="1" X2="{Binding Path=ActualWidth, RelativeSource={RelativeSource Self}}" />
+
+                            </Grid>
+                            
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                    
+                </DataGridTemplateColumn>
+
+
+                <!-- Value Textbox-->
+                <DataGridTemplateColumn x:Uid="DataGridTemplateColumn_2" Width="5*" IsReadOnly="True" DisplayIndex="1" ClipboardContentBinding="{Binding Path=Value}">
+
+                    <DataGridTemplateColumn.Header >
+                        <DataGridColumnHeader Content="{Binding Path=ValueHeader}" />
+                    </DataGridTemplateColumn.Header>
+
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style x:Uid="Style_4" TargetType="DataGridColumnHeader">
+                            <Setter x:Uid="Setter_17" Property="BorderThickness" Value="0,0,1,1" />
+                            <Setter x:Uid="Setter_18" Property="BorderBrush" Value="Gray" />
+                            <Setter x:Uid="Setter_52" Property="Padding" Value="5,0,0,0" />
+                            <Setter x:Uid="Setter_59" Property="AutomationProperties.AutomationId" Value="automnId_DeviceTypeInfoListVw_DtmDeviceType" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:Uid="DataTemplate_2" DataType="model:ConfiguredMeasurementItemData">
+                            <Grid x:Uid="Grid_1">
+
+                                <TextBlock x:Uid="TextBlock_3" HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding Path=IsValueTextBlockVisible, Mode=TwoWay}"  TextWrapping="Wrap" Margin="5, 10, 5, 10" Text="{Binding Path=Value}"/>
+
+
+                                <TextBox Style="{DynamicResource TextBoxStyle}" x:Uid="TextBlock_3" Tag="{Binding Path=ValueTextBoxName}"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" VerticalContentAlignment="Center" Margin="0, 0, 0, 0" Visibility="{Binding Path=IsValueTextBoxVisible, Mode=TwoWay}"
+                                         Drop="DropTreeDrop" DragEnter="DropTreeDragEnter" PreviewDragOver="OnPreviewDragOver" AllowDrop="{Binding Path=AllowDrop, Mode=TwoWay}"
+                                         IsReadOnly="{Binding Path=IsReadOnly, Mode=TwoWay}" TextWrapping="Wrap"   Text="{Binding Path=Value, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+
+                                <ComboBox x:Uid="ComboBox" Style="{DynamicResource SmallImageButtonComboBoxStyle}" AutomationProperties.AutomationId="ComboTextBoxControl"
+                                        Height="41" Margin="0, -1, 0, 0"  ItemsSource="{Binding Path=DataTypes}" Visibility="{Binding Path=IsValueComboBoxVisible, Mode=TwoWay}" 
+                                        SelectedItem="{Binding Path=Value, Mode=TwoWay}" IsSynchronizedWithCurrentItem="True" VerticalContentAlignment="Top"
+                                        VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Text ="{Binding Path=Value, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEditable="False"/>
+
+                                <Line x:Uid="Line_1" VerticalAlignment="Bottom" Stroke="Gray" StrokeThickness="1" X2="{Binding Path=ActualWidth, RelativeSource={RelativeSource Self}}" />
+
+
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>           
+    
+                <!-- Mapping Mode -->
+                <DataGridTemplateColumn x:Uid="DataGridTemplateColumn_3" Width="180" IsReadOnly="True" DisplayIndex="2" ClipboardContentBinding="{Binding Path=MappingMode}">
+
+                    <DataGridTemplateColumn.Header >
+                        <DataGridColumnHeader Content="{Binding Path=MappingModeHeader}" />
+                    </DataGridTemplateColumn.Header>
+
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style x:Uid="Style_5" TargetType="DataGridColumnHeader">
+                            <Setter x:Uid="Setter_42" Property="BorderThickness" Value="0,0,1,1" />
+                            <Setter x:Uid="Setter_43" Property="BorderBrush" Value="Gray" />
+                            <Setter x:Uid="Setter_53" Property="Padding" Value="5,0,0,0" />
+                            <Setter x:Uid="Setter_64" Property="AutomationProperties.AutomationId" Value="automnId_DeviceTypeInfoListVw_Version" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate x:Uid="DataTemplate_3" DataType="model:ConfiguredMeasurementItemData">
+                            <Grid x:Uid="Grid_1">
+
+
+                                <TextBlock x:Uid="TextBlock_3" HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding Path=IsMappingModeTextBoxVisible, Mode=TwoWay}"  TextWrapping="Wrap" Margin="5, 10, 5, 10" Text="{Binding Path=MappingMode}"/>
+
+
+                                <ComboBox x:Uid="ComboBox" Style="{DynamicResource SmallImageButtonComboBoxStyle}" AutomationProperties.AutomationId="ComboTextBoxControl"
+                                            Height="40" Margin="0, -1, 0, 0" ItemsSource="{Binding Path=MappingModeTypes}" Visibility="{Binding Path=IsMappingModeComboBoxVisible, Mode=TwoWay}" 
+                                            SelectedItem="{Binding Path=MappingMode, Mode=TwoWay}" IsSynchronizedWithCurrentItem="True" VerticalContentAlignment="Top"
+                                            VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Text ="{Binding Path=MappingMode, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsEditable="False"/>
+
+                                <Line x:Uid="Line_1" VerticalAlignment="Bottom" Stroke="Gray" StrokeThickness="1" X2="{Binding Path=ActualWidth, RelativeSource={RelativeSource Self}}" />
+
+                            </Grid>
+                        </DataTemplate>                   
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </bv:PageableDataGrid>
+    </Grid>
+</UserControl>

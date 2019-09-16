@@ -1,0 +1,3457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2F119B4-DDC8-4C43-8801-0910F2B4730A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.PCPS.TestAutomation.TestPackageUpdateB2014</RootNamespace>
+    <AssemblyName>EH.PCPS.TestAutomation.TestPackageUpdateB2014</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RanorexVersion>6.1</RanorexVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\ReleaseBin\Debug\DeviceFunction\CoDIA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Debug\DeviceFunction\CoDIA\EH.PCPS.TestAutomation.TestPackageUpdateB2014.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\ReleaseBin\Release\DeviceFunction\CoDIA\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\..\ReleaseBin\Release\DeviceFunction\CoDIA\EH.PCPS.TestAutomation.TestPackageUpdateB2014.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox\Flows\CheckDeviceTypeName.cs">
+      <id>c6572ce8-4743-4481-9954-571bfb4a0109</id>
+    </Compile>
+    <Compile Include="AboutBox\Flows\CheckSetupVersion.cs">
+      <id>46a99905-838e-4218-930d-02f9c46031f8</id>
+    </Compile>
+    <Compile Include="AboutBox\Flows\CloseModule.cs">
+      <id>7b4d4bf6-06c3-4f1f-9575-64d3a0ee5952</id>
+    </Compile>
+    <Compile Include="AboutBox\Flows\OpenModule.cs">
+      <id>62bda8c1-5e9f-4a2f-a6c2-7eb67431a0c2</id>
+    </Compile>
+    <Compile Include="AboutBox\Flows\SaveClipboardDataToFile.cs">
+      <id>2acf1e2a-0c86-4aab-872a-801d9dc3dee0</id>
+    </Compile>
+    <Compile Include="AboutBox\Flows\SaveClipboardDataToReport.cs">
+      <id>f12f27fa-d43f-4215-904f-34845b5cce2d</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Execution\GetDeviceTypeInformation.cs">
+      <id>a23ca08a-fed0-433f-a97f-68271fa3d08e</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Execution\GetDtmInformation.cs">
+      <id>02e86054-a275-4f5c-8d5b-89ce9020b828</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Execution\GetSetupInformation.cs">
+      <id>8e239ee0-2a9d-4f07-b34f-24afc97187f9</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Execution\CopyToClipboard.cs">
+      <id>5e77be1b-087e-4083-9fcb-5926fd1be3eb</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>ced7a135-7b80-4995-b4a1-ecc7c6530662</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\IsDeviceTypeNameCorrect.cs">
+      <id>d14be5dc-c90a-4a94-b1ea-e8c4a20ff3d3</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>5578ae88-1259-4760-8c8d-d11962470488</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\IsSetupVersionCorrect.cs">
+      <id>d229212c-dd1f-471d-a0c8-16dbab42db3c</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>084709f4-b886-4594-8af4-6261a2471253</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>479819ff-87b3-4617-a471-8b638f208699</id>
+    </Compile>
+    <Compile Include="AboutBox\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleIsReady.cs">
+      <id>e0b9571d-95ee-4d60-a084-41cd64805171</id>
+    </Compile>
+    <Compile Include="AboutBox\GUI\ApplicationArea\MainView\MainViewElements.cs">
+      <id>8ce5363a-df9c-4717-813b-6ec1b1c883a3</id>
+    </Compile>
+    <Compile Include="AboutBox\GUI\ApplicationArea\MainView\MainViewElementsRepository.cs">
+      <id>a2f8afd9-20a3-4274-aecd-188135fe288c</id>
+      <BoundTo>cdb7c947-8176-47fc-819f-a11f2b14082d</BoundTo>
+      <DependentUpon>MainViewElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="AboutBox\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>29d6ac4d-78c6-454f-8f65-3bb7d9f65997</id>
+    </Compile>
+    <Compile Include="Compare\Flows\CancelCompare.cs">
+      <id>924d2fc7-8a33-486f-aa5d-0b4a07dcabad</id>
+    </Compile>
+    <Compile Include="Compare\Flows\CheckCompareResult.cs">
+      <id>c89aa3e0-dfda-4904-96fb-e43df8f734a9</id>
+    </Compile>
+    <Compile Include="Compare\Flows\CloseModule.cs">
+      <id>7ec6f7e7-cc0c-4207-b921-15371373f6a8</id>
+    </Compile>
+    <Compile Include="Compare\Flows\Compare.cs">
+      <id>c827da6d-4589-4f09-a970-e3e64fb00849</id>
+    </Compile>
+    <Compile Include="Compare\Flows\LoadDataset1.cs">
+      <id>2e5db298-c73d-4be7-99bd-eea28ddff3d3</id>
+    </Compile>
+    <Compile Include="Compare\Flows\LoadDataset2.cs">
+      <id>f94c3fac-8dd5-47e9-ba93-8bf29f26d638</id>
+    </Compile>
+    <Compile Include="Compare\Flows\OpenModuleOffline.cs">
+      <id>a9f60412-cd1e-4533-8681-bc2f8d460f57</id>
+    </Compile>
+    <Compile Include="Compare\Flows\OpenModuleOnline.cs">
+      <id>0461df25-f411-4aec-9fbd-0911d18fade6</id>
+    </Compile>
+    <Compile Include="Compare\Flows\SelectMode.cs">
+      <id>48e132e3-aa1f-4c1b-aaf9-ebfc847d22fd</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Execution\Action.cs">
+      <id>3e512120-fe8a-42c0-bdb8-3cc572a69eb9</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>b7d45484-0a08-410f-938e-abb290a09fe3</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Execution\GetAllCompareResultParameter.cs">
+      <id>fe58f838-0a09-447f-8d4b-d838485afd42</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>e19f86fb-39b6-405d-b3a2-6e59cea8f156</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Execution\Selection.cs">
+      <id>f43bf38f-2003-477a-9bf9-fe8eff109a22</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>89fab8c5-8ee5-4c38-8eb3-636eb223c430</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Validation\ComparisonProgress.cs">
+      <id>c9a65d24-a0cc-4b2a-af39-8ad0c3c5a05e</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>5131f60d-b4f1-4e50-9feb-11cba0e59acd</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>5309e929-fa14-4fd5-abef-6fd1894e60a7</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>1163c633-2d66-47dc-a207-e6cad7baa695</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>469a75e2-2205-4820-baba-a8cb011d223a</id>
+    </Compile>
+    <Compile Include="Compare\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>11840de0-d045-4bc8-a11f-2dbdcda81e4f</id>
+    </Compile>
+    <Compile Include="Compare\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>13e41b3f-3f5b-40bc-bd48-84b926f1495d</id>
+    </Compile>
+    <Compile Include="Compare\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>414ce9c3-aa95-4e63-8afe-a10156550a4f</id>
+    </Compile>
+    <Compile Include="Compare\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>c91981c0-1b9c-42b3-894a-a93ac0d8eeb8</id>
+    </Compile>
+    <Compile Include="Compare\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>6697e71a-0242-49f1-b141-a1ceec2acd65</id>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ActionButtons.cs">
+      <id>5dd15484-2f48-496a-820f-11a5dad86759</id>
+      <BoundTo>58894f42-3ecc-463a-a13c-7883b8d7c298</BoundTo>
+      <DependentUpon>ActionButtons.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ActionElements.cs">
+      <id>499d8a69-35f6-43bc-9cc2-a4a7dafc3749</id>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>bac1e65d-eda7-4971-b872-13017b8bc258</id>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ModuleContainerRepository.cs">
+      <id>cb103a23-dab2-4af3-98e8-7791ba161853</id>
+      <BoundTo>5e13d503-6205-4063-8ebd-e306f1788b0a</BoundTo>
+      <DependentUpon>ModuleContainerRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ProgressbarElements.cs">
+      <id>00d2d347-4f7c-4039-92af-a26d578544bf</id>
+      <BoundTo>101908a6-0772-4141-a886-9c9bd13e5e93</BoundTo>
+      <DependentUpon>ProgressbarElements.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ProgressElements.cs">
+      <id>9c87f3e3-1033-4290-b01f-5698b5eabfff</id>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ResultListTreeElements.cs">
+      <id>e84a4842-9a16-4364-aba6-160c9915d271</id>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\ResultListTreeElementsRepository.cs">
+      <id>489f9d24-a31c-4efb-94bf-25e2c67ba8fc</id>
+      <BoundTo>e3281f73-a33b-4066-afb4-b1d1848735cb</BoundTo>
+      <DependentUpon>ResultListTreeElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\SelectionElements.cs">
+      <id>f0ceaf3a-7f51-4a07-b91f-e1a7f6880641</id>
+    </Compile>
+    <Compile Include="Compare\GUI\ApplicationArea\MainView\SelectionElementsRepository.cs">
+      <id>b2641823-63fc-41c6-ad1a-1baabef8189a</id>
+      <BoundTo>8be2f534-07be-495f-bb2a-3c3c789d9c62</BoundTo>
+      <DependentUpon>SelectionElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Compare\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>7550d47b-abf9-47fe-8c89-648eb5ec2790</id>
+    </Compile>
+    <Compile Include="Compare\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>3605bae2-1ae2-41a1-9fde-0cd97f940650</id>
+      <BoundTo>dd0365b4-e7b8-44e0-9540-2d033f245f78</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Concentration\Flows\Calculate.cs">
+      <id>f0c256b3-f2e1-467a-a4af-5b5f83199a0b</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\CheckExpertResults.cs">
+      <id>d2587066-4954-4143-a7d0-229a1a05df87</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\CloseModule.cs">
+      <id>dc9cb93f-d9ae-4257-b734-6d555e5c1bd2</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\ConfigureBaseSettings.cs">
+      <id>fb619f8b-8f52-4016-bb87-857bc23e99b1</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\ConfigureLiquidProperties.cs">
+      <id>60a64f81-1d4f-406f-af0b-1a7876bf1d53</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Export.cs">
+      <id>c54df78e-9d63-4375-a847-e2cb31ac8883</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Help.cs">
+      <id>d08ecf1f-58d9-41ee-98bb-1f0420f3f6a6</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Import.cs">
+      <id>857f82fb-34f3-4e80-a280-67051643aba3</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Load.cs">
+      <id>48c6ace6-edb5-495e-9844-e688b602ed32</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\New.cs">
+      <id>a0ca87cd-d47c-409b-8db0-c764c66f30be</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\OpenModuleOffline.cs">
+      <id>f86815c9-a867-4156-a065-0600d0645855</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\OpenModuleOnline.cs">
+      <id>5917018a-7244-4f5a-b853-3f3e7bc664fa</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Read.cs">
+      <id>c21c33bd-645f-4660-aaab-227ac2a0be9f</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Save.cs">
+      <id>b8d99577-1048-4292-8042-dd2908751e2f</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\SaveAs.cs">
+      <id>8c545833-6350-45bf-a3c3-a3b26fbef34a</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\SetCoefficientsFromDevice.cs">
+      <id>f1f4d550-9922-4c2c-8f38-d4800d6c71dc</id>
+    </Compile>
+    <Compile Include="Concentration\Flows\Write.cs">
+      <id>1da8f6fb-c8ac-485c-afc5-65425ffa18c5</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\BaseSettings.cs">
+      <id>b039718e-76e6-4f41-864a-a153faefcb85</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>25936155-a2fd-43b0-a854-45fa8445165a</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\CoefficientsOverview.cs">
+      <id>a5af1c3f-db85-4df7-9a9c-a5afa85a7a70</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\CommonMethods.cs">
+      <id>6d89a26a-8754-4448-bfa7-aa0f0e9d44d6</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\Container.cs">
+      <id>53983efc-6714-43b9-9992-5697d4518ecd</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\ExpertResults.cs">
+      <id>ac4eaae0-ad69-4084-9c56-451ab21c1aaf</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\LiquidProperties.cs">
+      <id>9a8977ea-8f8e-4190-9a29-254b6e9e3b7c</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>2d6f7526-ea73-435f-84e5-401b64338053</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>bc0a2c28-b28c-46cc-92e0-23ed52ddbf6f</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\CheckAvailabilityOfTabPages.cs">
+      <id>6563ada1-e3dc-48b5-ad36-56ce941a2950</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\CheckThatAllFieldsInBaseSettingsAreGrayed.cs">
+      <id>67fcb093-f3f3-4798-b5e2-2d118fb77666</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>374da563-8feb-49cd-9861-215adb5552fc</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>61983937-175f-4f0f-8175-21c04bb2908a</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>7381dbaf-20c1-4607-becc-c4baed0f3467</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>3c55bba2-55a7-4bbe-bddc-22a56a856ebc</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>63bb7ff1-b623-45ca-8e6f-e5ef3cffdbe1</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenExport.cs">
+      <id>15657bb9-5fae-4586-b75d-0db44f267f5d</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenHelp.cs">
+      <id>cf1d96ed-3e20-432a-87cd-1291e73e2368</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenImport.cs">
+      <id>c28cf897-3d3c-4fbb-9b6c-82bcc708338b</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenLoad.cs">
+      <id>5e9d4d1b-df15-4adb-bc3c-63982904f2b9</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenNew.cs">
+      <id>c1934021-cdb4-4ede-b66f-7e030a109f81</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenSave.cs">
+      <id>9bbddd99-e07e-46a5-bac3-284c9f75c659</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\OpenSaveAs.cs">
+      <id>44623193-38ff-4a45-8447-20ab44211961</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\RunCalculate.cs">
+      <id>967bcd7b-95d4-40e7-9f98-8b9acee47b8f</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\RunRead.cs">
+      <id>fd403289-479b-414f-a061-e83536356985</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Execution\RunWrite.cs">
+      <id>993a4bc8-4857-42a8-8420-b8a64776a074</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\Controls.cs">
+      <id>4caf22c5-4a1b-4390-9799-de1c53c88a49</id>
+      <BoundTo>9d122664-4767-4e9b-92f4-08a20ee5c3f7</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>87d9e9f6-d858-40c8-9003-fafc5a858afc</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\MenuArea\Toolbar\Toolbar.cs">
+      <id>9e3535e5-005a-4a54-9406-dcd9ff39947a</id>
+      <BoundTo>bb8d074a-0076-4e42-b225-8acd799e4d2d</BoundTo>
+      <DependentUpon>Toolbar.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Concentration\GUI\MenuArea\Toolbar\ToolbarElements.cs">
+      <id>feca2e4b-ee25-46a2-bf9e-4439c92ca56f</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Validation\IsCalculationFinished.cs">
+      <id>f46f51f9-d48b-45e0-a325-9b541eae6374</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Validation\IsReadFinished.cs">
+      <id>a6f35b6c-74de-4b30-a540-b98a86899f70</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\MenuArea\Toolbar\Validation\IsWriteFinished.cs">
+      <id>de8c7d8f-4980-46bd-872d-fc26ebcab51e</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\StatusArea\Statusbar\Validation\CheckUserNotificationMessages.cs">
+      <id>d559dd64-6435-4d99-8acf-ddfd78cb9fe9</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\StatusArea\Statusbar\Validation\IsDtmConnected.cs">
+      <id>911024cb-8dad-40dc-8dcb-84879e155842</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\StatusArea\Statusbar\Validation\IsDtmDisconnected.cs">
+      <id>6d36b940-4d07-4313-9d5b-51f98b1327a4</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\StatusArea\Statusbar\Validation\WaitUntilDtmIsConnected.cs">
+      <id>1706dade-3dbc-49c2-b0df-45069bd0a60e</id>
+    </Compile>
+    <Compile Include="Concentration\Functions\StatusArea\Statusbar\Validation\WaitUntilDtmIsDisconnected.cs">
+      <id>87f83306-8ec1-4072-943c-12b4e3127141</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\BaseSettingsElements.cs">
+      <id>480a07ff-fff7-41a6-9b0a-c7085746560c</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\CoefficientsOverviewElements.cs">
+      <id>071064b3-bf43-44d0-ad94-56a336ff03cd</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\CommonElements.cs">
+      <id>42be0b18-e9d9-4809-8657-6937054fa3c0</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\ContainerElements.cs">
+      <id>4073dfc0-9a44-4615-a1db-37ad5807df49</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\ExpertResultsElements.cs">
+      <id>48f6602e-55cf-4f2e-bd37-c607b2fcfe79</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\ApplicationArea\MainView\LiquidPropertiesElements.cs">
+      <id>0d6f1cbb-49e7-441b-8c35-515d5915727f</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\StatusArea\Statusbar\StatusBar.cs">
+      <id>8c38873c-251c-4f6a-a471-64f90b627e9a</id>
+      <BoundTo>b3971ec7-27a9-4901-b62e-3416a1a27f48</BoundTo>
+      <DependentUpon>StatusBar.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Concentration\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>5cad2aa1-069a-4e1e-bc4c-517e9f48c382</id>
+    </Compile>
+    <Compile Include="Concentration\GUI\StatusArea\Usermessages\UserMessages.cs">
+      <id>0cf4f2e8-1e1a-4fe1-b937-99c2f1550346</id>
+      <BoundTo>01727309-6eaa-411e-84a0-38caee217443</BoundTo>
+      <DependentUpon>UserMessages.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Concentration\GUI\StatusArea\Usermessages\UserMessagesElements.cs">
+      <id>f875dba5-d7f9-46b0-b553-4a2a8ac6bf83</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Flows\CloseModule.cs">
+      <id>de3a0e36-3599-4cfa-b636-9ea05e0ae87d</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Flows\OpenModuleOnline.cs">
+      <id>dcbf0a3d-5dc2-42b8-b2c0-6b41a1515ea3</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Flows\SaveAsPdf.cs">
+      <id>252cb0bb-ca2a-45d4-8ddc-704ae27aadcb</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>ad201fa5-be8a-4caf-b6a1-a3a0f0c1a560</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>3ec34e6a-9d69-4f26-a0b5-27ff4d71f1d3</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Execution\OpenSaveAs.cs">
+      <id>3ec46d6f-20e2-4ed1-abc9-5994723e45ae</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Execution\PrinterAndProgress.cs">
+      <id>46e29a0f-838d-43bb-8ee0-fab8b77abb8c</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>13d5fd83-7fd6-4798-8544-8bcc51dd5ab2</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>eb18badb-b9bd-4d43-a945-bf17c9bcbf73</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>2eb2c23a-2e0b-4275-a241-f4e4580015ef</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>1020cf56-a2b9-4057-b3f1-5e692b215d9a</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>04d00606-3dbd-4dec-9144-51f07030dfa1</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>b4d3bd73-dbbf-4107-8eb2-8b02e7c1e31f</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\ApplicationArea\MainView\Validation\WaitUntilPrintingIsFinished.cs">
+      <id>ea5bdda5-b704-4374-9f93-a532f6e21873</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>17075371-6fa7-47b8-af18-b64127f547ae</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>13796bea-0d6c-4f3e-ae45-39607b171e2c</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>d73122d8-a512-4ca0-9580-88c51b42bb81</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>23cd00c3-d0d0-480c-81f1-61786d83fad0</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\ActionElements.cs">
+      <id>9daebab8-d0cf-44e6-bb81-0e499e8ccc38</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\ActionElementsRepository.cs">
+      <id>d1581acd-0731-4f49-80d2-2a9c4f2b5d76</id>
+      <BoundTo>a1d03ab5-427e-4a00-b246-e0e1999a2e77</BoundTo>
+      <DependentUpon>ActionElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>453b20dd-2fe3-4731-8c2f-0403f172fdd9</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\ModuleContainerRepository.cs">
+      <id>ce773d87-4e58-41e3-a015-f71094c7e3f0</id>
+      <BoundTo>cc5a1997-ab9c-4963-9965-16cc2be4d6c4</BoundTo>
+      <DependentUpon>ModuleContainerRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\PrinterAndProgressElements.cs">
+      <id>fec1d674-d8c2-402b-ba9a-de4fac54730f</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\PrinterAndProgressElementsRepository.cs">
+      <id>6c6940fd-817c-4f67-ae66-2de0b9176896</id>
+      <BoundTo>037250bd-2e04-462d-9e20-db7e99ff06b9</BoundTo>
+      <DependentUpon>PrinterAndProgressElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\TreeElements.cs">
+      <id>037801fa-47f4-4f2a-9f88-e60e2e4ade6c</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\ApplicationArea\MainView\TreeElementsRepository.cs">
+      <id>6ddbdcc5-d4dc-40f4-a517-49e0de4b7134</id>
+      <BoundTo>f392fffa-399e-40f9-8658-8471ae2cfa34</BoundTo>
+      <DependentUpon>TreeElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>362439d7-1a0b-4286-9a94-2a7136e932e4</id>
+    </Compile>
+    <Compile Include="CreateDocumentation\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>f781ab21-4dfd-455f-b9ad-5ec4d4f7c35b</id>
+      <BoundTo>d910cb38-b8ad-422e-b251-9c5b011faf02</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\CloseModule.cs">
+      <id>4e4b1ad4-0866-4040-93cc-e2538810ce68</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\ConfigureZoomAndGridSettings.cs">
+      <id>b9412018-fd68-418c-b2da-ed5f273e7d42</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\CurveReadingCyclic.cs">
+      <id>8467eb4a-cd7e-43f4-bbfe-6680f4e06b26</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\CurveReadingSingle.cs">
+      <id>f244e567-2194-40fd-b4be-4d8c96f11eec</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\CurveReadingStop.cs">
+      <id>bb79311b-da71-433b-b102-3e0667c77409</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\LoadCurveFile.cs">
+      <id>2886ea5e-3e4b-4ade-87a9-38ad90ad7cfd</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\NewCurve.cs">
+      <id>ed13b001-9d85-49de-9432-edba8c2e4e6c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\OpenModuleOffline.cs">
+      <id>9e1983a4-0fb9-4086-87c6-7d40a49ee823</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\OpenModuleOnline.cs">
+      <id>7b953b5b-6901-49dc-b9e8-40660f81f111</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\SaveCurve.cs">
+      <id>731e8a55-bf29-45f6-9869-4517dcbccf7b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Flows\SaveCurveAs.cs">
+      <id>52ed620e-ecc0-49ed-b6d9-19aeb05123d2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>09cb5399-8370-4864-9491-eb7757f343e2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>2fd64a70-13dd-42fc-9c48-09b7a444f071</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Execution\OpenRemarks.cs">
+      <id>3cf6460d-7287-4bd6-8bb8-e8b27c3b3a18</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>1fc9762d-4819-4d28-a3ef-ae8f8062ac12</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>dd24176d-876a-4a89-8f18-23898641545b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>6d60ef7c-3393-44f0-87cb-18bab86e118e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>2db4f238-d337-49f3-ad0d-bc4f14c68b8c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Validation\ReadAndWrite.cs">
+      <id>87be96a8-ee7c-4247-aa89-c19218708fd8</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>e24916a8-59b0-46e6-8060-9fd3716b9534</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>55564af6-1e0c-4e48-af47-d0b494055a22</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\Dialogs\ReadSettings\Execution\ReadSettings.cs">
+      <id>9f3579e2-27d1-4b3d-b90e-36c91d57a9ea</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\Dialogs\ZoomAndGridSettings\Execution\ZoomAndGridSettings.cs">
+      <id>d711f614-2cb1-4da5-8c96-bc2dd2001faa</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenAbout.cs">
+      <id>cd7f2df9-951b-4903-8c1f-509b25e594d3</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenContents.cs">
+      <id>20f946ec-32a9-441a-ba0c-b815c9207a45</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenCyclicReadSettings.cs">
+      <id>a62d1436-891b-41e3-9c62-641f09668969</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenExportToFile.cs">
+      <id>364ada0d-19bc-4687-84aa-92003ff797cd</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenExtract.cs">
+      <id>b41e8bf4-cfde-4a86-8747-2fc4ad500945</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenLoadCurve.cs">
+      <id>e5d810cf-c6f8-417e-bad9-7fc1e80ce4c9</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenReadSettings.cs">
+      <id>890044f4-8904-4170-9bbb-c1da83e9c82f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenRemarks.cs">
+      <id>9e13b0fa-b3e9-4b45-8d6a-93061c386caa</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenSaveCurveAs.cs">
+      <id>639579c8-f54f-47c3-8f25-c0b62bb5295c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenSelectedCurves.cs">
+      <id>fcd03b7d-1cbf-4f94-ace6-3fa1e92cbe7a</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\OpenZoomAndGridSettings.cs">
+      <id>b1957083-d0a4-4217-9b0c-6b149741b203</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunClearPlotDisplay.cs">
+      <id>115a61c5-d002-4aa3-9917-140b3bda40af</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunCyclicRead.cs">
+      <id>79721a81-90a6-40b9-8760-629acad91f38</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunDiagram.cs">
+      <id>fd21cf52-3031-46f2-9367-e261b6964127</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunDiagramInfo.cs">
+      <id>64db9481-0fc2-4890-b198-614e33229d33</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunDisplay.cs">
+      <id>87f3aa61-47e2-4a5f-b2e6-3e2afc6cfb1f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunEndReadWrite.cs">
+      <id>1ba79849-4924-4f24-8159-5866c72d3753</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunEnvelopeCurve.cs">
+      <id>60d84b40-0c6b-4377-843c-e9b53b1f8284</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunFastForward.cs">
+      <id>9197815f-6f28-45d5-9619-0d71daf05ad9</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunFastReverse.cs">
+      <id>0e658a46-0080-4cbd-9784-9043b18bd5a8</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunFirstCurve.cs">
+      <id>4a9a0685-d57c-4d0d-8606-2ed3b6c2a509</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunForward.cs">
+      <id>d2448a1a-eb36-4c36-b01b-79f6cdad5f4f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunHelp.cs">
+      <id>f1aa33d3-d580-4582-8354-4644202ca15c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunLastCurve.cs">
+      <id>10309240-92a3-4c65-98c8-2ed0424775b7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunLayout.cs">
+      <id>a4352cfa-d3b9-4dbf-8164-b80b5f5f5a75</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunNewCurve.cs">
+      <id>92a00401-240d-4197-b8a7-b521d049a585</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunNextCurve.cs">
+      <id>f3f37056-4b68-4bd9-9183-ca61f2ded28c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunOverlappedCurves.cs">
+      <id>78e37151-98a7-4933-81fb-3e5b23f2262f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunPlayBack.cs">
+      <id>944f2f81-abb5-40a4-aeed-3155ba891dfa</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunPlaybackPause.cs">
+      <id>9dbbba11-779a-4f39-a82d-b65c468229d5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunPlaybackStop.cs">
+      <id>17bee601-69b4-46a5-9517-88539bb20b1f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunPreviousCurve.cs">
+      <id>886a8c25-8e81-4868-ae77-e9f3ef4359cc</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunReadCurve.cs">
+      <id>a81ae83d-b08e-4b1d-be13-99cd17d831de</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunResetReadingRange.cs">
+      <id>d44f9038-aadd-4152-a634-13bf26c72c5d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunResetZoomArea.cs">
+      <id>80f455e6-7b93-4ab5-b1ed-ee1ac5566f4d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunReverse.cs">
+      <id>9cb7aca7-93c2-455a-a506-1933141b1687</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunSaveCurve.cs">
+      <id>3448f994-a70f-4dd1-85fc-3b8fc702446c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Execution\RunUndoZoom.cs">
+      <id>3df73a88-d478-413f-8432-de9844a78183</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\OpenContents.cs">
+      <id>21df8e7b-6a56-4f86-a56c-95f359bdb4a2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\OpenCyclicReadSettings.cs">
+      <id>affded64-8d94-40ad-a2d5-d77f3a8953de</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\OpenLoadCurve.cs">
+      <id>c88b4642-6c71-46d1-a598-75e7cad92ba5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\OpenReadSettings.cs">
+      <id>2d83ff78-f108-42d8-82f9-819a0b180f29</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\OpenSelectedCurves.cs">
+      <id>1c46765e-4095-44b9-806d-c7f2e67d7494</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunClearPlotDisplay.cs">
+      <id>7146a997-1573-4275-bea9-2e34da06e974</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunCyclicRead.cs">
+      <id>9234e281-24b0-47e0-8893-34ecbe76cbaf</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunEndReadWrite.cs">
+      <id>731e83cb-512f-4690-a287-b53498e918e9</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunFastForward.cs">
+      <id>bc8ae32b-0119-442b-8aaa-688f23b06bc7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunFastReverse.cs">
+      <id>421a620c-e580-46c2-b1b6-0febeaa1c602</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunFirstCurve.cs">
+      <id>9dcdf107-65db-4a58-ac0f-a62b16f905e6</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunForward.cs">
+      <id>f574fb37-297f-4495-9553-f13fea8321b4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunLastCurve.cs">
+      <id>ce327f41-8128-4cae-9e5f-95f790a3185d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunNewCurve.cs">
+      <id>7ff74391-42e6-40e3-8d36-6bf0510e5379</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunNextCurve.cs">
+      <id>818d2a94-3e7b-4549-97eb-614d60c73483</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunPlayBack.cs">
+      <id>c6b45c9f-c36e-49cf-9375-948f05e9c135</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunPlaybackPause.cs">
+      <id>7b75de79-24c4-4555-9935-755516777369</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunPlaybackStop.cs">
+      <id>cf1c8dfd-6a4d-4519-915b-3eceb5c31d75</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunPreviousCurve.cs">
+      <id>bc915606-8a51-4304-9873-bc373da465a3</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunReadCurve.cs">
+      <id>9842e336-0de0-427c-8b09-924494780d1c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunReadDiagnosticCurve.cs">
+      <id>4fb45afe-0ea4-4a04-a113-55de097f7328</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunReadReferenceCurve.cs">
+      <id>f5e8d210-54c9-41f2-be06-346b580a5357</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunResetReadingRange.cs">
+      <id>4ff38de5-9a26-4f89-82fe-0d190b1e55f6</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunResetZoomArea.cs">
+      <id>5357e30f-9f5e-4ed4-9875-e4acec9c9f36</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunReverse.cs">
+      <id>656ae4f3-74a1-4223-9b24-8d861db2e349</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunSaveCurve.cs">
+      <id>fad45013-2e93-4b9e-badb-3d4107c1f34e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Execution\RunUndoZoom.cs">
+      <id>e4d9b7aa-5647-4020-bf28-e097c26326e6</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>906edb92-49ed-4789-b4bb-1a83a5174b9f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>5049df6b-c998-48c8-ad3c-e3c7da959742</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>662137a7-53ea-479f-b65c-2436700ed6c2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>29e8e7f7-3abc-4511-a703-971d79fd7b59</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\ApplicationArea\MainView\Controls.cs">
+      <id>cd928c6b-8a38-4e38-9db9-f94f177350c4</id>
+      <BoundTo>89e0a071-be38-41e0-8791-dd2b62d2dd5d</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\ApplicationArea\MainView\DiagramElements.cs">
+      <id>93271498-9f45-445b-b505-eb7fdb1490c8</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>2191cb3d-5652-4843-b289-cbe300e9544c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\DiscardCurvesElements.cs">
+      <id>ff6f3a01-58c4-4d1b-8c97-0d4a5ab0ef5c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\DiscardCurvesElementsRepository.cs">
+      <id>300cda1f-bafa-43a6-bbf1-4e5f44215085</id>
+      <BoundTo>846135e0-d0d8-4e76-96d8-2fa29234c9ab</BoundTo>
+      <DependentUpon>DiscardCurvesElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\ReadSettingsElements.cs">
+      <id>36ba5b71-c1f6-4406-8589-6562b133280d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\ReadSettingsElementsRepository.cs">
+      <id>4d4f27b6-e22b-4547-ae7e-12aa9afff80f</id>
+      <BoundTo>0fa5f5d1-6ef9-43f6-9938-f409dc83b23d</BoundTo>
+      <DependentUpon>ReadSettingsElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\ReplaceFileElements.cs">
+      <id>055ee7df-ddf6-424e-86cd-8980c805b6b5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\ReplaceFileElementsRepository.cs">
+      <id>84315345-af34-42d9-836d-9fc6c941214b</id>
+      <BoundTo>993c171c-e2cb-4343-bbbd-5dc402087a7d</BoundTo>
+      <DependentUpon>ReplaceFileElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\SaveFileElements.cs">
+      <id>6ba7de63-b0cf-417e-915e-a7e25590a80d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\SaveFileElementsRepository.cs">
+      <id>875f6759-e837-4436-8957-7a642651929d</id>
+      <BoundTo>49eae27f-bfa7-42b0-a079-30316732a377</BoundTo>
+      <DependentUpon>SaveFileElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\ZoomAndGridSettingsElements.cs">
+      <id>070110cf-2367-49e9-8af5-15101a1f8a86</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\Dialogs\ZoomAndGridSettingsElementsRepository.cs">
+      <id>ee6ba7cf-833a-4af0-a436-3ca6f0132df3</id>
+      <BoundTo>7f1f97d1-2680-4565-b6e7-d53e769b0f90</BoundTo>
+      <DependentUpon>ZoomAndGridSettingsElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\MenuArea\Menubar\Elements.cs">
+      <id>ff4cb854-da79-46f3-874e-7f0b6da12b9f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\MenuArea\Menubar\ElementsRepository.cs">
+      <id>7268a5c5-9de6-4eca-9b4b-016bd9b68306</id>
+      <BoundTo>235e26b5-1b73-40a8-9d2b-70a0b6c9eb08</BoundTo>
+      <DependentUpon>ElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\MenuArea\Toolbar\Elements.cs">
+      <id>243222f2-b54e-4be5-884c-4aad46863415</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\MenuArea\Toolbar\IconsRepository.cs">
+      <id>d91337c2-21be-4fca-9e5b-b24478129183</id>
+      <BoundTo>2cfeb8c5-5de0-4304-93a5-9ee115110fe4</BoundTo>
+      <DependentUpon>IconsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>25f37567-3eb7-4917-ab80-07c5a17cec9e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurveShed\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>82547458-7802-44d8-88f3-504b785f8025</id>
+      <BoundTo>cc6d3854-0454-40f9-b847-e9990a351fcf</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\CloseModule.cs">
+      <id>2664f6a8-2780-49ce-9026-0e642607996b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\ConfigureZoomAndGridSettings.cs">
+      <id>f6596a2c-02e2-4972-a903-5bccee5b8a02</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\CurveReadingCyclic.cs">
+      <id>a8a09dd0-78f3-46c1-8d36-1603a82afb73</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\CurveReadingReference.cs">
+      <id>bd29f381-a0b6-47c6-800a-9d9ad9ac607c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\CurveReadingSingle.cs">
+      <id>3dcbbf12-fd57-4b5b-b78f-4cafc10c2a60</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\CurveReadingStop.cs">
+      <id>cd67e7b4-5707-48f2-91af-34bbfe7bce42</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\LoadCurveFile.cs">
+      <id>c514d121-b811-4b5e-a334-2125d6f140b4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\MAPDiscardEditing.cs">
+      <id>7ea5b585-2095-48b5-b2ba-43ca95d912dc</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\MAPReadFromDevice.cs">
+      <id>35d45427-c2cc-48c0-ad3f-eca0cb4c0eee</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\MAPWriteToDevice.cs">
+      <id>5c5f613f-5abc-46ea-9cf3-5f8bf2b45a49</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\NewCurve.cs">
+      <id>59eb23e4-ed04-4415-8ba8-4cacd5fa7060</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\OpenModuleOffline.cs">
+      <id>05049a14-7741-46c4-b2f8-bb9ea27fa72a</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\OpenModuleOnline.cs">
+      <id>69961c79-ec59-477a-908d-cc48acc7d9d1</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\SaveCurve.cs">
+      <id>bd3488ba-ce37-42a9-9463-53c4770e80bc</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Flows\SaveCurveAs.cs">
+      <id>df30a119-20b0-472c-a089-ccd871e5e3de</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>7db0c7dd-6e97-4321-a5d0-d1501ef38bcd</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>644dac46-21f2-4e54-b044-c67ff40b6c64</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Execution\OpenRemarks.cs">
+      <id>85c6a015-8346-420f-abcd-8699d940230c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>b1918015-b58c-4b92-b2fe-8a353e062e5c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\Curves.cs">
+      <id>07bba5cf-49c5-4549-9de1-11fd0834c7c5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\GridColor.cs">
+      <id>a164427b-2387-4e65-8db0-c64645e8b53e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>ca38032b-2795-45a7-bed4-8a5fd4d4511b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>86bbe83a-57fa-4341-aa1a-6cdabee461cf</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>93d96407-cc01-461c-a292-7a6bbaef34da</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\ReadAndWrite.cs">
+      <id>9480c6d4-c4ff-475a-9aa5-c89b265ffe8d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>0f9e2550-384b-4972-aae4-0a84944a4651</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>38902042-0d01-4677-ae8e-f003eaf824f7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\Dialogs\ReadSettings\Execution\ReadSettings.cs">
+      <id>e94bcc9e-4eba-4594-b5f0-205a370d491f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\Dialogs\ZoomAndGridSettings\Execution\ZoomAndGridSettings.cs">
+      <id>69405963-00a1-450f-b9c7-651879df6ce5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenAbout.cs">
+      <id>cad88092-b949-4a60-b28f-5e2272bc1c20</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenContents.cs">
+      <id>fe4e4537-fd4c-44e9-aca0-18d0a7b19191</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenCyclicReadSettings.cs">
+      <id>b93c4b6a-3c86-40e1-85a4-7db2c55e0987</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenEditParameterList.cs">
+      <id>f15e72e0-93b1-4062-9a07-07c7462938eb</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenExportToFile.cs">
+      <id>c054bf6b-0cee-4cc4-84dd-77a4d23f914b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenExtract.cs">
+      <id>fbbf111a-7db5-4961-ad74-70dca41ae11f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenLoadCurve.cs">
+      <id>d80df59b-65eb-4f14-a04c-f17a02dd0877</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenLoadIdealEchoCurve.cs">
+      <id>5cbd90ad-c0bc-47de-a494-6a19406e960d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenReadSettings.cs">
+      <id>16dbe86c-a571-4c06-b020-78a7324ed196</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenRemarks.cs">
+      <id>740eba76-955e-4802-9b92-0f6938da4e13</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenSaveCurveAs.cs">
+      <id>26dbf80d-ba63-4371-a287-1636c86ba060</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenSelectedCurves.cs">
+      <id>7d1664ec-a841-4fc8-ae3c-1a2af0c39666</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\OpenZoomAndGridSettings.cs">
+      <id>192e9dfe-8344-4731-9267-11287a0708ab</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunActive1.cs">
+      <id>f603d1d7-0fd1-44f6-ba81-686310450d69</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunActive2.cs">
+      <id>d5936934-bdc1-464c-86ff-6eacab68dd77</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunAll.cs">
+      <id>e48c4ea1-e8e4-4019-9246-4b7a1c0ec9e2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunClearPlotDisplay.cs">
+      <id>65f74d54-bae5-42e9-acf1-0ea07f86f7ab</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunCursor1.cs">
+      <id>4df72efd-49cd-4770-8ab5-b9d07cd72d3c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunCursor2.cs">
+      <id>8e38ccfe-eeec-4438-9c3c-4984459a8671</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunCyclicRead.cs">
+      <id>4afb1d31-6cc2-45ad-955f-5a378ab2d869</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiagram.cs">
+      <id>f0432dbd-1079-4401-9b03-a3be0ab0f74c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiagramInfo.cs">
+      <id>7f164004-117a-4bcb-98f9-531fe560f94b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiagramInfoPlausibility.cs">
+      <id>a9bef052-3429-4b46-a03c-cc86a49a3af8</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiagramParameters.cs">
+      <id>4df22c55-3058-4030-b1fb-c48b7d07d392</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiagramParametersPlausibility.cs">
+      <id>0b4c768c-c790-4f5b-9a2f-f04c72b61394</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiagramPlausibility.cs">
+      <id>88362cbe-f8d1-47d8-a55d-337788f5ac8f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDiscardMAPEditing.cs">
+      <id>14018f5a-c1db-4e89-b79b-5c6ca110aff3</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunDisplay.cs">
+      <id>d8a8011c-1005-4cc8-ba5a-678ef6c8d694</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEditableMAP1.cs">
+      <id>70a4b1b5-fc1c-461e-a0a2-1079c0ebee82</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEditableMAP2.cs">
+      <id>f8353230-f041-41d2-ba63-f1759f78624a</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEditCurveUnderCursor.cs">
+      <id>b24b6f78-282e-40e5-a349-ce9260da5ba4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEditMAP.cs">
+      <id>eeef3568-4ebb-4549-b3cb-2a6f209911e3</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEndReadWrite.cs">
+      <id>28906142-36ed-40c4-8c32-529b641945c2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEnvelope1.cs">
+      <id>28f56d64-d0f8-448f-bfec-1fdc2364ae09</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEnvelope2.cs">
+      <id>415f290e-79e8-44bf-9cd1-70eec8bd3f64</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunEnvelopeCurve.cs">
+      <id>21df3ea0-a727-4271-a77c-c85d4ae9431e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunFastForward.cs">
+      <id>24c30cad-ae1f-48bc-85d1-4eb268e74ad6</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunFastReverse.cs">
+      <id>1e26c705-5e14-4065-99d6-67c9bbb5c0d5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunFirstCurve.cs">
+      <id>cc5b5a43-b211-4950-b7a5-5d1cc3329fd4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunForward.cs">
+      <id>0e65647b-6f79-4389-a498-c33ac29c54bc</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunFree1.cs">
+      <id>58ca2502-0514-4123-8b39-78f2f235d676</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunFree2.cs">
+      <id>78bb5f61-cb07-4978-a456-88df9053873f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunHelp.cs">
+      <id>0fa61193-cf70-4e64-aec0-8072f900e3f4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunIdealEcho1.cs">
+      <id>18f5d2a8-8731-4d8f-a9e8-da852c08cdeb</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunIdealEcho2.cs">
+      <id>61c0e5cb-6b7c-4e96-b456-8a5018aa4e7f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunLastCurve.cs">
+      <id>c1fc2e11-2c86-4a48-a27e-4ae9ed5acaab</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunLayout.cs">
+      <id>4e4fa30d-b36b-4365-878b-55196f4d800d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunMAP1.cs">
+      <id>6c6b5022-93b0-4191-b42f-1eb515b5e36a</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunMAP2.cs">
+      <id>5dce86ac-2a91-4d3c-9993-f3c14e3dd93e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunMoveIdealEchoCurveToPeak.cs">
+      <id>bedf43fb-691f-4400-8d60-800fb4db5bec</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunNewCurve.cs">
+      <id>9ac1c12f-89e1-4f84-9a70-9b6a5bae8ab5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunNextCurve.cs">
+      <id>4043a549-93dd-4218-9aea-c7dcc9497a7b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunOff1.cs">
+      <id>309e522f-c1b5-4cb2-94ed-370be693177e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunOff2.cs">
+      <id>3008016c-796c-4459-8790-a5ca16c62ffa</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunOverlappedCurves.cs">
+      <id>6fc99227-9d7b-4844-bc4b-9350d2103f26</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunParameters.cs">
+      <id>4cd5c3ab-57c9-4716-b282-2ee6b210a90e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunParametersInfo.cs">
+      <id>c76b8c92-f5e8-4df0-811b-f6db238d5770</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunParametersInfoPlausibility.cs">
+      <id>c671b21d-d3a9-492c-b3f1-ce65bf4c11b2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunParametersPlausibility.cs">
+      <id>4136db13-c4be-468b-b8c8-33f3c3a2c21a</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunPlayBack.cs">
+      <id>5ed60db6-6381-4881-b475-5ed944b74ce2</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunPlaybackPause.cs">
+      <id>960bad15-e09a-4ec8-9d36-ac5eeb4c2015</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunPlaybackStop.cs">
+      <id>48590c91-0a14-46be-9ff5-8acf62d169fc</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunPreviousCurve.cs">
+      <id>ecda7f64-0a8e-491e-b0fe-2e8d48fb009d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunReadCurve.cs">
+      <id>319a71b0-d97d-4928-aa05-9253088dded7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunReadDiagnosticCurve.cs">
+      <id>b28ab6eb-6ed3-45c9-8f46-1800c490bd66</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunReadReferenceCurve.cs">
+      <id>3f331582-8dff-4f36-91e6-7ddfb41a4ecf</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunResetReadingRange.cs">
+      <id>66193838-2eea-4bd8-8137-153c8cb8ad25</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunResetZoomArea.cs">
+      <id>7de6a322-e0e2-4a03-bceb-76455d32b7c5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunReverse.cs">
+      <id>ccb9f658-4d27-4e0c-b664-cf62d54d3db8</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunSaveCurve.cs">
+      <id>f28380de-3a52-495e-9e3a-2a196bc15434</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunSetCursor.cs">
+      <id>041f7a9f-94e7-443a-a779-5966394fa7b5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunStopEditMAP.cs">
+      <id>76bcda80-c42a-4889-8211-79c908e5c640</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunSubstractedSignal1.cs">
+      <id>d826d84a-37d1-4bad-a34b-6f746d3cca36</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunSubstractedSignal2.cs">
+      <id>972954c4-ef9c-47a3-951b-bd9a6160accb</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdBrokenProbe1.cs">
+      <id>989f2c13-8dc5-4da1-937b-2af481a0bd03</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdBrokenProbe2.cs">
+      <id>b50064b0-0cba-4772-8f07-d52e9af593dc</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdCurve1.cs">
+      <id>4c5b328f-18b8-428d-95f0-3b01526c5ba6</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdCurve2.cs">
+      <id>e40c390f-3f05-4a09-a93c-b2719f943dac</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdEndOfProbe1.cs">
+      <id>d2bd2ab6-da18-4941-9103-1791d3345eee</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdEndOfProbe2.cs">
+      <id>6183934f-ed55-49be-ae24-35593d1ed6e7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdGPC1.cs">
+      <id>23953542-c769-43d4-87cf-e624a69f1718</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunTresholdGPC2.cs">
+      <id>a1629d30-67c8-4c0d-b2f9-21ae0e92f7da</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunUndoZoom.cs">
+      <id>8ba85cbe-7070-4b16-b754-6c9ba5190b17</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Execution\RunWriteMAPToDevice.cs">
+      <id>b26b59e3-5d8b-4b44-9da9-7aed03d81728</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Menubar\Validation\IsEditMapActive.cs">
+      <id>e57eb5b3-5909-41d1-b0fa-ed9e60dfd38b</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\OpenContents.cs">
+      <id>fdffc91b-18f4-4555-97cc-679dbb1e4274</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\OpenCyclicReadSettings.cs">
+      <id>64259617-d87b-4925-bc7a-11526f7e0413</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\OpenLoadCurve.cs">
+      <id>ca8b5c03-fa2c-4074-a521-c067d5a363b4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\OpenReadSettings.cs">
+      <id>c0595f6f-7098-4206-ac91-2075865e2a84</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\OpenSelectedCurves.cs">
+      <id>7419afcb-cef4-41af-9900-7f7820de1dea</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunClearPlotDisplay.cs">
+      <id>c15a0607-c746-48cd-9497-3b7f499e3869</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunCyclicRead.cs">
+      <id>35f6b4e3-1fef-4e1a-bb1c-66345b0d8ac4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunEndReadWrite.cs">
+      <id>51c1ad28-45d6-4ab0-a0c6-f2878bb715d5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunFastForward.cs">
+      <id>aa34b1bc-dd0d-47aa-9f59-59deb59b5a4e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunFastReverse.cs">
+      <id>1269024c-00d4-42f5-920a-81a236ccce67</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunFirstCurve.cs">
+      <id>c3b4c9db-aa1a-42eb-97c5-f7cac5df5b82</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunForward.cs">
+      <id>0b7554ca-3ffb-459d-83cb-61d7ec3e5a60</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunLastCurve.cs">
+      <id>f4906a34-54ba-47b4-91db-59d0c1ca7ed5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunNewCurve.cs">
+      <id>63a035b0-c25c-4e43-b859-a7f5c2eac412</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunNextCurve.cs">
+      <id>ffcb49c4-192c-4436-bbc8-997df6b7bd92</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunPlayBack.cs">
+      <id>db6d3e5c-f9ea-461a-82d6-84d6fb2f9244</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunPlaybackPause.cs">
+      <id>a1accdbe-4da9-4b97-a4b4-6874784930db</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunPlaybackStop.cs">
+      <id>550f165c-b6f1-47dd-b713-6eb2600900ab</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunPreviousCurve.cs">
+      <id>cfb3988d-05d4-47cb-a582-e27e66313a00</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunReadCurve.cs">
+      <id>75ef2c11-f2ee-459a-9cf6-6db05afdd6c5</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunReadDiagnosticCurve.cs">
+      <id>8a156f85-452b-4e57-925b-aeae02ac6776</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunReadReferenceCurve.cs">
+      <id>defc8aa1-c826-4267-809c-55fd7d7aaafd</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunResetReadingRange.cs">
+      <id>631fee5c-8fc8-4d7d-bdfe-0b334c89fc83</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunResetZoomArea.cs">
+      <id>ef2ab3bf-7ff6-47cd-b66f-2d098afad4c7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunReverse.cs">
+      <id>4072b77b-0958-4738-bebc-637590931767</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunSaveCurve.cs">
+      <id>8427f659-d782-4ae8-a018-1758095bdcd8</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Execution\RunUndoZoom.cs">
+      <id>2defad48-7ed9-4c4b-9cab-eb31fd23ea1c</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>54def7d1-ac88-4b8e-a2c7-99ed36bcbce7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>6bdd524e-468f-4b44-b034-4a4ed6cee9c4</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>b282d3a7-5178-40c3-8213-f5fc6a5743fa</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>4c792f06-cc88-4c70-86dd-41f163d1dc28</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Controls.cs">
+      <id>00f03d1b-609e-479f-937b-715183d69b73</id>
+      <BoundTo>a7d3f558-474f-44a8-a42a-baebcd34ceb4</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Diagram1.Designer.cs">
+      <DependentUpon>Diagram.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <id>9ec3004c-0b44-49d0-b3d3-86bac38fafe1</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\ApplicationArea\MainView\DiagramElements.cs">
+      <id>3a054ce2-8add-43ab-ae26-bd29f71fb08e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>6d302f69-078d-43e1-9940-65e28161a213</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\DiscardCurvesElements.cs">
+      <id>aadde0c3-65d1-41d8-982e-8b2b1471df81</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\DiscardCurvesElementsRepository.cs">
+      <DependentUpon>DiscardCurvesElementsRepository.rxrep</DependentUpon>
+      <id>7bddd9e0-952a-4159-a3f5-a4e4d2feb8af</id>
+      <BoundTo>416b3e86-ae03-4c91-833e-e263c5a89366</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\ReadSettingsElements.cs">
+      <id>9fadda46-7037-43e8-9905-9813d4ce366f</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\ReadSettingsElementsRepository.cs">
+      <DependentUpon>ReadSettingsElementsRepository.rxrep</DependentUpon>
+      <id>7e3653e8-ea0d-4d5c-8074-fafa1ac50a24</id>
+      <BoundTo>5c506ed2-65cf-4c1d-ba80-1c48e5219700</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\ReplaceFileElements.cs">
+      <id>7816b5e4-a607-4063-82eb-252173693a18</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\ReplaceFileElementsRepository.cs">
+      <DependentUpon>ReplaceFileElementsRepository.rxrep</DependentUpon>
+      <id>83dd1218-59b7-400d-ac5f-c0d128932172</id>
+      <BoundTo>2d632f1a-21d3-412e-a3e4-9b296d83dc65</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\SaveFileElements.cs">
+      <id>437b61e0-1689-41fc-8891-fc32e8e19ad7</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\SaveFileElementsRepository.cs">
+      <DependentUpon>SaveFileElementsRepository.rxrep</DependentUpon>
+      <id>fbb2272f-9668-4c54-b7e9-7a82ae0d9b5d</id>
+      <BoundTo>5c1b6e5d-5279-4617-bb28-cda614b7ab26</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\ZoomAndGridSettingsElements.cs">
+      <id>dd7661e1-e217-4e71-a2cb-7eb6cdc3dd1d</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\Dialogs\ZoomAndGridSettingsElementsRepository.cs">
+      <DependentUpon>ZoomAndGridSettingsElementsRepository.rxrep</DependentUpon>
+      <id>f6364c6c-0254-4a16-b2fa-f97da0d398cc</id>
+      <BoundTo>603b67fa-ccde-42f8-a675-97b486d69646</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\MenuArea\Menubar\Elements.cs">
+      <id>35bb953b-b62c-4a28-8e27-2c6b00bedb9e</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\MenuArea\Menubar\ElementsRepository.cs">
+      <id>cc8a7c05-bdcc-4443-a6a3-5b73f1b3763d</id>
+      <BoundTo>1aa03c41-ce15-4681-afa9-788111916265</BoundTo>
+      <DependentUpon>ElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\MenuArea\Toolbar\Elements.cs">
+      <id>52069396-ea9f-4693-bed1-7d8c22e6bc5a</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\MenuArea\Toolbar\IconsRepository.cs">
+      <id>cf4e2931-3b35-4b72-a279-7fe879284be3</id>
+      <BoundTo>bfe0818d-84f3-4ad0-96c5-6d46b467beff</BoundTo>
+      <DependentUpon>IconsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>b05ac21c-49a5-4c19-aefe-e4fb96ea1e78</id>
+    </Compile>
+    <Compile Include="EnvelopeCurve\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>a5c0d683-f071-44bd-9409-0d473fccf053</id>
+      <BoundTo>e8ed3e56-493b-43c4-a2aa-c12d60e02745</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EventList\Flows\CloseModule.cs">
+      <id>4c1ce127-0e30-4f6c-970e-6b72a2629896</id>
+    </Compile>
+    <Compile Include="EventList\Flows\OpenModuleOnline.cs">
+      <id>7df69d78-2cf4-4dcf-a826-11a65357f279</id>
+    </Compile>
+    <Compile Include="EventList\Flows\Refresh.cs">
+      <id>1f5c2fcc-b054-42eb-a370-bc79ded5ac4c</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>a6f379dd-25d5-4555-b680-6d7cf5dd3962</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Execution\Event.cs">
+      <id>a511092d-2fe4-42c6-9d84-240bb7a21c66</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>06fba3d4-8d55-4dec-a90e-398c1a18f0eb</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Execution\RunRefresh.cs">
+      <id>af0acf0f-f6e5-4bc7-be86-5685e9e2c561</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Execution\TableFunctions.cs">
+      <id>61e0147b-9a5f-4348-89fd-40c0b7b2cfd8</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>a6959f77-0034-4c0f-bec2-212bdd21cdf5</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>4fb0be8d-0fae-4527-9487-85e8738dbb19</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>0011cc02-409c-415b-a525-439f7bcaadaf</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>0014cb21-18ab-436b-acfd-79b540ccf57a</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Validation\Reading.cs">
+      <id>a155aa7d-03ff-439b-a707-405bd796e916</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>43a4ec43-300e-49de-ad17-0dd0d6dc5e7b</id>
+    </Compile>
+    <Compile Include="EventList\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>1e81c4a7-a89c-4c15-9edb-41f28226cac9</id>
+    </Compile>
+    <Compile Include="EventList\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>5a4f74bc-65b9-481c-8934-3fd602c257b6</id>
+    </Compile>
+    <Compile Include="EventList\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>f8ed7cba-ea1a-4ea1-9f07-f02b89a92528</id>
+    </Compile>
+    <Compile Include="EventList\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>573a5091-9e5f-45fb-9d0a-aa0eb29eec13</id>
+    </Compile>
+    <Compile Include="EventList\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>302357ab-cd90-44a0-a3d0-6ca15a694085</id>
+    </Compile>
+    <Compile Include="EventList\GUI\ApplicationArea\MainView\ActionElements.cs">
+      <id>14195148-13f5-4c42-8172-046bb08915ea</id>
+    </Compile>
+    <Compile Include="EventList\GUI\ApplicationArea\MainView\Controls.cs">
+      <id>80687597-9b1d-49c9-8b9c-90514f7faa2f</id>
+      <BoundTo>1ef76402-5901-4604-b18a-6594762f9551</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="EventList\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>fd91050e-64fb-43be-b6cd-8ba0d81e81e8</id>
+    </Compile>
+    <Compile Include="EventList\GUI\ApplicationArea\MainView\ResultElements.cs">
+      <id>0bb062c6-9656-43b5-b883-74b8e24d6db6</id>
+    </Compile>
+    <Compile Include="EventList\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>3c3a5ac5-b6db-4309-9df1-0a627f6788ed</id>
+    </Compile>
+    <Compile Include="EventList\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>3f12a44d-c368-49a4-9c87-163f85b42d25</id>
+      <BoundTo>2dbd2789-4d5d-448d-9983-4412a70d3d51</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Historom\Flows\AssignChannelsRandomly.cs">
+      <id>4ef57cd0-84e6-466e-a9cd-e975b4b9a5bd</id>
+    </Compile>
+    <Compile Include="Historom\Flows\CheckChannelAssignment.cs">
+      <id>a68e5b80-4a34-4eea-bcb6-a3fe7bc9c138</id>
+    </Compile>
+    <Compile Include="Historom\Flows\CheckDiagram.cs">
+      <id>91fc0453-cea8-4089-aca4-8455de3d572f</id>
+    </Compile>
+    <Compile Include="Historom\Flows\CheckGUIAfterOpeningOrDeleting.cs">
+      <id>04aec835-1be8-4fef-9259-780d70240b72</id>
+    </Compile>
+    <Compile Include="Historom\Flows\CheckGUIAfterReadingOrLoading.cs">
+      <id>9f4b8930-7a92-46ff-b6fc-52a03e9ca332</id>
+    </Compile>
+    <Compile Include="Historom\Flows\CheckStatusInfo.cs">
+      <id>2ce2fe67-85ab-46f6-8b95-4f1ebe02d379</id>
+    </Compile>
+    <Compile Include="Historom\Flows\CloseModule.cs">
+      <id>551f0559-bccb-4c41-8627-df91413208dc</id>
+    </Compile>
+    <Compile Include="Historom\Flows\ConfigureSettingsTab.cs">
+      <id>9f800a69-05c2-4583-82a8-fe7470b8c10a</id>
+    </Compile>
+    <Compile Include="Historom\Flows\DeleteHistoROMData.cs">
+      <id>a1d6c1a8-201f-432f-8b13-601e0cefb528</id>
+    </Compile>
+    <Compile Include="Historom\Flows\ExportHistorom.cs">
+      <id>665f3629-18ee-4b03-85b1-57b145629104</id>
+    </Compile>
+    <Compile Include="Historom\Flows\LoadFile.cs">
+      <id>dc3e4b78-24e9-4d48-8ddc-27910e271318</id>
+    </Compile>
+    <Compile Include="Historom\Flows\OpenModuleOffline.cs">
+      <id>7f0d12e8-6203-4dd3-bdff-c9e9964743ad</id>
+    </Compile>
+    <Compile Include="Historom\Flows\OpenModuleOnline.cs">
+      <id>d5b5104e-e700-4521-8568-ad756339e375</id>
+    </Compile>
+    <Compile Include="Historom\Flows\ReadWithoutWaiting.cs">
+      <id>df6c31c4-5bca-44d1-bd5e-4a56f7c7c483</id>
+    </Compile>
+    <Compile Include="Historom\Flows\ReadWithWaiting.cs">
+      <id>f1470798-141b-4e5a-afee-776b4a117725</id>
+    </Compile>
+    <Compile Include="Historom\Flows\SaveFile.cs">
+      <id>0e114483-8a21-4ef2-bce3-bdd111b11431</id>
+    </Compile>
+    <Compile Include="Historom\Flows\SaveFileAs.cs">
+      <id>b8324dab-f29a-4f74-8c58-630f4a451bb0</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\ChangeChannelAssignment.cs">
+      <id>fa0e838b-fb0d-4795-8197-4cf39a4629fc</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>37282da7-00f8-4847-bc5a-96357ae7f20b</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\Common.cs">
+      <id>70e23ad6-828b-43a2-af46-1d4e6578b160</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\Event.cs">
+      <id>f80a4305-22a4-4e97-ada6-e15fd792ef14</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>e03ef01f-859e-42ce-85c2-882e0543fd05</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\RunSelectTab.cs">
+      <id>9d07285d-e968-428e-a128-09ad2545a685</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\Settings.cs">
+      <id>d304377b-be63-4cc6-9c2f-eb6d2d7db826</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\Statistic.cs">
+      <id>abf97114-11e5-40dd-92c3-5560635115cc</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\TabContainer.cs">
+      <id>07fe3ab2-d55b-45f2-ab27-4dc56a44bf41</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\Table.cs">
+      <id>f1e7ed8b-ceb0-4af2-89fd-930f131d50a9</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>81e86bc3-941b-4592-9dfd-8c3cd75f8e15</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\EventlistOperations.cs">
+      <id>e3121326-53b7-450d-b5ec-b198e1646808</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>b17de223-db96-4a43-9fa3-980c9cdf4607</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>1e5b741c-62a8-440b-8238-1c319b8d8328</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>c2737f6a-4149-47ad-9383-739f16b01ae2</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\ParameterStates.cs">
+      <id>3910ed7f-296b-471f-98a0-4eef56ebbffb</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\StatisticResults.cs">
+      <id>3f5ca174-f5ea-4f08-8301-36ccda9693dd</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>bd5082ac-3c0a-48c6-aed9-c1ce20f74e90</id>
+    </Compile>
+    <Compile Include="Historom\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>3d6b3fc9-3472-4448-96c6-2301bff850de</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenExport.cs">
+      <id>6d7515fa-1b44-4ce1-abd8-e80da79b2a78</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenHelp.cs">
+      <id>5b3785a5-e021-4804-b4a7-c55c6ab904a6</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenLoad.cs">
+      <id>59fe306b-2aae-4f2c-ad98-85b65119e37f</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenNew.cs">
+      <id>e5bdc702-9916-4f8a-be4c-251a3e5d4484</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenResetZoom.cs">
+      <id>03cf0ce8-21e6-4781-a3bf-44ef8d9e1ff7</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenSave.cs">
+      <id>3d14982d-9133-43ae-8338-74f5364ff9f4</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenSaveAs.cs">
+      <id>54623851-ea08-40f9-bae5-40df89510b49</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenScrollDown.cs">
+      <id>2ae914b6-bbe7-4e46-9487-7b9ba8affd12</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenScrollUp.cs">
+      <id>44b457b7-2b45-4e43-8095-53eed4cf4459</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenZoomIn.cs">
+      <id>43af84f4-0fc9-4d0b-9be4-f622e395c7f3</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\OpenZoomOut.cs">
+      <id>50cd772d-a482-4f05-9b16-0bdda46ad3f4</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\RunCancelRead.cs">
+      <id>634b84ac-04e8-4ec2-8676-4fba1aa08111</id>
+    </Compile>
+    <Compile Include="Historom\Functions\MenuArea\Toolbar\Execution\RunRead.cs">
+      <id>005a0861-b034-44dc-9ca3-2ee114166951</id>
+    </Compile>
+    <Compile Include="Historom\Functions\StatusArea\Statusbar\Execution\StatusBar.cs">
+      <id>d14d1b55-c2e8-4276-9d18-4d3ae1b9c148</id>
+    </Compile>
+    <Compile Include="Historom\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>e395b5f8-6b57-4a66-a6b7-f13e4a12ed89</id>
+    </Compile>
+    <Compile Include="Historom\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>b9f9739d-df93-450c-8054-490dcbbad69d</id>
+    </Compile>
+    <Compile Include="Historom\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>1250ccde-169d-4f9b-9261-cbe84b2c1438</id>
+    </Compile>
+    <Compile Include="Historom\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>dce2cca2-4c6d-4787-955c-3d770d0aeff6</id>
+    </Compile>
+    <Compile Include="Historom\Functions\StatusArea\Usermessages\Execution\Information.cs">
+      <id>29a032b5-6017-464b-95db-4d64ec5e740d</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\CommonElements.cs">
+      <id>618fa33d-3b5e-4941-8f09-66c9336c39ae</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\Controls.cs">
+      <id>b99d3f91-53ff-4217-94b3-6af19cd4db51</id>
+      <BoundTo>06f21ae6-7626-4345-9827-d8dc98ab3671</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\Diagram.Designer.cs">
+      <id>cff89664-c202-443e-a612-417bcd657804</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>6368dcbe-eec7-4030-9bdd-6fa0f7f4e7d4</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\SettingsElements.cs">
+      <id>6f52094e-4537-469c-92bf-af3e38c7cd1f</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\StatisticElements.cs">
+      <id>1dc6ee5d-c76b-47f7-b321-88dde22cdf59</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\StatusIcons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusIcons.resx</DependentUpon>
+      <id>21bc641f-1c39-4083-ac33-648337d0b092</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\TabContainerElements.cs">
+      <id>9650db23-7429-41f4-9d91-4d67dbb73f83</id>
+    </Compile>
+    <Compile Include="Historom\GUI\ApplicationArea\MainView\TableElements.cs">
+      <id>fa37fbc2-8823-4e0a-83c7-333ef2e554b3</id>
+    </Compile>
+    <Compile Include="Historom\GUI\MenuArea\Toolbar\Toolbar.cs">
+      <id>177e479f-4bfd-4f81-9868-f63959f1d625</id>
+      <BoundTo>2dab7077-dd00-404d-acc8-9cf059ede3d0</BoundTo>
+      <DependentUpon>Toolbar.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Historom\GUI\MenuArea\Toolbar\ToolbarElements.cs">
+      <id>44af1539-166a-4ec9-a693-d9bea89b485f</id>
+    </Compile>
+    <Compile Include="Historom\GUI\StatusArea\Statusbar\StatusBarElements.cs">
+      <id>b9f87e38-9e21-4e51-b551-3e874a6eaae2</id>
+    </Compile>
+    <Compile Include="Historom\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>de475687-b875-4e59-b511-37142aefe8ae</id>
+      <BoundTo>fc718e83-5957-40c3-aff6-68eeccc22ade</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Historom\GUI\StatusArea\Usermessages\InformationElements.cs">
+      <id>378567de-90a2-42e5-aa4a-8ff6c3d62f45</id>
+    </Compile>
+    <Compile Include="Historom\GUI\StatusArea\Usermessages\UsermessageElements.cs">
+      <id>5544317d-9e50-46e7-847b-c53866904693</id>
+      <BoundTo>6ce24a25-154c-4199-8eff-69a7eef6bc33</BoundTo>
+      <DependentUpon>UsermessageElements.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Linearization\Flows\CloseModule.cs">
+      <id>114984e7-ded9-478f-a97c-5ac031734e8e</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureGeneralSettings.cs">
+      <id>a4ff61a6-a05f-4b89-9572-8b2ba7f3ced4</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureModularTank.cs">
+      <id>5a351099-362e-459c-9d66-70ebedcf4161</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureSphericalTank.cs">
+      <id>99c34e87-417f-4bf8-9a73-08240e13201e</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureCylindricalTankStanding.cs">
+      <id>60e7eed6-ff2a-421d-b305-10c3c41b6719</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureHorizontalCylindricalTank.cs">
+      <id>b8bda909-5bd5-49c6-bfd8-4e7feb7c4bdf</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureModularTanksCircular.cs">
+      <id>fe323338-329d-4a74-8ed5-ee9cf1268246</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\ConfigureUserSettings.cs">
+      <id>d37fb840-359c-4e9e-9d2d-244e75c157bd</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\Export.cs">
+      <id>3eb12964-6ce0-4827-b45b-e96ddeea11ca</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\Import.cs">
+      <id>7ef06db3-240d-483b-ad4c-63f7bed0e1a6</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\OpenModuleOffline.cs">
+      <id>490be00e-1ebe-4d73-9adf-545cb05759d8</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\OpenModuleOnline.cs">
+      <id>f1b332de-ebbb-4b1a-b8c2-e3ee9ca7ea13</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\Read.cs">
+      <id>de93fcba-8f0d-4152-ae66-28a50508e309</id>
+    </Compile>
+    <Compile Include="Linearization\Flows\Write.cs">
+      <id>57a398ea-f2a6-446a-9472-a2aaaaf70ab8</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\ClickOnCalculateTable.cs">
+      <id>6752880b-b4d8-4463-be2f-b6d0087a6d8e</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\GetValuesFromTable.cs">
+      <id>ae0c075a-3cca-4a04-bdbc-e940b45cf98e</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Validation\CompareValues.cs">
+      <id>55a890f3-9440-4127-818b-349670a0a68e</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\ConfigureSettingsTab.cs">
+      <id>0bb9447a-0783-42a4-910d-9e01cd53ce66</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\ConfigureTankParameter.cs">
+      <id>cd600506-37a0-47ad-aecb-f56e5d62493b</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\EditParameter.cs">
+      <id>26820d15-dc0b-4712-bc85-8d5513f85a18</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\SetCalculationSteps.cs">
+      <id>b852eb78-3a90-451e-a686-bb19b0cc71f6</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\SetLevels.cs">
+      <id>e521d589-9ff0-4337-b66f-14d944f14f18</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\SetTankType.cs">
+      <id>360886e2-34bf-45f2-95f8-e88057c6046b</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\SetStartVolume.cs">
+      <id>e8a800d9-6b3e-47de-b731-59bb4619fe39</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>84ea3aa1-8cd3-466c-84a8-8533ea92c413</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>5b7a6f47-125f-4bc5-b420-70452422c175</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>12ccdd99-f83c-424e-bac4-1197bfe773eb</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>4c0bb2c3-bd72-4c47-ba25-5d5af303dfa0</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>38d6483a-c7ff-450c-bc9b-b04a5996a492</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>a5bd9f9e-0aff-4cb5-a3e7-ab5080dbd45b</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnExport.cs">
+      <id>be68c8fb-b90d-467e-8691-d89a5656175e</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnImport.cs">
+      <id>9a75fa69-501b-4655-990c-f0d348cddcaa</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\ClickOnRead.cs">
+      <id>5b000875-d55b-43a6-a0ac-a3aa1d653d76</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnShowTable.cs">
+      <id>e0d48721-bc71-4b60-9fe9-3d22fd4e5f6c</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnStartCa.cs">
+      <id>898de9c4-f170-4a08-acbf-469722e87a85</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnStartDt.cs">
+      <id>704ad6c2-c4fc-4812-a18f-a061cae1e62b</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnStartQh.cs">
+      <id>03b47890-24dc-4435-8a27-b8658c472a07</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnResetZoomArea.cs">
+      <id>962f50c6-7306-4634-9e36-4e8a8ca6c4c4</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\MenuArea\Toolbar\Execution\ClickOnUndoZoom.cs">
+      <id>5116961c-3ca8-470e-8bff-28d7c1b0a860</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\SelectTab.cs">
+      <id>d50c2654-4dfb-41ee-bbfd-216d4985b50f</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\ApplicationArea\MainView\Execution\ClickOnWrite.cs">
+      <id>d025aacd-5c2e-451d-89ee-ce7ccbede7ae</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>e771b890-2ebd-4674-a652-ee950eb05d35</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>130f99c7-0045-4512-b06b-fe6e7064a1cc</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\StatusArea\Statusbar\Validation\ReadingAndWriting.cs">
+      <id>6a4a4b71-934f-4677-bd45-0550d41975cc</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>7234a5fb-557f-4cd6-b5c2-32034b587c25</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>0b06b624-dc91-4e65-b750-7a7b4f7e97df</id>
+    </Compile>
+    <Compile Include="Linearization\Functions\StatusArea\Usermessages\Validation\CheckUserNotificationMessages.cs">
+      <id>cbf10cbb-4be0-4c9c-a9d4-a6d3298eb1a4</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\ApplicationArea\MainView\MainViewElements.cs">
+      <id>85f56bd3-d49b-4c7f-b71d-36e36e7e2e1f</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\ApplicationArea\MainView\MainViewElementsRepository.cs">
+      <id>89186e06-4684-444c-aa8c-a4f15c3b4f36</id>
+      <BoundTo>34b9f0a7-e1a8-485e-a879-6e51be0726c1</BoundTo>
+      <DependentUpon>MainViewElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Linearization\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>4965b793-efa5-4900-959c-11c7e364e6e5</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\ApplicationArea\MainView\SettingsTabElements.cs">
+      <id>39cb574a-6074-4b18-ae2c-14ce2ab55aa6</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\ApplicationArea\MainView\TankTabElements.cs">
+      <id>75f638a0-cc3b-44d7-ab02-e233b1b0432d</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\MenuArea\Toolbar\ToolbarElements.cs">
+      <id>5af98046-2cb8-489e-b0e9-5c65d4bd868a</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\MenuArea\Toolbar\ToolbarElementsRepository.cs">
+      <id>809ac56c-a668-46df-b636-fb74bf693c26</id>
+      <BoundTo>6c8d5cc7-8764-4ded-b5fd-836a20c9410e</BoundTo>
+      <DependentUpon>ToolbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Linearization\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>27c41165-dbfa-40c8-b32c-99670e01c3d3</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>c2371861-84f7-4e06-a973-dba967f7f956</id>
+      <BoundTo>1b836408-0f9a-4eb3-ad7e-61ecdc1aed56</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Linearization\GUI\StatusArea\UserMessages\UserMessagesElements.cs">
+      <id>aeceed03-0a0e-48fc-9870-4d3cfdc43b78</id>
+    </Compile>
+    <Compile Include="Linearization\GUI\StatusArea\UserMessages\UserMessagesRepository.cs">
+      <id>f61aa9b6-1acc-4a06-b18a-ef3fd00e3de5</id>
+      <BoundTo>a513c894-c388-4db5-b65a-4d2e0c67a3a5</BoundTo>
+      <DependentUpon>UserMessagesRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\Flows\CheckParameterLockingState.cs">
+      <id>9d3f7532-fcc6-420d-861e-5cf3419d1cd3</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\CheckThatParameterAreNotInvalid.cs">
+      <id>520780ce-fe7c-462f-b7cf-0342e39a421a</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\CheckThatParameterCannotBeSetToAnInvalidValue.cs">
+      <id>a9599565-f2a0-459e-8238-3a16c2227317</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\CloseModuleOffline.cs">
+      <id>75636f3a-3c49-4d76-81a5-8b01a5f7231b</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\CloseModuleOnline.cs">
+      <id>9a9c5ede-ff3c-4c1e-8e95-c53a2418fd91</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\GetAllParameter.cs">
+      <id>024ff664-7807-4ef2-a657-02770fbc8ed1</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\GetInvalidParametersInTreeView.cs">
+      <id>80768704-feb0-4598-9efc-778838dd07df</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\GetParameterStatus.cs">
+      <id>c8c478b2-1d59-4deb-ad44-120c8e93c011</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\OpenModuleOffline.cs">
+      <id>c1fd1be6-a75f-4d1c-95b3-e4ef94c2a677</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\OpenModuleOnline.cs">
+      <id>7ef2b729-e25a-4e3b-ac2f-7947a1c437cc</id>
+    </Compile>
+    <Compile Include="Parameterization\Flows\ResetDevice.cs">
+      <id>96cf0d9c-234e-4c52-9f8e-00cad05305b6</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\Application.cs">
+      <id>34f8fee7-59c0-40e5-a5ff-0525cb4f1bbf</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\CheckHeaderParameterState.cs">
+      <id>93183e60-5f09-4b88-8038-72c504d211a9</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\CheckParameterState.cs">
+      <id>9e5c0290-2a6d-4e88-870a-6fba5020e84c</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\CheckParameterValue.cs">
+      <id>1f257603-86c2-4292-968e-edec3f9094df</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\CloseModuleOffline.cs">
+      <id>28564969-4a79-4320-9714-1218c7766131</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\CloseModuleOnline.cs">
+      <id>95247194-8852-4799-960b-17c62d67fba2</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\ConnectToSoftwareUnderTest.cs">
+      <id>79f2d9db-4967-46ce-8928-97fc99abca79</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\DashboardFunctions.cs">
+      <id>8721032b-f979-403b-bc9b-10bb38d38361</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\DisconnectSoftwareUnderTest.cs">
+      <id>c4293455-efc8-4dce-90ae-ce7298163786</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\DragAndDropParameterIntoHeader.cs">
+      <id>d0605cfc-0f39-465f-8ec9-f73eb6657823</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\FF912Functions.cs">
+      <id>9319df4f-6e4d-4f99-83c8-b3795d242e33</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\GetComboBoxList.cs">
+      <id>057b1a48-278b-487e-af76-c1509a060d39</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\GetHeaderParameter.cs">
+      <id>19266f1f-e907-4644-9a4b-c9b5dbc8961d</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\GetNamurStatusFromHeader.cs">
+      <id>71254c5b-6146-4d16-a42b-94b7128b29eb</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\GetParameter.cs">
+      <id>174cb61f-df41-436f-8ad8-e3ccec9923f1</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\GetParameterValue.cs">
+      <id>edc8a6fd-33cf-406b-805e-3c30d8b98dbb</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\IsParameterExisting.cs">
+      <id>5688198e-8244-49cc-a9c9-a0d4cccc4ceb</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\IsParameterReadOnly.cs">
+      <id>a51ba438-02d6-4ad0-83fd-43d2c82663af</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\MenuArea\Toolbar\Execution\GoToHomeLocation.cs">
+      <id>a8030b7f-c9f2-430e-991a-f9b26c5ba331</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\Identification.cs">
+      <id>0cce3466-e846-45a3-a66e-0f72f7c48203</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\Navigation.cs">
+      <id>15bb3d5a-e549-416e-b74e-9ef959c37a04</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\NE107Functions.cs">
+      <id>6ed0c64c-c0d8-4962-a4f9-3bb1c2c741ea</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\OpenModuleOffline.cs">
+      <id>fe37151a-23d2-4314-84f6-c57ce3117e52</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\OpenModuleOnline.cs">
+      <id>fa60e469-fff6-4615-bd5d-4d3a70322456</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\SelectParameter.cs">
+      <id>c363ebe9-db9e-4a67-8e8f-5bb10c070239</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\SetParameter.cs">
+      <id>bcab6308-f8a7-4023-bc48-2050bdab5cb1</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>6f992664-7861-44b4-b18f-3fd48d36c658</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Execution\SilWhgFunctions.cs">
+      <id>bcddfc3d-b433-4c74-ab3f-8adbc9701c12</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\Areas.cs">
+      <id>2401d2ea-4903-4157-b4d9-904deca72127</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>08663cb2-9c6b-46c8-a583-b5b994cd871c</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>cecd6622-7749-404d-99e8-9e2efec79e19</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>de04899b-a6a6-48d4-af5f-c655d97ae22c</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\SilWhg.cs">
+      <id>05bc7eed-881a-4c5d-8ad8-d89bd366e14c</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>f5817160-bbe6-430d-98ca-974adadf407d</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>adb360f9-4f82-4cec-9a8a-80f3598279d4</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>860120a1-01f3-4fc9-b82c-58746865c63c</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>080d401e-fa76-4c8b-9ae1-7ae7882b25b6</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>a7819662-8efe-4325-a2c2-f11279d4995c</id>
+    </Compile>
+    <Compile Include="Parameterization\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>d040b9be-ac9e-4b2e-b3fa-5b1d4709235e</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\ApplicationElements.cs">
+      <id>32204119-856b-4ef3-bf86-44efa02a87a5</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\ApplicationPaths.cs">
+      <id>12ee05cd-831c-47e7-85ac-c6f4196344c7</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\DashboardElementsRepository.cs">
+      <id>29c2b18a-3401-4021-96dd-6191c7bc9c69</id>
+      <BoundTo>5b01d3ea-2aa2-4fc7-8244-3f4003e993c5</BoundTo>
+      <DependentUpon>DashboardElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\FF912Elements.cs">
+      <id>00b83c49-1521-40c2-a7d6-3b95701ba8b0</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\FF912ElementsRepository.cs">
+      <id>90a56e67-989f-4597-90b4-d32311a449cc</id>
+      <BoundTo>37bda996-a5ca-4aa3-a7e1-853a60db942e</BoundTo>
+      <DependentUpon>FF912ElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>9cdded22-4f56-48e5-9a56-a145c336f3a2</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\ModuleContainerRepository.cs">
+      <id>ddd89c3e-5ec7-4652-adc0-50f3377c18fb</id>
+      <BoundTo>dbb60ffc-047e-4380-963a-1d3ceff5cf64</BoundTo>
+      <DependentUpon>ModuleContainerRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\NE107Elements.cs">
+      <id>ac170235-5d01-4676-ad10-cf1a20d9e596</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\DashboardElements.cs">
+      <id>2d99f883-96ec-4dc0-8721-868ed5a4a798</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\IdentificationElements.cs">
+      <id>53eeb380-ff89-4106-81c6-6807130101eb</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\IdentificationPaths.cs">
+      <id>26a97865-b756-4476-9917-524ddd2075ae</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\NavigationElements.cs">
+      <id>8511c6bb-2069-4f54-8a9a-5ab994248068</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\NavigationPaths.cs">
+      <id>006d1de5-5b61-4852-9021-b8c5cb92763b</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\NE107ElementsRepository.cs">
+      <id>3a97daee-cb92-4e04-80f9-6e2ec6769a1a</id>
+      <BoundTo>a6784fc9-d4aa-484e-913d-4ba718318d2b</BoundTo>
+      <DependentUpon>NE107ElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\StatusIcons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusIcons.resx</DependentUpon>
+      <id>1633a05c-25bf-488d-9146-4e680b1a7e10</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\WHGSILNavigationElements.cs">
+      <id>bc4a38d7-c01e-4bb4-aefd-ca02727a3fb6</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\ApplicationArea\MainView\WHGSILNavigationPaths.cs">
+      <id>ee30575f-2f8f-446a-a461-44cd5eece082</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\MenuArea\Toolbar\ToolbarElements.cs">
+      <id>86a76b2e-9d36-4647-9853-cdab32d3f74b</id>
+    </Compile>
+    <Compile Include="Parameterization\GUI\MenuArea\Toolbar\ToolbarElementsRepository.cs">
+      <id>802812f8-737a-49ee-8eca-37f1b87e9f7d</id>
+      <BoundTo>43d313eb-804f-4feb-9e9a-c8a15efa7941</BoundTo>
+      <DependentUpon>ToolbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\GUI\StatusArea\Statusbar\StatusBar.cs">
+      <id>64f374bd-a0d7-4eeb-9820-3bc8d155a830</id>
+      <BoundTo>0facc392-c42c-4a9b-9605-49244342d745</BoundTo>
+      <DependentUpon>StatusBar.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Parameterization\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>6a0909e1-cfa4-4477-b28c-698ed0ecd512</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>b707400e-4483-4602-ae2f-35dc3f9dd007</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\CloseModule.cs">
+      <id>542e3622-1696-49a6-823e-caf03fdc7a9a</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\LoadFile.cs">
+      <id>529fa6a1-566d-4cc8-a55f-edf82e3be67c</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\OpenModuleOffline.cs">
+      <id>0711806a-fce1-47cd-9a9a-43bfd3538346</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\OpenModuleOnline.cs">
+      <id>44bcbad6-09cb-41fd-9d5c-b8779a130622</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\Restore.cs">
+      <id>93e0408b-b25f-4e83-9468-dcbf137c291e</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\RestoreInvalidFile.cs">
+      <id>04767995-2b7d-40f1-97f2-00c22156ef60</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\RestoreWithDownload.cs">
+      <id>1ad73a95-53f6-4e4d-9966-4bede25499fd</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\RestoreWithoutDownload.cs">
+      <id>39c906b3-e9c1-41f3-8f6c-b523b9ec49b6</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\Save.cs">
+      <id>2f1e2c5b-160f-4a74-8b33-28eefce70e50</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\SaveFile.cs">
+      <id>ef868233-9545-4015-9af7-625824314242</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\SaveWithoutUpload.cs">
+      <id>e317e0ba-ccb5-4ae9-9d3f-7a85ddb2db9e</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\SaveWithUpload.cs">
+      <id>dab6c74a-ddfe-44d9-9cbb-c08a66fd0fa9</id>
+    </Compile>
+    <Compile Include="SaveRestore\Flows\SetDataSet.cs">
+      <id>40c95726-d5ec-4025-ad71-176857cc5bf7</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>9996a78f-362f-484c-851c-3dc4ae14a653</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Execution\Navigation.cs">
+      <id>1b7c560b-85dc-4f28-90a6-484f7989ce89</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>663fe545-5b20-4ca9-aeab-99bc4e694a36</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Execution\Selection.cs">
+      <id>d4380a00-524c-40be-b058-6804cc0aa659</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>2a94e750-e5c3-4d36-b62f-f6ee8898df28</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\CheckDeviceStatus.cs">
+      <id>4bcfebce-64bb-46ab-b196-afacf3348083</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\CheckSaveRestoreStatus.cs">
+      <id>61305bc4-c595-44e8-a96f-62c0fee026e4</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>764e9392-52db-4485-98ad-24405203281e</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\IsProcessActive.cs">
+      <id>af7fef5e-c189-4619-88f5-db578aef5c05</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>89117494-e1af-46df-b89e-c03737bceb1e</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>ec5141ed-446c-42f7-9c9a-aaa41ccb6ffe</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>5c61417b-fc61-4ef6-a8f5-d3fdedf5fa7a</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>f180ecfc-7caf-42a8-b4aa-f03b371c7b8c</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\ApplicationArea\MainView\Validation\WaitUntilProcessFinished.cs">
+      <id>bf31f6cb-b02c-4c83-8849-db49883f244b</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\MenuArea\Toolbar\Execution\SetFocusOnDataSet.cs">
+      <id>be44fce8-730f-4e7a-8dbd-4e0250a897c7</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>c6862f8f-4369-41eb-83f8-5b6cca75415e</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>f7299588-c8b1-4dcd-9b75-77f0c4627a10</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>8d63793d-dc20-4927-918d-c19729fc29e5</id>
+    </Compile>
+    <Compile Include="SaveRestore\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>21c426af-0a1a-4ed8-85be-f1d18a9a6678</id>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>d172a38f-5af6-44f0-8de1-0bf443587060</id>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\ApplicationArea\MainView\ModuleContainerRepository.cs">
+      <id>7f38b811-0d0e-4cea-b7c7-e3da4cf61165</id>
+      <BoundTo>e494f41b-d1fc-43bb-9df3-2d512c4d5b36</BoundTo>
+      <DependentUpon>ModuleContainerRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\ApplicationArea\MainView\Navigation.cs">
+      <id>23bde2d1-1d20-4340-8f23-cf12a9e484a6</id>
+      <BoundTo>6afb579d-df0c-44c8-8312-dc8372a21f62</BoundTo>
+      <DependentUpon>Navigation.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\ApplicationArea\MainView\NavigationElements.cs">
+      <id>fca94168-c8f1-4cae-bd9b-39280612d863</id>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\ApplicationArea\MainView\Selection.cs">
+      <id>f658154f-3f66-4414-861e-460fccfcc229</id>
+      <BoundTo>a13305ae-f97a-40cf-8f2d-b5813d6046f4</BoundTo>
+      <DependentUpon>Selection.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\ApplicationArea\MainView\SelectionElements.cs">
+      <id>4f3afbed-3d87-4ecd-948b-ed0d0f82932b</id>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\MenuArea\Toolbar\Toolbar.cs">
+      <id>386bf89b-19bf-4a01-a5e5-0a09c3f2ef1a</id>
+      <BoundTo>80b56eaf-2abb-4e14-bdc3-e86ec0f3ad3c</BoundTo>
+      <DependentUpon>Toolbar.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\MenuArea\Toolbar\ToolbarElements.cs">
+      <id>b2032468-edd0-48cb-8c59-89d39e3c9987</id>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\StatusArea\Statusbar\StatusBar.cs">
+      <id>91d443bc-9005-49c5-a82f-97feeea55830</id>
+      <BoundTo>4f97d857-00ba-4c05-bac4-65f67d25b5e2</BoundTo>
+      <DependentUpon>StatusBar.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="SaveRestore\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>d5ee0e76-a981-415b-8432-f6dc8ebaafc8</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\Calculate.cs">
+      <id>3b0e090c-28e9-40d0-b4b8-a47010e70471</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\CloseModule.cs">
+      <id>8654b784-d3b2-4a0e-87a0-d014f184fa79</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\ConfigureFluidPropertiesParameter.cs">
+      <id>7bd1f58c-2f4f-4e11-9e10-aba7f09cf06d</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\Export.cs">
+      <id>d7d66665-5a29-45d6-b0be-08a45bdde21c</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\Import.cs">
+      <id>d4768af7-814d-4ef0-a6ac-4e70dccb5276</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\Load.cs">
+      <id>871595aa-5432-41ad-9f69-b4c730b328fd</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\New.cs">
+      <id>322ba656-a2c3-4ea2-bf32-e932e29ade0b</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\OpenModuleOffline.cs">
+      <id>90dd2fae-715d-4f35-8fdc-90dc1f59fb48</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\OpenModuleOnline.cs">
+      <id>f70be562-fc3e-491b-8b64-d231f7531f51</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\Save.cs">
+      <id>64a57df7-e402-4a8b-940e-8e1e464dee2e</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\SaveAs.cs">
+      <id>e442a93f-5495-4d2a-8825-3c2eafeacfc2</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\Write.cs">
+      <id>da46e43a-288f-4d1c-94f0-058599ee9598</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\CloseModule.cs">
+      <id>321e77bc-4902-4f37-b656-69b0fe6475bf</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\EditParameter.cs">
+      <id>f68338dc-85b2-4984-9fb2-82591fc52682</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\OpenModule.cs">
+      <id>3fdd7b47-3c70-42d0-babd-e675359f15ca</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\SelectTab.cs">
+      <id>87889c5e-6d60-4959-af22-cc640097239e</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\TabFluidProperties.cs">
+      <id>1def21ec-41ea-4045-8296-ee1e91ea57dc</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\TabResults.cs">
+      <id>a89d8be3-9bf1-4a74-b583-a5daca32a589</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Execution\TakeScreenshotOfModule.cs">
+      <id>a86048ea-5258-4e31-b3ca-1f98a8a97286</id>
+    </Compile>
+    <Compile Include="Viscosity\Flows\CheckResultsAfterCalculation.cs">
+      <id>4c0a0a1b-678d-4dfa-9d44-4c14e6dc986d</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Validation\IsModuleReady.cs">
+      <id>bcbe7ada-94fb-478d-aeb3-995798ff3558</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Validation\ModuleName.cs">
+      <id>a611f22c-6410-48bf-a15d-804f93a4f7a3</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Validation\ModuleOpeningAndClosing.cs">
+      <id>96d5415d-1bf8-42e2-8374-02e87815e6a6</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOfflineIsReady.cs">
+      <id>4cc093cf-bcee-492a-943e-afdf535e836f</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\ApplicationArea\MainView\Validation\WaitUntilModuleOnlineIsReady.cs">
+      <id>ba8f49f3-6d88-4359-824f-795f810e5412</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenExport.cs">
+      <id>86b989ab-fd72-40e9-85cc-6e2ac2a16c9e</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenHelp.cs">
+      <id>cd1c2c9e-f0e5-4f8e-b21c-a954c9e9b369</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenImport.cs">
+      <id>8afdf287-551e-45a5-a2c1-6ca353395c47</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenLoad.cs">
+      <id>2210a9d7-36b8-4003-af27-db41f5c0f4ca</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenNew.cs">
+      <id>c9b01124-d988-414a-97e1-9aa4abbb9c51</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenSave.cs">
+      <id>d38d0573-2a93-40a3-8e88-f3f357c443d2</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\OpenSaveAs.cs">
+      <id>1f419379-4fb8-4ff3-960e-dd4d5a5bb575</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\RunCalculate.cs">
+      <id>ee7ce902-98fe-486c-b24d-08e1dae51751</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Execution\RunWrite.cs">
+      <id>684e69cb-64c2-494b-842e-f3b835159394</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Validation\IsCalculateButtonInactive.cs">
+      <id>d5a36ac6-90dc-4ed8-b785-442241a67962</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Validation\IsCalculationFinished.cs">
+      <id>d1b7f7dc-c843-4a17-a06e-727f1954dbf4</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\MenuArea\Toolbar\Validation\IsWriteFinished.cs">
+      <id>f103b752-e9bb-4eda-b285-712938a5829a</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\StatusArea\Statusbar\Validation\IsDTMConnected.cs">
+      <id>226e629c-e984-4d20-a998-52cbade26853</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\StatusArea\Statusbar\Validation\IsDTMDisconnected.cs">
+      <id>ac585048-7e41-4df9-a40c-3724404be180</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsConnected.cs">
+      <id>f7f375b3-bde7-40ff-84bd-7ff3754e9080</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\StatusArea\Statusbar\Validation\WaitUntilDTMIsDisconnected.cs">
+      <id>52e1477e-d058-4264-beb8-c0211e872baa</id>
+    </Compile>
+    <Compile Include="Viscosity\Functions\StatusArea\Usermessages\Validation\CheckUserNotificationMessages.cs">
+      <id>f7710cc9-f490-48fd-b104-d3a0dc09b64c</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\ApplicationArea\MainView\FluidPropertiesElements.cs">
+      <id>0a497603-45c1-45f7-8b49-d253418bd5d8</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\ApplicationArea\MainView\MainViewElementsRepository.cs">
+      <id>9c283f57-b37c-44fb-bfc9-6457fcca2c16</id>
+      <BoundTo>02f8117d-a32f-4242-951a-d5e55cc99324</BoundTo>
+      <DependentUpon>MainViewElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Viscosity\GUI\ApplicationArea\MainView\ModuleContainerElements.cs">
+      <id>0fa103e3-4707-4fbb-b067-ebe00ea3ad40</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\ApplicationArea\MainView\ResultElements.cs">
+      <id>d6caf2f0-99fb-4b26-b050-0b0c63608dfc</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\ApplicationArea\MainView\TabControlElements.cs">
+      <id>9e7fdce0-1573-4457-8b4d-3077d8c33d27</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\MenuArea\Toolbar\ToolbarElements.cs">
+      <id>48971267-0543-4210-a85d-ed9f07fc4a53</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\MenuArea\Toolbar\ToolbarElementsRepository.cs">
+      <id>2ca350d7-3240-4cb0-a737-0e3244d7e825</id>
+      <BoundTo>aa5f601e-54a8-4f1b-a88c-a0e2b9f59caf</BoundTo>
+      <DependentUpon>ToolbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Viscosity\GUI\StatusArea\Statusbar\StatusbarElements.cs">
+      <id>a89c12e5-7e7a-428d-ad84-8b8fe4fc527d</id>
+    </Compile>
+    <Compile Include="Viscosity\GUI\StatusArea\Statusbar\StatusbarElementsRepository.cs">
+      <id>b6216af1-507f-45ad-97c0-013830f98994</id>
+      <BoundTo>25109791-6887-4639-a535-38f9873d58d4</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Viscosity\GUI\StatusArea\Usermessages\UserMessages.cs">
+      <id>05f9b3a8-3a3b-4371-aef9-26c3b1cc2ef3</id>
+      <BoundTo>30d5c912-1657-4fd7-aa3e-599196653fb7</BoundTo>
+      <DependentUpon>UserMessages.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Viscosity\GUI\StatusArea\Usermessages\UserMessagesElements.cs">
+      <id>76bdd857-e60f-4a32-99e3-bf7aadc40935</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.csproj">
+      <Project>{D2B68BEF-C99A-40A1-B05C-0A52BC367785}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerLoader\EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.csproj">
+      <Project>{42CB849D-D4C6-4CC0-9C11-C705B7D38078}</Project>
+      <Name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.Common\Source\Common\EH.PCPS.TestAutomation.Common.csproj">
+      <Project>{32290585-DC3E-40E8-A120-7CC13B75213A}</Project>
+      <Name>EH.PCPS.TestAutomation.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\EH.PCPS.TestAutomation.OperatingSystemLoader.csproj">
+      <Project>{9743802E-A832-476A-B1D5-3DD503E52CC9}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DeviceFunctionInterfaces\EH.PCPS.TestAutomation.DeviceFunctionInterfaces.csproj">
+      <Project>{33D95987-17DA-4F6B-8796-B835749DAEB4}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DeviceFunctionLoader\EH.PCPS.TestAutomation.DeviceFunctionLoader.csproj">
+      <Project>{C48CE9B8-0BD6-4DA2-B9D0-7E3FF138D16D}</Project>
+      <Name>EH.PCPS.TestAutomation.DeviceFunctionLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationInterfaces\EH.PCPS.TestAutomation.HostApplicationInterfaces.csproj">
+      <Project>{F50A421E-F8FB-49BD-BB83-3CAE985C4FD1}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplicationLoader\EH.PCPS.TestAutomation.HostApplicationLoader.csproj">
+      <Project>{CF6B82E1-2E16-4978-85D2-79E36F69C39B}</Project>
+      <Name>EH.PCPS.TestAutomation.HostApplicationLoader</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemInterfaces\EH.PCPS.TestAutomation.OperatingSystemInterfaces.csproj">
+      <Project>{84570471-ED0C-4D17-8847-2A912DA4AD5D}</Project>
+      <Name>EH.PCPS.TestAutomation.OperatingSystemInterfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AboutBox\Functions\Dialogs\">
+      <id>27654c6f-2b39-433e-85c1-74f9a992c063</id>
+    </Folder>
+    <Folder Include="AboutBox\Functions\MenuArea\">
+      <id>ae7bd875-4f4a-409c-8743-46abff9b4e9a</id>
+    </Folder>
+    <Folder Include="AboutBox\Functions\StatusArea\">
+      <id>cd1b659b-9376-4749-8793-6e4cac8bc5b3</id>
+    </Folder>
+    <Folder Include="AboutBox\GUI\Dialogs\">
+      <id>5e18965c-4cb6-4889-aae5-fefa9143de76</id>
+    </Folder>
+    <Folder Include="AboutBox\GUI\MenuArea\">
+      <id>55e8f40e-0e1c-44b7-8ccf-a0eaaa8593e4</id>
+    </Folder>
+    <Folder Include="AboutBox\GUI\StatusArea\">
+      <id>08033cf2-6bae-491f-8356-d483e8b83fa2</id>
+    </Folder>
+    <Folder Include="Compare\Functions\Dialogs\">
+      <id>dc3a8948-c828-4944-8eca-8e2cb1aaf36c</id>
+    </Folder>
+    <Folder Include="Compare\Functions\MenuArea\Menubar\Execution\">
+      <id>ccb07339-da0e-4552-81db-1b8a3a5dab10</id>
+    </Folder>
+    <Folder Include="Compare\Functions\MenuArea\Menubar\Validation\">
+      <id>071bea4e-639b-45c4-86d2-2a0d802f67a3</id>
+    </Folder>
+    <Folder Include="Compare\Functions\MenuArea\Toolbar\Execution\">
+      <id>74de55f3-4a2f-4677-a72f-b331966fa718</id>
+    </Folder>
+    <Folder Include="Compare\Functions\MenuArea\Toolbar\Validation\">
+      <id>50f82760-07c3-43e2-98d5-f797c66fadca</id>
+    </Folder>
+    <Folder Include="Compare\Functions\StatusArea\Progressbar\Execution\">
+      <id>ca4ad1ae-891f-4e4a-983f-3d0dc501147f</id>
+    </Folder>
+    <Folder Include="Compare\Functions\StatusArea\Progressbar\Validation\">
+      <id>fbd2ca10-2f29-40b2-a041-c0cf9279756c</id>
+    </Folder>
+    <Folder Include="Compare\Functions\StatusArea\Statusbar\Execution\">
+      <id>389ac7bb-a54b-483a-a9bb-a6084a535224</id>
+    </Folder>
+    <Folder Include="Compare\GUI\Dialogs\">
+      <id>5e58dc7f-cfd6-4add-8cb9-8ef3d3e22075</id>
+    </Folder>
+    <Folder Include="Compare\GUI\MenuArea\Menubar\">
+      <id>56b9b259-9cf4-444b-b497-d477bae64dbd</id>
+    </Folder>
+    <Folder Include="Concentration\Functions\Dialogs\">
+      <id>5ae53d0b-3704-4edf-8b83-20236f67905a</id>
+    </Folder>
+    <Folder Include="Concentration\Functions\MenuArea\Menubar\Execution\">
+      <id>ee42a7d2-e219-440d-b179-808e1c9eb8cf</id>
+    </Folder>
+    <Folder Include="Concentration\Functions\MenuArea\Menubar\Validation\">
+      <id>9c972d13-a1aa-4498-800f-e38b04b7bbb8</id>
+    </Folder>
+    <Folder Include="Concentration\Functions\StatusArea\Statusbar\Execution\">
+      <id>8af67a08-1094-4bc4-bcd4-587f6c624563</id>
+    </Folder>
+    <Folder Include="Concentration\GUI\Dialogs\">
+      <id>27af9b22-6140-41ea-a6c7-b6d51a20ee65</id>
+    </Folder>
+    <Folder Include="Concentration\GUI\MenuArea\Menubar\">
+      <id>3b81f8b2-fcac-43f8-a579-ffc508768056</id>
+    </Folder>
+    <Folder Include="CreateDocumentation\Functions\Dialogs\">
+      <id>3a0d529e-72a4-4a9c-b6fe-888398d0241b</id>
+    </Folder>
+    <Folder Include="CreateDocumentation\Functions\MenuArea\Menubar\Execution\">
+      <id>00d45959-79c4-467d-909a-c6609e53b422</id>
+    </Folder>
+    <Folder Include="CreateDocumentation\Functions\MenuArea\Menubar\Validation\">
+      <id>1ddbe94b-b89e-4428-aca9-640f4bdcff9e</id>
+    </Folder>
+    <Folder Include="CreateDocumentation\Functions\StatusArea\Statusbar\Execution\">
+      <id>55f8ea92-0f1b-4e22-9524-c3c1b4cd0001</id>
+    </Folder>
+    <Folder Include="CreateDocumentation\GUI\Dialogs\">
+      <id>b753a5da-ef6f-4b45-9da5-3d31dc5907f1</id>
+    </Folder>
+    <Folder Include="CreateDocumentation\GUI\MenuArea\Menubar\">
+      <id>5f1b4a65-3b2e-464b-9e4c-2aff782c1b20</id>
+    </Folder>
+    <Folder Include="EnvelopeCurveShed\Functions\Dialogs\ReadSettings\Validation\">
+      <id>0048bc95-1742-4c34-a981-74590df601c3</id>
+    </Folder>
+    <Folder Include="EnvelopeCurveShed\Functions\Dialogs\ZoomAndGridSettings\Validation\">
+      <id>6826a5ed-f6f3-4daf-8136-feee719cd7ca</id>
+    </Folder>
+    <Folder Include="EnvelopeCurveShed\Functions\MenuArea\Menubar\Validation\">
+      <id>5ee18425-cf69-451b-93b0-ad5e4cc4ad98</id>
+    </Folder>
+    <Folder Include="EnvelopeCurveShed\Functions\MenuArea\Toolbar\Validation\">
+      <id>db569cae-ec4e-44b6-87d3-14bb71eca3b5</id>
+    </Folder>
+    <Folder Include="EnvelopeCurveShed\Functions\StatusArea\Statusbar\Execution\">
+      <id>d969f168-dc28-4b57-82fa-aa038e9e1d6b</id>
+    </Folder>
+    <Folder Include="EnvelopeCurve\Functions\Dialogs\ReadSettings\Validation\">
+      <id>6652da85-4e28-4de9-9fe0-cc84c8d11f59</id>
+    </Folder>
+    <Folder Include="EnvelopeCurve\Functions\Dialogs\ZoomAndGridSettings\Validation\">
+      <id>e30072c2-62ee-46d1-bdd7-c8eae0938749</id>
+    </Folder>
+    <Folder Include="EnvelopeCurve\Functions\MenuArea\Toolbar\Validation\">
+      <id>8463c0b0-d1cf-4fc5-b6ad-a84f2ec2ba09</id>
+    </Folder>
+    <Folder Include="EnvelopeCurve\Functions\StatusArea\Statusbar\Execution\">
+      <id>af6bcfed-9f2f-47e0-b10d-2cb209fba1d4</id>
+    </Folder>
+    <Folder Include="EventList\Functions\Dialogs\">
+      <id>a79db5a7-b7d1-48f5-a5d1-5b1c7ed15346</id>
+    </Folder>
+    <Folder Include="EventList\Functions\MenuArea\">
+      <id>fd024ae4-070c-4420-8912-445882ca6b65</id>
+    </Folder>
+    <Folder Include="EventList\GUI\Dialogs\">
+      <id>5f95cb7a-1357-40ac-9b51-7dbaa2485842</id>
+    </Folder>
+    <Folder Include="EventList\GUI\MenuArea\">
+      <id>d5db2876-78e0-4778-b66a-6b8043563422</id>
+    </Folder>
+    <Folder Include="Historom\Functions\Dialogs\">
+      <id>775430b5-6fdc-4e98-bea9-81d33235b7d8</id>
+    </Folder>
+    <Folder Include="Historom\Functions\MenuArea\Menubar\Execution\">
+      <id>b7644fa9-c0e3-4d80-8d83-ac7bdc41d2cf</id>
+    </Folder>
+    <Folder Include="Historom\Functions\MenuArea\Menubar\Validation\">
+      <id>df53f077-6c60-4d98-b367-b985ac9b9f68</id>
+    </Folder>
+    <Folder Include="Historom\Functions\MenuArea\Toolbar\Validation\">
+      <id>a04d3138-eabe-4f48-9a2a-ae9f45bd4200</id>
+    </Folder>
+    <Folder Include="Historom\Functions\StatusArea\Usermessages\Validation\">
+      <id>47fdaec9-e88d-44b8-88ed-444370b0af7d</id>
+    </Folder>
+    <Folder Include="Historom\GUI\Dialogs\">
+      <id>88542ccb-debb-4847-86de-5e37f3f382e2</id>
+    </Folder>
+    <Folder Include="Historom\GUI\MenuArea\Menubar\">
+      <id>9043f8df-d048-4628-b61e-c263f4b0cac5</id>
+    </Folder>
+    <Folder Include="Linearization\Functions\Dialogs\">
+      <id>f3c9f370-1b96-4379-bc13-b8b7d39ed749</id>
+    </Folder>
+    <Folder Include="Linearization\Functions\MenuArea\Toolbar\Validation\">
+      <id>b6a279cb-153a-4ce3-adae-704eac77d8fd</id>
+    </Folder>
+    <Folder Include="Linearization\Functions\StatusArea\Statusbar\Execution\">
+      <id>c4f39650-b84a-4387-8af5-ae0c8d893636</id>
+    </Folder>
+    <Folder Include="Linearization\Functions\StatusArea\Usermessages\Execution\">
+      <id>5e7b0ba7-dec9-4882-8931-fb751efd834e</id>
+    </Folder>
+    <Folder Include="Linearization\GUI\Dialogs\">
+      <id>bfcf8ce8-79f0-4b80-959c-02c1a18ddce9</id>
+    </Folder>
+    <Folder Include="Parameterization\Functions\Dialogs\">
+      <id>ea59fc69-fa10-44bd-bf34-5826c7f000a5</id>
+    </Folder>
+    <Folder Include="Parameterization\Functions\StatusArea\Statusbar\Execution\">
+      <id>376aac88-8c89-445f-97b6-1b12b9562a76</id>
+    </Folder>
+    <Folder Include="Parameterization\GUI\Dialogs\">
+      <id>aaacd771-6b7b-498b-bae7-20b05ab2f8b0</id>
+    </Folder>
+    <Folder Include="SaveRestore\Functions\Dialogs\">
+      <id>33b12a02-c897-478b-bd0a-1b45239db849</id>
+    </Folder>
+    <Folder Include="SaveRestore\Functions\MenuArea\Menubar\Execution\">
+      <id>08fd3fa0-b0bf-4242-8686-c790aec0ae42</id>
+    </Folder>
+    <Folder Include="SaveRestore\Functions\MenuArea\Menubar\Validation\">
+      <id>d5f9d112-39b5-4df9-b5fb-fc970932b1e8</id>
+    </Folder>
+    <Folder Include="SaveRestore\Functions\MenuArea\Toolbar\Validation\">
+      <id>3dcb8282-afcc-4463-b620-7f530b9b61b4</id>
+    </Folder>
+    <Folder Include="SaveRestore\Functions\StatusArea\Statusbar\Execution\">
+      <id>07f243da-8e57-49fc-91a7-7c1425ff49cd</id>
+    </Folder>
+    <Folder Include="SaveRestore\GUI\Dialogs\">
+      <id>b071953e-c854-44a5-81f4-e67ad6eed8b4</id>
+    </Folder>
+    <Folder Include="SaveRestore\GUI\MenuArea\Menubar\">
+      <id>4c59e43b-9f59-41eb-ae5f-29c37d0126f2</id>
+    </Folder>
+    <Folder Include="Viscosity\Functions\Dialogs\Execution\">
+      <id>9b7074d7-9b43-4c63-b8a5-3fd046ae4e55</id>
+    </Folder>
+    <Folder Include="Viscosity\Functions\Dialogs\Validation\">
+      <id>fd0547c2-9be6-4c74-a33d-a426d090f688</id>
+    </Folder>
+    <Folder Include="Viscosity\Functions\StatusArea\Statusbar\Execution\">
+      <id>942281ba-9c86-4895-a5ab-684145028971</id>
+    </Folder>
+    <Folder Include="Viscosity\Functions\StatusArea\Usermessages\Execution\">
+      <id>564bf8da-a23b-47a5-94bb-3451551231f0</id>
+    </Folder>
+    <Folder Include="Viscosity\GUI\Dialogs\">
+      <id>412089eb-083e-4dd2-9415-198fc425afd9</id>
+    </Folder>
+    <Folder Include="Viscosity\GUI\MenuArea\Menubar\">
+      <id>38a0684d-6d60-457c-8c5f-ae744dc82864</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AboutBox\GUI\ApplicationArea\MainView\MainViewElementsRepository.rximg">
+      <BoundTo>cdb7c947-8176-47fc-819f-a11f2b14082d</BoundTo>
+      <DependentUpon>MainViewElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>7dfdabce-f8d4-4776-a48e-3e89abc4ebbc</id>
+    </None>
+    <None Include="AboutBox\GUI\ApplicationArea\MainView\MainViewElementsRepository.rxrep">
+      <id>cdb7c947-8176-47fc-819f-a11f2b14082d</id>
+      <repoid>afb76349-8797-41b0-a3b4-0797b8912998</repoid>
+      <reporootid>3563e02b-afb7-4c66-9040-bd43cf566da5</reporootid>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ActionButtons.rximg">
+      <BoundTo>58894f42-3ecc-463a-a13c-7883b8d7c298</BoundTo>
+      <DependentUpon>ActionButtons.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c0ceb4dc-51f2-489f-ac78-3566293d0cfa</id>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ActionButtons.rxrep">
+      <id>58894f42-3ecc-463a-a13c-7883b8d7c298</id>
+      <repoid>f60898fe-34c5-4f52-b30d-d9954d95fdce</repoid>
+      <reporootid>22ad0338-aa3f-4f98-a85e-7bcb80f52722</reporootid>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ModuleContainerRepository.rximg">
+      <id>d9caeaea-d68b-48f1-8983-6e16cc3a4295</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ModuleContainerRepository.rxrep">
+      <id>5e13d503-6205-4063-8ebd-e306f1788b0a</id>
+      <repoid>e69ac1f8-e423-4e67-8001-c8787bdaf742</repoid>
+      <reporootid>d89f3fe4-86ea-4bb3-bc2f-a34a84537a4a</reporootid>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ProgressbarElements.rximg">
+      <BoundTo>101908a6-0772-4141-a886-9c9bd13e5e93</BoundTo>
+      <DependentUpon>ProgressbarElements.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1f80adf7-451a-467c-98a2-0b5ccfc5822f</id>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ProgressbarElements.rxrep">
+      <id>101908a6-0772-4141-a886-9c9bd13e5e93</id>
+      <repoid>209f827f-c913-4f3f-ac49-9cd6d25f697e</repoid>
+      <reporootid>0895062f-065b-4db5-974c-7553a8d59b41</reporootid>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ResultListTreeElementsRepository.rximg">
+      <BoundTo>e3281f73-a33b-4066-afb4-b1d1848735cb</BoundTo>
+      <DependentUpon>ResultListTreeElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1cb26712-dbcb-4b4d-b2ba-151c3d1ecd9f</id>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\ResultListTreeElementsRepository.rxrep">
+      <id>e3281f73-a33b-4066-afb4-b1d1848735cb</id>
+      <repoid>a9e6203b-3ee1-4ae5-9026-44c097a2df96</repoid>
+      <reporootid>7ee79d9a-85ad-41ca-80f0-5323ebcb488c</reporootid>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\SelectionElementsRepository.rximg">
+      <BoundTo>8be2f534-07be-495f-bb2a-3c3c789d9c62</BoundTo>
+      <DependentUpon>SelectionElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>2ca3c7c0-8b37-4bd6-b25f-89881cfc13df</id>
+    </None>
+    <None Include="Compare\GUI\ApplicationArea\MainView\SelectionElementsRepository.rxrep">
+      <id>8be2f534-07be-495f-bb2a-3c3c789d9c62</id>
+      <repoid>4c9ca04e-114e-4847-8e7c-5ac97f58ca8a</repoid>
+      <reporootid>06eab64c-c6cd-4251-b5bd-63e260ef229d</reporootid>
+    </None>
+    <None Include="Compare\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>391a7795-58af-4899-a1c0-49f242138133</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Compare\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>dd0365b4-e7b8-44e0-9540-2d033f245f78</id>
+      <repoid>15479da1-e1a5-4aaa-ae8b-218b523fe682</repoid>
+      <reporootid>0bfcede5-4dc0-4506-8922-81cb86f7a072</reporootid>
+    </None>
+    <None Include="Concentration\GUI\ApplicationArea\MainView\Controls.rximg">
+      <BoundTo>9d122664-4767-4e9b-92f4-08a20ee5c3f7</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>94d23cff-94fa-43fa-afb4-dac25219e2f6</id>
+    </None>
+    <None Include="Concentration\GUI\ApplicationArea\MainView\Controls.rxrep">
+      <id>9d122664-4767-4e9b-92f4-08a20ee5c3f7</id>
+      <repoid>74f93e7e-3adb-45c9-bddf-08b88a672160</repoid>
+      <reporootid>12146e85-b7b8-4d41-bc0a-46e0516a9bbe</reporootid>
+    </None>
+    <None Include="Concentration\GUI\MenuArea\Toolbar\Toolbar.rximg">
+      <BoundTo>bb8d074a-0076-4e42-b225-8acd799e4d2d</BoundTo>
+      <DependentUpon>Toolbar.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4ee25000-6214-40fc-bd2f-2b080671e228</id>
+    </None>
+    <None Include="Concentration\GUI\MenuArea\Toolbar\Toolbar.rxrep">
+      <id>bb8d074a-0076-4e42-b225-8acd799e4d2d</id>
+      <repoid>29d92636-8aa3-4a45-b137-bd2de6891b78</repoid>
+      <reporootid>12146e85-b7b8-4d41-bc0a-46e0516a9bbe</reporootid>
+    </None>
+    <None Include="Concentration\GUI\StatusArea\Statusbar\StatusBar.rximg">
+      <id>a3ef01f5-ffd2-4a89-bc0d-a17c0676c442</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Concentration\GUI\StatusArea\Statusbar\StatusBar.rxrep">
+      <id>b3971ec7-27a9-4901-b62e-3416a1a27f48</id>
+      <repoid>7ef7b4e4-fb83-4d2c-9ffa-b7168d86519d</repoid>
+      <reporootid>3a13262f-f09a-4aed-aab1-0ca7e454ffcc</reporootid>
+    </None>
+    <None Include="Concentration\GUI\StatusArea\Usermessages\UserMessages.rximg">
+      <BoundTo>01727309-6eaa-411e-84a0-38caee217443</BoundTo>
+      <DependentUpon>UserMessages.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>dccd534f-e181-4f3d-9e8e-58c6bfdb6ef6</id>
+    </None>
+    <None Include="Concentration\GUI\StatusArea\Usermessages\UserMessages.rxrep">
+      <id>01727309-6eaa-411e-84a0-38caee217443</id>
+      <repoid>648fb0dc-ae71-42b3-9bca-19d9ed3c95bd</repoid>
+      <reporootid>12146e85-b7b8-4d41-bc0a-46e0516a9bbe</reporootid>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\ActionElementsRepository.rximg">
+      <id>db761244-0d88-448d-8845-d22d671e0dea</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\ActionElementsRepository.rxrep">
+      <id>a1d03ab5-427e-4a00-b246-e0e1999a2e77</id>
+      <repoid>c481c4fb-32a1-4265-bed3-bd1a5d9fd3cd</repoid>
+      <reporootid>f3ddc732-4bf6-4bb6-ba7d-c7002176ed04</reporootid>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\ModuleContainerRepository.rximg">
+      <id>26c490da-ab56-4297-aed7-baad4518385d</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\ModuleContainerRepository.rxrep">
+      <id>cc5a1997-ab9c-4963-9965-16cc2be4d6c4</id>
+      <repoid>03bfd654-b30d-4b15-a5d1-55529c82a14c</repoid>
+      <reporootid>3a79cfb7-757b-46ee-91b3-e1241f2aef88</reporootid>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\PrinterAndProgressElementsRepository.rximg">
+      <id>f296d06e-bc19-4c7b-9053-d46dba971c26</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\PrinterAndProgressElementsRepository.rxrep">
+      <id>037250bd-2e04-462d-9e20-db7e99ff06b9</id>
+      <repoid>076ff181-38aa-4eb3-85f0-0c51be55a590</repoid>
+      <reporootid>63085ecd-fa95-4b86-9f3d-3047a91d6329</reporootid>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\TreeElementsRepository.rximg">
+      <BoundTo>f392fffa-399e-40f9-8658-8471ae2cfa34</BoundTo>
+      <DependentUpon>TreeElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a6f014c8-c1a9-402a-88ac-234226509479</id>
+    </None>
+    <None Include="CreateDocumentation\GUI\ApplicationArea\MainView\TreeElementsRepository.rxrep">
+      <id>f392fffa-399e-40f9-8658-8471ae2cfa34</id>
+      <repoid>b3ea96de-b94a-46ed-9f34-84d629229185</repoid>
+      <reporootid>73ac9170-e47c-4486-a78c-880a46de940b</reporootid>
+    </None>
+    <None Include="CreateDocumentation\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>e91bfdf5-3960-4ac3-bbad-be4f678a1ca3</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="CreateDocumentation\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>d910cb38-b8ad-422e-b251-9c5b011faf02</id>
+      <repoid>3c52df8d-443a-496d-8543-c690db430acf</repoid>
+      <reporootid>0bfcede5-4dc0-4506-8922-81cb86f7a072</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\ApplicationArea\MainView\Controls.rximg">
+      <id>b615f366-6c1e-46c2-8b7b-0d09b04a639e</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\ApplicationArea\MainView\Controls.rxrep">
+      <id>89e0a071-be38-41e0-8791-dd2b62d2dd5d</id>
+      <repoid>913f5bea-2e64-4aa5-9e8a-3bb1a7a89f13</repoid>
+      <reporootid>0a838cfd-8f7b-4906-83b8-7612e8d28287</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\DiscardCurvesElementsRepository.rximg">
+      <BoundTo>846135e0-d0d8-4e76-96d8-2fa29234c9ab</BoundTo>
+      <DependentUpon>DiscardCurvesElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>76eb98c4-67c1-4637-ab7e-fb4f0fd51363</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\DiscardCurvesElementsRepository.rxrep">
+      <id>846135e0-d0d8-4e76-96d8-2fa29234c9ab</id>
+      <repoid>bec10642-c1fa-4de3-8487-3f8902047fd3</repoid>
+      <reporootid>eca6e05f-32a6-49a2-a377-392d00ad7aa3</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\ReadSettingsElementsRepository.rximg">
+      <BoundTo>0fa5f5d1-6ef9-43f6-9938-f409dc83b23d</BoundTo>
+      <DependentUpon>ReadSettingsElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6b25b411-dd33-4143-b13c-b674cfd54c10</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\ReadSettingsElementsRepository.rxrep">
+      <id>0fa5f5d1-6ef9-43f6-9938-f409dc83b23d</id>
+      <repoid>cb1b690f-5947-4005-88ef-69b7389741f5</repoid>
+      <reporootid>4b35435c-a5f4-4638-8860-2b3307205ce3</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\ReplaceFileElementsRepository.rximg">
+      <BoundTo>993c171c-e2cb-4343-bbbd-5dc402087a7d</BoundTo>
+      <DependentUpon>ReplaceFileElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>708da306-d50a-40ef-9d03-fc99c5d77618</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\ReplaceFileElementsRepository.rxrep">
+      <id>993c171c-e2cb-4343-bbbd-5dc402087a7d</id>
+      <repoid>0835a886-4d5b-4328-b770-ba5e739f0e88</repoid>
+      <reporootid>526fdbe6-f20b-4ea2-a8e6-cdabac22cebc</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\SaveFileElementsRepository.rximg">
+      <BoundTo>49eae27f-bfa7-42b0-a079-30316732a377</BoundTo>
+      <DependentUpon>SaveFileElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b2f2d267-c8c4-4997-b1ca-55c43876bbed</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\SaveFileElementsRepository.rxrep">
+      <id>49eae27f-bfa7-42b0-a079-30316732a377</id>
+      <repoid>bf826f2f-138c-43d3-b7d0-f8c0af2661a1</repoid>
+      <reporootid>00264644-77b8-4b7b-a407-18383efe68fa</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\ZoomAndGridSettingsElementsRepository.rximg">
+      <BoundTo>7f1f97d1-2680-4565-b6e7-d53e769b0f90</BoundTo>
+      <DependentUpon>ZoomAndGridSettingsElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>65b46268-f4a6-43dd-949c-cc676f18fe11</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\Dialogs\ZoomAndGridSettingsElementsRepository.rxrep">
+      <id>7f1f97d1-2680-4565-b6e7-d53e769b0f90</id>
+      <repoid>57fa7bf6-379a-481c-8f94-8551b89d8898</repoid>
+      <reporootid>5021e8e1-be13-4f62-9ca7-5e504253bcaa</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\MenuArea\Menubar\ElementsRepository.rximg">
+      <BoundTo>235e26b5-1b73-40a8-9d2b-70a0b6c9eb08</BoundTo>
+      <DependentUpon>ElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>09a8d379-38eb-490c-bcf8-ec3d2009ed41</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\MenuArea\Menubar\ElementsRepository.rxrep">
+      <id>235e26b5-1b73-40a8-9d2b-70a0b6c9eb08</id>
+      <repoid>3938452d-e157-45b7-af5c-970fa80367d8</repoid>
+      <reporootid>3786e64d-e731-4336-8515-e5d826b8505c</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\MenuArea\Toolbar\IconsRepository.rximg">
+      <BoundTo>2cfeb8c5-5de0-4304-93a5-9ee115110fe4</BoundTo>
+      <DependentUpon>IconsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>ce3a1ced-b1a9-4a0b-8a7f-7ec7fa309e60</id>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\MenuArea\Toolbar\IconsRepository.rxrep">
+      <id>2cfeb8c5-5de0-4304-93a5-9ee115110fe4</id>
+      <repoid>1d40c41e-fdc7-49ba-afba-4525e65be967</repoid>
+      <reporootid>288ddd5e-4be9-4a3e-aa84-637b4b5577a5</reporootid>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>1c654299-4f33-40bf-be57-257ed1a09e6b</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="EnvelopeCurveShed\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>cc6d3854-0454-40f9-b847-e9990a351fcf</id>
+      <repoid>d315c756-b369-4ea9-ad57-5a11c359bed2</repoid>
+      <reporootid>0bfcede5-4dc0-4506-8922-81cb86f7a072</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Controls.rximg">
+      <id>18cecb91-b728-4b77-bdb1-1e41a174be01</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Controls.rxrep">
+      <id>a7d3f558-474f-44a8-a42a-baebcd34ceb4</id>
+      <repoid>7809317b-2dab-4c75-a23b-6f0c6dd03f50</repoid>
+      <reporootid>0a838cfd-8f7b-4906-83b8-7612e8d28287</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\DiscardCurvesElementsRepository.rximg">
+      <BoundTo>416b3e86-ae03-4c91-833e-e263c5a89366</BoundTo>
+      <DependentUpon>DiscardCurvesElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b41b6a7c-9b92-4f38-9089-4a96c933d620</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\DiscardCurvesElementsRepository.rxrep">
+      <id>416b3e86-ae03-4c91-833e-e263c5a89366</id>
+      <repoid>742e31cc-8c5d-4e79-9f93-9be7eea636fe</repoid>
+      <reporootid>eca6e05f-32a6-49a2-a377-392d00ad7aa3</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\ReadSettingsElementsRepository.rximg">
+      <BoundTo>5c506ed2-65cf-4c1d-ba80-1c48e5219700</BoundTo>
+      <DependentUpon>ReadSettingsElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>12aaecb4-d2b5-4d99-9093-235cf084c53c</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\ReadSettingsElementsRepository.rxrep">
+      <id>5c506ed2-65cf-4c1d-ba80-1c48e5219700</id>
+      <repoid>94902ffb-83d7-4ef4-a54f-e2dffeeb4153</repoid>
+      <reporootid>4b35435c-a5f4-4638-8860-2b3307205ce3</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\ReplaceFileElementsRepository.rximg">
+      <BoundTo>2d632f1a-21d3-412e-a3e4-9b296d83dc65</BoundTo>
+      <DependentUpon>ReplaceFileElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b2ac2dd6-2a53-4841-ade2-06139b284428</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\ReplaceFileElementsRepository.rxrep">
+      <id>2d632f1a-21d3-412e-a3e4-9b296d83dc65</id>
+      <repoid>402cb03f-d35a-4b5c-afb1-6d9387329dea</repoid>
+      <reporootid>526fdbe6-f20b-4ea2-a8e6-cdabac22cebc</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\SaveFileElementsRepository.rximg">
+      <BoundTo>5c1b6e5d-5279-4617-bb28-cda614b7ab26</BoundTo>
+      <DependentUpon>SaveFileElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>5f6a3f8f-0d80-4a16-96db-e05b8d508fab</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\SaveFileElementsRepository.rxrep">
+      <id>5c1b6e5d-5279-4617-bb28-cda614b7ab26</id>
+      <repoid>7b321fa9-63ce-47c4-9f49-78610aeaf255</repoid>
+      <reporootid>00264644-77b8-4b7b-a407-18383efe68fa</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\ZoomAndGridSettingsElementsRepository.rximg">
+      <BoundTo>603b67fa-ccde-42f8-a675-97b486d69646</BoundTo>
+      <DependentUpon>ZoomAndGridSettingsElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f88b4d8d-4242-4c42-8411-2ac8ee7625f1</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\Dialogs\ZoomAndGridSettingsElementsRepository.rxrep">
+      <id>603b67fa-ccde-42f8-a675-97b486d69646</id>
+      <repoid>2d74b0b7-bf2c-4e54-9e82-ba4fcb088676</repoid>
+      <reporootid>5021e8e1-be13-4f62-9ca7-5e504253bcaa</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\MenuArea\Menubar\ElementsRepository.rximg">
+      <BoundTo>1aa03c41-ce15-4681-afa9-788111916265</BoundTo>
+      <DependentUpon>ElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>5813d3fc-ea92-438d-a4f8-6baf847c477a</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\MenuArea\Menubar\ElementsRepository.rxrep">
+      <id>1aa03c41-ce15-4681-afa9-788111916265</id>
+      <repoid>88aba4d0-6cce-4994-9d5a-f55e0d39f387</repoid>
+      <reporootid>3786e64d-e731-4336-8515-e5d826b8505c</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\MenuArea\Toolbar\IconsRepository.rximg">
+      <BoundTo>bfe0818d-84f3-4ad0-96c5-6d46b467beff</BoundTo>
+      <DependentUpon>IconsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>efff0e8f-71fc-4a5b-bd4f-767a787a469f</id>
+    </None>
+    <None Include="EnvelopeCurve\GUI\MenuArea\Toolbar\IconsRepository.rxrep">
+      <id>bfe0818d-84f3-4ad0-96c5-6d46b467beff</id>
+      <repoid>a3812250-667b-4efe-8f8e-55252860b4d1</repoid>
+      <reporootid>288ddd5e-4be9-4a3e-aa84-637b4b5577a5</reporootid>
+    </None>
+    <None Include="EnvelopeCurve\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>ad7b3555-b691-4f9f-9420-20608f294550</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="EnvelopeCurve\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>e8ed3e56-493b-43c4-a2aa-c12d60e02745</id>
+      <repoid>e14b49fa-2779-41a7-a23f-5e781f4a5505</repoid>
+      <reporootid>0bfcede5-4dc0-4506-8922-81cb86f7a072</reporootid>
+    </None>
+    <None Include="EventList\GUI\ApplicationArea\MainView\Controls.rximg">
+      <BoundTo>1ef76402-5901-4604-b18a-6594762f9551</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>df9d2f0e-710d-473d-8584-278376dae607</id>
+    </None>
+    <None Include="EventList\GUI\ApplicationArea\MainView\Controls.rxrep">
+      <id>1ef76402-5901-4604-b18a-6594762f9551</id>
+      <repoid>250d6376-880e-45dd-b56b-451d22f14cee</repoid>
+      <reporootid>9f81ac2b-85bb-4f80-b762-64160421dfa8</reporootid>
+    </None>
+    <None Include="EventList\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>fd3a91a2-b2ba-4598-8b84-89200e4ac920</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="EventList\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>2dbd2789-4d5d-448d-9983-4412a70d3d51</id>
+      <repoid>3951340e-c2e4-46ba-a15f-d73659d033f4</repoid>
+      <reporootid>d4747ef5-b894-4c8f-8484-2ac020938a5d</reporootid>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Controls.rximg">
+      <BoundTo>06f21ae6-7626-4345-9827-d8dc98ab3671</BoundTo>
+      <DependentUpon>Controls.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4331a8f6-a37d-49a2-a5d4-e79cc186bc61</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Controls.rxrep">
+      <id>06f21ae6-7626-4345-9827-d8dc98ab3671</id>
+      <repoid>12b3d4dd-896b-4c56-a5e1-9cfb038b1fc6</repoid>
+      <reporootid>3a13262f-f09a-4aed-aab1-0ca7e454ffcc</reporootid>
+    </None>
+    <None Include="Historom\GUI\MenuArea\Toolbar\Toolbar.rximg">
+      <BoundTo>2dab7077-dd00-404d-acc8-9cf059ede3d0</BoundTo>
+      <DependentUpon>Toolbar.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>92260ae6-aedb-4688-a985-3321f1c06c56</id>
+    </None>
+    <None Include="Historom\GUI\MenuArea\Toolbar\Toolbar.rxrep">
+      <id>2dab7077-dd00-404d-acc8-9cf059ede3d0</id>
+      <repoid>2cd75bf4-a66b-4adc-af13-70c70bc5db00</repoid>
+      <reporootid>3a13262f-f09a-4aed-aab1-0ca7e454ffcc</reporootid>
+    </None>
+    <None Include="Historom\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <BoundTo>fc718e83-5957-40c3-aff6-68eeccc22ade</BoundTo>
+      <DependentUpon>StatusbarElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>9af3cf5f-5fef-4b3f-973d-0e370015afa2</id>
+    </None>
+    <None Include="Historom\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>fc718e83-5957-40c3-aff6-68eeccc22ade</id>
+      <repoid>be23cae7-1fcb-4a28-b2e9-7a7bb280fbdc</repoid>
+      <reporootid>5e8b671e-d2a8-4e8c-8575-3f60053ca284</reporootid>
+    </None>
+    <None Include="Historom\GUI\StatusArea\Usermessages\UsermessageElements.rximg">
+      <BoundTo>6ce24a25-154c-4199-8eff-69a7eef6bc33</BoundTo>
+      <DependentUpon>UsermessageElements.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c23a5dab-e369-437f-a336-7407cf48ccee</id>
+    </None>
+    <None Include="Historom\GUI\StatusArea\Usermessages\UsermessageElements.rxrep">
+      <id>6ce24a25-154c-4199-8eff-69a7eef6bc33</id>
+      <repoid>058ef220-9b07-401e-98c2-302b7a11aef8</repoid>
+      <reporootid>9b2ee072-8893-439f-bb2f-89fadf082e9b</reporootid>
+    </None>
+    <None Include="Linearization\GUI\ApplicationArea\MainView\MainViewElementsRepository.rximg">
+      <id>33a30abc-e5fc-4133-8838-f4273f8ac772</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Linearization\GUI\ApplicationArea\MainView\MainViewElementsRepository.rxrep">
+      <id>34b9f0a7-e1a8-485e-a879-6e51be0726c1</id>
+      <repoid>207f127d-f302-4f35-a2f3-a73502cd3484</repoid>
+      <reporootid>8498d779-eeb1-4214-a881-9974ec2f079d</reporootid>
+    </None>
+    <None Include="Linearization\GUI\MenuArea\Toolbar\ToolbarElementsRepository.rximg">
+      <id>62bb3cee-103b-41f3-8de0-f1dacbec4fc0</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Linearization\GUI\MenuArea\Toolbar\ToolbarElementsRepository.rxrep">
+      <id>6c8d5cc7-8764-4ded-b5fd-836a20c9410e</id>
+      <repoid>aaf1df43-521f-46b0-89a7-f4c20e94456d</repoid>
+      <reporootid>eb410cae-c7a9-4bdb-a774-2c621dd77850</reporootid>
+    </None>
+    <None Include="Linearization\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>c6edab30-15ce-4a97-a0d1-488f1dbbd4eb</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Linearization\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>1b836408-0f9a-4eb3-ad7e-61ecdc1aed56</id>
+      <repoid>958e2902-96ea-4cfc-b538-568cddba1786</repoid>
+      <reporootid>b3965ad5-3b8b-4787-9762-a5fd045d0247</reporootid>
+    </None>
+    <None Include="Linearization\GUI\StatusArea\UserMessages\UserMessagesRepository.rximg">
+      <id>f258b85b-2746-4dab-a71f-2bed7db6dac7</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Linearization\GUI\StatusArea\UserMessages\UserMessagesRepository.rxrep">
+      <id>a513c894-c388-4db5-b65a-4d2e0c67a3a5</id>
+      <repoid>5e005975-554f-4e98-b5cc-10a34f37a82c</repoid>
+      <reporootid>c76fdfd0-7df0-4332-9d56-3dbe2eb34244</reporootid>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\DashboardElementsRepository.rximg">
+      <id>54a5ceb5-6772-41d6-b16b-3872a1072c6c</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\DashboardElementsRepository.rxrep">
+      <id>5b01d3ea-2aa2-4fc7-8244-3f4003e993c5</id>
+      <repoid>28b9115a-7cec-4b15-9c86-6d00d2a7eee0</repoid>
+      <reporootid>33d4422e-b317-4152-aa8b-0f40bdfbf743</reporootid>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\FF912ElementsRepository.rximg">
+      <id>5462d3b4-382b-48bd-86b1-cc117ccc4986</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\FF912ElementsRepository.rxrep">
+      <id>37bda996-a5ca-4aa3-a7e1-853a60db942e</id>
+      <repoid>3786d44b-6995-4fde-8b1c-cdc78f4ea8e7</repoid>
+      <reporootid>9ef8330a-7983-4279-8bf3-4aef1cd27018</reporootid>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\ModuleContainerRepository.rximg">
+      <BoundTo>dbb60ffc-047e-4380-963a-1d3ceff5cf64</BoundTo>
+      <DependentUpon>ModuleContainerRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>699d9e8a-cdb1-4285-83d8-582b353388fe</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\ModuleContainerRepository.rxrep">
+      <id>dbb60ffc-047e-4380-963a-1d3ceff5cf64</id>
+      <repoid>2026b91a-bbec-4846-bbe0-de29c08ac6b8</repoid>
+      <reporootid>028bc93a-f3bd-4692-9311-5829bbdee554</reporootid>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\NE107ElementsRepository.rximg">
+      <id>da8ba67c-a7a7-4fd3-bf6b-b64ef2205a2f</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\NE107ElementsRepository.rxrep">
+      <id>a6784fc9-d4aa-484e-913d-4ba718318d2b</id>
+      <repoid>d4f6d76a-fbcc-47f1-8a1c-c0d9fdb806d1</repoid>
+      <reporootid>c0e1ba20-8203-4f56-86c1-65b0cbc75c70</reporootid>
+    </None>
+    <None Include="Parameterization\GUI\MenuArea\Toolbar\ToolbarElementsRepository.rximg">
+      <id>fe9608e9-233c-4136-b7b7-59ced8b459bf</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Parameterization\GUI\MenuArea\Toolbar\ToolbarElementsRepository.rxrep">
+      <id>43d313eb-804f-4feb-9e9a-c8a15efa7941</id>
+      <repoid>528a4320-1986-4a21-9fd7-b3d61df8ee8c</repoid>
+      <reporootid>3dd203e9-79b8-4426-a6ea-3c825669a0a6</reporootid>
+    </None>
+    <None Include="Parameterization\GUI\StatusArea\Statusbar\StatusBar.rximg">
+      <id>213cad18-3892-4e71-b97c-619d27f66e15</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Parameterization\GUI\StatusArea\Statusbar\StatusBar.rxrep">
+      <id>0facc392-c42c-4a9b-9605-49244342d745</id>
+      <repoid>ed25510f-7899-41f3-a125-005a154725a6</repoid>
+      <reporootid>3a13262f-f09a-4aed-aab1-0ca7e454ffcc</reporootid>
+    </None>
+    <None Include="SaveRestore\GUI\ApplicationArea\MainView\ModuleContainerRepository.rximg">
+      <id>0ba04648-c709-42ea-801a-ec762b53d0d9</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="SaveRestore\GUI\ApplicationArea\MainView\ModuleContainerRepository.rxrep">
+      <id>e494f41b-d1fc-43bb-9df3-2d512c4d5b36</id>
+      <repoid>70a504f4-fd9d-426a-8b75-27b9ec0d08b2</repoid>
+      <reporootid>8624c5e2-05b7-400b-acb3-cb70f8864a45</reporootid>
+    </None>
+    <None Include="SaveRestore\GUI\ApplicationArea\MainView\Navigation.rximg">
+      <id>96699d01-2714-4f10-8015-a77b52454eb0</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="SaveRestore\GUI\ApplicationArea\MainView\Navigation.rxrep">
+      <id>6afb579d-df0c-44c8-8312-dc8372a21f62</id>
+      <repoid>6e5d40a9-e202-4521-8460-5bad6739d754</repoid>
+      <reporootid>8e4f1f0c-e525-4326-be11-b01b29e03bc4</reporootid>
+    </None>
+    <None Include="SaveRestore\GUI\ApplicationArea\MainView\Selection.rximg">
+      <BoundTo>a13305ae-f97a-40cf-8f2d-b5813d6046f4</BoundTo>
+      <DependentUpon>Selection.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>ec6e9b71-5b17-48ac-86bb-527a7e765c61</id>
+    </None>
+    <None Include="SaveRestore\GUI\ApplicationArea\MainView\Selection.rxrep">
+      <id>a13305ae-f97a-40cf-8f2d-b5813d6046f4</id>
+      <repoid>20ce2e72-07c4-4f3c-a99a-1febf3326f85</repoid>
+      <reporootid>75c8ea02-a7b9-4539-9341-c3d492f7f580</reporootid>
+    </None>
+    <None Include="SaveRestore\GUI\MenuArea\Toolbar\Toolbar.rximg">
+      <BoundTo>80b56eaf-2abb-4e14-bdc3-e86ec0f3ad3c</BoundTo>
+      <DependentUpon>Toolbar.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>48ea8c85-07c9-467d-ba40-322f3e1247f3</id>
+    </None>
+    <None Include="SaveRestore\GUI\MenuArea\Toolbar\Toolbar.rxrep">
+      <id>80b56eaf-2abb-4e14-bdc3-e86ec0f3ad3c</id>
+      <repoid>78ca136b-e4c6-429d-bf4a-67a4c84916f4</repoid>
+      <reporootid>12146e85-b7b8-4d41-bc0a-46e0516a9bbe</reporootid>
+    </None>
+    <None Include="SaveRestore\GUI\StatusArea\Statusbar\StatusBar.rximg">
+      <id>b3d5474b-05b0-48f0-8866-61f019634a4c</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="SaveRestore\GUI\StatusArea\Statusbar\StatusBar.rxrep">
+      <id>4f97d857-00ba-4c05-bac4-65f67d25b5e2</id>
+      <repoid>19b55859-f2c8-44f2-a9c5-f70551f98804</repoid>
+      <reporootid>3a13262f-f09a-4aed-aab1-0ca7e454ffcc</reporootid>
+    </None>
+    <None Include="Viscosity\GUI\ApplicationArea\MainView\MainViewElementsRepository.rximg">
+      <id>faf7cfbd-6b29-4697-864f-46febca7d011</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Viscosity\GUI\ApplicationArea\MainView\MainViewElementsRepository.rxrep">
+      <id>02f8117d-a32f-4242-951a-d5e55cc99324</id>
+      <repoid>31eb9cf7-2683-4681-be8c-f6b726f3d850</repoid>
+      <reporootid>3563e02b-afb7-4c66-9040-bd43cf566da5</reporootid>
+    </None>
+    <None Include="Viscosity\GUI\MenuArea\Toolbar\ToolbarElementsRepository.rximg">
+      <id>5bb40944-febf-463a-ab8e-89d719d872ba</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Viscosity\GUI\MenuArea\Toolbar\ToolbarElementsRepository.rxrep">
+      <id>aa5f601e-54a8-4f1b-a88c-a0e2b9f59caf</id>
+      <repoid>712bb5f6-7352-45a7-9490-686b7f0b31a0</repoid>
+      <reporootid>c7d55f01-cf90-4d50-88f2-55da3174f987</reporootid>
+    </None>
+    <None Include="Viscosity\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rximg">
+      <id>a8e7f163-8026-4a6d-999d-40f8d10b6220</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Viscosity\GUI\StatusArea\Statusbar\StatusbarElementsRepository.rxrep">
+      <id>25109791-6887-4639-a535-38f9873d58d4</id>
+      <repoid>5e045a2a-1b0c-4016-b4be-3f27a338c6c1</repoid>
+      <reporootid>cfe7e7f3-ed10-4a10-9f46-51b13d361cc5</reporootid>
+    </None>
+    <None Include="Viscosity\GUI\StatusArea\Usermessages\UserMessages.rximg">
+      <id>dd08d088-f4dc-46c0-bb9d-c842db6fdf75</id>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Viscosity\GUI\StatusArea\Usermessages\UserMessages.rxrep">
+      <id>30d5c912-1657-4fd7-aa3e-599196653fb7</id>
+      <repoid>130251ca-3fe3-48d8-8b29-1e3507b54023</repoid>
+      <reporootid>149f3f54-ff76-44c0-90dd-922644a87f57</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Diagram.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Diagram1.Designer.cs</LastGenOutput>
+      <id>d183fc07-1255-4635-865e-14159604f51b</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historom\GUI\ApplicationArea\MainView\Diagram.resx">
+      <id>1cb865c8-cf2c-448f-b4ee-a7c2a88de6a4</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historom\GUI\ApplicationArea\MainView\StatusIcons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusIcons.Designer.cs</LastGenOutput>
+      <id>cde2a394-f9cb-442b-942d-52a85f67807a</id>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterization\GUI\ApplicationArea\MainView\StatusIcons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusIcons.Designer.cs</LastGenOutput>
+      <id>6705811f-10dd-4e36-8311-7277b58f9e4a</id>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Resources\grid_green.bmp">
+      <id>6ad4732e-57d2-4496-8ba5-d1b21c5bb7a2</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Resources\grid_green_small.bmp">
+      <id>d725d061-2741-46bb-82d8-1a69fd97ffd6</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Resources\grid_yellow.bmp">
+      <id>c404a3ec-5141-4dc4-bc54-de20f51d6909</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Resources\grid_yellow_small.bmp">
+      <id>0439fd54-e3ba-4d04-bbe8-9d5ac14dbdea</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnvelopeCurve\GUI\ApplicationArea\MainView\Resources\progressbar.bmp">
+      <id>73a2d78d-8ad2-45b5-954d-f6755a22a605</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Historom\Resources\progressbar.bmp">
+      <id>59dfb9d3-fd07-4447-b61a-d3ca43d88c81</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Historom\GUI\ApplicationArea\MainView\Resources\progressbar.bmp">
+      <id>291471e1-aab0-4217-8a63-f73a2ed9ec77</id>
+    </Content>
+    <Content Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_ValidModified.jpg">
+      <id>06bac36f-c7b3-41ca-b57b-fbf91a4da3d2</id>
+    </Content>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_ValidModified.jpg">
+      <id>344cab0f-3265-4a43-aef9-451e26651fdb</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_Valid.jpg">
+      <id>1e26af4f-d6ba-41c9-a70c-94acf4182857</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_OutOfRange.jpg">
+      <id>9d30ea7d-4ec4-4baa-a0cb-c238116472a2</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_InvalidModified.jpg">
+      <id>a526046d-05e5-4e48-b72d-f1f0705cff58</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_Invalid.jpg">
+      <id>7c22b61a-203b-4d97-a669-e9606f5b4af8</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_Insecure.jpg">
+      <id>2b8278c3-7ceb-4e85-ba75-acf0301f9d0e</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_Dynamic_02.jpg">
+      <id>5ddeb2e9-e75f-49fe-b416-7eb5ffa1f38b</id>
+    </None>
+    <None Include="Parameterization\GUI\ApplicationArea\MainView\Resources\StatusIcon_Dynamic_01.jpg">
+      <id>cd87d8ff-027c-4503-927f-ba827a69d2e0</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_Valid.jpg">
+      <id>8de62f7c-f801-4ca3-a2ec-10c170757adc</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_OutOfRange.jpg">
+      <id>ddce85bf-79ac-4034-b847-613a49506ed2</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_InvalidModified.jpg">
+      <id>cf0954a3-2e4b-42e3-b55d-f87554eea9f4</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_Invalid.jpg">
+      <id>1e47fa80-3b9e-4361-a92e-0a51518efb07</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_Insecure.jpg">
+      <id>8858f013-0181-464b-bc95-9595cfc79b14</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_Dynamic_02.jpg">
+      <id>8b30d1ba-827b-45dd-b17e-d2427286a1d1</id>
+    </None>
+    <None Include="Historom\GUI\ApplicationArea\MainView\Resources\StatusIcon_Dynamic_01.jpg">
+      <id>4c6b3266-91c7-48be-a35a-904493b275d5</id>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

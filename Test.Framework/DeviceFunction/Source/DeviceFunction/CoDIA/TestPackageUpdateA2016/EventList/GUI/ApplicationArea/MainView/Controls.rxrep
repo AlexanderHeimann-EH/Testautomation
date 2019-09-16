@@ -1,0 +1,75 @@
+﻿<repository
+name="Controls"
+id="250d6376-880e-45dd-b56b-451d22f14cee"
+rxversion="6.1">
+	<codegen
+	classname="Controls"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2016.EventList.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="9f81ac2b-85bb-4f80-b762-64160421dfa8"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="Refresh"
+		id="b3b1cc90-2b3e-4063-b06c-3359f8b9a647"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tree,accessible">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.EventListDisplay.EventListComposite']/?/?/button[@accessiblename='EventListModule.ButtonControlBase.Update']
+		</item>
+		<item
+		name="treeItemEntries"
+		id="ecb12f52-2c2a-4019-9075-5610a39313e4"
+		searchtimeout="30000ms"
+		capname="treeitem"
+		addcaps="cell,accessible"
+		refimgid="1a407ac0-f606-4e7c-91df-7ee5a17dcec6">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.EventListDisplay.EventListComposite']/?/?/tree[@accessiblename~'^EventListModule\.TreeListC']/container[@accessiblename='Data Panel']/treeitem
+		</item>
+		<item
+		name="EventListModuleContainer"
+		id="8e46345a-990e-44e3-a3dc-d34f83b28a4c"
+		searchtimeout="2000ms"
+		capname="container"
+		addcaps="tree,accessible">
+			/container[@automationid='EventListModule.EventListForm.Form']
+		</item>
+		<item
+		name="LineUp"
+		id="b3a2ee34-26ce-4327-a845-977d038b6055"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tree,accessible">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.EventListDisplay.EventListComposite']/?/?/tree[@accessiblename~'^EventListModule\.TreeListC']/scrollbar/button[@accessiblename='Line Up']
+		</item>
+		<item
+		name="LineDown"
+		id="96a42fe5-5f6a-4007-98ec-b48ddcd02895"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tree,accessible">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.EventListDisplay.EventListComposite']/?/?/tree[@accessiblename~'^EventListModule\.TreeListC']/scrollbar/button[@accessiblename='Line Down']
+		</item>
+		<item
+		name="PageUp"
+		id="554258e2-33cf-4aac-8772-7eba9542fb5d"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tree,accessible">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.EventListDisplay.EventListComposite']/?/?/tree[@accessiblename~'^EventListModule\.TreeListC']/scrollbar/button[@accessiblename='Page Up']
+		</item>
+		<item
+		name="PageDown"
+		id="39d91075-aa8a-4081-8d6b-8e3f1f8ec774"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tree,accessible">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.EventListDisplay.EventListComposite']/?/?/tree[@accessiblename~'^EventListModule\.TreeListC']/scrollbar/button[@accessiblename='Page Down']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,34 @@
+﻿<repository
+name="DiscardCurvesElementsRepository"
+id="742e31cc-8c5d-4e79-9f93-9be7eea636fe"
+rxversion="6.1">
+	<codegen
+	classname="DiscardCurvesElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.EnvelopeCurve.GUI.Dialogs"/>
+	<rootfolder
+	name="Root"
+	id="eca6e05f-32a6-49a2-a377-392d00ad7aa3"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonOK"
+		id="621ca815-a332-4c55-a6c4-974b232255aa"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@controlid='202']
+		</item>
+		<item
+		name="buttonCancel"
+		id="22e207e8-75a4-4672-9da9-75d414dccd99"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,nativewindow">
+			/form/button[@controlid='203']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

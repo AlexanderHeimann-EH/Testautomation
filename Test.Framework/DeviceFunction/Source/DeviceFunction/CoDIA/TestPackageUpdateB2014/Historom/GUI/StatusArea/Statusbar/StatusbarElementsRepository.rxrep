@@ -1,0 +1,39 @@
+﻿<repository
+name="StatusbarElementsRepository"
+id="be23cae7-1fcb-4a28-b2e9-7a7bb280fbdc"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateB2014.Historom.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="5e8b671e-d2a8-4e8c-8575-3f60053ca284"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ConnectionState"
+		id="1e98b596-5cd3-43bb-97a7-3a493c8dfd4b"
+		searchtimeout="30000ms"
+		capname="text">
+			/container[@automationid='HistoROMModule.HistoROMForm.Form']/element[@accessiblename='HistoROMModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/element/toolbar/text[@accessiblename='Statusbar.Item.ConnectionState']
+		</item>
+		<item
+		name="buttonOperationInProgress"
+		id="c20ee352-781f-4fdc-88ae-b23a70c591b1"
+		searchtimeout="30000ms"
+		capname="button">
+			/container[@automationid='HistoROMModule.HistoROMForm.Form']/element[@accessiblename='HistoROMModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/element/toolbar[@accessiblename='Bar']/button[@accessiblename='Statusbar.Item.OperationProgress']
+		</item>
+		<item
+		name="StatusBar"
+		id="a3523318-cbfd-4d71-810a-578ce006f9c7"
+		searchtimeout="30000ms"
+		capname="toolbar">
+			/container[@automationid='HistoROMModule.HistoROMForm.Form']/element[@accessiblename='HistoROMModule.StatusBarControl.StatusBar']/element[@controlname='barDockControlTop']/element/toolbar
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

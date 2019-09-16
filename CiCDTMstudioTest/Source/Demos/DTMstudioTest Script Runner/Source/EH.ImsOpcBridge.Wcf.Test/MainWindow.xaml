@@ -1,0 +1,17 @@
+﻿<Window x:Class="EH.ImsOpcBridge.Wcf.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button Click="ButtonTestLoadConfigurationRequest">LoadConfigurationRequest</Button>
+            <Button Click="ButtonTestSaveConfigurationRequest">SaveConfigurationRequest</Button>
+            <Button Click="ButtonTestImportConfigurationRequest">ImportConfigurationRequest</Button>
+            <Button Click="ButtonTestExportConfigurationRequest">ExportConfigurationRequest</Button>
+            <Button Click="ButtonTestReadLocalOpcServersRequest">ReadLocalOpcServersRequest</Button>
+            <Button Click="ButtonTestReadOpcAddressSpaceRequest">ReadOpcAddressSpaceRequest</Button>
+            <Button Click="ButtonTestStartMonitorRequest">StartMonitorRequest</Button>
+            <Button Click="ButtonTestStopMonitorRequest">StopMonitorRequest</Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.IConfigureCommunication">
+            <summary>
+            Provides methods for configuration of communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.IConfigureCommunication.Run(EH.PCPS.TestAutomation.Common.DataTypes.Communication)">
+            <summary>
+            Configures the Communication DTM via Communication Object
+            </summary>
+            <param name="communication">Communication Information</param>
+            <returns> true: if function is closed; false: if an error occurred </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.IConfigureCommunication.Run(System.String)">
+            <summary>
+            Configures the Communication DTM via string
+            </summary>
+            <param name="communication">Communication Information</param>
+            <returns>true: if function is closed; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.ICloseConfiguration">
+            <summary>
+            Provides methods for closing communication configuration GUI
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.ICloseConfiguration.Run">
+            <summary>
+            Closes a function
+            </summary>
+            <returns>true: if function is closed; false: if an error occurred</returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.IOpenConfiguration">
+            <summary>
+                Provides methods for opening communication configuration GUI
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.CommonFlows.IOpenConfiguration.Run">
+            <summary>
+                Opens specified function
+            </summary>
+            <returns>true: function is opened; false: if an error occurred</returns>
+        </member>
+    </members>
+</doc>

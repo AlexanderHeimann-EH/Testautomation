@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="org.reviewboard.ReviewBoardVsx">
+    <Name>ReviewBoardVsx</Name>
+    <Author>reviewboard.org</Author>
+    <Version>0.1</Version>
+    <Description xml:space="preserve">ReviewBoard Support for Visual Studio</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://www.reviewboard.org</MoreInfoUrl>
+    <GettingStartedGuide>http://www.reviewboard.org</GettingStartedGuide>
+    <Icon>Package.ico</Icon>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Express_All</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="3.5" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage>
+  </Content>
+</Vsix>

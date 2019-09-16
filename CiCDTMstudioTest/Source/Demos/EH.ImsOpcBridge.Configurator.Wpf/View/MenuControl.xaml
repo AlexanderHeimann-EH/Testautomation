@@ -1,0 +1,67 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.Configurator.View.MenuControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:EH.ImsOpcBridge.UI.Wpf.ViewModel;assembly=EH.ImsOpcBridge.Base.UI.Wpf"
+             xmlns:view="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View;assembly=EH.ImsOpcBridge.Base.UI.Wpf" mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="585">
+    <UserControl.Resources>
+      <view:BoolToVisibilityConverter x:Uid="View:BoolToVisibilityConverter_1" x:Key="ConvBoolToVisibility"></view:BoolToVisibilityConverter>
+    </UserControl.Resources>
+    <Grid x:Uid="Grid_1" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_4" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_6" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_2" Width="*" />
+            <ColumnDefinition x:Uid="ColumnDefinition_3" Width="Auto" />
+            <ColumnDefinition x:Uid="ColumnDefinition_5" Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+        </Grid.RowDefinitions>
+        <Border x:Uid="Border_1" Grid.Column="0" Grid.Row="0" Width="{StaticResource MenuGap}"></Border>
+        <StackPanel x:Uid="buttonStackPanel" Grid.Column="1" Grid.Row="0" Name="ButtonStackPanel" Orientation="Horizontal" VerticalAlignment="Stretch" >
+            <view:ImageButton x:Uid="View:ImageButton_1" Style="{StaticResource MenuImageButtonStyle}" AutomationProperties.AutomationId="automId_Home" ToolTip="{Binding Path=ToolTipHome}" ToolTipService.ShowOnDisabled="true" ButtonImage="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2/Home active.png" ButtonText="" Command="{Binding Path=HomeCommand}" Visibility="{Binding Path=HomeVisibility}" TabIndex="0"/>
+        </StackPanel>
+
+        <Grid  x:Uid="StackPanel_2" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_8" Width="Auto" />
+                <ColumnDefinition x:Uid="ColumnDefinition_10" Width="Auto" />
+                <ColumnDefinition x:Uid="ColumnDefinition_9" Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Menu x:Uid="Menu_1" Grid.Column="0" AutomationProperties.AutomationId="automId_MainMenu"  ItemsSource="{Binding Path='CommandItems'}" TabIndex="1">
+                <Menu.ItemContainerStyle>
+                    <Style x:Uid="Style_1">
+                        <Setter x:Uid="Setter_2" Property="MenuItem.Command" Value="{Binding ExecuteCommand, Mode=OneWay}"/>
+                        <Setter x:Uid="Setter_7" Property="AutomationProperties.AutomationId" Value="{Binding AutomationId, Mode=OneWay}"/>
+                    </Style>
+                </Menu.ItemContainerStyle>
+                <Menu.ItemTemplate>
+                    <HierarchicalDataTemplate x:Uid="HierarchicalDataTemplate_1" ItemsSource="{Binding Path='CommandCtrlViewModel.ButtonItems'}" DataType="viewModel:CommandItemVm">
+                        <HierarchicalDataTemplate.ItemContainerStyle>
+                            <Style x:Uid="Style_2" TargetType="MenuItem">
+                                <Setter x:Uid="Setter_4" Property="Command" Value="{Binding ExecuteCommand, Mode=OneWay}"/>
+                                <Setter x:Uid="Setter_8" Property="AutomationProperties.AutomationId" Value="{Binding AutomationId, Mode=OneWay}"/>
+                                <Setter x:Uid="Setter_6" Property="Visibility" Value="{Binding IsVisible, Mode=OneWay, Converter={StaticResource ConvBoolToVisibility}}"></Setter>
+                            </Style>
+                        </HierarchicalDataTemplate.ItemContainerStyle>
+                    </HierarchicalDataTemplate>
+                </Menu.ItemTemplate>
+            </Menu>
+
+            <view:BaseSelectorControl  x:Uid="View:BaseSelectorControl_1" Grid.Column="1" DataContext="{Binding Path=MenuChoice, Mode=OneWay}"  CtrlOrientation="Horizontal" MarkerColor="{StaticResource RadioButtonMarkerColor}" Style="{StaticResource BaseSelectorMenuStyle}"></view:BaseSelectorControl>
+               
+        </Grid>
+        
+        <StackPanel x:Uid="StackPanel_1" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Right" Orientation="Horizontal">
+            <view:ImageButton x:Uid="View:ImageButton_15" Style="{StaticResource MenuImageButtonStyle}" AutomationProperties.AutomationId="automId_Settings" ToolTip="{Binding Path=ToolTipSettings}" ToolTipService.ShowOnDisabled="true" ButtonImage="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2/Settings active.png" ButtonText="" Command="{Binding Path=SettingsCommand}" Visibility="{Binding Path=IsSettingsVisible, Converter={StaticResource ConvBoolToVisibility}}" TabIndex="3" IsFlowDirected="True"/>
+            <view:ImageButton x:Uid="View:ImageButton_13" Style="{StaticResource MenuImageButtonStyle}" AutomationProperties.AutomationId="automId_HowToUse" ToolTip="{Binding Path=ToolTipAbout}" ToolTipService.ShowOnDisabled="true" ButtonImage="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2/Help active.png" ButtonText="" Command="{Binding Path=HowToUseCommand}" Visibility="{Binding Path=IsHowToUseVisible, Converter={StaticResource ConvBoolToVisibility}}" TabIndex="4" IsFlowDirected="True"/>
+            <view:ImageButton x:Uid="View:ImageButton_14" Style="{StaticResource MenuImageButtonStyle}" AutomationProperties.AutomationId="automId_Exit" ToolTip="{Binding Path=ToolTipExit}" ToolTipService.ShowOnDisabled="true" ButtonImage="/EH.ImsOpcBridge.Configurator.Wpf;component/Resources/DesignA2/Quit active.png" ButtonText="" Command="{Binding Path=ExitApplicationCommand}" TabIndex="5"/>
+        </StackPanel>
+        <Border x:Uid="Border_4" Grid.Column="5" Grid.Row="0" Width="{StaticResource MenuGap}"></Border>
+    </Grid>
+</UserControl>

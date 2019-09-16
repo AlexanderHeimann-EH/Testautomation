@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="SelectionElementsRepository"
+id="4c9ca04e-114e-4847-8e7c-5ac97f58ca8a"
+rxversion="6.1">
+	<codegen
+	classname="SelectionElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.Compare.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="06eab64c-c6cd-4251-b5bd-63e260ef229d"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonDataset2"
+		id="781e5cf3-1910-4e84-8cb2-00c77624ff0f"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/?/?/container[@controlname='_DatasetSelectionGroupControl']/element[@controlname='DatasetComparisonGUI.CompareMainPanelDx.Dataset2ButtonEdit']/button
+		</item>
+		<item
+		name="buttonMode"
+		id="d8b0de43-5451-40f3-88b5-4059b72ac666"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/?/?/container[@controlname='_DatasetSelectionGroupControl']/element[@controlname='DatasetComparisonGUI.CompareMainPanelDx.ModeSelection']/button[@accessiblename='Open']
+		</item>
+		<item
+		name="buttonDataset1"
+		id="9317dbfd-e7e8-43b1-8397-86561f91a49d"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/?/?/container[@controlname='_DatasetSelectionGroupControl']/element[@controlname='DatasetComparisonGUI.CompareMainPanelDx.Dataset1ButtonEdit']/button
+		</item>
+		<item
+		name="listItemModeSelection"
+		id="bac1f050-6a0b-434d-9e98-f5366665fc07"
+		searchtimeout="30000ms"
+		capname="listitem"
+		addcaps="listitem,accessible">
+			/form/element/list/listitem
+		</item>
+		<item
+		name="listModeSelection"
+		id="2b3a5570-6681-4a80-9682-f7e19cd7149d"
+		searchtimeout="30000ms"
+		capname="list"
+		addcaps="listitem,accessible">
+			/form/element/list
+		</item>
+		<item
+		name="elementModeSelection"
+		id="505f47d5-30bf-49c5-a3de-67b6e47c9f27"
+		searchtimeout="30000ms"
+		capname="unknown"
+		addcaps="button,accessible">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DatasetComparisonPresentation']/?/?/container[@controlname='_DatasetSelectionGroupControl']/element[@controlname='DatasetComparisonGUI.CompareMainPanelDx.ModeSelection']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

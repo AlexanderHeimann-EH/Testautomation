@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows">
+            <summary>
+            The common flows.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.ExecutionDirectory">
+            <summary>
+            The execution directory.
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.NamespaceHostApplication">
+            <summary>
+            The namespace h.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows"/> class.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.AddDevice">
+            <summary>
+            Gets the add device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.CloseFunction">
+            <summary>
+            Gets the close function.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.CloseHostApplication">
+            <summary>
+            Gets the close host application.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.CloseProject">
+            <summary>
+            Gets the close project.
+            </summary>
+            <value>The close project.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.ConnectDevice">
+            <summary>
+            Gets the connect device.
+            </summary>
+            <value>The connect device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.CreateProject">
+            <summary>
+            Gets the create project.
+            </summary>
+            <value>The create project.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.CreateTopologyOffline">
+            <summary>
+            Gets the create topology offline.
+            </summary>
+            <value>The create topology offline.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.CreateTopologyOnline">
+            <summary>
+            Gets the create topology online.
+            </summary>
+            <value>The create topology online.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.DeleteProject">
+            <summary>
+            Gets the delete project.
+            </summary>
+            <value>The delete project.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.DisconnectDevice">
+            <summary>
+            Gets the disconnect device.
+            </summary>
+            <value>The disconnect device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetCommDtmContainerPath">
+            <summary>
+            Gets the get COMM DTM container path.
+            </summary>
+            <value>The get COMM DTM container path.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetCriticalError">
+            <summary>
+            Gets the get critical error.
+            </summary>
+            <value>The get critical error.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetDeviceList">
+            <summary>
+            Gets the get device list.
+            </summary>
+            <value>The get device list.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetDtmContainerPath">
+            <summary>
+            Gets the get DTM container path.
+            </summary>
+            <value>The get DTM container path.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetMessageLog">
+            <summary>
+            Gets the get message log.
+            </summary>
+            <value>The get message log.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetHostApplicationLanguage">
+            <summary>
+            Gets the language of the host application.
+            </summary>
+            <value>The get message log.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetSelectedDevice">
+            <summary>
+            Gets the get selected device.
+            </summary>
+            <value>The get selected device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.LoadProject">
+            <summary>
+            Gets the load project.
+            </summary>
+            <value>The load project.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.OpenAdditionalFunction">
+            <summary>
+            Gets the open additional function.
+            </summary>
+            <value>The open additional function.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.OpenFunction">
+            <summary>
+            Gets the open function.
+            </summary>
+            <value>The open function.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.OpenHostApplication">
+            <summary>
+            Gets the open host application.
+            </summary>
+            <value>The open host application.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.PrintDeviceInformation">
+            <summary>
+            Gets the print device information.
+            </summary>
+            <value>The print device information.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.ReadDataFromDevice">
+            <summary>
+            Gets the read data from device.
+            </summary>
+            <value>The read data from device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.RegisterDeviceType">
+            <summary>
+            Gets the type of the register device.
+            </summary>
+            <value>The type of the register device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.RemoveDevice">
+            <summary>
+            Gets the remove device.
+            </summary>
+            <value>The remove device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.RestoreDeviceData">
+            <summary>
+            Gets the restore device data.
+            </summary>
+            <value>The restore device data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.SaveDeviceData">
+            <summary>
+            Gets the save device data.
+            </summary>
+            <value>The save device data.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.SaveProject">
+            <summary>
+            Gets the save project.
+            </summary>
+            <value>The save project.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.SelectDevice">
+            <summary>
+            Gets the select device.
+            </summary>
+            <value>The select device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.SwitchToFunction">
+            <summary>
+            Gets the add device.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.UnregisterDeviceType">
+            <summary>
+            Gets the type of the unregister device.
+            </summary>
+            <value>The type of the unregister device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.WriteDataToDevice">
+            <summary>
+            Gets the write data to device.
+            </summary>
+            <value>The write data to device.</value>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.GetDeviceFunctionInFocus">
+            <summary>
+            Gets the get device function in focus.
+            </summary>
+        </member>
+    </members>
+</doc>

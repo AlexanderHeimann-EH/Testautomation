@@ -1,0 +1,27 @@
+﻿<repository
+name="ToolbarElementsRepository"
+id="528a4320-1986-4a21-9fd7-b3d61df8ee8c"
+rxversion="6.1">
+	<codegen
+	classname="ToolbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2016.Parameterization.GUI.MenuArea.Toolbar"/>
+	<rootfolder
+	name="Root"
+	id="3dd203e9-79b8-4426-a6ea-3c825669a0a6"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="ButtonHome"
+		id="04f4d013-53b0-4539-9647-86292fc9c2d7"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="tabpagelist,accessible"
+		refimgid="0ca1996d-df09-4a44-a826-84eeca203d24">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='DtmToolBar']//toolbar[@accessiblename='Bar']/button[@accessiblename='Go to home location.']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

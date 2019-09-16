@@ -1,0 +1,25 @@
+
+	UNIMPLEMENTED post-review parameters:
+
+	Usage: post-review-script.py [-pond] [-r review_id] [changenum]
+
+	Options:
+	  --target-groups=TARGET_GROUPS
+							names of the groups who will perform the review
+	  --target-people=TARGET_PEOPLE
+							names of the people who will perform the review
+	  --summary=SUMMARY     summary of the review
+	  --description=DESCRIPTION
+							description of the review
+	  --description-file=DESCRIPTION_FILE
+							text file containing a description of the review
+	  --testing-done=TESTING_DONE
+							details of testing done
+	  --testing-done-file=TESTING_FILE
+							text file containing details of testing done
+	  --branch=BRANCH       affected branch
+	  --bugs-closed=BUGS_CLOSED
+							list of bugs closed
+	  --revision-range=REVISION_RANGE
+							generate the diff for review based on given revision
+							range

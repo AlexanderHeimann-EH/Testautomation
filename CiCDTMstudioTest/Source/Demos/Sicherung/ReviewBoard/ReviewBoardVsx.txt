@@ -1,0 +1,22 @@
+TODO:(pv)
+	* Consider fully implementing the [python] post-review in this C# app
+		There is no real need to *call* post-review, when it can be directly replace.
+		This would also allow this app to use the whole RB API:
+			* Get titles for reviews
+			* Get user review lists
+			* Get review groups/users
+			* Directly publish review
+
+
+Install VisualStudio 2008 SDK 1.1.
+
+Look at samples:
+	IDE\OptionsPage
+	IDE\MenuAndCommands
+	IDE\Package
+
+C:\Users\pv\AppData\Local\VSSDK_9.0_2007.11\Example.SolutionHierarchyTraversal_3F7E66EC
+	Use as basis for HelloWorld solution traversal
+
+C:\Users\pv\AppData\Local\VSSDK_9.0_2007.11\Example.SccProvider_F56FCE37
+	More complicated version of above that shows tighter integration w/ SCC

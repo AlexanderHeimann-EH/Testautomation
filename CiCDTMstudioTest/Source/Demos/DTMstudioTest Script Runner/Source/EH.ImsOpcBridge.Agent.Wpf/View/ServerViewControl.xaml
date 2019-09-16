@@ -1,0 +1,41 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.Agent.Wpf.View.ServerViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:EH.ImsOpcBridge.Agent.Wpf.ViewModel" mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="500"
+             d:DataContext="{d:DesignInstance vm:ServerViewControlViewModel, IsDesignTimeCreatable=False}">
+    
+    <UserControl.Resources>
+      
+    </UserControl.Resources>
+    
+    <Grid x:Uid="Grid_1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Uid="ColumnDefinition_1" Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="Auto" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="*" />
+        </Grid.RowDefinitions>
+
+        <Menu x:Uid="Menu_1" Height="21" Grid.Row="0"  VerticalAlignment="Top">
+            <MenuItem x:Uid="MenuItem_1" Header="Diagnostics"  ToolTip="Request Diagnostics from the core service" Command="{Binding Path=Connect}" AutomationProperties.AutomationId="automnId_MenuItemConnect"/>
+            <!--<MenuItem x:Uid="MenuItem_2" Header="Disconnect" ToolTip="Close the Agent." Command="{Binding Path=Disconnect}" AutomationProperties.AutomationId="automnId_MenuItemDisconnect"/>-->
+            <MenuItem x:Uid="MenuItem_3" Header="Clear" ToolTip="Clears messages and errors." Command="{Binding Path=Clear}" AutomationProperties.AutomationId="automnId_MenuItemClear"/>
+
+        </Menu>
+
+        <ListBox Name="ListBox" Grid.Row="1" ItemsSource="{Binding Infos}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</UserControl>

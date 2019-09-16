@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="bc4b01f9-07bd-4792-9950-e0e9e600e7e4" Version="2.0.0" Language="en-US" Publisher="Endress+Hauser Process Solutions AG" />
+    <DisplayName>EH.DTMstudioTest.Plugin</DisplayName>
+    <Description xml:space="preserve">DTMstudio Test Plugin for Visual Studio 2015</Description>
+    <GettingStartedGuide>CiC DTMstudio Test - Getting Started.docx</GettingStartedGuide>
+    <ReleaseNotes>CiC DTMstudio Test - Release Notes.rtf</ReleaseNotes>
+    <Icon>DTTestProject.ico</Icon>
+    <PreviewImage>Preview.png</PreviewImage>
+    <Tags>DTMstudio Test</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DeviceTypeTestProject" d:TargetPath="|DeviceTypeTestProject;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="UserDefinedTestProject" d:TargetPath="|UserDefinedTestProject;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="EH.DTMstudioTest.Template.TestCase" d:TargetPath="|EH.DTMstudioTest.Template.TestCase;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="EH.DTMstudioTest.Template.TestModule" d:TargetPath="|EH.DTMstudioTest.Template.TestModule;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="EH.DTMstudioTest.Template.TestSuite" d:TargetPath="|EH.DTMstudioTest.Template.TestSuite;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+  </Assets>
+</PackageManifest>

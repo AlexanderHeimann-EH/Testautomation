@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\EH.PCPS.TestAutomation.OperatingSystemLoader.XML
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\EH.PCPS.TestAutomation.OperatingSystemLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Debug\EH.PCPS.TestAutomation.OperatingSystemLoader.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\obj\Debug\EH.PCPS.TestAutomation.OperatingSystemLoader.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\obj\Debug\EH.PCPS.TestAutomation.OperatingSystemLoader.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystemLoader\obj\Debug\EH.PCPS.TestAutomation.OperatingSystemLoader.pdb

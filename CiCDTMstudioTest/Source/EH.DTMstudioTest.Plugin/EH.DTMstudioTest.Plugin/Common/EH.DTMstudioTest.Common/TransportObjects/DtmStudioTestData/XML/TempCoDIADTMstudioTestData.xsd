@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DTMstudioTestData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DeviceTypeProject">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Guid" type="xs:string" />
+              <xs:element name="FDTDeviceTypeName" type="xs:string" />
+              <xs:element name="DeviceFunctions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="DeviceFunction">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string" />
+                          <xs:element name="Active" type="xs:boolean" />
+                          <xs:element name="VersionString" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DeviceTypeFramework">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FrameworkComponents">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="FrameworkComponent">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name" type="xs:string" />
+                                <xs:element name="VersionString" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TestEnvironment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ComputerName" type="xs:string" />
+              <xs:element name="CommunicationDeviceTypeName" type="xs:string" />
+              <xs:element name="CommunicationDeviceTypeVersionString" type="xs:string" />
+              <xs:element name="CommunicationProtocol" type="xs:string" />
+              <xs:element name="CommunicationDevice" type="xs:string" />
+              <xs:element name="DeviceFunctionPlatform" type="xs:string" />
+              <xs:element name="DeviceFunctionsPackage" type="xs:string" />
+              <xs:element name="HostApplicationType" type="xs:string" />
+              <xs:element name="HostApplicationName" type="xs:string" />
+              <xs:element name="HostApplicationVersionString" type="xs:string" />
+              <xs:element name="OperatingSystemName" type="xs:string" />
+              <xs:element name="OperatingSystemBitVersion" type="xs:string" />
+              <xs:element name="OperatingSystemLanguageString" type="xs:string" />
+              <xs:element name="OperatingSystemServicePack" type="xs:string" />
+              <xs:element name="OperatingSystemVersionString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameOfTester" type="xs:string" />
+              <xs:element name="ResultOfTest" type="xs:string" />
+              <xs:element name="DateOfTest" type="xs:dateTime" />
+              <xs:element name="DeviceSerialNumber" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="InventoryId" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

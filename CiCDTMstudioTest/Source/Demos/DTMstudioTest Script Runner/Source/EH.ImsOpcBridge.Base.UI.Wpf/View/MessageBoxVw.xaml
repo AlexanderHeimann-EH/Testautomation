@@ -1,0 +1,38 @@
+﻿<Window x:Uid="MessageBox" x:Class="EH.ImsOpcBridge.UI.Wpf.View.MessageBoxVw"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:vm="clr-namespace:EH.ImsOpcBridge.UI.Wpf.ViewModel"
+        xmlns:vw="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        mc:Ignorable="d" 
+        x:Name="MessageBox"
+        d:DataContext="{d:DesignInstance vm:MessageBoxVm, IsDesignTimeCreatable=True}"
+        Title="{Binding Path=Title}" SizeToContent="WidthAndHeight"
+        ShowInTaskbar="False" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" 
+        Topmost="True"
+        AutomationProperties.AutomationId="ImsOpcBridgeMessageBox">
+    <Window.Resources>
+        <vw:MessageTypeToBitmapImageConverter x:Uid="vw:MessageTypeToBitmapImageConverter_1" x:Key="messageTypeToBitmapImageConverter" />
+        <vw:MessageButtonVisibilityConverter x:Uid="vw:MessageButtonVisibilityConverter_1" x:Key="buttonVisiblityConverter" />
+    </Window.Resources>
+    <Grid x:Uid="Grid_1">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" Height="*" />
+            <RowDefinition x:Uid="RowDefinition_2" Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Uid="StackPanel_1" Grid.Row="0" Orientation="Horizontal">
+            <Image x:Uid="Image_1" Margin="20, 20, 30, 20" Width="48" Height="48" HorizontalAlignment="Left" Source="{Binding Path=MessageType, Converter={StaticResource messageTypeToBitmapImageConverter}}" AutomationProperties.AutomationId="MessageTypeImgage" />
+            <TextBlock x:Uid="TextBlock_1" VerticalAlignment="Center" Margin="0, 5, 5, 10" TextWrapping="Wrap" Width="350" MaxHeight="300" TextAlignment="Left" TextTrimming="WordEllipsis" Text="{Binding Path=Message}" AutomationProperties.AutomationId="MessageText" />
+        </StackPanel>
+        <StackPanel x:Uid="StackPanel_2" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Uid="OkButton" Content="OK" x:Name="OkButton" Width="40" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=Ok}" Command="{Binding Path=CommandOk}" Click="OkButtonClick" AutomationProperties.AutomationId="ButtonOk" />
+            <Button x:Uid="AbortButton" Content="Abort" x:Name="AbortButton" Width="60" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=Abort}" Command="{Binding Path=CommandAbort}" Click="AbortButtonClick" AutomationProperties.AutomationId="ButtonAbort" />
+            <Button x:Uid="RetryButton" Content="Retry" x:Name="RetryButton" Width="60" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=Retry}" Command="{Binding Path=CommandRetry}" Click="RetryButtonClick" AutomationProperties.AutomationId="ButtonRetry" />
+            <Button x:Uid="IgnoreButton" Content="Ignore" x:Name="IgnoreButton" Width="60" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=Ignore}" Command="{Binding Path=CommandIgnore}" Click="IgnoreButtonClick" AutomationProperties.AutomationId="ButtonIgnore" />
+            <Button x:Uid="YesButton" Content="Yes" x:Name="YesButton" Width="40" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=Yes}" Command="{Binding Path=CommandYes}" Click="YesButtonClick" AutomationProperties.AutomationId="ButtonYes" />
+            <Button x:Uid="NoButton" Content="No" x:Name="NoButton" Width="40" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=No}" Command="{Binding Path=CommandNo}" Click="NoButtonClick" AutomationProperties.AutomationId="ButtonNo" />
+            <Button x:Uid="CancelButton" Content="Cancel" x:Name="CancelButton" Width="60" Margin="0, 5, 5, 5" Visibility="{Binding Path=MessageButton, Converter={StaticResource buttonVisiblityConverter}, ConverterParameter=Cancel}" Command="{Binding Path=CommandCancel}" IsCancel="True" Click="CancelButtonClick" AutomationProperties.AutomationId="ButtonCancel" />
+        </StackPanel>
+    </Grid>
+</Window>

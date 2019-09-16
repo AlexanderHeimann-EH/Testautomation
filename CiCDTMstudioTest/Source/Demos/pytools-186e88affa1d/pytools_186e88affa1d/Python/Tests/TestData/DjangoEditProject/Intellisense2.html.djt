@@ -1,0 +1,10 @@
+<html>
+<head><title></title></head>
+
+<body>
+{% for oar in fob %}
+
+{% endfor %}
+
+</body>
+</html>

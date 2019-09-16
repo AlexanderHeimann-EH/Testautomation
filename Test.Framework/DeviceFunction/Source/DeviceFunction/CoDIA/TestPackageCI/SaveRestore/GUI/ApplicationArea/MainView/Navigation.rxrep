@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Navigation"
+id="6e5d40a9-e202-4521-8460-5bad6739d754"
+rxversion="6.1">
+	<codegen
+	classname="Navigation"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.SaveRestore.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="8e4f1f0c-e525-4326-be11-b01b29e03bc4"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonStart"
+		id="4ff2657b-306d-455c-8e79-944e8e552554"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="e54a49b4-12e2-4763-bdd8-058942259c7a">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/container[@controlname='groupControlMain']/?/?/button[@accessiblename~'Start']
+		</item>
+		<item
+		name="buttonBack"
+		id="de6816e2-7534-4375-8fd0-d23eb2611d21"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="20213797-bd93-47fe-8984-035e3781a58c">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/container[@controlname='groupControlMain']/?/?/button[@accessiblename~'Back']
+		</item>
+		<item
+		name="buttonSave"
+		id="5462ae8c-f82c-4982-9fbc-35d598a3ada8"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="7ad92d35-1a98-4baf-8824-d66f14ddec1c">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/?/?/container[@controlname='groupControl1']/element[@controlname='saveDialogButton']/button[@accessiblename='Save']
+		</item>
+		<item
+		name="buttonRestore"
+		id="a064e461-76b9-47be-a05c-346cb1a890f9"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="631e1d6e-3136-473d-af5e-ffe882a57d9b">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/?/?/container[@controlname='groupControl1']/element[@controlname='RestoreDialogButton']/button[@accessiblename='Restore']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

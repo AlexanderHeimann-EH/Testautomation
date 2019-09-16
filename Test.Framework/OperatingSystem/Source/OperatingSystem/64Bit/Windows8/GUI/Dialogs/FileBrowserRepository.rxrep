@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="FileBrowserRepository"
+id="45ca7189-48e6-4e3a-aaa6-e1d2e59ee2b8"
+rxversion="6.1">
+	<codegen
+	classname="FileBrowserRepository"
+	namespace="EH.PCPS.TestAutomation.Windows8.GUI.Dialogs"/>
+	<rootfolder
+	name="Root"
+	id="109df65e-c2c5-45b6-b9ed-8d7be86f998a"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<folder
+		name="OpenFileBrowser"
+		id="83bcf395-6bf9-4f34-a707-ef51f849ab2c"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="False">
+			<appfolder
+			name="Open"
+			id="0c2432e6-6dff-4829-a32b-fca6260dbc06"
+			searchtimeout="30000ms"
+			capname="form"
+			addcaps="form,nativewindow"
+			isrooted="True"
+			usecache="True">
+				<item
+				name="textFileName"
+				id="cf70077d-b12f-4de8-a256-c869ecb63b71"
+				searchtimeout="30000ms"
+				capname="text"
+				addcaps="text,nativewindow">
+					/form[@accessiblerole='Dialog']/combobox[@controlid='1148']/text[@controlid='1148']
+				</item>
+				<item
+				name="buttonOpen"
+				id="156ce3ff-33d2-4e11-95db-2e740931ea9e"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form[@accessiblerole='Dialog']/button[@controlid='1']
+				</item>
+				<item
+				name="buttonCancel"
+				id="1207aad8-e2f6-4154-8ddd-af3ac58d1bde"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form[@accessiblerole='Dialog']/button[@controlid='2']
+				</item>
+				<item
+				name="buttonClose"
+				id="fd803cad-a1af-4824-8612-65a2ebdad0f4"
+				searchtimeout="30000ms"
+				capname="button"
+				addcaps="button,accessible">
+					/form[@accessiblerole='Dialog']/titlebar/button[@accessiblename='Close' or @accessiblename='Schlie&#223;en']
+				</item>
+				<basepath>
+					/form[@accessiblerole='Dialog']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJdSURBVDhPnZLdS9NhFMcPERHYy00XUdBVdNNf
+INVdeCFJBEEX6w0TjIoMKt+n0SY6X2gkI50YaYiZbzV1kkmZtWi9MchNMzCWRCg4UzP8LeXTmZrb
+zG564MuP33Oe53O+55xHRBdTiRjTxRgLPox57+IXbERikeV5uAMM2z/jChCMgMBQjD4Lxe5TlMz3
+w4TG/UJ4UOPBZU3KSgLhpzDXspmL9emY60yYb5uw1hxjv81M3tgAjAm/3NuhN2HlUr5pUwxgVqlt
+SuwdQPzDiGcIeaJqH+T615cwroCuBJIzs6OX/tS32IOFe9CsAH8IRSHTqlHVe7AEO2C6GtwaP9fG
+ica+vyHMVzN3X7jQnku2N5ecnkJKevMWAdbhCKAUuhRgfYY4Xq8BMG5h+HZBaK/m19ThYvDqhVZ1
+8KkzCsh5hNj7SHM2x0MIOzE8an5ENbz8faUA+xcsH11RQN5jpLQLMbdy+sihmCZGSmgXMirTKXCY
+KLAfp/zmYeRGAEtAbcyULZVw2YUUtSBZjascKIAOPVDhR+p0ClU6jco3SI0CfA0KKF9qYkYTYlFd
+vbsGwKUHnKNI9xTiGkeaRhQWxPq2Fn4ooFvjqbVqX7Nfcq4B0ANbTpYjD74h9R+QhoA68mL1VMFs
+BXQKu7OKkPONbLuioPh3UAcvNixtXtMaq95pA/sR23MFONSBQx+SNlchqRYTdxxHVwGMFAVsXdk8
+m12AlPUgmU2UPtUGft+HMXGQcChJJ3IAplQkx0wh8v6GdsZR01KS2HMmn8RCNzPBjTC5Tt/J+qiM
+ZcdxtfzHz2+fwAjsrw11mwAAAABJRU5ErkJggg==
+				</icon>
+			</appfolder>
+		</folder>
+		<folder
+		name="SaveAsFileBrowser"
+		id="aad1ba69-199e-4116-8546-fb44f25a1772"
+		searchtimeout="0ms"
+		capname="unknown"
+		isrooted="False">
+			<appfolder
+			name="SaveAs"
+			id="ddebafc3-2c42-4883-adc8-641471f80d61"
+			searchtimeout="5000ms"
+			capname="form"
+			addcaps="form,nativewindow"
+			isrooted="True"
+			usecache="True">
+				<item
+				name="buttonSave"
+				id="b22287e2-ffbf-4d2f-9eaa-eb9062b13225"
+				searchtimeout="5000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form[@accessiblerole='Dialog']/button[@controlid='1']
+				</item>
+				<item
+				name="buttonCancel"
+				id="617e60fd-8acd-433d-aaac-a8299b485073"
+				searchtimeout="5000ms"
+				capname="button"
+				addcaps="button,nativewindow">
+					/form[@accessiblerole='Dialog']/button[@controlid='2']
+				</item>
+				<item
+				name="buttonClose"
+				id="7a7c197b-b304-4321-8a93-dada220d7b8b"
+				searchtimeout="5000ms"
+				capname="button"
+				addcaps="button,accessible">
+					/form[@accessiblerole='Dialog']/titlebar/button[@accessiblename='Close' or @accessiblename='Schlie&#223;en']
+				</item>
+				<item
+				name="textFileName"
+				id="c3df993d-64d1-4f3f-a87d-4b3b8d125ac0"
+				searchtimeout="30000ms"
+				capname="text"
+				addcaps="text,nativewindow">
+					/form[@accessiblerole='Dialog']/element/container/element/combobox/text[@controlid='1001']
+				</item>
+				<basepath>
+					/form[@accessiblerole='Dialog']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJdSURBVDhPnZLdS9NhFMcPERHYy00XUdBVdNNf
+INVdeCFJBEEX6w0TjIoMKt+n0SY6X2gkI50YaYiZbzV1kkmZtWi9MchNMzCWRCg4UzP8LeXTmZrb
+zG564MuP33Oe53O+55xHRBdTiRjTxRgLPox57+IXbERikeV5uAMM2z/jChCMgMBQjD4Lxe5TlMz3
+w4TG/UJ4UOPBZU3KSgLhpzDXspmL9emY60yYb5uw1hxjv81M3tgAjAm/3NuhN2HlUr5pUwxgVqlt
+SuwdQPzDiGcIeaJqH+T615cwroCuBJIzs6OX/tS32IOFe9CsAH8IRSHTqlHVe7AEO2C6GtwaP9fG
+ica+vyHMVzN3X7jQnku2N5ecnkJKevMWAdbhCKAUuhRgfYY4Xq8BMG5h+HZBaK/m19ThYvDqhVZ1
+8KkzCsh5hNj7SHM2x0MIOzE8an5ENbz8faUA+xcsH11RQN5jpLQLMbdy+sihmCZGSmgXMirTKXCY
+KLAfp/zmYeRGAEtAbcyULZVw2YUUtSBZjascKIAOPVDhR+p0ClU6jco3SI0CfA0KKF9qYkYTYlFd
+vbsGwKUHnKNI9xTiGkeaRhQWxPq2Fn4ooFvjqbVqX7Nfcq4B0ANbTpYjD74h9R+QhoA68mL1VMFs
+BXQKu7OKkPONbLuioPh3UAcvNixtXtMaq95pA/sR23MFONSBQx+SNlchqRYTdxxHVwGMFAVsXdk8
+m12AlPUgmU2UPtUGft+HMXGQcChJJ3IAplQkx0wh8v6GdsZR01KS2HMmn8RCNzPBjTC5Tt/J+qiM
+ZcdxtfzHz2+fwAjsrw11mwAAAABJRU5ErkJggg==
+				</icon>
+			</appfolder>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

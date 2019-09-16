@@ -1,0 +1,19 @@
+﻿						/*----------------*/
+                        /* Test Area      */
+                        /*----------------*/
+
+                        // Start Frame
+                        // Load Project [EmptyCdiProject]
+                        // Find Network Tag [CDI Communication FXA291]
+                        // Create Topology Online
+                        string path         = @"C:\Program Files (x86)\Endress+Hauser\FieldCare\Frame\FMPFrame.exe";
+                        string projectName  = "EmptyCdiProject";
+                        string communicationDeviceType   = "CDI Communication FXA291";
+                        string deviceType   = "Levelflex FMP 5x";
+                        int timeout = 100000;
+                        EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.OpenHostApplication.Run(path);
+                        EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.LoadProject.Run(projectName);
+                        EH.PCPS.TestAutomation.CommonHostApplicationLayerLoader.CommonFlows.SelectDevice.Run(communicationDeviceType);
+                        EH.PCPS.TestAutomation.HostApplicationLoader.FDT.FieldCare.SpecificFlows.CreateNetwork.Run(timeout, deviceType);
+
+						// HINWEIS: Ursache für den Bug war eine falsche Konfiguration im Configuration.xml

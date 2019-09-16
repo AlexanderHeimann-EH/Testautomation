@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\FF\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.XML
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\FF\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\ReleaseBin\Debug\Communication\FF\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\FF\FFH1CommDTM.V1542\obj\x86\Debug\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.dll
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\FF\FFH1CommDTM.V1542\obj\x86\Debug\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.pdb
+P:\EH.PCSW.Testautomation.TestFramework.Communication\Source\Communication\FF\FFH1CommDTM.V1542\obj\x86\Debug\EH.PCPS.TestAutomation.FFH1CommDTM.V1542.csprojResolveAssemblyReference.cache

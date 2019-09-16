@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{529F377B-8490-4142-BFED-52D3C292A247}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EH.ImsOpcBridge</RootNamespace>
+    <AssemblyName>EH.ImsOpcBridge.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>EH.ImsOpcBridge.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Integration\CompileTime\Log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Main\CommonProperties\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Commands\CommandItem.cs" />
+    <Compile Include="Commands\CommandProvider.cs" />
+    <Compile Include="Commands\CommandResult.cs" />
+    <Compile Include="Commands\CommandView.cs" />
+    <Compile Include="Commands\CommandViewFactoryBase.cs" />
+    <Compile Include="Commands\CommandViewFactoryRegistry.cs" />
+    <Compile Include="Commands\CommandViewItem.cs" />
+    <Compile Include="Configuration\ConfigurationFileSupport.cs" />
+    <Compile Include="DefaultHost\BusyIndicatorNull.cs" />
+    <Compile Include="DefaultHost\ProgressHandler.cs" />
+    <Compile Include="DefaultHost\BaseHost.cs" />
+    <Compile Include="DefaultHost\TaskHandler.cs" />
+    <Compile Include="Exception\ExceptionHelper.cs" />
+    <Compile Include="Fsm\FileHandling\FileHandler.cs" />
+    <Compile Include="Fsm\FiniteStateMachine.cs" />
+    <Compile Include="Fsm\FsmEvent.cs" />
+    <Compile Include="Fsm\FsmEventQueueNative.cs" />
+    <Compile Include="Fsm\FsmState.cs" />
+    <Compile Include="Fsm\FsmTimerEvent.cs" />
+    <Compile Include="Fsm\Timer.cs" />
+    <Compile Include="Fsm\TimerHandler.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helpers\ByteArrayHandler.cs" />
+    <Compile Include="Helpers\DataSetHelper.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
+    <Compile Include="Helpers\HexConverter.cs" />
+    <Compile Include="Helpers\NativeMethods.cs" />
+    <Compile Include="Helpers\SingletonApplication.cs" />
+    <Compile Include="Helpers\SplashScreenHelper.cs" />
+    <Compile Include="Helpers\TranslatableString.cs" />
+    <Compile Include="Information\AssemblyInformation.cs" />
+    <Compile Include="Information\AssemblyManagement.cs" />
+    <Compile Include="Information\LanguageTranslation.cs" />
+    <Compile Include="Information\WindowsInformation.cs" />
+    <Compile Include="Logging\LogEventArgs.cs" />
+    <Compile Include="Logging\LogManager.cs" />
+    <Compile Include="Logging\Log4NetAppender.cs" />
+    <Compile Include="Progress\ProgressItem.cs" />
+    <Compile Include="Progress\ProgressProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registry\NativeMethods.cs" />
+    <Compile Include="Registry\RegistryHelper.cs" />
+    <Compile Include="Registry\RegistryMonitor.cs" />
+    <Compile Include="Service\NetworkHelper.cs" />
+    <Compile Include="Service\ServiceControlManager.cs" />
+    <Compile Include="Support\SystemInfo.cs" />
+    <Compile Include="Tasks\TaskItem.cs" />
+    <Compile Include="Topology\TreeNode.cs" />
+    <Compile Include="Topology\TreeTopology.cs" />
+    <Compile Include="Xml\XPathDocumentAccessor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EH.ImsOpcBridge.snk" />
+    <None Include="Logging\LogManager.cd" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\log4net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Base.UI.Wpf\EH.ImsOpcBridge.Base.UI.Wpf.csproj">
+      <Project>{ee1f836a-38e5-4dd9-a5dd-48952549bede}</Project>
+      <Name>EH.ImsOpcBridge.Base.UI.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EH.ImsOpcBridge.Base.Interfaces\EH.ImsOpcBridge.Base.Interfaces.csproj">
+      <Project>{1fed0491-1f3a-4483-8057-aab3cb05fbcb}</Project>
+      <Name>EH.ImsOpcBridge.Base.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="FxCopDictionary.xml">
+      <SubType>Designer</SubType>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.Targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

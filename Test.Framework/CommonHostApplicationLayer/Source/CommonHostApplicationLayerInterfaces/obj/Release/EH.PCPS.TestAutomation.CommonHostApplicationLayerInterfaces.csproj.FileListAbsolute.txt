@@ -1,0 +1,5 @@
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.pdb
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\obj\Release\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonHostApplicationLayer\Source\CommonHostApplicationLayerInterfaces\obj\Release\EH.PCPS.TestAutomation.CommonHostApplicationLayerInterfaces.pdb

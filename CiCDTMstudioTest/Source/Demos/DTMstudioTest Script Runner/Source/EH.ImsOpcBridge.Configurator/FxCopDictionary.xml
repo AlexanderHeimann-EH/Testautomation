@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>db</Word>
+      <Word>comm</Word>
+      <Word>shutdowned</Word>
+      <Word>ariadnepath</Word>
+      <Word>appender</Word>
+      <Word>ident</Word>
+      <Word>infos</Word>
+      <Word>fdt</Word>
+      <Word>usb</Word>
+      <Word>gui</Word>
+      <Word>ascii</Word>
+      <Word>proc</Word>
+      <Word>pc</Word>
+      <Word>vm</Word>
+      <Word>hse</Word>
+      <Word>param</Word>
+      <Word>asterix</Word>
+      <Word>prov</Word>
+      <Word>fxa</Word>
+      <Word>tcpip</Word>
+      <Word>ipc</Word>
+      <Word>iss</Word>
+      <Word>ff</Word>
+      <Word>itemp</Word>
+      <Word>pa</Word>
+      <Word>levelflex</Word>
+      <Word>liquiline</Word>
+      <Word>micropilot</Word>
+      <Word>profibus</Word>
+      <Word>hart</Word>
+      <Word>profi</Word>
+      <Word>dpv</Word>
+      <Word>promass</Word>
+      <Word>sfc</Word>
+      <Word>sfg</Word>
+      <Word>fsm</Word>
+      <Word>fieldbus</Word>
+      <Word>fc</Word>
+      <Word>meht</Word>
+      <Word>enp</Word>
+      <Word>im</Word>
+      <Word>ip</Word>
+      <Word>sub</Word>
+      <Word>fmp</Word>
+      <Word>ms</Word>
+      <Word>realtime</Word>
+      <Word>app</Word>
+      <Word>bar</Word>
+      <Word>wnd</Word>
+      <Word>hbr</Word>
+      <Word>http://</Word>
+      <Word>endress</Word>
+      <Word>dtm</Word>
+      <Word>dtms</Word>
+      <Word>dataset</Word>
+      <Word>vw</Word>
+      <Word>dg</Word>
+      <Word>net</Word>
+      <Word>sh</Word>
+      <Word>url</Word>
+      <Word>acl</Word>
+      <Word>api</Word>
+      <Word>swp</Word>
+      <Word>vx</Word>
+      <Word>pid</Word>
+      <Word>vid</Word>
+      <Word>Ims</Word>
+      <Word>ims</Word>
+      <Word>opc</Word>
+      <Word>Opc</Word>
+      <Word>Fsm</Word>      
+    </Recognized>
+    <Unrecognized />
+    <Deprecated />
+    <Compound />
+    <DiscreteExceptions />
+  </Words>
+  <Acronyms>
+    <CasingExceptions />
+  </Acronyms>
+</Dictionary>

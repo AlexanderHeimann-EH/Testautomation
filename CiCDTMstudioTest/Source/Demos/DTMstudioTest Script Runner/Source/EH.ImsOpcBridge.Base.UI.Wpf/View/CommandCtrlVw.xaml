@@ -1,0 +1,94 @@
+﻿<UserControl x:Uid="UserControl_1" x:Class="EH.ImsOpcBridge.UI.Wpf.View.CommandCtrlVw"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+		     xmlns:bv="clr-namespace:EH.ImsOpcBridge.UI.Wpf.View"
+             xmlns:vm="clr-namespace:EH.ImsOpcBridge.UI.Wpf.ViewModel"
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase" 
+						 mc:Ignorable="d" 						 
+             d:DesignHeight="150" d:DesignWidth="600" 
+						 d:DataContext="{d:DesignInstance vm:CommandCtrlVm, IsDesignTimeCreatable=True}">
+    <UserControl.Resources>
+
+		<bv:IconToImageConverter x:Uid="bv:IconToImageConverter_1" x:Key="convIconToImage"/>
+		<bv:BoolToVisibilityConverter x:Uid="bv:BoolToVisibilityConverter_1" x:Key="convBoolToVisibility"/>		
+
+		<CollectionViewSource x:Uid="CollectionViewSource_1" x:Key="buttonSource" Source="{Binding Path=ButtonItems, Mode=OneWay}">
+			<CollectionViewSource.SortDescriptions>
+				<scm:SortDescription x:Uid="scm:SortDescription_1" PropertyName="SortIndex" />
+			</CollectionViewSource.SortDescriptions>
+		</CollectionViewSource>
+
+        <DataTemplate x:Uid="DataTemplate_1" x:Key="CommItemsControlDataTemplateFramed">
+            <StackPanel x:Uid="StackPanel_2" Orientation="Vertical" Visibility="{Binding IsVisible, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}">
+                <bv:ImageButton x:Uid="bv:ImageButton_1" Style="{DynamicResource ButtonStyleFramed}" AutomationProperties.AutomationId="{Binding AutomationId}" ButtonText="{Binding Text}" ButtonImage="{Binding Path=ImageSource}"
+                                            Visibility="{Binding HasButton, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}" Command="{Binding Path=ExecuteCommand}"
+                                            Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=Foreground}">
+                </bv:ImageButton>
+                <Border x:Uid="Border_1" Margin="2" CornerRadius="5" BorderThickness="1" BorderBrush="Blue" Visibility="{Binding HasChildItems, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}">
+                    <Expander x:Uid="Expander_1" Header="{Binding Text}" IsExpanded="True" IsEnabled="{Binding IsExpandable}" Background="LightBlue">
+                        <bv:CommandCtrlVw x:Uid="bv:CommandCtrlVw_1" DataContext="{Binding Path=CommandCtrlViewModel}"
+                                                      CtrlOrientation="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=CtrlOrientation}"
+                                                      Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=Foreground}">
+                        </bv:CommandCtrlVw>
+                    </Expander>
+                </Border>
+            </StackPanel>
+        </DataTemplate>
+
+        <Style x:Uid="Style_2" x:Key="CommandItemsControlStyleFramed" TargetType="{x:Type ItemsControl}" >
+            <Setter x:Uid="Setter_98" Property="ItemsControl.ItemTemplate" Value="{DynamicResource CommItemsControlDataTemplateFramed}"/>
+        </Style>
+
+        <DataTemplate x:Uid="DataTemplate_2" x:Key="CommItemsControlDataTemplateFlat">
+            <StackPanel x:Uid="StackPanel_3" Orientation="Vertical">
+                <bv:ImageButton x:Uid="bv:ImageButton_2" Style="{DynamicResource ButtonStyleFlat}" AutomationProperties.AutomationId="{Binding AutomationId}" ButtonText="{Binding Text}" ButtonImage="{Binding Path=ImageSource}"
+                                            Visibility="{Binding HasButton, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}" Command="{Binding Path=ExecuteCommand}"
+                                            Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=Foreground}">
+                </bv:ImageButton>
+                <Border x:Uid="Border_2" Margin="2" CornerRadius="5" BorderThickness="1" BorderBrush="Blue" Visibility="{Binding HasChildItems, Mode=OneWay, Converter={StaticResource convBoolToVisibility}}">
+                    <Expander x:Uid="Expander_2" Header="{Binding Text}" IsExpanded="True" IsEnabled="{Binding IsExpandable}" Background="LightBlue">
+                        <bv:CommandCtrlVw x:Uid="bv:CommandCtrlVw_2" DataContext="{Binding Path=CommandCtrlViewModel}"
+                                                      CtrlOrientation="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=CtrlOrientation}"
+                                                      Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=Foreground}">
+                        </bv:CommandCtrlVw>
+                    </Expander>
+                </Border>
+            </StackPanel>
+        </DataTemplate>
+        
+        <Style x:Uid="Style_3" x:Key="CommandItemsControlStyleFlat" TargetType="{x:Type ItemsControl}" >
+            <Setter x:Uid="Setter_99" Property="ItemsControl.ItemTemplate" Value="{DynamicResource CommItemsControlDataTemplateFlat}"/>
+        </Style>
+
+        <ControlTemplate x:Uid="ControlTemplate_1" x:Key="CommandControlTemplateFlat" TargetType="{x:Type bv:CommandCtrlVw}">
+            <Grid x:Uid="Grid_1">
+                <ScrollViewer x:Uid="ScrollViewer_1" ScrollViewer.VerticalScrollBarVisibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=VerticalScrollBarVisibility}" ScrollViewer.HorizontalScrollBarVisibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=HorizontalScrollBarVisibility}">
+                    <ItemsControl x:Uid="ItemsControl_1" ItemsSource="{Binding Source={StaticResource buttonSource}}"
+                          Style="{DynamicResource CommandItemsControlStyleFlat}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate x:Uid="ItemsPanelTemplate_1">
+                                <StackPanel x:Uid="StackPanel_1" Orientation="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=CtrlOrientation}"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </ControlTemplate>
+        
+    </UserControl.Resources>
+	
+	<Grid x:Uid="Grid_2">
+        <ScrollViewer x:Uid="ScrollViewer_2" ScrollViewer.VerticalScrollBarVisibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=VerticalScrollBarVisibility}" ScrollViewer.HorizontalScrollBarVisibility="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=HorizontalScrollBarVisibility}">
+            <ItemsControl x:Uid="ItemsControl_2" ItemsSource="{Binding Source={StaticResource buttonSource}}"
+                          Style="{DynamicResource CommandItemsControlStyleFramed}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate x:Uid="ItemsPanelTemplate_2">
+                        <StackPanel x:Uid="StackPanel_4" Orientation="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=bv:CommandCtrlVw}, Path=CtrlOrientation}"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+		</ScrollViewer>		
+	</Grid>
+</UserControl>

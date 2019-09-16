@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryEventList</DisplayName>
+      <Guid>0bf65cb5-d021-44c5-bdea-f26ee8179133</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryEventList</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open Refresh Close Check</DisplayName>
+          <Guid>d2fc2a50-07e1-49f4-a12d-69b9fc64eec3</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open Refresh Close Check</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module EventList when the device is online.</Description>
+              <DisplayName>EventList.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>78e41ee2-c6bf-4d5f-9a68-f53d955f83d0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module EventList when the device is online.</ToolTip>
+              <AssemblyMethodRefId>43e4cacc-01c8-4405-a06a-af9ba91e6233</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Refreshes the EventList</Description>
+              <DisplayName>EventList.TC_RefreshEventList.Run</DisplayName>
+              <Guid>f62ca1b4-90ef-4ab2-bfee-f7da01c1d9de</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Refreshes the EventList</ToolTip>
+              <AssemblyMethodRefId>9A2DF940-99F6-43BC-892A-3DAB4934A9F9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Refreshes the EventList</Description>
+              <DisplayName>EventList.TC_RefreshEventList.Run</DisplayName>
+              <Guid>a6fc2874-ade6-4d2c-9159-e8d41c7a746d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Refreshes the EventList</ToolTip>
+              <AssemblyMethodRefId>9A2DF940-99F6-43BC-892A-3DAB4934A9F9</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes the module EventList</Description>
+              <DisplayName>EventList.TC_CloseModule.Run</DisplayName>
+              <Guid>6e74376a-c865-4269-a245-f098ffd90a85</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes the module EventList</ToolTip>
+              <AssemblyMethodRefId>e8ebf93d-5477-46a7-93df-0e93b832001e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>84651619-6f8d-45cc-8314-a1ee0508a3fe</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>EventList</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>

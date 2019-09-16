@@ -1,0 +1,9 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="AnyCPU" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution EH.PCPS.TestAutomation.DeviceCare.CI[EH.PCPS.TestAutomation.DeviceCare.CI[CommonFlows[]Functions[]GUI[DeviceCareApplication.rxrep[]]]]]&#xD;&#xA;Solution EH.PCPS.TestAutomation.DeviceCare.CI\EH.PCPS.TestAutomation.DeviceCare.CI\GUI\DeviceCareApplication.rxrep&#xD;&#xA;Solution EH.PCPS.TestAutomation.DeviceCare.CI\EH.PCPS.TestAutomation.DeviceCare.CI\CommonFlows\CreateProject.cs" />
+  <StartupProject value="" />
+</Properties>

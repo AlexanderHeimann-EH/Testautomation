@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Selection"
+id="20ce2e72-07c4-4f3c-a99a-1febf3326f85"
+rxversion="6.1">
+	<codegen
+	classname="Selection"
+	namespace="EH.PCPS.TestAutomation.TestPackageCI.SaveRestore.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="75c8ea02-a7b9-4539-9341-c3d492f7f580"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="checkboxDownload"
+		id="b145200a-bfdc-4044-b3ad-3253f74d95c3"
+		searchtimeout="30000ms"
+		capname="checkbox">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/?/?/container[@controlname='RestorePanel']/checkbox[@controlname='checkBoxDownload']
+		</item>
+		<item
+		name="checkboxUpload"
+		id="63c9ae6f-5f16-4aab-9f31-672ec3af59ca"
+		searchtimeout="30000ms"
+		capname="checkbox">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/?/?/container[@controlname='SavePanel']/checkbox[@controlname='checkBoxUpload']
+		</item>
+		<item
+		name="buttonRestoreFrom"
+		id="63409d35-ff85-497b-89b8-05e3eb0d1534"
+		searchtimeout="30000ms"
+		capname="button">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/container[@controlname='groupControlMain']/?/?/button[@accessiblename~'Restore from']
+		</item>
+		<item
+		name="buttonSaveAs"
+		id="6c2ab80e-5d19-44d5-a029-d08e808edfe9"
+		searchtimeout="30000ms"
+		capname="button">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/container[@controlname='groupControlMain']/?/?/button[@accessiblename~'Save as']
+		</item>
+		<item
+		name="txtStatusOfDevice"
+		id="6a7a3dea-2cf9-4966-96e1-1a829603746c"
+		searchtimeout="30000ms"
+		capname="text">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/container[@controlname='groupControlMain']/container[@controlname='groupControlDeviceStatus']/?/?/text
+		</item>
+		<item
+		name="txtStatusOfSaveRestoreAssistent"
+		id="d5e79da2-1a50-46f5-beeb-a70b7368d0fe"
+		searchtimeout="30000ms"
+		capname="text">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/container[@controlname='RestorePage']/container[@controlname='groupControlMain']/container[@controlname='groupControl1']/?/?/text
+		</item>
+		<item
+		name="radioButtonDownloadModeDuplicate"
+		id="c9a65bf8-6b0d-4242-a454-d3a8feafd252"
+		searchtimeout="30000ms"
+		capname="radiobutton">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/?/?/container[@controlname='groupControlMain']/container[@controlname='RestorePanel']/container[@controlname='groupControlDownloadMode']/radiobutton[@controlname='radioButtonDuplicate']
+		</item>
+		<item
+		name="radioButtonDownloadModeAllParameter"
+		id="c0503331-e7a8-40fb-8abe-3e3e11004a0e"
+		searchtimeout="30000ms"
+		capname="radiobutton">
+			/container[@controltypename='DtmUserInterface']/container[@controlname='SaveRestoreControl']/?/?/container[@controlname='groupControlMain']/container[@controlname='RestorePanel']/container[@controlname='groupControlDownloadMode']/radiobutton[@controlname='radioButtonRestore']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

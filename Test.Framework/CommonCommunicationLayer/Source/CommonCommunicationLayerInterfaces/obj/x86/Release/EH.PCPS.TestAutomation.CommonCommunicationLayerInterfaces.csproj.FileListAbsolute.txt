@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.XML
+P:\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\ReleaseBin\Release\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.pdb
+P:\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\obj\x86\Release\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\obj\x86\Release\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.dll
+P:\EH.PCSW.Testautomation.TestFramework.CommonCommunicationLayer\Source\CommonCommunicationLayerInterfaces\obj\x86\Release\EH.PCPS.TestAutomation.CommonCommunicationLayerInterfaces.pdb

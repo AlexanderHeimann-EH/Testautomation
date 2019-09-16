@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EH.PCPS.TestAutomation.PROFIdtmDPV1.V220</name>
+    </assembly>
+    <members>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.CloseConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for PROFIdtm DPV1 Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.CloseConfiguration.Run">
+            <summary>
+            Closes the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.ConfigureCommunication">
+            <summary>
+            Implementation of IConfigureCommunication for PROFIdtm DPV1 Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.ConfigureCommunication.Run(EH.PCPS.TestAutomation.Common.DataTypes.Communication)">
+            <summary>
+            Performs the configuration of the PROFIdtmDPV1 Communication DTM
+            </summary>
+            <param name="communication">
+            The communication.
+            </param>
+            <returns>
+            <br>True: if configuration was successful</br>
+            <br>False: if configuration was unsuccessful or errors occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.ConfigureCommunication.Run(System.String)">
+            <summary>
+            The run.
+            </summary>
+            <param name="communication">
+            The communication configuration.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.OpenConfiguration">
+            <summary>
+            Implementation of ICloseConfiguration for PROFIdtm DPV1 Communication
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.CommonFlows.OpenConfiguration.Run">
+            <summary>
+            Opens the configuration page of a communication DTM
+            </summary>
+            <returns>
+            <br>True: if action was successful</br>
+            <br>False: if action successful or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.PressButton">
+            <summary>
+            Provides functionalities for buttons
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.PressButton.Run(Ranorex.Button)">
+            <summary>
+            Clicks a button
+            </summary>
+            <param name="button">
+            The button.
+            </param>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SetParameter">
+            <summary>
+            Provides functionality to set parameter for different control types
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="elementOpen">The button to open the control</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SetParameter.SetParameterValue(Ranorex.Core.Element,System.String)">
+            <summary>
+            Set a specific control to a specific value
+            </summary>
+            <param name="element">The control to set</param>
+            <param name="value">The value to set</param>
+            <returns>
+                <br>True: if value was set</br>
+                <br>False: if value could not be set</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SetParameter.SetTextValue(Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a text control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SetParameter.SetComboBoxValue(Ranorex.Core.Element,Ranorex.Core.Element,System.String)">
+            <summary>
+                Set a combo Box control to a specified value
+            </summary>
+            <param name="element">parameter to set</param>
+            <param name="elementOpen">parameter button to open combo box</param>
+            <param name="value">value to set</param>
+            <returns>
+                <br>True: if parameter was set</br>
+                <br>Null: if an error occurred</br>
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SetParameter.FindAndSelectValueInComboBox(System.Collections.Generic.IList{Ranorex.ListItem},System.String)">
+            <summary>
+                Searches and selects item in a combo box, scrolls if necessary
+            </summary>
+            <param name="listItems">list with all combo box values</param>
+            <param name="value">string with value which should be set</param>
+            <returns>
+                true: if value was found and selected
+                false: if an error occurred
+            </returns>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Execution.SettingParser.Compare(System.String,System.String)">
+            <summary>
+            Checks, after parsing, if two strings are equal
+            </summary>
+            <param name="input1">The first string argument</param>
+            <param name="input2">The second string argument</param>
+            <returns>
+            True, if both strings are equal
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Validation.IsModuleConfigurable">
+            <summary>
+            Checks if the module is offline
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Validation.IsModuleConfigurable.Run(System.Boolean)">
+            <summary>
+            Checks if the module configurable (offline)
+            by determining if the Baud Rate combo box is enabled
+            </summary>
+            <param name="suppressLogging">
+            The suppress Logging.
+            </param>
+            <returns>
+            <br>True: if module is configurable (offline)</br>
+                <br>False: if module is not configurable (online) or an error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Validation.IsModuleReady">
+            <summary>
+            Checks if a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Validation.IsModuleReady.Run">
+            <summary>
+            Checks if button [OK] is available
+            </summary>
+            <returns>
+            <br>True: if module is ready</br>
+                <br>False: if module is not ready</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady">
+            <summary>
+            Waits until a module is ready
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.Functions.ApplicationArea.Validation.WaitUntilModuleIsReady.Run(System.Int32)">
+            <summary>
+                Validation if module is ready within a specified time
+            </summary>
+            <param name="timeOutInMilliseconds">Time within module should be ready</param>
+            <returns>
+                <br>True: if module is ready in time</br>
+                <br>False: if module is not ready in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo">
+            <summary>
+            The class representing the PROFIdtmDPV1Repo element repository.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.Instance">
+            <summary>
+            Gets the singleton class instance representing the PROFIdtmDPV1Repo element repository.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BoardNameCombobox">
+            <summary>
+            The BoardNameCombobox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BoardNameComboboxInfo">
+            <summary>
+            The BoardNameCombobox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BoardNameComboboxButtonOpen">
+            <summary>
+            The BoardNameComboboxButtonOpen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BoardNameComboboxButtonOpenInfo">
+            <summary>
+            The BoardNameComboboxButtonOpen item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BaudRateCombobox">
+            <summary>
+            The BaudRateCombobox item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BaudRateComboboxInfo">
+            <summary>
+            The BaudRateCombobox item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BaudRateComboboxButtonOpen">
+            <summary>
+            The BaudRateComboboxButtonOpen item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.BaudRateComboboxButtonOpenInfo">
+            <summary>
+            The BaudRateComboboxButtonOpen item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.StartAddress">
+            <summary>
+            The StartAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.StartAddressInfo">
+            <summary>
+            The StartAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.EndAddress">
+            <summary>
+            The EndAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.EndAddressInfo">
+            <summary>
+            The EndAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.Defaults">
+            <summary>
+            The Defaults item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.DefaultsInfo">
+            <summary>
+            The Defaults item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.Cancel">
+            <summary>
+            The Cancel item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.CancelInfo">
+            <summary>
+            The Cancel item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.Apply">
+            <summary>
+            The Apply item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.ApplyInfo">
+            <summary>
+            The Apply item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.HighestStationAddress">
+            <summary>
+            The HighestStationAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.HighestStationAddressInfo">
+            <summary>
+            The HighestStationAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.StationAddress">
+            <summary>
+            The StationAddress item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.StationAddressInfo">
+            <summary>
+            The StationAddress item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.ComboboxList">
+            <summary>
+            The ComboboxList folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo.DialogBox">
+            <summary>
+            The DialogBox folder.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.ComboboxListAppFolder">
+            <summary>
+            The ComboboxListAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.ComboboxListAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ComboboxList  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.ComboboxListAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.ComboboxListAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder">
+            <summary>
+            The DialogBoxAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DialogBox  folder.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.DialogMessage">
+            <summary>
+            The DialogMessage item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.DialogMessageInfo">
+            <summary>
+            The DialogMessage item info.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.ButtonClose">
+            <summary>
+            The ButtonClose item.
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1RepoFolders.DialogBoxAppFolder.ButtonCloseInfo">
+            <summary>
+            The ButtonClose item info.
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements">
+            <summary>
+            Provides access to the GUI elements of the repository 
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.profibusRepository">
+            <summary>
+            Holds the instance of the repository which will be used
+            </summary>
+        </member>
+        <member name="F:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.communicationDtmContainerPath">
+            <summary>
+            Holds the path to the communicationDtmContainerPath
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.PROFIdtmDPV1Repo"/> class
+            and gets the commDTMContainerPath
+            </summary>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.ButtonOk">
+            <summary>
+                Gets the 'ButtonOk' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.ButtonCancel">
+            <summary>
+                Gets the 'ButtonCancel' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.ButtonApply">
+            <summary>
+                Gets the 'ButtonApply' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.ButtonDefaults">
+            <summary>
+                Gets the 'ButtonDefaults' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.ComboBoxList">
+            <summary>
+                Gets an Ilist of all items in a combo box
+            </summary>
+            <returns>
+                <br>Ilist: if the list can be created</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.BoardNameComboBox">
+            <summary>
+                Gets the 'BoardNameComboBox' object
+            </summary>
+            <returns>
+                <br>Combo box: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.BoardNameComboboxButtonOpen">
+            <summary>
+                Gets the 'BoardNameComboboxButtonOpen' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.BaudRateComboBox">
+            <summary>
+                Gets the 'BaudRateComboBox' object
+            </summary>
+            <returns>
+                <br>Combobox: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.BaudRateComboBoxButtonOpen">
+            <summary>
+                Gets the 'BaudRateComboBoxButtonOpen' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.StartAddress">
+            <summary>
+                Gets the 'StartAddress' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.EndAddress">
+            <summary>
+                Gets the 'EndAddress' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.HighestStationAddress">
+            <summary>
+                Gets the 'HighestStationAddress' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.StationAddress">
+            <summary>
+                Gets the 'StationAddress' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.DialogButtonOk">
+            <summary>
+                Gets the 'DialogButtonOk' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.DialogButtonClose">
+            <summary>
+                Gets the 'DialogButtonClose' object
+            </summary>
+            <returns>
+                <br>Button: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="P:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.GUI.ProfIdtmDpv1RepoElements.DialogMessage">
+            <summary>
+                Gets the 'DialogMessage' object
+            </summary>
+            <returns>
+                <br>Text: if the element is found</br>
+                <br>Null: if the element was not found or otherwise returned an error</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.CheckIfDialogIsShown">
+            <summary>
+            Provides method to check if a dialog is shown
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.CheckIfDialogIsShown.IsDialogShown">
+            <summary>
+            Check if the PROFIdtm DPV1 dialogbox is shown
+            </summary>
+            <returns>
+                <br>True: if the dialog is shown in time</br>
+                <br>False: if dialog is not shown in time</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonApply">
+            <summary>
+            Provides function to click the cancel button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonApply.Run">
+            <summary>
+            Clicks the Apply button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonCancel">
+            <summary>
+            Provides function to click the cancel button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonCancel.Run">
+            <summary>
+            Clicks the Cancel button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonDefaults">
+            <summary>
+            Provides function to click the defaults button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonDefaults.Run">
+            <summary>
+            Clicks the Defaults button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonOk">
+            <summary>
+            Provides function to click the Ok button
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.ClickButtonOk.Run">
+            <summary>
+            Clicks the OK button
+            </summary>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.CloseDialog">
+            <summary>
+            Provides a method to close dialogs coming from the PROFIdtm DPV1
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.CloseDialog.Run">
+            <summary>
+            Closes a dialog
+            </summary>
+            <returns>
+                <br>True: if the dialog was successfully closed</br>
+                <br>False: if the dialog is still open</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetBaudRate">
+            <summary>
+            Provides a method to set the baud rate
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetBaudRate.Run(System.String)">
+            <summary>
+            Sets the "Baud Rate" combo box to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the correct list item was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetBoardName">
+            <summary>
+            Provides a method to set the board name
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetBoardName.Run(System.String)">
+            <summary>
+            Sets the "Board Name" combo box to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the correct list item was selected</br>
+                <br>False: if the item could not be selected, does not exist or another error occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetEndAddress">
+            <summary>
+            Provides a method to set the board name
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetEndAddress.Run(System.String)">
+            <summary>
+            Sets the "End Address" text field to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the text was set to the desired value</br>
+                <br>False: if the text could not be set or otherwise errors occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetHighestStationAddress">
+            <summary>
+            Provides a method to set the highest station address
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetHighestStationAddress.Run(System.String)">
+            <summary>
+            Sets the "Highest Station Address" text field to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the text was set to the desired value</br>
+                <br>False: if the text could not be set or otherwise errors occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetStartAddress">
+            <summary>
+            Provides a method to set the board name
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetStartAddress.Run(System.String)">
+            <summary>
+            Sets the "Start Address" text field to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the text was set to the desired value</br>
+                <br>False: if the text could not be set or otherwise errors occurred</br>
+            </returns>
+        </member>
+        <member name="T:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetStationAddress">
+            <summary>
+            Provides a method to set the station address
+            </summary>
+        </member>
+        <member name="M:EH.PCPS.TestAutomation.PROFIdtmDPV1.V220.SpecificFlows.SetStationAddress.Run(System.String)">
+            <summary>
+            Sets the "Highest Station Address" text field to a specific value
+            </summary>
+            <param name="value">The value of the list item to set</param>
+            <returns>
+                <br>True: if the text was set to the desired value</br>
+                <br>False: if the text could not be set or otherwise errors occurred</br>
+            </returns>
+        </member>
+    </members>
+</doc>

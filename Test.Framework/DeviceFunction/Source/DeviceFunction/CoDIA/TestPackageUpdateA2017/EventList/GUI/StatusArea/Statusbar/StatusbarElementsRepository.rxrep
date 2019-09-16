@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="StatusbarElementsRepository"
+id="3951340e-c2e4-46ba-a15f-d73659d033f4"
+rxversion="6.1">
+	<codegen
+	classname="StatusbarElementsRepository"
+	namespace="EH.PCPS.TestAutomation.TestPackageUpdateA2017.EventList.GUI.StatusArea.Statusbar"/>
+	<rootfolder
+	name="Root"
+	id="d4747ef5-b894-4c8f-8484-2ac020938a5d"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="buttonProgressbar"
+		id="c16d7e1f-e927-433e-9cd4-4c6741bbb067"
+		searchtimeout="30000ms"
+		capname="button"
+		addcaps="button,accessible"
+		refimgid="569666df-ce03-4afa-8a3e-8bcc9bc506d0">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.StatusBarStub.Statusbar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/button[@accessiblename='Operation in progress: ']
+		</item>
+		<item
+		name="txtConnectionState"
+		id="6f538923-3766-4440-8c93-6fb4dc775381"
+		searchtimeout="30000ms"
+		capname="text"
+		addcaps="text,accessible"
+		refimgid="54620dd8-a855-439b-a4a6-f8d947c438f9">
+			/container[@automationid='EventListModule.EventListForm.Form']/container[@controlname='EventListModule.StatusBarStub.Statusbar']/element[@controlname='barDockControlTop']/?/?/toolbar[@accessiblename='Bar']/text[@childindex='0']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

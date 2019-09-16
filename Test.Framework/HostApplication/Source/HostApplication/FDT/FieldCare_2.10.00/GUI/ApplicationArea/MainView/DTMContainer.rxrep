@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="DTMContainer"
+id="1e40a554-3682-4586-b7c6-936c392b4272"
+rxversion="6.1">
+	<codegen
+	classname="DtmContainer"
+	namespace="EH.PCPS.TestAutomation.FieldCare.V21000.GUI.ApplicationArea.MainView"/>
+	<rootfolder
+	name="Root"
+	id="8ef118e6-8b88-42b7-8080-2f46179bb0cb"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<item
+		name="DTMContainer"
+		id="5d2797fb-6f66-4173-91b1-6d12f7fe12a6"
+		searchtimeout="30000ms"
+		capname="container">
+			/form[@controlname='MDIParent2']/?/?/form/?/?/container[@controlname='GUITransparentProxy']
+		</item>
+		<item
+		name="CommDTMContainer"
+		id="2cb00448-dce3-4af7-a444-e1a2ebbf530e"
+		searchtimeout="30000ms"
+		capname="unknown">
+			/form[@controlname='MDIParent2']/element[@controltypename='MdiClient']/form[@controlname='ChildForm']/container[@controlname='FDTView2']/element[@controlname='_dtmControl']
+		</item>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

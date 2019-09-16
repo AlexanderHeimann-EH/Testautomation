@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\DeviceCare_1.01.07\obj\x86\Debug\EH.PCPS.TestAutomation.DeviceCare.V10107.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Debug\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10107.XML
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Debug\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10107.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Debug\HostApplication\FDT\EH.PCPS.TestAutomation.DeviceCare.V10107.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\DeviceCare_1.01.07\obj\x86\Debug\EH.PCPS.TestAutomation.DeviceCare.V10107.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\DeviceCare_1.01.07\obj\x86\Debug\EH.PCPS.TestAutomation.DeviceCare.V10107.pdb

@@ -1,0 +1,6 @@
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Release\OperatingSystem\32Bit\EH.PCPS.TestAutomation.WindowsXP.XML
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Release\OperatingSystem\32Bit\EH.PCPS.TestAutomation.WindowsXP.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\ReleaseBin\Release\OperatingSystem\32Bit\EH.PCPS.TestAutomation.WindowsXP.pdb
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\32Bit\WindowsXP\obj\Release\EH.PCPS.TestAutomation.WindowsXP.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\32Bit\WindowsXP\obj\Release\EH.PCPS.TestAutomation.WindowsXP.dll
+P:\EH.PCSW.Testautomation.TestFramework.OperatingSystem\Source\OperatingSystem\32Bit\WindowsXP\obj\Release\EH.PCPS.TestAutomation.WindowsXP.pdb

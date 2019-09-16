@@ -1,0 +1,969 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>DtmStudioCoDIACommonTaskInfrastructure</name>
+  </assembly>
+  <members>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.ITestResult">
+      <summary>
+            Provides access to methods for delivering and fetching test results related to the current device type project.
+            It forms a one element data storage which can be written and read.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.ITestResult.SetTestResult(System.String,System.String)">
+      <summary>
+            The test record xml together with the corresponding xsd schema can be stored using this method.
+            Later calls will overwrite data from former calls.
+            </summary>
+      <param name="testRecordXml">content of a valid xml file</param>
+      <param name="xsdSchemaForTestRecord">xsd schema for the data in 1st parameter.</param>
+      <exception cref="T:System.ArgumentException">In case the data is not valid or there is no data at all.</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.ITestResult.GetLastTestResult">
+      <summary>
+            Returns a tuple with 1st element is the stored xml data and 2nd element is the corresponding xsd schema.
+            </summary>
+      <exception cref="T:System.InvalidOperationException">In case there is no valid data stored.</exception>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState">
+      <summary>
+            The Flags a CoDIA module can have.
+            Several of them may be set.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState.Enabled">
+      <summary>The module is enabled in the configured device type.</summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState.Framework">
+      <summary>The module is part of the CoDIA Framework and thus resides beside the framework dlls.</summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState.Shared">
+      <summary>The module is marked as shared (true for most of the modules). It means that it resides in a shared folder and may be used by several device types.</summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project">
+      <summary>
+            Provides an abstraction of the <see>Microsoft.Build.Evaluation.Project</see></summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProject">
+      <summary>
+            Provides an abstraction of the <see>Microsoft.Build.Evaluation.Project</see></summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProject.GetConfigurationChecksum">
+      <summary>
+            Gets a checksum which is unique for each configuration.
+            </summary>
+      <returns>A unique checksum.</returns>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProject.FileName">
+      <summary>
+            Access the filename of the project mainly for error messages or logging.
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProject.AllEvaluatedProperties">
+      <summary>
+            A wrapper around AllEvaluatedProperties of real object.
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProject.Items">
+      <summary>
+            A wrapper around Items of real object.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project._realObject">
+      <summary>
+            Access to the real object we abstract from.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project._filecontent">
+      <summary>
+            Access to the file where this project is read from.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project._checksumProvider">
+      <summary>
+            To compute checksum of the project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project.#ctor(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IFileReader,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.IChecksumProvider)">
+      <summary>
+            Reads the fileContent and creates a abstract view to the  <see>Microsoft.Build.Evaluation.Project</see></summary>
+      <param name="fileContent">The deviceTypeProject configuration file</param>
+      <param name="checksumProvider">Simple helper to create checksums</param>
+      <requires csharp="fileContent != null" vb="fileContent &lt;&gt; Nothing">fileContent != null</requires>
+      <requires csharp="checksumProvider != null" vb="checksumProvider &lt;&gt; Nothing">checksumProvider != null</requires>
+      <ensures csharp="this._checksumProvider != null" vb="Me._checksumProvider &lt;&gt; Nothing">this._checksumProvider != null</ensures>
+      <ensures csharp="this._filecontent != null" vb="Me._filecontent &lt;&gt; Nothing">this._filecontent != null</ensures>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project.GetConfigurationChecksum">
+      <summary>
+            Gets a checksum which is unique for each configuration.
+            </summary>
+      <returns>A unique checksum.</returns>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IProject#FileName">
+      <summary>
+            Access the filename of the project mainly for error messages or logging.
+            </summary>
+      <getter>
+        <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+      </getter>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IProject#AllEvaluatedProperties">
+      <summary>
+            A wrapper around AllEvaluatedProperties of real object.
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IProject#Items">
+      <summary>
+            A wrapper around Items of real object.
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess">
+      <summary>
+            The class provides an abstract view to the information stored in a device type project file (.dtproj).
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess">
+      <summary>
+            Provides access to information in a device type project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetProjectDefines">
+      <summary>
+            Get all the defines from the DeviceType project file and places them into a dictionary.
+            </summary>
+      <returns>A dictionary containing all the parsed Define-Entry as key-value pair.</returns>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">In case the project properties are not in the expected form</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetProjectPackages">
+      <summary>
+            Get all the Package properties from the device type project and return them
+            in a dictionary containing the split parts.
+            <example>
+            &lt;Package1&gt;CoDIAFramework:1.0.2.7572:CoDIA Framework&lt;/Package1&gt;
+            will result in
+            key="Package1" value=IPackageInfo(name==CoDIAFramework, version==1.0.2.7572, title==CoDIA Framework"
+            </example></summary>
+      <returns />
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetPathToApplicationServerConfFile">
+      <summary>
+            Fetch the path to ApplicationServerConf file as specified in dtProject file
+            Item group -&gt; ApplicationServerConf -&gt; Link
+            </summary>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">in case the entry is not found in dtProjectFile</exception>
+      <returns>path to ApplicationServerConf as specified in dtProject file</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetDeviceTypeVendor">
+      <summary>
+            Fetch the Device(Type)Vendor from project file.
+            </summary>
+      <returns>A string containing the name of the vendor as in project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetDeviceTypeName">
+      <summary>
+            Fetch the DeviceTypeName from project file.
+            </summary>
+      <returns>A string containing the value as in project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetDeviceTypeVersion">
+      <summary>
+            Fetch the DeviceTypeVersion from project file.
+            </summary>
+      <returns>A string containing the value as in project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetDeviceTypeProjectGuid">
+      <summary>
+            Fetches the ProjectGuid as specified in the project file.
+            This guid is constant over the whole lifetime of the project file and may be used to verify that the expected project is indeed the right one.
+            Note that this depends on the fact the project is created properly and not simply cloned from an other one.
+            </summary>
+      <returns>The Project guid of the project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess.GetFileContentChecksum">
+      <summary>
+            Get a checksum based on the file content.
+            </summary>
+      <returns>A string which is unique for the content of the file.</returns>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess._project">
+      <summary>
+            Access to internal sub component which stores the information in a raw form.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.#ctor(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProject)">
+      <summary>
+            The created object is immediately ready using the passed in raw information.
+            </summary>
+      <param name="project">The raw data of a device type project.</param>
+      <exception cref="T:System.ArgumentNullException">in case the argument is null.</exception>
+      <requires csharp="project != null" vb="project &lt;&gt; Nothing">project != null</requires>
+      <ensures csharp="this._project != null" vb="Me._project &lt;&gt; Nothing">this._project != null</ensures>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetProjectDefines">
+      <summary>
+            Get all the defines from the DeviceType project file and places them into a dictionary.
+            </summary>
+      <returns>A dictionary containing all the parsed Define-Entry as key-value pair.</returns>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">In case the project properties are not in the expected form</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetProjectPackages">
+      <summary>
+            Get all the Package properties from the device type project and return them
+            in a dictionary containing the split parts.
+            <example>
+            &lt;Package1&gt;CoDIAFramework:1.0.2.7572:CoDIA Framework&lt;/Package1&gt;
+            will result in
+            key="Package1" value=IPackageInfo(name==CoDIAFramework, version==1.0.2.7572, title==CoDIA Framework"
+            </example></summary>
+      <returns />
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetPathToApplicationServerConfFile">
+      <summary>
+            Fetch the path to ApplicationServerConf file as specified in dtProject file
+            Item group -&gt; ApplicationServerConf -&gt; Link
+            </summary>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">in case the entry is not found in dtProjectFile</exception>
+      <returns>path to ApplicationServerConf as absolute path.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetDeviceTypeVendor">
+      <summary>
+            Fetch the Device(Type)Vendor from project file.
+            </summary>
+      <returns>A string containing the name of the vendor as in project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetDeviceTypeName">
+      <summary>
+            Fetch the DeviceTypeName from project file.
+            </summary>
+      <returns>A string containing the value as in project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetDeviceTypeVersion">
+      <summary>
+            Fetch the DeviceTypeVersion from project file.
+            </summary>
+      <returns>A string containing the value as in project file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetDeviceTypeProjectGuid">
+      <summary>
+            Fetches the ProjectGuid as specified in the project file.
+            This guid is constant over the whole lifetime of the project file and may be used to verify that the expected project is indeed the right one.
+            Note that this depends on the fact the project is created properly and not simply cloned from an other one.
+            </summary>
+      <returns>The Project guid of the project file.</returns>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">In case of missing or malformed entry for ProjectGuid.</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IDeviceTypeProjectAccess#GetFileContentChecksum">
+      <summary>
+            Get a checksum based on the file content.
+            </summary>
+      <returns>A string which is unique for the content of the file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DeviceTypeProjectAccess.GetPropertyFirstValue(System.String)">
+      <summary>
+            Fetches a property value from project file.
+            </summary>
+      <param name="name">The name of the property as in project file (e.g. "DeviceTypeVersion").</param>
+      <returns>A string containing the value as in project file.</returns>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.IChecksumProvider">
+      <summary>
+            This provides the ability to create a checksum of a string.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.IChecksumProvider.CreateChecksum(System.String)">
+      <summary>
+            Creates a checksum from provided text.
+            </summary>
+      <param name="inputText">The input to be hashed</param>
+      <returns>A checksum in the form of a hex string 11-22-33...</returns>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.ChecksumProvider">
+      <summary>
+            The class provides the ability to create a checksum of a string.
+            It consists only of one method and has no members.
+            It is not marked as static in order to have an interface available.
+            So there is no need to have several instances of it.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.ChecksumProvider.CreateChecksum(System.String)">
+      <summary>
+            Creates a checksum from provided text.
+            </summary>
+      <param name="inputText">The input to be hashed</param>
+      <returns>A checksum in the form of a hex string 11-22-33...</returns>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader">
+      <summary>
+            This class provides an abstraction layer on top of file-system for other parts which requires the content of a file.
+            These other components therefore do not rely on real file system any more and thus can better be testes.
+            Here we provide the abstraction that a "Filename" is given but the content of the file containing text is the thing which is of interest.
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IFileReader">
+      <summary>
+            This defines an abstraction layer on top of file-system for other parts which requires the content of a file.
+            These other components therefore do not rely on real file system any more and thus can better be tested.
+            Here we provide the abstraction that a "Filename" is given but the content of the file containing text is the thing which is of interest.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IFileReader.GetFileContent">
+      <summary>
+            Provides the content of the file.
+            The file is already read during construction so this will never fail.
+            </summary>
+      <returns>Content of file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IFileReader.GetFileName">
+      <summary>
+            Provides the name of the file in order to produce error messages or logging.
+            </summary>
+      <returns>Name of the file.</returns>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader._pathFile">
+      <summary>
+            The name of the file held here in order to have it for logging or errors.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader._fileContent">
+      <summary>
+            The content of the file read during constructor run.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader.#ctor(System.String)">
+      <summary>
+            Reads the given file and stores it internally.
+            The file may be already opened for reading elsewhere.
+            </summary>
+      <param name="pathFile">The path and file name to be read.</param>
+      <exception cref="T:System.IO.FileNotFoundException">in case the path is wrong</exception>
+      <exception cref="T:System.IO.IOException">in case the file is already opened for writing.</exception>
+      <requires csharp="pathFile != null" vb="pathFile &lt;&gt; Nothing">pathFile != null</requires>
+      <ensures csharp="this._pathFile != null" vb="Me._pathFile &lt;&gt; Nothing">this._pathFile != null</ensures>
+      <ensures csharp="this._fileContent != null" vb="Me._fileContent &lt;&gt; Nothing">this._fileContent != null</ensures>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader.#ctor(System.String,System.String)">
+      <summary>
+            Reads the given stream and stores it internally.
+            This is intended mainly for unit tests to inject test file content without real file system.
+            </summary>
+      <param name="fileContent">The content of the file.</param>
+      <param name="pathFile">The path and file name to be read.</param>
+      <requires csharp="fileContent != null" vb="fileContent &lt;&gt; Nothing">fileContent != null</requires>
+      <requires csharp="pathFile != null" vb="pathFile &lt;&gt; Nothing">pathFile != null</requires>
+      <ensures csharp="this._pathFile != null" vb="Me._pathFile &lt;&gt; Nothing">this._pathFile != null</ensures>
+      <ensures csharp="this._fileContent != null" vb="Me._fileContent &lt;&gt; Nothing">this._fileContent != null</ensures>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IFileReader#GetFileContent">
+      <summary>
+            Provides the content of the file.
+            The file is already read during construction so this will never fail.
+            </summary>
+      <returns>Content of file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.FileReader.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IFileReader#GetFileName">
+      <summary>
+            Provides the name of the file in order to produce error messages or logging.
+            </summary>
+      <returns>Name of the file.</returns>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo">
+      <summary>
+            This contains all the information about a CoDIA module.
+            The object is immutable.
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo">
+      <summary>
+            Provides read only access to all the information about a CoDIA module.
+            The implementing object needs to have value semantics forced by IEquatable
+            The implementing object is immutable.
+            The compare == operator etc. act based on content.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo.IsFrameworkModule">
+      <summary>Check for dedicated flag</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo.IsEnabled">
+      <summary>Check for dedicated flag</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo.IsShared">
+      <summary>Check for dedicated flag</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo.Name">
+      <summary>Name of Module as in ApplicationServerConf</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo.Version">
+      <summary>
+            Version of Module as defined in dtProject.
+            For Framework-Modules it is the CoDIA-Version.
+            For non-Framework non-Shared Module (probably only the DeviceModel) it is "NONE".
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo.Flags">
+      <summary>
+            Flags of the Module as defined in ApplicationServerConf
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo._name">
+      <summary>Name of Module as in ApplicationServerConf</summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo._version">
+      <summary>
+            Version of Module as defined in dtProject.
+            For Framework-Modules it is the CoDIA-Version.
+            For non-Framework non-Shared Module (probably only the DeviceModel) it is "NONE".
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo._flags">
+      <summary>
+            Flags of the Module as defined in ApplicationServerConf
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.#ctor(System.String,System.String,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState)">
+      <summary>Initialize the read-only object</summary>
+      <requires csharp="name != null" vb="name &lt;&gt; Nothing">name != null</requires>
+      <requires csharp="version != null" vb="version &lt;&gt; Nothing">version != null</requires>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IModuleInfo#IsFrameworkModule">
+      <summary>Check for dedicated flag</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IModuleInfo#IsEnabled">
+      <summary>Check for dedicated flag</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IModuleInfo#IsShared">
+      <summary>Check for dedicated flag</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.Equals(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo)">
+      <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+      <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+      <param name="other">An object to compare with this object.</param>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.Equals(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IModuleInfo)">
+      <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+      <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+      <param name="other">An object to compare with this object.</param>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.Equals(System.Object)">
+      <summary>
+            Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />.
+            </summary>
+      <returns>
+            true if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, false.
+            </returns>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Object" />. </param>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.GetHashCode">
+      <summary>
+            Serves as a hash function for a particular type. 
+            </summary>
+      <returns>
+            A hash code for the current <see cref="T:System.Object" />.
+            </returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IModuleInfo#Name">
+      <summary>Name of Module as in ApplicationServerConf</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IModuleInfo#Version">
+      <summary>
+            Version of Module as defined in dtProject.
+            For Framework-Modules it is the CoDIA-Version.
+            For non-Framework non-Shared Module (probably only the DeviceModel) it is "NONE".
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.ModuleInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IModuleInfo#Flags">
+      <summary>
+            Flags of the Module as defined in ApplicationServerConf
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IFullAccess">
+      <summary>
+            The methods here provide full access to very internal definitions.
+            It is not intended to be used outside of CodeWrights.
+            Note: there exists an InternalVisibleTo Attribute in AssemblyInfo.cs
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IFullAccess.GetProjectDefines">
+      <summary>
+            This should only be used/visible CW internally
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IApplicationServerConfAccess">
+      <summary>
+            Provides access to content of ApplicationServerConf.xml
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IApplicationServerConfAccess.GetListOfCoDiaModules(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState)">
+      <summary>
+            Retrieves information for all the selected modules.
+            Note that the result contains only information from ApplicationServerConf.xml therefore if the source is a template file the Version information may be symbolic or missing.
+            </summary>
+      <param name="filter">If at least one flag matches the module it is part of the result. In case of 0 information of all modules are retrieved.</param>
+      <returns>The key is the Name of the Module as in ApplicationServerConf. The value contains all the provided information about a module.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IApplicationServerConfAccess.GetFileContentChecksum">
+      <summary>
+            Get a checksum based on the file content.
+            </summary>
+      <returns>A string which is unique for the content of the file.</returns>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure">
+      <summary>
+            Main class of the component.
+            It provides access to several informations of ApplicationServerConf.xml and DeviceTypeProject file.
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation">
+      <summary>
+            This interface provides access to information about the DeviceType and its structure.
+            The information is derived from ApplicationServerConf and DeviceTypeProject (.dtproj) files.
+            There are only informative methods contained - no method to change data.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetCodiaModuleInfos(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState)">
+      <summary>
+            Retrieves information for all the selected modules.
+            </summary>
+      <param name="filter">If at least one flag matches the module it is part of the result. In case of 0 information of all modules are retrieved.</param>
+      <returns>The key is the Name of the Module as in ApplicationServerConf. The value contains all the provided information about a module.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetProjectPackages">
+      <summary>
+            Get all the Package properties from the device type project and return them
+            in a dictionary containing the split parts.
+            <example>
+            &lt;Package1&gt;CoDIAFramework:1.0.2.7572:CoDIA Framework&lt;/Package1&gt;
+            will result in
+            key="Package1" value=IPackageInfo(name==CoDIAFramework, version==1.0.2.7572, title==CoDIA Framework"
+            </example></summary>
+      <returns />
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetDeviceTypeVendor">
+      <summary>
+            Fetches the DeviceType Vendor as defined in project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetDeviceTypeName">
+      <summary>
+            Fetches the DeviceType Name as defined in project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetDeviceTypeVersion">
+      <summary>
+            Fetches the DeviceType Version as defined in project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetDeviceTypeProjectGuid">
+      <summary>
+            Fetches the ProjectGuid as specified in the project file.
+            This guid is constant over the whole lifetime of the project file and may be used to verify that the expected project is indeed the right one.
+            Note that this depends on the fact the project is created properly and not simply cloned from an other one.
+            </summary>
+      <returns>The Project guid of the project file.</returns>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">In case of missing or malformed entry for ProjectGuid.</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.IInformation.GetConfigurationChecksum">
+      <summary>
+            Creates a checksum of the content of the project and ApplicationServerConf files.
+            This can be used to detect changes in the configuration.
+            </summary>
+      <returns>A string which is unique for the current configuration.</returns>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._deviceTypeProjectAccess">
+      <summary>
+            Access to internal sub component.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._applicationServerConfAccess">
+      <summary>
+            Access to internal sub component.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._checksumProvider">
+      <summary>
+            To compute checksum of the configurations.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._log">
+      <summary>
+            Access to the logging feature.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._logSource">
+      <summary>
+            Will be used in logging as source.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._logSourceEnter">
+      <summary>
+            Will be used in logging as source for start of method.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure._logSourceExit">
+      <summary>
+            Will be used in logging as source for end of method.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.DependencyInjectContainerCreateAll(System.String,CodeWrights.DTMstudioInfrastructure.Logging.ILogging)">
+      <summary>
+            This is a minimalistic replacement for a dependency injection container.
+            It uses injection by constructor parameter - please keep this consistent.
+            Due to the simple structure there is no need to blow up the system with a real one.
+            On the other hand: As soon as the project grows it should be replaced.
+            It set up the whole component and returns those parts visible for the main class.
+            </summary>
+      <param name="pathToDeviceTypeProjectFile">Path to the device type project.</param>
+      <param name="logging">Access to the logging functionality.</param>
+      <returns>The required dependencies of the main class.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.#ctor(System.String,CodeWrights.DTMstudioInfrastructure.Logging.ILogging)">
+      <summary>
+            Provides an object which immediately can be used to gather information from a device type project.
+            It reads the deviceType project file and also the referred ApplicationServerConf.xml.
+            This constructor is the one to be used for normal usage.
+            </summary>
+      <param name="pathToDeviceTypeProjectFile">Path/File to readable device type project file.</param>
+      <param name="logger">Access to the logging functionality.
+            Note that there are default implementations of this interface e.g. <see>CodeWrights.DTMstudioInfrastructure.Logging.NoLoggingLogger</see></param>
+      <exception cref="T:System.Diagnostics.Contracts.ContractException">In case the argument is null</exception>
+      <exception cref="T:System.IO.FileNotFoundException" />
+      <requires csharp="pathToDeviceTypeProjectFile != null" vb="pathToDeviceTypeProjectFile &lt;&gt; Nothing">pathToDeviceTypeProjectFile != null</requires>
+      <requires csharp="logger != null" vb="logger &lt;&gt; Nothing">logger != null</requires>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.#ctor(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IApplicationServerConfAccess,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.IChecksumProvider,CodeWrights.DTMstudioInfrastructure.Logging.ILogging)">
+      <summary>
+            Provides an object which immediately can be used to gather information from a device type project.
+            It reads the deviceType project file and also the referred ApplicationServerConf.xml.
+            This constructor is intended for unit test scenario.
+            </summary>
+      <param name="deviceTypeProjectAccess">Access to subcomponent</param>
+      <param name="applicationServerConfAccess">Access to subcomponent</param>
+      <param name="logging">Access to the logging functionality.</param>
+      <exception cref="T:System.ArgumentNullException">In case the argument is null</exception>
+      <exception cref="T:System.IO.FileNotFoundException" />
+      <param name="checksumProvider">Simple method to compute checksums</param>
+      <requires csharp="deviceTypeProjectAccess != null" vb="deviceTypeProjectAccess &lt;&gt; Nothing">deviceTypeProjectAccess != null</requires>
+      <requires csharp="applicationServerConfAccess != null" vb="applicationServerConfAccess &lt;&gt; Nothing">applicationServerConfAccess != null</requires>
+      <requires csharp="checksumProvider != null" vb="checksumProvider &lt;&gt; Nothing">checksumProvider != null</requires>
+      <requires csharp="logging != null" vb="logging &lt;&gt; Nothing">logging != null</requires>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.#ctor(System.Tuple{CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.IChecksumProvider,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IDeviceTypeProjectAccess,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.IApplicationServerConfAccess,CodeWrights.DTMstudioInfrastructure.Logging.ILogging})">
+      <summary>
+            Provides an object which immediately can be used to gather information from a device type project.
+            It reads the deviceType project file and also the referred ApplicationServerConf.xml.
+            This constructor is intended for unit test scenario.
+            </summary>
+      <param name="data">Access to subcomponents</param>
+      <exception cref="T:System.ArgumentNullException">In case the argument is null</exception>
+      <exception cref="T:System.IO.FileNotFoundException" />
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetCodiaModuleInfos(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState)">
+      <summary>
+            Retrieves information for all the selected modules.
+            </summary>
+      <param name="filter">If at least one flag matches the module it is part of the result. In case of 0 information of all modules are retrieved.</param>
+      <returns>The key is the Name of the Module as in ApplicationServerConf. The value contains all the provided information about a module.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetProjectPackages">
+      <summary>
+            Get all the Package properties from the device type project and return them
+            in a dictionary containing the split parts.
+            <example>
+            &lt;Package1&gt;CoDIAFramework:1.0.2.7572:CoDIA Framework&lt;/Package1&gt;
+            will result in
+            key="Package1" value=IPackageInfo(name==CoDIAFramework, version==1.0.2.7572, title==CoDIA Framework"
+            </example></summary>
+      <returns />
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetDeviceTypeVendor">
+      <summary>
+            Fetches the DeviceType Vendor as defined in project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetDeviceTypeName">
+      <summary>
+            Fetches the DeviceType Name as defined in project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetDeviceTypeVersion">
+      <summary>
+            Fetches the DeviceType Version as defined in project file.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetDeviceTypeProjectGuid">
+      <summary>
+            Fetches the ProjectGuid as specified in the project file.
+            This guid is constant over the whole lifetime of the project file and may be used to verify that the expected project is indeed the right one.
+            Note that this depends on the fact the project is created properly and not simply cloned from an other one.
+            </summary>
+      <returns>The Project guid of the project file.</returns>
+      <exception cref="T:Microsoft.Build.Exceptions.InvalidProjectFileException">In case of missing or malformed entry for ProjectGuid.</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IInformation#GetConfigurationChecksum">
+      <summary>
+            Creates a checksum of the content of the project and ApplicationServerConf files.
+            This can be used to detect changes in the configuration.
+            </summary>
+      <returns />
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#IFullAccess#GetProjectDefines">
+      <summary>
+            This should only be used/visible CW internally
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#ITestResult#SetTestResult(System.String,System.String)">
+      <summary>
+            The test record xml together with the corresponding xsd schema can be stored using this method.
+            Later calls will overwrite data from former calls.
+            </summary>
+      <param name="testRecordXml">content of a valid xml file</param>
+      <param name="xsdSchemaForTestRecord">xsd schema for the data in 1st parameter.</param>
+      <exception cref="T:System.ArgumentException">In case the data is not valid or there is no data at all.</exception>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#ITestResult#GetLastTestResult">
+      <summary>
+            Returns a tuple with 1st element is the stored xml data and 2nd element is the corresponding xsd schema.
+            </summary>
+      <exception cref="T:System.InvalidOperationException">In case there is no valid data stored.</exception>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.Information">
+      <summary> Provide access to interface implementation. </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.TestResult">
+      <summary> Provide access to interface implementation. </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.CommonTaskInfrastructure.FullAccess">
+      <summary> Provide access to interface implementation. </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProjectProperty">
+      <summary>
+            Provides an abstraction layer of the Property of a  <see>Microsoft.Build.Evaluation.Project</see></summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProjectProperty.Name">
+      <summary>
+            The property name.
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IProjectProperty.EvaluatedValue">
+      <summary>
+            The evaluated value of the property
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess">
+      <summary>
+            The class provides an abstract view to the information in an ApplicationServerConf file.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess._fileContent">
+      <summary>
+            Access to the file content of the ApplicationServerConf.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess._checksumProvider">
+      <summary>
+            To compute checksum of the file content. 
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess._applicationServerConf">
+      <summary>
+            The file as read into a schema derived class structure.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess.#ctor(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.IFileReader,CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.Helpers.IChecksumProvider)">
+      <summary>
+            Reads the stream and builds an abstract object structure of it.
+            </summary>
+      <param name="fileContent">The content of an ApplicationServerConf to be read.</param>
+      <param name="checksumProvider">Simple method to create checksums.</param>
+      <requires csharp="fileContent != null" vb="fileContent &lt;&gt; Nothing">fileContent != null</requires>
+      <requires csharp="checksumProvider != null" vb="checksumProvider &lt;&gt; Nothing">checksumProvider != null</requires>
+      <ensures csharp="this._applicationServerConf != null" vb="Me._applicationServerConf &lt;&gt; Nothing">this._applicationServerConf != null</ensures>
+      <ensures csharp="this._fileContent != null" vb="Me._fileContent &lt;&gt; Nothing">this._fileContent != null</ensures>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IApplicationServerConfAccess#GetListOfCoDiaModules(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState)">
+      <summary>
+            Retrieves information for all the selected modules.
+            Note that the result contains only information from ApplicationServerConf.xml therefore if the source is a template file the Version information may be symbolic or missing.
+            </summary>
+      <param name="filter">If at least one flag matches the module it is part of the result. In case of 0 information of all modules are retrieved.</param>
+      <returns>The key is the Name of the Module as in ApplicationServerConf. The value contains all the provided information about a module.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#IApplicationServerConfAccess#GetFileContentChecksum">
+      <summary>
+            Get a checksum based on the file content.
+            </summary>
+      <returns>A string which is unique for the content of the file.</returns>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.ApplicationServerConfAccess.IsFilteredOut(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.ModuleState,CoDIA.Components.DeviceApplicationServer.ModuleInformation.ReadConfigs.KnownModule)">
+      <summary>
+            Returns true if the filter do not allow the concrete module.
+            </summary>
+      <param name="filter">The filter to be used for the module. In case of value 0 the result will be false e.g. accepted.</param>
+      <param name="module">The concrete module to be checked against the filter.</param>
+      <returns>true: if the module is not accepted by the filter.</returns>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IPackageInfo">
+      <summary>
+            Provides read only access to all the information about a DTMstudio CoDIA package.
+            The implementing object needs to have value semantics forced by IEquatable
+            The implementing object is immutable.
+            The compare == operator etc. act based on content. 
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IPackageInfo.Name">
+      <summary>The unique Name of the package usable as key.</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IPackageInfo.Version">
+      <summary>The version of the package.</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IPackageInfo.Title">
+      <summary>The name of the package in a user friendly form. E.g. it may consist of several words.</summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.ProjectProperty">
+      <summary>
+            Provides an abstraction layer of the Property of a  <see>Microsoft.Build.Evaluation.Project</see></summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.ProjectProperty._realObject">
+      <summary>
+            The real object we provide an abstraction layer for.
+            </summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.ProjectProperty.#ctor(Microsoft.Build.Evaluation.ProjectProperty)">
+      <summary>
+            Simply stores the passed property.
+            </summary>
+      <param name="realObject">the property to be abstracted.</param>
+      <exception cref="T:System.ArgumentNullException">in case the passed object is null.</exception>
+      <requires csharp="realObject != null" vb="realObject &lt;&gt; Nothing">realObject != null</requires>
+      <ensures csharp="this._realObject != null" vb="Me._realObject &lt;&gt; Nothing">this._realObject != null</ensures>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.ProjectProperty.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IProjectProperty#Name">
+      <summary>
+            The property name.
+            </summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.ProjectProperty.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IProjectProperty#EvaluatedValue">
+      <summary>
+            The evaluated value of the property
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Properties.Versions">
+      <summary>
+             Contains version constants of the assembly -- will be set from build process.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Properties.Versions.Version">
+      <summary>
+            Version of this assembly
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Properties.Versions.VcsNumber">
+      <summary>
+            Number of the Version Control System which unique identifies the sources used for build of this Version
+            Only for informal reasons.
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Properties.Versions.VcsVersion">
+      <summary>
+            Version with Number of the Version Control System which unique identifies the sources used for build of this Version
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Properties.Versions.VcsText">
+      <summary>
+            Short text with Number of the Version Control System which unique identifies the sources used for build of this Version
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Properties.Versions.Copyright">
+      <summary>
+            Copyright of CoDIA.
+            </summary>
+    </member>
+    <member name="T:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo">
+      <summary>
+            This contains all the information about a DTMstudio CoDIA package.
+            The object has value semantics
+            The object is immutable.
+            The compare == operator etc. act based on content. 
+            </summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo._name">
+      <summary>The unique Name of the package usable as key.</summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo._version">
+      <summary>The version of the package.</summary>
+    </member>
+    <member name="F:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo._title">
+      <summary>The name of the package in a user friendly form. E.g. it may consist of several words.</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.#ctor(System.String,System.String,System.String)">
+      <summary>
+            Initialize the read only object;
+            </summary>
+      <param name="name">The unique Name of the package usable as key.</param>
+      <param name="version">The version of the package.</param>
+      <param name="title">The name of the package in a user friendly form. E.g. it may consist of several words.</param>
+      <requires csharp="name != null" vb="name &lt;&gt; Nothing">name != null</requires>
+      <requires csharp="version != null" vb="version &lt;&gt; Nothing">version != null</requires>
+      <requires csharp="title != null" vb="title &lt;&gt; Nothing">title != null</requires>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.Equals(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo)">
+      <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+      <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+      <param name="other">An object to compare with this object.</param>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.Equals(CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Interface.Data.IPackageInfo)">
+      <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+      <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+      <param name="other">An object to compare with this object.</param>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.Equals(System.Object)">
+      <summary>
+            Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />.
+            </summary>
+      <returns>
+            true if the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Object" />; otherwise, false.
+            </returns>
+      <param name="obj">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Object" />. </param>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.GetHashCode">
+      <summary>
+            Serves as a hash function for a particular type. 
+            </summary>
+      <returns>
+            A hash code for the current <see cref="T:System.Object" />.
+            </returns>
+      <filterpriority>2</filterpriority>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IPackageInfo#Name">
+      <summary>The unique Name of the package usable as key.</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IPackageInfo#Version">
+      <summary>The version of the package.</summary>
+    </member>
+    <member name="P:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.DataContainers.PackageInfo.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Interface#Data#IPackageInfo#Title">
+      <summary>The name of the package in a user friendly form. E.g. it may consist of several words.</summary>
+    </member>
+    <member name="M:CodeWrights.DtmStudioCoDIA.Common.TaskInfrastructure.Implementation.SystemAbstraction.Project.CodeWrights#DtmStudioCoDIA#Common#TaskInfrastructure#Implementation#SystemAbstraction#IProject#get_FileName">
+      <ensures csharp="result != null" vb="result &lt;&gt; Nothing">result != null</ensures>
+    </member>
+  </members>
+</doc>

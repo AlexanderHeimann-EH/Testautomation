@@ -1,0 +1,9 @@
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.CI.xml
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.CI.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\ReleaseBin\Release\HostApplication\FDT\EH.PCPS.TestAutomation.FieldCare.CI.pdb
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.CI.csprojResolveAssemblyReference.cache
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.CI.GUI.MenuArea.Toolbar.Icons.resources
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.CI.Resources.FieldCareLanguageIDs.resources
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.CI.csproj.GenerateResource.Cache
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.CI.dll
+P:\EH.PCSW.Testautomation.TestFramework.HostApplication\Source\HostApplication\FDT\FieldCare_CI\obj\x86\Release\EH.PCPS.TestAutomation.FieldCare.CI.pdb

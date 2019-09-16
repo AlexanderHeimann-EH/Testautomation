@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<TestConfiguration>
+  <AvailableTestObjects>
+    <TestObject d3p1:type="TestSuite" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <DisplayName>TS_SetupDeliveryEnvelopeCurve</DisplayName>
+      <Guid>adb36837-b6d0-48a7-add0-7e0da5d29466</Guid>
+      <IsActive>false</IsActive>
+      <Name>TS_SetupDeliveryEnvelopeCurve</Name>
+      <TestDefinition>Predefined</TestDefinition>
+      <TestObjects>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Open</DisplayName>
+          <Guid>7711f925-2049-40d3-8557-b360959fb685</Guid>
+          <IsActive>false</IsActive>
+          <Name>Open</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online.</Description>
+              <DisplayName>EnvelopeCurve.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>579c4c57-d099-4d18-90c4-81adc5e5bdd0</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online.</ToolTip>
+              <AssemblyMethodRefId>1ac7aa22-edf0-4569-89b6-4bd4c597e127</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Single Curve</DisplayName>
+          <Guid>7efb5349-9314-4a8a-9e88-8c5c309d3c02</Guid>
+          <IsActive>false</IsActive>
+          <Name>Single Curve</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads a single curve and takes a screenshot of the diagram afterwards.</Description>
+              <DisplayName>EnvelopeCurve.TC_ReadSingleCurve.Run</DisplayName>
+              <Guid>cad271a2-e514-4f8e-8e33-5351afdc81e4</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads a single curve and takes a screenshot of the diagram afterwards.</ToolTip>
+              <AssemblyMethodRefId>978b39da-1f20-4f79-8d77-78a7ce8b6526</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads a single curve and takes a screenshot of the diagram afterwards.</Description>
+              <DisplayName>EnvelopeCurve.TC_ReadSingleCurve.Run</DisplayName>
+              <Guid>44083d0f-1bb2-47e3-a1d2-9fe02ced2526</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads a single curve and takes a screenshot of the diagram afterwards.</ToolTip>
+              <AssemblyMethodRefId>978b39da-1f20-4f79-8d77-78a7ce8b6526</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Save Close Open Load New</DisplayName>
+          <Guid>eaa97353-df91-45c6-81cd-d31701a0fb4b</Guid>
+          <IsActive>false</IsActive>
+          <Name>Save Close Open Load New</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Runs the specified file name.</Description>
+              <DisplayName>EnvelopeCurve.TC_SaveCurveAs.Run</DisplayName>
+              <Guid>9a69b032-d576-47ce-b690-b2a884d31391</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Runs the specified file name.</ToolTip>
+              <AssemblyMethodRefId>1F502C56-8CB7-43FA-9039-781098806C4F</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes this module.</Description>
+              <DisplayName>EnvelopeCurve.TC_CloseModule.Run</DisplayName>
+              <Guid>462182f3-17b2-4764-9567-a487f00510a1</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes this module.</ToolTip>
+              <AssemblyMethodRefId>350608ff-238e-4b72-b0b2-306a84b6ed4e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Opens the module when the device is online.</Description>
+              <DisplayName>EnvelopeCurve.TC_OpenModuleOnline.Run</DisplayName>
+              <Guid>159797b1-a60d-4b3f-ab56-29176d8dbb00</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Opens the module when the device is online.</ToolTip>
+              <AssemblyMethodRefId>1ac7aa22-edf0-4569-89b6-4bd4c597e127</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Runs the specified file name.</Description>
+              <DisplayName>EnvelopeCurve.TC_LoadCurves.Run</DisplayName>
+              <Guid>409d8682-1efb-42ae-ad12-a30bfcba0bc5</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Runs the specified file name.</ToolTip>
+              <AssemblyMethodRefId>DBC4E408-D420-485D-B856-F8041A18EBA0</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Creates a new curve and discards available curves. Makes a screenshot afterwards.</Description>
+              <DisplayName>EnvelopeCurve.TC_NewCurve.Run</DisplayName>
+              <Guid>ebb8f807-f45b-48ba-a595-9b698e19e6b7</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Creates a new curve and discards available curves. Makes a screenshot afterwards.</ToolTip>
+              <AssemblyMethodRefId>c54bc33f-b00b-49e5-b69f-f97e616a1901</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Cyclic Reading</DisplayName>
+          <Guid>3cdf1d5c-7968-4b61-804b-fcd7b5bc2f95</Guid>
+          <IsActive>false</IsActive>
+          <Name>Cyclic Reading</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads a specified number of curves cyclic.
+
+Param:
+The number of curves after which cyclic reading stops.</Description>
+              <DisplayName>EnvelopeCurve.TC_ReadCurvesCyclic.Run</DisplayName>
+              <Guid>5c2f9a5c-3cee-4e1f-84b8-54da49f5febf</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(numberOfCurves)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads a specified number of curves cyclic.
+
+Param:
+The number of curves after which cyclic reading stops.</ToolTip>
+              <AssemblyMethodRefId>3b9147ab-b7db-4398-a7c5-54200e962c00</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The number of curves after which cyclic reading stops.</Description>
+                  <Name>numberOfCurves</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>10</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Reads a specified number of curves cyclic.
+
+Param:
+The number of curves after which cyclic reading stops.</Description>
+              <DisplayName>EnvelopeCurve.TC_ReadCurvesCyclic.Run</DisplayName>
+              <Guid>b7e68a8d-d858-4660-8b97-21e9743a5f7d</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run(numberOfCurves)</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Reads a specified number of curves cyclic.
+
+Param:
+The number of curves after which cyclic reading stops.</ToolTip>
+              <AssemblyMethodRefId>3b9147ab-b7db-4398-a7c5-54200e962c00</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters>
+                <TestParameter>
+                  <Description>The number of curves after which cyclic reading stops.</Description>
+                  <Name>numberOfCurves</Name>
+                  <ParameterType>System.Int32</ParameterType>
+                  <ParameterValue>10</ParameterValue>
+                  <ParameterValueValid>true</ParameterValueValid>
+                </TestParameter>
+              </Parameters>
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Runs the specified file name.</Description>
+              <DisplayName>EnvelopeCurve.TC_SaveCurveAs.Run</DisplayName>
+              <Guid>de38be3a-6d81-4fa2-ab2e-d84cd68d256f</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Runs the specified file name.</ToolTip>
+              <AssemblyMethodRefId>1F502C56-8CB7-43FA-9039-781098806C4F</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+        <TestObject d3p1:type="TestFolder">
+          <DisplayName>Close</DisplayName>
+          <Guid>35fe89ed-84aa-4c6f-a54c-4fd946ba2e41</Guid>
+          <IsActive>false</IsActive>
+          <Name>Close</Name>
+          <TestDefinition>Predefined</TestDefinition>
+          <TestObjects>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+Closes this module.</Description>
+              <DisplayName>EnvelopeCurve.TC_CloseModule.Run</DisplayName>
+              <Guid>4b7fb676-df47-4eaf-be8b-27258e0bcc96</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+Closes this module.</ToolTip>
+              <AssemblyMethodRefId>350608ff-238e-4b72-b0b2-306a84b6ed4e</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+            <TestObject d3p1:type="TestCase">
+              <Description>Summary:
+The run.</Description>
+              <DisplayName>HostApplication.TC_CheckForCriticalError.Run</DisplayName>
+              <Guid>1cd89b60-d169-4ea6-b780-e571fc992e97</Guid>
+              <IsActive>false</IsActive>
+              <Name>Void Run()</Name>
+              <TestDefinition>Predefined</TestDefinition>
+              <ToolTip>Summary:
+The run.</ToolTip>
+              <AssemblyMethodRefId>347fade4-1e48-40a2-bc9f-aa1c272caa99</AssemblyMethodRefId>
+              <AssemblyName>EH.PCPS.TestAutomation.Testlibrary.dll</AssemblyName>
+              <CustomAttributTestScript>NotDefined</CustomAttributTestScript>
+              <Parameters />
+            </TestObject>
+          </TestObjects>
+        </TestObject>
+      </TestObjects>
+      <TestCategory>SetupDelivery</TestCategory>
+      <TestFocus>EnvelopeCurve</TestFocus>
+    </TestObject>
+  </AvailableTestObjects>
+  <ConfigurationFile></ConfigurationFile>
+  <DTMstudioCoDIAVersion />
+  <Description />
+  <Name />
+  <TestFrameworkVersion />
+</TestConfiguration>
